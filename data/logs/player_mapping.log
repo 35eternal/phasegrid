@@ -1,0 +1,18 @@
+2025-06-15 17:20:45,741 - INFO - Loaded 5 existing player mappings
+2025-06-15 17:20:45,742 - WARNING - Could not load existing mapping: 'PrizePicks_Name'
+2025-06-15 17:20:45,743 - INFO - Found 5 unique players in wnba_prizepicks_props.csv
+2025-06-15 17:20:46,345 - INFO - Loaded 5 existing player mappings
+2025-06-15 17:20:46,346 - WARNING - Could not load existing mapping: 'PrizePicks_Name'
+2025-06-15 17:20:46,346 - INFO - Starting full WNBA player mapping process...
+2025-06-15 17:20:46,347 - INFO - Found 5 unique players in wnba_prizepicks_props.csv
+2025-06-15 17:20:46,347 - INFO - Found 5 unmapped players out of 5 total
+2025-06-15 17:20:46,347 - INFO - Processing batch 1/1 (5 players)
+2025-06-15 17:20:46,347 - INFO - Mapping player: Jewell Loyd
+2025-06-15 17:20:48,309 - INFO - Mapping player: Chelsea Gray
+2025-06-15 17:20:50,117 - INFO - Mapping player: Jackie Young
+2025-06-15 17:20:52,268 - INFO - Mapping player: Satou Sabally
+2025-06-15 17:20:53,978 - INFO - Mapping player: Alyssa Thomas
+2025-06-15 17:20:55,487 - INFO - Progress: 100.0% complete
+2025-06-15 17:20:55,490 - INFO - Saved 5 failed mappings for review
+2025-06-15 17:20:55,491 - INFO - Mapping complete. Success rate: 0.0%
+2025-06-15 17:20:55,492 - INFO - Total players now mapped: 0

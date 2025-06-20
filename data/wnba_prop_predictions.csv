@@ -1,0 +1,767 @@
+player_name,stat_type,line,predicted_value,confidence_score,volatility_score,recommendation,bbref_id,timestamp
+Lexie Hull,Points,14.5,9.8,0.0,0.5,PASS,hulllle01w,2025-06-17T11:02:51.401690
+Lexie Hull,Rebounds,3.5,4.3,0.0,0.5,PASS,hulllle01w,2025-06-17T11:02:51.403793
+Marina Mabrey,3-PT Made,3.5,2.8,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.407009
+Marina Mabrey,Rebounds,5.5,5.2,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.410677
+Marina Mabrey,Points,17.5,17.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.412854
+Marina Mabrey,Pts+Rebs+Asts,34.5,26.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.414890
+Marina Mabrey,Pts+Rebs+Asts,29.5,26.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.416956
+Marina Mabrey,Pts+Rebs+Asts,39.5,26.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.419234
+Marina Mabrey,Points,29.5,17.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.421196
+Marina Mabrey,3-PT Made,4.5,2.8,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.423151
+Marina Mabrey,Assists,5.5,3.8,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.425248
+Marina Mabrey,Fantasy Score,30.5,0.0,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.427379
+Marina Mabrey,Pts+Rebs,22.5,22.8,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.429433
+Marina Mabrey,Points,14.5,17.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.431366
+Marina Mabrey,Points,24.5,17.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.433623
+Marina Mabrey,Rebs+Asts,8.0,9.0,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.435612
+Marina Mabrey,Rebounds,3.5,5.2,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.437536
+Marina Mabrey,Assists,4.5,3.8,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.439589
+Marina Mabrey,Rebounds,6.5,5.2,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.441575
+Marina Mabrey,Assists,2.5,3.8,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.443502
+Marina Mabrey,Rebounds,4.5,5.2,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.445461
+Marina Mabrey,Points,16.5,17.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.447504
+Marina Mabrey,3-PT Made,5.5,2.8,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.449418
+Marina Mabrey,Assists,6.5,3.8,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.451324
+Marina Mabrey,Pts+Asts,21.5,21.4,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.453430
+Marina Mabrey,Pts+Rebs+Asts,24.5,26.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.455537
+Marina Mabrey,Assists,3.0,3.8,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.457608
+Marina Mabrey,Points,19.5,17.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.459636
+Marina Mabrey,Rebounds,7.5,5.2,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.461954
+Marina Mabrey,3-PT Made,1.5,2.8,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.463990
+Marina Mabrey,Pts+Rebs+Asts,26.0,26.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.466012
+Caitlin Clark,Points,21.5,21.1,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.468619
+Caitlin Clark,Pts+Rebs+Asts,36.5,35.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.470624
+Caitlin Clark,Fantasy Score,43.5,19.4,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.472556
+Caitlin Clark,Assists,7.5,8.9,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.475836
+Caitlin Clark,Points,19.5,21.1,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.477825
+Caitlin Clark,Rebounds,5.5,5.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.479748
+Caitlin Clark,Rebounds,9.5,5.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.481786
+Caitlin Clark,Pts+Rebs+Asts,39.5,35.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.483813
+Caitlin Clark,Rebounds,8.5,5.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.485755
+Caitlin Clark,Assists,9.5,8.9,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.487733
+Caitlin Clark,Points,20.5,21.1,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.489769
+Caitlin Clark,3-PT Made,3.5,3.3,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.491754
+Caitlin Clark,Points,29.5,21.1,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.493654
+Caitlin Clark,Assists,11.5,8.9,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.495755
+Caitlin Clark,Pts+Rebs+Asts,44.5,35.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.497725
+Caitlin Clark,3-PT Made,5.5,3.3,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.499627
+Caitlin Clark,Pts+Rebs+Asts,49.5,35.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.501710
+Caitlin Clark,Rebounds,6.0,5.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.503668
+Caitlin Clark,Points,22.5,21.1,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.507432
+Caitlin Clark,Rebs+Asts,15.5,14.4,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.509857
+Caitlin Clark,Rebounds,4.5,5.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.511945
+Caitlin Clark,Pts+Asts,31.5,30.0,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.513988
+Caitlin Clark,Assists,8.5,8.9,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.516201
+Caitlin Clark,3-PT Made,4.5,3.3,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.518367
+Caitlin Clark,Points,17.5,21.1,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.520487
+Caitlin Clark,Assists,13.5,8.9,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.522603
+Caitlin Clark,Pts+Rebs+Asts,34.5,35.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.524674
+Caitlin Clark,3-PT Made,2.5,3.3,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.526582
+Caitlin Clark,Pts+Rebs,27.5,26.6,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.528509
+Caitlin Clark,Points,24.5,21.1,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.530581
+Caitlin Clark,Rebounds,7.5,5.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.532489
+Kelsey Mitchell,Pts+Rebs+Asts,20.5,21.4,0.0,0.5,PASS,mitchke01w,2025-06-17T11:02:51.535469
+Kelsey Mitchell,Points,15.5,17.2,0.0,0.5,PASS,mitchke01w,2025-06-17T11:02:51.537723
+Kelsey Mitchell,Points,19.5,17.2,0.0,0.5,PASS,mitchke01w,2025-06-17T11:02:51.539634
+Kelsey Mitchell,Points,17.0,17.2,0.0,0.5,PASS,mitchke01w,2025-06-17T11:02:51.541535
+Kelsey Mitchell,Points,24.5,17.2,0.0,0.5,PASS,mitchke01w,2025-06-17T11:02:51.543816
+Kelsey Mitchell,3-PT Made,3.5,1.7,0.0,0.5,PASS,mitchke01w,2025-06-17T11:02:51.545833
+Kelsey Mitchell,Fantasy Score,24.5,0.0,0.0,0.5,PASS,mitchke01w,2025-06-17T11:02:51.547781
+Kelsey Mitchell,Points,14.5,17.2,0.0,0.5,PASS,mitchke01w,2025-06-17T11:02:51.549743
+Kelsey Mitchell,3-PT Made,2.5,1.7,0.0,0.5,PASS,mitchke01w,2025-06-17T11:02:51.552977
+Kelsey Mitchell,3-PT Made,1.5,1.7,0.0,0.5,PASS,mitchke01w,2025-06-17T11:02:51.554904
+Aliyah Boston,Points,14.5,13.9,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.557909
+Aliyah Boston,Rebounds,10.5,7.6,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.559811
+Aliyah Boston,Points,9.5,13.9,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.561746
+Aliyah Boston,Rebounds,11.5,7.6,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.563787
+Aliyah Boston,Pts+Rebs+Asts,29.5,25.6,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.566160
+Aliyah Boston,Assists,5.5,4.1,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.568113
+Aliyah Boston,Points,19.5,13.9,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.570074
+Aliyah Boston,Pts+Rebs+Asts,34.5,25.6,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.572271
+Aliyah Boston,Assists,2.5,4.1,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.574211
+Aliyah Boston,Points,13.5,13.9,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.576131
+Aliyah Boston,Rebs+Asts,12.0,11.7,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.578281
+Aliyah Boston,Rebounds,9.5,7.6,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.580456
+Aliyah Boston,Points,11.5,13.9,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.582527
+Aliyah Boston,Rebounds,6.5,7.6,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.584489
+Aliyah Boston,Rebounds,7.5,7.6,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.586763
+Aliyah Boston,Rebounds,5.5,7.6,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.588713
+Aliyah Boston,Pts+Rebs+Asts,19.5,25.6,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.590788
+Aliyah Boston,Pts+Rebs,21.5,21.5,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.592987
+Aliyah Boston,Assists,4.5,4.1,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.595742
+Aliyah Boston,Assists,6.5,4.1,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.597868
+Aliyah Boston,Pts+Rebs+Asts,25.5,25.6,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.600096
+Aliyah Boston,Pts+Asts,17.5,18.0,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.602118
+Aliyah Boston,Assists,4.0,4.1,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.606040
+Aliyah Boston,Fantasy Score,31.5,0.0,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.608036
+Aliyah Boston,Assists,3.5,4.1,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.609963
+Tina Charles,Pts+Rebs+Asts,25.5,23.9,0.0,0.5,PASS,charlti01w,2025-06-17T11:02:51.612036
+Tina Charles,Points,15.5,16.8,0.0,0.5,PASS,charlti01w,2025-06-17T11:02:51.614390
+Tina Charles,Fantasy Score,28.5,0.0,0.0,0.5,PASS,charlti01w,2025-06-17T11:02:51.616402
+Tina Charles,Rebounds,7.5,5.5,0.0,0.5,PASS,charlti01w,2025-06-17T11:02:51.620292
+Tina Charles,Rebounds,4.5,5.5,0.0,0.5,PASS,charlti01w,2025-06-17T11:02:51.622538
+Tina Charles,Rebounds,6.0,5.5,0.0,0.5,PASS,charlti01w,2025-06-17T11:02:51.625457
+Tina Charles,Points,19.5,16.8,0.0,0.5,PASS,charlti01w,2025-06-17T11:02:51.627726
+Tina Charles,Pts+Rebs,23.5,22.3,0.0,0.5,PASS,charlti01w,2025-06-17T11:02:51.629769
+Tina Charles,Points,24.5,16.8,0.0,0.5,PASS,charlti01w,2025-06-17T11:02:51.631884
+Tina Charles,Rebounds,5.5,5.5,0.0,0.5,PASS,charlti01w,2025-06-17T11:02:51.634115
+Tina Charles,Rebounds,9.5,5.5,0.0,0.5,PASS,charlti01w,2025-06-17T11:02:51.636133
+Tina Charles,Rebounds,8.5,5.5,0.0,0.5,PASS,charlti01w,2025-06-17T11:02:51.638081
+Tina Charles,Points,14.5,16.8,0.0,0.5,PASS,charlti01w,2025-06-17T11:02:51.640109
+Tina Charles,Points,16.5,16.8,0.0,0.5,PASS,charlti01w,2025-06-17T11:02:51.642406
+Olivia Nelson-Ododa,Rebounds,5.5,6.0,0.0,0.5,PASS,nelsool01w,2025-06-17T11:02:51.644422
+Olivia Nelson-Ododa,Rebounds,7.5,6.0,0.0,0.5,PASS,nelsool01w,2025-06-17T11:02:51.646495
+Olivia Nelson-Ododa,Rebounds,4.5,6.0,0.0,0.5,PASS,nelsool01w,2025-06-17T11:02:51.648600
+Olivia Nelson-Ododa,Rebounds,8.5,6.0,0.0,0.5,PASS,nelsool01w,2025-06-17T11:02:51.652243
+Olivia Nelson-Ododa,Points,9.5,8.6,0.0,0.5,PASS,nelsool01w,2025-06-17T11:02:51.654205
+Olivia Nelson-Ododa,Rebounds,9.5,6.0,0.0,0.5,PASS,nelsool01w,2025-06-17T11:02:51.656387
+Rhyne Howard,Pts+Rebs,23.0,23.8,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.658461
+Rhyne Howard,Fantasy Score,35.5,0.0,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.660507
+Rhyne Howard,Assists,5.5,4.6,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.662675
+Rhyne Howard,Points,14.5,18.3,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.664736
+Rhyne Howard,Assists,3.5,4.6,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.666707
+Rhyne Howard,Pts+Asts,22.0,22.9,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.668997
+Rhyne Howard,Assists,4.0,4.6,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.671076
+Rhyne Howard,Assists,2.5,4.6,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.673850
+Rhyne Howard,Pts+Rebs+Asts,39.5,28.4,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.675999
+Rhyne Howard,Assists,6.5,4.6,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.677988
+Rhyne Howard,Pts+Rebs+Asts,29.5,28.4,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.679970
+Rhyne Howard,Pts+Rebs+Asts,24.5,28.4,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.681941
+Rhyne Howard,Assists,4.5,4.6,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.683993
+Rhyne Howard,3-PT Made,3.5,3.3,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.685918
+Rhyne Howard,Points,17.5,18.3,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.687842
+Rhyne Howard,Pts+Rebs+Asts,27.5,28.4,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.690054
+Rhyne Howard,Pts+Rebs+Asts,34.5,28.4,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.692215
+Rhyne Howard,3-PT Made,4.5,3.3,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.694188
+Rhyne Howard,Points,24.5,18.3,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.696308
+Rhyne Howard,Rebounds,7.5,5.5,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.698576
+Rhyne Howard,Rebounds,4.5,5.5,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.702250
+Rhyne Howard,Rebounds,8.5,5.5,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.704735
+Rhyne Howard,Points,19.5,18.3,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.706789
+Rhyne Howard,Rebounds,5.5,5.5,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.708783
+Rhyne Howard,Rebounds,3.5,5.5,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.710897
+Rhyne Howard,Rebounds,5.0,5.5,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.712865
+Rhyne Howard,3-PT Made,5.5,3.3,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.714815
+Rhyne Howard,3-PT Made,2.5,3.3,0.0,0.5,PASS,howarrh01w,2025-06-17T11:02:51.716877
+Allisha Gray,Pts+Rebs,22.0,25.8,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.719294
+Allisha Gray,Fantasy Score,31.0,0.0,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.721276
+Allisha Gray,3-PT Made,1.5,2.2,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.723294
+Allisha Gray,Pts+Rebs+Asts,24.5,30.0,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.725518
+Allisha Gray,Points,24.5,20.6,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.727426
+Allisha Gray,Assists,5.5,4.2,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.731186
+Allisha Gray,Assists,2.5,4.2,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.733275
+Allisha Gray,Points,15.5,20.6,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.735239
+Allisha Gray,3-PT Made,3.5,2.2,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.737198
+Allisha Gray,Points,14.5,20.6,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.739445
+Allisha Gray,Points,16.5,20.6,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.742316
+Allisha Gray,Pts+Rebs+Asts,29.5,30.0,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.744316
+Allisha Gray,Rebounds,6.5,5.2,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.746735
+Allisha Gray,3-PT Made,2.5,2.2,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.748653
+Allisha Gray,Rebounds,5.0,5.2,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.750572
+Allisha Gray,Pts+Rebs+Asts,27.5,30.0,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.752763
+Allisha Gray,Points,19.5,20.6,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.755623
+Allisha Gray,Assists,4.5,4.2,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.757476
+Allisha Gray,Rebounds,4.5,5.2,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.759629
+Allisha Gray,Points,18.5,20.6,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.761637
+Allisha Gray,3-PT Made,4.5,2.2,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.763547
+Allisha Gray,Pts+Rebs+Asts,25.5,30.0,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.765772
+Allisha Gray,Pts+Asts,20.5,24.8,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.767750
+Allisha Gray,Rebounds,5.5,5.2,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.770698
+Allisha Gray,Rebounds,7.5,5.2,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.772837
+Allisha Gray,Rebounds,3.5,5.2,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.774855
+Allisha Gray,Pts+Rebs+Asts,34.5,30.0,0.0,0.5,PASS,grayyal01w,2025-06-17T11:02:51.776790
+Brittney Griner,Pts+Rebs,16.0,17.0,0.0,0.5,PASS,grinebr01w,2025-06-17T11:02:51.778771
+Brittney Griner,Points,14.5,10.8,0.0,0.5,PASS,grinebr01w,2025-06-17T11:02:51.781176
+Brittney Griner,Points,7.5,10.8,0.0,0.5,PASS,grinebr01w,2025-06-17T11:02:51.783141
+Brittney Griner,Rebounds,7.5,6.2,0.0,0.5,PASS,grinebr01w,2025-06-17T11:02:51.785932
+Brittney Griner,Fantasy Score,22.5,2.3,0.0,0.5,PASS,grinebr01w,2025-06-17T11:02:51.788519
+Brittney Griner,Rebounds,4.5,6.2,0.0,0.5,PASS,grinebr01w,2025-06-17T11:02:51.790473
+Brittney Griner,Pts+Rebs+Asts,18.0,17.6,0.0,0.5,PASS,grinebr01w,2025-06-17T11:02:51.792414
+Brittney Griner,Points,10.5,10.8,0.0,0.5,PASS,grinebr01w,2025-06-17T11:02:51.795352
+Brittney Griner,Points,9.5,10.8,0.0,0.5,PASS,grinebr01w,2025-06-17T11:02:51.797212
+Brittney Griner,Rebounds,8.5,6.2,0.0,0.5,PASS,grinebr01w,2025-06-17T11:02:51.799286
+Brittney Griner,Rebounds,9.5,6.2,0.0,0.5,PASS,grinebr01w,2025-06-17T11:02:51.801460
+Brittney Griner,Points,17.5,10.8,0.0,0.5,PASS,grinebr01w,2025-06-17T11:02:51.803389
+Brittney Griner,Rebounds,5.5,6.2,0.0,0.5,PASS,grinebr01w,2025-06-17T11:02:51.805317
+Brionna Jones,Fantasy Score,29.0,0.0,0.0,0.5,PASS,jonesbr01w,2025-06-17T11:02:51.807512
+Brionna Jones,Rebounds,5.5,8.6,0.0,0.5,PASS,jonesbr01w,2025-06-17T11:02:51.809455
+Brionna Jones,Rebounds,6.5,8.6,0.0,0.5,PASS,jonesbr01w,2025-06-17T11:02:51.811347
+Brionna Jones,Points,9.5,12.7,0.0,0.5,PASS,jonesbr01w,2025-06-17T11:02:51.813253
+Brionna Jones,Points,14.5,12.7,0.0,0.5,PASS,jonesbr01w,2025-06-17T11:02:51.815596
+Brionna Jones,Rebounds,9.5,8.6,0.0,0.5,PASS,jonesbr01w,2025-06-17T11:02:51.818316
+Brionna Jones,Points,12.0,12.7,0.0,0.5,PASS,jonesbr01w,2025-06-17T11:02:51.821524
+Brionna Jones,Rebounds,8.0,8.6,0.0,0.5,PASS,jonesbr01w,2025-06-17T11:02:51.823625
+Brionna Jones,Rebounds,7.5,8.6,0.0,0.5,PASS,jonesbr01w,2025-06-17T11:02:51.825592
+Brionna Jones,Pts+Rebs,20.5,21.3,0.0,0.5,PASS,jonesbr01w,2025-06-17T11:02:51.827586
+Brionna Jones,Points,19.5,12.7,0.0,0.5,PASS,jonesbr01w,2025-06-17T11:02:51.830805
+Brionna Jones,Rebounds,11.5,8.6,0.0,0.5,PASS,jonesbr01w,2025-06-17T11:02:51.832805
+Brionna Jones,Pts+Rebs+Asts,22.5,22.9,0.0,0.5,PASS,jonesbr01w,2025-06-17T11:02:51.835210
+Brionna Jones,Points,17.5,12.7,0.0,0.5,PASS,jonesbr01w,2025-06-17T11:02:51.837209
+Brionna Jones,Rebounds,10.5,8.6,0.0,0.5,PASS,jonesbr01w,2025-06-17T11:02:51.839139
+Breanna Stewart,Points,17.5,19.5,0.0,0.5,PASS,stewabr01w,2025-06-17T11:02:51.841155
+Breanna Stewart,Pts+Rebs,26.0,24.9,0.0,0.5,PASS,stewabr01w,2025-06-17T11:02:51.843368
+Breanna Stewart,Rebounds,5.5,5.4,0.0,0.5,PASS,stewabr01w,2025-06-17T11:02:51.845315
+Breanna Stewart,Rebounds,4.5,5.4,0.0,0.5,PASS,stewabr01w,2025-06-17T11:02:51.848266
+Breanna Stewart,Fantasy Score,40.0,0.0,0.0,0.5,PASS,stewabr01w,2025-06-17T11:02:51.850668
+Breanna Stewart,Assists,5.5,3.5,0.0,0.5,PASS,stewabr01w,2025-06-17T11:02:51.852608
+Breanna Stewart,Assists,3.5,3.5,0.0,0.5,PASS,stewabr01w,2025-06-17T11:02:51.854598
+Breanna Stewart,Points,20.0,19.5,0.0,0.5,PASS,stewabr01w,2025-06-17T11:02:51.857068
+Breanna Stewart,Rebounds,7.5,5.4,0.0,0.5,PASS,stewabr01w,2025-06-17T11:02:51.859277
+Breanna Stewart,Rebounds,8.5,5.4,0.0,0.5,PASS,stewabr01w,2025-06-17T11:02:51.861241
+Breanna Stewart,Points,29.5,19.5,0.0,0.5,PASS,stewabr01w,2025-06-17T11:02:51.863684
+Breanna Stewart,Pts+Rebs+Asts,24.5,28.4,0.0,0.5,PASS,stewabr01w,2025-06-17T11:02:51.866592
+Breanna Stewart,Pts+Rebs+Asts,29.5,28.4,0.0,0.5,PASS,stewabr01w,2025-06-17T11:02:51.868730
+Breanna Stewart,Pts+Rebs+Asts,34.5,28.4,0.0,0.5,PASS,stewabr01w,2025-06-17T11:02:51.871107
+Breanna Stewart,Rebounds,9.5,5.4,0.0,0.5,PASS,stewabr01w,2025-06-17T11:02:51.873068
+Breanna Stewart,Points,24.5,19.5,0.0,0.5,PASS,stewabr01w,2025-06-17T11:02:51.875037
+Breanna Stewart,Rebounds,6.0,5.4,0.0,0.5,PASS,stewabr01w,2025-06-17T11:02:51.878135
+Sabrina Ionescu,Assists,5.0,5.1,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.880163
+Sabrina Ionescu,Rebounds,5.5,3.6,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.882147
+Sabrina Ionescu,Pts+Rebs+Asts,28.0,28.2,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.884402
+Sabrina Ionescu,Assists,3.5,5.1,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.886497
+Sabrina Ionescu,Points,19.5,19.5,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.888498
+Sabrina Ionescu,3-PT Made,1.5,2.8,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.890741
+Sabrina Ionescu,Points,20.5,19.5,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.892707
+Sabrina Ionescu,Assists,4.5,5.1,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.894936
+Sabrina Ionescu,Assists,7.5,5.1,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.896968
+Sabrina Ionescu,Points,14.5,19.5,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.899541
+Sabrina Ionescu,3-PT Made,2.5,2.8,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.901586
+Sabrina Ionescu,Points,18.5,19.5,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.904870
+Sabrina Ionescu,Pts+Rebs+Asts,29.5,28.2,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.907025
+Sabrina Ionescu,Pts+Rebs+Asts,34.5,28.2,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.909334
+Sabrina Ionescu,3-PT Made,3.5,2.8,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.912020
+Sabrina Ionescu,Pts+Rebs+Asts,24.5,28.2,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.914429
+Sabrina Ionescu,Points,24.5,19.5,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.916542
+Sabrina Ionescu,Pts+Rebs,23.0,23.1,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.919154
+Sabrina Ionescu,Rebounds,6.5,3.6,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.921226
+Sabrina Ionescu,Rebounds,2.5,3.6,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.923198
+Sabrina Ionescu,Assists,8.5,5.1,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.925561
+Sabrina Ionescu,Pts+Rebs+Asts,39.5,28.2,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.928502
+Sabrina Ionescu,Rebounds,4.5,3.6,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.930493
+Sabrina Ionescu,Assists,6.5,5.1,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.932719
+Sabrina Ionescu,Fantasy Score,35.5,0.0,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.934896
+Sabrina Ionescu,Pts+Asts,23.5,24.6,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.936993
+Sabrina Ionescu,Rebounds,4.0,3.6,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.939210
+Sabrina Ionescu,Rebounds,3.5,3.6,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.941263
+Sabrina Ionescu,Rebs+Asts,9.0,8.7,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.944080
+Sabrina Ionescu,3-PT Made,4.5,2.8,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.946304
+Sabrina Ionescu,Points,17.5,19.5,0.0,0.5,PASS,ionessa01w,2025-06-17T11:02:51.948408
+Jonquel Jones,Pts+Rebs+Asts,26.0,24.5,0.0,0.5,PASS,jonesjo01w,2025-06-17T11:02:51.950402
+Jonquel Jones,3-PT Made,1.5,1.5,0.0,0.5,PASS,jonesjo01w,2025-06-17T11:02:51.952334
+Jonquel Jones,3-PT Made,2.5,1.5,0.0,0.5,PASS,jonesjo01w,2025-06-17T11:02:51.954486
+Jonquel Jones,Points,9.5,12.4,0.0,0.5,PASS,jonesjo01w,2025-06-17T11:02:51.956424
+Jonquel Jones,Points,13.5,12.4,0.0,0.5,PASS,jonesjo01w,2025-06-17T11:02:51.958389
+Jonquel Jones,Rebounds,10.0,9.4,0.0,0.5,PASS,jonesjo01w,2025-06-17T11:02:51.960510
+Jonquel Jones,Pts+Rebs,23.5,21.8,0.0,0.5,PASS,jonesjo01w,2025-06-17T11:02:51.962507
+Jonquel Jones,Points,17.5,12.4,0.0,0.5,PASS,jonesjo01w,2025-06-17T11:02:51.964450
+Jonquel Jones,Points,11.5,12.4,0.0,0.5,PASS,jonesjo01w,2025-06-17T11:02:51.966419
+Jonquel Jones,Rebounds,10.5,9.4,0.0,0.5,PASS,jonesjo01w,2025-06-17T11:02:51.969550
+Jonquel Jones,Rebounds,14.5,9.4,0.0,0.5,PASS,jonesjo01w,2025-06-17T11:02:51.973277
+Jonquel Jones,3-PT Made,0.5,1.5,0.0,0.5,PASS,jonesjo01w,2025-06-17T11:02:51.975506
+Jonquel Jones,Rebounds,7.5,9.4,0.0,0.5,PASS,jonesjo01w,2025-06-17T11:02:51.977433
+Jonquel Jones,Rebounds,13.5,9.4,0.0,0.5,PASS,jonesjo01w,2025-06-17T11:02:51.979378
+Jonquel Jones,Fantasy Score,33.0,7.2,0.0,0.5,PASS,jonesjo01w,2025-06-17T11:02:51.981539
+Jonquel Jones,Rebounds,8.5,9.4,0.0,0.5,PASS,jonesjo01w,2025-06-17T11:02:51.983431
+Jonquel Jones,Points,19.5,12.4,0.0,0.5,PASS,jonesjo01w,2025-06-17T11:02:51.985410
+Jonquel Jones,Points,12.5,12.4,0.0,0.5,PASS,jonesjo01w,2025-06-17T11:02:51.987503
+Jonquel Jones,Points,14.5,12.4,0.0,0.5,PASS,jonesjo01w,2025-06-17T11:02:51.989612
+Jonquel Jones,Rebounds,9.5,9.4,0.0,0.5,PASS,jonesjo01w,2025-06-17T11:02:51.991510
+Natasha Cloud,Fantasy Score,25.5,0.0,0.0,0.5,PASS,cloudna01w,2025-06-17T11:02:51.993504
+Natasha Cloud,Points,7.5,9.0,0.0,0.5,PASS,cloudna01w,2025-06-17T11:02:51.995735
+Natasha Cloud,Assists,8.5,6.1,0.0,0.5,PASS,cloudna01w,2025-06-17T11:02:51.997657
+Natasha Cloud,Pts+Rebs+Asts,17.5,19.1,0.0,0.5,PASS,cloudna01w,2025-06-17T11:02:51.999713
+Natasha Cloud,Assists,4.5,6.1,0.0,0.5,PASS,cloudna01w,2025-06-17T11:02:52.002100
+Natasha Cloud,Pts+Rebs+Asts,19.5,19.1,0.0,0.5,PASS,cloudna01w,2025-06-17T11:02:52.004250
+Natasha Cloud,Pts+Asts,14.5,15.1,0.0,0.5,PASS,cloudna01w,2025-06-17T11:02:52.006221
+Natasha Cloud,Points,11.5,9.0,0.0,0.5,PASS,cloudna01w,2025-06-17T11:02:52.008230
+Natasha Cloud,Assists,5.5,6.1,0.0,0.5,PASS,cloudna01w,2025-06-17T11:02:52.010699
+Natasha Cloud,Points,14.5,9.0,0.0,0.5,PASS,cloudna01w,2025-06-17T11:02:52.012612
+Natasha Cloud,Assists,7.5,6.1,0.0,0.5,PASS,cloudna01w,2025-06-17T11:02:52.014564
+Natasha Cloud,Points,8.5,9.0,0.0,0.5,PASS,cloudna01w,2025-06-17T11:02:52.016768
+Natasha Cloud,Assists,6.5,6.1,0.0,0.5,PASS,cloudna01w,2025-06-17T11:02:52.018825
+Natasha Cloud,Rebounds,5.5,4.0,0.0,0.5,PASS,cloudna01w,2025-06-17T11:02:52.020675
+Natasha Cloud,Rebounds,3.5,4.0,0.0,0.5,PASS,cloudna01w,2025-06-17T11:02:52.022889
+Natasha Cloud,Points,9.5,9.0,0.0,0.5,PASS,cloudna01w,2025-06-17T11:02:52.024896
+Natasha Cloud,Points,5.5,9.0,0.0,0.5,PASS,cloudna01w,2025-06-17T11:02:52.026810
+Natasha Cloud,Assists,9.5,6.1,0.0,0.5,PASS,cloudna01w,2025-06-17T11:02:52.028767
+Napheesa Collier,3-PT Made,2.5,1.6,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.032221
+Napheesa Collier,3-PT Made,0.5,1.6,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.034347
+Napheesa Collier,Pts+Rebs+Asts,44.5,38.8,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.036554
+Napheesa Collier,Points,25.5,26.1,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.038759
+Napheesa Collier,Pts+Rebs+Asts,39.5,38.8,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.040772
+Napheesa Collier,Rebounds,7.5,8.8,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.042784
+Napheesa Collier,Fantasy Score,47.5,0.0,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.045099
+Napheesa Collier,Pts+Rebs,33.0,34.9,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.047101
+Napheesa Collier,Rebs+Asts,13.5,12.7,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.049256
+Napheesa Collier,Assists,3.5,3.9,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.052444
+Napheesa Collier,Rebounds,8.5,8.8,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.054402
+Napheesa Collier,Pts+Asts,28.5,30.0,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.056347
+Napheesa Collier,Points,23.5,26.1,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.058670
+Napheesa Collier,Rebounds,9.0,8.8,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.061662
+Napheesa Collier,Points,22.5,26.1,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.063740
+Napheesa Collier,Assists,5.5,3.9,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.066243
+Napheesa Collier,Pts+Rebs+Asts,34.5,38.8,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.068186
+Napheesa Collier,Assists,6.5,3.9,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.070107
+Napheesa Collier,Pts+Rebs+Asts,37.5,38.8,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.072371
+Napheesa Collier,Pts+Rebs+Asts,49.5,38.8,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.074469
+Napheesa Collier,Points,19.5,26.1,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.076403
+Napheesa Collier,Rebounds,11.5,8.8,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.078570
+Napheesa Collier,Points,29.5,26.1,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.080679
+Napheesa Collier,Assists,4.0,3.9,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.083543
+Napheesa Collier,3-PT Made,1.5,1.6,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.085594
+Napheesa Collier,Assists,2.5,3.9,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.087563
+Napheesa Collier,Rebounds,12.5,8.8,0.0,0.5,PASS,collina01w,2025-06-17T11:02:52.090357
+Kayla McBride,Assists,3.5,3.8,0.0,0.5,PASS,mcbrika01w,2025-06-17T11:02:52.092487
+Kayla McBride,3-PT Made,3.5,2.8,0.0,0.5,PASS,mcbrika01w,2025-06-17T11:02:52.094570
+Kayla McBride,Pts+Asts,19.0,18.0,0.0,0.5,PASS,mcbrika01w,2025-06-17T11:02:52.096642
+Kayla McBride,Points,17.5,14.2,0.0,0.5,PASS,mcbrika01w,2025-06-17T11:02:52.098741
+Kayla McBride,3-PT Made,4.5,2.8,0.0,0.5,PASS,mcbrika01w,2025-06-17T11:02:52.100773
+Kayla McBride,Points,14.5,14.2,0.0,0.5,PASS,mcbrika01w,2025-06-17T11:02:52.102780
+Kayla McBride,3-PT Made,2.5,2.8,0.0,0.5,PASS,mcbrika01w,2025-06-17T11:02:52.105739
+Kayla McBride,Rebounds,5.5,3.2,0.0,0.5,PASS,mcbrika01w,2025-06-17T11:02:52.108630
+Kayla McBride,Points,11.5,14.2,0.0,0.5,PASS,mcbrika01w,2025-06-17T11:02:52.111587
+Kayla McBride,Points,19.5,14.2,0.0,0.5,PASS,mcbrika01w,2025-06-17T11:02:52.113578
+Kayla McBride,Fantasy Score,26.0,6.3,0.0,0.5,PASS,mcbrika01w,2025-06-17T11:02:52.115515
+Kayla McBride,Pts+Rebs+Asts,22.5,21.2,0.0,0.5,PASS,mcbrika01w,2025-06-17T11:02:52.117497
+Kayla McBride,Rebounds,3.5,3.2,0.0,0.5,PASS,mcbrika01w,2025-06-17T11:02:52.119499
+Kayla McBride,Points,15.5,14.2,0.0,0.5,PASS,mcbrika01w,2025-06-17T11:02:52.121556
+Kayla McBride,3-PT Made,1.5,2.8,0.0,0.5,PASS,mcbrika01w,2025-06-17T11:02:52.123478
+Kayla McBride,Assists,2.5,3.8,0.0,0.5,PASS,mcbrika01w,2025-06-17T11:02:52.125411
+Kayla McBride,Pts+Rebs+Asts,29.5,21.2,0.0,0.5,PASS,mcbrika01w,2025-06-17T11:02:52.127550
+Kayla McBride,Points,24.5,14.2,0.0,0.5,PASS,mcbrika01w,2025-06-17T11:02:52.129569
+Kayla McBride,Assists,5.5,3.8,0.0,0.5,PASS,mcbrika01w,2025-06-17T11:02:52.131490
+Kayla McBride,Assists,4.5,3.8,0.0,0.5,PASS,mcbrika01w,2025-06-17T11:02:52.133381
+Jewell Loyd,Rebounds,7.5,4.2,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.135610
+Jewell Loyd,Pts+Rebs+Asts,22.5,17.4,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.137560
+Jewell Loyd,Rebs+Asts,6.5,6.3,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.139515
+Jewell Loyd,Rebounds,4.5,4.2,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.141491
+Jewell Loyd,Pts+Rebs+Asts,29.5,17.4,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.143520
+Jewell Loyd,Pts+Rebs+Asts,24.5,17.4,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.145452
+Jewell Loyd,Pts+Rebs+Asts,19.5,17.4,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.147458
+Jewell Loyd,Pts+Asts,17.5,13.2,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.149427
+Jewell Loyd,Points,11.5,11.1,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.151459
+Jewell Loyd,Points,17.5,11.1,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.153389
+Jewell Loyd,Points,16.5,11.1,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.155392
+Jewell Loyd,Fantasy Score,26.0,0.0,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.157317
+Jewell Loyd,Pts+Rebs+Asts,21.5,17.4,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.159366
+Jewell Loyd,3-PT Made,2.5,2.4,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.161395
+Jewell Loyd,Rebounds,6.5,4.2,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.163332
+Jewell Loyd,Rebounds,3.5,4.2,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.165284
+Jewell Loyd,3-PT Made,3.5,2.4,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.167185
+Jewell Loyd,3-PT Made,1.5,2.4,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.169626
+Jewell Loyd,Assists,4.5,2.1,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.171609
+Jewell Loyd,Points,19.5,11.1,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.173594
+Jewell Loyd,3-PT Made,4.5,2.4,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.175605
+Jewell Loyd,Pts+Rebs,18.5,15.3,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.177477
+Jewell Loyd,Assists,3.5,2.1,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.179371
+Jewell Loyd,Rebounds,2.5,4.2,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.181261
+Jewell Loyd,Points,14.5,11.1,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.183276
+Jewell Loyd,Points,13.5,11.1,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.185266
+Jewell Loyd,Assists,1.5,2.1,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.187153
+Jewell Loyd,Rebounds,4.0,4.2,0.0,0.5,PASS,loyddje01w,2025-06-17T11:02:52.189349
+Chelsea Gray,Rebounds,4.5,4.1,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.191330
+Chelsea Gray,Assists,7.5,3.4,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.193229
+Chelsea Gray,Rebounds,2.5,4.1,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.195168
+Chelsea Gray,Pts+Asts,19.5,18.5,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.197151
+Chelsea Gray,Pts+Rebs,17.5,19.2,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.199078
+Chelsea Gray,Assists,5.5,3.4,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.200898
+Chelsea Gray,Assists,5.0,3.4,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.202698
+Chelsea Gray,Pts+Rebs+Asts,19.5,22.6,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.204923
+Chelsea Gray,Points,19.5,15.1,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.206852
+Chelsea Gray,3-PT Made,3.5,2.1,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.208718
+Chelsea Gray,Assists,6.5,3.4,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.210733
+Chelsea Gray,Points,14.5,15.1,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.212614
+Chelsea Gray,Rebs+Asts,8.5,7.5,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.214454
+Chelsea Gray,Assists,3.5,3.4,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.216256
+Chelsea Gray,Points,11.5,15.1,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.218296
+Chelsea Gray,Rebounds,5.5,4.1,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.220469
+Chelsea Gray,3-PT Made,1.5,2.1,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.222330
+Chelsea Gray,Points,17.5,15.1,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.224365
+Chelsea Gray,Pts+Rebs+Asts,29.5,22.6,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.226243
+Chelsea Gray,Pts+Rebs+Asts,22.5,22.6,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.228251
+Chelsea Gray,Points,24.5,15.1,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.230075
+Chelsea Gray,3-PT Made,2.5,2.1,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.232048
+Chelsea Gray,Fantasy Score,29.0,0.0,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.234140
+Chelsea Gray,Rebounds,3.5,4.1,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.236105
+Chelsea Gray,Pts+Rebs+Asts,24.5,22.6,0.0,0.5,PASS,grayych01w,2025-06-17T11:02:52.238171
+Jackie Young,Pts+Rebs+Asts,34.5,26.1,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.240225
+Jackie Young,Pts+Rebs+Asts,28.5,26.1,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.242090
+Jackie Young,Rebounds,4.0,3.9,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.243893
+Jackie Young,Rebounds,7.5,3.9,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.245951
+Jackie Young,Pts+Rebs,24.5,22.9,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.247953
+Jackie Young,Points,22.5,19.0,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.250083
+Jackie Young,Points,19.5,19.0,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.252118
+Jackie Young,Points,29.5,19.0,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.254128
+Jackie Young,Pts+Rebs+Asts,39.5,26.1,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.256090
+Jackie Young,Assists,5.5,3.2,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.257986
+Jackie Young,Rebounds,6.5,3.9,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.260030
+Jackie Young,Rebounds,5.5,3.9,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.262062
+Jackie Young,Assists,3.5,3.2,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.263985
+Jackie Young,Assists,4.0,3.2,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.266066
+Jackie Young,Points,19.5,19.0,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.267992
+Jackie Young,Points,17.5,19.0,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.269895
+Jackie Young,Assists,7.5,3.2,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.271741
+Jackie Young,Pts+Rebs+Asts,24.5,26.1,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.273805
+Jackie Young,Rebounds,3.5,3.9,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.275706
+Jackie Young,Pts+Rebs+Asts,31.5,26.1,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.277583
+Jackie Young,Points,24.5,19.0,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.279609
+Jackie Young,Assists,6.5,3.2,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.281593
+Jackie Young,3-PT Made,3.5,1.9,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.283502
+Jackie Young,Points,18.5,19.0,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.285356
+Jackie Young,3-PT Made,1.5,1.9,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.287322
+Jackie Young,3-PT Made,2.5,1.9,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.289314
+Jackie Young,Fantasy Score,36.0,0.0,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.291098
+Jackie Young,Assists,2.5,3.2,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.292905
+Jackie Young,Pts+Asts,24.5,22.2,0.0,0.5,PASS,youngja01w,2025-06-17T11:02:52.294921
+Courtney Williams,Pts+Rebs+Asts,24.5,21.2,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.297477
+Courtney Williams,Points,11.5,11.1,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.299501
+Courtney Williams,Assists,3.5,5.7,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.301785
+Courtney Williams,Pts+Asts,15.5,16.8,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.303631
+Courtney Williams,Rebs+Asts,10.0,10.1,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.305445
+Courtney Williams,Points,17.5,11.1,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.307524
+Courtney Williams,Rebounds,5.5,4.4,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.309427
+Courtney Williams,Pts+Rebs,14.5,15.5,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.311333
+Courtney Williams,Points,10.5,11.1,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.313346
+Courtney Williams,Rebounds,7.5,4.4,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.315803
+Courtney Williams,Rebounds,4.0,4.4,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.317678
+Courtney Williams,Pts+Rebs+Asts,19.5,21.2,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.319652
+Courtney Williams,Rebounds,3.5,4.4,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.321679
+Courtney Williams,Rebounds,4.5,4.4,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.323565
+Courtney Williams,Points,14.5,11.1,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.326184
+Courtney Williams,Assists,6.0,5.7,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.328246
+Courtney Williams,Rebounds,2.5,4.4,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.330348
+Courtney Williams,Pts+Rebs+Asts,29.5,21.2,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.332359
+Courtney Williams,Assists,6.5,5.7,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.334262
+Courtney Williams,Points,9.5,11.1,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.337232
+Courtney Williams,Assists,4.5,5.7,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.339156
+Courtney Williams,Assists,7.5,5.7,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.341102
+Courtney Williams,Fantasy Score,26.5,0.0,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.343296
+Courtney Williams,Points,7.5,11.1,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.345268
+Courtney Williams,Pts+Rebs+Asts,20.5,21.2,0.0,0.5,PASS,willico01w,2025-06-17T11:02:52.347096
+Alanna Smith,3-PT Made,0.5,1.6,0.0,0.5,PASS,smithal01w,2025-06-17T11:02:52.349191
+Alanna Smith,Rebounds,5.0,4.3,0.0,0.5,PASS,smithal01w,2025-06-17T11:02:52.351212
+Alanna Smith,Rebounds,6.5,4.3,0.0,0.5,PASS,smithal01w,2025-06-17T11:02:52.353185
+Alanna Smith,Fantasy Score,28.0,0.0,0.0,0.5,PASS,smithal01w,2025-06-17T11:02:52.355146
+Alanna Smith,Points,17.5,10.2,0.0,0.5,PASS,smithal01w,2025-06-17T11:02:52.357207
+Alanna Smith,Pts+Rebs+Asts,18.0,17.2,0.0,0.5,PASS,smithal01w,2025-06-17T11:02:52.359364
+Alanna Smith,Points,10.0,10.2,0.0,0.5,PASS,smithal01w,2025-06-17T11:02:52.361384
+Alanna Smith,Pts+Rebs,15.5,14.5,0.0,0.5,PASS,smithal01w,2025-06-17T11:02:52.363609
+Alanna Smith,3-PT Made,1.5,1.6,0.0,0.5,PASS,smithal01w,2025-06-17T11:02:52.365584
+Alanna Smith,Rebounds,7.5,4.3,0.0,0.5,PASS,smithal01w,2025-06-17T11:02:52.367497
+Alanna Smith,Points,7.5,10.2,0.0,0.5,PASS,smithal01w,2025-06-17T11:02:52.369396
+Alanna Smith,Points,9.5,10.2,0.0,0.5,PASS,smithal01w,2025-06-17T11:02:52.371463
+Alanna Smith,3-PT Made,2.5,1.6,0.0,0.5,PASS,smithal01w,2025-06-17T11:02:52.373426
+Alanna Smith,Points,14.5,10.2,0.0,0.5,PASS,smithal01w,2025-06-17T11:02:52.375560
+Alanna Smith,Rebounds,3.5,4.3,0.0,0.5,PASS,smithal01w,2025-06-17T11:02:52.377594
+Alanna Smith,Rebounds,4.5,4.3,0.0,0.5,PASS,smithal01w,2025-06-17T11:02:52.379639
+Alanna Smith,Rebounds,5.5,4.3,0.0,0.5,PASS,smithal01w,2025-06-17T11:02:52.381602
+Alanna Smith,Points,11.5,10.2,0.0,0.5,PASS,smithal01w,2025-06-17T11:02:52.383688
+Arike Ogunbowale,3-PT Made,3.5,2.4,0.0,0.5,PASS,ogunbar01w,2025-06-17T11:02:52.385713
+Arike Ogunbowale,Points,19.5,17.5,0.0,0.5,PASS,ogunbar01w,2025-06-17T11:02:52.387603
+Arike Ogunbowale,3-PT Made,2.5,2.4,0.0,0.5,PASS,ogunbar01w,2025-06-17T11:02:52.390642
+Arike Ogunbowale,Fantasy Score,30.5,0.0,0.0,0.5,PASS,ogunbar01w,2025-06-17T11:02:52.392680
+Arike Ogunbowale,3-PT Made,1.5,2.4,0.0,0.5,PASS,ogunbar01w,2025-06-17T11:02:52.394604
+Arike Ogunbowale,Assists,4.5,4.8,0.0,0.5,PASS,ogunbar01w,2025-06-17T11:02:52.396507
+Arike Ogunbowale,Points,24.5,17.5,0.0,0.5,PASS,ogunbar01w,2025-06-17T11:02:52.398527
+Arike Ogunbowale,Assists,3.5,4.8,0.0,0.5,PASS,ogunbar01w,2025-06-17T11:02:52.401266
+Arike Ogunbowale,Points,17.5,17.5,0.0,0.5,PASS,ogunbar01w,2025-06-17T11:02:52.403166
+Arike Ogunbowale,Points,14.5,17.5,0.0,0.5,PASS,ogunbar01w,2025-06-17T11:02:52.405252
+Arike Ogunbowale,Points,15.5,17.5,0.0,0.5,PASS,ogunbar01w,2025-06-17T11:02:52.407233
+Arike Ogunbowale,Pts+Rebs+Asts,25.0,25.5,0.0,0.5,PASS,ogunbar01w,2025-06-17T11:02:52.410158
+Arike Ogunbowale,Points,18.5,17.5,0.0,0.5,PASS,ogunbar01w,2025-06-17T11:02:52.412188
+Arike Ogunbowale,Assists,5.5,4.8,0.0,0.5,PASS,ogunbar01w,2025-06-17T11:02:52.414170
+Arike Ogunbowale,Assists,7.5,4.8,0.0,0.5,PASS,ogunbar01w,2025-06-17T11:02:52.416084
+Arike Ogunbowale,Pts+Asts,21.5,22.3,0.0,0.5,PASS,ogunbar01w,2025-06-17T11:02:52.418013
+Paige Bueckers,Points,16.5,17.38,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.420219
+Paige Bueckers,Points,14.5,17.38,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.422050
+Paige Bueckers,Fantasy Score,38.5,0.0,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.423834
+Paige Bueckers,Points,24.5,17.38,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.425811
+Paige Bueckers,Assists,6.5,6.12,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.427676
+Paige Bueckers,Points,19.5,17.38,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.429532
+Paige Bueckers,Rebounds,3.5,4.5,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.431409
+Paige Bueckers,Rebounds,5.5,4.5,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.433379
+Paige Bueckers,Assists,5.5,6.12,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.435327
+Paige Bueckers,3-PT Made,2.5,1.25,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.437154
+Paige Bueckers,Points,18.0,17.38,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.439090
+Paige Bueckers,Assists,7.5,6.12,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.440863
+Paige Bueckers,Pts+Rebs,22.5,21.88,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.443339
+Paige Bueckers,Assists,10.5,6.12,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.445138
+Paige Bueckers,3-PT Made,0.5,1.25,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.446965
+Paige Bueckers,Pts+Rebs+Asts,39.5,28.0,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.448813
+Paige Bueckers,Rebounds,5.0,4.5,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.450824
+Paige Bueckers,Pts+Rebs+Asts,29.5,28.0,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.452653
+Paige Bueckers,Pts+Rebs+Asts,34.5,28.0,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.454515
+Paige Bueckers,Rebounds,6.5,4.5,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.456188
+Paige Bueckers,Pts+Asts,24.5,23.5,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.457894
+Paige Bueckers,Assists,4.5,6.12,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.459612
+Paige Bueckers,Rebounds,7.5,4.5,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.461499
+Paige Bueckers,3-PT Made,1.5,1.25,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.463265
+Paige Bueckers,Assists,9.5,6.12,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.465174
+Paige Bueckers,Pts+Rebs+Asts,24.5,28.0,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.467209
+Paige Bueckers,Rebounds,4.5,4.5,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.469057
+Paige Bueckers,Rebs+Asts,11.0,10.62,0.0,0.5,PASS,bueckpa01w,2025-06-17T11:02:52.470757
+DiJonai Carrington,Points,19.5,13.3,0.0,0.5,PASS,carridi01w,2025-06-17T11:02:52.473329
+DiJonai Carrington,Pts+Rebs+Asts,20.5,20.8,0.0,0.5,PASS,carridi01w,2025-06-17T11:02:52.475335
+DiJonai Carrington,Rebounds,5.5,5.2,0.0,0.5,PASS,carridi01w,2025-06-17T11:02:52.477903
+DiJonai Carrington,Points,9.5,13.3,0.0,0.5,PASS,carridi01w,2025-06-17T11:02:52.479923
+DiJonai Carrington,Rebounds,3.5,5.2,0.0,0.5,PASS,carridi01w,2025-06-17T11:02:52.482007
+DiJonai Carrington,Pts+Rebs,18.5,18.5,0.0,0.5,PASS,carridi01w,2025-06-17T11:02:52.484029
+DiJonai Carrington,Rebounds,7.5,5.2,0.0,0.5,PASS,carridi01w,2025-06-17T11:02:52.486755
+DiJonai Carrington,Points,14.5,13.3,0.0,0.5,PASS,carridi01w,2025-06-17T11:02:52.488836
+DiJonai Carrington,Points,13.0,13.3,0.0,0.5,PASS,carridi01w,2025-06-17T11:02:52.490656
+DiJonai Carrington,Fantasy Score,26.5,0.0,0.0,0.5,PASS,carridi01w,2025-06-17T11:02:52.492444
+Kayla Thornton,Rebounds,7.5,7.4,0.0,0.5,PASS,thornka01w,2025-06-17T11:02:52.495203
+Kayla Thornton,Points,19.5,14.4,0.0,0.5,PASS,thornka01w,2025-06-17T11:02:52.497355
+Kayla Thornton,Points,14.5,14.4,0.0,0.5,PASS,thornka01w,2025-06-17T11:02:52.500183
+Kayla Thornton,Rebounds,11.5,7.4,0.0,0.5,PASS,thornka01w,2025-06-17T11:02:52.502051
+Kayla Thornton,3-PT Made,3.5,1.6,0.0,0.5,PASS,thornka01w,2025-06-17T11:02:52.503872
+Kayla Thornton,Points,13.5,14.4,0.0,0.5,PASS,thornka01w,2025-06-17T11:02:52.505676
+Kayla Thornton,Rebounds,6.5,7.4,0.0,0.5,PASS,thornka01w,2025-06-17T11:02:52.507489
+Kayla Thornton,3-PT Made,2.5,1.6,0.0,0.5,PASS,thornka01w,2025-06-17T11:02:52.509623
+Kayla Thornton,Pts+Rebs,22.5,21.8,0.0,0.5,PASS,thornka01w,2025-06-17T11:02:52.511563
+Kayla Thornton,3-PT Made,1.5,1.6,0.0,0.5,PASS,thornka01w,2025-06-17T11:02:52.513650
+Kayla Thornton,Rebounds,5.5,7.4,0.0,0.5,PASS,thornka01w,2025-06-17T11:02:52.515798
+Kayla Thornton,Points,17.5,14.4,0.0,0.5,PASS,thornka01w,2025-06-17T11:02:52.517817
+Kayla Thornton,Points,11.5,14.4,0.0,0.5,PASS,thornka01w,2025-06-17T11:02:52.519977
+Kayla Thornton,Fantasy Score,29.5,0.0,0.0,0.5,PASS,thornka01w,2025-06-17T11:02:52.522834
+Kayla Thornton,Rebounds,9.5,7.4,0.0,0.5,PASS,thornka01w,2025-06-17T11:02:52.525574
+Kayla Thornton,Rebounds,10.5,7.4,0.0,0.5,PASS,thornka01w,2025-06-17T11:02:52.527660
+Kayla Thornton,Pts+Rebs+Asts,23.0,22.9,0.0,0.5,PASS,thornka01w,2025-06-17T11:02:52.529725
+Monique Billings,Points,9.5,6.9,0.0,0.5,PASS,billimo01w,2025-06-17T11:02:52.531643
+Monique Billings,Rebounds,5.5,5.0,0.0,0.5,PASS,billimo01w,2025-06-17T11:02:52.533479
+Veronica Burton,Rebounds,2.5,4.1,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.535384
+Veronica Burton,Rebounds,5.5,4.1,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.537314
+Veronica Burton,Points,11.5,11.9,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.539161
+Veronica Burton,Points,11.0,11.9,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.541791
+Veronica Burton,Assists,9.5,5.4,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.543816
+Veronica Burton,Pts+Rebs+Asts,24.5,21.4,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.545831
+Veronica Burton,Points,7.5,11.9,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.547743
+Veronica Burton,Assists,4.5,5.4,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.549653
+Veronica Burton,Pts+Rebs+Asts,21.0,21.4,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.551700
+Veronica Burton,Rebs+Asts,9.5,9.5,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.553669
+Veronica Burton,Points,17.5,11.9,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.555588
+Veronica Burton,Fantasy Score,27.0,0.0,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.557689
+Veronica Burton,Assists,8.5,5.4,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.559799
+Veronica Burton,Rebounds,3.5,4.1,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.561696
+Veronica Burton,Assists,5.5,5.4,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.563756
+Veronica Burton,Pts+Rebs+Asts,29.5,21.4,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.565975
+Veronica Burton,Assists,7.5,5.4,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.567882
+Veronica Burton,Points,14.5,11.9,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.569900
+Veronica Burton,Assists,6.0,5.4,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.572007
+Veronica Burton,Pts+Rebs+Asts,19.5,21.4,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.574203
+Veronica Burton,Pts+Asts,17.0,17.3,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.576154
+Veronica Burton,Rebounds,4.5,4.1,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.578214
+Veronica Burton,Points,9.5,11.9,0.0,0.5,PASS,burtove01w,2025-06-17T11:02:52.580228
+Carla Leite,Points,9.5,6.7,0.0,0.5,PASS,leiteca01w,2025-06-17T11:02:52.582077
+Brittney Sykes,Rebs+Asts,9.0,8.9,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.584171
+Brittney Sykes,Rebounds,6.5,4.4,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.586263
+Brittney Sykes,Points,24.5,19.4,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.588259
+Brittney Sykes,Pts+Asts,24.0,23.9,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.590612
+Brittney Sykes,Rebounds,2.5,4.4,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.592654
+Brittney Sykes,Points,14.5,19.4,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.595556
+Brittney Sykes,Assists,5.5,4.5,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.597700
+Brittney Sykes,Rebounds,4.0,4.4,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.599984
+Brittney Sykes,Assists,6.5,4.5,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.602132
+Brittney Sykes,Pts+Rebs+Asts,28.5,28.3,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.604271
+Brittney Sykes,Points,17.5,19.4,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.606663
+Brittney Sykes,Pts+Rebs+Asts,39.5,28.3,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.608857
+Brittney Sykes,Assists,3.5,4.5,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.610915
+Brittney Sykes,Rebounds,4.5,4.4,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.613190
+Brittney Sykes,Assists,4.5,4.5,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.616149
+Brittney Sykes,Pts+Rebs+Asts,34.5,28.3,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.618217
+Brittney Sykes,Pts+Rebs,23.5,23.8,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.620358
+Brittney Sykes,Pts+Rebs+Asts,24.5,28.3,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.622532
+Brittney Sykes,Rebounds,3.5,4.4,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.624630
+Brittney Sykes,Rebounds,5.5,4.4,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.626862
+Brittney Sykes,Fantasy Score,34.0,0.0,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.628935
+Brittney Sykes,Points,19.0,19.4,0.0,0.5,PASS,sykesbr01w,2025-06-17T11:02:52.630923
+Angel Reese,Points,14.5,10.4,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.633818
+Angel Reese,Points,10.5,10.4,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.635845
+Angel Reese,Rebounds,11.5,11.9,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.637826
+Angel Reese,Pts+Rebs+Asts,24.5,25.8,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.639859
+Angel Reese,Rebounds,15.5,11.9,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.641933
+Angel Reese,Rebounds,8.5,11.9,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.643888
+Angel Reese,Points,9.5,10.4,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.645866
+Angel Reese,Assists,2.5,3.5,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.647882
+Angel Reese,Assists,3.5,3.5,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.649908
+Angel Reese,Pts+Rebs+Asts,26.5,25.8,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.651969
+Angel Reese,Pts+Asts,15.5,13.9,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.653994
+Angel Reese,Rebounds,14.5,11.9,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.656005
+Angel Reese,Pts+Rebs+Asts,29.5,25.8,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.658005
+Angel Reese,Assists,5.5,3.5,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.660019
+Angel Reese,Points,17.5,10.4,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.662207
+Angel Reese,Pts+Rebs+Asts,34.5,25.8,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.664233
+Angel Reese,Assists,4.5,3.5,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.666170
+Angel Reese,Rebounds,10.5,11.9,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.668178
+Angel Reese,Points,19.5,10.4,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.670191
+Angel Reese,Pts+Rebs+Asts,39.5,25.8,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.672172
+Angel Reese,Fantasy Score,33.0,0.0,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.674117
+Angel Reese,Points,11.5,10.4,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.676060
+Angel Reese,Pts+Rebs,23.0,22.3,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.678013
+Angel Reese,Rebounds,9.5,11.9,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.679969
+Angel Reese,Rebounds,11.0,11.9,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.683828
+Angel Reese,Assists,6.5,3.5,0.0,0.5,PASS,reesean01w,2025-06-17T11:02:52.687493
+Ariel Atkins,3-PT Made,1.5,1.5,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.689683
+Ariel Atkins,Pts+Rebs+Asts,29.5,19.6,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.692598
+Ariel Atkins,Points,12.5,12.9,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.694744
+Ariel Atkins,Points,14.5,12.9,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.696917
+Ariel Atkins,Assists,3.5,3.1,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.699042
+Ariel Atkins,Rebounds,5.5,3.6,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.701068
+Ariel Atkins,Fantasy Score,26.5,0.0,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.703141
+Ariel Atkins,Points,13.5,12.9,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.705175
+Ariel Atkins,Pts+Asts,17.5,16.0,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.707209
+Ariel Atkins,Points,9.5,12.9,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.709294
+Ariel Atkins,Pts+Rebs+Asts,20.5,19.6,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.711353
+Ariel Atkins,3-PT Made,2.5,1.5,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.713304
+Ariel Atkins,Assists,2.5,3.1,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.715251
+Ariel Atkins,Assists,6.5,3.1,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.718018
+Ariel Atkins,Rebounds,2.5,3.6,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.719985
+Ariel Atkins,Points,19.5,12.9,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.721899
+Ariel Atkins,Pts+Rebs+Asts,24.5,19.6,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.723840
+Ariel Atkins,Pts+Rebs,17.0,16.5,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.725782
+Ariel Atkins,Rebounds,4.5,3.6,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.728633
+Ariel Atkins,Points,11.5,12.9,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.730713
+Ariel Atkins,Assists,5.5,3.1,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.732750
+Ariel Atkins,Rebounds,3.5,3.6,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.734674
+Ariel Atkins,3-PT Made,0.5,1.5,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.736575
+Ariel Atkins,Pts+Rebs+Asts,19.5,19.6,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.738533
+Ariel Atkins,Points,17.5,12.9,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.740462
+Ariel Atkins,Assists,4.5,3.1,0.0,0.5,PASS,atkinar01w,2025-06-17T11:02:52.742368
+Kamilla Cardoso,Points,11.5,10.9,0.0,0.5,PASS,cardoka01w,2025-06-17T11:02:52.744355
+Kamilla Cardoso,Points,7.5,10.9,0.0,0.5,PASS,cardoka01w,2025-06-17T11:02:52.746407
+Kamilla Cardoso,Fantasy Score,22.0,0.0,0.0,0.5,PASS,cardoka01w,2025-06-17T11:02:52.748333
+Kamilla Cardoso,Rebounds,7.5,6.8,0.0,0.5,PASS,cardoka01w,2025-06-17T11:02:52.750243
+Kamilla Cardoso,Rebounds,5.5,6.8,0.0,0.5,PASS,cardoka01w,2025-06-17T11:02:52.753094
+Kamilla Cardoso,Rebounds,6.5,6.8,0.0,0.5,PASS,cardoka01w,2025-06-17T11:02:52.755003
+Kamilla Cardoso,Rebounds,10.5,6.8,0.0,0.5,PASS,cardoka01w,2025-06-17T11:02:52.756901
+Kamilla Cardoso,Points,9.5,10.9,0.0,0.5,PASS,cardoka01w,2025-06-17T11:02:52.759651
+Kamilla Cardoso,Points,10.0,10.9,0.0,0.5,PASS,cardoka01w,2025-06-17T11:02:52.761622
+Kamilla Cardoso,Rebounds,7.0,6.8,0.0,0.5,PASS,cardoka01w,2025-06-17T11:02:52.763540
+Kamilla Cardoso,Points,14.5,10.9,0.0,0.5,PASS,cardoka01w,2025-06-17T11:02:52.766270
+Kamilla Cardoso,Pts+Rebs,17.5,17.7,0.0,0.5,PASS,cardoka01w,2025-06-17T11:02:52.768269
+Kamilla Cardoso,Points,17.5,10.9,0.0,0.5,PASS,cardoka01w,2025-06-17T11:02:52.770184
+Kamilla Cardoso,Rebounds,9.5,6.8,0.0,0.5,PASS,cardoka01w,2025-06-17T11:02:52.772095
+Kiki Iriafen,Rebounds,9.5,9.8,0.0,0.5,PASS,iriafki01w,2025-06-17T11:02:52.774274
+Kiki Iriafen,Rebounds,6.5,9.8,0.0,0.5,PASS,iriafki01w,2025-06-17T11:02:52.776175
+Kiki Iriafen,Points,9.5,13.8,0.0,0.5,PASS,iriafki01w,2025-06-17T11:02:52.778103
+Kiki Iriafen,Fantasy Score,25.0,0.0,0.0,0.5,PASS,iriafki01w,2025-06-17T11:02:52.780101
+Kiki Iriafen,Rebounds,5.5,9.8,0.0,0.5,PASS,iriafki01w,2025-06-17T11:02:52.782002
+Kiki Iriafen,Points,12.5,13.8,0.0,0.5,PASS,iriafki01w,2025-06-17T11:02:52.783885
+Kiki Iriafen,Rebounds,8.0,9.8,0.0,0.5,PASS,iriafki01w,2025-06-17T11:02:52.785785
+Kiki Iriafen,Points,19.5,13.8,0.0,0.5,PASS,iriafki01w,2025-06-17T11:02:52.787848
+Kiki Iriafen,Points,14.5,13.8,0.0,0.5,PASS,iriafki01w,2025-06-17T11:02:52.789762
+Kiki Iriafen,Points,17.5,13.8,0.0,0.5,PASS,iriafki01w,2025-06-17T11:02:52.793383
+Kiki Iriafen,Rebounds,11.5,9.8,0.0,0.5,PASS,iriafki01w,2025-06-17T11:02:52.795302
+Kiki Iriafen,Pts+Rebs,20.5,23.6,0.0,0.5,PASS,iriafki01w,2025-06-17T11:02:52.797953
+Kiki Iriafen,Rebounds,10.5,9.8,0.0,0.5,PASS,iriafki01w,2025-06-17T11:02:52.799909
+Kiki Iriafen,Points,11.5,13.8,0.0,0.5,PASS,iriafki01w,2025-06-17T11:02:52.802663
+Kiki Iriafen,Rebounds,7.5,9.8,0.0,0.5,PASS,iriafki01w,2025-06-17T11:02:52.804575
+Sonia Citron,Points,14.5,12.8,0.0,0.5,PASS,citroso01w,2025-06-17T11:02:52.806497
+Sonia Citron,3-PT Made,0.5,1.3,0.0,0.5,PASS,citroso01w,2025-06-17T11:02:52.809312
+Sonia Citron,Points,11.5,12.8,0.0,0.5,PASS,citroso01w,2025-06-17T11:02:52.811164
+Sonia Citron,Points,9.5,12.8,0.0,0.5,PASS,citroso01w,2025-06-17T11:02:52.813004
+Sonia Citron,Points,19.5,12.8,0.0,0.5,PASS,citroso01w,2025-06-17T11:02:52.814865
+Sonia Citron,3-PT Made,1.5,1.3,0.0,0.5,PASS,citroso01w,2025-06-17T11:02:52.816761
+Sonia Citron,Points,13.5,12.8,0.0,0.5,PASS,citroso01w,2025-06-17T11:02:52.818620
+Sonia Citron,3-PT Made,2.5,1.3,0.0,0.5,PASS,citroso01w,2025-06-17T11:02:52.820456
+Sonia Citron,Points,17.5,12.8,0.0,0.5,PASS,citroso01w,2025-06-17T11:02:52.822378
+Sonia Citron,Rebounds,5.5,4.4,0.0,0.5,PASS,citroso01w,2025-06-17T11:02:52.824348
+Gabby Williams,Points,12.5,15.4,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.828148
+Gabby Williams,Pts+Rebs+Asts,29.5,24.0,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.830131
+Gabby Williams,3-PT Made,3.5,2.3,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.832024
+Gabby Williams,Pts+Rebs,18.0,19.7,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.833942
+Gabby Williams,Rebounds,2.5,4.3,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.835924
+Gabby Williams,3-PT Made,1.5,2.3,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.837912
+Gabby Williams,Rebounds,7.5,4.3,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.839868
+Gabby Williams,3-PT Made,2.5,2.3,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.841915
+Gabby Williams,Pts+Asts,18.0,19.7,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.843989
+Gabby Williams,Assists,2.5,4.3,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.845914
+Gabby Williams,Assists,6.5,4.3,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.847808
+Gabby Williams,Pts+Rebs+Asts,21.5,24.0,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.849973
+Gabby Williams,Rebounds,6.5,4.3,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.851915
+Gabby Williams,Assists,7.5,4.3,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.853880
+Gabby Williams,Assists,3.5,4.3,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.856208
+Gabby Williams,Assists,5.5,4.3,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.858457
+Gabby Williams,Assists,4.5,4.3,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.860467
+Gabby Williams,Pts+Rebs+Asts,19.5,24.0,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.862413
+Gabby Williams,Points,19.5,15.4,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.864485
+Gabby Williams,Points,13.5,15.4,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.866364
+Gabby Williams,Fantasy Score,30.5,0.0,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.868261
+Gabby Williams,Points,9.5,15.4,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.870518
+Gabby Williams,Pts+Rebs+Asts,24.5,24.0,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.872551
+Gabby Williams,Rebounds,4.5,4.3,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.874463
+Gabby Williams,Points,11.5,15.4,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.876378
+Gabby Williams,Points,17.5,15.4,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.878393
+Gabby Williams,Assists,4.0,4.3,0.0,0.5,PASS,williga01w,2025-06-17T11:02:52.880403
+Ezi Magbegor,Rebounds,6.5,7.8,0.0,0.5,PASS,magbeez01w,2025-06-17T11:02:52.882385
+Ezi Magbegor,Points,14.5,8.2,0.0,0.5,PASS,magbeez01w,2025-06-17T11:02:52.884449
+Ezi Magbegor,Pts+Rebs+Asts,18.5,18.4,0.0,0.5,PASS,magbeez01w,2025-06-17T11:02:52.886447
+Ezi Magbegor,Points,8.5,8.2,0.0,0.5,PASS,magbeez01w,2025-06-17T11:02:52.888447
+Ezi Magbegor,Rebounds,5.5,7.8,0.0,0.5,PASS,magbeez01w,2025-06-17T11:02:52.890568
+Ezi Magbegor,Rebounds,9.5,7.8,0.0,0.5,PASS,magbeez01w,2025-06-17T11:02:52.892516
+Ezi Magbegor,Points,7.5,8.2,0.0,0.5,PASS,magbeez01w,2025-06-17T11:02:52.896072
+Ezi Magbegor,Points,11.5,8.2,0.0,0.5,PASS,magbeez01w,2025-06-17T11:02:52.898209
+Ezi Magbegor,Fantasy Score,26.5,0.0,0.0,0.5,PASS,magbeez01w,2025-06-17T11:02:52.900242
+Ezi Magbegor,Rebounds,11.5,7.8,0.0,0.5,PASS,magbeez01w,2025-06-17T11:02:52.902257
+Ezi Magbegor,Points,9.5,8.2,0.0,0.5,PASS,magbeez01w,2025-06-17T11:02:52.904196
+Ezi Magbegor,Rebounds,10.5,7.8,0.0,0.5,PASS,magbeez01w,2025-06-17T11:02:52.906197
+Ezi Magbegor,Rebounds,7.5,7.8,0.0,0.5,PASS,magbeez01w,2025-06-17T11:02:52.908089
+Ezi Magbegor,Pts+Rebs,16.5,16.0,0.0,0.5,PASS,magbeez01w,2025-06-17T11:02:52.910198
+Ezi Magbegor,Points,5.5,8.2,0.0,0.5,PASS,magbeez01w,2025-06-17T11:02:52.912193
+Azura Stevens,Rebounds,9.5,9.3,0.0,0.5,PASS,steveaz01w,2025-06-17T11:02:52.914167
+Azura Stevens,Points,17.5,12.8,0.0,0.5,PASS,steveaz01w,2025-06-17T11:02:52.916983
+Azura Stevens,Rebounds,11.5,9.3,0.0,0.5,PASS,steveaz01w,2025-06-17T11:02:52.919085
+Azura Stevens,3-PT Made,1.5,1.3,0.0,0.5,PASS,steveaz01w,2025-06-17T11:02:52.921862
+Azura Stevens,Rebounds,10.5,9.3,0.0,0.5,PASS,steveaz01w,2025-06-17T11:02:52.923810
+Azura Stevens,Rebounds,5.5,9.3,0.0,0.5,PASS,steveaz01w,2025-06-17T11:02:52.925916
+Azura Stevens,3-PT Made,0.5,1.3,0.0,0.5,PASS,steveaz01w,2025-06-17T11:02:52.927853
+Azura Stevens,Rebounds,8.0,9.3,0.0,0.5,PASS,steveaz01w,2025-06-17T11:02:52.929878
+Azura Stevens,Pts+Rebs,20.5,22.1,0.0,0.5,PASS,steveaz01w,2025-06-17T11:02:52.931858
+Azura Stevens,Points,12.5,12.8,0.0,0.5,PASS,steveaz01w,2025-06-17T11:02:52.933947
+Dearica Hamby,Points,18.5,17.6,0.0,0.5,PASS,hambyde01w,2025-06-17T11:02:52.935962
+Dearica Hamby,Pts+Rebs,25.0,25.2,0.0,0.5,PASS,hambyde01w,2025-06-17T11:02:52.938017
+Dearica Hamby,Pts+Rebs+Asts,31.0,29.5,0.0,0.5,PASS,hambyde01w,2025-06-17T11:02:52.940238
+Dearica Hamby,Assists,4.5,4.3,0.0,0.5,PASS,hambyde01w,2025-06-17T11:02:52.942217
+Dearica Hamby,Fantasy Score,38.5,0.0,0.0,0.5,PASS,hambyde01w,2025-06-17T11:02:52.944166
+Dearica Hamby,Rebs+Asts,12.5,11.9,0.0,0.5,PASS,hambyde01w,2025-06-17T11:02:52.946201
+Dearica Hamby,Points,15.5,17.6,0.0,0.5,PASS,hambyde01w,2025-06-17T11:02:52.948307
+Dearica Hamby,Assists,6.5,4.3,0.0,0.5,PASS,hambyde01w,2025-06-17T11:02:52.950357
+Dearica Hamby,Assists,3.5,4.3,0.0,0.5,PASS,hambyde01w,2025-06-17T11:02:52.952265
+Dearica Hamby,Points,17.5,17.6,0.0,0.5,PASS,hambyde01w,2025-06-17T11:02:52.954325
+Rickea Jackson,Points,17.5,13.6,0.0,0.5,PASS,jacksri01w,2025-06-17T11:02:52.958029
+Rickea Jackson,Points,11.5,13.6,0.0,0.5,PASS,jacksri01w,2025-06-17T11:02:52.960235
+Rickea Jackson,Points,19.5,13.6,0.0,0.5,PASS,jacksri01w,2025-06-17T11:02:52.962177
+Rickea Jackson,Rebounds,5.5,3.9,0.0,0.5,PASS,jacksri01w,2025-06-17T11:02:52.964253
+Rickea Jackson,Points,15.5,13.6,0.0,0.5,PASS,jacksri01w,2025-06-17T11:02:52.966140
+Skylar Diggins,Points,17.5,17.8,0.0,0.5,PASS,diggisk01w,2025-06-17T11:02:52.969216
+Skylar Diggins,Assists,8.5,6.3,0.0,0.5,PASS,diggisk01w,2025-06-17T11:02:52.971190
+Skylar Diggins,Points,19.5,17.8,0.0,0.5,PASS,diggisk01w,2025-06-17T11:02:52.973087
+Skylar Diggins,3-PT Made,2.5,1.5,0.0,0.5,PASS,diggisk01w,2025-06-17T11:02:52.975228
+Skylar Diggins,Assists,7.5,6.3,0.0,0.5,PASS,diggisk01w,2025-06-17T11:02:52.977194
+Skylar Diggins,Points,15.5,17.8,0.0,0.5,PASS,diggisk01w,2025-06-17T11:02:52.979280
+Skylar Diggins,Points,18.5,17.8,0.0,0.5,PASS,diggisk01w,2025-06-17T11:02:52.981285
+Skylar Diggins,Points,14.5,17.8,0.0,0.5,PASS,diggisk01w,2025-06-17T11:02:52.983174
+Skylar Diggins,Pts+Rebs+Asts,26.5,26.2,0.0,0.5,PASS,diggisk01w,2025-06-17T11:02:52.985099
+Skylar Diggins,Assists,4.5,6.3,0.0,0.5,PASS,diggisk01w,2025-06-17T11:02:52.987019
+Skylar Diggins,Fantasy Score,31.5,0.0,0.0,0.5,PASS,diggisk01w,2025-06-17T11:02:52.989134
+Skylar Diggins,Assists,5.5,6.3,0.0,0.5,PASS,diggisk01w,2025-06-17T11:02:52.991127
+Skylar Diggins,Points,24.5,17.8,0.0,0.5,PASS,diggisk01w,2025-06-17T11:02:52.993897
+Skylar Diggins,3-PT Made,0.5,1.5,0.0,0.5,PASS,diggisk01w,2025-06-17T11:02:52.996002
+Skylar Diggins,Assists,6.5,6.3,0.0,0.5,PASS,diggisk01w,2025-06-17T11:02:52.997916
+Skylar Diggins,Pts+Asts,23.5,24.1,0.0,0.5,PASS,diggisk01w,2025-06-17T11:02:52.999933
+Nneka Ogwumike,Points,16.0,16.0,0.0,0.5,PASS,ogwumnn01w,2025-06-17T11:02:53.002942
+Nneka Ogwumike,Pts+Rebs,24.5,24.6,0.0,0.5,PASS,ogwumnn01w,2025-06-17T11:02:53.004925
+Nneka Ogwumike,Rebounds,10.5,8.6,0.0,0.5,PASS,ogwumnn01w,2025-06-17T11:02:53.006839
+Nneka Ogwumike,Rebounds,5.5,8.6,0.0,0.5,PASS,ogwumnn01w,2025-06-17T11:02:53.009687
+Nneka Ogwumike,Rebounds,6.5,8.6,0.0,0.5,PASS,ogwumnn01w,2025-06-17T11:02:53.011582
+Nneka Ogwumike,Rebounds,9.5,8.6,0.0,0.5,PASS,ogwumnn01w,2025-06-17T11:02:53.013497
+Nneka Ogwumike,Points,24.5,16.0,0.0,0.5,PASS,ogwumnn01w,2025-06-17T11:02:53.015459
+Nneka Ogwumike,Points,17.5,16.0,0.0,0.5,PASS,ogwumnn01w,2025-06-17T11:02:53.018266
+Nneka Ogwumike,Rebounds,11.5,8.6,0.0,0.5,PASS,ogwumnn01w,2025-06-17T11:02:53.020208
+Nneka Ogwumike,Pts+Rebs+Asts,26.5,27.5,0.0,0.5,PASS,ogwumnn01w,2025-06-17T11:02:53.022165
+Nneka Ogwumike,Points,14.5,16.0,0.0,0.5,PASS,ogwumnn01w,2025-06-17T11:02:53.024244
+Nneka Ogwumike,Rebounds,8.0,8.6,0.0,0.5,PASS,ogwumnn01w,2025-06-17T11:02:53.026222
+Nneka Ogwumike,Points,19.5,16.0,0.0,0.5,PASS,ogwumnn01w,2025-06-17T11:02:53.028121
+Nneka Ogwumike,Rebounds,7.5,8.6,0.0,0.5,PASS,ogwumnn01w,2025-06-17T11:02:53.030239
+Nneka Ogwumike,Fantasy Score,32.5,0.0,0.0,0.5,PASS,ogwumnn01w,2025-06-17T11:02:53.033813

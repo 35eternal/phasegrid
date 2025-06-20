@@ -1,0 +1,42 @@
+﻿    def push_slips_to_sheet(self, portfolio: Dict[str, List[Dict]]) -> int:
+        """Push generated slips to Google Sheets."""
+        all_slips_data = []
+        
+        # Combine all slips into DataFrame-ready format
+        for ticket_type in ['power', 'flex']:
+            for slip in portfolio[ticket_type]:
+                # Create dictionary for DataFrame row
+                slip_row = {
+                    'slip_id': slip['slip_id'],
+                    'created': datetime.now().isoformat(),
+                    'timestamp': datetime.now().isoformat(),
+                    'ticket_type': slip['ticket_type'],
+                    'legs': slip['n_props'],  # Add legs column (same as n_props)
+                    'props': json.dumps(slip['props']),  # JSON string
+                    'n_props': slip['n_props'],
+                    'ev': slip['ev'],
+                    'stake': slip['stake'],
+                    'odds': self._calculate_odds(slip),
+                    'status': 'pending',
+                    'payout': 0.0,
+                    'settled_at': ''
+                }
+                all_slips_data.append(slip_row)
+        
+        # Push to sheet
+        if all_slips_data:
+            try:
+                # Convert to DataFrame
+                slips_df = pd.DataFrame(all_slips_data)
+                print(f"DataFrame columns: {list(slips_df.columns)}")
+                
+                # Use the push_slips method which expects a DataFrame
+                success = self.sheet_connector.push_slips(slips_df)
+                return len(all_slips_data) if success else 0
+            except Exception as e:
+                print(f"Failed to push slips: {e}")
+                import traceback
+                traceback.print_exc()
+                return 0
+        
+        return 0

@@ -1,0 +1,607 @@
+{
+  "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112?lang=en&region=us",
+  "id": "401736112",
+  "uid": "s:40~l:59~e:401736112",
+  "date": "2025-05-16T23:30Z",
+  "name": "Atlanta Dream at Washington Mystics",
+  "shortName": "ATL @ WSH",
+  "season": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/seasons/2025?lang=en&region=us"
+  },
+  "seasonType": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/seasons/2025/types/2?lang=en&region=us"
+  },
+  "timeValid": true,
+  "competitions": [
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112?lang=en&region=us",
+      "id": "401736112",
+      "guid": "3d366980-8521-344f-a58d-e7eae10e2e1d",
+      "uid": "s:40~l:59~e:401736112~c:401736112",
+      "date": "2025-05-16T23:30Z",
+      "attendance": 4200,
+      "type": {
+        "id": "1",
+        "text": "Standard",
+        "abbreviation": "STD",
+        "slug": "standard",
+        "type": "standard"
+      },
+      "necessary": true,
+      "timeValid": true,
+      "neutralSite": false,
+      "divisionCompetition": false,
+      "conferenceCompetition": false,
+      "previewAvailable": false,
+      "recapAvailable": false,
+      "boxscoreAvailable": true,
+      "lineupAvailable": false,
+      "gamecastAvailable": true,
+      "playByPlayAvailable": true,
+      "conversationAvailable": true,
+      "commentaryAvailable": false,
+      "pickcenterAvailable": true,
+      "summaryAvailable": true,
+      "liveAvailable": false,
+      "ticketsAvailable": false,
+      "shotChartAvailable": true,
+      "timeoutsAvailable": true,
+      "possessionArrowAvailable": false,
+      "onWatchESPN": false,
+      "recent": false,
+      "bracketAvailable": false,
+      "wallclockAvailable": true,
+      "highlightsAvailable": true,
+      "gameSource": {
+        "id": "1",
+        "description": "basic/manual",
+        "state": "basic"
+      },
+      "boxscoreSource": {
+        "id": "3",
+        "description": "scrubbed",
+        "state": "full"
+      },
+      "playByPlaySource": {
+        "id": "2",
+        "description": "feed",
+        "state": "full"
+      },
+      "linescoreSource": {
+        "id": "1",
+        "description": "basic/manual",
+        "state": "basic"
+      },
+      "statsSource": {
+        "id": "3",
+        "description": "scrubbed",
+        "state": "full"
+      },
+      "venue": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/venues/5946?lang=en&region=us",
+        "id": "5946",
+        "fullName": "CareFirst Arena",
+        "address": {
+          "city": "Washington",
+          "state": "DC"
+        },
+        "grass": false,
+        "indoor": true,
+        "images": [
+          {
+            "href": "https://a.espncdn.com/i/venues/wnba/day/5946.jpg",
+            "width": 2000,
+            "height": 1125,
+            "alt": "",
+            "rel": [
+              "full",
+              "day"
+            ]
+          }
+        ]
+      },
+      "competitors": [
+        {
+          "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/competitors/16?lang=en&region=us",
+          "id": "16",
+          "uid": "s:40~l:59~t:16",
+          "type": "team",
+          "order": 0,
+          "homeAway": "home",
+          "winner": true,
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/seasons/2025/teams/16?lang=en&region=us"
+          },
+          "score": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/competitors/16/score?lang=en&region=us"
+          },
+          "linescores": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/competitors/16/linescores?lang=en&region=us"
+          },
+          "roster": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/competitors/16/roster?lang=en&region=us"
+          },
+          "statistics": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/competitors/16/statistics?lang=en&region=us"
+          },
+          "leaders": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/competitors/16/leaders?lang=en&region=us"
+          },
+          "record": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/competitors/16/records?lang=en&region=us"
+          }
+        },
+        {
+          "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/competitors/20?lang=en&region=us",
+          "id": "20",
+          "uid": "s:40~l:59~t:20",
+          "type": "team",
+          "order": 1,
+          "homeAway": "away",
+          "winner": false,
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/seasons/2025/teams/20?lang=en&region=us"
+          },
+          "score": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/competitors/20/score?lang=en&region=us"
+          },
+          "linescores": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/competitors/20/linescores?lang=en&region=us"
+          },
+          "roster": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/competitors/20/roster?lang=en&region=us"
+          },
+          "statistics": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/competitors/20/statistics?lang=en&region=us"
+          },
+          "leaders": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/competitors/20/leaders?lang=en&region=us"
+          },
+          "record": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/competitors/20/records?lang=en&region=us"
+          }
+        }
+      ],
+      "notes": [],
+      "situation": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/situation?lang=en&region=us"
+      },
+      "status": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/status?lang=en&region=us"
+      },
+      "odds": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/odds?lang=en&region=us"
+      },
+      "broadcasts": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/broadcasts?lang=en&region=us"
+      },
+      "series": [
+        {
+          "type": "season",
+          "title": "Regular Season Series",
+          "description": "Regular Season Series",
+          "summary": "Series tied 1-1",
+          "completed": false,
+          "totalCompetitions": 4,
+          "competitors": [
+            {
+              "id": "16",
+              "uid": "s:40~l:59~t:16",
+              "wins": 1,
+              "ties": 0,
+              "team": {
+                "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/seasons/2025/teams/16?lang=en&region=us"
+              }
+            },
+            {
+              "id": "20",
+              "uid": "s:40~l:59~t:20",
+              "wins": 1,
+              "ties": 0,
+              "team": {
+                "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/seasons/2025/teams/20?lang=en&region=us"
+              }
+            }
+          ],
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112?lang=en&region=us"
+            },
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736180?lang=en&region=us"
+            },
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736191?lang=en&region=us"
+            },
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736291?lang=en&region=us"
+            }
+          ],
+          "startDate": "2025-05-16T23:30Z"
+        }
+      ],
+      "officials": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/officials?lang=en&region=us"
+      },
+      "details": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/plays?lang=en&region=us"
+      },
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "summary",
+            "desktop",
+            "event"
+          ],
+          "href": "https://www.espn.com/wnba/game/_/gameId/401736112/dream-mystics",
+          "text": "Gamecast",
+          "shortText": "Summary",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "summary",
+            "sportscenter",
+            "app",
+            "event"
+          ],
+          "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=401736112",
+          "text": "Gamecast",
+          "shortText": "Summary",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "now",
+            "desktop",
+            "event"
+          ],
+          "href": "https://www.espn.com/wnba/game/_/gameId/401736112",
+          "text": "Now",
+          "shortText": "Now",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "teamstats",
+            "desktop",
+            "event"
+          ],
+          "href": "https://www.espn.com/wnba/matchup?gameId=401736112",
+          "text": "Team Stats",
+          "shortText": "Team Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "boxscore",
+            "desktop",
+            "event"
+          ],
+          "href": "https://www.espn.com/wnba/boxscore/_/gameId/401736112",
+          "text": "Box Score",
+          "shortText": "Box Score",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "boxscore",
+            "sportscenter",
+            "app",
+            "event"
+          ],
+          "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=401736112",
+          "text": "Box Score",
+          "shortText": "Box Score",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "gamecast",
+            "desktop",
+            "event"
+          ],
+          "href": "https://www.espn.com/wnba/game/_/gameId/401736112",
+          "text": "Gamecast",
+          "shortText": "Gamecast",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "gamecast",
+            "mobile",
+            "event"
+          ],
+          "href": "http://m.espn.com/wnba/gamecast?gameId=401736112&action=summary",
+          "text": "Gamecast",
+          "shortText": "Gamecast",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "gamecast",
+            "sportscenter",
+            "app",
+            "event"
+          ],
+          "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=401736112",
+          "text": "Gamecast",
+          "shortText": "Gamecast",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "pbp",
+            "desktop",
+            "event"
+          ],
+          "href": "https://www.espn.com/wnba/playbyplay/_/gameId/401736112",
+          "text": "Play-by-Play",
+          "shortText": "Play-by-Play",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "videos",
+            "desktop",
+            "event"
+          ],
+          "href": "https://www.espn.com/wnba/video?gameId=401736112",
+          "text": "Videos",
+          "shortText": "Videos",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "odds",
+            "desktop",
+            "event"
+          ],
+          "href": "https://www.espn.com/wnba/odds/_/gameId/401736112",
+          "text": "Odds",
+          "shortText": "Odds",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "odds",
+            "mobile",
+            "event"
+          ],
+          "href": "https://m.espn.com/wnba/odds/_/gameId/401736112",
+          "text": "Odds",
+          "shortText": "Odds",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "predictor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/predictor?lang=en&region=us"
+      },
+      "probabilities": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/probabilities?lang=en&region=us"
+      },
+      "powerIndexes": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/events/401736112/competitions/401736112/powerindex?lang=en&region=us"
+      },
+      "format": {
+        "regulation": {
+          "periods": 4,
+          "displayName": "Quarter",
+          "slug": "quarter",
+          "clock": 600.0
+        },
+        "overtime": {
+          "clock": 300.0
+        }
+      }
+    }
+  ],
+  "links": [
+    {
+      "language": "en-US",
+      "rel": [
+        "summary",
+        "desktop",
+        "event"
+      ],
+      "href": "https://www.espn.com/wnba/game/_/gameId/401736112/dream-mystics",
+      "text": "Gamecast",
+      "shortText": "Summary",
+      "isExternal": false,
+      "isPremium": false
+    },
+    {
+      "language": "en-US",
+      "rel": [
+        "summary",
+        "sportscenter",
+        "app",
+        "event"
+      ],
+      "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=401736112",
+      "text": "Gamecast",
+      "shortText": "Summary",
+      "isExternal": false,
+      "isPremium": false
+    },
+    {
+      "language": "en-US",
+      "rel": [
+        "now",
+        "desktop",
+        "event"
+      ],
+      "href": "https://www.espn.com/wnba/game/_/gameId/401736112",
+      "text": "Now",
+      "shortText": "Now",
+      "isExternal": false,
+      "isPremium": false
+    },
+    {
+      "language": "en-US",
+      "rel": [
+        "teamstats",
+        "desktop",
+        "event"
+      ],
+      "href": "https://www.espn.com/wnba/matchup?gameId=401736112",
+      "text": "Team Stats",
+      "shortText": "Team Stats",
+      "isExternal": false,
+      "isPremium": false
+    },
+    {
+      "language": "en-US",
+      "rel": [
+        "boxscore",
+        "desktop",
+        "event"
+      ],
+      "href": "https://www.espn.com/wnba/boxscore/_/gameId/401736112",
+      "text": "Box Score",
+      "shortText": "Box Score",
+      "isExternal": false,
+      "isPremium": false
+    },
+    {
+      "language": "en-US",
+      "rel": [
+        "boxscore",
+        "sportscenter",
+        "app",
+        "event"
+      ],
+      "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=401736112",
+      "text": "Box Score",
+      "shortText": "Box Score",
+      "isExternal": false,
+      "isPremium": false
+    },
+    {
+      "language": "en-US",
+      "rel": [
+        "gamecast",
+        "desktop",
+        "event"
+      ],
+      "href": "https://www.espn.com/wnba/game/_/gameId/401736112",
+      "text": "Gamecast",
+      "shortText": "Gamecast",
+      "isExternal": false,
+      "isPremium": false
+    },
+    {
+      "language": "en-US",
+      "rel": [
+        "gamecast",
+        "mobile",
+        "event"
+      ],
+      "href": "http://m.espn.com/wnba/gamecast?gameId=401736112&action=summary",
+      "text": "Gamecast",
+      "shortText": "Gamecast",
+      "isExternal": false,
+      "isPremium": false
+    },
+    {
+      "language": "en-US",
+      "rel": [
+        "gamecast",
+        "sportscenter",
+        "app",
+        "event"
+      ],
+      "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=401736112",
+      "text": "Gamecast",
+      "shortText": "Gamecast",
+      "isExternal": false,
+      "isPremium": false
+    },
+    {
+      "language": "en-US",
+      "rel": [
+        "pbp",
+        "desktop",
+        "event"
+      ],
+      "href": "https://www.espn.com/wnba/playbyplay/_/gameId/401736112",
+      "text": "Play-by-Play",
+      "shortText": "Play-by-Play",
+      "isExternal": false,
+      "isPremium": false
+    },
+    {
+      "language": "en-US",
+      "rel": [
+        "videos",
+        "desktop",
+        "event"
+      ],
+      "href": "https://www.espn.com/wnba/video?gameId=401736112",
+      "text": "Videos",
+      "shortText": "Videos",
+      "isExternal": false,
+      "isPremium": false
+    },
+    {
+      "language": "en-US",
+      "rel": [
+        "odds",
+        "desktop",
+        "event"
+      ],
+      "href": "https://www.espn.com/wnba/odds/_/gameId/401736112",
+      "text": "Odds",
+      "shortText": "Odds",
+      "isExternal": false,
+      "isPremium": false
+    },
+    {
+      "language": "en-US",
+      "rel": [
+        "odds",
+        "mobile",
+        "event"
+      ],
+      "href": "https://m.espn.com/wnba/odds/_/gameId/401736112",
+      "text": "Odds",
+      "shortText": "Odds",
+      "isExternal": false,
+      "isPremium": false
+    }
+  ],
+  "venues": [
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba/venues/5946?lang=en&region=us"
+    }
+  ],
+  "league": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba?lang=en&region=us"
+  }
+}

@@ -1,0 +1,77 @@
+================================================================================
+WNBA BETTING INTELLIGENCE REPORT - 2025-06-15 22:54
+================================================================================
+
+PIPELINE EXECUTION LOG:
+----------------------------------------
+[22:54:32] INFO: Checking data freshness...
+[22:54:32] INFO: ✅ Gamelogs are 0 days old
+[22:54:32] INFO: Running Volatility Analyzer...
+[22:54:32] INFO: ✅ Volatility analysis complete - 163 players analyzed
+[22:54:32] INFO: Running Performance Cycle Detector...
+[22:54:33] INFO: ✅ Cycle detection complete - 129 players analyzed
+[22:54:33] INFO: Running Prop Value Analyzer...
+[22:54:33] INFO: ✅ Prop value analysis complete - 18 valuable props found
+[22:54:33] INFO: 
+All analyzers completed. Generating reports...
+[22:54:33] INFO: Generating summary report...
+
+TOP BETTING OPPORTUNITIES:
+----------------------------------------
+Found 18 props with edge
+
+• Jackie Young Points UNDER
+  Line: 23.5, Projection: 16.1
+  Hit%: 12.5%, EV: 67.1%
+  Risk Level: EXTREME
+
+• Jewell Loyd 3-PT Made UNDER
+  Line: 2.5, Projection: 1.7
+  Hit%: 14.4%, EV: 63.3%
+  Risk Level: EXTREME
+
+• Satou Sabally Rebounds UNDER
+  Line: 9.5, Projection: 7.1
+  Hit%: 15.0%, EV: 62.2%
+  Risk Level: EXTREME
+
+• Jackie Young 3-PT Made UNDER
+  Line: 3.5, Projection: 1.8
+  Hit%: 15.3%, EV: 61.6%
+  Risk Level: EXTREME
+
+• Satou Sabally 3-PT Made UNDER
+  Line: 4.5, Projection: 2.1
+  Hit%: 15.3%, EV: 61.6%
+  Risk Level: EXTREME
+
+HIGH-RISK PLAYERS (AVOID):
+----------------------------------------
+• Nika Mühl - CV: 2.341
+• Moriah Jefferson - CV: 2.291
+• Morgan Bertsch - CV: 2.150
+• Lou Lopez Sénéchal - CV: 2.137
+• Stephanie Soares - CV: 2.090
+• Laeticia Amihere - CV: 2.058
+• Astou Ndour-Fall - CV: 2.056
+• Alissa Pili - CV: 1.918
+• Liz Dixon - CV: 1.898
+• Katie Lou Samuelson - CV: 1.895
+
+PLAYERS ON HOT STREAKS:
+----------------------------------------
+• A'ja Wilson: AST(6)
+• Aliyah Boston: AST(5)
+• Allisha Gray: PTS(1)
+• Angel Reese: AST(6)
+• Astou Ndour-Fall: AST(4)
+• Azurá Stevens: REB(4)
+• Cecilia Zandalasini: PTS(2), REB(3)
+• Celeste Taylor: PTS(5), REB(6), AST(6)
+• Chelsea Gray: PTS(4), REB(1)
+• Chennedy Carter: REB(7), AST(5)
+
+SUMMARY STATISTICS:
+----------------------------------------
+Report generated: 2025-06-15 22:54:33
+Pipeline version: 1.0

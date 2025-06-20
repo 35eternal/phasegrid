@@ -1,0 +1,1 @@
+(function(c,a){var e="podscribe-capture",d="script",b=a.createElement(d);b.id=e;b.async=!0;b.src="https://d34r8q7sht0t9k.cloudfront.net/tag.js";a=a.getElementsByTagName(d)[0];a.parentNode.insertBefore(b,a);b.addEventListener("load",function(){c.podscribe("init",{user_id:"5c244146-22a5-49e0-95f7-4d6845bb0124",advertiser:"prizepicks"});c.podscribe("view")})})(window,document);

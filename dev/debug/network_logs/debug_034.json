@@ -1,0 +1,27 @@
+{
+  "collectedAt": 1748997107,
+  "context": {
+    "configurationId": "cHJpemVwaWNrcy9wcml6ZXBpY2tzX3dlYl9hcHAvcHJvZHVjdGlvbi9kZWZhdWx0L2VuLzE3NDg4NzMwMTA=",
+    "source": "legalBasisDefault"
+  },
+  "environmentCode": "production",
+  "identities": {
+    "swb_prizepicks_web_app": "e0bdda83-639d-47e2-bf91-4b856c3df361"
+  },
+  "jurisdictionCode": "default",
+  "propertyCode": "prizepicks_web_app",
+  "purposes": {
+    "analytics": {
+      "allowed": "true",
+      "legalBasisCode": "consent_optout"
+    },
+    "essential_services": {
+      "allowed": "true",
+      "legalBasisCode": "disclosure"
+    },
+    "targeted_advertising": {
+      "allowed": "true",
+      "legalBasisCode": "consent_optout"
+    }
+  }
+}

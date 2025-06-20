@@ -1,0 +1,286 @@
+"""
+Google Sheets connector for WNBA betting platform.
+Handles read/write operations to betting logs and configuration.
+"""
+
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
+import pandas as pd
+import json
+import logging
+import time
+from typing import List, Dict, Optional, Any
+from datetime import datetime
+
+logger = logging.getLogger(__name__)
+
+
+class SheetConnector:
+    """Manages Google Sheets connection and data operations."""
+    
+    REQUIRED_TABS = ['bets_log', 'phase_confidence_tracker', 'settings', 'slips_log']
+    SCOPE = ['https://spreadsheets.google.com/feeds',
+             'https://www.googleapis.com/auth/drive']
+    
+    def __init__(self, credentials_path: str = 'config/google_credentials.json',
+                 config_path: str = 'config/sheets_cfg.json'):
+        """
+        Initialize Google Sheets connector.
+        
+        Args:
+            credentials_path: Path to Google service account credentials
+            config_path: Path to sheets configuration file
+        """
+        self.credentials_path = credentials_path
+        self.config_path = config_path
+        self.client = None
+        self.spreadsheet = None
+        self.sheet_id = None
+        
+        # Load configuration
+        self._load_config()
+        
+    def _load_config(self):
+        """Load sheet configuration from JSON file."""
+        try:
+            with open(self.config_path, 'r') as f:
+                config = json.load(f)
+                self.sheet_id = config.get('sheet_id')
+                logger.info(f"Loaded sheet ID: {self.sheet_id}")
+        except Exception as e:
+            logger.error(f"Failed to load sheet config: {e}")
+            raise
+    
+    def _handle_api_error(self, func, *args, **kwargs):
+        """
+        Handle API errors with exponential backoff.
+        
+        Retries on quota exceeded (429) errors.
+        """
+        max_retries = 5
+        base_delay = 1
+        
+        for attempt in range(max_retries):
+            try:
+                return func(*args, **kwargs)
+            except gspread.exceptions.APIError as e:
+                if e.response.status_code == 429:  # Quota exceeded
+                    if attempt < max_retries - 1:
+                        delay = base_delay * (2 ** attempt)
+                        logger.warning(f"API quota exceeded, retrying in {delay}s...")
+                        time.sleep(delay)
+                        continue
+                logger.error(f"API error after {attempt + 1} attempts: {e}")
+                raise
+            except Exception as e:
+                logger.error(f"Unexpected error: {e}")
+                raise
+    
+    def connect(self):
+        """Establish connection to Google Sheets."""
+        try:
+            # Authenticate
+            creds = ServiceAccountCredentials.from_json_keyfile_name(
+                self.credentials_path, self.SCOPE)
+            self.client = gspread.authorize(creds)
+            
+            # Open spreadsheet
+            self.spreadsheet = self._handle_api_error(
+                self.client.open_by_key, self.sheet_id)
+            
+            # Ensure all required tabs exist
+            self._ensure_tabs()
+            
+            logger.info("Successfully connected to Google Sheets")
+            
+        except Exception as e:
+            logger.error(f"Failed to connect to Google Sheets: {e}")
+            raise
+    
+    def _ensure_tabs(self):
+        """Ensure all required tabs exist, create if missing."""
+        existing_sheets = [ws.title for ws in self.spreadsheet.worksheets()]
+        
+        for tab_name in self.REQUIRED_TABS:
+            if tab_name not in existing_sheets:
+                logger.info(f"Creating missing tab: {tab_name}")
+                self._handle_api_error(
+                    self.spreadsheet.add_worksheet,
+                    title=tab_name,
+                    rows=1000,
+                    cols=20
+                )
+                
+                # Add headers based on tab type
+                if tab_name == 'slips_log':
+                    headers = ['slip_id', 'created', 'ticket_type', 'legs', 
+                              'stake', 'ev', 'status', 'payout', 'legs_detail']
+                    worksheet = self.spreadsheet.worksheet(tab_name)
+                    self._handle_api_error(
+                        worksheet.update,
+                        'A1:I1',
+                        [headers]
+                    )
+    
+    def push_slips(self, slips_df: pd.DataFrame) -> bool:
+        """
+        Push betting slips to slips_log tab.
+        
+        Args:
+            slips_df: DataFrame with slip data
+            
+        Returns:
+            True if successful, False otherwise
+        """
+        if not self.client:
+            self.connect()
+            
+        try:
+            worksheet = self.spreadsheet.worksheet('slips_log')
+            
+            # Get existing data to append
+            existing_data = self._handle_api_error(worksheet.get_all_records)
+            existing_df = pd.DataFrame(existing_data)
+            
+            # Check for duplicate slip_ids
+            if not existing_df.empty and 'slip_id' in existing_df.columns:
+                existing_ids = set(existing_df['slip_id'].astype(str))
+                new_slips = slips_df[~slips_df['slip_id'].isin(existing_ids)]
+                
+                if len(new_slips) < len(slips_df):
+                    logger.warning(f"Filtered {len(slips_df) - len(new_slips)} duplicate slips")
+                    slips_df = new_slips
+            
+            if slips_df.empty:
+                logger.info("No new slips to push")
+                return True
+            
+            # Prepare data for upload
+            # Ensure all required columns are present
+            required_cols = ['slip_id', 'created', 'ticket_type', 'legs', 
+                           'stake', 'ev', 'status', 'payout', 'legs_detail']
+            
+            for col in required_cols:
+                if col not in slips_df.columns:
+                    if col == 'legs_detail':
+                        slips_df[col] = ''  # Optional column
+                    else:
+                        logger.error(f"Missing required column: {col}")
+                        return False
+            
+            # Convert DataFrame to list of lists for upload
+            upload_data = slips_df[required_cols].fillna('').values.tolist()
+            
+            # Find next empty row
+            next_row = len(existing_data) + 2  # +1 for header, +1 for 1-based index
+            
+            # Update sheet
+            if upload_data:
+                range_str = f'A{next_row}:I{next_row + len(upload_data) - 1}'
+                self._handle_api_error(
+                    worksheet.update,
+                    range_str,
+                    upload_data
+                )
+                
+                logger.info(f"Successfully pushed {len(upload_data)} slips to slips_log")
+                return True
+            
+        except Exception as e:
+            logger.error(f"Failed to push slips: {e}")
+            return False
+        
+        return True
+    
+    def read_bets_log(self) -> pd.DataFrame:
+        """Read betting history from bets_log tab."""
+        if not self.client:
+            self.connect()
+            
+        try:
+            worksheet = self.spreadsheet.worksheet('bets_log')
+            data = self._handle_api_error(worksheet.get_all_records)
+            return pd.DataFrame(data)
+        except Exception as e:
+            logger.error(f"Failed to read bets_log: {e}")
+            return pd.DataFrame()
+    
+    def read_phase_confidence(self) -> pd.DataFrame:
+        """Read phase confidence data."""
+        if not self.client:
+            self.connect()
+            
+        try:
+            worksheet = self.spreadsheet.worksheet('phase_confidence_tracker')
+            data = self._handle_api_error(worksheet.get_all_records)
+            return pd.DataFrame(data)
+        except Exception as e:
+            logger.error(f"Failed to read phase_confidence_tracker: {e}")
+            return pd.DataFrame()
+    
+    def read_settings(self) -> Dict[str, Any]:
+        """Read settings from settings tab."""
+        if not self.client:
+            self.connect()
+            
+        try:
+            worksheet = self.spreadsheet.worksheet('settings')
+            data = self._handle_api_error(worksheet.get_all_records)
+            
+            # Convert to dict format
+            settings = {}
+            for row in data:
+                if 'parameter' in row and 'value' in row:
+                    settings[row['parameter']] = row['value']
+                    
+            return settings
+        except Exception as e:
+            logger.error(f"Failed to read settings: {e}")
+            return {}
+    
+    def update_bet_status(self, source_id: str, status: str, actual_result: Optional[str] = None):
+        """Update the status of a bet in bets_log."""
+        if not self.client:
+            self.connect()
+            
+        try:
+            worksheet = self.spreadsheet.worksheet('bets_log')
+            
+            # Find bet row
+            all_values = self._handle_api_error(worksheet.get_all_values)
+            headers = all_values[0] if all_values else []
+            
+            if 'source_id' not in headers:
+                logger.error("source_id column not found in bets_log")
+                return False
+            
+            source_id_col = headers.index('source_id') + 1
+            status_col = headers.index('status') + 1 if 'status' in headers else None
+            result_col = headers.index('actual_result') + 1 if 'actual_result' in headers else None
+            
+            # Find row with matching source_id
+            for idx, row in enumerate(all_values[1:], start=2):
+                if row[source_id_col - 1] == source_id:
+                    # Update status
+                    if status_col:
+                        self._handle_api_error(
+                            worksheet.update_cell,
+                            idx, status_col, status
+                        )
+                    
+                    # Update result if provided
+                    if actual_result and result_col:
+                        self._handle_api_error(
+                            worksheet.update_cell,
+                            idx, result_col, actual_result
+                        )
+                    
+                    logger.info(f"Updated bet {source_id} status to {status}")
+                    return True
+            
+            logger.warning(f"Bet {source_id} not found in bets_log")
+            return False
+            
+        except Exception as e:
+            logger.error(f"Failed to update bet status: {e}")
+            return False

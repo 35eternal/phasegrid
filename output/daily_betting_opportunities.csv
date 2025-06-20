@@ -1,0 +1,19 @@
+player,stat_type,line_score,trend_phase,games_in_trend,dip_type,confidence_score,recommendation,reasoning,recent_avg,drop_percentage
+Alyssa Thomas,Points,14.5,Trough,1,unknown,95,UNDER,Trough trend for 1 games; unclear dip cause; 19.2% below season average,25.0,19.2
+Chelsea Gray,Points,18.5,Trough,1,unknown,95,UNDER,Trough trend for 1 games; unclear dip cause; 15.6% below season average,18.0,15.6
+Satou Sabally,Assists,3.5,Trough,2,unknown,95,UNDER,Trough trend for 2 games; unclear dip cause; 41.7% below season average,20.666666666666668,41.7
+Jackie Young,Points,23.5,Trough,2,unknown,95,UNDER,Trough trend for 2 games; unclear dip cause; 54.1% below season average,13.666666666666666,54.1
+Jackie Young,Assists,4.5,Trough,2,unknown,95,UNDER,Trough trend for 2 games; unclear dip cause; 54.1% below season average,13.666666666666666,54.1
+Jackie Young,Rebounds,5.5,Trough,2,unknown,95,UNDER,Trough trend for 2 games; unclear dip cause; 54.1% below season average,13.666666666666666,54.1
+Jackie Young,3-PT Made,3.5,Trough,2,unknown,95,UNDER,Trough trend for 2 games; unclear dip cause; 54.1% below season average,13.666666666666666,54.1
+Jewell Loyd,Rebounds,5.5,Trough,2,cycle,95,UNDER,Trough trend for 2 games; cyclical performance pattern detected; 37.8% below season average,20.33333333333333,37.8
+Jewell Loyd,3-PT Made,2.5,Trough,2,cycle,95,UNDER,Trough trend for 2 games; cyclical performance pattern detected; 37.8% below season average,20.33333333333333,37.8
+Jewell Loyd,Assists,4.5,Trough,2,cycle,95,UNDER,Trough trend for 2 games; cyclical performance pattern detected; 37.8% below season average,20.33333333333333,37.8
+Satou Sabally,Points,25.5,Trough,2,unknown,95,UNDER,Trough trend for 2 games; unclear dip cause; 41.7% below season average,20.666666666666668,41.7
+Satou Sabally,3-PT Made,4.5,Trough,2,unknown,95,UNDER,Trough trend for 2 games; unclear dip cause; 41.7% below season average,20.666666666666668,41.7
+Satou Sabally,Rebounds,9.5,Trough,2,unknown,95,UNDER,Trough trend for 2 games; unclear dip cause; 41.7% below season average,20.666666666666668,41.7
+Jewell Loyd,Points,16.5,Trough,2,cycle,95,UNDER,Trough trend for 2 games; cyclical performance pattern detected; 37.8% below season average,20.33333333333333,37.8
+Alyssa Thomas,Assists,9.5,Trough,1,unknown,93,UNDER,Trough trend for 1 games; unclear dip cause; 19.2% below season average,25.0,19.2
+Chelsea Gray,Rebounds,6.5,Trough,1,unknown,93,UNDER,Trough trend for 1 games; unclear dip cause; 15.6% below season average,18.0,15.6
+Chelsea Gray,Assists,5.5,Trough,1,unknown,93,UNDER,Trough trend for 1 games; unclear dip cause; 15.6% below season average,18.0,15.6
+Chelsea Gray,3-PT Made,2.5,Trough,1,unknown,90,UNDER,Trough trend for 1 games; unclear dip cause; 15.6% below season average,18.0,15.6

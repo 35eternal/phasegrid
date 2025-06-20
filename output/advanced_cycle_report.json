@@ -1,0 +1,42 @@
+{
+  "generated_at": "2025-06-17T11:35:41.502551",
+  "total_players": 318,
+  "cycle_types": {
+    "standard": 183,
+    "short": 54,
+    "long": 49,
+    "irregular": 32
+  },
+  "phase_distribution": {
+    "luteal": 2623,
+    "follicular": 1941,
+    "menstrual": 954,
+    "ovulation": 354
+  },
+  "risk_tag_performance": {
+    "FADE_EARLY_MENSTRUAL": {
+      "mean": 13.26,
+      "count": 417
+    },
+    "NEUTRAL": {
+      "mean": 13.91,
+      "count": 2210
+    },
+    "STRONG_FADE_OVULATION": {
+      "mean": 13.54,
+      "count": 338
+    },
+    "STRONG_TARGET_LUTEAL": {
+      "mean": 13.61,
+      "count": 828
+    },
+    "TARGET_LATE_FOLLICULAR": {
+      "mean": 13.49,
+      "count": 355
+    },
+    "TARGET_LUTEAL": {
+      "mean": 13.6,
+      "count": 1724
+    }
+  }
+}

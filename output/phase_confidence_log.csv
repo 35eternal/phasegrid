@@ -1,0 +1,5 @@
+date,phase,total_bets,total_wins,win_rate,confidence_status
+2025-06-17,follicular,15,9,0.6,LOW
+2025-06-17,luteal,14,12,0.8571428571428571,LOW
+2025-06-17,menstrual,17,8,0.4705882352941176,LOW
+2025-06-17,ovulatory,13,6,0.4615384615384615,LOW

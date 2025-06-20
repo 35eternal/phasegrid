@@ -1,0 +1,15 @@
+{
+  "alignment": "right",
+  "color": "#6EFF00",
+  "color_dark": null,
+  "has_required_features": true,
+  "horizontal_padding": 35,
+  "instant_boot_enabled": true,
+  "launcher_logo_url": "https://downloads.intercomcdn.com/i/o/436989/70fd024b687af13b813a7ac1/21a4abe97f0d6a17be09a499b3e13c76.png",
+  "launcher_logo_dark_url": null,
+  "secondary_color": "#6EFF00",
+  "secondary_color_dark": null,
+  "show_launcher": false,
+  "updated_at": 1748923933,
+  "vertical_padding": 28
+}

@@ -1,0 +1,6162 @@
+[
+  {
+    "player_name": "Lexie Hull",
+    "team_name": "IND",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.810030"
+  },
+  {
+    "player_name": "Lexie Hull",
+    "team_name": "IND",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.810039"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Free Throws Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.810046"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "3-PT Made",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.810047"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "FG Attempted",
+    "line": 16.5,
+    "timestamp": "2025-06-17T11:02:49.810048"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "3-PT Attempted",
+    "line": 8.0,
+    "timestamp": "2025-06-17T11:02:49.810050"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810051"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.810053"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 34.5,
+    "timestamp": "2025-06-17T11:02:49.810054"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.810056"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 39.5,
+    "timestamp": "2025-06-17T11:02:49.810057"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Points",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.810058"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "3-PT Made",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810059"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810061"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Fantasy Score",
+    "line": 30.5,
+    "timestamp": "2025-06-17T11:02:49.810063"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Pts+Rebs",
+    "line": 22.5,
+    "timestamp": "2025-06-17T11:02:49.810063"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.810065"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Points",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.810066"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Rebs+Asts",
+    "line": 8.0,
+    "timestamp": "2025-06-17T11:02:49.810067"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.810068"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Assists",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810069"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.810070"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Assists",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.810071"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810072"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Points",
+    "line": 16.5,
+    "timestamp": "2025-06-17T11:02:49.810073"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "3-PT Made",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810075"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Assists",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.810076"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Pts+Asts",
+    "line": 21.5,
+    "timestamp": "2025-06-17T11:02:49.810078"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.810079"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Assists",
+    "line": 3.0,
+    "timestamp": "2025-06-17T11:02:49.810080"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.810081"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.810082"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "3-PT Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.810083"
+  },
+  {
+    "player_name": "Marina Mabrey",
+    "team_name": "CON",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 26.0,
+    "timestamp": "2025-06-17T11:02:49.810084"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Points",
+    "line": 21.5,
+    "timestamp": "2025-06-17T11:02:49.810086"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 36.5,
+    "timestamp": "2025-06-17T11:02:49.810087"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Fantasy Score",
+    "line": 43.5,
+    "timestamp": "2025-06-17T11:02:49.810088"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "FG Attempted",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.810089"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Assists",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.810091"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.810091"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810093"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Rebounds",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.810094"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 39.5,
+    "timestamp": "2025-06-17T11:02:49.810095"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Rebounds",
+    "line": 8.5,
+    "timestamp": "2025-06-17T11:02:49.810096"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Assists",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.810097"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Points",
+    "line": 20.5,
+    "timestamp": "2025-06-17T11:02:49.810098"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "3-PT Made",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.810099"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Points",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.810100"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Assists",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.810101"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 44.5,
+    "timestamp": "2025-06-17T11:02:49.810103"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "3-PT Made",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810104"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 49.5,
+    "timestamp": "2025-06-17T11:02:49.810105"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Rebounds",
+    "line": 6.0,
+    "timestamp": "2025-06-17T11:02:49.810106"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Free Throws Made",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.810108"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "3-PT Attempted",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.810109"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Points",
+    "line": 22.5,
+    "timestamp": "2025-06-17T11:02:49.810110"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Rebs+Asts",
+    "line": 15.5,
+    "timestamp": "2025-06-17T11:02:49.810111"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810112"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Pts+Asts",
+    "line": 31.5,
+    "timestamp": "2025-06-17T11:02:49.810113"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Assists",
+    "line": 8.5,
+    "timestamp": "2025-06-17T11:02:49.810114"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "3-PT Made",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810115"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.810116"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Assists",
+    "line": 13.5,
+    "timestamp": "2025-06-17T11:02:49.810117"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 34.5,
+    "timestamp": "2025-06-17T11:02:49.810118"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "3-PT Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.810119"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Pts+Rebs",
+    "line": 27.5,
+    "timestamp": "2025-06-17T11:02:49.810121"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Points",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.810122"
+  },
+  {
+    "player_name": "Caitlin Clark",
+    "team_name": "IND",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.810123"
+  },
+  {
+    "player_name": "Kelsey Mitchell",
+    "team_name": "IND",
+    "stat_type": "3-PT Attempted",
+    "line": 6.0,
+    "timestamp": "2025-06-17T11:02:49.810124"
+  },
+  {
+    "player_name": "Kelsey Mitchell",
+    "team_name": "IND",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 20.5,
+    "timestamp": "2025-06-17T11:02:49.810125"
+  },
+  {
+    "player_name": "Kelsey Mitchell",
+    "team_name": "IND",
+    "stat_type": "Points",
+    "line": 15.5,
+    "timestamp": "2025-06-17T11:02:49.810126"
+  },
+  {
+    "player_name": "Kelsey Mitchell",
+    "team_name": "IND",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.810127"
+  },
+  {
+    "player_name": "Kelsey Mitchell",
+    "team_name": "IND",
+    "stat_type": "Points",
+    "line": 17.0,
+    "timestamp": "2025-06-17T11:02:49.810129"
+  },
+  {
+    "player_name": "Kelsey Mitchell",
+    "team_name": "IND",
+    "stat_type": "Points",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.810129"
+  },
+  {
+    "player_name": "Kelsey Mitchell",
+    "team_name": "IND",
+    "stat_type": "3-PT Made",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.810131"
+  },
+  {
+    "player_name": "Kelsey Mitchell",
+    "team_name": "IND",
+    "stat_type": "Fantasy Score",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.810131"
+  },
+  {
+    "player_name": "Kelsey Mitchell",
+    "team_name": "IND",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.810132"
+  },
+  {
+    "player_name": "Kelsey Mitchell",
+    "team_name": "IND",
+    "stat_type": "Free Throws Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.810136"
+  },
+  {
+    "player_name": "Kelsey Mitchell",
+    "team_name": "IND",
+    "stat_type": "3-PT Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.810137"
+  },
+  {
+    "player_name": "Kelsey Mitchell",
+    "team_name": "IND",
+    "stat_type": "3-PT Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.810138"
+  },
+  {
+    "player_name": "Kelsey Mitchell",
+    "team_name": "IND",
+    "stat_type": "FG Attempted",
+    "line": 15.5,
+    "timestamp": "2025-06-17T11:02:49.810139"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.810140"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Rebounds",
+    "line": 10.5,
+    "timestamp": "2025-06-17T11:02:49.810141"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.810142"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Rebounds",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.810143"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.810144"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810145"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.810146"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 34.5,
+    "timestamp": "2025-06-17T11:02:49.810148"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Assists",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.810149"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Points",
+    "line": 13.5,
+    "timestamp": "2025-06-17T11:02:49.810150"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Rebs+Asts",
+    "line": 12.0,
+    "timestamp": "2025-06-17T11:02:49.810151"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Rebounds",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.810152"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.810154"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.810155"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.810156"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810157"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.810158"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Pts+Rebs",
+    "line": 21.5,
+    "timestamp": "2025-06-17T11:02:49.810159"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Defensive Rebounds",
+    "line": 5.0,
+    "timestamp": "2025-06-17T11:02:49.810160"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Assists",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810161"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Assists",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.810163"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 25.5,
+    "timestamp": "2025-06-17T11:02:49.810164"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Pts+Asts",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.810165"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Offensive Rebounds",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.810166"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "FG Attempted",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.810167"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Assists",
+    "line": 4.0,
+    "timestamp": "2025-06-17T11:02:49.810168"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Fantasy Score",
+    "line": 31.5,
+    "timestamp": "2025-06-17T11:02:49.810169"
+  },
+  {
+    "player_name": "Aliyah Boston",
+    "team_name": "IND",
+    "stat_type": "Assists",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.810170"
+  },
+  {
+    "player_name": "Tina Charles",
+    "team_name": "CON",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 25.5,
+    "timestamp": "2025-06-17T11:02:49.810172"
+  },
+  {
+    "player_name": "Tina Charles",
+    "team_name": "CON",
+    "stat_type": "Points",
+    "line": 15.5,
+    "timestamp": "2025-06-17T11:02:49.810173"
+  },
+  {
+    "player_name": "Tina Charles",
+    "team_name": "CON",
+    "stat_type": "Fantasy Score",
+    "line": 28.5,
+    "timestamp": "2025-06-17T11:02:49.810174"
+  },
+  {
+    "player_name": "Tina Charles",
+    "team_name": "CON",
+    "stat_type": "Free Throws Made",
+    "line": 3.0,
+    "timestamp": "2025-06-17T11:02:49.810175"
+  },
+  {
+    "player_name": "Tina Charles",
+    "team_name": "CON",
+    "stat_type": "FG Attempted",
+    "line": 15.0,
+    "timestamp": "2025-06-17T11:02:49.810176"
+  },
+  {
+    "player_name": "Tina Charles",
+    "team_name": "CON",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.810177"
+  },
+  {
+    "player_name": "Tina Charles",
+    "team_name": "CON",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810178"
+  },
+  {
+    "player_name": "Tina Charles",
+    "team_name": "CON",
+    "stat_type": "Defensive Rebounds",
+    "line": 5.0,
+    "timestamp": "2025-06-17T11:02:49.810179"
+  },
+  {
+    "player_name": "Tina Charles",
+    "team_name": "CON",
+    "stat_type": "Rebounds",
+    "line": 6.0,
+    "timestamp": "2025-06-17T11:02:49.810180"
+  },
+  {
+    "player_name": "Tina Charles",
+    "team_name": "CON",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.810181"
+  },
+  {
+    "player_name": "Tina Charles",
+    "team_name": "CON",
+    "stat_type": "Pts+Rebs",
+    "line": 23.5,
+    "timestamp": "2025-06-17T11:02:49.810182"
+  },
+  {
+    "player_name": "Tina Charles",
+    "team_name": "CON",
+    "stat_type": "Points",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.810184"
+  },
+  {
+    "player_name": "Tina Charles",
+    "team_name": "CON",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810185"
+  },
+  {
+    "player_name": "Tina Charles",
+    "team_name": "CON",
+    "stat_type": "Rebounds",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.810186"
+  },
+  {
+    "player_name": "Tina Charles",
+    "team_name": "CON",
+    "stat_type": "Rebounds",
+    "line": 8.5,
+    "timestamp": "2025-06-17T11:02:49.810187"
+  },
+  {
+    "player_name": "Tina Charles",
+    "team_name": "CON",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.810188"
+  },
+  {
+    "player_name": "Tina Charles",
+    "team_name": "CON",
+    "stat_type": "Points",
+    "line": 16.5,
+    "timestamp": "2025-06-17T11:02:49.810189"
+  },
+  {
+    "player_name": "Olivia Nelson-Ododa",
+    "team_name": "CON",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810192"
+  },
+  {
+    "player_name": "Olivia Nelson-Ododa",
+    "team_name": "CON",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.810193"
+  },
+  {
+    "player_name": "Olivia Nelson-Ododa",
+    "team_name": "CON",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810194"
+  },
+  {
+    "player_name": "Olivia Nelson-Ododa",
+    "team_name": "CON",
+    "stat_type": "Free Throws Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.810195"
+  },
+  {
+    "player_name": "Olivia Nelson-Ododa",
+    "team_name": "CON",
+    "stat_type": "Defensive Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810197"
+  },
+  {
+    "player_name": "Olivia Nelson-Ododa",
+    "team_name": "CON",
+    "stat_type": "Rebounds",
+    "line": 8.5,
+    "timestamp": "2025-06-17T11:02:49.810197"
+  },
+  {
+    "player_name": "Olivia Nelson-Ododa",
+    "team_name": "CON",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.810198"
+  },
+  {
+    "player_name": "Olivia Nelson-Ododa",
+    "team_name": "CON",
+    "stat_type": "Rebounds",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.810200"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Pts+Rebs",
+    "line": 23.0,
+    "timestamp": "2025-06-17T11:02:49.810212"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Fantasy Score",
+    "line": 35.5,
+    "timestamp": "2025-06-17T11:02:49.810214"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810215"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.810216"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Assists",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.810217"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Pts+Asts",
+    "line": 22.0,
+    "timestamp": "2025-06-17T11:02:49.810218"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Assists",
+    "line": 4.0,
+    "timestamp": "2025-06-17T11:02:49.810220"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "3-PT Attempted",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.810222"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Assists",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.810223"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 39.5,
+    "timestamp": "2025-06-17T11:02:49.810224"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Assists",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.810225"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.810226"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.810227"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Assists",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810228"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "3-PT Made",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.810230"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.810231"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 27.5,
+    "timestamp": "2025-06-17T11:02:49.810232"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 34.5,
+    "timestamp": "2025-06-17T11:02:49.810234"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "3-PT Made",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810235"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Points",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.810236"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.810237"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Free Throws Made",
+    "line": 3.0,
+    "timestamp": "2025-06-17T11:02:49.810238"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "FG Attempted",
+    "line": 16.5,
+    "timestamp": "2025-06-17T11:02:49.810239"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810240"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 8.5,
+    "timestamp": "2025-06-17T11:02:49.810241"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.810242"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810243"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.810244"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 5.0,
+    "timestamp": "2025-06-17T11:02:49.810245"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "3-PT Made",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810246"
+  },
+  {
+    "player_name": "Rhyne Howard",
+    "team_name": "ATL",
+    "stat_type": "3-PT Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.810247"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Pts+Rebs",
+    "line": 22.0,
+    "timestamp": "2025-06-17T11:02:49.810249"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Fantasy Score",
+    "line": 31.0,
+    "timestamp": "2025-06-17T11:02:49.810250"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "3-PT Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.810251"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.810252"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Points",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.810253"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "FG Attempted",
+    "line": 12.5,
+    "timestamp": "2025-06-17T11:02:49.810254"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Free Throws Made",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810255"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810256"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Assists",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.810257"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Points",
+    "line": 15.5,
+    "timestamp": "2025-06-17T11:02:49.810258"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "3-PT Made",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.810259"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.810260"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "3-PT Attempted",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810261"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Points",
+    "line": 16.5,
+    "timestamp": "2025-06-17T11:02:49.810262"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.810263"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.810263"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "3-PT Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.810264"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 5.0,
+    "timestamp": "2025-06-17T11:02:49.810265"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 27.5,
+    "timestamp": "2025-06-17T11:02:49.810266"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Defensive Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.810268"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.810269"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Assists",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810270"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810271"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Points",
+    "line": 18.5,
+    "timestamp": "2025-06-17T11:02:49.810272"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "3-PT Made",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810273"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 25.5,
+    "timestamp": "2025-06-17T11:02:49.810274"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Pts+Asts",
+    "line": 20.5,
+    "timestamp": "2025-06-17T11:02:49.810275"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Offensive Rebounds",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.810276"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810277"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.810278"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.810279"
+  },
+  {
+    "player_name": "Allisha Gray",
+    "team_name": "ATL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 34.5,
+    "timestamp": "2025-06-17T11:02:49.810280"
+  },
+  {
+    "player_name": "Brittney Griner",
+    "team_name": "ATL",
+    "stat_type": "Pts+Rebs",
+    "line": 16.0,
+    "timestamp": "2025-06-17T11:02:49.810281"
+  },
+  {
+    "player_name": "Brittney Griner",
+    "team_name": "ATL",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.810282"
+  },
+  {
+    "player_name": "Brittney Griner",
+    "team_name": "ATL",
+    "stat_type": "Points",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.810283"
+  },
+  {
+    "player_name": "Brittney Griner",
+    "team_name": "ATL",
+    "stat_type": "Defensive Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810284"
+  },
+  {
+    "player_name": "Brittney Griner",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.810285"
+  },
+  {
+    "player_name": "Brittney Griner",
+    "team_name": "ATL",
+    "stat_type": "Fantasy Score",
+    "line": 22.5,
+    "timestamp": "2025-06-17T11:02:49.810290"
+  },
+  {
+    "player_name": "Brittney Griner",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810292"
+  },
+  {
+    "player_name": "Brittney Griner",
+    "team_name": "ATL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 18.0,
+    "timestamp": "2025-06-17T11:02:49.810293"
+  },
+  {
+    "player_name": "Brittney Griner",
+    "team_name": "ATL",
+    "stat_type": "Free Throws Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.810294"
+  },
+  {
+    "player_name": "Brittney Griner",
+    "team_name": "ATL",
+    "stat_type": "Points",
+    "line": 10.5,
+    "timestamp": "2025-06-17T11:02:49.810295"
+  },
+  {
+    "player_name": "Brittney Griner",
+    "team_name": "ATL",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.810296"
+  },
+  {
+    "player_name": "Brittney Griner",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 8.5,
+    "timestamp": "2025-06-17T11:02:49.810297"
+  },
+  {
+    "player_name": "Brittney Griner",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.810298"
+  },
+  {
+    "player_name": "Brittney Griner",
+    "team_name": "ATL",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.810299"
+  },
+  {
+    "player_name": "Brittney Griner",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810300"
+  },
+  {
+    "player_name": "Brionna Jones",
+    "team_name": "ATL",
+    "stat_type": "Fantasy Score",
+    "line": 29.0,
+    "timestamp": "2025-06-17T11:02:49.810302"
+  },
+  {
+    "player_name": "Brionna Jones",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810303"
+  },
+  {
+    "player_name": "Brionna Jones",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.810304"
+  },
+  {
+    "player_name": "Brionna Jones",
+    "team_name": "ATL",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.810306"
+  },
+  {
+    "player_name": "Brionna Jones",
+    "team_name": "ATL",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.810307"
+  },
+  {
+    "player_name": "Brionna Jones",
+    "team_name": "ATL",
+    "stat_type": "Defensive Rebounds",
+    "line": 5.0,
+    "timestamp": "2025-06-17T11:02:49.810308"
+  },
+  {
+    "player_name": "Brionna Jones",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.810309"
+  },
+  {
+    "player_name": "Brionna Jones",
+    "team_name": "ATL",
+    "stat_type": "Free Throws Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.810310"
+  },
+  {
+    "player_name": "Brionna Jones",
+    "team_name": "ATL",
+    "stat_type": "Points",
+    "line": 12.0,
+    "timestamp": "2025-06-17T11:02:49.810311"
+  },
+  {
+    "player_name": "Brionna Jones",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 8.0,
+    "timestamp": "2025-06-17T11:02:49.810312"
+  },
+  {
+    "player_name": "Brionna Jones",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.810313"
+  },
+  {
+    "player_name": "Brionna Jones",
+    "team_name": "ATL",
+    "stat_type": "Pts+Rebs",
+    "line": 20.5,
+    "timestamp": "2025-06-17T11:02:49.810314"
+  },
+  {
+    "player_name": "Brionna Jones",
+    "team_name": "ATL",
+    "stat_type": "Offensive Rebounds",
+    "line": 3.0,
+    "timestamp": "2025-06-17T11:02:49.810315"
+  },
+  {
+    "player_name": "Brionna Jones",
+    "team_name": "ATL",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.810317"
+  },
+  {
+    "player_name": "Brionna Jones",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.810318"
+  },
+  {
+    "player_name": "Brionna Jones",
+    "team_name": "ATL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 22.5,
+    "timestamp": "2025-06-17T11:02:49.810318"
+  },
+  {
+    "player_name": "Brionna Jones",
+    "team_name": "ATL",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.810319"
+  },
+  {
+    "player_name": "Brionna Jones",
+    "team_name": "ATL",
+    "stat_type": "Rebounds",
+    "line": 10.5,
+    "timestamp": "2025-06-17T11:02:49.810320"
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.810321"
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "team_name": "NYL",
+    "stat_type": "Pts+Rebs",
+    "line": 26.0,
+    "timestamp": "2025-06-17T11:02:49.810322"
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810323"
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "team_name": "NYL",
+    "stat_type": "Offensive Rebounds",
+    "line": 0.5,
+    "timestamp": "2025-06-17T11:02:49.810325"
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810326"
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "team_name": "NYL",
+    "stat_type": "Fantasy Score",
+    "line": 40.0,
+    "timestamp": "2025-06-17T11:02:49.810327"
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "team_name": "NYL",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810328"
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "team_name": "NYL",
+    "stat_type": "Assists",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.810329"
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 20.0,
+    "timestamp": "2025-06-17T11:02:49.810330"
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.810331"
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 8.5,
+    "timestamp": "2025-06-17T11:02:49.810332"
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.810333"
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "team_name": "NYL",
+    "stat_type": "FG Attempted",
+    "line": 12.5,
+    "timestamp": "2025-06-17T11:02:49.810334"
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "team_name": "NYL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.810334"
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "team_name": "NYL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.810335"
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "team_name": "NYL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 34.5,
+    "timestamp": "2025-06-17T11:02:49.810336"
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.810337"
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.810339"
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "team_name": "NYL",
+    "stat_type": "Free Throws Made",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810340"
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 6.0,
+    "timestamp": "2025-06-17T11:02:49.810341"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Assists",
+    "line": 5.0,
+    "timestamp": "2025-06-17T11:02:49.810342"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810343"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 28.0,
+    "timestamp": "2025-06-17T11:02:49.810344"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Assists",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.810346"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.810347"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "3-PT Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.810348"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 20.5,
+    "timestamp": "2025-06-17T11:02:49.810349"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Assists",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810350"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Assists",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.810351"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.810352"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "3-PT Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.810353"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Free Throws Made",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.810354"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 18.5,
+    "timestamp": "2025-06-17T11:02:49.810355"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.810356"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 34.5,
+    "timestamp": "2025-06-17T11:02:49.810357"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "3-PT Made",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.810358"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.810359"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.810360"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Pts+Rebs",
+    "line": 23.0,
+    "timestamp": "2025-06-17T11:02:49.810362"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.810366"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.810367"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Assists",
+    "line": 8.5,
+    "timestamp": "2025-06-17T11:02:49.810368"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "FG Attempted",
+    "line": 13.5,
+    "timestamp": "2025-06-17T11:02:49.810369"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 39.5,
+    "timestamp": "2025-06-17T11:02:49.810371"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810372"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Assists",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.810373"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Fantasy Score",
+    "line": 35.5,
+    "timestamp": "2025-06-17T11:02:49.810374"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Pts+Asts",
+    "line": 23.5,
+    "timestamp": "2025-06-17T11:02:49.810375"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 4.0,
+    "timestamp": "2025-06-17T11:02:49.810376"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.810380"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "3-PT Attempted",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.810381"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Rebs+Asts",
+    "line": 9.0,
+    "timestamp": "2025-06-17T11:02:49.810382"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "3-PT Made",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810383"
+  },
+  {
+    "player_name": "Sabrina Ionescu",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.810384"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 26.0,
+    "timestamp": "2025-06-17T11:02:49.810386"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "3-PT Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.810387"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "3-PT Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.810388"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.810389"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 13.5,
+    "timestamp": "2025-06-17T11:02:49.810390"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 10.0,
+    "timestamp": "2025-06-17T11:02:49.810391"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "Pts+Rebs",
+    "line": 23.5,
+    "timestamp": "2025-06-17T11:02:49.810392"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.810393"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.810394"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "Defensive Rebounds",
+    "line": 8.0,
+    "timestamp": "2025-06-17T11:02:49.810395"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 10.5,
+    "timestamp": "2025-06-17T11:02:49.810396"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "Free Throws Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.810397"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "FG Attempted",
+    "line": 10.5,
+    "timestamp": "2025-06-17T11:02:49.810398"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.810399"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "3-PT Made",
+    "line": 0.5,
+    "timestamp": "2025-06-17T11:02:49.810400"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.810401"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 13.5,
+    "timestamp": "2025-06-17T11:02:49.810402"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "Fantasy Score",
+    "line": 33.0,
+    "timestamp": "2025-06-17T11:02:49.810403"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 8.5,
+    "timestamp": "2025-06-17T11:02:49.810404"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.810405"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 12.5,
+    "timestamp": "2025-06-17T11:02:49.810406"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.810410"
+  },
+  {
+    "player_name": "Jonquel Jones",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.810411"
+  },
+  {
+    "player_name": "Natasha Cloud",
+    "team_name": "NYL",
+    "stat_type": "Fantasy Score",
+    "line": 25.5,
+    "timestamp": "2025-06-17T11:02:49.810413"
+  },
+  {
+    "player_name": "Natasha Cloud",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.810414"
+  },
+  {
+    "player_name": "Natasha Cloud",
+    "team_name": "NYL",
+    "stat_type": "Assists",
+    "line": 8.5,
+    "timestamp": "2025-06-17T11:02:49.810416"
+  },
+  {
+    "player_name": "Natasha Cloud",
+    "team_name": "NYL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.810417"
+  },
+  {
+    "player_name": "Natasha Cloud",
+    "team_name": "NYL",
+    "stat_type": "Assists",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810419"
+  },
+  {
+    "player_name": "Natasha Cloud",
+    "team_name": "NYL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.810420"
+  },
+  {
+    "player_name": "Natasha Cloud",
+    "team_name": "NYL",
+    "stat_type": "Pts+Asts",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.810421"
+  },
+  {
+    "player_name": "Natasha Cloud",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.810422"
+  },
+  {
+    "player_name": "Natasha Cloud",
+    "team_name": "NYL",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810423"
+  },
+  {
+    "player_name": "Natasha Cloud",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.810424"
+  },
+  {
+    "player_name": "Natasha Cloud",
+    "team_name": "NYL",
+    "stat_type": "Assists",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.810425"
+  },
+  {
+    "player_name": "Natasha Cloud",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 8.5,
+    "timestamp": "2025-06-17T11:02:49.810426"
+  },
+  {
+    "player_name": "Natasha Cloud",
+    "team_name": "NYL",
+    "stat_type": "Assists",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.810427"
+  },
+  {
+    "player_name": "Natasha Cloud",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810428"
+  },
+  {
+    "player_name": "Natasha Cloud",
+    "team_name": "NYL",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.810429"
+  },
+  {
+    "player_name": "Natasha Cloud",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.810430"
+  },
+  {
+    "player_name": "Natasha Cloud",
+    "team_name": "NYL",
+    "stat_type": "Points",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810431"
+  },
+  {
+    "player_name": "Natasha Cloud",
+    "team_name": "NYL",
+    "stat_type": "Assists",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.810432"
+  },
+  {
+    "player_name": "Natasha Cloud",
+    "team_name": "NYL",
+    "stat_type": "Free Throws Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.810433"
+  },
+  {
+    "player_name": "Sabrina Ionescu + Rhyne Howard",
+    "team_name": "NYL/ATL",
+    "stat_type": "Points (Combo)",
+    "line": 36.5,
+    "timestamp": "2025-06-17T11:02:49.810439"
+  },
+  {
+    "player_name": "Jonquel Jones + Brionna Jones",
+    "team_name": "NYL/ATL",
+    "stat_type": "Rebounds (Combo)",
+    "line": 18.5,
+    "timestamp": "2025-06-17T11:02:49.810440"
+  },
+  {
+    "player_name": "Sabrina Ionescu + Rhyne Howard",
+    "team_name": "NYL/ATL",
+    "stat_type": "Assists (Combo)",
+    "line": 9.0,
+    "timestamp": "2025-06-17T11:02:49.810442"
+  },
+  {
+    "player_name": "Sabrina Ionescu + Rhyne Howard",
+    "team_name": "NYL/ATL",
+    "stat_type": "3-PT Made (Combo)",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.810443"
+  },
+  {
+    "player_name": "Sabrina Ionescu + Allisha Gray",
+    "team_name": "NYL/ATL",
+    "stat_type": "3-PT Made (Combo)",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.810444"
+  },
+  {
+    "player_name": "Caitlin Clark + Marina Mabrey",
+    "team_name": "IND/CON",
+    "stat_type": "Points (Combo)",
+    "line": 39.0,
+    "timestamp": "2025-06-17T11:02:49.810445"
+  },
+  {
+    "player_name": "Aliyah Boston + Tina Charles",
+    "team_name": "IND/CON",
+    "stat_type": "Rebounds (Combo)",
+    "line": 13.5,
+    "timestamp": "2025-06-17T11:02:49.810449"
+  },
+  {
+    "player_name": "Caitlin Clark + Marina Mabrey",
+    "team_name": "IND/CON",
+    "stat_type": "Assists (Combo)",
+    "line": 13.0,
+    "timestamp": "2025-06-17T11:02:49.810450"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "3-PT Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811303"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "3-PT Made",
+    "line": 0.5,
+    "timestamp": "2025-06-17T11:02:49.811308"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 44.5,
+    "timestamp": "2025-06-17T11:02:49.811310"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 25.5,
+    "timestamp": "2025-06-17T11:02:49.811311"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 39.5,
+    "timestamp": "2025-06-17T11:02:49.811312"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811314"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Fantasy Score",
+    "line": 47.5,
+    "timestamp": "2025-06-17T11:02:49.811315"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Pts+Rebs",
+    "line": 33.0,
+    "timestamp": "2025-06-17T11:02:49.811317"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Rebs+Asts",
+    "line": 13.5,
+    "timestamp": "2025-06-17T11:02:49.811319"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Free Throws Made",
+    "line": 5.0,
+    "timestamp": "2025-06-17T11:02:49.811321"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Assists",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811322"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Rebounds",
+    "line": 8.5,
+    "timestamp": "2025-06-17T11:02:49.811323"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Pts+Asts",
+    "line": 28.5,
+    "timestamp": "2025-06-17T11:02:49.811324"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 23.5,
+    "timestamp": "2025-06-17T11:02:49.811325"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "3-PT Attempted",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811327"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Rebounds",
+    "line": 9.0,
+    "timestamp": "2025-06-17T11:02:49.811328"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 22.5,
+    "timestamp": "2025-06-17T11:02:49.811329"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811330"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 34.5,
+    "timestamp": "2025-06-17T11:02:49.811331"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Assists",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.811333"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 37.5,
+    "timestamp": "2025-06-17T11:02:49.811334"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 49.5,
+    "timestamp": "2025-06-17T11:02:49.811339"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.811340"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Rebounds",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.811341"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.811343"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "FG Attempted",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.811344"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Assists",
+    "line": 4.0,
+    "timestamp": "2025-06-17T11:02:49.811345"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "3-PT Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.811346"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Assists",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811347"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Defensive Rebounds",
+    "line": 7.0,
+    "timestamp": "2025-06-17T11:02:49.811348"
+  },
+  {
+    "player_name": "Napheesa Collier",
+    "team_name": "MIN",
+    "stat_type": "Rebounds",
+    "line": 12.5,
+    "timestamp": "2025-06-17T11:02:49.811349"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "Assists",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811351"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "3-PT Made",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811352"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "Pts+Asts",
+    "line": 19.0,
+    "timestamp": "2025-06-17T11:02:49.811353"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.811354"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "3-PT Made",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811355"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.811356"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "FG Attempted",
+    "line": 10.5,
+    "timestamp": "2025-06-17T11:02:49.811357"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "3-PT Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811358"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "Free Throws Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811359"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811361"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "3-PT Attempted",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.811362"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.811363"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.811364"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "Fantasy Score",
+    "line": 26.0,
+    "timestamp": "2025-06-17T11:02:49.811366"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 22.5,
+    "timestamp": "2025-06-17T11:02:49.811367"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811368"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 15.5,
+    "timestamp": "2025-06-17T11:02:49.811369"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "3-PT Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.811370"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "Assists",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811371"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.811372"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.811373"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811374"
+  },
+  {
+    "player_name": "Kayla McBride",
+    "team_name": "MIN",
+    "stat_type": "Assists",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811375"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811376"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 22.5,
+    "timestamp": "2025-06-17T11:02:49.811377"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Rebs+Asts",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.811378"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811379"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.811380"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.811381"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.811383"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Pts+Asts",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.811384"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.811385"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.811386"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Points",
+    "line": 16.5,
+    "timestamp": "2025-06-17T11:02:49.811387"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Fantasy Score",
+    "line": 26.0,
+    "timestamp": "2025-06-17T11:02:49.811388"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 21.5,
+    "timestamp": "2025-06-17T11:02:49.811389"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "3-PT Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811391"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.811392"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811393"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "3-PT Made",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811394"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "3-PT Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.811395"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Assists",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811399"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.811400"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "3-PT Made",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811401"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Pts+Rebs",
+    "line": 18.5,
+    "timestamp": "2025-06-17T11:02:49.811402"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Assists",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811404"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Rebounds",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811405"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.811406"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Points",
+    "line": 13.5,
+    "timestamp": "2025-06-17T11:02:49.811408"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Assists",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.811409"
+  },
+  {
+    "player_name": "Jewell Loyd",
+    "team_name": "LVA",
+    "stat_type": "Rebounds",
+    "line": 4.0,
+    "timestamp": "2025-06-17T11:02:49.811410"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811411"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Assists",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811412"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Rebounds",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811413"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Pts+Asts",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.811414"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Pts+Rebs",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.811415"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811416"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Assists",
+    "line": 5.0,
+    "timestamp": "2025-06-17T11:02:49.811418"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.811419"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.811420"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "3-PT Made",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811421"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Assists",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.811422"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.811423"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Rebs+Asts",
+    "line": 8.5,
+    "timestamp": "2025-06-17T11:02:49.811424"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Assists",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811425"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.811426"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811427"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "3-PT Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.811428"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.811429"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.811431"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 22.5,
+    "timestamp": "2025-06-17T11:02:49.811432"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Points",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.811433"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "3-PT Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811434"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Fantasy Score",
+    "line": 29.0,
+    "timestamp": "2025-06-17T11:02:49.811436"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811437"
+  },
+  {
+    "player_name": "Chelsea Gray",
+    "team_name": "LVA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.811438"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 34.5,
+    "timestamp": "2025-06-17T11:02:49.811439"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 28.5,
+    "timestamp": "2025-06-17T11:02:49.811440"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Rebounds",
+    "line": 4.0,
+    "timestamp": "2025-06-17T11:02:49.811441"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811442"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Pts+Rebs",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.811444"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Points",
+    "line": 22.5,
+    "timestamp": "2025-06-17T11:02:49.811444"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.811445"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Points",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.811446"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 39.5,
+    "timestamp": "2025-06-17T11:02:49.811447"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811448"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.811449"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811450"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Assists",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811451"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Assists",
+    "line": 4.0,
+    "timestamp": "2025-06-17T11:02:49.811452"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.811453"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.811454"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Assists",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811459"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.811460"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811462"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 31.5,
+    "timestamp": "2025-06-17T11:02:49.811463"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Points",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.811464"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Assists",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.811466"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "3-PT Made",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811467"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Points",
+    "line": 18.5,
+    "timestamp": "2025-06-17T11:02:49.811468"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "3-PT Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.811469"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "3-PT Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811471"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Fantasy Score",
+    "line": 36.0,
+    "timestamp": "2025-06-17T11:02:49.811472"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Assists",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811473"
+  },
+  {
+    "player_name": "Jackie Young",
+    "team_name": "LVA",
+    "stat_type": "Pts+Asts",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.811475"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.811476"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.811477"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Assists",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811478"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Pts+Asts",
+    "line": 15.5,
+    "timestamp": "2025-06-17T11:02:49.811479"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Rebs+Asts",
+    "line": 10.0,
+    "timestamp": "2025-06-17T11:02:49.811480"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.811481"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811482"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Pts+Rebs",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.811483"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 10.5,
+    "timestamp": "2025-06-17T11:02:49.811484"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811485"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Rebounds",
+    "line": 4.0,
+    "timestamp": "2025-06-17T11:02:49.811486"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.811487"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811488"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811489"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "FG Attempted",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.811491"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.811492"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Assists",
+    "line": 6.0,
+    "timestamp": "2025-06-17T11:02:49.811493"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Rebounds",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811494"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.811495"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Assists",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.811496"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Offensive Rebounds",
+    "line": 0.5,
+    "timestamp": "2025-06-17T11:02:49.811497"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.811498"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Assists",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811500"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Assists",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811501"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Fantasy Score",
+    "line": 26.5,
+    "timestamp": "2025-06-17T11:02:49.811502"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811502"
+  },
+  {
+    "player_name": "Courtney Williams",
+    "team_name": "MIN",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 20.5,
+    "timestamp": "2025-06-17T11:02:49.811504"
+  },
+  {
+    "player_name": "Alanna Smith",
+    "team_name": "MIN",
+    "stat_type": "3-PT Made",
+    "line": 0.5,
+    "timestamp": "2025-06-17T11:02:49.811505"
+  },
+  {
+    "player_name": "Alanna Smith",
+    "team_name": "MIN",
+    "stat_type": "Rebounds",
+    "line": 5.0,
+    "timestamp": "2025-06-17T11:02:49.811506"
+  },
+  {
+    "player_name": "Alanna Smith",
+    "team_name": "MIN",
+    "stat_type": "Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.811507"
+  },
+  {
+    "player_name": "Alanna Smith",
+    "team_name": "MIN",
+    "stat_type": "Fantasy Score",
+    "line": 28.0,
+    "timestamp": "2025-06-17T11:02:49.811508"
+  },
+  {
+    "player_name": "Alanna Smith",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.811511"
+  },
+  {
+    "player_name": "Alanna Smith",
+    "team_name": "MIN",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 18.0,
+    "timestamp": "2025-06-17T11:02:49.811513"
+  },
+  {
+    "player_name": "Alanna Smith",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 10.0,
+    "timestamp": "2025-06-17T11:02:49.811514"
+  },
+  {
+    "player_name": "Alanna Smith",
+    "team_name": "MIN",
+    "stat_type": "Pts+Rebs",
+    "line": 15.5,
+    "timestamp": "2025-06-17T11:02:49.811515"
+  },
+  {
+    "player_name": "Alanna Smith",
+    "team_name": "MIN",
+    "stat_type": "3-PT Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.811516"
+  },
+  {
+    "player_name": "Alanna Smith",
+    "team_name": "MIN",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811517"
+  },
+  {
+    "player_name": "Alanna Smith",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811518"
+  },
+  {
+    "player_name": "Alanna Smith",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.811519"
+  },
+  {
+    "player_name": "Alanna Smith",
+    "team_name": "MIN",
+    "stat_type": "3-PT Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811521"
+  },
+  {
+    "player_name": "Alanna Smith",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.811522"
+  },
+  {
+    "player_name": "Alanna Smith",
+    "team_name": "MIN",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811523"
+  },
+  {
+    "player_name": "Alanna Smith",
+    "team_name": "MIN",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811524"
+  },
+  {
+    "player_name": "Alanna Smith",
+    "team_name": "MIN",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811525"
+  },
+  {
+    "player_name": "Alanna Smith",
+    "team_name": "MIN",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.811526"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "3-PT Made",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811532"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.811533"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "3-PT Attempted",
+    "line": 6.0,
+    "timestamp": "2025-06-17T11:02:49.811534"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "3-PT Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811536"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Fantasy Score",
+    "line": 30.5,
+    "timestamp": "2025-06-17T11:02:49.811537"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "3-PT Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.811538"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Assists",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811540"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.811541"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "FG Attempted",
+    "line": 15.5,
+    "timestamp": "2025-06-17T11:02:49.811543"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Assists",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811544"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.811545"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.811546"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 15.5,
+    "timestamp": "2025-06-17T11:02:49.811547"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Free Throws Made",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811548"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 25.0,
+    "timestamp": "2025-06-17T11:02:49.811549"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 18.5,
+    "timestamp": "2025-06-17T11:02:49.811550"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811551"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Assists",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811552"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Pts+Asts",
+    "line": 21.5,
+    "timestamp": "2025-06-17T11:02:49.811554"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 16.5,
+    "timestamp": "2025-06-17T11:02:49.811555"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.811556"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Fantasy Score",
+    "line": 38.5,
+    "timestamp": "2025-06-17T11:02:49.811557"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.811558"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Assists",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.811559"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.811560"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811561"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811562"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811563"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "3-PT Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811564"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 18.0,
+    "timestamp": "2025-06-17T11:02:49.811565"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Assists",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811567"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "FG Attempted",
+    "line": 14.0,
+    "timestamp": "2025-06-17T11:02:49.811568"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Pts+Rebs",
+    "line": 22.5,
+    "timestamp": "2025-06-17T11:02:49.811569"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Assists",
+    "line": 10.5,
+    "timestamp": "2025-06-17T11:02:49.811570"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "3-PT Made",
+    "line": 0.5,
+    "timestamp": "2025-06-17T11:02:49.811571"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 39.5,
+    "timestamp": "2025-06-17T11:02:49.811571"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Rebounds",
+    "line": 5.0,
+    "timestamp": "2025-06-17T11:02:49.811573"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.811574"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 34.5,
+    "timestamp": "2025-06-17T11:02:49.811575"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.811576"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Pts+Asts",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.811576"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Assists",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811577"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811578"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "3-PT Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.811579"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Assists",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.811581"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.811586"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811587"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Rebs+Asts",
+    "line": 11.0,
+    "timestamp": "2025-06-17T11:02:49.811588"
+  },
+  {
+    "player_name": "Paige Bueckers",
+    "team_name": "DAL",
+    "stat_type": "Free Throws Made",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811589"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.811590"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 20.5,
+    "timestamp": "2025-06-17T11:02:49.811592"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "FG Attempted",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.811593"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811594"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.811595"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811596"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Pts+Rebs",
+    "line": 18.5,
+    "timestamp": "2025-06-17T11:02:49.811597"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Free Throws Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811598"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811599"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.811600"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 13.0,
+    "timestamp": "2025-06-17T11:02:49.811601"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Fantasy Score",
+    "line": 26.5,
+    "timestamp": "2025-06-17T11:02:49.811602"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "Defensive Rebounds",
+    "line": 6.0,
+    "timestamp": "2025-06-17T11:02:49.811603"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811604"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.811606"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "FG Attempted",
+    "line": 13.5,
+    "timestamp": "2025-06-17T11:02:49.811607"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.811608"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "Rebounds",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.811609"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "3-PT Made",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811610"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "Points",
+    "line": 13.5,
+    "timestamp": "2025-06-17T11:02:49.811611"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.811612"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "3-PT Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811613"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "Pts+Rebs",
+    "line": 22.5,
+    "timestamp": "2025-06-17T11:02:49.811614"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "3-PT Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.811616"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811617"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.811618"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.811619"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "Offensive Rebounds",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.811620"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "Fantasy Score",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.811621"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "3-PT Attempted",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811632"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "Rebounds",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.811633"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "Rebounds",
+    "line": 10.5,
+    "timestamp": "2025-06-17T11:02:49.811634"
+  },
+  {
+    "player_name": "Kayla Thornton",
+    "team_name": "GSV",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 23.0,
+    "timestamp": "2025-06-17T11:02:49.811637"
+  },
+  {
+    "player_name": "Monique Billings",
+    "team_name": "GSV",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.811638"
+  },
+  {
+    "player_name": "Monique Billings",
+    "team_name": "GSV",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811639"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Rebounds",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811644"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811645"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.811646"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Free Throws Made",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811647"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Points",
+    "line": 11.0,
+    "timestamp": "2025-06-17T11:02:49.811648"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Assists",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.811649"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.811651"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Points",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811652"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Assists",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811653"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 21.0,
+    "timestamp": "2025-06-17T11:02:49.811654"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Rebs+Asts",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.811655"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.811657"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Fantasy Score",
+    "line": 27.0,
+    "timestamp": "2025-06-17T11:02:49.811658"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Assists",
+    "line": 8.5,
+    "timestamp": "2025-06-17T11:02:49.811659"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811660"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811661"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.811662"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Assists",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811664"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.811665"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Assists",
+    "line": 6.0,
+    "timestamp": "2025-06-17T11:02:49.811666"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.811667"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Pts+Asts",
+    "line": 17.0,
+    "timestamp": "2025-06-17T11:02:49.811668"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811669"
+  },
+  {
+    "player_name": "Veronica Burton",
+    "team_name": "GSV",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.811670"
+  },
+  {
+    "player_name": "Carla Leite",
+    "team_name": "GSV",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.811673"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Rebs+Asts",
+    "line": 9.0,
+    "timestamp": "2025-06-17T11:02:49.811675"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.811676"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Points",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.811677"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Pts+Asts",
+    "line": 24.0,
+    "timestamp": "2025-06-17T11:02:49.811678"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Rebounds",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811680"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Offensive Rebounds",
+    "line": 0.5,
+    "timestamp": "2025-06-17T11:02:49.811681"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.811682"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811683"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Rebounds",
+    "line": 4.0,
+    "timestamp": "2025-06-17T11:02:49.811684"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Assists",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.811685"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 28.5,
+    "timestamp": "2025-06-17T11:02:49.811686"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.811687"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 39.5,
+    "timestamp": "2025-06-17T11:02:49.811688"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Assists",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811689"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811690"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Free Throws Made",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811691"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Assists",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811692"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 34.5,
+    "timestamp": "2025-06-17T11:02:49.811693"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Pts+Rebs",
+    "line": 23.5,
+    "timestamp": "2025-06-17T11:02:49.811694"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.811694"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811695"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811697"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Fantasy Score",
+    "line": 34.0,
+    "timestamp": "2025-06-17T11:02:49.811698"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "Points",
+    "line": 19.0,
+    "timestamp": "2025-06-17T11:02:49.811699"
+  },
+  {
+    "player_name": "Brittney Sykes",
+    "team_name": "WAS",
+    "stat_type": "FG Attempted",
+    "line": 14.0,
+    "timestamp": "2025-06-17T11:02:49.811700"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.811704"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Points",
+    "line": 10.5,
+    "timestamp": "2025-06-17T11:02:49.811706"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Rebounds",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.811707"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.811708"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Rebounds",
+    "line": 15.5,
+    "timestamp": "2025-06-17T11:02:49.811709"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Rebounds",
+    "line": 8.5,
+    "timestamp": "2025-06-17T11:02:49.811710"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.811711"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Assists",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811712"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Assists",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811713"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 26.5,
+    "timestamp": "2025-06-17T11:02:49.811715"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Pts+Asts",
+    "line": 15.5,
+    "timestamp": "2025-06-17T11:02:49.811716"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Rebounds",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.811717"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.811719"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811720"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.811721"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 34.5,
+    "timestamp": "2025-06-17T11:02:49.811722"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Assists",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811723"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Rebounds",
+    "line": 10.5,
+    "timestamp": "2025-06-17T11:02:49.811724"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.811725"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 39.5,
+    "timestamp": "2025-06-17T11:02:49.811726"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Fantasy Score",
+    "line": 33.0,
+    "timestamp": "2025-06-17T11:02:49.811727"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.811728"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Pts+Rebs",
+    "line": 23.0,
+    "timestamp": "2025-06-17T11:02:49.811729"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Rebounds",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.811730"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Defensive Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.811745"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Offensive Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811746"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Rebounds",
+    "line": 11.0,
+    "timestamp": "2025-06-17T11:02:49.811747"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "FG Attempted",
+    "line": 10.5,
+    "timestamp": "2025-06-17T11:02:49.811748"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Free Throws Made",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811749"
+  },
+  {
+    "player_name": "Angel Reese",
+    "team_name": "CHI",
+    "stat_type": "Assists",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.811750"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "3-PT Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.811751"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Free Throws Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811752"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.811754"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Points",
+    "line": 12.5,
+    "timestamp": "2025-06-17T11:02:49.811755"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.811756"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Assists",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811757"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811759"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Fantasy Score",
+    "line": 26.5,
+    "timestamp": "2025-06-17T11:02:49.811760"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Points",
+    "line": 13.5,
+    "timestamp": "2025-06-17T11:02:49.811760"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Pts+Asts",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.811761"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.811763"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 20.5,
+    "timestamp": "2025-06-17T11:02:49.811764"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "3-PT Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811765"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Assists",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811767"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "FG Attempted",
+    "line": 11.0,
+    "timestamp": "2025-06-17T11:02:49.811768"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Assists",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.811769"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Rebounds",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811770"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.811771"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.811772"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Pts+Rebs",
+    "line": 17.0,
+    "timestamp": "2025-06-17T11:02:49.811773"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Offensive Rebounds",
+    "line": 0.5,
+    "timestamp": "2025-06-17T11:02:49.811774"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811775"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.811776"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811777"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.811778"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "3-PT Made",
+    "line": 0.5,
+    "timestamp": "2025-06-17T11:02:49.811779"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.811780"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.811781"
+  },
+  {
+    "player_name": "Ariel Atkins",
+    "team_name": "CHI",
+    "stat_type": "Assists",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811782"
+  },
+  {
+    "player_name": "Kamilla Cardoso",
+    "team_name": "CHI",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.811783"
+  },
+  {
+    "player_name": "Kamilla Cardoso",
+    "team_name": "CHI",
+    "stat_type": "Points",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811785"
+  },
+  {
+    "player_name": "Kamilla Cardoso",
+    "team_name": "CHI",
+    "stat_type": "Fantasy Score",
+    "line": 22.0,
+    "timestamp": "2025-06-17T11:02:49.811786"
+  },
+  {
+    "player_name": "Kamilla Cardoso",
+    "team_name": "CHI",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811787"
+  },
+  {
+    "player_name": "Kamilla Cardoso",
+    "team_name": "CHI",
+    "stat_type": "Offensive Rebounds",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811788"
+  },
+  {
+    "player_name": "Kamilla Cardoso",
+    "team_name": "CHI",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811789"
+  },
+  {
+    "player_name": "Kamilla Cardoso",
+    "team_name": "CHI",
+    "stat_type": "Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.811791"
+  },
+  {
+    "player_name": "Kamilla Cardoso",
+    "team_name": "CHI",
+    "stat_type": "Rebounds",
+    "line": 10.5,
+    "timestamp": "2025-06-17T11:02:49.811792"
+  },
+  {
+    "player_name": "Kamilla Cardoso",
+    "team_name": "CHI",
+    "stat_type": "Free Throws Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.811793"
+  },
+  {
+    "player_name": "Kamilla Cardoso",
+    "team_name": "CHI",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.811794"
+  },
+  {
+    "player_name": "Kamilla Cardoso",
+    "team_name": "CHI",
+    "stat_type": "Points",
+    "line": 10.0,
+    "timestamp": "2025-06-17T11:02:49.811795"
+  },
+  {
+    "player_name": "Kamilla Cardoso",
+    "team_name": "CHI",
+    "stat_type": "Rebounds",
+    "line": 7.0,
+    "timestamp": "2025-06-17T11:02:49.811796"
+  },
+  {
+    "player_name": "Kamilla Cardoso",
+    "team_name": "CHI",
+    "stat_type": "Defensive Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.811797"
+  },
+  {
+    "player_name": "Kamilla Cardoso",
+    "team_name": "CHI",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.811798"
+  },
+  {
+    "player_name": "Kamilla Cardoso",
+    "team_name": "CHI",
+    "stat_type": "Pts+Rebs",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.811799"
+  },
+  {
+    "player_name": "Kamilla Cardoso",
+    "team_name": "CHI",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.811801"
+  },
+  {
+    "player_name": "Kamilla Cardoso",
+    "team_name": "CHI",
+    "stat_type": "Rebounds",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.811802"
+  },
+  {
+    "player_name": "Kiki Iriafen",
+    "team_name": "WAS",
+    "stat_type": "Rebounds",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.811804"
+  },
+  {
+    "player_name": "Kiki Iriafen",
+    "team_name": "WAS",
+    "stat_type": "Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.811805"
+  },
+  {
+    "player_name": "Kiki Iriafen",
+    "team_name": "WAS",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.811806"
+  },
+  {
+    "player_name": "Kiki Iriafen",
+    "team_name": "WAS",
+    "stat_type": "Fantasy Score",
+    "line": 25.0,
+    "timestamp": "2025-06-17T11:02:49.811807"
+  },
+  {
+    "player_name": "Kiki Iriafen",
+    "team_name": "WAS",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811808"
+  },
+  {
+    "player_name": "Kiki Iriafen",
+    "team_name": "WAS",
+    "stat_type": "Points",
+    "line": 12.5,
+    "timestamp": "2025-06-17T11:02:49.811809"
+  },
+  {
+    "player_name": "Kiki Iriafen",
+    "team_name": "WAS",
+    "stat_type": "Rebounds",
+    "line": 8.0,
+    "timestamp": "2025-06-17T11:02:49.811810"
+  },
+  {
+    "player_name": "Kiki Iriafen",
+    "team_name": "WAS",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.811811"
+  },
+  {
+    "player_name": "Kiki Iriafen",
+    "team_name": "WAS",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.811812"
+  },
+  {
+    "player_name": "Kiki Iriafen",
+    "team_name": "WAS",
+    "stat_type": "Free Throws Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811813"
+  },
+  {
+    "player_name": "Kiki Iriafen",
+    "team_name": "WAS",
+    "stat_type": "Offensive Rebounds",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811814"
+  },
+  {
+    "player_name": "Kiki Iriafen",
+    "team_name": "WAS",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.811815"
+  },
+  {
+    "player_name": "Kiki Iriafen",
+    "team_name": "WAS",
+    "stat_type": "Rebounds",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.811816"
+  },
+  {
+    "player_name": "Kiki Iriafen",
+    "team_name": "WAS",
+    "stat_type": "Defensive Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811817"
+  },
+  {
+    "player_name": "Kiki Iriafen",
+    "team_name": "WAS",
+    "stat_type": "Pts+Rebs",
+    "line": 20.5,
+    "timestamp": "2025-06-17T11:02:49.811818"
+  },
+  {
+    "player_name": "Kiki Iriafen",
+    "team_name": "WAS",
+    "stat_type": "Rebounds",
+    "line": 10.5,
+    "timestamp": "2025-06-17T11:02:49.811819"
+  },
+  {
+    "player_name": "Kiki Iriafen",
+    "team_name": "WAS",
+    "stat_type": "FG Attempted",
+    "line": 10.0,
+    "timestamp": "2025-06-17T11:02:49.811820"
+  },
+  {
+    "player_name": "Kiki Iriafen",
+    "team_name": "WAS",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.811821"
+  },
+  {
+    "player_name": "Kiki Iriafen",
+    "team_name": "WAS",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.811822"
+  },
+  {
+    "player_name": "Sonia Citron",
+    "team_name": "WAS",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.811823"
+  },
+  {
+    "player_name": "Sonia Citron",
+    "team_name": "WAS",
+    "stat_type": "FG Attempted",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.811824"
+  },
+  {
+    "player_name": "Sonia Citron",
+    "team_name": "WAS",
+    "stat_type": "3-PT Made",
+    "line": 0.5,
+    "timestamp": "2025-06-17T11:02:49.811825"
+  },
+  {
+    "player_name": "Sonia Citron",
+    "team_name": "WAS",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.811826"
+  },
+  {
+    "player_name": "Sonia Citron",
+    "team_name": "WAS",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.811827"
+  },
+  {
+    "player_name": "Sonia Citron",
+    "team_name": "WAS",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.811828"
+  },
+  {
+    "player_name": "Sonia Citron",
+    "team_name": "WAS",
+    "stat_type": "3-PT Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.811829"
+  },
+  {
+    "player_name": "Sonia Citron",
+    "team_name": "WAS",
+    "stat_type": "Points",
+    "line": 13.5,
+    "timestamp": "2025-06-17T11:02:49.811830"
+  },
+  {
+    "player_name": "Sonia Citron",
+    "team_name": "WAS",
+    "stat_type": "3-PT Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811831"
+  },
+  {
+    "player_name": "Sonia Citron",
+    "team_name": "WAS",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.811832"
+  },
+  {
+    "player_name": "Sonia Citron",
+    "team_name": "WAS",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.811833"
+  },
+  {
+    "player_name": "Sonia Citron",
+    "team_name": "WAS",
+    "stat_type": "Free Throws Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.811835"
+  },
+  {
+    "player_name": "Ariel Atkins + Brittney Sykes",
+    "team_name": "CHI/WAS",
+    "stat_type": "Points (Combo)",
+    "line": 32.5,
+    "timestamp": "2025-06-17T11:02:49.811840"
+  },
+  {
+    "player_name": "Angel Reese + Kiki Iriafen",
+    "team_name": "CHI/WAS",
+    "stat_type": "Rebounds (Combo)",
+    "line": 19.0,
+    "timestamp": "2025-06-17T11:02:49.811841"
+  },
+  {
+    "player_name": "Ariel Atkins + Brittney Sykes",
+    "team_name": "CHI/WAS",
+    "stat_type": "Assists (Combo)",
+    "line": 8.0,
+    "timestamp": "2025-06-17T11:02:49.811842"
+  },
+  {
+    "player_name": "Paige Bueckers + Kayla Thornton",
+    "team_name": "DAL/GSV",
+    "stat_type": "Points (Combo)",
+    "line": 32.5,
+    "timestamp": "2025-06-17T11:02:49.811843"
+  },
+  {
+    "player_name": "Paige Bueckers + Kayla Thornton",
+    "team_name": "DAL/GSV",
+    "stat_type": "Rebounds (Combo)",
+    "line": 12.5,
+    "timestamp": "2025-06-17T11:02:49.811844"
+  },
+  {
+    "player_name": "Paige Bueckers + Veronica Burton",
+    "team_name": "DAL/GSV",
+    "stat_type": "Assists (Combo)",
+    "line": 12.5,
+    "timestamp": "2025-06-17T11:02:49.811846"
+  },
+  {
+    "player_name": "Kayla McBride + Jackie Young",
+    "team_name": "MIN/LVA",
+    "stat_type": "Points (Combo)",
+    "line": 36.0,
+    "timestamp": "2025-06-17T11:02:49.811847"
+  },
+  {
+    "player_name": "Courtney Williams + Chelsea Gray",
+    "team_name": "MIN/LVA",
+    "stat_type": "Assists (Combo)",
+    "line": 11.0,
+    "timestamp": "2025-06-17T11:02:49.811849"
+  },
+  {
+    "player_name": "Kayla McBride + Jackie Young",
+    "team_name": "MIN/LVA",
+    "stat_type": "3-PT Made (Combo)",
+    "line": 5.0,
+    "timestamp": "2025-06-17T11:02:49.811850"
+  },
+  {
+    "player_name": "Kayla McBride + Jewell Loyd",
+    "team_name": "MIN/LVA",
+    "stat_type": "3-PT Made (Combo)",
+    "line": 5.0,
+    "timestamp": "2025-06-17T11:02:49.811851"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "FG Attempted",
+    "line": 10.5,
+    "timestamp": "2025-06-17T11:02:49.812610"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 12.5,
+    "timestamp": "2025-06-17T11:02:49.812614"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 29.5,
+    "timestamp": "2025-06-17T11:02:49.812615"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "3-PT Made",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.812617"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Pts+Rebs",
+    "line": 18.0,
+    "timestamp": "2025-06-17T11:02:49.812618"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.812619"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "3-PT Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.812621"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.812622"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "3-PT Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.812623"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Pts+Asts",
+    "line": 18.0,
+    "timestamp": "2025-06-17T11:02:49.812625"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Assists",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.812626"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Assists",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.812627"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 21.5,
+    "timestamp": "2025-06-17T11:02:49.812629"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.812630"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Assists",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.812631"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Assists",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.812633"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.812634"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Assists",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.812635"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.812636"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.812637"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 13.5,
+    "timestamp": "2025-06-17T11:02:49.812638"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Fantasy Score",
+    "line": 30.5,
+    "timestamp": "2025-06-17T11:02:49.812639"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.812640"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.812642"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.812643"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.812644"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.812645"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Assists",
+    "line": 4.0,
+    "timestamp": "2025-06-17T11:02:49.812646"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.812647"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.812648"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 18.5,
+    "timestamp": "2025-06-17T11:02:49.812649"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 8.5,
+    "timestamp": "2025-06-17T11:02:49.812650"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.812651"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.812652"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Free Throws Made",
+    "line": 0.5,
+    "timestamp": "2025-06-17T11:02:49.812654"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Offensive Rebounds",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.812654"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.812655"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.812656"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Fantasy Score",
+    "line": 26.5,
+    "timestamp": "2025-06-17T11:02:49.812657"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.812658"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.812660"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 10.5,
+    "timestamp": "2025-06-17T11:02:49.812661"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.812662"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Pts+Rebs",
+    "line": 16.5,
+    "timestamp": "2025-06-17T11:02:49.812663"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.812664"
+  },
+  {
+    "player_name": "Azura Stevens",
+    "team_name": "LAS",
+    "stat_type": "Rebounds",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.812668"
+  },
+  {
+    "player_name": "Azura Stevens",
+    "team_name": "LAS",
+    "stat_type": "Offensive Rebounds",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.812669"
+  },
+  {
+    "player_name": "Azura Stevens",
+    "team_name": "LAS",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.812670"
+  },
+  {
+    "player_name": "Azura Stevens",
+    "team_name": "LAS",
+    "stat_type": "Rebounds",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.812672"
+  },
+  {
+    "player_name": "Azura Stevens",
+    "team_name": "LAS",
+    "stat_type": "Defensive Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.812673"
+  },
+  {
+    "player_name": "Azura Stevens",
+    "team_name": "LAS",
+    "stat_type": "3-PT Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.812674"
+  },
+  {
+    "player_name": "Azura Stevens",
+    "team_name": "LAS",
+    "stat_type": "Rebounds",
+    "line": 10.5,
+    "timestamp": "2025-06-17T11:02:49.812675"
+  },
+  {
+    "player_name": "Azura Stevens",
+    "team_name": "LAS",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.812676"
+  },
+  {
+    "player_name": "Azura Stevens",
+    "team_name": "LAS",
+    "stat_type": "3-PT Made",
+    "line": 0.5,
+    "timestamp": "2025-06-17T11:02:49.812678"
+  },
+  {
+    "player_name": "Azura Stevens",
+    "team_name": "LAS",
+    "stat_type": "Rebounds",
+    "line": 8.0,
+    "timestamp": "2025-06-17T11:02:49.812679"
+  },
+  {
+    "player_name": "Azura Stevens",
+    "team_name": "LAS",
+    "stat_type": "Pts+Rebs",
+    "line": 20.5,
+    "timestamp": "2025-06-17T11:02:49.812680"
+  },
+  {
+    "player_name": "Azura Stevens",
+    "team_name": "LAS",
+    "stat_type": "Points",
+    "line": 12.5,
+    "timestamp": "2025-06-17T11:02:49.812681"
+  },
+  {
+    "player_name": "Dearica Hamby",
+    "team_name": "LAS",
+    "stat_type": "Points",
+    "line": 18.5,
+    "timestamp": "2025-06-17T11:02:49.812686"
+  },
+  {
+    "player_name": "Dearica Hamby",
+    "team_name": "LAS",
+    "stat_type": "Pts+Rebs",
+    "line": 25.0,
+    "timestamp": "2025-06-17T11:02:49.812687"
+  },
+  {
+    "player_name": "Dearica Hamby",
+    "team_name": "LAS",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 31.0,
+    "timestamp": "2025-06-17T11:02:49.812689"
+  },
+  {
+    "player_name": "Dearica Hamby",
+    "team_name": "LAS",
+    "stat_type": "Assists",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.812690"
+  },
+  {
+    "player_name": "Dearica Hamby",
+    "team_name": "LAS",
+    "stat_type": "Fantasy Score",
+    "line": 38.5,
+    "timestamp": "2025-06-17T11:02:49.812691"
+  },
+  {
+    "player_name": "Dearica Hamby",
+    "team_name": "LAS",
+    "stat_type": "Rebs+Asts",
+    "line": 12.5,
+    "timestamp": "2025-06-17T11:02:49.812692"
+  },
+  {
+    "player_name": "Dearica Hamby",
+    "team_name": "LAS",
+    "stat_type": "Points",
+    "line": 15.5,
+    "timestamp": "2025-06-17T11:02:49.812693"
+  },
+  {
+    "player_name": "Dearica Hamby",
+    "team_name": "LAS",
+    "stat_type": "Assists",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.812694"
+  },
+  {
+    "player_name": "Dearica Hamby",
+    "team_name": "LAS",
+    "stat_type": "Assists",
+    "line": 3.5,
+    "timestamp": "2025-06-17T11:02:49.812695"
+  },
+  {
+    "player_name": "Dearica Hamby",
+    "team_name": "LAS",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.812696"
+  },
+  {
+    "player_name": "Dearica Hamby",
+    "team_name": "LAS",
+    "stat_type": "Defensive Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.812697"
+  },
+  {
+    "player_name": "Dearica Hamby",
+    "team_name": "LAS",
+    "stat_type": "Offensive Rebounds",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.812698"
+  },
+  {
+    "player_name": "Rickea Jackson",
+    "team_name": "LAS",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.812699"
+  },
+  {
+    "player_name": "Rickea Jackson",
+    "team_name": "LAS",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.812700"
+  },
+  {
+    "player_name": "Rickea Jackson",
+    "team_name": "LAS",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.812701"
+  },
+  {
+    "player_name": "Rickea Jackson",
+    "team_name": "LAS",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.812702"
+  },
+  {
+    "player_name": "Rickea Jackson",
+    "team_name": "LAS",
+    "stat_type": "Points",
+    "line": 15.5,
+    "timestamp": "2025-06-17T11:02:49.812703"
+  },
+  {
+    "player_name": "Rickea Jackson",
+    "team_name": "LAS",
+    "stat_type": "Offensive Rebounds",
+    "line": 0.5,
+    "timestamp": "2025-06-17T11:02:49.812704"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.812705"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Assists",
+    "line": 8.5,
+    "timestamp": "2025-06-17T11:02:49.812707"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.812708"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "3-PT Made",
+    "line": 2.5,
+    "timestamp": "2025-06-17T11:02:49.812709"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Assists",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.812710"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 15.5,
+    "timestamp": "2025-06-17T11:02:49.812711"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 18.5,
+    "timestamp": "2025-06-17T11:02:49.812712"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.812713"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 26.5,
+    "timestamp": "2025-06-17T11:02:49.812715"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Assists",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.812716"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Fantasy Score",
+    "line": 31.5,
+    "timestamp": "2025-06-17T11:02:49.812717"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.812718"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "FG Attempted",
+    "line": 13.0,
+    "timestamp": "2025-06-17T11:02:49.812719"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.812720"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "3-PT Made",
+    "line": 0.5,
+    "timestamp": "2025-06-17T11:02:49.812722"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Assists",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.812723"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Pts+Asts",
+    "line": 23.5,
+    "timestamp": "2025-06-17T11:02:49.812724"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Free Throws Made",
+    "line": 4.5,
+    "timestamp": "2025-06-17T11:02:49.812725"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 16.0,
+    "timestamp": "2025-06-17T11:02:49.812726"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Pts+Rebs",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.812728"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 10.5,
+    "timestamp": "2025-06-17T11:02:49.812731"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Offensive Rebounds",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.812732"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-17T11:02:49.812733"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.812735"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 9.5,
+    "timestamp": "2025-06-17T11:02:49.812736"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 24.5,
+    "timestamp": "2025-06-17T11:02:49.812737"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "FG Attempted",
+    "line": 14.0,
+    "timestamp": "2025-06-17T11:02:49.812738"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-17T11:02:49.812740"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 11.5,
+    "timestamp": "2025-06-17T11:02:49.812740"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 26.5,
+    "timestamp": "2025-06-17T11:02:49.812741"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-17T11:02:49.812742"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 8.0,
+    "timestamp": "2025-06-17T11:02:49.812743"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-17T11:02:49.812744"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-17T11:02:49.812745"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Defensive Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-17T11:02:49.812747"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Free Throws Made",
+    "line": 1.5,
+    "timestamp": "2025-06-17T11:02:49.812748"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Fantasy Score",
+    "line": 32.5,
+    "timestamp": "2025-06-17T11:02:49.812749"
+  },
+  {
+    "player_name": "Dearica Hamby + Nneka Ogwumike",
+    "team_name": "LAS/SEA",
+    "stat_type": "Rebounds (Combo)",
+    "line": 16.0,
+    "timestamp": "2025-06-17T11:02:49.812750"
+  },
+  {
+    "player_name": "Azura Stevens + Ezi Magbegor",
+    "team_name": "LAS/SEA",
+    "stat_type": "Rebounds (Combo)",
+    "line": 15.5,
+    "timestamp": "2025-06-17T11:02:49.812751"
+  }
+]

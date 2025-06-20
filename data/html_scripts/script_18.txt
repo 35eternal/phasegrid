@@ -1,0 +1,4 @@
+!function(){window.semaphore=window.semaphore||[],window.ketch=function(){window.semaphore.push(arguments)};var e=document.createElement("script");e.type="text/javascript",e.src="https://global.ketchcdn.com/web/v3/config/prizepicks/prizepicks_web_app/boot.js",e.defer=e.async=!0,document.getElementsByTagName("head")[0].appendChild(e)}();
+  ketch('on', 'userConsentUpdated', function() {
+    window.location.reload();
+  });

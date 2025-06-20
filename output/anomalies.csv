@@ -1,0 +1,44 @@
+player_name,stat_type,line,predicted_value,confidence_score,volatility_score,recommendation,bbref_id,timestamp,is_anomaly,anomaly_type,anomaly_score
+Marina Mabrey,Points,29.5,17.6,0.0,0.5,PASS,mabrema01w,2025-06-16T21:57:16.822958,True,DEMON,11.899999999999999
+Marina Mabrey,Pts+Rebs+Asts,39.5,26.6,0.0,0.5,PASS,mabrema01w,2025-06-16T21:57:16.847285,True,DEMON,12.899999999999999
+Marina Mabrey,Fantasy Score,30.5,0.0,0.0,0.5,PASS,mabrema01w,2025-06-16T21:57:16.859435,True,DEMON,30.5
+Caitlin Clark,Pts+Rebs+Asts,44.5,35.5,0.0,0.5,PASS,clarkca01w,2025-06-16T21:57:16.871783,True,DEMON,9.0
+Caitlin Clark,Pts+Rebs+Asts,49.5,35.5,0.0,0.5,PASS,clarkca01w,2025-06-16T21:57:16.897371,True,DEMON,14.0
+Caitlin Clark,Fantasy Score,43.5,19.4,0.0,0.5,PASS,clarkca01w,2025-06-16T21:57:16.899535,True,DEMON,24.1
+Caitlin Clark,Points,29.5,21.1,0.0,0.5,PASS,clarkca01w,2025-06-16T21:57:16.903744,True,DEMON,8.399999999999999
+Kelsey Mitchell,Fantasy Score,24.5,0.0,0.0,0.5,PASS,mitchke01w,2025-06-16T21:57:16.923116,True,DEMON,24.5
+Aliyah Boston,Fantasy Score,31.5,0.0,0.0,0.5,PASS,bostoal01w,2025-06-16T21:57:16.947298,True,DEMON,31.5
+Aliyah Boston,Pts+Rebs+Asts,34.5,25.6,0.0,0.5,PASS,bostoal01w,2025-06-16T21:57:16.979616,True,DEMON,8.899999999999999
+Tina Charles,Fantasy Score,28.5,0.0,0.0,0.5,PASS,charlti01w,2025-06-16T21:57:17.003470,True,DEMON,28.5
+Rhyne Howard,Pts+Rebs+Asts,39.5,28.4,0.0,0.5,PASS,howarrh01w,2025-06-16T21:57:17.037957,True,DEMON,11.100000000000001
+Rhyne Howard,Fantasy Score,35.5,0.0,0.0,0.5,PASS,howarrh01w,2025-06-16T21:57:17.061602,True,DEMON,35.5
+Allisha Gray,Fantasy Score,31.0,0.0,0.0,0.5,PASS,grayyal01w,2025-06-16T21:57:17.114505,True,DEMON,31.0
+Brittney Griner,Fantasy Score,22.0,2.3,0.0,0.5,PASS,grinebr01w,2025-06-16T21:57:17.151384,True,DEMON,19.7
+Brionna Jones,Fantasy Score,29.0,0.0,0.0,0.5,PASS,jonesbr01w,2025-06-16T21:57:17.175402,True,DEMON,29.0
+Breanna Stewart,Fantasy Score,39.0,0.0,0.0,0.5,PASS,stewabr01w,2025-06-16T21:57:17.210471,True,DEMON,39.0
+Breanna Stewart,Points,29.5,19.5,0.0,0.5,PASS,stewabr01w,2025-06-16T21:57:17.217358,True,DEMON,10.0
+Sabrina Ionescu,Pts+Rebs+Asts,39.5,28.2,0.0,0.5,PASS,ionessa01w,2025-06-16T21:57:17.237853,True,DEMON,11.3
+Sabrina Ionescu,Fantasy Score,35.5,0.0,0.0,0.5,PASS,ionessa01w,2025-06-16T21:57:17.257508,True,DEMON,35.5
+Jonquel Jones,Fantasy Score,33.0,7.2,0.0,0.5,PASS,jonesjo01w,2025-06-16T21:57:17.308934,True,DEMON,25.8
+Natasha Cloud,Fantasy Score,25.5,0.0,0.0,0.5,PASS,cloudna01w,2025-06-16T21:57:17.372188,True,DEMON,25.5
+Kayla McBride,Points,24.5,14.2,0.0,0.5,PASS,mcbrika01w,2025-06-16T21:57:17.421219,True,DEMON,10.3
+Paige Bueckers,Fantasy Score,39.5,0.0,0.0,0.5,PASS,bueckpa01w,2025-06-16T21:57:17.508369,True,DEMON,39.5
+Paige Bueckers,Pts+Rebs+Asts,39.5,28.0,0.0,0.5,PASS,bueckpa01w,2025-06-16T21:57:17.534474,True,DEMON,11.5
+Kayla Thornton,Fantasy Score,28.0,0.0,0.0,0.5,PASS,thornka01w,2025-06-16T21:57:17.562053,True,DEMON,28.0
+Veronica Burton,Fantasy Score,27.0,0.0,0.0,0.5,PASS,burtove01w,2025-06-16T21:57:17.583623,True,DEMON,27.0
+Veronica Burton,Pts+Rebs+Asts,29.5,21.4,0.0,0.5,PASS,burtove01w,2025-06-16T21:57:17.598831,True,DEMON,8.100000000000001
+Brittney Sykes,Fantasy Score,33.5,0.0,0.0,0.5,PASS,sykesbr01w,2025-06-16T21:57:17.627412,True,DEMON,33.5
+Brittney Sykes,Pts+Rebs+Asts,39.5,28.3,0.0,0.5,PASS,sykesbr01w,2025-06-16T21:57:17.660521,True,DEMON,11.2
+Angel Reese,Points,19.5,10.4,0.0,0.5,PASS,reesean01w,2025-06-16T21:57:17.673631,True,DEMON,9.1
+Angel Reese,Fantasy Score,33.0,0.0,0.0,0.5,PASS,reesean01w,2025-06-16T21:57:17.680304,True,DEMON,33.0
+Angel Reese,Pts+Rebs+Asts,34.5,25.8,0.0,0.5,PASS,reesean01w,2025-06-16T21:57:17.682802,True,DEMON,8.7
+Angel Reese,Pts+Rebs+Asts,39.5,25.8,0.0,0.5,PASS,reesean01w,2025-06-16T21:57:17.713036,True,DEMON,13.7
+Ariel Atkins,Pts+Rebs+Asts,29.5,19.6,0.0,0.5,PASS,atkinar01w,2025-06-16T21:57:17.726543,True,DEMON,9.899999999999999
+Ariel Atkins,Fantasy Score,26.5,0.0,0.0,0.5,PASS,atkinar01w,2025-06-16T21:57:17.768853,True,DEMON,26.5
+Kamilla Cardoso,Fantasy Score,22.0,0.0,0.0,0.5,PASS,cardoka01w,2025-06-16T21:57:17.775538,True,DEMON,22.0
+Kiki Iriafen,Fantasy Score,25.0,0.0,0.0,0.5,PASS,iriafki01w,2025-06-16T21:57:17.819035,True,DEMON,25.0
+Gabby Williams,Fantasy Score,30.5,0.0,0.0,0.5,PASS,williga01w,2025-06-16T21:57:17.886760,True,DEMON,30.5
+Ezi Magbegor,Fantasy Score,26.5,0.0,0.0,0.5,PASS,magbeez01w,2025-06-16T21:57:17.900295,True,DEMON,26.5
+Skylar Diggins,Fantasy Score,31.5,0.0,0.0,0.5,PASS,diggisk01w,2025-06-16T21:57:17.934954,True,DEMON,31.5
+Nneka Ogwumike,Points,24.5,16.0,0.0,0.5,PASS,ogwumnn01w,2025-06-16T21:57:17.967793,True,DEMON,8.5
+Nneka Ogwumike,Fantasy Score,32.5,0.0,0.0,0.5,PASS,ogwumnn01w,2025-06-16T21:57:17.976534,True,DEMON,32.5

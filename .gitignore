@@ -1,0 +1,11 @@
+
+# Environment files
+.env
+credentials.json
+
+# But keep the example
+!.env.example
+venv/
+output/
+credentials.json
+.env

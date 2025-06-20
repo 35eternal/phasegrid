@@ -1,0 +1,22 @@
+2025-06-15 15:53:45,240 - WARNING - No existing mapping file found at data/player_final_mapping.csv
+2025-06-15 15:53:45,241 - INFO - Scraping WNBA players from Basketball Reference for 2025
+2025-06-15 15:53:45,799 - ERROR - Could not find player stats table
+2025-06-15 15:53:45,801 - INFO - Found 0 unique players in PrizePicks data
+2025-06-15 15:53:45,801 - INFO - Found 0 unmapped players
+2025-06-15 15:53:45,802 - INFO - All players already mapped!
+2025-06-15 15:53:45,802 - INFO - Validating existing mappings...
+2025-06-15 15:53:45,802 - INFO - Scraping WNBA players from Basketball Reference for 2025
+2025-06-15 15:53:46,252 - ERROR - Could not find player stats table
+2025-06-15 15:53:46,253 - WARNING - No existing mapping file found at data/player_final_mapping.csv
+2025-06-15 15:53:46,253 - INFO - All mappings validated successfully
+2025-06-15 16:47:58,214 - WARNING - No existing mapping file found at data/player_final_mapping.csv
+2025-06-15 16:47:58,215 - INFO - Scraping WNBA players from Basketball Reference for 2025
+2025-06-15 16:47:58,634 - ERROR - Could not find player stats table
+2025-06-15 16:47:58,644 - INFO - Found 0 unique players in PrizePicks data
+2025-06-15 16:47:58,644 - INFO - Found 0 unmapped players
+2025-06-15 16:47:58,644 - INFO - All players already mapped!
+2025-06-15 16:47:58,645 - INFO - Validating existing mappings...
+2025-06-15 16:47:58,645 - INFO - Scraping WNBA players from Basketball Reference for 2025
+2025-06-15 16:47:59,008 - ERROR - Could not find player stats table
+2025-06-15 16:47:59,008 - WARNING - No existing mapping file found at data/player_final_mapping.csv
+2025-06-15 16:47:59,009 - INFO - All mappings validated successfully

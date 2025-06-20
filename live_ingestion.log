@@ -1,0 +1,911 @@
+2025-06-15 20:53:02,429 - INFO - Starting WNBA live game log ingestion...
+2025-06-15 20:53:02,429 - INFO - Fetching WNBA teams...
+2025-06-15 20:53:03,907 - ERROR - API request failed: 404 - <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Content Unavailable</title>
+                    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+                </head>
+                <body>
+                    <div class="header">
+                        <svg height="60" viewBox="0 0 51 30" width="102" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                                <path
+                                    d="m20.09 29.196h-3.35v-28.466h5.184l3.468 23.482c-.518-5.581-1.196-14.592-1.196-19.336v-4.146h3.349v28.466h-4.745l-3.19-22.806c.28 5.103.479 11.203.479 14.632v8.173m9.37.001v-28.466h4.744c3.15 0 5.103 1.714 5.103 5.701v4.186c0 2.592-.798 3.907-1.914 4.585 1.116.718 1.914 1.993 1.914 4.186v4.146c0 3.907-2.073 5.662-5.103 5.662zm3.827-24.878v9.409h.478c1.356 0 1.715-.518 1.715-2.073v-5.422c0-1.316-.399-1.914-1.555-1.914zm0 12.519v8.77h.638c1.196 0 1.555-.677 1.555-2.033v-4.824c0-1.395-.44-1.913-1.715-1.913zm13.192 7.016h-2.392l-.32 5.343h-3.866l2.79-28.466h5.422l2.712 28.466h-4.027l-.32-5.343zm-2.233-3.229h2.034l-.32-5.223c-.119-2.073-.438-8.651-.677-12.2h-.16l-.558 12.2zm-34.14-20.624h-7.007a3.1 3.1 0 0 0 -3.098 3.098v23.728a3.103 3.103 0 0 0 3.098 3.102h7.002a3.109 3.109 0 0 0 3.105-3.102v-23.728a3.103 3.103 0 0 0 -3.1-3.098"
+                                    fill="#fffffe" />
+                                <path
+                                    d="m8.367 5.486.007.102c.214.124.322.226.538.364.571.36 1.275 1 1.186 3.203.16.48.231 1.424.38 1.727.297.59.496.974.583 1.531 0 0 .085.867.197.93.591.134.42.192.507.293.092.119.433.113.433.431.118.158.206.323.272.494v-11.463a2.37 2.37 0 0 0 -2.365-2.368h-2.264c.364.13.57.282.689.524.292.025.64.68.098 1.649.24.16.053.398-.119.675-.05.089-.105.247-.266.236-.205.433-.454.852-.641.878-.057.07-.098.256-.013.344.276.123.612.293.778.45m4.103 10.628a2.11 2.11 0 0 1 -1.965 1.33 2.11 2.11 0 0 1 -2.111-2.11c0-.995.684-1.83 1.613-2.053-.243-.61-.757-1.597-.91-1.92-.144-.322-.492-2.33-.567-2.727-.017-.087-.911.519-.913.556-.052.05-.67 1.666-.696 1.753-.013.055-.014.27-.014.27s.304.038.479.569c.173.53.7 2.463.7 2.463s-.142.148-.148.14c.667 2.232.434 3.193.733 3.848.376.922.478.801.8 1.577.232.565.49 2.788.576 2.886.36.457.554.813.554 1.07 0 .26-.305 1.025-.194 1.471.068.263.103.85.225.962 0 0 .112.221.057.32-.016.033-.048.084-.033.125.198.7.84 1.896-.199 2.522h.022a2.353 2.353 0 0 0 1.991-2.34z"
+                                    fill="#b52532" />
+                                <path
+                                    d="m9.804 26.371c-.38-.34-.126-.483-.142-.617-.25-1.037-1.074-1.664-.648-2.006-.105-.342-.319-.772-.311-.771-1.283-.737-2.376-1.934-2.561-2.11-.225-.244-.609-.49-.68-.688-.309-.283-1.821-2.428-2.173-3.218l-.614-.087c-.28-1.14-1.212-2.097-1.235-3.24-.008-.433.196-1.359.272-1.543.075-.188.432-.495.432-.495v-.306c-1.339.038-.954-.099-1.184-.62-.162-.36-.046-.44.012-.69.18-.737.777-1.875 1.023-2.392.076-.261.334-.89.334-.89.998-2.032 1.371-1.883 2.556-1.998l.058-.084c1.188-.052.993-.141 1.16-1.285-.172.074-.224-.359-.224-.359-.094-.65.18-.527.31-.54.029-1.07.138-1.408.91-1.703h-4a2.369 2.369 0 0 0 -2.369 2.371v23.727c0 1.309 1.06 2.37 2.37 2.37h7.005c-.802-.434-.328-1.259-.301-2.825"
+                                    fill="#253b73" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="container">
+                        <h1>Content Unavailable</h1>
+                        <p>
+                            The page you are looking for is not available.
+                            Go to the <a href="https://nba.com">homepage</a> or <a href="https://nba.com/search">search</a>.
+                        </p>
+                    </div>
+                    <style type='text/css'>
+                        body, html {
+                            padding: 0;
+                            margin: 0;
+                            font-family: 'Roboto', sans-serif;
+                            text-align: center;
+                        }
+                        .header {
+                            background-color: #051c2d;
+                            padding: 1rem;
+                        }
+                        .container {
+                            padding: 1rem;
+                        }
+                    </style>
+                </body>
+                </html>
+2025-06-15 20:53:03,907 - ERROR - Failed to fetch WNBA teams
+2025-06-15 20:53:03,907 - ERROR - No teams found. Aborting.
+2025-06-15 20:53:03,907 - ERROR - Live ingestion failed!
+2025-06-15 20:55:27,685 - INFO - Starting WNBA live game log ingestion via ESPN API...
+2025-06-15 20:55:27,686 - INFO - Fetching WNBA games from 2025-05-16 to 2025-09-11...
+2025-06-15 20:55:27,686 - INFO - Fetching games for 2025-05-16
+2025-06-15 20:55:28,856 - INFO - Fetching games for 2025-05-17
+2025-06-15 20:55:29,939 - INFO - Fetching games for 2025-05-18
+2025-06-15 20:55:30,947 - INFO - Fetching games for 2025-05-19
+2025-06-15 20:55:31,999 - INFO - Fetching games for 2025-05-20
+2025-06-15 20:55:33,211 - INFO - Fetching games for 2025-05-21
+2025-06-15 20:55:34,226 - INFO - Fetching games for 2025-05-22
+2025-06-15 20:55:35,312 - INFO - Fetching games for 2025-05-23
+2025-06-15 20:55:36,375 - INFO - Fetching games for 2025-05-24
+2025-06-15 20:55:37,975 - INFO - Fetching games for 2025-05-25
+2025-06-15 20:55:39,014 - INFO - Fetching games for 2025-05-26
+2025-06-15 20:55:40,066 - INFO - Fetching games for 2025-05-27
+2025-06-15 20:55:41,291 - INFO - Fetching games for 2025-05-28
+2025-06-15 20:55:42,493 - INFO - Fetching games for 2025-05-29
+2025-06-15 20:55:43,520 - INFO - Fetching games for 2025-05-30
+2025-06-15 20:55:44,511 - INFO - Fetching games for 2025-05-31
+2025-06-15 20:55:45,589 - INFO - Fetching games for 2025-06-01
+2025-06-15 20:55:46,807 - INFO - Fetching games for 2025-06-02
+2025-06-15 20:55:47,863 - INFO - Fetching games for 2025-06-03
+2025-06-15 20:55:48,916 - INFO - Fetching games for 2025-06-04
+2025-06-15 20:55:50,003 - INFO - Fetching games for 2025-06-05
+2025-06-15 20:55:51,216 - INFO - Fetching games for 2025-06-06
+2025-06-15 20:55:52,173 - INFO - Fetching games for 2025-06-07
+2025-06-15 20:55:53,355 - INFO - Fetching games for 2025-06-08
+2025-06-15 20:55:54,357 - INFO - Fetching games for 2025-06-09
+2025-06-15 20:55:55,339 - INFO - Fetching games for 2025-06-10
+2025-06-15 20:55:56,375 - INFO - Fetching games for 2025-06-11
+2025-06-15 20:55:57,351 - INFO - Fetching games for 2025-06-12
+2025-06-15 20:55:58,493 - INFO - Fetching games for 2025-06-13
+2025-06-15 20:55:59,686 - INFO - Fetching games for 2025-06-14
+2025-06-15 20:56:02,083 - INFO - Fetching games for 2025-06-15
+2025-06-15 20:56:03,258 - INFO - Fetching games for 2025-06-16
+2025-06-15 20:56:04,397 - INFO - Fetching games for 2025-06-17
+2025-06-15 20:56:05,569 - INFO - Fetching games for 2025-06-18
+2025-06-15 20:56:06,595 - INFO - Fetching games for 2025-06-19
+2025-06-15 20:56:07,691 - INFO - Fetching games for 2025-06-20
+2025-06-15 20:56:08,690 - INFO - Fetching games for 2025-06-21
+2025-06-15 20:56:09,675 - INFO - Fetching games for 2025-06-22
+2025-06-15 20:56:10,608 - INFO - Fetching games for 2025-06-23
+2025-06-15 20:56:11,566 - INFO - Fetching games for 2025-06-24
+2025-06-15 20:56:12,504 - INFO - Fetching games for 2025-06-25
+2025-06-15 20:56:13,590 - INFO - Fetching games for 2025-06-26
+2025-06-15 20:56:14,533 - INFO - Fetching games for 2025-06-27
+2025-06-15 20:56:15,559 - INFO - Fetching games for 2025-06-28
+2025-06-15 20:56:16,491 - INFO - Fetching games for 2025-06-29
+2025-06-15 20:56:17,446 - INFO - Fetching games for 2025-06-30
+2025-06-15 20:56:18,408 - INFO - Fetching games for 2025-07-01
+2025-06-15 20:56:19,366 - INFO - Fetching games for 2025-07-02
+2025-06-15 20:56:20,390 - INFO - Fetching games for 2025-07-03
+2025-06-15 20:56:21,565 - INFO - Fetching games for 2025-07-04
+2025-06-15 20:56:22,523 - INFO - Fetching games for 2025-07-05
+2025-06-15 20:56:23,477 - INFO - Fetching games for 2025-07-06
+2025-06-15 20:56:24,421 - INFO - Fetching games for 2025-07-07
+2025-06-15 20:56:25,408 - INFO - Fetching games for 2025-07-08
+2025-06-15 20:56:26,370 - INFO - Fetching games for 2025-07-09
+2025-06-15 20:56:27,474 - INFO - Fetching games for 2025-07-10
+2025-06-15 20:56:28,566 - INFO - Fetching games for 2025-07-11
+2025-06-15 20:56:29,534 - INFO - Fetching games for 2025-07-12
+2025-06-15 20:56:30,562 - INFO - Fetching games for 2025-07-13
+2025-06-15 20:56:31,585 - INFO - Fetching games for 2025-07-14
+2025-06-15 20:56:32,685 - INFO - Fetching games for 2025-07-15
+2025-06-15 20:56:33,662 - INFO - Fetching games for 2025-07-16
+2025-06-15 20:56:34,617 - INFO - Fetching games for 2025-07-17
+2025-06-15 20:56:35,573 - INFO - Fetching games for 2025-07-18
+2025-06-15 20:56:36,548 - INFO - Fetching games for 2025-07-19
+2025-06-15 20:56:37,550 - INFO - Fetching games for 2025-07-20
+2025-06-15 20:56:38,480 - INFO - Fetching games for 2025-07-21
+2025-06-15 20:56:39,450 - INFO - Fetching games for 2025-07-22
+2025-06-15 20:56:40,420 - INFO - Fetching games for 2025-07-23
+2025-06-15 20:56:41,387 - INFO - Fetching games for 2025-07-24
+2025-06-15 20:56:42,348 - INFO - Fetching games for 2025-07-25
+2025-06-15 20:56:43,313 - INFO - Fetching games for 2025-07-26
+2025-06-15 20:56:44,267 - INFO - Fetching games for 2025-07-27
+2025-06-15 20:56:45,237 - INFO - Fetching games for 2025-07-28
+2025-06-15 20:56:46,206 - INFO - Fetching games for 2025-07-29
+2025-06-15 20:56:47,178 - INFO - Fetching games for 2025-07-30
+2025-06-15 20:56:48,140 - INFO - Fetching games for 2025-07-31
+2025-06-15 20:56:49,131 - INFO - Fetching games for 2025-08-01
+2025-06-15 20:56:50,120 - INFO - Fetching games for 2025-08-02
+2025-06-15 20:56:51,216 - INFO - Fetching games for 2025-08-03
+2025-06-15 20:56:52,188 - INFO - Fetching games for 2025-08-04
+2025-06-15 20:56:53,170 - INFO - Fetching games for 2025-08-05
+2025-06-15 20:56:54,116 - INFO - Fetching games for 2025-08-06
+2025-06-15 20:56:55,130 - INFO - Fetching games for 2025-08-07
+2025-06-15 20:56:56,103 - INFO - Fetching games for 2025-08-08
+2025-06-15 20:56:57,075 - INFO - Fetching games for 2025-08-09
+2025-06-15 20:56:58,104 - INFO - Fetching games for 2025-08-10
+2025-06-15 20:56:59,133 - INFO - Fetching games for 2025-08-11
+2025-06-15 20:57:00,221 - INFO - Fetching games for 2025-08-12
+2025-06-15 20:57:01,196 - INFO - Fetching games for 2025-08-13
+2025-06-15 20:57:02,143 - INFO - Fetching games for 2025-08-14
+2025-06-15 20:57:03,123 - INFO - Fetching games for 2025-08-15
+2025-06-15 20:57:04,176 - INFO - Fetching games for 2025-08-16
+2025-06-15 20:57:05,146 - INFO - Fetching games for 2025-08-17
+2025-06-15 20:57:06,148 - INFO - Fetching games for 2025-08-18
+2025-06-15 20:57:07,144 - INFO - Fetching games for 2025-08-19
+2025-06-15 20:57:08,154 - INFO - Fetching games for 2025-08-20
+2025-06-15 20:57:09,183 - INFO - Fetching games for 2025-08-21
+2025-06-15 20:57:10,183 - INFO - Fetching games for 2025-08-22
+2025-06-15 20:57:11,158 - INFO - Fetching games for 2025-08-23
+2025-06-15 20:57:12,115 - INFO - Fetching games for 2025-08-24
+2025-06-15 20:57:13,106 - INFO - Fetching games for 2025-08-25
+2025-06-15 20:57:14,148 - INFO - Fetching games for 2025-08-26
+2025-06-15 20:57:15,124 - INFO - Fetching games for 2025-08-27
+2025-06-15 20:57:16,122 - INFO - Fetching games for 2025-08-28
+2025-06-15 20:57:17,128 - INFO - Fetching games for 2025-08-29
+2025-06-15 20:57:18,104 - INFO - Fetching games for 2025-08-30
+2025-06-15 20:57:19,078 - INFO - Fetching games for 2025-08-31
+2025-06-15 20:57:20,146 - INFO - Fetching games for 2025-09-01
+2025-06-15 20:57:21,252 - INFO - Fetching games for 2025-09-02
+2025-06-15 20:57:22,200 - INFO - Fetching games for 2025-09-03
+2025-06-15 20:57:23,275 - INFO - Fetching games for 2025-09-04
+2025-06-15 20:57:24,245 - INFO - Fetching games for 2025-09-05
+2025-06-15 20:57:25,338 - INFO - Fetching games for 2025-09-06
+2025-06-15 20:57:26,311 - INFO - Fetching games for 2025-09-07
+2025-06-15 20:57:27,308 - INFO - Fetching games for 2025-09-08
+2025-06-15 20:57:28,308 - INFO - Fetching games for 2025-09-09
+2025-06-15 20:57:29,335 - INFO - Fetching games for 2025-09-10
+2025-06-15 20:57:30,320 - INFO - Fetching games for 2025-09-11
+2025-06-15 20:57:31,291 - INFO - Found 288 total games
+2025-06-15 20:57:31,292 - INFO - Found 70 completed games to process
+2025-06-15 20:57:31,292 - INFO - Processing game 1/50: ATL @ WSH
+2025-06-15 20:57:31,292 - INFO - Fetching player stats for game 401736112
+2025-06-15 20:57:32,238 - INFO - Processing game 2/50: MIN @ DAL
+2025-06-15 20:57:32,239 - INFO - Fetching player stats for game 401736113
+2025-06-15 20:57:33,175 - INFO - Processing game 3/50: LA @ GS
+2025-06-15 20:57:33,175 - INFO - Fetching player stats for game 401736114
+2025-06-15 20:57:34,175 - INFO - Processing game 4/50: LV @ NY
+2025-06-15 20:57:34,175 - INFO - Fetching player stats for game 401736116
+2025-06-15 20:57:35,540 - INFO - Processing game 5/50: CHI @ IND
+2025-06-15 20:57:35,540 - INFO - Fetching player stats for game 401736115
+2025-06-15 20:57:36,557 - INFO - Processing game 6/50: SEA @ PHX
+2025-06-15 20:57:36,557 - INFO - Fetching player stats for game 401736117
+2025-06-15 20:57:37,496 - INFO - Processing game 7/50: WSH @ CONN
+2025-06-15 20:57:37,496 - INFO - Fetching player stats for game 401736118
+2025-06-15 20:57:38,427 - INFO - Processing game 8/50: MIN @ LA
+2025-06-15 20:57:38,427 - INFO - Fetching player stats for game 401736119
+2025-06-15 20:57:39,346 - INFO - Processing game 9/50: SEA @ DAL
+2025-06-15 20:57:39,347 - INFO - Fetching player stats for game 401736120
+2025-06-15 20:57:40,283 - INFO - Processing game 10/50: LV @ CONN
+2025-06-15 20:57:40,283 - INFO - Fetching player stats for game 401736121
+2025-06-15 20:57:41,267 - INFO - Processed 10 games, collected 0 player game logs
+2025-06-15 20:57:41,267 - INFO - Processing game 11/50: ATL @ IND
+2025-06-15 20:57:41,267 - INFO - Fetching player stats for game 401736122
+2025-06-15 20:57:42,377 - INFO - Processing game 12/50: DAL @ MIN
+2025-06-15 20:57:42,377 - INFO - Fetching player stats for game 401736123
+2025-06-15 20:57:43,557 - INFO - Processing game 13/50: WSH @ GS
+2025-06-15 20:57:43,557 - INFO - Fetching player stats for game 401736124
+2025-06-15 20:57:44,510 - INFO - Processing game 14/50: LA @ PHX
+2025-06-15 20:57:44,511 - INFO - Fetching player stats for game 401736125
+2025-06-15 20:57:45,588 - INFO - Processing game 15/50: IND @ ATL
+2025-06-15 20:57:45,588 - INFO - Fetching player stats for game 401736126
+2025-06-15 20:57:46,546 - INFO - Processing game 16/50: NY @ CHI
+2025-06-15 20:57:46,546 - INFO - Fetching player stats for game 401736127
+2025-06-15 20:57:47,621 - INFO - Processing game 17/50: CONN @ MIN
+2025-06-15 20:57:47,621 - INFO - Fetching player stats for game 401736128
+2025-06-15 20:57:48,593 - INFO - Processing game 18/50: WSH @ LV
+2025-06-15 20:57:48,593 - INFO - Fetching player stats for game 401736129
+2025-06-15 20:57:49,580 - INFO - Processing game 19/50: GS @ LA
+2025-06-15 20:57:49,581 - INFO - Fetching player stats for game 401736130
+2025-06-15 20:57:50,519 - INFO - Processing game 20/50: PHX @ SEA
+2025-06-15 20:57:50,519 - INFO - Fetching player stats for game 401736131
+2025-06-15 20:57:51,498 - INFO - Processed 20 games, collected 0 player game logs
+2025-06-15 20:57:51,498 - INFO - Processing game 21/50: NY @ IND
+2025-06-15 20:57:51,499 - INFO - Fetching player stats for game 401736132
+2025-06-15 20:57:52,478 - INFO - Processing game 22/50: DAL @ ATL
+2025-06-15 20:57:52,478 - INFO - Fetching player stats for game 401736133
+2025-06-15 20:57:53,569 - INFO - Processing game 23/50: CONN @ ATL
+2025-06-15 20:57:53,569 - INFO - Fetching player stats for game 401736134
+2025-06-15 20:57:54,537 - INFO - Processing game 24/50: CHI @ LA
+2025-06-15 20:57:54,537 - INFO - Fetching player stats for game 401736135
+2025-06-15 20:57:55,479 - INFO - Processing game 25/50: WSH @ PHX
+2025-06-15 20:57:55,480 - INFO - Fetching player stats for game 401736136
+2025-06-15 20:57:56,446 - INFO - Processing game 26/50: LV @ SEA
+2025-06-15 20:57:56,447 - INFO - Fetching player stats for game 401736137
+2025-06-15 20:57:57,616 - INFO - Processing game 27/50: DAL @ CONN
+2025-06-15 20:57:57,616 - INFO - Fetching player stats for game 401736138
+2025-06-15 20:57:58,577 - INFO - Processing game 28/50: GS @ NY
+2025-06-15 20:57:58,578 - INFO - Fetching player stats for game 401736139
+2025-06-15 20:57:59,563 - INFO - Processing game 29/50: SEA @ MIN
+2025-06-15 20:57:59,563 - INFO - Fetching player stats for game 401736140
+2025-06-15 20:58:00,661 - INFO - Processing game 30/50: ATL @ LA
+2025-06-15 20:58:00,662 - INFO - Fetching player stats for game 401736141
+2025-06-15 20:58:01,617 - INFO - Processed 30 games, collected 0 player game logs
+2025-06-15 20:58:01,617 - INFO - Processing game 31/50: CHI @ PHX
+2025-06-15 20:58:01,617 - INFO - Fetching player stats for game 401736142
+2025-06-15 20:58:02,550 - INFO - Processing game 32/50: IND @ WSH
+2025-06-15 20:58:02,550 - INFO - Fetching player stats for game 401736143
+2025-06-15 20:58:03,553 - INFO - Processing game 33/50: GS @ NY
+2025-06-15 20:58:03,553 - INFO - Fetching player stats for game 401736144
+2025-06-15 20:58:04,558 - INFO - Processing game 34/50: DAL @ CHI
+2025-06-15 20:58:04,559 - INFO - Fetching player stats for game 401736145
+2025-06-15 20:58:05,568 - INFO - Processing game 35/50: CONN @ IND
+2025-06-15 20:58:05,568 - INFO - Fetching player stats for game 401736146
+2025-06-15 20:58:06,767 - INFO - Processing game 36/50: NY @ WSH
+2025-06-15 20:58:06,767 - INFO - Fetching player stats for game 401736147
+2025-06-15 20:58:07,746 - INFO - Processing game 37/50: LA @ LV
+2025-06-15 20:58:07,746 - INFO - Fetching player stats for game 401736148
+2025-06-15 20:58:08,726 - INFO - Processing game 38/50: MIN @ PHX
+2025-06-15 20:58:08,726 - INFO - Fetching player stats for game 401736149
+2025-06-15 20:58:09,686 - INFO - Processing game 39/50: ATL @ SEA
+2025-06-15 20:58:09,687 - INFO - Fetching player stats for game 401736150
+2025-06-15 20:58:10,779 - INFO - Processing game 40/50: CHI @ DAL
+2025-06-15 20:58:10,779 - INFO - Fetching player stats for game 401736151
+2025-06-15 20:58:11,744 - INFO - Processed 40 games, collected 0 player game logs
+2025-06-15 20:58:11,744 - INFO - Processing game 41/50: CONN @ NY
+2025-06-15 20:58:11,744 - INFO - Fetching player stats for game 401736152
+2025-06-15 20:58:12,753 - INFO - Processing game 42/50: PHX @ LA
+2025-06-15 20:58:12,753 - INFO - Fetching player stats for game 401736153
+2025-06-15 20:58:13,701 - INFO - Processing game 43/50: LV @ SEA
+2025-06-15 20:58:13,701 - INFO - Fetching player stats for game 401736154
+2025-06-15 20:58:14,634 - INFO - Processing game 44/50: MIN @ GS
+2025-06-15 20:58:14,634 - INFO - Fetching player stats for game 401736155
+2025-06-15 20:58:15,586 - INFO - Processing game 45/50: WSH @ IND
+2025-06-15 20:58:15,586 - INFO - Fetching player stats for game 401736156
+2025-06-15 20:58:16,511 - INFO - Processing game 46/50: PHX @ MIN
+2025-06-15 20:58:16,511 - INFO - Fetching player stats for game 401736157
+2025-06-15 20:58:17,497 - INFO - Processing game 47/50: DAL @ SEA
+2025-06-15 20:58:17,497 - INFO - Fetching player stats for game 401736158
+2025-06-15 20:58:18,464 - INFO - Processing game 48/50: NY @ WSH
+2025-06-15 20:58:18,464 - INFO - Fetching player stats for game 401736159
+2025-06-15 20:58:19,454 - INFO - Processing game 49/50: GS @ PHX
+2025-06-15 20:58:19,454 - INFO - Fetching player stats for game 401736160
+2025-06-15 20:58:20,396 - INFO - Processing game 50/50: ATL @ CONN
+2025-06-15 20:58:20,396 - INFO - Fetching player stats for game 401736161
+2025-06-15 20:58:21,339 - INFO - Processed 50 games, collected 0 player game logs
+2025-06-15 20:58:21,339 - ERROR - No game logs retrieved
+2025-06-15 20:58:21,339 - ERROR - Live ingestion failed!
+2025-06-15 21:03:36,586 - INFO - Starting WNBA live game log ingestion via ESPN API...
+2025-06-15 21:03:36,587 - INFO - Fetching WNBA games from 2025-05-16 to 2025-09-11...
+2025-06-15 21:03:36,587 - INFO - Fetching games for 2025-05-16
+2025-06-15 21:03:37,703 - INFO - Fetching games for 2025-05-17
+2025-06-15 21:03:38,812 - INFO - Fetching games for 2025-05-18
+2025-06-15 21:03:39,791 - INFO - Fetching games for 2025-05-19
+2025-06-15 21:03:40,736 - INFO - Fetching games for 2025-05-20
+2025-06-15 21:03:41,718 - INFO - Fetching games for 2025-05-21
+2025-06-15 21:03:42,654 - INFO - Fetching games for 2025-05-22
+2025-06-15 21:03:43,616 - INFO - Fetching games for 2025-05-23
+2025-06-15 21:03:44,651 - INFO - Fetching games for 2025-05-24
+2025-06-15 21:03:45,595 - INFO - Fetching games for 2025-05-25
+2025-06-15 21:03:46,557 - INFO - Fetching games for 2025-05-26
+2025-06-15 21:03:47,608 - INFO - Fetching games for 2025-05-27
+2025-06-15 21:03:48,576 - INFO - Fetching games for 2025-05-28
+2025-06-15 21:03:49,512 - INFO - Fetching games for 2025-05-29
+2025-06-15 21:03:50,469 - INFO - Fetching games for 2025-05-30
+2025-06-15 21:03:51,581 - INFO - Fetching games for 2025-05-31
+2025-06-15 21:03:52,511 - INFO - Fetching games for 2025-06-01
+2025-06-15 21:03:53,465 - INFO - Fetching games for 2025-06-02
+2025-06-15 21:03:54,562 - INFO - Fetching games for 2025-06-03
+2025-06-15 21:03:55,528 - INFO - Fetching games for 2025-06-04
+2025-06-15 21:03:56,604 - INFO - Fetching games for 2025-06-05
+2025-06-15 21:03:57,705 - INFO - Fetching games for 2025-06-06
+2025-06-15 21:03:58,813 - INFO - Fetching games for 2025-06-07
+2025-06-15 21:03:59,800 - INFO - Fetching games for 2025-06-08
+2025-06-15 21:04:00,747 - INFO - Fetching games for 2025-06-09
+2025-06-15 21:04:01,714 - INFO - Fetching games for 2025-06-10
+2025-06-15 21:04:02,680 - INFO - Fetching games for 2025-06-11
+2025-06-15 21:04:03,696 - INFO - Fetching games for 2025-06-12
+2025-06-15 21:04:04,738 - INFO - Fetching games for 2025-06-13
+2025-06-15 21:04:05,701 - INFO - Fetching games for 2025-06-14
+2025-06-15 21:04:06,863 - INFO - Fetching games for 2025-06-15
+2025-06-15 21:04:07,894 - INFO - Fetching games for 2025-06-16
+2025-06-15 21:04:09,000 - INFO - Fetching games for 2025-06-17
+2025-06-15 21:04:09,942 - INFO - Fetching games for 2025-06-18
+2025-06-15 21:04:10,923 - INFO - Fetching games for 2025-06-19
+2025-06-15 21:04:11,885 - INFO - Fetching games for 2025-06-20
+2025-06-15 21:04:12,925 - INFO - Fetching games for 2025-06-21
+2025-06-15 21:04:13,911 - INFO - Fetching games for 2025-06-22
+2025-06-15 21:04:14,946 - INFO - Fetching games for 2025-06-23
+2025-06-15 21:04:15,941 - INFO - Fetching games for 2025-06-24
+2025-06-15 21:04:16,892 - INFO - Fetching games for 2025-06-25
+2025-06-15 21:04:17,933 - INFO - Fetching games for 2025-06-26
+2025-06-15 21:04:18,886 - INFO - Fetching games for 2025-06-27
+2025-06-15 21:04:19,852 - INFO - Fetching games for 2025-06-28
+2025-06-15 21:04:20,828 - INFO - Fetching games for 2025-06-29
+2025-06-15 21:04:21,897 - INFO - Fetching games for 2025-06-30
+2025-06-15 21:04:23,115 - INFO - Fetching games for 2025-07-01
+2025-06-15 21:04:24,084 - INFO - Fetching games for 2025-07-02
+2025-06-15 21:04:25,174 - INFO - Fetching games for 2025-07-03
+2025-06-15 21:04:26,155 - INFO - Fetching games for 2025-07-04
+2025-06-15 21:04:27,092 - INFO - Fetching games for 2025-07-05
+2025-06-15 21:04:28,119 - INFO - Fetching games for 2025-07-06
+2025-06-15 21:04:29,107 - INFO - Fetching games for 2025-07-07
+2025-06-15 21:04:30,343 - INFO - Fetching games for 2025-07-08
+2025-06-15 21:04:31,503 - INFO - Fetching games for 2025-07-09
+2025-06-15 21:04:32,585 - INFO - Fetching games for 2025-07-10
+2025-06-15 21:04:33,730 - INFO - Fetching games for 2025-07-11
+2025-06-15 21:04:34,704 - INFO - Fetching games for 2025-07-12
+2025-06-15 21:04:35,656 - INFO - Fetching games for 2025-07-13
+2025-06-15 21:04:36,735 - INFO - Fetching games for 2025-07-14
+2025-06-15 21:04:37,712 - INFO - Fetching games for 2025-07-15
+2025-06-15 21:04:38,887 - INFO - Fetching games for 2025-07-16
+2025-06-15 21:04:39,977 - INFO - Fetching games for 2025-07-17
+2025-06-15 21:04:40,941 - INFO - Fetching games for 2025-07-18
+2025-06-15 21:04:41,892 - INFO - Fetching games for 2025-07-19
+2025-06-15 21:04:42,872 - INFO - Fetching games for 2025-07-20
+2025-06-15 21:04:43,814 - INFO - Fetching games for 2025-07-21
+2025-06-15 21:04:45,011 - INFO - Fetching games for 2025-07-22
+2025-06-15 21:04:45,957 - INFO - Fetching games for 2025-07-23
+2025-06-15 21:04:46,897 - INFO - Fetching games for 2025-07-24
+2025-06-15 21:04:47,836 - INFO - Fetching games for 2025-07-25
+2025-06-15 21:04:48,818 - INFO - Fetching games for 2025-07-26
+2025-06-15 21:04:49,795 - INFO - Fetching games for 2025-07-27
+2025-06-15 21:04:51,012 - INFO - Fetching games for 2025-07-28
+2025-06-15 21:04:51,978 - INFO - Fetching games for 2025-07-29
+2025-06-15 21:04:52,953 - INFO - Fetching games for 2025-07-30
+2025-06-15 21:04:54,050 - INFO - Fetching games for 2025-07-31
+2025-06-15 21:04:55,028 - INFO - Fetching games for 2025-08-01
+2025-06-15 21:04:56,028 - INFO - Fetching games for 2025-08-02
+2025-06-15 21:04:57,009 - INFO - Fetching games for 2025-08-03
+2025-06-15 21:04:58,201 - INFO - Fetching games for 2025-08-04
+2025-06-15 21:04:59,201 - INFO - Fetching games for 2025-08-05
+2025-06-15 21:05:00,164 - INFO - Fetching games for 2025-08-06
+2025-06-15 21:05:01,153 - INFO - Fetching games for 2025-08-07
+2025-06-15 21:05:02,141 - INFO - Fetching games for 2025-08-08
+2025-06-15 21:05:03,156 - INFO - Fetching games for 2025-08-09
+2025-06-15 21:05:04,261 - INFO - Fetching games for 2025-08-10
+2025-06-15 21:05:05,264 - INFO - Fetching games for 2025-08-11
+2025-06-15 21:05:06,249 - INFO - Fetching games for 2025-08-12
+2025-06-15 21:05:07,345 - INFO - Fetching games for 2025-08-13
+2025-06-15 21:05:08,381 - INFO - Fetching games for 2025-08-14
+2025-06-15 21:05:09,320 - INFO - Fetching games for 2025-08-15
+2025-06-15 21:05:10,275 - INFO - Fetching games for 2025-08-16
+2025-06-15 21:05:11,368 - INFO - Fetching games for 2025-08-17
+2025-06-15 21:05:12,392 - INFO - Fetching games for 2025-08-18
+2025-06-15 21:05:13,411 - INFO - Fetching games for 2025-08-19
+2025-06-15 21:05:14,478 - INFO - Fetching games for 2025-08-20
+2025-06-15 21:05:15,431 - INFO - Fetching games for 2025-08-21
+2025-06-15 21:05:16,396 - INFO - Fetching games for 2025-08-22
+2025-06-15 21:05:17,387 - INFO - Fetching games for 2025-08-23
+2025-06-15 21:05:18,355 - INFO - Fetching games for 2025-08-24
+2025-06-15 21:05:19,328 - INFO - Fetching games for 2025-08-25
+2025-06-15 21:05:20,298 - INFO - Fetching games for 2025-08-26
+2025-06-15 21:05:21,270 - INFO - Fetching games for 2025-08-27
+2025-06-15 21:05:22,352 - INFO - Fetching games for 2025-08-28
+2025-06-15 21:05:23,360 - INFO - Fetching games for 2025-08-29
+2025-06-15 21:05:24,315 - INFO - Fetching games for 2025-08-30
+2025-06-15 21:05:25,306 - INFO - Fetching games for 2025-08-31
+2025-06-15 21:05:26,304 - INFO - Fetching games for 2025-09-01
+2025-06-15 21:05:27,398 - INFO - Fetching games for 2025-09-02
+2025-06-15 21:05:28,381 - INFO - Fetching games for 2025-09-03
+2025-06-15 21:05:29,481 - INFO - Fetching games for 2025-09-04
+2025-06-15 21:05:30,433 - INFO - Fetching games for 2025-09-05
+2025-06-15 21:05:31,374 - INFO - Fetching games for 2025-09-06
+2025-06-15 21:05:32,363 - INFO - Fetching games for 2025-09-07
+2025-06-15 21:05:33,454 - INFO - Fetching games for 2025-09-08
+2025-06-15 21:05:34,542 - INFO - Fetching games for 2025-09-09
+2025-06-15 21:05:35,532 - INFO - Fetching games for 2025-09-10
+2025-06-15 21:05:36,511 - INFO - Fetching games for 2025-09-11
+2025-06-15 21:05:37,506 - INFO - Found 288 total games
+2025-06-15 21:05:37,506 - INFO - Found 70 completed games to process
+2025-06-15 21:05:37,506 - INFO - Processing game 1/50: ATL @ WSH
+2025-06-15 21:05:37,506 - INFO - Fetching player stats for game 401736112
+2025-06-15 21:05:38,608 - INFO - Successfully extracted 18 player stats for game 401736112
+2025-06-15 21:05:38,609 - INFO - Processing game 2/50: MIN @ DAL
+2025-06-15 21:05:38,609 - INFO - Fetching player stats for game 401736113
+2025-06-15 21:05:39,591 - INFO - Successfully extracted 21 player stats for game 401736113
+2025-06-15 21:05:39,591 - INFO - Processing game 3/50: LA @ GS
+2025-06-15 21:05:39,591 - INFO - Fetching player stats for game 401736114
+2025-06-15 21:05:40,541 - INFO - Successfully extracted 17 player stats for game 401736114
+2025-06-15 21:05:40,541 - INFO - Processing game 4/50: LV @ NY
+2025-06-15 21:05:40,541 - INFO - Fetching player stats for game 401736116
+2025-06-15 21:05:41,477 - INFO - Successfully extracted 22 player stats for game 401736116
+2025-06-15 21:05:41,477 - INFO - Processing game 5/50: CHI @ IND
+2025-06-15 21:05:41,477 - INFO - Fetching player stats for game 401736115
+2025-06-15 21:05:42,416 - INFO - Successfully extracted 21 player stats for game 401736115
+2025-06-15 21:05:42,417 - INFO - Processing game 6/50: SEA @ PHX
+2025-06-15 21:05:42,417 - INFO - Fetching player stats for game 401736117
+2025-06-15 21:05:43,323 - INFO - Successfully extracted 19 player stats for game 401736117
+2025-06-15 21:05:43,324 - INFO - Processing game 7/50: WSH @ CONN
+2025-06-15 21:05:43,324 - INFO - Fetching player stats for game 401736118
+2025-06-15 21:05:44,253 - INFO - Successfully extracted 19 player stats for game 401736118
+2025-06-15 21:05:44,253 - INFO - Processing game 8/50: MIN @ LA
+2025-06-15 21:05:44,253 - INFO - Fetching player stats for game 401736119
+2025-06-15 21:05:45,211 - INFO - Successfully extracted 17 player stats for game 401736119
+2025-06-15 21:05:45,212 - INFO - Processing game 9/50: SEA @ DAL
+2025-06-15 21:05:45,212 - INFO - Fetching player stats for game 401736120
+2025-06-15 21:05:46,295 - INFO - Successfully extracted 18 player stats for game 401736120
+2025-06-15 21:05:46,296 - INFO - Processing game 10/50: LV @ CONN
+2025-06-15 21:05:46,296 - INFO - Fetching player stats for game 401736121
+2025-06-15 21:05:47,324 - INFO - Successfully extracted 22 player stats for game 401736121
+2025-06-15 21:05:47,325 - INFO - Processed 10 games, collected 194 player game logs
+2025-06-15 21:05:47,325 - INFO - Processing game 11/50: ATL @ IND
+2025-06-15 21:05:47,325 - INFO - Fetching player stats for game 401736122
+2025-06-15 21:05:48,331 - INFO - Successfully extracted 19 player stats for game 401736122
+2025-06-15 21:05:48,332 - INFO - Processing game 12/50: DAL @ MIN
+2025-06-15 21:05:48,332 - INFO - Fetching player stats for game 401736123
+2025-06-15 21:05:49,289 - INFO - Successfully extracted 17 player stats for game 401736123
+2025-06-15 21:05:49,290 - INFO - Processing game 13/50: WSH @ GS
+2025-06-15 21:05:49,290 - INFO - Fetching player stats for game 401736124
+2025-06-15 21:05:50,251 - INFO - Successfully extracted 20 player stats for game 401736124
+2025-06-15 21:05:50,252 - INFO - Processing game 14/50: LA @ PHX
+2025-06-15 21:05:50,252 - INFO - Fetching player stats for game 401736125
+2025-06-15 21:05:51,316 - INFO - Successfully extracted 20 player stats for game 401736125
+2025-06-15 21:05:51,316 - INFO - Processing game 15/50: IND @ ATL
+2025-06-15 21:05:51,316 - INFO - Fetching player stats for game 401736126
+2025-06-15 21:05:52,257 - INFO - Successfully extracted 18 player stats for game 401736126
+2025-06-15 21:05:52,257 - INFO - Processing game 16/50: NY @ CHI
+2025-06-15 21:05:52,257 - INFO - Fetching player stats for game 401736127
+2025-06-15 21:05:53,158 - INFO - Successfully extracted 23 player stats for game 401736127
+2025-06-15 21:05:53,158 - INFO - Processing game 17/50: CONN @ MIN
+2025-06-15 21:05:53,158 - INFO - Fetching player stats for game 401736128
+2025-06-15 21:05:54,108 - INFO - Successfully extracted 19 player stats for game 401736128
+2025-06-15 21:05:54,109 - INFO - Processing game 18/50: WSH @ LV
+2025-06-15 21:05:54,109 - INFO - Fetching player stats for game 401736129
+2025-06-15 21:05:55,243 - INFO - Successfully extracted 18 player stats for game 401736129
+2025-06-15 21:05:55,243 - INFO - Processing game 19/50: GS @ LA
+2025-06-15 21:05:55,243 - INFO - Fetching player stats for game 401736130
+2025-06-15 21:05:56,170 - INFO - Successfully extracted 18 player stats for game 401736130
+2025-06-15 21:05:56,170 - INFO - Processing game 20/50: PHX @ SEA
+2025-06-15 21:05:56,170 - INFO - Fetching player stats for game 401736131
+2025-06-15 21:05:57,126 - INFO - Successfully extracted 19 player stats for game 401736131
+2025-06-15 21:05:57,127 - INFO - Processed 20 games, collected 385 player game logs
+2025-06-15 21:05:57,127 - INFO - Processing game 21/50: NY @ IND
+2025-06-15 21:05:57,127 - INFO - Fetching player stats for game 401736132
+2025-06-15 21:05:58,062 - INFO - Successfully extracted 16 player stats for game 401736132
+2025-06-15 21:05:58,062 - INFO - Processing game 22/50: DAL @ ATL
+2025-06-15 21:05:58,062 - INFO - Fetching player stats for game 401736133
+2025-06-15 21:05:59,008 - INFO - Successfully extracted 18 player stats for game 401736133
+2025-06-15 21:05:59,008 - INFO - Processing game 23/50: CONN @ ATL
+2025-06-15 21:05:59,008 - INFO - Fetching player stats for game 401736134
+2025-06-15 21:05:59,973 - INFO - Successfully extracted 19 player stats for game 401736134
+2025-06-15 21:05:59,974 - INFO - Processing game 24/50: CHI @ LA
+2025-06-15 21:05:59,974 - INFO - Fetching player stats for game 401736135
+2025-06-15 21:06:00,894 - INFO - Successfully extracted 18 player stats for game 401736135
+2025-06-15 21:06:00,894 - INFO - Processing game 25/50: WSH @ PHX
+2025-06-15 21:06:00,894 - INFO - Fetching player stats for game 401736136
+2025-06-15 21:06:01,963 - INFO - Successfully extracted 19 player stats for game 401736136
+2025-06-15 21:06:01,964 - INFO - Processing game 26/50: LV @ SEA
+2025-06-15 21:06:01,964 - INFO - Fetching player stats for game 401736137
+2025-06-15 21:06:03,044 - INFO - Successfully extracted 21 player stats for game 401736137
+2025-06-15 21:06:03,044 - INFO - Processing game 27/50: DAL @ CONN
+2025-06-15 21:06:03,044 - INFO - Fetching player stats for game 401736138
+2025-06-15 21:06:04,368 - INFO - Successfully extracted 23 player stats for game 401736138
+2025-06-15 21:06:04,368 - INFO - Processing game 28/50: GS @ NY
+2025-06-15 21:06:04,368 - INFO - Fetching player stats for game 401736139
+2025-06-15 21:06:05,324 - INFO - Successfully extracted 20 player stats for game 401736139
+2025-06-15 21:06:05,324 - INFO - Processing game 29/50: SEA @ MIN
+2025-06-15 21:06:05,324 - INFO - Fetching player stats for game 401736140
+2025-06-15 21:06:06,452 - INFO - Successfully extracted 20 player stats for game 401736140
+2025-06-15 21:06:06,452 - INFO - Processing game 30/50: ATL @ LA
+2025-06-15 21:06:06,452 - INFO - Fetching player stats for game 401736141
+2025-06-15 21:06:07,420 - INFO - Successfully extracted 19 player stats for game 401736141
+2025-06-15 21:06:07,420 - INFO - Processed 30 games, collected 578 player game logs
+2025-06-15 21:06:07,420 - INFO - Processing game 31/50: CHI @ PHX
+2025-06-15 21:06:07,420 - INFO - Fetching player stats for game 401736142
+2025-06-15 21:06:08,436 - INFO - Successfully extracted 18 player stats for game 401736142
+2025-06-15 21:06:08,436 - INFO - Processing game 32/50: IND @ WSH
+2025-06-15 21:06:08,436 - INFO - Fetching player stats for game 401736143
+2025-06-15 21:06:09,397 - INFO - Successfully extracted 19 player stats for game 401736143
+2025-06-15 21:06:09,397 - INFO - Processing game 33/50: GS @ NY
+2025-06-15 21:06:09,397 - INFO - Fetching player stats for game 401736144
+2025-06-15 21:06:10,350 - INFO - Successfully extracted 18 player stats for game 401736144
+2025-06-15 21:06:10,350 - INFO - Processing game 34/50: DAL @ CHI
+2025-06-15 21:06:10,350 - INFO - Fetching player stats for game 401736145
+2025-06-15 21:06:11,442 - INFO - Successfully extracted 19 player stats for game 401736145
+2025-06-15 21:06:11,442 - INFO - Processing game 35/50: CONN @ IND
+2025-06-15 21:06:11,442 - INFO - Fetching player stats for game 401736146
+2025-06-15 21:06:12,418 - INFO - Successfully extracted 18 player stats for game 401736146
+2025-06-15 21:06:12,418 - INFO - Processing game 36/50: NY @ WSH
+2025-06-15 21:06:12,418 - INFO - Fetching player stats for game 401736147
+2025-06-15 21:06:13,346 - INFO - Successfully extracted 21 player stats for game 401736147
+2025-06-15 21:06:13,347 - INFO - Processing game 37/50: LA @ LV
+2025-06-15 21:06:13,347 - INFO - Fetching player stats for game 401736148
+2025-06-15 21:06:14,358 - INFO - Successfully extracted 18 player stats for game 401736148
+2025-06-15 21:06:14,358 - INFO - Processing game 38/50: MIN @ PHX
+2025-06-15 21:06:14,358 - INFO - Fetching player stats for game 401736149
+2025-06-15 21:06:15,317 - INFO - Successfully extracted 19 player stats for game 401736149
+2025-06-15 21:06:15,317 - INFO - Processing game 39/50: ATL @ SEA
+2025-06-15 21:06:15,317 - INFO - Fetching player stats for game 401736150
+2025-06-15 21:06:16,227 - INFO - Successfully extracted 18 player stats for game 401736150
+2025-06-15 21:06:16,228 - INFO - Processing game 40/50: CHI @ DAL
+2025-06-15 21:06:16,228 - INFO - Fetching player stats for game 401736151
+2025-06-15 21:06:17,182 - INFO - Successfully extracted 20 player stats for game 401736151
+2025-06-15 21:06:17,182 - INFO - Processed 40 games, collected 766 player game logs
+2025-06-15 21:06:17,182 - INFO - Processing game 41/50: CONN @ NY
+2025-06-15 21:06:17,182 - INFO - Fetching player stats for game 401736152
+2025-06-15 21:06:18,170 - INFO - Successfully extracted 21 player stats for game 401736152
+2025-06-15 21:06:18,170 - INFO - Processing game 42/50: PHX @ LA
+2025-06-15 21:06:18,171 - INFO - Fetching player stats for game 401736153
+2025-06-15 21:06:19,100 - INFO - Successfully extracted 18 player stats for game 401736153
+2025-06-15 21:06:19,100 - INFO - Processing game 43/50: LV @ SEA
+2025-06-15 21:06:19,101 - INFO - Fetching player stats for game 401736154
+2025-06-15 21:06:20,052 - INFO - Successfully extracted 18 player stats for game 401736154
+2025-06-15 21:06:20,053 - INFO - Processing game 44/50: MIN @ GS
+2025-06-15 21:06:20,053 - INFO - Fetching player stats for game 401736155
+2025-06-15 21:06:21,122 - INFO - Successfully extracted 20 player stats for game 401736155
+2025-06-15 21:06:21,122 - INFO - Processing game 45/50: WSH @ IND
+2025-06-15 21:06:21,122 - INFO - Fetching player stats for game 401736156
+2025-06-15 21:06:22,037 - INFO - Successfully extracted 18 player stats for game 401736156
+2025-06-15 21:06:22,038 - INFO - Processing game 46/50: PHX @ MIN
+2025-06-15 21:06:22,038 - INFO - Fetching player stats for game 401736157
+2025-06-15 21:06:23,015 - INFO - Successfully extracted 21 player stats for game 401736157
+2025-06-15 21:06:23,015 - INFO - Processing game 47/50: DAL @ SEA
+2025-06-15 21:06:23,016 - INFO - Fetching player stats for game 401736158
+2025-06-15 21:06:23,934 - INFO - Successfully extracted 19 player stats for game 401736158
+2025-06-15 21:06:23,934 - INFO - Processing game 48/50: NY @ WSH
+2025-06-15 21:06:23,934 - INFO - Fetching player stats for game 401736159
+2025-06-15 21:06:24,897 - INFO - Successfully extracted 19 player stats for game 401736159
+2025-06-15 21:06:24,898 - INFO - Processing game 49/50: GS @ PHX
+2025-06-15 21:06:24,898 - INFO - Fetching player stats for game 401736160
+2025-06-15 21:06:25,848 - INFO - Successfully extracted 19 player stats for game 401736160
+2025-06-15 21:06:25,848 - INFO - Processing game 50/50: ATL @ CONN
+2025-06-15 21:06:25,848 - INFO - Fetching player stats for game 401736161
+2025-06-15 21:06:26,761 - INFO - Successfully extracted 21 player stats for game 401736161
+2025-06-15 21:06:26,762 - INFO - Processed 50 games, collected 960 player game logs
+2025-06-15 21:06:26,805 - INFO - Successfully saved 960 game logs to data\wnba_2025_gamelogs.csv
+2025-06-15 21:06:26,807 - INFO - Date range: 2025-05-16 00:00:00 to 2025-06-06 00:00:00
+2025-06-15 21:06:26,807 - INFO - Output format matches wnba_2024_gamelogs.csv with 69 columns
+2025-06-15 21:06:26,808 - INFO - Players covered: 153
+2025-06-15 21:06:26,808 - INFO - Live ingestion completed successfully!
+2025-06-15 21:09:26,497 - INFO - Starting WNBA live game log ingestion via ESPN API...
+2025-06-15 21:09:26,497 - INFO - Fetching WNBA games from 2025-05-16 to 2025-09-11...
+2025-06-15 21:09:26,497 - INFO - Fetching games for 2025-05-16
+2025-06-15 21:09:27,527 - INFO - Fetching games for 2025-05-17
+2025-06-15 21:09:28,501 - INFO - Fetching games for 2025-05-18
+2025-06-15 21:09:29,455 - INFO - Fetching games for 2025-05-19
+2025-06-15 21:09:30,412 - INFO - Fetching games for 2025-05-20
+2025-06-15 21:09:31,539 - INFO - Fetching games for 2025-05-21
+2025-06-15 21:09:32,486 - INFO - Fetching games for 2025-05-22
+2025-06-15 21:09:33,449 - INFO - Fetching games for 2025-05-23
+2025-06-15 21:09:34,411 - INFO - Fetching games for 2025-05-24
+2025-06-15 21:09:35,364 - INFO - Fetching games for 2025-05-25
+2025-06-15 21:09:36,370 - INFO - Fetching games for 2025-05-26
+2025-06-15 21:09:37,308 - INFO - Fetching games for 2025-05-27
+2025-06-15 21:09:38,246 - INFO - Fetching games for 2025-05-28
+2025-06-15 21:09:39,187 - INFO - Fetching games for 2025-05-29
+2025-06-15 21:09:40,157 - INFO - Fetching games for 2025-05-30
+2025-06-15 21:09:41,267 - INFO - Fetching games for 2025-05-31
+2025-06-15 21:09:42,236 - INFO - Fetching games for 2025-06-01
+2025-06-15 21:09:43,320 - INFO - Fetching games for 2025-06-02
+2025-06-15 21:09:44,251 - INFO - Fetching games for 2025-06-03
+2025-06-15 21:09:45,209 - INFO - Fetching games for 2025-06-04
+2025-06-15 21:09:46,143 - INFO - Fetching games for 2025-06-05
+2025-06-15 21:09:47,210 - INFO - Fetching games for 2025-06-06
+2025-06-15 21:09:48,197 - INFO - Fetching games for 2025-06-07
+2025-06-15 21:09:49,197 - INFO - Fetching games for 2025-06-08
+2025-06-15 21:09:50,190 - INFO - Fetching games for 2025-06-09
+2025-06-15 21:09:51,146 - INFO - Fetching games for 2025-06-10
+2025-06-15 21:09:52,116 - INFO - Fetching games for 2025-06-11
+2025-06-15 21:09:53,051 - INFO - Fetching games for 2025-06-12
+2025-06-15 21:09:53,994 - INFO - Fetching games for 2025-06-13
+2025-06-15 21:09:54,940 - INFO - Fetching games for 2025-06-14
+2025-06-15 21:09:55,985 - INFO - Fetching games for 2025-06-15
+2025-06-15 21:09:57,014 - INFO - Fetching games for 2025-06-16
+2025-06-15 21:09:58,018 - INFO - Fetching games for 2025-06-17
+2025-06-15 21:09:59,011 - INFO - Fetching games for 2025-06-18
+2025-06-15 21:09:59,974 - INFO - Fetching games for 2025-06-19
+2025-06-15 21:10:01,086 - INFO - Fetching games for 2025-06-20
+2025-06-15 21:10:02,197 - INFO - Fetching games for 2025-06-21
+2025-06-15 21:10:03,146 - INFO - Fetching games for 2025-06-22
+2025-06-15 21:10:04,105 - INFO - Fetching games for 2025-06-23
+2025-06-15 21:10:05,086 - INFO - Fetching games for 2025-06-24
+2025-06-15 21:10:06,103 - INFO - Fetching games for 2025-06-25
+2025-06-15 21:10:07,150 - INFO - Fetching games for 2025-06-26
+2025-06-15 21:10:08,124 - INFO - Fetching games for 2025-06-27
+2025-06-15 21:10:09,092 - INFO - Fetching games for 2025-06-28
+2025-06-15 21:10:10,161 - INFO - Fetching games for 2025-06-29
+2025-06-15 21:10:11,118 - INFO - Fetching games for 2025-06-30
+2025-06-15 21:10:12,213 - INFO - Fetching games for 2025-07-01
+2025-06-15 21:10:13,201 - INFO - Fetching games for 2025-07-02
+2025-06-15 21:10:14,271 - INFO - Fetching games for 2025-07-03
+2025-06-15 21:10:15,399 - INFO - Fetching games for 2025-07-04
+2025-06-15 21:10:16,412 - INFO - Fetching games for 2025-07-05
+2025-06-15 21:10:17,349 - INFO - Fetching games for 2025-07-06
+2025-06-15 21:10:18,293 - INFO - Fetching games for 2025-07-07
+2025-06-15 21:10:19,438 - INFO - Fetching games for 2025-07-08
+2025-06-15 21:10:20,388 - INFO - Fetching games for 2025-07-09
+2025-06-15 21:10:21,424 - INFO - Fetching games for 2025-07-10
+2025-06-15 21:10:22,429 - INFO - Fetching games for 2025-07-11
+2025-06-15 21:10:23,415 - INFO - Fetching games for 2025-07-12
+2025-06-15 21:10:24,398 - INFO - Fetching games for 2025-07-13
+2025-06-15 21:10:25,375 - INFO - Fetching games for 2025-07-14
+2025-06-15 21:10:26,329 - INFO - Fetching games for 2025-07-15
+2025-06-15 21:10:27,286 - INFO - Fetching games for 2025-07-16
+2025-06-15 21:10:28,277 - INFO - Fetching games for 2025-07-17
+2025-06-15 21:10:29,242 - INFO - Fetching games for 2025-07-18
+2025-06-15 21:10:30,196 - INFO - Fetching games for 2025-07-19
+2025-06-15 21:10:31,144 - INFO - Fetching games for 2025-07-20
+2025-06-15 21:10:32,080 - INFO - Fetching games for 2025-07-21
+2025-06-15 21:10:33,013 - INFO - Fetching games for 2025-07-22
+2025-06-15 21:10:33,999 - INFO - Fetching games for 2025-07-23
+2025-06-15 21:10:34,945 - INFO - Fetching games for 2025-07-24
+2025-06-15 21:10:35,929 - INFO - Fetching games for 2025-07-25
+2025-06-15 21:10:36,891 - INFO - Fetching games for 2025-07-26
+2025-06-15 21:10:37,838 - INFO - Fetching games for 2025-07-27
+2025-06-15 21:10:38,859 - INFO - Fetching games for 2025-07-28
+2025-06-15 21:10:39,793 - INFO - Fetching games for 2025-07-29
+2025-06-15 21:10:40,831 - INFO - Fetching games for 2025-07-30
+2025-06-15 21:10:41,801 - INFO - Fetching games for 2025-07-31
+2025-06-15 21:10:42,758 - INFO - Fetching games for 2025-08-01
+2025-06-15 21:10:43,743 - INFO - Fetching games for 2025-08-02
+2025-06-15 21:10:44,682 - INFO - Fetching games for 2025-08-03
+2025-06-15 21:10:45,689 - INFO - Fetching games for 2025-08-04
+2025-06-15 21:10:46,798 - INFO - Fetching games for 2025-08-05
+2025-06-15 21:10:47,895 - INFO - Fetching games for 2025-08-06
+2025-06-15 21:10:48,858 - INFO - Fetching games for 2025-08-07
+2025-06-15 21:10:49,829 - INFO - Fetching games for 2025-08-08
+2025-06-15 21:10:50,782 - INFO - Fetching games for 2025-08-09
+2025-06-15 21:10:51,767 - INFO - Fetching games for 2025-08-10
+2025-06-15 21:10:52,726 - INFO - Fetching games for 2025-08-11
+2025-06-15 21:10:53,705 - INFO - Fetching games for 2025-08-12
+2025-06-15 21:10:54,684 - INFO - Fetching games for 2025-08-13
+2025-06-15 21:10:55,667 - INFO - Fetching games for 2025-08-14
+2025-06-15 21:10:56,674 - INFO - Fetching games for 2025-08-15
+2025-06-15 21:10:57,754 - INFO - Fetching games for 2025-08-16
+2025-06-15 21:10:58,754 - INFO - Fetching games for 2025-08-17
+2025-06-15 21:10:59,754 - INFO - Fetching games for 2025-08-18
+2025-06-15 21:11:00,692 - INFO - Fetching games for 2025-08-19
+2025-06-15 21:11:01,680 - INFO - Fetching games for 2025-08-20
+2025-06-15 21:11:02,643 - INFO - Fetching games for 2025-08-21
+2025-06-15 21:11:03,720 - INFO - Fetching games for 2025-08-22
+2025-06-15 21:11:04,829 - INFO - Fetching games for 2025-08-23
+2025-06-15 21:11:05,786 - INFO - Fetching games for 2025-08-24
+2025-06-15 21:11:06,866 - INFO - Fetching games for 2025-08-25
+2025-06-15 21:11:07,842 - INFO - Fetching games for 2025-08-26
+2025-06-15 21:11:08,904 - INFO - Fetching games for 2025-08-27
+2025-06-15 21:11:09,991 - INFO - Fetching games for 2025-08-28
+2025-06-15 21:11:11,225 - INFO - Fetching games for 2025-08-29
+2025-06-15 21:11:12,178 - INFO - Fetching games for 2025-08-30
+2025-06-15 21:11:13,122 - INFO - Fetching games for 2025-08-31
+2025-06-15 21:11:14,175 - INFO - Fetching games for 2025-09-01
+2025-06-15 21:11:15,150 - INFO - Fetching games for 2025-09-02
+2025-06-15 21:11:16,112 - INFO - Fetching games for 2025-09-03
+2025-06-15 21:11:17,227 - INFO - Fetching games for 2025-09-04
+2025-06-15 21:11:18,194 - INFO - Fetching games for 2025-09-05
+2025-06-15 21:11:19,163 - INFO - Fetching games for 2025-09-06
+2025-06-15 21:11:20,212 - INFO - Fetching games for 2025-09-07
+2025-06-15 21:11:21,384 - INFO - Fetching games for 2025-09-08
+2025-06-15 21:11:22,484 - INFO - Fetching games for 2025-09-09
+2025-06-15 21:11:23,490 - INFO - Fetching games for 2025-09-10
+2025-06-15 21:11:24,527 - INFO - Fetching games for 2025-09-11
+2025-06-15 21:11:25,495 - INFO - Found 288 total games
+2025-06-15 21:11:25,495 - INFO - Found 70 completed games to process
+2025-06-15 21:11:25,496 - INFO - Processing game 1/50: ATL @ WSH
+2025-06-15 21:11:25,496 - INFO - Fetching player stats for game 401736112
+2025-06-15 21:11:26,412 - INFO - Successfully extracted 18 player stats for game 401736112
+2025-06-15 21:11:26,412 - INFO - Processing game 2/50: MIN @ DAL
+2025-06-15 21:11:26,412 - INFO - Fetching player stats for game 401736113
+2025-06-15 21:11:27,332 - INFO - Successfully extracted 21 player stats for game 401736113
+2025-06-15 21:11:27,332 - INFO - Processing game 3/50: LA @ GS
+2025-06-15 21:11:27,332 - INFO - Fetching player stats for game 401736114
+2025-06-15 21:11:28,420 - INFO - Successfully extracted 17 player stats for game 401736114
+2025-06-15 21:11:28,420 - INFO - Processing game 4/50: LV @ NY
+2025-06-15 21:11:28,420 - INFO - Fetching player stats for game 401736116
+2025-06-15 21:11:29,374 - INFO - Successfully extracted 22 player stats for game 401736116
+2025-06-15 21:11:29,374 - INFO - Processing game 5/50: CHI @ IND
+2025-06-15 21:11:29,374 - INFO - Fetching player stats for game 401736115
+2025-06-15 21:11:30,332 - INFO - Successfully extracted 21 player stats for game 401736115
+2025-06-15 21:11:30,333 - INFO - Processing game 6/50: SEA @ PHX
+2025-06-15 21:11:30,333 - INFO - Fetching player stats for game 401736117
+2025-06-15 21:11:31,279 - INFO - Successfully extracted 19 player stats for game 401736117
+2025-06-15 21:11:31,280 - INFO - Processing game 7/50: WSH @ CONN
+2025-06-15 21:11:31,280 - INFO - Fetching player stats for game 401736118
+2025-06-15 21:11:32,249 - INFO - Successfully extracted 19 player stats for game 401736118
+2025-06-15 21:11:32,249 - INFO - Processing game 8/50: MIN @ LA
+2025-06-15 21:11:32,249 - INFO - Fetching player stats for game 401736119
+2025-06-15 21:11:33,214 - INFO - Successfully extracted 17 player stats for game 401736119
+2025-06-15 21:11:33,215 - INFO - Processing game 9/50: SEA @ DAL
+2025-06-15 21:11:33,215 - INFO - Fetching player stats for game 401736120
+2025-06-15 21:11:34,137 - INFO - Successfully extracted 18 player stats for game 401736120
+2025-06-15 21:11:34,138 - INFO - Processing game 10/50: LV @ CONN
+2025-06-15 21:11:34,138 - INFO - Fetching player stats for game 401736121
+2025-06-15 21:11:35,099 - INFO - Successfully extracted 22 player stats for game 401736121
+2025-06-15 21:11:35,099 - INFO - Processed 10 games, collected 194 player game logs
+2025-06-15 21:11:35,100 - INFO - Processing game 11/50: ATL @ IND
+2025-06-15 21:11:35,100 - INFO - Fetching player stats for game 401736122
+2025-06-15 21:11:36,039 - INFO - Successfully extracted 19 player stats for game 401736122
+2025-06-15 21:11:36,040 - INFO - Processing game 12/50: DAL @ MIN
+2025-06-15 21:11:36,040 - INFO - Fetching player stats for game 401736123
+2025-06-15 21:11:37,096 - INFO - Successfully extracted 17 player stats for game 401736123
+2025-06-15 21:11:37,097 - INFO - Processing game 13/50: WSH @ GS
+2025-06-15 21:11:37,097 - INFO - Fetching player stats for game 401736124
+2025-06-15 21:11:38,000 - INFO - Successfully extracted 20 player stats for game 401736124
+2025-06-15 21:11:38,001 - INFO - Processing game 14/50: LA @ PHX
+2025-06-15 21:11:38,001 - INFO - Fetching player stats for game 401736125
+2025-06-15 21:11:39,363 - INFO - Successfully extracted 20 player stats for game 401736125
+2025-06-15 21:11:39,364 - INFO - Processing game 15/50: IND @ ATL
+2025-06-15 21:11:39,364 - INFO - Fetching player stats for game 401736126
+2025-06-15 21:11:40,271 - INFO - Successfully extracted 18 player stats for game 401736126
+2025-06-15 21:11:40,272 - INFO - Processing game 16/50: NY @ CHI
+2025-06-15 21:11:40,272 - INFO - Fetching player stats for game 401736127
+2025-06-15 21:11:41,224 - INFO - Successfully extracted 23 player stats for game 401736127
+2025-06-15 21:11:41,224 - INFO - Processing game 17/50: CONN @ MIN
+2025-06-15 21:11:41,224 - INFO - Fetching player stats for game 401736128
+2025-06-15 21:11:42,274 - INFO - Successfully extracted 19 player stats for game 401736128
+2025-06-15 21:11:42,275 - INFO - Processing game 18/50: WSH @ LV
+2025-06-15 21:11:42,275 - INFO - Fetching player stats for game 401736129
+2025-06-15 21:11:43,221 - INFO - Successfully extracted 18 player stats for game 401736129
+2025-06-15 21:11:43,221 - INFO - Processing game 19/50: GS @ LA
+2025-06-15 21:11:43,222 - INFO - Fetching player stats for game 401736130
+2025-06-15 21:11:44,148 - INFO - Successfully extracted 18 player stats for game 401736130
+2025-06-15 21:11:44,148 - INFO - Processing game 20/50: PHX @ SEA
+2025-06-15 21:11:44,148 - INFO - Fetching player stats for game 401736131
+2025-06-15 21:11:45,229 - INFO - Successfully extracted 19 player stats for game 401736131
+2025-06-15 21:11:45,229 - INFO - Processed 20 games, collected 385 player game logs
+2025-06-15 21:11:45,229 - INFO - Processing game 21/50: NY @ IND
+2025-06-15 21:11:45,230 - INFO - Fetching player stats for game 401736132
+2025-06-15 21:11:46,272 - INFO - Successfully extracted 16 player stats for game 401736132
+2025-06-15 21:11:46,273 - INFO - Processing game 22/50: DAL @ ATL
+2025-06-15 21:11:46,273 - INFO - Fetching player stats for game 401736133
+2025-06-15 21:11:47,180 - INFO - Successfully extracted 18 player stats for game 401736133
+2025-06-15 21:11:47,181 - INFO - Processing game 23/50: CONN @ ATL
+2025-06-15 21:11:47,181 - INFO - Fetching player stats for game 401736134
+2025-06-15 21:11:48,108 - INFO - Successfully extracted 19 player stats for game 401736134
+2025-06-15 21:11:48,108 - INFO - Processing game 24/50: CHI @ LA
+2025-06-15 21:11:48,108 - INFO - Fetching player stats for game 401736135
+2025-06-15 21:11:49,033 - INFO - Successfully extracted 18 player stats for game 401736135
+2025-06-15 21:11:49,033 - INFO - Processing game 25/50: WSH @ PHX
+2025-06-15 21:11:49,033 - INFO - Fetching player stats for game 401736136
+2025-06-15 21:11:49,987 - INFO - Successfully extracted 19 player stats for game 401736136
+2025-06-15 21:11:49,987 - INFO - Processing game 26/50: LV @ SEA
+2025-06-15 21:11:49,988 - INFO - Fetching player stats for game 401736137
+2025-06-15 21:11:50,935 - INFO - Successfully extracted 21 player stats for game 401736137
+2025-06-15 21:11:50,935 - INFO - Processing game 27/50: DAL @ CONN
+2025-06-15 21:11:50,935 - INFO - Fetching player stats for game 401736138
+2025-06-15 21:11:51,878 - INFO - Successfully extracted 23 player stats for game 401736138
+2025-06-15 21:11:51,878 - INFO - Processing game 28/50: GS @ NY
+2025-06-15 21:11:51,878 - INFO - Fetching player stats for game 401736139
+2025-06-15 21:11:52,837 - INFO - Successfully extracted 20 player stats for game 401736139
+2025-06-15 21:11:52,837 - INFO - Processing game 29/50: SEA @ MIN
+2025-06-15 21:11:52,837 - INFO - Fetching player stats for game 401736140
+2025-06-15 21:11:54,410 - INFO - Successfully extracted 20 player stats for game 401736140
+2025-06-15 21:11:54,411 - INFO - Processing game 30/50: ATL @ LA
+2025-06-15 21:11:54,411 - INFO - Fetching player stats for game 401736141
+2025-06-15 21:11:55,338 - INFO - Successfully extracted 19 player stats for game 401736141
+2025-06-15 21:11:55,338 - INFO - Processed 30 games, collected 578 player game logs
+2025-06-15 21:11:55,338 - INFO - Processing game 31/50: CHI @ PHX
+2025-06-15 21:11:55,339 - INFO - Fetching player stats for game 401736142
+2025-06-15 21:11:56,386 - INFO - Successfully extracted 18 player stats for game 401736142
+2025-06-15 21:11:56,387 - INFO - Processing game 32/50: IND @ WSH
+2025-06-15 21:11:56,387 - INFO - Fetching player stats for game 401736143
+2025-06-15 21:11:57,341 - INFO - Successfully extracted 19 player stats for game 401736143
+2025-06-15 21:11:57,341 - INFO - Processing game 33/50: GS @ NY
+2025-06-15 21:11:57,342 - INFO - Fetching player stats for game 401736144
+2025-06-15 21:11:58,299 - INFO - Successfully extracted 18 player stats for game 401736144
+2025-06-15 21:11:58,299 - INFO - Processing game 34/50: DAL @ CHI
+2025-06-15 21:11:58,299 - INFO - Fetching player stats for game 401736145
+2025-06-15 21:11:59,375 - INFO - Successfully extracted 19 player stats for game 401736145
+2025-06-15 21:11:59,376 - INFO - Processing game 35/50: CONN @ IND
+2025-06-15 21:11:59,376 - INFO - Fetching player stats for game 401736146
+2025-06-15 21:12:00,373 - INFO - Successfully extracted 18 player stats for game 401736146
+2025-06-15 21:12:00,374 - INFO - Processing game 36/50: NY @ WSH
+2025-06-15 21:12:00,374 - INFO - Fetching player stats for game 401736147
+2025-06-15 21:12:01,281 - INFO - Successfully extracted 21 player stats for game 401736147
+2025-06-15 21:12:01,282 - INFO - Processing game 37/50: LA @ LV
+2025-06-15 21:12:01,282 - INFO - Fetching player stats for game 401736148
+2025-06-15 21:12:02,200 - INFO - Successfully extracted 18 player stats for game 401736148
+2025-06-15 21:12:02,200 - INFO - Processing game 38/50: MIN @ PHX
+2025-06-15 21:12:02,200 - INFO - Fetching player stats for game 401736149
+2025-06-15 21:12:03,126 - INFO - Successfully extracted 19 player stats for game 401736149
+2025-06-15 21:12:03,127 - INFO - Processing game 39/50: ATL @ SEA
+2025-06-15 21:12:03,127 - INFO - Fetching player stats for game 401736150
+2025-06-15 21:12:04,182 - INFO - Successfully extracted 18 player stats for game 401736150
+2025-06-15 21:12:04,182 - INFO - Processing game 40/50: CHI @ DAL
+2025-06-15 21:12:04,182 - INFO - Fetching player stats for game 401736151
+2025-06-15 21:12:05,208 - INFO - Successfully extracted 20 player stats for game 401736151
+2025-06-15 21:12:05,209 - INFO - Processed 40 games, collected 766 player game logs
+2025-06-15 21:12:05,209 - INFO - Processing game 41/50: CONN @ NY
+2025-06-15 21:12:05,209 - INFO - Fetching player stats for game 401736152
+2025-06-15 21:12:06,135 - INFO - Successfully extracted 21 player stats for game 401736152
+2025-06-15 21:12:06,136 - INFO - Processing game 42/50: PHX @ LA
+2025-06-15 21:12:06,136 - INFO - Fetching player stats for game 401736153
+2025-06-15 21:12:07,104 - INFO - Successfully extracted 18 player stats for game 401736153
+2025-06-15 21:12:07,105 - INFO - Processing game 43/50: LV @ SEA
+2025-06-15 21:12:07,105 - INFO - Fetching player stats for game 401736154
+2025-06-15 21:12:08,029 - INFO - Successfully extracted 18 player stats for game 401736154
+2025-06-15 21:12:08,030 - INFO - Processing game 44/50: MIN @ GS
+2025-06-15 21:12:08,030 - INFO - Fetching player stats for game 401736155
+2025-06-15 21:12:08,955 - INFO - Successfully extracted 20 player stats for game 401736155
+2025-06-15 21:12:08,955 - INFO - Processing game 45/50: WSH @ IND
+2025-06-15 21:12:08,955 - INFO - Fetching player stats for game 401736156
+2025-06-15 21:12:09,866 - INFO - Successfully extracted 18 player stats for game 401736156
+2025-06-15 21:12:09,866 - INFO - Processing game 46/50: PHX @ MIN
+2025-06-15 21:12:09,866 - INFO - Fetching player stats for game 401736157
+2025-06-15 21:12:10,802 - INFO - Successfully extracted 21 player stats for game 401736157
+2025-06-15 21:12:10,802 - INFO - Processing game 47/50: DAL @ SEA
+2025-06-15 21:12:10,802 - INFO - Fetching player stats for game 401736158
+2025-06-15 21:12:11,709 - INFO - Successfully extracted 19 player stats for game 401736158
+2025-06-15 21:12:11,709 - INFO - Processing game 48/50: NY @ WSH
+2025-06-15 21:12:11,709 - INFO - Fetching player stats for game 401736159
+2025-06-15 21:12:12,662 - INFO - Successfully extracted 19 player stats for game 401736159
+2025-06-15 21:12:12,662 - INFO - Processing game 49/50: GS @ PHX
+2025-06-15 21:12:12,662 - INFO - Fetching player stats for game 401736160
+2025-06-15 21:12:13,583 - INFO - Successfully extracted 19 player stats for game 401736160
+2025-06-15 21:12:13,583 - INFO - Processing game 50/50: ATL @ CONN
+2025-06-15 21:12:13,583 - INFO - Fetching player stats for game 401736161
+2025-06-15 21:12:14,486 - INFO - Successfully extracted 21 player stats for game 401736161
+2025-06-15 21:12:14,486 - INFO - Processed 50 games, collected 960 player game logs
+2025-06-15 21:12:14,486 - INFO - Processing game 51/50: LA @ DAL
+2025-06-15 21:12:14,486 - INFO - Fetching player stats for game 401736162
+2025-06-15 21:12:15,433 - INFO - Successfully extracted 21 player stats for game 401736162
+2025-06-15 21:12:15,433 - INFO - Processing game 52/50: LV @ GS
+2025-06-15 21:12:15,433 - INFO - Fetching player stats for game 401736163
+2025-06-15 21:12:16,527 - INFO - Successfully extracted 22 player stats for game 401736163
+2025-06-15 21:12:16,527 - INFO - Processing game 53/50: IND @ CHI
+2025-06-15 21:12:16,527 - INFO - Fetching player stats for game 401736164
+2025-06-15 21:12:17,573 - INFO - Successfully extracted 21 player stats for game 401736164
+2025-06-15 21:12:17,573 - INFO - Processing game 54/50: SEA @ PHX
+2025-06-15 21:12:17,573 - INFO - Fetching player stats for game 401736165
+2025-06-15 21:12:18,541 - INFO - Successfully extracted 19 player stats for game 401736165
+2025-06-15 21:12:18,541 - INFO - Processing game 55/50: CONN @ WSH
+2025-06-15 21:12:18,541 - INFO - Fetching player stats for game 401736166
+2025-06-15 21:12:19,487 - INFO - Successfully extracted 20 player stats for game 401736166
+2025-06-15 21:12:19,488 - INFO - Processing game 56/50: MIN @ DAL
+2025-06-15 21:12:19,488 - INFO - Fetching player stats for game 401736167
+2025-06-15 21:12:20,473 - INFO - Successfully extracted 22 player stats for game 401736167
+2025-06-15 21:12:20,473 - INFO - Processing game 57/50: GS @ LA
+2025-06-15 21:12:20,473 - INFO - Fetching player stats for game 401736168
+2025-06-15 21:12:21,430 - INFO - Successfully extracted 18 player stats for game 401736168
+2025-06-15 21:12:21,430 - INFO - Processing game 58/50: IND @ ATL
+2025-06-15 21:12:21,430 - INFO - Fetching player stats for game 401736169
+2025-06-15 21:12:22,350 - INFO - Successfully extracted 21 player stats for game 401736169
+2025-06-15 21:12:22,351 - INFO - Processing game 59/50: CHI @ NY
+2025-06-15 21:12:22,351 - INFO - Fetching player stats for game 401736170
+2025-06-15 21:12:23,375 - INFO - Successfully extracted 21 player stats for game 401736170
+2025-06-15 21:12:23,375 - INFO - Processing game 60/50: LA @ LV
+2025-06-15 21:12:23,375 - INFO - Fetching player stats for game 401736171
+2025-06-15 21:12:24,391 - INFO - Successfully extracted 18 player stats for game 401736171
+2025-06-15 21:12:24,392 - INFO - Processed 60 games, collected 1163 player game logs
+2025-06-15 21:12:24,392 - INFO - Processing game 61/50: DAL @ PHX
+2025-06-15 21:12:24,392 - INFO - Fetching player stats for game 401736172
+2025-06-15 21:12:25,321 - INFO - Successfully extracted 19 player stats for game 401736172
+2025-06-15 21:12:25,322 - INFO - Processing game 62/50: MIN @ SEA
+2025-06-15 21:12:25,322 - INFO - Fetching player stats for game 401736173
+2025-06-15 21:12:26,259 - INFO - Successfully extracted 17 player stats for game 401736173
+2025-06-15 21:12:26,259 - INFO - Processing game 63/50: CHI @ ATL
+2025-06-15 21:12:26,259 - INFO - Fetching player stats for game 401736174
+2025-06-15 21:12:27,235 - INFO - Successfully extracted 21 player stats for game 401736174
+2025-06-15 21:12:27,235 - INFO - Processing game 64/50: DAL @ LV
+2025-06-15 21:12:27,235 - INFO - Fetching player stats for game 401736175
+2025-06-15 21:12:28,299 - INFO - Successfully extracted 17 player stats for game 401736175
+2025-06-15 21:12:28,299 - INFO - Processing game 65/50: LA @ MIN
+2025-06-15 21:12:28,299 - INFO - Fetching player stats for game 401736176
+2025-06-15 21:12:29,405 - INFO - Successfully extracted 22 player stats for game 401736176
+2025-06-15 21:12:29,405 - INFO - Processing game 66/50: NY @ IND
+2025-06-15 21:12:29,405 - INFO - Fetching player stats for game 401736177
+2025-06-15 21:12:30,345 - INFO - Successfully extracted 20 player stats for game 401736177
+2025-06-15 21:12:30,345 - INFO - Processing game 67/50: SEA @ GS
+2025-06-15 21:12:30,345 - INFO - Fetching player stats for game 401736178
+2025-06-15 21:12:31,432 - INFO - Successfully extracted 18 player stats for game 401736178
+2025-06-15 21:12:31,433 - INFO - Processing game 68/50: CHI @ CONN
+2025-06-15 21:12:31,433 - INFO - Fetching player stats for game 401736179
+2025-06-15 21:12:32,458 - INFO - Successfully extracted 17 player stats for game 401736179
+2025-06-15 21:12:32,458 - INFO - Processing game 69/50: ATL @ WSH
+2025-06-15 21:12:32,459 - INFO - Fetching player stats for game 401736180
+2025-06-15 21:12:33,399 - INFO - Successfully extracted 22 player stats for game 401736180
+2025-06-15 21:12:33,399 - INFO - Processing game 70/50: PHX @ LV
+2025-06-15 21:12:33,399 - INFO - Fetching player stats for game 401736181
+2025-06-15 21:12:34,445 - INFO - Successfully extracted 21 player stats for game 401736181
+2025-06-15 21:12:34,445 - INFO - Processed 70 games, collected 1357 player game logs
+2025-06-15 21:12:34,467 - INFO - Successfully saved 1357 game logs to data\wnba_2025_gamelogs.csv
+2025-06-15 21:12:34,467 - INFO - Date range: 2025-05-16 00:00:00 to 2025-06-15 00:00:00
+2025-06-15 21:12:34,467 - INFO - Output format matches wnba_2024_gamelogs.csv with 69 columns
+2025-06-15 21:12:34,467 - INFO - Players covered: 161
+2025-06-15 21:12:34,468 - INFO - Live ingestion completed successfully!

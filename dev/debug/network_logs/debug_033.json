@@ -1,0 +1,316 @@
+{
+  "source": {
+    "id": "2cjV0Hbnb5aylvK1fOGzsjhHcLJ",
+    "name": "Capacitor App - Prod",
+    "writeKey": "2cjV0DAhsAsgwApMPtJA0MxofGE",
+    "config": {
+      "statsCollection": {
+        "errors": {
+          "enabled": false
+        },
+        "metrics": {
+          "enabled": false
+        }
+      }
+    },
+    "enabled": true,
+    "workspaceId": "2bVMV2JiAJe42OXZrzyvJI75v0N",
+    "destinations": [
+      {
+        "id": "2gWCdO1qYAzyxbfibOE2GnyeOzz",
+        "name": "Google Tag Manager Prod",
+        "enabled": true,
+        "config": {
+          "containerID": "GTM-5D23GVZ",
+          "serverUrl": "",
+          "blacklistedEvents": [],
+          "whitelistedEvents": [],
+          "oneTrustCookieCategories": [
+            {
+              "oneTrustCookieCategory": ""
+            }
+          ],
+          "ketchConsentPurposes": [
+            {
+              "purpose": ""
+            }
+          ],
+          "consentManagement": [
+            {
+              "provider": "oneTrust",
+              "consents": []
+            },
+            {
+              "provider": "ketch",
+              "consents": []
+            }
+          ],
+          "eventFilteringOption": "disable"
+        },
+        "destinationDefinitionId": "1X6kXapk8Sf8yZTJn1dYZO3OXFt",
+        "destinationDefinition": {
+          "name": "GTM",
+          "displayName": "Google Tag Manager"
+        },
+        "updatedAt": "2024-10-01T10:20:48.216Z",
+        "shouldApplyDeviceModeTransformation": false,
+        "propagateEventsUntransformedOnError": false
+      },
+      {
+        "id": "2gWCMyJtz6DO2XRUI7XdWHKxw75",
+        "name": "Google Ads Prod",
+        "enabled": false,
+        "config": {
+          "v2": true,
+          "allowIdentify": false,
+          "conversionID": "AW-378198074",
+          "eventMappingFromConfig": [
+            {
+              "from": "",
+              "to": ""
+            }
+          ],
+          "pageLoadConversions": [
+            {
+              "conversionLabel": "",
+              "name": ""
+            },
+            {
+              "conversionLabel": "-d6oCMGmm4oYELqwq7QB",
+              "name": "FirstDepositComplete"
+            }
+          ],
+          "clickEventConversions": [
+            {
+              "conversionLabel": "-d6oCMGmm4oYELqwq7QB",
+              "name": "FirstDepositComplete"
+            }
+          ],
+          "defaultPageConversion": "",
+          "sendPageView": true,
+          "conversionLinker": true,
+          "disableAdPersonalization": false,
+          "blacklistedEvents": [],
+          "whitelistedEvents": [],
+          "oneTrustCookieCategories": [
+            {
+              "oneTrustCookieCategory": ""
+            }
+          ],
+          "eventFilteringOption": "disable",
+          "dynamicRemarketing": {},
+          "trackConversions": true,
+          "enableConversionEventsFiltering": false,
+          "trackDynamicRemarketing": false,
+          "allowEnhancedConversions": true,
+          "enableConversionLabel": false,
+          "consentManagement": [
+            {
+              "provider": "oneTrust",
+              "consents": []
+            },
+            {
+              "provider": "ketch",
+              "consents": []
+            }
+          ],
+          "ketchConsentPurposes": [
+            {
+              "purpose": ""
+            }
+          ]
+        },
+        "destinationDefinitionId": "1X6kXNpFwP2NmnjWGuVWb8qoJ8L",
+        "destinationDefinition": {
+          "name": "GOOGLEADS",
+          "displayName": "Google Ads"
+        },
+        "updatedAt": "2024-10-01T09:56:27.826Z",
+        "shouldApplyDeviceModeTransformation": false,
+        "propagateEventsUntransformedOnError": false
+      },
+      {
+        "id": "2h9KzdFoUBP4bYzc5bOO5HusyHQ",
+        "name": "PrizePicks GA4",
+        "enabled": false,
+        "config": {
+          "debugView": true,
+          "measurementId": "G-YYK9MCEGBY",
+          "connectionMode": "hybrid",
+          "capturePageView": "rs",
+          "whitelistedEvents": [
+            {
+              "eventName": ""
+            }
+          ],
+          "blacklistedEvents": [
+            {
+              "eventName": ""
+            }
+          ],
+          "useNativeSDKToSend": false,
+          "eventFilteringOption": "disable",
+          "extendPageViewParams": true,
+          "piiPropertiesToIgnore": [
+            {
+              "piiProperty": ""
+            }
+          ],
+          "overrideClientAndSessionId": true,
+          "oneTrustCookieCategories": [
+            {
+              "oneTrustCookieCategory": ""
+            }
+          ],
+          "ketchConsentPurposes": [
+            {
+              "purpose": ""
+            }
+          ],
+          "sdkBaseUrl": "https://www.googletagmanager.com"
+        },
+        "destinationDefinitionId": "1mQ0yXGAQM08MTdVxws7ENIPjYS",
+        "destinationDefinition": {
+          "name": "GA4",
+          "displayName": "Google Analytics 4 (GA4)"
+        },
+        "updatedAt": "2024-08-29T08:20:12.136Z",
+        "shouldApplyDeviceModeTransformation": false,
+        "propagateEventsUntransformedOnError": false
+      },
+      {
+        "id": "2h9PTrv1LQYBD0GDGgjkMqp2wTh",
+        "name": "TikTok Pixel Prod",
+        "enabled": true,
+        "config": {
+          "pixelCode": "C6SFOHJSVD35Q9TRNHIG",
+          "version": "v1",
+          "sendCustomEvents": false,
+          "hashUserProperties": true,
+          "eventsToStandard": [
+            {
+              "from": "NewUserRegister",
+              "to": "CompleteRegistration"
+            },
+            {
+              "from": "FirstDepositComplete",
+              "to": "CompletePayment"
+            }
+          ],
+          "blacklistedEvents": [],
+          "whitelistedEvents": [
+            {
+              "eventName": "NewUserRegister"
+            },
+            {
+              "eventName": "FirstDepositComplete"
+            }
+          ],
+          "eventFilteringOption": "whitelistedEvents",
+          "oneTrustCookieCategories": [
+            {
+              "oneTrustCookieCategory": ""
+            }
+          ],
+          "ketchConsentPurposes": [
+            {
+              "purpose": "targeted_advertising"
+            }
+          ],
+          "consentManagement": [
+            {
+              "provider": "oneTrust",
+              "consents": []
+            },
+            {
+              "provider": "ketch",
+              "consents": [
+                {
+                  "consent": "targeted_advertising"
+                }
+              ]
+            }
+          ]
+        },
+        "destinationDefinitionId": "24Xc49td7cWPVLwuoUmh4tclXfa",
+        "destinationDefinition": {
+          "name": "TIKTOK_ADS",
+          "displayName": "TikTok Ads"
+        },
+        "updatedAt": "2025-04-24T21:24:18.612Z",
+        "shouldApplyDeviceModeTransformation": false,
+        "propagateEventsUntransformedOnError": false
+      },
+      {
+        "id": "2nqWMUk1fNNAw4rU3bHYcm58CZZ",
+        "name": "VWO Prod - Device Mode",
+        "enabled": true,
+        "config": {
+          "accountId": "969920",
+          "isSPA": false,
+          "sendExperimentTrack": false,
+          "sendExperimentIdentify": false,
+          "libraryTolerance": "2500",
+          "settingsTolerance": "2000",
+          "useExistingJquery": false,
+          "blacklistedEvents": [],
+          "whitelistedEvents": [
+            {
+              "eventName": "First Deposit Completed"
+            },
+            {
+              "eventName": "Deposit Completed"
+            },
+            {
+              "eventName": "NewUserRegister"
+            }
+          ],
+          "eventFilteringOption": "whitelistedEvents",
+          "consentManagement": [
+            {
+              "provider": "ketch",
+              "resolutionStrategy": "",
+              "consents": [
+                {
+                  "consent": "analytics"
+                }
+              ]
+            }
+          ],
+          "ketchConsentPurposes": [
+            {
+              "purpose": "analytics"
+            }
+          ]
+        },
+        "destinationDefinitionId": "1X6kXqLXfUAh8Uei0WCeR2tXktG",
+        "destinationDefinition": {
+          "name": "VWO",
+          "displayName": "VWO"
+        },
+        "updatedAt": "2025-04-24T21:25:51.266Z",
+        "shouldApplyDeviceModeTransformation": false,
+        "propagateEventsUntransformedOnError": false
+      }
+    ],
+    "updatedAt": "2025-04-24T22:01:17.829Z",
+    "dataplanes": {}
+  },
+  "updatedAt": "2025-05-30T18:43:52.039Z",
+  "consentManagementMetadata": {
+    "providers": [
+      {
+        "provider": "oneTrust",
+        "resolutionStrategy": "and"
+      },
+      {
+        "provider": "ketch",
+        "resolutionStrategy": "or"
+      },
+      {
+        "provider": "iubenda",
+        "resolutionStrategy": "or"
+      }
+    ]
+  }
+}

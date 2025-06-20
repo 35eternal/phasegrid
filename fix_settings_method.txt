@@ -1,0 +1,54 @@
+﻿    def _load_settings(self) -> Dict:
+        """Load settings from Google Sheets or use defaults."""
+        try:
+            # Use the read_settings method from sheet connector
+            settings_data = self.sheet_connector.read_settings()
+            
+            # Handle both DataFrame and dict returns
+            if isinstance(settings_data, pd.DataFrame):
+                if not settings_data.empty:
+                    # Convert DataFrame to dict
+                    settings = {}
+                    for _, row in settings_data.iterrows():
+                        settings[row['parameter']] = row['value']
+                else:
+                    raise Exception("Settings sheet is empty")
+            elif isinstance(settings_data, dict):
+                # Already a dict, use directly
+                settings = settings_data
+            else:
+                raise Exception("Unexpected settings format")
+            
+            # Convert numeric settings - handle string values
+            for key in ['min_bet', 'max_bet_pct', 'bankroll', 'power_target', 'flex_target']:
+                if key in settings:
+                    try:
+                        # Remove any currency symbols or commas
+                        value = str(settings[key]).replace('$', '').replace(',', '')
+                        settings[key] = float(value)
+                    except:
+                        # Use defaults if conversion fails
+                        defaults = {
+                            'min_bet': 5.0,
+                            'max_bet_pct': 0.10,
+                            'bankroll': 1000.0,
+                            'power_target': 5,
+                            'flex_target': 5
+                        }
+                        settings[key] = defaults.get(key, 0)
+            
+            print(f"Loaded settings from Google Sheets")
+            return settings
+            
+        except Exception as e:
+            print(f"Warning: Could not load settings from sheet: {e}")
+            # Return defaults
+            return {
+                'min_bet': 5.0,
+                'max_bet_pct': 0.10,
+                'bankroll': 1000.0,
+                'power_target': 5,
+                'flex_target': 5,
+                'enable_singles': False,
+                'singles_allocation': 0.3  # 30% of bankroll for singles
+            }

@@ -1,0 +1,113 @@
+2025-06-15 18:21:03,705 - INFO - Starting WNBA game log ingestion for 2024 season...
+2025-06-15 18:21:03,705 - INFO - Fetching WNBA player roster...
+2025-06-15 18:21:03,706 - INFO - Found 5024 total players in database
+2025-06-15 18:21:03,706 - INFO - Checking player 1/5024: Alaa Abdelnaby
+2025-06-15 18:21:04,506 - INFO - Checking player 2/5024: Zaid Abdul-Aziz
+2025-06-15 18:21:05,307 - INFO - Checking player 3/5024: Kareem Abdul-Jabbar
+2025-06-15 18:21:06,107 - INFO - Checking player 4/5024: Mahmoud Abdul-Rauf
+2025-06-15 18:21:06,908 - INFO - Checking player 5/5024: Tariq Abdul-Wahad
+2025-06-15 18:21:07,709 - INFO - Checking player 6/5024: Shareef Abdur-Rahim
+2025-06-15 18:21:08,509 - INFO - Checking player 7/5024: Tom Abernethy
+2025-06-15 18:21:09,310 - INFO - Checking player 8/5024: Forest Able
+2025-06-15 18:21:10,111 - INFO - Checking player 9/5024: John Abramovic
+2025-06-15 18:21:10,911 - INFO - Checking player 10/5024: Alex Abrines
+2025-06-15 18:21:11,712 - INFO - Checking player 11/5024: Precious Achiuwa
+2025-06-15 18:21:12,513 - INFO - Processed 10 players, sleeping for rate limit...
+2025-06-15 18:21:17,513 - INFO - Checking player 12/5024: Alex Acker
+2025-06-15 18:21:18,314 - INFO - Checking player 13/5024: Donald Ackerman
+2025-06-15 18:21:19,115 - INFO - Checking player 14/5024: Mark Acres
+2025-06-15 18:21:19,916 - INFO - Checking player 15/5024: Charles Acton
+2025-06-15 18:21:20,717 - INFO - Checking player 16/5024: Quincy Acy
+2025-06-15 18:21:21,518 - INFO - Checking player 17/5024: Alvan Adams
+2025-06-15 18:21:22,318 - INFO - Checking player 18/5024: Don Adams
+2025-06-15 18:21:23,119 - INFO - Checking player 19/5024: Hassan Adams
+2025-06-15 18:21:23,920 - INFO - Checking player 20/5024: Jaylen Adams
+2025-06-15 18:21:24,720 - INFO - Checking player 21/5024: Jordan Adams
+2025-06-15 18:21:25,521 - INFO - Processed 20 players, sleeping for rate limit...
+2025-06-15 18:21:30,521 - INFO - Checking player 22/5024: Michael Adams
+2025-06-15 18:21:31,321 - INFO - Checking player 23/5024: Steven Adams
+2025-06-15 18:21:32,122 - INFO - Checking player 24/5024: Rafael Addison
+2025-06-15 18:21:32,922 - INFO - Checking player 25/5024: Bam Adebayo
+2025-06-15 18:21:33,723 - INFO - Checking player 26/5024: Deng Adel
+2025-06-15 18:21:34,523 - INFO - Checking player 27/5024: Rick Adelman
+2025-06-15 18:21:35,324 - INFO - Checking player 28/5024: Jeff Adrien
+2025-06-15 18:21:36,124 - INFO - Checking player 29/5024: Arron Afflalo
+2025-06-15 18:21:36,926 - INFO - Checking player 30/5024: Ochai Agbaji
+2025-06-15 18:21:37,727 - INFO - Checking player 31/5024: Maurice Ager
+2025-06-15 18:21:38,527 - INFO - Processed 30 players, sleeping for rate limit...
+2025-06-15 18:21:43,528 - INFO - Checking player 32/5024: Mark Aguirre
+2025-06-15 18:21:44,328 - INFO - Checking player 33/5024: Blake Ahearn
+2025-06-15 18:21:45,129 - INFO - Checking player 34/5024: Danny Ainge
+2025-06-15 18:21:45,930 - INFO - Checking player 35/5024: Alexis Ajinca
+2025-06-15 18:21:46,730 - INFO - Checking player 36/5024: Henry Akin
+2025-06-15 18:21:47,531 - INFO - Checking player 37/5024: Josh Akognon
+2025-06-15 18:21:48,331 - INFO - Checking player 38/5024: DeVaughn Akoon-Purcell
+2025-06-15 18:21:49,132 - INFO - Checking player 39/5024: Solomon Alabi
+2025-06-15 18:21:49,933 - INFO - Checking player 40/5024: Mark Alarie
+2025-06-15 18:21:50,733 - INFO - Checking player 41/5024: Gary Alcorn
+2025-06-15 18:21:51,534 - INFO - Processed 40 players, sleeping for rate limit...
+2025-06-15 18:21:56,534 - INFO - Checking player 42/5024: Santi Aldama
+2025-06-15 18:21:57,334 - INFO - Checking player 43/5024: Furkan Aldemir
+2025-06-15 18:21:58,135 - INFO - Checking player 44/5024: Cole Aldrich
+2025-06-15 18:21:58,936 - INFO - Checking player 45/5024: LaMarcus Aldridge
+2025-06-15 18:21:59,736 - INFO - Checking player 46/5024: Chuck Aleksinas
+2025-06-15 18:22:00,537 - INFO - Checking player 47/5024: Cliff Alexander
+2025-06-15 18:22:01,338 - INFO - Checking player 48/5024: Cory Alexander
+2025-06-15 18:22:02,139 - INFO - Checking player 49/5024: Courtney Alexander
+2025-06-15 18:22:02,939 - INFO - Checking player 50/5024: Gary Alexander
+2025-06-15 18:22:03,739 - INFO - Checking player 51/5024: Joe Alexander
+2025-06-15 18:22:04,540 - INFO - Processed 50 players, sleeping for rate limit...
+2025-06-15 18:22:09,541 - INFO - Checking player 52/5024: Kyle Alexander
+2025-06-15 18:22:10,341 - INFO - Checking player 53/5024: Trey Alexander
+2025-06-15 18:22:11,141 - INFO - Checking player 54/5024: Ty-Shon Alexander
+2025-06-15 18:22:11,942 - INFO - Checking player 55/5024: Victor Alexander
+2025-06-15 18:22:12,742 - INFO - Checking player 56/5024: Nickeil Alexander-Walker
+2025-06-15 18:22:13,543 - INFO - Checking player 57/5024: Steve Alford
+2025-06-15 18:22:14,343 - INFO - Checking player 58/5024: Rawle Alkins
+2025-06-15 18:22:15,144 - INFO - Checking player 59/5024: Bob Allen
+2025-06-15 18:22:15,944 - INFO - Checking player 60/5024: Grayson Allen
+2025-06-15 18:22:16,745 - INFO - Checking player 61/5024: Jarrett Allen
+2025-06-15 18:22:17,546 - INFO - Processed 60 players, sleeping for rate limit...
+2025-06-15 18:22:22,546 - INFO - Checking player 62/5024: Jerome Allen
+2025-06-15 18:22:23,347 - INFO - Checking player 63/5024: Kadeem Allen
+2025-06-15 18:22:24,147 - INFO - Checking player 64/5024: Lavoy Allen
+2025-06-15 18:22:24,948 - INFO - Checking player 65/5024: Lucius Allen
+2025-06-15 18:22:25,748 - INFO - Checking player 66/5024: Malik Allen
+2025-06-15 18:22:26,549 - INFO - Checking player 67/5024: Randy Allen
+2025-06-15 18:22:27,350 - INFO - Checking player 68/5024: Ray Allen
+2025-06-15 18:22:28,150 - INFO - Checking player 69/5024: Timmy Allen
+2025-06-15 18:22:28,951 - INFO - Checking player 70/5024: Tony Allen
+2025-06-15 18:22:29,751 - INFO - Checking player 71/5024: Odis Allison
+2025-06-15 18:22:30,552 - INFO - Processed 70 players, sleeping for rate limit...
+2025-06-15 18:22:35,552 - INFO - Checking player 72/5024: Lance Allred
+2025-06-15 18:22:36,353 - INFO - Checking player 73/5024: Darrell Allums
+2025-06-15 18:22:37,153 - INFO - Checking player 74/5024: Morris Almond
+2025-06-15 18:22:37,954 - INFO - Checking player 75/5024: Derrick Alston
+2025-06-15 18:22:38,754 - INFO - Checking player 76/5024: Rafer Alston
+2025-06-15 18:22:39,555 - INFO - Checking player 77/5024: Peter Aluma
+2025-06-15 18:22:40,356 - INFO - Checking player 78/5024: Jose Alvarado
+2025-06-15 18:22:41,156 - INFO - Checking player 79/5024: John Amaechi
+2025-06-15 18:22:41,957 - INFO - Checking player 80/5024: Ashraf Amaya
+2025-06-15 18:22:42,757 - INFO - Checking player 81/5024: Al-Farouq Aminu
+2025-06-15 18:22:43,557 - INFO - Processed 80 players, sleeping for rate limit...
+2025-06-15 18:22:48,558 - INFO - Checking player 82/5024: Lou Amundson
+2025-06-15 18:22:49,358 - INFO - Checking player 83/5024: Bob Anderegg
+2025-06-15 18:22:50,159 - INFO - Checking player 84/5024: Chris Andersen
+2025-06-15 18:22:50,959 - INFO - Checking player 85/5024: David Andersen
+2025-06-15 18:22:51,759 - INFO - Checking player 86/5024: Alan Anderson
+2025-06-15 18:22:52,560 - INFO - Checking player 87/5024: Antonio Anderson
+2025-06-15 18:22:53,361 - INFO - Checking player 88/5024: Cliff Anderson
+2025-06-15 18:22:54,161 - INFO - Checking player 89/5024: Daniel Anderson
+2025-06-15 18:22:54,962 - INFO - Checking player 90/5024: Derek Anderson
+2025-06-15 18:22:55,762 - INFO - Checking player 91/5024: Dwight Anderson
+2025-06-15 18:22:56,563 - INFO - Processed 90 players, sleeping for rate limit...
+2025-06-15 18:23:01,564 - INFO - Checking player 92/5024: Eric Anderson
+2025-06-15 18:23:02,364 - INFO - Checking player 93/5024: Greg Anderson
+2025-06-15 18:23:03,165 - INFO - Checking player 94/5024: James Anderson
+2025-06-15 18:23:03,965 - INFO - Checking player 95/5024: Jerome Anderson
+2025-06-15 18:23:04,766 - INFO - Checking player 96/5024: Justin Anderson
+2025-06-15 18:23:05,566 - INFO - Checking player 97/5024: Kenny Anderson
+2025-06-15 18:23:06,367 - INFO - Checking player 98/5024: Kim Anderson
+2025-06-15 18:23:07,167 - INFO - Checking player 99/5024: Kyle Anderson
+2025-06-15 18:23:07,968 - INFO - Checking player 100/5024: Michael Anderson
+2025-06-15 18:23:08,768 - INFO - Checking player 101/5024: Mitchell Anderson

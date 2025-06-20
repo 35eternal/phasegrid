@@ -1,0 +1,11 @@
+player_name,stat_type,line,adjusted_prediction,actual_result,kelly_fraction,kelly_used,bet_percentage,adv_phase,adv_risk_tag,game_date,raw_kelly,actual_odds
+Kelsey Plum,pts+rebs+asts,39.0,41.0,,0.1547,0.02,0.0359,luteal,phase_aligned,2025-04-28,0.1547,0.9
+Kelsey Plum,pts+rebs+asts,38.8,40.6,39.0,0.1421,0.02,0.025,luteal,phase_aligned,2025-05-21,0.1421,0.9
+Alyssa Thomas,points,14.5,20.5,14.4,0.25,0.02,0.0613,luteal,phase_aligned,2025-06-04,0.25,0.9
+Breanna Stewart,rebounds,6.1,6.4,10.7,0.1605,0.02,0.0342,luteal,phase_aligned,2025-06-16,0.1605,0.9
+Napheesa Collier,assists,3.9,4.0,4.8,0.0514,0.0171333333333333,0.0096,luteal,phase_aligned,2025-05-20,0.0514,0.9
+Napheesa Collier,rebounds,11.9,12.3,13.1,0.1051,0.02,0.019,luteal,high_confidence,2025-05-18,0.1051,0.9
+Diana Taurasi,points,16.1,18.5,12.3,0.25,0.02,0.0461,follicular,high_confidence,2025-05-16,0.25,0.9
+Jewell Loyd,threes,3.5,4.0,5.8,0.25,0.02,0.0598,follicular,high_confidence,2025-05-19,0.25,0.9
+Alyssa Thomas,points,16.5,18.9,18.8,0.25,0.02,0.0438,ovulatory,phase_aligned,2025-05-24,0.25,0.9
+Kelsey Plum,rebounds,4.2,4.7,1.7,0.25,0.02,0.0498,ovulatory,high_confidence,2025-05-10,0.25,0.9

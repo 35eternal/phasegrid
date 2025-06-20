@@ -1,0 +1,20 @@
+(function () {
+    var loadScript = function () {
+      window._pxCustomAbrDomains = ['prizepicks.com']
+      var HUMAN_JS_SENSOR_PROXY_URL = window.prizepicks.HUMAN_JS_SENSOR_PROXY_URL;
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.async = true;
+      script.src = HUMAN_JS_SENSOR_PROXY_URL;
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(script, x);
+    };
+    if (document.readyState === 'complete') {
+      loadScript();
+    }
+    if (window.attachEvent) {
+      window.attachEvent('onload', loadScript);
+    } else {
+      window.addEventListener('load', loadScript, false);
+    }
+  })();

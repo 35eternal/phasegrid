@@ -1,0 +1,74 @@
+[
+  {
+    "player": "Kate Martin",
+    "stat": "AST",
+    "cycle_days": 29.3,
+    "reliability": 0.94,
+    "avg_drop_pct": 100.0,
+    "bet_value": "HIGH"
+  },
+  {
+    "player": "Cheyenne Parker-Tyus",
+    "stat": "AST",
+    "cycle_days": 33.0,
+    "reliability": 0.921,
+    "avg_drop_pct": 100.0,
+    "bet_value": "HIGH"
+  },
+  {
+    "player": "Chennedy Carter",
+    "stat": "PTS",
+    "cycle_days": 31.3,
+    "reliability": 0.913,
+    "avg_drop_pct": 63.8,
+    "bet_value": "HIGH"
+  },
+  {
+    "player": "Cecilia Zandalasini",
+    "stat": "PTS",
+    "cycle_days": 30.8,
+    "reliability": 0.846,
+    "avg_drop_pct": 100.0,
+    "bet_value": "HIGH"
+  },
+  {
+    "player": "Layshia Clarendon",
+    "stat": "PTS",
+    "cycle_days": 22.2,
+    "reliability": 0.732,
+    "avg_drop_pct": 75.6,
+    "bet_value": "MEDIUM"
+  },
+  {
+    "player": "Rae Burrell",
+    "stat": "PTS",
+    "cycle_days": 23.2,
+    "reliability": 0.651,
+    "avg_drop_pct": 93.7,
+    "bet_value": "MEDIUM"
+  },
+  {
+    "player": "Chennedy Carter",
+    "stat": "AST",
+    "cycle_days": 29.0,
+    "reliability": 0.601,
+    "avg_drop_pct": 79.0,
+    "bet_value": "MEDIUM"
+  },
+  {
+    "player": "Chennedy Carter",
+    "stat": "REB",
+    "cycle_days": 29.0,
+    "reliability": 0.601,
+    "avg_drop_pct": 72.5,
+    "bet_value": "MEDIUM"
+  },
+  {
+    "player": "Betnijah Laney-Hamilton",
+    "stat": "REB",
+    "cycle_days": 26.8,
+    "reliability": 0.601,
+    "avg_drop_pct": 51.8,
+    "bet_value": "MEDIUM"
+  }
+]

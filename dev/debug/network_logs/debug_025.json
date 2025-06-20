@@ -1,0 +1,3781 @@
+{
+  "id": "cHJpemVwaWNrcy9wcml6ZXBpY2tzX3dlYl9hcHAvcHJvZHVjdGlvbi9kZWZhdWx0L2VuLzE3NDg4NzMwMTA=",
+  "canonicalPurposes": {
+    "analytics": {
+      "code": "analytics",
+      "name": "analytics",
+      "purposeCodes": [
+        "analytics"
+      ]
+    },
+    "behavioral_advertising": {
+      "code": "behavioral_advertising",
+      "name": "behavioral_advertising",
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "essential_services": {
+      "code": "essential_services",
+      "name": "essential_services",
+      "purposeCodes": [
+        "essential_services"
+      ]
+    }
+  },
+  "dataSubjectTypes": [
+    {
+      "code": "customer",
+      "name": "Customer"
+    }
+  ],
+  "deployment": {
+    "code": "prizepicks_web_deployment_plan",
+    "version": 1741986770
+  },
+  "environment": {
+    "code": "production",
+    "hash": "3404013846543063229",
+    "pattern": "cHJpemVwaWNrcy5jb20="
+  },
+  "formTemplates": [
+    {
+      "code": "default",
+      "id": "2u6Ok9tQuWsn3f1Tb0e7kd",
+      "name": "Default Form",
+      "sections": [
+        {
+          "formFields": [
+            {
+              "category": "default",
+              "id": "2u6Ok9maZUIr4acSQ5vkYV",
+              "label": "Request Details",
+              "maxLength": 512,
+              "name": "description",
+              "type": "text",
+              "variant": "textarea",
+              "width": "full"
+            }
+          ]
+        },
+        {
+          "formFields": [
+            {
+              "category": "default",
+              "id": "2u6Ok9obgjbmNPcLPN8MoL",
+              "label": "First Name",
+              "maxLength": 256,
+              "name": "firstName",
+              "required": true,
+              "type": "text",
+              "variant": "input",
+              "width": "half"
+            },
+            {
+              "category": "default",
+              "id": "2u6Ok9b1fvUfLuf12hnvh6",
+              "label": "Last Name",
+              "maxLength": 256,
+              "name": "lastName",
+              "required": true,
+              "type": "text",
+              "variant": "input",
+              "width": "half"
+            },
+            {
+              "category": "default",
+              "id": "2u6Ok9dklLL0ld7B9tICWV",
+              "identitySpaceCode": "email",
+              "label": "Email",
+              "maxLength": 256,
+              "name": "email",
+              "required": true,
+              "type": "text",
+              "variant": "input",
+              "width": "half"
+            },
+            {
+              "category": "default",
+              "id": "2u6Ok9YfbjIPu4nW2Zd7A4",
+              "label": "Country",
+              "name": "country",
+              "required": true,
+              "type": "dropdown",
+              "variant": "unspecified",
+              "width": "unspecified"
+            },
+            {
+              "category": "default",
+              "id": "2u6Ok9WKpplIW8A4IaLvcJ",
+              "label": "State / Province",
+              "maxLength": 256,
+              "name": "stateRegion",
+              "type": "text",
+              "variant": "input",
+              "width": "half"
+            },
+            {
+              "category": "default",
+              "label": "I am a (an)",
+              "name": "typeCode",
+              "options": [
+                {
+                  "label": "Customer",
+                  "value": "customer"
+                }
+              ],
+              "required": true,
+              "type": "dropdown",
+              "variant": "unspecified",
+              "width": "unspecified"
+            }
+          ],
+          "title": "Personal Details"
+        }
+      ]
+    }
+  ],
+  "identities": {
+    "_rudderstackRLUserID": {
+      "format": "string",
+      "priority": 1,
+      "type": "cookie",
+      "variable": "rl_user_id"
+    },
+    "swb_prizepicks_web_app": {
+      "type": "managedCookie",
+      "variable": "_swb"
+    },
+    "uuid": {
+      "encoding": "none",
+      "format": "string",
+      "priority": 5,
+      "type": "cookie",
+      "variable": "pp_uuid"
+    }
+  },
+  "jurisdiction": {
+    "code": "default",
+    "defaultJurisdictionCode": "default"
+  },
+  "language": "en",
+  "options": {
+    "appDivs": "hubspot-messages-iframe-container",
+    "beaconPercentage": "1"
+  },
+  "organization": {
+    "code": "prizepicks"
+  },
+  "plugins": {
+    "googletag": {},
+    "gpc": {
+      "jurisdictions": [
+        "gdpr",
+        "default",
+        "US_California",
+        "US_Colorado",
+        "US_Connecticut",
+        "US_Oregon",
+        "US_Texas",
+        "US_Utah",
+        "US_Virginia",
+        "US_Iowa",
+        "US_Nebraska",
+        "NH",
+        "US_NJ"
+      ],
+      "purposeMappings": [
+        {
+          "pluginPurposeID": "gpc",
+          "purposes": [
+            "analytics",
+            "targeted_advertising"
+          ]
+        }
+      ]
+    },
+    "lanyard": {},
+    "rudderstack": {}
+  },
+  "privacyPolicy": {
+    "code": "855b0f1a-740f-433e-8a30-2b4bb6b217f5",
+    "url": "https://www.prizepicks.com/privacy-policy",
+    "version": 1736873928
+  },
+  "property": {
+    "code": "prizepicks_web_app",
+    "name": "PrizePicks Web App",
+    "platform": "WEB"
+  },
+  "purposes": [
+    {
+      "code": "analytics",
+      "name": "Analytics",
+      "description": "Collection and analysis of personal data to further our business goals; for example, analysis of behavior of website visitors, creation of target lists for marketing and sales, and measurement of advertising performance.",
+      "legalBasisCode": "consent_optout",
+      "allowsOptOut": true,
+      "requiresPrivacyPolicy": true,
+      "requiresDisplay": true,
+      "canonicalPurposeCode": "analytics",
+      "legalBasisName": "Consent - Opt Out",
+      "legalBasisDescription": "Data subject has received adequate disclosure describing the processing for one or more specific purposes, and can subsequently opt-out",
+      "dataSubjectTypeCodes": [
+        "customer"
+      ],
+      "canonicalPurposeCodes": [
+        "analytics"
+      ]
+    },
+    {
+      "code": "essential_services",
+      "name": "Essential Services",
+      "description": "Collection and processing of personal data to enable functionality that is essential to providing our services, including security activities, debugging, authentication, and fraud prevention, as well as contacting you with information related to products/services you have used or purchased; we may set essential cookies or other trackers for these purposes.",
+      "legalBasisCode": "disclosure",
+      "requiresPrivacyPolicy": true,
+      "cookies": [
+        {
+          "ID": "__cf_bm",
+          "name": "__cf_bm",
+          "code": "__cf_bm",
+          "duration": 2,
+          "provenance": 2,
+          "serviceProvider": "Cloudflare",
+          "appCode": "cloudflare",
+          "durationHours": 0.49
+        },
+        {
+          "ID": "_cfuvid",
+          "name": "_cfuvid",
+          "code": "_cfuvid",
+          "duration": 2,
+          "provenance": 2,
+          "serviceProvider": "Cloudflare",
+          "appCode": "cloudflare"
+        },
+        {
+          "ID": "gtm_id",
+          "name": "gtm_id",
+          "code": "gtm_id",
+          "duration": 2,
+          "provenance": 2,
+          "durationDays": 364,
+          "durationHours": 23.99
+        },
+        {
+          "ID": "intercom-device-id-*",
+          "name": "intercom-device-id-*",
+          "code": "intercom-device-id-*",
+          "duration": 2,
+          "provenance": 1,
+          "serviceProvider": "Intercom",
+          "appCode": "intercom",
+          "durationDays": 270,
+          "durationHours": 0.55
+        },
+        {
+          "ID": "intercom-id-*",
+          "name": "intercom-id-*",
+          "code": "intercom-id-*",
+          "duration": 2,
+          "provenance": 1,
+          "serviceProvider": "Intercom",
+          "appCode": "intercom",
+          "durationDays": 270,
+          "durationHours": 0.55
+        },
+        {
+          "ID": "intercom-session-*",
+          "name": "intercom-session-*",
+          "code": "intercom-session-*",
+          "duration": 2,
+          "provenance": 1,
+          "serviceProvider": "Intercom",
+          "appCode": "intercom",
+          "durationDays": 6,
+          "durationHours": 23.99
+        },
+        {
+          "ID": "_ketch_consent_v1_",
+          "name": "_ketch_consent_v1_",
+          "code": "_ketch_consent_v1_",
+          "duration": 2,
+          "provenance": 1,
+          "serviceProvider": "Ketch",
+          "appCode": "ketch",
+          "durationDays": 399,
+          "durationHours": 23.99
+        },
+        {
+          "ID": "_px3",
+          "name": "_px3",
+          "code": "_px3",
+          "duration": 2,
+          "provenance": 1,
+          "serviceProvider": "Human Security",
+          "appCode": "humansecurity",
+          "durationHours": 0.09
+        },
+        {
+          "ID": "pxcts",
+          "name": "pxcts",
+          "code": "pxcts",
+          "duration": 2,
+          "provenance": 1,
+          "serviceProvider": "Human Security",
+          "appCode": "humansecurity"
+        },
+        {
+          "ID": "_pxttld",
+          "name": "_pxttld",
+          "code": "_pxttld",
+          "duration": 2,
+          "provenance": 1,
+          "serviceProvider": "Human Security",
+          "appCode": "humansecurity"
+        },
+        {
+          "ID": "_pxvid",
+          "name": "_pxvid",
+          "code": "_pxvid",
+          "duration": 2,
+          "provenance": 1,
+          "serviceProvider": "Human Security",
+          "appCode": "humansecurity",
+          "durationDays": 364,
+          "durationHours": 23.99
+        }
+      ],
+      "requiresDisplay": true,
+      "canonicalPurposeCode": "essential_services",
+      "legalBasisName": "Disclosure",
+      "legalBasisDescription": "Data subject has been provided with adequate disclosure regarding the processing",
+      "dataSubjectTypeCodes": [
+        "customer"
+      ],
+      "canonicalPurposeCodes": [
+        "essential_services"
+      ]
+    },
+    {
+      "code": "targeted_advertising",
+      "name": "Targeted Advertising",
+      "description": "Creation and activation of advertisements based on a profile informed by the collection and analysis of behavioral and personal characteristics; we may set cookies or other trackers for this purpose.",
+      "legalBasisCode": "consent_optout",
+      "allowsOptOut": true,
+      "requiresPrivacyPolicy": true,
+      "cookies": [
+        {
+          "ID": "af_id",
+          "name": "af_id",
+          "code": "af_id",
+          "duration": 2,
+          "provenance": 2,
+          "serviceProvider": "AppsFlyer",
+          "appCode": "appsflyer",
+          "durationDays": 729,
+          "durationHours": 23.99
+        },
+        {
+          "ID": "AF_SYNC",
+          "name": "AF_SYNC",
+          "code": "AF_SYNC",
+          "duration": 2,
+          "provenance": 1,
+          "durationDays": 6,
+          "durationHours": 23.99
+        },
+        {
+          "ID": "afUserId",
+          "name": "afUserId",
+          "code": "afUserId",
+          "duration": 2,
+          "provenance": 1,
+          "durationDays": 729,
+          "durationHours": 23.99
+        }
+      ],
+      "requiresDisplay": true,
+      "canonicalPurposeCode": "behavioral_advertising",
+      "legalBasisName": "Consent - Opt Out",
+      "legalBasisDescription": "Data subject has received adequate disclosure describing the processing for one or more specific purposes, and can subsequently opt-out",
+      "dataSubjectTypeCodes": [
+        "customer"
+      ],
+      "canonicalPurposeCodes": [
+        "behavioral_advertising"
+      ]
+    }
+  ],
+  "recaptcha": {
+    "siteKey": "6Lc76pAjAAAAAEJst8tq0k8QiuEptxY3m4CbekVB"
+  },
+  "regulations": [
+    "default"
+  ],
+  "rights": [],
+  "services": {
+    "portholeHost": "https://prizepicks.privacyportal.co",
+    "scriptHost": "https://cdn.ketchjs.com",
+    "shoreline": "https://global.ketchcdn.com/web/v3",
+    "telemetry": "https://global.ketchcdn.com/web/v2/log"
+  },
+  "stacks": [],
+  "termsOfService": {
+    "code": "18c18b3a-f337-49c1-9e4b-5ad181d903d1",
+    "url": "https://www.prizepicks.com/help-center/terms-of-service",
+    "version": 1736873966
+  },
+  "vendors": [],
+  "systems": {
+    "tcf": []
+  },
+  "accessibilityButton": null,
+  "experiences": {
+    "autoInitiated": {
+      "content": {
+        "banner": {
+          "buttons": {
+            "primary": {
+              "text": "Accept All"
+            },
+            "secondary": {
+              "text": "Customize Settings"
+            },
+            "tertiary": {
+              "text": "Opt In"
+            }
+          },
+          "description": "<p><span style=\"color: rgb(0, 0, 0);\">We use online tracking and other technologies to provide a personalized experience, improve our offerings, monitor and record your engagement with us, and share limited personal information with third-party advertisers. To learn more about our privacy practices please review our </span><a href=\"privacyPolicy\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(0, 0, 0);\" title=\"privacyPolicy\">Privacy Policy</a><span style=\"color: rgb(0, 0, 0);\">. Please confirm your choices.</span></p>",
+          "header": {
+            "title": "Your Privacy Choices"
+          }
+        },
+        "display": "banner",
+        "modal": {
+          "description": {
+            "body": "<p><span style=\"color: rgb(0, 0, 0);\">We use online tracking and other technologies to provide a personalized experience, improve our offerings, monitor and record your engagement with us, and share limited personal information with third-party advertisers. To learn more about your privacy practices review our </span><a href=\"https://sendit.ninja/deployment/experiences-v2/edit/consent/privacyPolicy\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(0, 0, 0);\">Privacy Policy</a><span style=\"color: rgb(0, 0, 0);\">. Please confirm your choices.</span></p>",
+            "title": "Your Privacy Choices"
+          },
+          "footer": {
+            "actionButtonText": "Confirm"
+          },
+          "header": {
+            "title": "This Website Processes Personal Data"
+          },
+          "purposeList": {
+            "switchButtonLabels": {
+              "alwaysOnText": "Opted In",
+              "offText": "Opted Out",
+              "onText": "Opted In"
+            }
+          },
+          "purposeListHeader": {
+            "bulkActionButtons": {
+              "acceptAllText": "Accept All",
+              "rejectAllText": "Reject All"
+            },
+            "text": "Purposes"
+          }
+        },
+        "preference": {
+          "footer": {
+            "actionButtonText": "Exit"
+          },
+          "header": {
+            "title": "Your Privacy Choices"
+          },
+          "navigation": {
+            "privacyPolicyTitle": "Privacy Policy",
+            "purposesTitle": "Purposes",
+            "requestsTitle": "Requests",
+            "subscriptionsTitle": "Subscriptions",
+            "welcomeTitle": "Welcome"
+          },
+          "tabs": {
+            "purposes": {
+              "actionButtonText": "Save",
+              "header": {
+                "description": "<p>We collect and use personal information--including, where applicable, your sensitive personal information--for the purposes listed below. Please indicate whether or not that's ok with you by toggling the switches. For more information on our privacy practices, please read our internal <a href=\"privacyPolicy\" rel=\"noopener noreferrer\" target=\"_blank\">Privacy Policy</a>.</p>",
+                "title": "You are in full control"
+              },
+              "purposeList": {
+                "switchButtonLabels": {
+                  "alwaysOnText": "Opted In",
+                  "offText": "Opted Out",
+                  "onText": "Opted In"
+                }
+              },
+              "purposeListHeader": {
+                "bulkActionButtons": {
+                  "acceptAllText": "Accept All",
+                  "rejectAllText": "Reject All"
+                },
+                "title": "Purposes"
+              }
+            },
+            "requests": {
+              "home": {
+                "dsrPortalLink": {
+                  "description": "Already submitted a request? Click here to view its status.",
+                  "title": "View My Requests"
+                },
+                "header": {
+                  "description": "<p>Applicable privacy laws give you certain rights to our collection, use, sharing, and storage of your information, and we welcome your exercise of those rights. For more detail, please read our<a href=\"privacyPolicy\" rel=\"noopener noreferrer\" target=\"_blank\">Privacy Policy</a>.</p>",
+                  "title": "Exercise your rights"
+                },
+                "rights": {
+                  "title": "Select a Request Type"
+                }
+              },
+              "rightForm": {
+                "actionButtonText": "Submit",
+                "recaptchaFailureText": "<p>Unfortunately, we are unable to fulfill your request at this time due to suspected bot-like behavior, as indicated by our reCAPTCHA verification. If you believe this is incorrect, please try re-submitting your request.</p>"
+              },
+              "submitted": {
+                "actionButtonText": "Submit New Request",
+                "description": "<p>We've received your request. Certain requests require identity verification. For those requests, you will receive a second email with verification instructions. Please be sure to check your email. Where required, we will not be able to proceed without your timely verification.</p>",
+                "subtitle": "Thank you!",
+                "title": "Request was submitted"
+              }
+            },
+            "subscriptions": {
+              "actionButtonText": "Save",
+              "header": {
+                "description": "<p>Let us know what you are most interested in and how you'd like us to keep in touch. Unsubscribe any time by coming back here or by clicking on the manage subscriptions link in our emails.</p>",
+                "title": "Your Subscriptions"
+              },
+              "listSwitchLabels": {
+                "offText": "Off",
+                "onText": "On"
+              },
+              "unsubscribeAll": {
+                "description": "You\u2019ll always receive reservation details, account security updates, and changes to program terms and conditions.",
+                "switchLabels": {
+                  "offText": "Off",
+                  "onText": "On"
+                },
+                "title": "Unsubscribe From All"
+              }
+            },
+            "welcome": {
+              "about": {
+                "description": "<p> We prioritize and respect your privacy.  We are committed to transparently managing your data,  using it only for necessary purposes with your explicit consent. Rigorous security measures are in place to protect your information,  and we never sell or share it for marketing without your permission. Your control over your data is important to us, and we continually update our practices to align with the latest standards. </p>",
+                "title": "About Your Privacy"
+              },
+              "quickLinks": {
+                "links": [
+                  {
+                    "text": "Manage Your Preferences"
+                  },
+                  {
+                    "text": "Delete Your Data"
+                  },
+                  {
+                    "text": "Privacy Policy"
+                  }
+                ]
+              },
+              "welcomeMsg": {
+                "subtitle": "<p>Welcome! We\u2019re glad you\u2019re here and want you to know that we respect your privacy and your right to control how we collect, use, and share your personal data. Please read our <a href=\"privacyPolicy\" rel=\"noopener noreferrer\" target=\"_blank\">Privacy Policy</a> to learn about our privacy practices.</p>",
+                "title": "Privacy Promise"
+              }
+            }
+          }
+        },
+        "static": {
+          "accept": "Accept",
+          "accept_all": "Accept All",
+          "and": "and",
+          "and_the": "and the",
+          "apply": "apply",
+          "at_this_time_due_to_suspected_bot_like_behavior_as_indicated_by_our": "at this time due to suspected bot-like behavior as indicated by our",
+          "category": "Category",
+          "choose_file": "Choose File",
+          "click_here": "click here",
+          "cloudinary_supported_file_size": "Maximum file size: 4 MB",
+          "cloudinary_supported_file_types": "Supported file types: JPG and\u00a0PDF",
+          "cookie": "Cookie",
+          "cookie_refresh": "Vendor may refresh cookies",
+          "cookies": "Cookies",
+          "country_afghanistan": "Afghanistan",
+          "country_aland_islands": "\u00c5land Islands",
+          "country_albania": "Albania",
+          "country_algeria": "Algeria",
+          "country_american_samoa": "American Samoa",
+          "country_andorra": "Andorra",
+          "country_angola": "Angola",
+          "country_anguilla": "Anguilla",
+          "country_antarctica": "Antarctica",
+          "country_antigua_and_barbuda": "Antigua and Barbuda",
+          "country_argentina": "Argentina",
+          "country_armenia": "Armenia",
+          "country_aruba": "Aruba",
+          "country_australia": "Australia",
+          "country_austria": "Austria",
+          "country_azerbaijan": "Azerbaijan",
+          "country_bahamas": "Bahamas",
+          "country_bahrain": "Bahrain",
+          "country_bangladesh": "Bangladesh",
+          "country_barbados": "Barbados",
+          "country_belarus": "Belarus",
+          "country_belgium": "Belgium",
+          "country_belize": "Belize",
+          "country_benin": "Benin",
+          "country_bermuda": "Bermuda",
+          "country_bhutan": "Bhutan",
+          "country_bolivia": "Bolivia",
+          "country_bosnia_and_herzegovina": "Bosnia and Herzegovina",
+          "country_botswana": "Botswana",
+          "country_bouvet_island": "Bouvet Island",
+          "country_brazil": "Brazil",
+          "country_british_indian_ocean_territory": "British Indian Ocean Territory",
+          "country_brunei_darussalam": "Brunei Darussalam",
+          "country_bulgaria": "Bulgaria",
+          "country_burkina_faso": "Burkina Faso",
+          "country_burundi": "Burundi",
+          "country_cambodia": "Cambodia",
+          "country_cameroon": "Cameroon",
+          "country_canada": "Canada",
+          "country_cape_verde": "Cape Verde",
+          "country_cayman_islands": "Cayman Islands",
+          "country_central_african_republic": "Central African Republic",
+          "country_chad": "Chad",
+          "country_chile": "Chile",
+          "country_china": "China",
+          "country_christmas_island": "Christmas Island",
+          "country_cocos_keeling_islands": "Cocos (Keeling) Islands",
+          "country_colombia": "Colombia",
+          "country_comoros": "Comoros",
+          "country_congo": "Congo",
+          "country_congo_the_democratic_republic": "Congo, The Democratic Republic of the",
+          "country_cook_islands": "Cook Islands",
+          "country_costa_rica": "Costa Rica",
+          "country_cote_divoire": "Cote D'Ivoire",
+          "country_croatia": "Croatia",
+          "country_cuba": "Cuba",
+          "country_cyprus": "Cyprus",
+          "country_czech_republic": "Czech Republic",
+          "country_denmark": "Denmark",
+          "country_djibouti": "Djibouti",
+          "country_dominica": "Dominica",
+          "country_dominican_republic": "Dominican Republic",
+          "country_ecuador": "Ecuador",
+          "country_egypt": "Egypt",
+          "country_el_salvador": "El Salvador",
+          "country_equatorial_guinea": "Equatorial Guinea",
+          "country_eritrea": "Eritrea",
+          "country_estonia": "Estonia",
+          "country_eswatini": "Swaziland",
+          "country_ethiopia": "Ethiopia",
+          "country_falkland_islands_malvinas": "Falkland Islands (Malvinas)",
+          "country_faroe_islands": "Faroe Islands",
+          "country_federated_states_of_micronesia": "Micronesia, Federated States of",
+          "country_fiji": "Fiji",
+          "country_finland": "Finland",
+          "country_france": "France",
+          "country_french_guiana": "French Guiana",
+          "country_french_polynesia": "French Polynesia",
+          "country_french_southern_territories": "French Southern Territories",
+          "country_gabon": "Gabon",
+          "country_gambia": "Gambia",
+          "country_georgia": "Georgia",
+          "country_germany": "Germany",
+          "country_ghana": "Ghana",
+          "country_gibraltar": "Gibraltar",
+          "country_greece": "Greece",
+          "country_greenland": "Greenland",
+          "country_grenada": "Grenada",
+          "country_guadeloupe": "Guadeloupe",
+          "country_guam": "Guam",
+          "country_guatemala": "Guatemala",
+          "country_guernsey": "Guernsey",
+          "country_guinea": "Guinea",
+          "country_guinea_bissau": "Guinea-Bissau",
+          "country_guyana": "Guyana",
+          "country_haiti": "Haiti",
+          "country_heard_island_and_mcdonald_islands": "Heard Island and Mcdonald Islands",
+          "country_holy_see_vatican_city_state": "Holy See (Vatican City State)",
+          "country_honduras": "Honduras",
+          "country_hong_kong": "Hong Kong",
+          "country_hungary": "Hungary",
+          "country_iceland": "Iceland",
+          "country_india": "India",
+          "country_indonesia": "Indonesia",
+          "country_iran": "Iran, Islamic Republic Of",
+          "country_iraq": "Iraq",
+          "country_ireland": "Ireland",
+          "country_isle_of_man": "Isle of Man",
+          "country_israel": "Israel",
+          "country_italy": "Italy",
+          "country_jamaica": "Jamaica",
+          "country_japan": "Japan",
+          "country_jersey": "Jersey",
+          "country_jordan": "Jordan",
+          "country_kazakhstan": "Kazakhstan",
+          "country_kenya": "Kenya",
+          "country_kiribati": "Kiribati",
+          "country_korea": "Korea, Republic of",
+          "country_kuwait": "Kuwait",
+          "country_kyrgyzstan": "Kyrgyzstan",
+          "country_laos": "Lao People'S Democratic Republic",
+          "country_latvia": "Latvia",
+          "country_lebanon": "Lebanon",
+          "country_lesotho": "Lesotho",
+          "country_liberia": "Liberia",
+          "country_libya": "Libyan Arab Jamahiriya",
+          "country_liechtenstein": "Liechtenstein",
+          "country_lithuania": "Lithuania",
+          "country_luxembourg": "Luxembourg",
+          "country_macao": "Macao",
+          "country_madagascar": "Madagascar",
+          "country_malawi": "Malawi",
+          "country_malaysia": "Malaysia",
+          "country_maldives": "Maldives",
+          "country_mali": "Mali",
+          "country_malta": "Malta",
+          "country_marshall_islands": "Marshall Islands",
+          "country_martinique": "Martinique",
+          "country_mauritania": "Mauritania",
+          "country_mauritius": "Mauritius",
+          "country_mayotte": "Mayotte",
+          "country_mexico": "Mexico",
+          "country_moldova": "Moldova, Republic of",
+          "country_monaco": "Monaco",
+          "country_mongolia": "Mongolia",
+          "country_montserrat": "Montserrat",
+          "country_morocco": "Morocco",
+          "country_mozambique": "Mozambique",
+          "country_myanmar": "Myanmar",
+          "country_namibia": "Namibia",
+          "country_nauru": "Nauru",
+          "country_nepal": "Nepal",
+          "country_netherlands": "Netherlands",
+          "country_netherlands_antilles": "Netherlands Antilles",
+          "country_new_caledonia": "New Caledonia",
+          "country_new_zealand": "New Zealand",
+          "country_nicaragua": "Nicaragua",
+          "country_niger": "Niger",
+          "country_nigeria": "Nigeria",
+          "country_niue": "Niue",
+          "country_norfolk_island": "Norfolk Island",
+          "country_north_korea": "Korea, Democratic People'S Republic of",
+          "country_north_macedonia": "Macedonia, The Former Yugoslav Republic of",
+          "country_northern_mariana_islands": "Northern Mariana Islands",
+          "country_norway": "Norway",
+          "country_oman": "Oman",
+          "country_pakistan": "Pakistan",
+          "country_palau": "Palau",
+          "country_palestinian_territory_occupied": "Palestinian Territory, Occupied",
+          "country_panama": "Panama",
+          "country_papua_new_guinea": "Papua New Guinea",
+          "country_paraguay": "Paraguay",
+          "country_peru": "Peru",
+          "country_philippines": "Philippines",
+          "country_pitcairn": "Pitcairn",
+          "country_poland": "Poland",
+          "country_portugal": "Portugal",
+          "country_puerto_rico": "Puerto Rico",
+          "country_qatar": "Qatar",
+          "country_reunion": "Reunion",
+          "country_romania": "Romania",
+          "country_russian_federation": "Russian Federation",
+          "country_rwanda": "RWANDA",
+          "country_saint_helena": "Saint Helena",
+          "country_saint_kitts_and_nevis": "Saint Kitts and Nevis",
+          "country_saint_lucia": "Saint Lucia",
+          "country_saint_pierre_and_miquelon": "Saint Pierre and Miquelon",
+          "country_saint_vincent_and_the_grenadines": "Saint Vincent and the Grenadines",
+          "country_samoa": "Samoa",
+          "country_san_marino": "San Marino",
+          "country_sao_tome_and_principe": "Sao Tome and Principe",
+          "country_saudi_arabia": "Saudi Arabia",
+          "country_senegal": "Senegal",
+          "country_serbia": "Serbia and Montenegro",
+          "country_seychelles": "Seychelles",
+          "country_sierra_leone": "Sierra Leone",
+          "country_singapore": "Singapore",
+          "country_slovakia": "Slovakia",
+          "country_slovenia": "Slovenia",
+          "country_solomon_islands": "Solomon Islands",
+          "country_somalia": "Somalia",
+          "country_south_africa": "South Africa",
+          "country_south_georgia_and_the_south_sandwich_islands": "South Georgia and the South Sandwich Islands",
+          "country_spain": "Spain",
+          "country_sri_lanka": "Sri Lanka",
+          "country_sudan": "Sudan",
+          "country_suriname": "Suriname",
+          "country_svalbard_and_jan_mayen": "Svalbard and Jan Mayen",
+          "country_sweden": "Sweden",
+          "country_switzerland": "Switzerland",
+          "country_syria": "Syrian Arab Republic",
+          "country_taiwan": "Taiwan, Province of China",
+          "country_tajikistan": "Tajikistan",
+          "country_tanzania": "Tanzania, United Republic of",
+          "country_thailand": "Thailand",
+          "country_timor_leste": "Timor-Leste",
+          "country_togo": "Togo",
+          "country_tokelau": "Tokelau",
+          "country_tonga": "Tonga",
+          "country_trinidad_and_tobago": "Trinidad and Tobago",
+          "country_tunisia": "Tunisia",
+          "country_turkey": "Turkey",
+          "country_turkmenistan": "Turkmenistan",
+          "country_turks_and_caicos_islands": "Turks and Caicos Islands",
+          "country_tuvalu": "Tuvalu",
+          "country_uganda": "Uganda",
+          "country_ukraine": "Ukraine",
+          "country_united_arab_emirates": "United Arab Emirates",
+          "country_united_kingdom": "United Kingdom",
+          "country_united_states": "United States",
+          "country_united_states_minor_outlying_islands": "United States Minor Outlying Islands",
+          "country_uruguay": "Uruguay",
+          "country_uzbekistan": "Uzbekistan",
+          "country_vanuatu": "Vanuatu",
+          "country_venezuela": "Venezuela",
+          "country_vietnam": "Vietnam",
+          "country_virgin_islands_british": "Virgin Islands, British",
+          "country_virgin_islands_us": "Virgin Islands, U.S.",
+          "country_wallis_and_futuna": "Wallis and Futuna",
+          "country_western_sahara": "Western Sahara",
+          "country_yemen": "Yemen",
+          "country_zambia": "Zambia",
+          "country_zimbabwe": "Zimbabwe",
+          "data_categories": "Data Categories",
+          "data_category": "Data Category",
+          "data_declaration": "Data Declaration",
+          "data_retention": "Data Retention",
+          "day": "day",
+          "days": "days",
+          "description": "Description",
+          "device_storage": "Device Storage",
+          "duration": "Duration",
+          "enter_valid_email": "Please enter a valid email address",
+          "enter_valid_phone_number": "Please enter a valid phone number.",
+          "ex_i_worked_in_the_it_department_in_2015": "EX: I worked in the IT department in 2015",
+          "external_transfer": "External Transfer",
+          "features": "Features",
+          "first_party": "1st Party",
+          "functional": "Functional",
+          "google_vendors": "Google Vendors",
+          "gpc": "GPC",
+          "greeting": "Hi",
+          "here": "here",
+          "i_am_a_an": "I am a (an)",
+          "illustration": "Illustration",
+          "illustrations": "Illustrations",
+          "legal_basis": "Legal Basis",
+          "legal_text": "Legal Text",
+          "less_than_a_day": "Less than a day",
+          "marketing": "Marketing",
+          "maximum_storage": "Maximum Storage Duration",
+          "no_file_chosen": "No file chosen",
+          "no_rights_available": "There are no rights available in the location you are currently in",
+          "object_to_legitimate_interest": "Object to Legitimate Interest",
+          "of": "of",
+          "off": "off",
+          "on": "On",
+          "opted_in": "Opted In",
+          "opted_out": "Opted Out",
+          "other_vendors": "Other Vendors",
+          "performance": "Performance",
+          "persistent": "Persistent",
+          "please_select_a_request_type": "Please select a request type",
+          "powered_by": "Powered by",
+          "preference_consents_exit_button_text": "Exit",
+          "preference_overview_button_text": "Exit",
+          "preference_rights_address_line_one": "Address Line 1",
+          "preference_rights_address_line_two": "Address Line 2",
+          "preference_rights_cancel_button_text": "Cancel",
+          "preference_rights_country": "Country",
+          "preference_rights_email": "Email",
+          "preference_rights_exit_button_text": "Exit",
+          "preference_rights_first_name": "First name",
+          "preference_rights_last_name": "Last name",
+          "preference_rights_personal_details": "Personal details",
+          "preference_rights_phone_number": "Phone Number",
+          "preference_rights_postal_code": "Postal Code",
+          "preference_rights_request": "Request",
+          "preference_rights_request_details": "Request details",
+          "preference_rights_select_country": "Select Country",
+          "preference_rights_select_state_province": "State / Province",
+          "preference_rights_state": "State",
+          "preference_rights_submit_new_request": "Submit New Request",
+          "preference_rights_thank_you": "Thank You!",
+          "preference_rights_we_have_received": "Certain requests require identity verification. For those requests, you will receive an email with verification instructions.  Please be sure to check your email.  Where required, we will not be able to proceed without your timely verification.",
+          "privacy_policy": "Privacy Policy",
+          "provenance": "Provenance",
+          "purpose": "Purpose",
+          "purposes": "Purposes",
+          "quick_links": "Quick Links",
+          "reject_all": "Reject All",
+          "required": "Required",
+          "retention_period": "Retention Period",
+          "rights_tab_porthole_redirect_footer": "If you have already made a request and would like to check on the status, please click",
+          "rights_tab_porthole_redirect_footer_alt": "If you have already made a request and would like to return to the privacy rights portal, ",
+          "save": "save",
+          "second": "second",
+          "seconds": "seconds",
+          "select_a_relationship": "Select a relationship",
+          "select_a_request_type": "Select a Request Type",
+          "service_provider": "Service Provider",
+          "session": "Session",
+          "special_features": "Special Features",
+          "special_purposes": "Special Purposes",
+          "strictly_necessary": "Strictly Necessary",
+          "submit": "Submit",
+          "submitting": "Submitting",
+          "tcf": "TCF",
+          "tcf_vendors": "TCF Vendors",
+          "tell_us_about_your_relationship_to_us": "Tell us about your relationship to us",
+          "terms_of_service": "Terms of Service",
+          "third_party": "3rd Party",
+          "this_site_is_protected_by": "This site is protected by",
+          "unfortunately": "unfortunately",
+          "unknown": "Unknown",
+          "unsubscribe_from_all": "Unsubscribe From All",
+          "uses_cookies": "Vendor uses cookies with a maximum storage duration of",
+          "uses_non_cookie_access": "Vendor uses non-cookie storage and accesses information already stored on a users device",
+          "vendor": "Vendor",
+          "vendors": "Vendors",
+          "verification": "verification",
+          "view_legitimate_interest_claim": "View Legitimate Interest Claim",
+          "view_privacy_policy": "View Privacy Policy",
+          "we_are_unable_to_fulfill_your_request": "we are unable to fulfill your request"
+        }
+      },
+      "layout": {
+        "banner": {
+          "buttons": {
+            "primary": {
+              "action": "acceptAll",
+              "url": ""
+            },
+            "secondary": {
+              "action": "openPreferences",
+              "url": "",
+              "visible": true
+            },
+            "tertiary": {
+              "action": "acceptAll",
+              "url": "",
+              "visible": false
+            }
+          },
+          "footer": {
+            "gpcBadgeVisible": false
+          },
+          "header": {
+            "closeButtonVisible": true,
+            "visible": true
+          }
+        },
+        "entitlementInfo": {
+          "hasPurposesEntitlement": true,
+          "hasRightsEntitlement": false,
+          "hasSubscriptionsEntitlement": false
+        },
+        "modal": {
+          "description": {
+            "title": {
+              "visible": true
+            }
+          },
+          "footer": {
+            "gpcBadgeVisible": false
+          },
+          "header": {
+            "closeButtonVisible": false,
+            "visible": true
+          },
+          "purposeList": {
+            "legalBasisVisible": false,
+            "purposeStacksDefaultExpanded": true,
+            "switchButtonLabels": {
+              "display": "always",
+              "useDefaultText": true,
+              "visible": false
+            }
+          },
+          "purposeListHeader": {
+            "bulkActionButtons": {
+              "useDefaultText": true,
+              "visible": true
+            },
+            "useDefaultText": true,
+            "visible": true
+          }
+        },
+        "preference": {
+          "gpcBadgeVisible": false,
+          "tabs": {
+            "privacyPolicy": {
+              "policyDocumentId": "",
+              "visible": false
+            },
+            "purposes": {
+              "actionButtonUseDefaultText": true,
+              "header": {
+                "title": {
+                  "visible": true
+                }
+              },
+              "purposeList": {
+                "legalBasisVisible": false,
+                "purposeStacksDefaultExpanded": true,
+                "switchButtonLabels": {
+                  "display": "always",
+                  "useDefaultText": true,
+                  "visible": true
+                }
+              },
+              "purposeListHeader": {
+                "bulkActionButtons": {
+                  "useDefaultText": true,
+                  "visible": true
+                },
+                "titleVisible": true,
+                "useDefaultText": true
+              }
+            },
+            "requests": {
+              "home": {
+                "header": {
+                  "title": {
+                    "visible": true
+                  }
+                },
+                "rights": {
+                  "forms": {
+                    "details": [
+                      {
+                        "canonicalRight": "get",
+                        "defaultFormID": "",
+                        "rightFormMappings": []
+                      },
+                      {
+                        "canonicalRight": "delete",
+                        "defaultFormID": "",
+                        "rightFormMappings": []
+                      },
+                      {
+                        "canonicalRight": "restrict",
+                        "defaultFormID": "",
+                        "rightFormMappings": []
+                      },
+                      {
+                        "canonicalRight": "update",
+                        "defaultFormID": "",
+                        "rightFormMappings": []
+                      }
+                    ],
+                    "mode": "single",
+                    "singleFormID": "2u6Ok9tQuWsn3f1Tb0e7kd"
+                  },
+                  "title": {
+                    "useDefaultText": true
+                  }
+                }
+              },
+              "rightForm": {
+                "actionButton": {
+                  "useDefaultText": true
+                },
+                "enableRecaptcha": true
+              },
+              "submitted": {
+                "actionButton": {
+                  "useDefaultText": true,
+                  "visible": true
+                }
+              }
+            },
+            "subscriptions": {
+              "actionButtonUseDefaultText": true,
+              "header": {
+                "title": {
+                  "visible": true
+                }
+              },
+              "list": {
+                "items": [],
+                "switchButtons": {
+                  "useDefaultText": true,
+                  "visible": true
+                }
+              },
+              "unsubscribeAll": {
+                "description": {
+                  "visible": true
+                },
+                "impact": "universal",
+                "position": "top",
+                "switchButton": {
+                  "useDefaultText": true,
+                  "visible": true
+                },
+                "title": {
+                  "useDefaultText": true
+                },
+                "visible": true
+              }
+            },
+            "welcome": {
+              "about": {
+                "visible": true
+              },
+              "quickLinks": {
+                "links": [
+                  {
+                    "action": "openPage",
+                    "page": "purpose",
+                    "visible": true
+                  },
+                  {
+                    "action": "openUrl",
+                    "page": "requestsHome",
+                    "url": "",
+                    "visible": false
+                  },
+                  {
+                    "action": "openUrl",
+                    "page": "requestsHome",
+                    "url": "https://www.prizepicks.com/privacy-policy",
+                    "visible": true
+                  }
+                ],
+                "visible": true
+              },
+              "welcomeMsg": {
+                "visible": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "userInitiated": {
+      "content": {
+        "banner": {
+          "buttons": {
+            "primary": {
+              "text": "Confirm"
+            },
+            "secondary": {
+              "text": "Customize Settings"
+            },
+            "tertiary": {
+              "text": "Reject All"
+            }
+          },
+          "description": "<p>Welcome! We\u2019re glad you\u2019re here and want you to know that we respect your privacy and your right to control how we collect, use, and share your personal data. Please read our<a href=\"privacyPolicy\" rel=\"noopener noreferrer\" target=\"_blank\"> Privacy Policy</a>  to learn about our privacy practices.</p>",
+          "header": {
+            "title": "Privacy Promise"
+          }
+        },
+        "display": "preference",
+        "modal": {
+          "description": {
+            "body": "<p>Welcome! We\u2019re glad you\u2019re here and want you to know that we respect your privacy and your right to control how we collect, use, and share your personal data. Please read our<a href=\"privacyPolicy\" rel=\"noopener noreferrer\" target=\"_blank\"> Privacy Policy</a>  to learn about our privacy practices.</p>",
+            "title": "Privacy Promise"
+          },
+          "footer": {
+            "actionButtonText": "Confirm"
+          },
+          "header": {
+            "title": "Choose how we use your personal information"
+          },
+          "purposeList": {
+            "switchButtonLabels": {
+              "offText": "Opted Out",
+              "onText": "Opted In"
+            }
+          },
+          "purposeListHeader": {
+            "bulkActionButtons": {
+              "acceptAllText": "Accept All",
+              "rejectAllText": "Reject All"
+            },
+            "text": "Purposes"
+          }
+        },
+        "preference": {
+          "footer": {
+            "actionButtonText": "Exit"
+          },
+          "header": {
+            "title": "Your Privacy Choices"
+          },
+          "navigation": {
+            "privacyPolicyTitle": "Privacy Policy",
+            "purposesTitle": "Purposes",
+            "requestsTitle": "Requests",
+            "subscriptionsTitle": "Subscriptions",
+            "welcomeTitle": "Welcome"
+          },
+          "tabs": {
+            "purposes": {
+              "actionButtonText": "Save",
+              "header": {
+                "description": "<p>We collect and use personal information--including, where applicable, your sensitive personal information--for the purposes listed below. Please indicate whether or not that's ok with you by toggling the switches. For more information on our privacy practices, please read our internal <a href=\"privacyPolicy\" rel=\"noopener noreferrer\" target=\"_blank\">Privacy Policy</a>.</p>",
+                "title": "You are in full control"
+              },
+              "purposeList": {
+                "switchButtonLabels": {
+                  "alwaysOnText": "Opted In",
+                  "offText": "Opted Out",
+                  "onText": "Opted In"
+                }
+              },
+              "purposeListHeader": {
+                "bulkActionButtons": {
+                  "acceptAllText": "Accept All",
+                  "rejectAllText": "Reject All"
+                },
+                "title": "Purposes"
+              }
+            },
+            "requests": {
+              "home": {
+                "dsrPortalLink": {
+                  "description": "Already submitted a request? Click here to view its status.",
+                  "title": "View My Requests"
+                },
+                "header": {
+                  "description": "<p>Applicable privacy laws give you certain rights to our collection, use, sharing, and storage of your information, and we welcome your exercise of those rights. For more detail, please read our<a href=\"privacyPolicy\" rel=\"noopener noreferrer\" target=\"_blank\">Privacy Policy</a>.</p>",
+                  "title": "Exercise your rights"
+                },
+                "rights": {
+                  "title": "Select a Request Type"
+                }
+              },
+              "rightForm": {
+                "actionButtonText": "Submit",
+                "recaptchaFailureText": "<p>Unfortunately, we are unable to fulfill your request at this time due to suspected bot-like behavior, as indicated by our reCAPTCHA verification. If you believe this is incorrect, please try re-submitting your request.</p>"
+              },
+              "submitted": {
+                "actionButtonText": "Submit New Request",
+                "description": "<p>We've received your request. Certain requests require identity verification. For those requests, you will receive a second email with verification instructions. Please be sure to check your email. Where required, we will not be able to proceed without your timely verification.</p>",
+                "subtitle": "Thank you!",
+                "title": "Request was submitted"
+              }
+            },
+            "subscriptions": {
+              "actionButtonText": "Save",
+              "header": {
+                "description": "<p>Let us know what you are most interested in and how you'd like us to keep in touch. Unsubscribe any time by coming back here or by clicking on the manage subscriptions link in our emails.</p>",
+                "title": "Your Subscriptions"
+              },
+              "listSwitchLabels": {
+                "offText": "Off",
+                "onText": "On"
+              },
+              "unsubscribeAll": {
+                "description": "You\u2019ll always receive reservation details, account security updates, and changes to program terms and conditions.",
+                "switchLabels": {
+                  "offText": "Off",
+                  "onText": "On"
+                },
+                "title": "Unsubscribe From All"
+              }
+            },
+            "welcome": {
+              "about": {
+                "description": "<p> We prioritize and respect your privacy.  We are committed to transparently managing your data,  using it only for necessary purposes with your explicit consent. Rigorous security measures are in place to protect your information,  and we never sell or share it for marketing without your permission. Your control over your data is important to us, and we continually update our practices to align with the latest standards. </p>",
+                "title": "About Your Privacy"
+              },
+              "quickLinks": {
+                "links": [
+                  {
+                    "text": "Manage Your Preferences"
+                  },
+                  {
+                    "text": "Delete Your Data"
+                  },
+                  {
+                    "text": "Privacy Policy"
+                  }
+                ]
+              },
+              "welcomeMsg": {
+                "subtitle": "<p>Welcome! We\u2019re glad you\u2019re here and want you to know that we respect your privacy and your right to control how we collect, use, and share your personal data. Please read our <a href=\"privacyPolicy\" rel=\"noopener noreferrer\" target=\"_blank\">Privacy Policy</a> to learn about our privacy practices.</p>",
+                "title": "Privacy Promise"
+              }
+            }
+          }
+        },
+        "static": {
+          "accept": "Accept",
+          "accept_all": "Accept All",
+          "and": "and",
+          "and_the": "and the",
+          "apply": "apply",
+          "at_this_time_due_to_suspected_bot_like_behavior_as_indicated_by_our": "at this time due to suspected bot-like behavior as indicated by our",
+          "category": "Category",
+          "choose_file": "Choose File",
+          "click_here": "click here",
+          "cloudinary_supported_file_size": "Maximum file size: 4 MB",
+          "cloudinary_supported_file_types": "Supported file types: JPG and\u00a0PDF",
+          "cookie": "Cookie",
+          "cookie_refresh": "Vendor may refresh cookies",
+          "cookies": "Cookies",
+          "country_afghanistan": "Afghanistan",
+          "country_aland_islands": "\u00c5land Islands",
+          "country_albania": "Albania",
+          "country_algeria": "Algeria",
+          "country_american_samoa": "American Samoa",
+          "country_andorra": "Andorra",
+          "country_angola": "Angola",
+          "country_anguilla": "Anguilla",
+          "country_antarctica": "Antarctica",
+          "country_antigua_and_barbuda": "Antigua and Barbuda",
+          "country_argentina": "Argentina",
+          "country_armenia": "Armenia",
+          "country_aruba": "Aruba",
+          "country_australia": "Australia",
+          "country_austria": "Austria",
+          "country_azerbaijan": "Azerbaijan",
+          "country_bahamas": "Bahamas",
+          "country_bahrain": "Bahrain",
+          "country_bangladesh": "Bangladesh",
+          "country_barbados": "Barbados",
+          "country_belarus": "Belarus",
+          "country_belgium": "Belgium",
+          "country_belize": "Belize",
+          "country_benin": "Benin",
+          "country_bermuda": "Bermuda",
+          "country_bhutan": "Bhutan",
+          "country_bolivia": "Bolivia",
+          "country_bosnia_and_herzegovina": "Bosnia and Herzegovina",
+          "country_botswana": "Botswana",
+          "country_bouvet_island": "Bouvet Island",
+          "country_brazil": "Brazil",
+          "country_british_indian_ocean_territory": "British Indian Ocean Territory",
+          "country_brunei_darussalam": "Brunei Darussalam",
+          "country_bulgaria": "Bulgaria",
+          "country_burkina_faso": "Burkina Faso",
+          "country_burundi": "Burundi",
+          "country_cambodia": "Cambodia",
+          "country_cameroon": "Cameroon",
+          "country_canada": "Canada",
+          "country_cape_verde": "Cape Verde",
+          "country_cayman_islands": "Cayman Islands",
+          "country_central_african_republic": "Central African Republic",
+          "country_chad": "Chad",
+          "country_chile": "Chile",
+          "country_china": "China",
+          "country_christmas_island": "Christmas Island",
+          "country_cocos_keeling_islands": "Cocos (Keeling) Islands",
+          "country_colombia": "Colombia",
+          "country_comoros": "Comoros",
+          "country_congo": "Congo",
+          "country_congo_the_democratic_republic": "Congo, The Democratic Republic of the",
+          "country_cook_islands": "Cook Islands",
+          "country_costa_rica": "Costa Rica",
+          "country_cote_divoire": "Cote D'Ivoire",
+          "country_croatia": "Croatia",
+          "country_cuba": "Cuba",
+          "country_cyprus": "Cyprus",
+          "country_czech_republic": "Czech Republic",
+          "country_denmark": "Denmark",
+          "country_djibouti": "Djibouti",
+          "country_dominica": "Dominica",
+          "country_dominican_republic": "Dominican Republic",
+          "country_ecuador": "Ecuador",
+          "country_egypt": "Egypt",
+          "country_el_salvador": "El Salvador",
+          "country_equatorial_guinea": "Equatorial Guinea",
+          "country_eritrea": "Eritrea",
+          "country_estonia": "Estonia",
+          "country_eswatini": "Swaziland",
+          "country_ethiopia": "Ethiopia",
+          "country_falkland_islands_malvinas": "Falkland Islands (Malvinas)",
+          "country_faroe_islands": "Faroe Islands",
+          "country_federated_states_of_micronesia": "Micronesia, Federated States of",
+          "country_fiji": "Fiji",
+          "country_finland": "Finland",
+          "country_france": "France",
+          "country_french_guiana": "French Guiana",
+          "country_french_polynesia": "French Polynesia",
+          "country_french_southern_territories": "French Southern Territories",
+          "country_gabon": "Gabon",
+          "country_gambia": "Gambia",
+          "country_georgia": "Georgia",
+          "country_germany": "Germany",
+          "country_ghana": "Ghana",
+          "country_gibraltar": "Gibraltar",
+          "country_greece": "Greece",
+          "country_greenland": "Greenland",
+          "country_grenada": "Grenada",
+          "country_guadeloupe": "Guadeloupe",
+          "country_guam": "Guam",
+          "country_guatemala": "Guatemala",
+          "country_guernsey": "Guernsey",
+          "country_guinea": "Guinea",
+          "country_guinea_bissau": "Guinea-Bissau",
+          "country_guyana": "Guyana",
+          "country_haiti": "Haiti",
+          "country_heard_island_and_mcdonald_islands": "Heard Island and Mcdonald Islands",
+          "country_holy_see_vatican_city_state": "Holy See (Vatican City State)",
+          "country_honduras": "Honduras",
+          "country_hong_kong": "Hong Kong",
+          "country_hungary": "Hungary",
+          "country_iceland": "Iceland",
+          "country_india": "India",
+          "country_indonesia": "Indonesia",
+          "country_iran": "Iran, Islamic Republic Of",
+          "country_iraq": "Iraq",
+          "country_ireland": "Ireland",
+          "country_isle_of_man": "Isle of Man",
+          "country_israel": "Israel",
+          "country_italy": "Italy",
+          "country_jamaica": "Jamaica",
+          "country_japan": "Japan",
+          "country_jersey": "Jersey",
+          "country_jordan": "Jordan",
+          "country_kazakhstan": "Kazakhstan",
+          "country_kenya": "Kenya",
+          "country_kiribati": "Kiribati",
+          "country_korea": "Korea, Republic of",
+          "country_kuwait": "Kuwait",
+          "country_kyrgyzstan": "Kyrgyzstan",
+          "country_laos": "Lao People'S Democratic Republic",
+          "country_latvia": "Latvia",
+          "country_lebanon": "Lebanon",
+          "country_lesotho": "Lesotho",
+          "country_liberia": "Liberia",
+          "country_libya": "Libyan Arab Jamahiriya",
+          "country_liechtenstein": "Liechtenstein",
+          "country_lithuania": "Lithuania",
+          "country_luxembourg": "Luxembourg",
+          "country_macao": "Macao",
+          "country_madagascar": "Madagascar",
+          "country_malawi": "Malawi",
+          "country_malaysia": "Malaysia",
+          "country_maldives": "Maldives",
+          "country_mali": "Mali",
+          "country_malta": "Malta",
+          "country_marshall_islands": "Marshall Islands",
+          "country_martinique": "Martinique",
+          "country_mauritania": "Mauritania",
+          "country_mauritius": "Mauritius",
+          "country_mayotte": "Mayotte",
+          "country_mexico": "Mexico",
+          "country_moldova": "Moldova, Republic of",
+          "country_monaco": "Monaco",
+          "country_mongolia": "Mongolia",
+          "country_montserrat": "Montserrat",
+          "country_morocco": "Morocco",
+          "country_mozambique": "Mozambique",
+          "country_myanmar": "Myanmar",
+          "country_namibia": "Namibia",
+          "country_nauru": "Nauru",
+          "country_nepal": "Nepal",
+          "country_netherlands": "Netherlands",
+          "country_netherlands_antilles": "Netherlands Antilles",
+          "country_new_caledonia": "New Caledonia",
+          "country_new_zealand": "New Zealand",
+          "country_nicaragua": "Nicaragua",
+          "country_niger": "Niger",
+          "country_nigeria": "Nigeria",
+          "country_niue": "Niue",
+          "country_norfolk_island": "Norfolk Island",
+          "country_north_korea": "Korea, Democratic People'S Republic of",
+          "country_north_macedonia": "Macedonia, The Former Yugoslav Republic of",
+          "country_northern_mariana_islands": "Northern Mariana Islands",
+          "country_norway": "Norway",
+          "country_oman": "Oman",
+          "country_pakistan": "Pakistan",
+          "country_palau": "Palau",
+          "country_palestinian_territory_occupied": "Palestinian Territory, Occupied",
+          "country_panama": "Panama",
+          "country_papua_new_guinea": "Papua New Guinea",
+          "country_paraguay": "Paraguay",
+          "country_peru": "Peru",
+          "country_philippines": "Philippines",
+          "country_pitcairn": "Pitcairn",
+          "country_poland": "Poland",
+          "country_portugal": "Portugal",
+          "country_puerto_rico": "Puerto Rico",
+          "country_qatar": "Qatar",
+          "country_reunion": "Reunion",
+          "country_romania": "Romania",
+          "country_russian_federation": "Russian Federation",
+          "country_rwanda": "RWANDA",
+          "country_saint_helena": "Saint Helena",
+          "country_saint_kitts_and_nevis": "Saint Kitts and Nevis",
+          "country_saint_lucia": "Saint Lucia",
+          "country_saint_pierre_and_miquelon": "Saint Pierre and Miquelon",
+          "country_saint_vincent_and_the_grenadines": "Saint Vincent and the Grenadines",
+          "country_samoa": "Samoa",
+          "country_san_marino": "San Marino",
+          "country_sao_tome_and_principe": "Sao Tome and Principe",
+          "country_saudi_arabia": "Saudi Arabia",
+          "country_senegal": "Senegal",
+          "country_serbia": "Serbia and Montenegro",
+          "country_seychelles": "Seychelles",
+          "country_sierra_leone": "Sierra Leone",
+          "country_singapore": "Singapore",
+          "country_slovakia": "Slovakia",
+          "country_slovenia": "Slovenia",
+          "country_solomon_islands": "Solomon Islands",
+          "country_somalia": "Somalia",
+          "country_south_africa": "South Africa",
+          "country_south_georgia_and_the_south_sandwich_islands": "South Georgia and the South Sandwich Islands",
+          "country_spain": "Spain",
+          "country_sri_lanka": "Sri Lanka",
+          "country_sudan": "Sudan",
+          "country_suriname": "Suriname",
+          "country_svalbard_and_jan_mayen": "Svalbard and Jan Mayen",
+          "country_sweden": "Sweden",
+          "country_switzerland": "Switzerland",
+          "country_syria": "Syrian Arab Republic",
+          "country_taiwan": "Taiwan, Province of China",
+          "country_tajikistan": "Tajikistan",
+          "country_tanzania": "Tanzania, United Republic of",
+          "country_thailand": "Thailand",
+          "country_timor_leste": "Timor-Leste",
+          "country_togo": "Togo",
+          "country_tokelau": "Tokelau",
+          "country_tonga": "Tonga",
+          "country_trinidad_and_tobago": "Trinidad and Tobago",
+          "country_tunisia": "Tunisia",
+          "country_turkey": "Turkey",
+          "country_turkmenistan": "Turkmenistan",
+          "country_turks_and_caicos_islands": "Turks and Caicos Islands",
+          "country_tuvalu": "Tuvalu",
+          "country_uganda": "Uganda",
+          "country_ukraine": "Ukraine",
+          "country_united_arab_emirates": "United Arab Emirates",
+          "country_united_kingdom": "United Kingdom",
+          "country_united_states": "United States",
+          "country_united_states_minor_outlying_islands": "United States Minor Outlying Islands",
+          "country_uruguay": "Uruguay",
+          "country_uzbekistan": "Uzbekistan",
+          "country_vanuatu": "Vanuatu",
+          "country_venezuela": "Venezuela",
+          "country_vietnam": "Vietnam",
+          "country_virgin_islands_british": "Virgin Islands, British",
+          "country_virgin_islands_us": "Virgin Islands, U.S.",
+          "country_wallis_and_futuna": "Wallis and Futuna",
+          "country_western_sahara": "Western Sahara",
+          "country_yemen": "Yemen",
+          "country_zambia": "Zambia",
+          "country_zimbabwe": "Zimbabwe",
+          "data_categories": "Data Categories",
+          "data_category": "Data Category",
+          "data_declaration": "Data Declaration",
+          "data_retention": "Data Retention",
+          "day": "day",
+          "days": "days",
+          "description": "Description",
+          "device_storage": "Device Storage",
+          "duration": "Duration",
+          "enter_valid_email": "Please enter a valid email address",
+          "enter_valid_phone_number": "Please enter a valid phone number.",
+          "ex_i_worked_in_the_it_department_in_2015": "EX: I worked in the IT department in 2015",
+          "external_transfer": "External Transfer",
+          "features": "Features",
+          "first_party": "1st Party",
+          "functional": "Functional",
+          "google_vendors": "Google Vendors",
+          "gpc": "GPC",
+          "greeting": "Hi",
+          "here": "here",
+          "i_am_a_an": "I am a (an)",
+          "illustration": "Illustration",
+          "illustrations": "Illustrations",
+          "legal_basis": "Legal Basis",
+          "legal_text": "Legal Text",
+          "less_than_a_day": "Less than a day",
+          "marketing": "Marketing",
+          "maximum_storage": "Maximum Storage Duration",
+          "no_file_chosen": "No file chosen",
+          "no_rights_available": "There are no rights available in the location you are currently in",
+          "object_to_legitimate_interest": "Object to Legitimate Interest",
+          "of": "of",
+          "off": "off",
+          "on": "On",
+          "opted_in": "Opted In",
+          "opted_out": "Opted Out",
+          "other_vendors": "Other Vendors",
+          "performance": "Performance",
+          "persistent": "Persistent",
+          "please_select_a_request_type": "Please select a request type",
+          "powered_by": "Powered by",
+          "preference_consents_exit_button_text": "Exit",
+          "preference_overview_button_text": "Exit",
+          "preference_rights_address_line_one": "Address Line 1",
+          "preference_rights_address_line_two": "Address Line 2",
+          "preference_rights_cancel_button_text": "Cancel",
+          "preference_rights_country": "Country",
+          "preference_rights_email": "Email",
+          "preference_rights_exit_button_text": "Exit",
+          "preference_rights_first_name": "First name",
+          "preference_rights_last_name": "Last name",
+          "preference_rights_personal_details": "Personal details",
+          "preference_rights_phone_number": "Phone Number",
+          "preference_rights_postal_code": "Postal Code",
+          "preference_rights_request": "Request",
+          "preference_rights_request_details": "Request details",
+          "preference_rights_select_country": "Select Country",
+          "preference_rights_select_state_province": "State / Province",
+          "preference_rights_state": "State",
+          "preference_rights_submit_new_request": "Submit New Request",
+          "preference_rights_thank_you": "Thank You!",
+          "preference_rights_we_have_received": "Certain requests require identity verification. For those requests, you will receive an email with verification instructions.  Please be sure to check your email.  Where required, we will not be able to proceed without your timely verification.",
+          "privacy_policy": "Privacy Policy",
+          "provenance": "Provenance",
+          "purpose": "Purpose",
+          "purposes": "Purposes",
+          "quick_links": "Quick Links",
+          "reject_all": "Reject All",
+          "required": "Required",
+          "retention_period": "Retention Period",
+          "rights_tab_porthole_redirect_footer": "If you have already made a request and would like to check on the status, please click",
+          "rights_tab_porthole_redirect_footer_alt": "If you have already made a request and would like to return to the privacy rights portal, ",
+          "save": "save",
+          "second": "second",
+          "seconds": "seconds",
+          "select_a_relationship": "Select a relationship",
+          "select_a_request_type": "Select a Request Type",
+          "service_provider": "Service Provider",
+          "session": "Session",
+          "special_features": "Special Features",
+          "special_purposes": "Special Purposes",
+          "strictly_necessary": "Strictly Necessary",
+          "submit": "Submit",
+          "submitting": "Submitting",
+          "tcf": "TCF",
+          "tcf_vendors": "TCF Vendors",
+          "tell_us_about_your_relationship_to_us": "Tell us about your relationship to us",
+          "terms_of_service": "Terms of Service",
+          "third_party": "3rd Party",
+          "this_site_is_protected_by": "This site is protected by",
+          "unfortunately": "unfortunately",
+          "unknown": "Unknown",
+          "unsubscribe_from_all": "Unsubscribe From All",
+          "uses_cookies": "Vendor uses cookies with a maximum storage duration of",
+          "uses_non_cookie_access": "Vendor uses non-cookie storage and accesses information already stored on a users device",
+          "vendor": "Vendor",
+          "vendors": "Vendors",
+          "verification": "verification",
+          "view_legitimate_interest_claim": "View Legitimate Interest Claim",
+          "view_privacy_policy": "View Privacy Policy",
+          "we_are_unable_to_fulfill_your_request": "we are unable to fulfill your request"
+        }
+      },
+      "layout": {
+        "banner": {
+          "buttons": {
+            "primary": {
+              "action": "saveCurrentState"
+            },
+            "secondary": {
+              "action": "openModal",
+              "visible": true
+            },
+            "tertiary": {
+              "action": "rejectAll",
+              "visible": true
+            }
+          },
+          "footer": {
+            "gpcBadgeVisible": false
+          },
+          "header": {
+            "closeButtonVisible": false,
+            "visible": true
+          }
+        },
+        "entitlementInfo": {
+          "hasPurposesEntitlement": true,
+          "hasRightsEntitlement": false,
+          "hasSubscriptionsEntitlement": false
+        },
+        "modal": {
+          "description": {
+            "title": {
+              "visible": true
+            }
+          },
+          "footer": {
+            "gpcBadgeVisible": false
+          },
+          "header": {
+            "closeButtonVisible": false,
+            "visible": true
+          },
+          "purposeList": {
+            "legalBasisVisible": false,
+            "purposeStacksDefaultExpanded": true,
+            "switchButtonLabels": {
+              "display": "always",
+              "useDefaultText": true,
+              "visible": true
+            }
+          },
+          "purposeListHeader": {
+            "bulkActionButtons": {
+              "useDefaultText": true,
+              "visible": true
+            },
+            "useDefaultText": true,
+            "visible": true
+          }
+        },
+        "preference": {
+          "gpcBadgeVisible": false,
+          "tabs": {
+            "privacyPolicy": {
+              "policyDocumentId": "",
+              "visible": false
+            },
+            "purposes": {
+              "actionButtonUseDefaultText": true,
+              "header": {
+                "title": {
+                  "visible": true
+                }
+              },
+              "purposeList": {
+                "legalBasisVisible": false,
+                "purposeStacksDefaultExpanded": true,
+                "switchButtonLabels": {
+                  "display": "always",
+                  "useDefaultText": true,
+                  "visible": true
+                }
+              },
+              "purposeListHeader": {
+                "bulkActionButtons": {
+                  "useDefaultText": true,
+                  "visible": true
+                },
+                "titleVisible": true,
+                "useDefaultText": true
+              }
+            },
+            "requests": {
+              "home": {
+                "header": {
+                  "title": {
+                    "visible": true
+                  }
+                },
+                "rights": {
+                  "forms": {
+                    "details": [
+                      {
+                        "canonicalRight": "get",
+                        "defaultFormID": "",
+                        "rightFormMappings": []
+                      },
+                      {
+                        "canonicalRight": "delete",
+                        "defaultFormID": "",
+                        "rightFormMappings": []
+                      },
+                      {
+                        "canonicalRight": "restrict",
+                        "defaultFormID": "",
+                        "rightFormMappings": []
+                      },
+                      {
+                        "canonicalRight": "update",
+                        "defaultFormID": "",
+                        "rightFormMappings": []
+                      }
+                    ],
+                    "mode": "single",
+                    "singleFormID": "2u6Ok9tQuWsn3f1Tb0e7kd"
+                  },
+                  "title": {
+                    "useDefaultText": true
+                  }
+                }
+              },
+              "rightForm": {
+                "actionButton": {
+                  "useDefaultText": true
+                },
+                "enableRecaptcha": true
+              },
+              "submitted": {
+                "actionButton": {
+                  "useDefaultText": true,
+                  "visible": true
+                }
+              }
+            },
+            "subscriptions": {
+              "actionButtonUseDefaultText": true,
+              "header": {
+                "title": {
+                  "visible": true
+                }
+              },
+              "list": {
+                "items": [],
+                "switchButtons": {
+                  "useDefaultText": true,
+                  "visible": true
+                }
+              },
+              "unsubscribeAll": {
+                "description": {
+                  "visible": true
+                },
+                "impact": "universal",
+                "position": "top",
+                "switchButton": {
+                  "useDefaultText": true,
+                  "visible": true
+                },
+                "title": {
+                  "useDefaultText": true
+                },
+                "visible": true
+              }
+            },
+            "welcome": {
+              "about": {
+                "visible": true
+              },
+              "quickLinks": {
+                "links": [
+                  {
+                    "action": "openPage",
+                    "page": "purpose",
+                    "visible": true
+                  },
+                  {
+                    "action": "openUrl",
+                    "page": "requestsHome",
+                    "url": "",
+                    "visible": false
+                  },
+                  {
+                    "action": "openUrl",
+                    "page": "requestsHome",
+                    "url": "https://www.prizepicks.com/privacy-policy",
+                    "visible": true
+                  }
+                ],
+                "visible": true
+              },
+              "welcomeMsg": {
+                "visible": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "associations": {
+      "subscriptionTopicCodes": null,
+      "formIds": null,
+      "installedSystemIds": null
+    },
+    "content": {
+      "banner": {
+        "buttons": {
+          "primary": {
+            "text": "Accept All"
+          },
+          "secondary": {
+            "text": "Customize Settings"
+          },
+          "tertiary": {
+            "text": "Opt In"
+          }
+        },
+        "description": "<p><span style=\"color: rgb(0, 0, 0);\">We use online tracking and other technologies to provide a personalized experience, improve our offerings, monitor and record your engagement with us, and share limited personal information with third-party advertisers. To learn more about our privacy practices please review our </span><a href=\"privacyPolicy\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(0, 0, 0);\" title=\"privacyPolicy\">Privacy Policy</a><span style=\"color: rgb(0, 0, 0);\">. Please confirm your choices.</span></p>",
+        "header": {
+          "title": "Your Privacy Choices"
+        }
+      },
+      "display": "banner",
+      "modal": {
+        "description": {
+          "body": "<p><span style=\"color: rgb(0, 0, 0);\">We use online tracking and other technologies to provide a personalized experience, improve our offerings, monitor and record your engagement with us, and share limited personal information with third-party advertisers. To learn more about your privacy practices review our </span><a href=\"https://sendit.ninja/deployment/experiences-v2/edit/consent/privacyPolicy\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(0, 0, 0);\">Privacy Policy</a><span style=\"color: rgb(0, 0, 0);\">. Please confirm your choices.</span></p>",
+          "title": "Your Privacy Choices"
+        },
+        "footer": {
+          "actionButtonText": "Confirm"
+        },
+        "header": {
+          "title": "This Website Processes Personal Data"
+        },
+        "purposeList": {
+          "switchButtonLabels": {
+            "alwaysOnText": "Opted In",
+            "offText": "Opted Out",
+            "onText": "Opted In"
+          }
+        },
+        "purposeListHeader": {
+          "bulkActionButtons": {
+            "acceptAllText": "Accept All",
+            "rejectAllText": "Reject All"
+          },
+          "text": "Purposes"
+        }
+      },
+      "preference": {
+        "footer": {
+          "actionButtonText": "Exit"
+        },
+        "header": {
+          "title": "Your Privacy Choices"
+        },
+        "navigation": {
+          "privacyPolicyTitle": "Privacy Policy",
+          "purposesTitle": "Purposes",
+          "requestsTitle": "Requests",
+          "subscriptionsTitle": "Subscriptions",
+          "welcomeTitle": "Welcome"
+        },
+        "tabs": {
+          "purposes": {
+            "actionButtonText": "Save",
+            "header": {
+              "description": "<p>We collect and use personal information--including, where applicable, your sensitive personal information--for the purposes listed below. Please indicate whether or not that's ok with you by toggling the switches. For more information on our privacy practices, please read our internal <a href=\"privacyPolicy\" rel=\"noopener noreferrer\" target=\"_blank\">Privacy Policy</a>.</p>",
+              "title": "You are in full control"
+            },
+            "purposeList": {
+              "switchButtonLabels": {
+                "alwaysOnText": "Opted In",
+                "offText": "Opted Out",
+                "onText": "Opted In"
+              }
+            },
+            "purposeListHeader": {
+              "bulkActionButtons": {
+                "acceptAllText": "Accept All",
+                "rejectAllText": "Reject All"
+              },
+              "title": "Purposes"
+            }
+          },
+          "requests": {
+            "home": {
+              "dsrPortalLink": {
+                "description": "Already submitted a request? Click here to view its status.",
+                "title": "View My Requests"
+              },
+              "header": {
+                "description": "<p>Applicable privacy laws give you certain rights to our collection, use, sharing, and storage of your information, and we welcome your exercise of those rights. For more detail, please read our<a href=\"privacyPolicy\" rel=\"noopener noreferrer\" target=\"_blank\">Privacy Policy</a>.</p>",
+                "title": "Exercise your rights"
+              },
+              "rights": {
+                "title": "Select a Request Type"
+              }
+            },
+            "rightForm": {
+              "actionButtonText": "Submit",
+              "recaptchaFailureText": "<p>Unfortunately, we are unable to fulfill your request at this time due to suspected bot-like behavior, as indicated by our reCAPTCHA verification. If you believe this is incorrect, please try re-submitting your request.</p>"
+            },
+            "submitted": {
+              "actionButtonText": "Submit New Request",
+              "description": "<p>We've received your request. Certain requests require identity verification. For those requests, you will receive a second email with verification instructions. Please be sure to check your email. Where required, we will not be able to proceed without your timely verification.</p>",
+              "subtitle": "Thank you!",
+              "title": "Request was submitted"
+            }
+          },
+          "subscriptions": {
+            "actionButtonText": "Save",
+            "header": {
+              "description": "<p>Let us know what you are most interested in and how you'd like us to keep in touch. Unsubscribe any time by coming back here or by clicking on the manage subscriptions link in our emails.</p>",
+              "title": "Your Subscriptions"
+            },
+            "listSwitchLabels": {
+              "offText": "Off",
+              "onText": "On"
+            },
+            "unsubscribeAll": {
+              "description": "You\u2019ll always receive reservation details, account security updates, and changes to program terms and conditions.",
+              "switchLabels": {
+                "offText": "Off",
+                "onText": "On"
+              },
+              "title": "Unsubscribe From All"
+            }
+          },
+          "welcome": {
+            "about": {
+              "description": "<p> We prioritize and respect your privacy.  We are committed to transparently managing your data,  using it only for necessary purposes with your explicit consent. Rigorous security measures are in place to protect your information,  and we never sell or share it for marketing without your permission. Your control over your data is important to us, and we continually update our practices to align with the latest standards. </p>",
+              "title": "About Your Privacy"
+            },
+            "quickLinks": {
+              "links": [
+                {
+                  "text": "Manage Your Preferences"
+                },
+                {
+                  "text": "Delete Your Data"
+                },
+                {
+                  "text": "Privacy Policy"
+                }
+              ]
+            },
+            "welcomeMsg": {
+              "subtitle": "<p>Welcome! We\u2019re glad you\u2019re here and want you to know that we respect your privacy and your right to control how we collect, use, and share your personal data. Please read our <a href=\"privacyPolicy\" rel=\"noopener noreferrer\" target=\"_blank\">Privacy Policy</a> to learn about our privacy practices.</p>",
+              "title": "Privacy Promise"
+            }
+          }
+        }
+      },
+      "static": {
+        "accept": "Accept",
+        "accept_all": "Accept All",
+        "and": "and",
+        "and_the": "and the",
+        "apply": "apply",
+        "at_this_time_due_to_suspected_bot_like_behavior_as_indicated_by_our": "at this time due to suspected bot-like behavior as indicated by our",
+        "category": "Category",
+        "choose_file": "Choose File",
+        "click_here": "click here",
+        "cloudinary_supported_file_size": "Maximum file size: 4 MB",
+        "cloudinary_supported_file_types": "Supported file types: JPG and\u00a0PDF",
+        "cookie": "Cookie",
+        "cookie_refresh": "Vendor may refresh cookies",
+        "cookies": "Cookies",
+        "country_afghanistan": "Afghanistan",
+        "country_aland_islands": "\u00c5land Islands",
+        "country_albania": "Albania",
+        "country_algeria": "Algeria",
+        "country_american_samoa": "American Samoa",
+        "country_andorra": "Andorra",
+        "country_angola": "Angola",
+        "country_anguilla": "Anguilla",
+        "country_antarctica": "Antarctica",
+        "country_antigua_and_barbuda": "Antigua and Barbuda",
+        "country_argentina": "Argentina",
+        "country_armenia": "Armenia",
+        "country_aruba": "Aruba",
+        "country_australia": "Australia",
+        "country_austria": "Austria",
+        "country_azerbaijan": "Azerbaijan",
+        "country_bahamas": "Bahamas",
+        "country_bahrain": "Bahrain",
+        "country_bangladesh": "Bangladesh",
+        "country_barbados": "Barbados",
+        "country_belarus": "Belarus",
+        "country_belgium": "Belgium",
+        "country_belize": "Belize",
+        "country_benin": "Benin",
+        "country_bermuda": "Bermuda",
+        "country_bhutan": "Bhutan",
+        "country_bolivia": "Bolivia",
+        "country_bosnia_and_herzegovina": "Bosnia and Herzegovina",
+        "country_botswana": "Botswana",
+        "country_bouvet_island": "Bouvet Island",
+        "country_brazil": "Brazil",
+        "country_british_indian_ocean_territory": "British Indian Ocean Territory",
+        "country_brunei_darussalam": "Brunei Darussalam",
+        "country_bulgaria": "Bulgaria",
+        "country_burkina_faso": "Burkina Faso",
+        "country_burundi": "Burundi",
+        "country_cambodia": "Cambodia",
+        "country_cameroon": "Cameroon",
+        "country_canada": "Canada",
+        "country_cape_verde": "Cape Verde",
+        "country_cayman_islands": "Cayman Islands",
+        "country_central_african_republic": "Central African Republic",
+        "country_chad": "Chad",
+        "country_chile": "Chile",
+        "country_china": "China",
+        "country_christmas_island": "Christmas Island",
+        "country_cocos_keeling_islands": "Cocos (Keeling) Islands",
+        "country_colombia": "Colombia",
+        "country_comoros": "Comoros",
+        "country_congo": "Congo",
+        "country_congo_the_democratic_republic": "Congo, The Democratic Republic of the",
+        "country_cook_islands": "Cook Islands",
+        "country_costa_rica": "Costa Rica",
+        "country_cote_divoire": "Cote D'Ivoire",
+        "country_croatia": "Croatia",
+        "country_cuba": "Cuba",
+        "country_cyprus": "Cyprus",
+        "country_czech_republic": "Czech Republic",
+        "country_denmark": "Denmark",
+        "country_djibouti": "Djibouti",
+        "country_dominica": "Dominica",
+        "country_dominican_republic": "Dominican Republic",
+        "country_ecuador": "Ecuador",
+        "country_egypt": "Egypt",
+        "country_el_salvador": "El Salvador",
+        "country_equatorial_guinea": "Equatorial Guinea",
+        "country_eritrea": "Eritrea",
+        "country_estonia": "Estonia",
+        "country_eswatini": "Swaziland",
+        "country_ethiopia": "Ethiopia",
+        "country_falkland_islands_malvinas": "Falkland Islands (Malvinas)",
+        "country_faroe_islands": "Faroe Islands",
+        "country_federated_states_of_micronesia": "Micronesia, Federated States of",
+        "country_fiji": "Fiji",
+        "country_finland": "Finland",
+        "country_france": "France",
+        "country_french_guiana": "French Guiana",
+        "country_french_polynesia": "French Polynesia",
+        "country_french_southern_territories": "French Southern Territories",
+        "country_gabon": "Gabon",
+        "country_gambia": "Gambia",
+        "country_georgia": "Georgia",
+        "country_germany": "Germany",
+        "country_ghana": "Ghana",
+        "country_gibraltar": "Gibraltar",
+        "country_greece": "Greece",
+        "country_greenland": "Greenland",
+        "country_grenada": "Grenada",
+        "country_guadeloupe": "Guadeloupe",
+        "country_guam": "Guam",
+        "country_guatemala": "Guatemala",
+        "country_guernsey": "Guernsey",
+        "country_guinea": "Guinea",
+        "country_guinea_bissau": "Guinea-Bissau",
+        "country_guyana": "Guyana",
+        "country_haiti": "Haiti",
+        "country_heard_island_and_mcdonald_islands": "Heard Island and Mcdonald Islands",
+        "country_holy_see_vatican_city_state": "Holy See (Vatican City State)",
+        "country_honduras": "Honduras",
+        "country_hong_kong": "Hong Kong",
+        "country_hungary": "Hungary",
+        "country_iceland": "Iceland",
+        "country_india": "India",
+        "country_indonesia": "Indonesia",
+        "country_iran": "Iran, Islamic Republic Of",
+        "country_iraq": "Iraq",
+        "country_ireland": "Ireland",
+        "country_isle_of_man": "Isle of Man",
+        "country_israel": "Israel",
+        "country_italy": "Italy",
+        "country_jamaica": "Jamaica",
+        "country_japan": "Japan",
+        "country_jersey": "Jersey",
+        "country_jordan": "Jordan",
+        "country_kazakhstan": "Kazakhstan",
+        "country_kenya": "Kenya",
+        "country_kiribati": "Kiribati",
+        "country_korea": "Korea, Republic of",
+        "country_kuwait": "Kuwait",
+        "country_kyrgyzstan": "Kyrgyzstan",
+        "country_laos": "Lao People'S Democratic Republic",
+        "country_latvia": "Latvia",
+        "country_lebanon": "Lebanon",
+        "country_lesotho": "Lesotho",
+        "country_liberia": "Liberia",
+        "country_libya": "Libyan Arab Jamahiriya",
+        "country_liechtenstein": "Liechtenstein",
+        "country_lithuania": "Lithuania",
+        "country_luxembourg": "Luxembourg",
+        "country_macao": "Macao",
+        "country_madagascar": "Madagascar",
+        "country_malawi": "Malawi",
+        "country_malaysia": "Malaysia",
+        "country_maldives": "Maldives",
+        "country_mali": "Mali",
+        "country_malta": "Malta",
+        "country_marshall_islands": "Marshall Islands",
+        "country_martinique": "Martinique",
+        "country_mauritania": "Mauritania",
+        "country_mauritius": "Mauritius",
+        "country_mayotte": "Mayotte",
+        "country_mexico": "Mexico",
+        "country_moldova": "Moldova, Republic of",
+        "country_monaco": "Monaco",
+        "country_mongolia": "Mongolia",
+        "country_montserrat": "Montserrat",
+        "country_morocco": "Morocco",
+        "country_mozambique": "Mozambique",
+        "country_myanmar": "Myanmar",
+        "country_namibia": "Namibia",
+        "country_nauru": "Nauru",
+        "country_nepal": "Nepal",
+        "country_netherlands": "Netherlands",
+        "country_netherlands_antilles": "Netherlands Antilles",
+        "country_new_caledonia": "New Caledonia",
+        "country_new_zealand": "New Zealand",
+        "country_nicaragua": "Nicaragua",
+        "country_niger": "Niger",
+        "country_nigeria": "Nigeria",
+        "country_niue": "Niue",
+        "country_norfolk_island": "Norfolk Island",
+        "country_north_korea": "Korea, Democratic People'S Republic of",
+        "country_north_macedonia": "Macedonia, The Former Yugoslav Republic of",
+        "country_northern_mariana_islands": "Northern Mariana Islands",
+        "country_norway": "Norway",
+        "country_oman": "Oman",
+        "country_pakistan": "Pakistan",
+        "country_palau": "Palau",
+        "country_palestinian_territory_occupied": "Palestinian Territory, Occupied",
+        "country_panama": "Panama",
+        "country_papua_new_guinea": "Papua New Guinea",
+        "country_paraguay": "Paraguay",
+        "country_peru": "Peru",
+        "country_philippines": "Philippines",
+        "country_pitcairn": "Pitcairn",
+        "country_poland": "Poland",
+        "country_portugal": "Portugal",
+        "country_puerto_rico": "Puerto Rico",
+        "country_qatar": "Qatar",
+        "country_reunion": "Reunion",
+        "country_romania": "Romania",
+        "country_russian_federation": "Russian Federation",
+        "country_rwanda": "RWANDA",
+        "country_saint_helena": "Saint Helena",
+        "country_saint_kitts_and_nevis": "Saint Kitts and Nevis",
+        "country_saint_lucia": "Saint Lucia",
+        "country_saint_pierre_and_miquelon": "Saint Pierre and Miquelon",
+        "country_saint_vincent_and_the_grenadines": "Saint Vincent and the Grenadines",
+        "country_samoa": "Samoa",
+        "country_san_marino": "San Marino",
+        "country_sao_tome_and_principe": "Sao Tome and Principe",
+        "country_saudi_arabia": "Saudi Arabia",
+        "country_senegal": "Senegal",
+        "country_serbia": "Serbia and Montenegro",
+        "country_seychelles": "Seychelles",
+        "country_sierra_leone": "Sierra Leone",
+        "country_singapore": "Singapore",
+        "country_slovakia": "Slovakia",
+        "country_slovenia": "Slovenia",
+        "country_solomon_islands": "Solomon Islands",
+        "country_somalia": "Somalia",
+        "country_south_africa": "South Africa",
+        "country_south_georgia_and_the_south_sandwich_islands": "South Georgia and the South Sandwich Islands",
+        "country_spain": "Spain",
+        "country_sri_lanka": "Sri Lanka",
+        "country_sudan": "Sudan",
+        "country_suriname": "Suriname",
+        "country_svalbard_and_jan_mayen": "Svalbard and Jan Mayen",
+        "country_sweden": "Sweden",
+        "country_switzerland": "Switzerland",
+        "country_syria": "Syrian Arab Republic",
+        "country_taiwan": "Taiwan, Province of China",
+        "country_tajikistan": "Tajikistan",
+        "country_tanzania": "Tanzania, United Republic of",
+        "country_thailand": "Thailand",
+        "country_timor_leste": "Timor-Leste",
+        "country_togo": "Togo",
+        "country_tokelau": "Tokelau",
+        "country_tonga": "Tonga",
+        "country_trinidad_and_tobago": "Trinidad and Tobago",
+        "country_tunisia": "Tunisia",
+        "country_turkey": "Turkey",
+        "country_turkmenistan": "Turkmenistan",
+        "country_turks_and_caicos_islands": "Turks and Caicos Islands",
+        "country_tuvalu": "Tuvalu",
+        "country_uganda": "Uganda",
+        "country_ukraine": "Ukraine",
+        "country_united_arab_emirates": "United Arab Emirates",
+        "country_united_kingdom": "United Kingdom",
+        "country_united_states": "United States",
+        "country_united_states_minor_outlying_islands": "United States Minor Outlying Islands",
+        "country_uruguay": "Uruguay",
+        "country_uzbekistan": "Uzbekistan",
+        "country_vanuatu": "Vanuatu",
+        "country_venezuela": "Venezuela",
+        "country_vietnam": "Vietnam",
+        "country_virgin_islands_british": "Virgin Islands, British",
+        "country_virgin_islands_us": "Virgin Islands, U.S.",
+        "country_wallis_and_futuna": "Wallis and Futuna",
+        "country_western_sahara": "Western Sahara",
+        "country_yemen": "Yemen",
+        "country_zambia": "Zambia",
+        "country_zimbabwe": "Zimbabwe",
+        "data_categories": "Data Categories",
+        "data_category": "Data Category",
+        "data_declaration": "Data Declaration",
+        "data_retention": "Data Retention",
+        "day": "day",
+        "days": "days",
+        "description": "Description",
+        "device_storage": "Device Storage",
+        "duration": "Duration",
+        "enter_valid_email": "Please enter a valid email address",
+        "enter_valid_phone_number": "Please enter a valid phone number.",
+        "ex_i_worked_in_the_it_department_in_2015": "EX: I worked in the IT department in 2015",
+        "external_transfer": "External Transfer",
+        "features": "Features",
+        "first_party": "1st Party",
+        "functional": "Functional",
+        "google_vendors": "Google Vendors",
+        "gpc": "GPC",
+        "greeting": "Hi",
+        "here": "here",
+        "i_am_a_an": "I am a (an)",
+        "illustration": "Illustration",
+        "illustrations": "Illustrations",
+        "legal_basis": "Legal Basis",
+        "legal_text": "Legal Text",
+        "less_than_a_day": "Less than a day",
+        "marketing": "Marketing",
+        "maximum_storage": "Maximum Storage Duration",
+        "no_file_chosen": "No file chosen",
+        "no_rights_available": "There are no rights available in the location you are currently in",
+        "object_to_legitimate_interest": "Object to Legitimate Interest",
+        "of": "of",
+        "off": "off",
+        "on": "On",
+        "opted_in": "Opted In",
+        "opted_out": "Opted Out",
+        "other_vendors": "Other Vendors",
+        "performance": "Performance",
+        "persistent": "Persistent",
+        "please_select_a_request_type": "Please select a request type",
+        "powered_by": "Powered by",
+        "preference_consents_exit_button_text": "Exit",
+        "preference_overview_button_text": "Exit",
+        "preference_rights_address_line_one": "Address Line 1",
+        "preference_rights_address_line_two": "Address Line 2",
+        "preference_rights_cancel_button_text": "Cancel",
+        "preference_rights_country": "Country",
+        "preference_rights_email": "Email",
+        "preference_rights_exit_button_text": "Exit",
+        "preference_rights_first_name": "First name",
+        "preference_rights_last_name": "Last name",
+        "preference_rights_personal_details": "Personal details",
+        "preference_rights_phone_number": "Phone Number",
+        "preference_rights_postal_code": "Postal Code",
+        "preference_rights_request": "Request",
+        "preference_rights_request_details": "Request details",
+        "preference_rights_select_country": "Select Country",
+        "preference_rights_select_state_province": "State / Province",
+        "preference_rights_state": "State",
+        "preference_rights_submit_new_request": "Submit New Request",
+        "preference_rights_thank_you": "Thank You!",
+        "preference_rights_we_have_received": "Certain requests require identity verification. For those requests, you will receive an email with verification instructions.  Please be sure to check your email.  Where required, we will not be able to proceed without your timely verification.",
+        "privacy_policy": "Privacy Policy",
+        "provenance": "Provenance",
+        "purpose": "Purpose",
+        "purposes": "Purposes",
+        "quick_links": "Quick Links",
+        "reject_all": "Reject All",
+        "required": "Required",
+        "retention_period": "Retention Period",
+        "rights_tab_porthole_redirect_footer": "If you have already made a request and would like to check on the status, please click",
+        "rights_tab_porthole_redirect_footer_alt": "If you have already made a request and would like to return to the privacy rights portal, ",
+        "save": "save",
+        "second": "second",
+        "seconds": "seconds",
+        "select_a_relationship": "Select a relationship",
+        "select_a_request_type": "Select a Request Type",
+        "service_provider": "Service Provider",
+        "session": "Session",
+        "special_features": "Special Features",
+        "special_purposes": "Special Purposes",
+        "strictly_necessary": "Strictly Necessary",
+        "submit": "Submit",
+        "submitting": "Submitting",
+        "tcf": "TCF",
+        "tcf_vendors": "TCF Vendors",
+        "tell_us_about_your_relationship_to_us": "Tell us about your relationship to us",
+        "terms_of_service": "Terms of Service",
+        "third_party": "3rd Party",
+        "this_site_is_protected_by": "This site is protected by",
+        "unfortunately": "unfortunately",
+        "unknown": "Unknown",
+        "unsubscribe_from_all": "Unsubscribe From All",
+        "uses_cookies": "Vendor uses cookies with a maximum storage duration of",
+        "uses_non_cookie_access": "Vendor uses non-cookie storage and accesses information already stored on a users device",
+        "vendor": "Vendor",
+        "vendors": "Vendors",
+        "verification": "verification",
+        "view_legitimate_interest_claim": "View Legitimate Interest Claim",
+        "view_privacy_policy": "View Privacy Policy",
+        "we_are_unable_to_fulfill_your_request": "we are unable to fulfill your request"
+      }
+    },
+    "layout": {
+      "banner": {
+        "buttons": {
+          "primary": {
+            "action": "acceptAll",
+            "url": ""
+          },
+          "secondary": {
+            "action": "openPreferences",
+            "url": "",
+            "visible": true
+          },
+          "tertiary": {
+            "action": "acceptAll",
+            "url": "",
+            "visible": false
+          }
+        },
+        "footer": {
+          "gpcBadgeVisible": false
+        },
+        "header": {
+          "closeButtonVisible": true,
+          "visible": true
+        }
+      },
+      "entitlementInfo": {
+        "hasPurposesEntitlement": true,
+        "hasRightsEntitlement": false,
+        "hasSubscriptionsEntitlement": false
+      },
+      "modal": {
+        "description": {
+          "title": {
+            "visible": true
+          }
+        },
+        "footer": {
+          "gpcBadgeVisible": false
+        },
+        "header": {
+          "closeButtonVisible": false,
+          "visible": true
+        },
+        "purposeList": {
+          "legalBasisVisible": false,
+          "purposeStacksDefaultExpanded": true,
+          "switchButtonLabels": {
+            "display": "always",
+            "useDefaultText": true,
+            "visible": false
+          }
+        },
+        "purposeListHeader": {
+          "bulkActionButtons": {
+            "useDefaultText": true,
+            "visible": true
+          },
+          "useDefaultText": true,
+          "visible": true
+        }
+      },
+      "preference": {
+        "gpcBadgeVisible": false,
+        "tabs": {
+          "privacyPolicy": {
+            "policyDocumentId": "",
+            "visible": false
+          },
+          "purposes": {
+            "actionButtonUseDefaultText": true,
+            "header": {
+              "title": {
+                "visible": true
+              }
+            },
+            "purposeList": {
+              "legalBasisVisible": false,
+              "purposeStacksDefaultExpanded": true,
+              "switchButtonLabels": {
+                "display": "always",
+                "useDefaultText": true,
+                "visible": true
+              }
+            },
+            "purposeListHeader": {
+              "bulkActionButtons": {
+                "useDefaultText": true,
+                "visible": true
+              },
+              "titleVisible": true,
+              "useDefaultText": true
+            }
+          },
+          "requests": {
+            "home": {
+              "header": {
+                "title": {
+                  "visible": true
+                }
+              },
+              "rights": {
+                "forms": {
+                  "details": [
+                    {
+                      "canonicalRight": "get",
+                      "defaultFormID": "",
+                      "rightFormMappings": []
+                    },
+                    {
+                      "canonicalRight": "delete",
+                      "defaultFormID": "",
+                      "rightFormMappings": []
+                    },
+                    {
+                      "canonicalRight": "restrict",
+                      "defaultFormID": "",
+                      "rightFormMappings": []
+                    },
+                    {
+                      "canonicalRight": "update",
+                      "defaultFormID": "",
+                      "rightFormMappings": []
+                    }
+                  ],
+                  "mode": "single",
+                  "singleFormID": "2u6Ok9tQuWsn3f1Tb0e7kd"
+                },
+                "title": {
+                  "useDefaultText": true
+                }
+              }
+            },
+            "rightForm": {
+              "actionButton": {
+                "useDefaultText": true
+              },
+              "enableRecaptcha": true
+            },
+            "submitted": {
+              "actionButton": {
+                "useDefaultText": true,
+                "visible": true
+              }
+            }
+          },
+          "subscriptions": {
+            "actionButtonUseDefaultText": true,
+            "header": {
+              "title": {
+                "visible": true
+              }
+            },
+            "list": {
+              "items": [],
+              "switchButtons": {
+                "useDefaultText": true,
+                "visible": true
+              }
+            },
+            "unsubscribeAll": {
+              "description": {
+                "visible": true
+              },
+              "impact": "universal",
+              "position": "top",
+              "switchButton": {
+                "useDefaultText": true,
+                "visible": true
+              },
+              "title": {
+                "useDefaultText": true
+              },
+              "visible": true
+            }
+          },
+          "welcome": {
+            "about": {
+              "visible": true
+            },
+            "quickLinks": {
+              "links": [
+                {
+                  "action": "openPage",
+                  "page": "purpose",
+                  "visible": true
+                },
+                {
+                  "action": "openUrl",
+                  "page": "requestsHome",
+                  "url": "",
+                  "visible": false
+                },
+                {
+                  "action": "openUrl",
+                  "page": "requestsHome",
+                  "url": "https://www.prizepicks.com/privacy-policy",
+                  "visible": true
+                }
+              ],
+              "visible": true
+            },
+            "welcomeMsg": {
+              "visible": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "progressiveExperiences": null,
+  "theme": {
+    "banner": {
+      "buttons": {
+        "primary": {
+          "background": {
+            "color": "#8000FF",
+            "opacity": 1
+          },
+          "cornerRadius": "36",
+          "outline": {
+            "color": "#000000",
+            "opacity": 1
+          },
+          "style": "filled",
+          "text": {
+            "color": "#FBF9FF",
+            "opacity": 1
+          }
+        },
+        "secondary": {
+          "background": {
+            "color": "#393945",
+            "opacity": 1
+          },
+          "cornerRadius": "36",
+          "outline": {
+            "color": "#000000",
+            "opacity": 1
+          },
+          "style": "filled",
+          "text": {
+            "color": "#FBF9FF",
+            "opacity": 1
+          }
+        },
+        "tertiary": {
+          "background": {
+            "color": "#393945",
+            "opacity": 1
+          },
+          "cornerRadius": "36",
+          "outline": {
+            "color": "#000000",
+            "opacity": 1
+          },
+          "style": "filled",
+          "text": {
+            "color": "#FBF9FF",
+            "opacity": 1
+          }
+        }
+      },
+      "container": {
+        "backdrop": {
+          "background": {
+            "color": "#121320",
+            "opacity": "24"
+          },
+          "disableContentInteractions": true,
+          "visible": true
+        },
+        "background": {
+          "color": "#121320",
+          "opacity": 1
+        },
+        "cornerRadius": 0,
+        "font": "",
+        "layout": "horizontal",
+        "position": "bottom",
+        "size": "standard"
+      },
+      "description": {
+        "link": {
+          "color": "#FBF9FF",
+          "opacity": 1,
+          "underline": true
+        },
+        "text": {
+          "color": "#C7C6CE",
+          "opacity": 1
+        }
+      },
+      "footer": {
+        "ketchBadgeVisible": false
+      },
+      "header": {
+        "returnButton": {
+          "background": {
+            "color": "#393945",
+            "opacity": 1
+          },
+          "cornerRadius": 36,
+          "icon": {
+            "color": "#ffffff",
+            "opacity": 1
+          }
+        },
+        "title": {
+          "color": "#ffffff",
+          "opacity": 1
+        }
+      }
+    },
+    "modal": {
+      "container": {
+        "backdrop": {
+          "background": {
+            "color": "#000000",
+            "opacity": 24
+          },
+          "disableContentInteractions": true,
+          "visible": true
+        },
+        "background": {
+          "color": "#000000",
+          "opacity": 1
+        },
+        "cornerRadius": 0,
+        "font": "",
+        "position": "center"
+      },
+      "description": {
+        "link": {
+          "color": "#ffffff",
+          "opacity": 1,
+          "underline": true
+        },
+        "text": {
+          "color": "#ffffff",
+          "opacity": 1,
+          "underline": false
+        },
+        "title": {
+          "color": "#ffffff",
+          "opacity": 1,
+          "underline": false
+        }
+      },
+      "footer": {
+        "actionButton": {
+          "background": {
+            "color": "#ffffff",
+            "opacity": 1
+          },
+          "cornerRadius": 0,
+          "icon": {
+            "color": "",
+            "opacity": 1
+          },
+          "outline": {
+            "color": "#000000",
+            "opacity": 1
+          },
+          "style": "filled",
+          "text": {
+            "color": "#000000",
+            "opacity": 1,
+            "underline": false
+          }
+        },
+        "background": {
+          "color": "#000000",
+          "opacity": 1
+        },
+        "ketchBadgeVisible": false
+      },
+      "header": {
+        "background": {
+          "color": "#000000",
+          "opacity": 1
+        },
+        "returnButton": {
+          "background": {
+            "color": "#606060",
+            "opacity": 1
+          },
+          "cornerRadius": 0,
+          "icon": {
+            "color": "#ffffff",
+            "opacity": 1
+          }
+        },
+        "title": {
+          "color": "#ffffff",
+          "opacity": 1,
+          "underline": false
+        }
+      },
+      "purposeList": {
+        "purposeListItems": {
+          "arrowIcon": {
+            "color": "#ffffff",
+            "opacity": 1
+          },
+          "layout": "expandable",
+          "purposeContent": {
+            "color": "#ffffff",
+            "opacity": 1
+          },
+          "purposeCornerRadius": 0,
+          "purposeFill": {
+            "color": "#606060",
+            "opacity": 1
+          },
+          "purposeLinks": {
+            "color": "#ffffff",
+            "opacity": 1
+          },
+          "purposeOutline": {
+            "color": "#EBEDED",
+            "opacity": 1
+          },
+          "style": "filled"
+        },
+        "switchButtons": {
+          "off": {
+            "background": {
+              "color": "#929292",
+              "opacity": 1
+            },
+            "text": {
+              "color": "#ffffff",
+              "opacity": 1,
+              "underline": false
+            }
+          },
+          "on": {
+            "background": {
+              "color": "#000000",
+              "opacity": 1
+            },
+            "text": {
+              "color": "#ffffff",
+              "opacity": 1,
+              "underline": false
+            }
+          }
+        }
+      },
+      "purposeListHeader": {
+        "acceptAllButton": {
+          "background": {
+            "color": "#000000",
+            "opacity": 1
+          },
+          "cornerRadius": 0,
+          "icon": {
+            "color": "",
+            "opacity": 1
+          },
+          "outline": {
+            "color": "#000000",
+            "opacity": 1
+          },
+          "style": "filled",
+          "text": {
+            "color": "#FFFFFF",
+            "opacity": 1,
+            "underline": false
+          }
+        },
+        "rejectAllButton": {
+          "background": {
+            "color": "#000000",
+            "opacity": 1
+          },
+          "cornerRadius": 0,
+          "icon": {
+            "color": "",
+            "opacity": 1
+          },
+          "outline": {
+            "color": "#000000",
+            "opacity": 1
+          },
+          "style": "filled",
+          "text": {
+            "color": "#FFFFFF",
+            "opacity": 1,
+            "underline": false
+          }
+        },
+        "title": {
+          "color": "#000000",
+          "opacity": 1,
+          "underline": false
+        }
+      }
+    },
+    "preference": {
+      "container": {
+        "background": {
+          "color": "#050614",
+          "opacity": 1
+        },
+        "exitPosition": "bottomLeft",
+        "font": ""
+      },
+      "exitButton": {
+        "background": {
+          "color": "#121320",
+          "opacity": 1
+        },
+        "icon": {
+          "name": "",
+          "url": ""
+        },
+        "iconColor": {
+          "color": "#ffffff",
+          "opacity": 1
+        },
+        "iconVisible": true,
+        "text": {
+          "color": "#FBF9FF",
+          "opacity": 1,
+          "underline": false
+        },
+        "useDefaultIcon": true
+      },
+      "header": {
+        "background": {
+          "color": "#050614",
+          "opacity": 1
+        },
+        "logo": {
+          "name": "",
+          "url": ""
+        },
+        "title": {
+          "color": "#FBF9FF",
+          "opacity": 1,
+          "underline": false
+        }
+      },
+      "ketchBadgeVisible": false,
+      "navigation": {
+        "icons": {
+          "privacyPolicy": {
+            "name": "",
+            "url": ""
+          },
+          "purposes": {
+            "name": "",
+            "url": ""
+          },
+          "requests": {
+            "name": "",
+            "url": ""
+          },
+          "subscriptions": {
+            "name": "",
+            "url": ""
+          },
+          "welcome": {
+            "name": "",
+            "url": ""
+          }
+        },
+        "iconsVisible": true,
+        "layout": {
+          "background": {
+            "color": "#121320",
+            "opacity": 1
+          },
+          "cornerRadius": "",
+          "item": {
+            "cornerRadius": 0,
+            "selectedBackground": {
+              "color": "#2C2C39",
+              "opacity": 1
+            },
+            "selectedText": {
+              "color": "#FBF9FF",
+              "opacity": 1,
+              "underline": false
+            },
+            "unselectedBackground": {
+              "color": "#E6E8E9",
+              "opacity": 1
+            },
+            "unselectedText": {
+              "color": "#FBF9FF",
+              "opacity": 1,
+              "underline": false
+            }
+          }
+        }
+      },
+      "tabs": {
+        "privacyPolicy": {
+          "link": {
+            "color": "",
+            "opacity": 1,
+            "underline": false
+          },
+          "text": {
+            "color": "",
+            "opacity": 1,
+            "underline": false
+          }
+        },
+        "purposes": {
+          "footer": {
+            "actionButton": {
+              "background": {
+                "color": "#8000FF",
+                "opacity": 1
+              },
+              "cornerRadius": "36",
+              "icon": {
+                "color": "",
+                "opacity": 1
+              },
+              "outline": {
+                "color": "#000000",
+                "opacity": 1
+              },
+              "style": "filled",
+              "text": {
+                "color": "#FBF9FF",
+                "opacity": 1,
+                "underline": false
+              }
+            },
+            "background": {
+              "color": "#FFFFFF",
+              "opacity": 1
+            }
+          },
+          "header": {
+            "description": {
+              "color": "#C7C6CE",
+              "opacity": 1,
+              "underline": false
+            },
+            "link": {
+              "color": "#FBF9FF",
+              "opacity": 1,
+              "underline": true
+            },
+            "title": {
+              "color": "#FBF9FF",
+              "opacity": 1,
+              "underline": false
+            }
+          },
+          "purposeList": {
+            "purposeListItems": {
+              "arrowIcon": {
+                "color": "#FBF9FF",
+                "opacity": 1
+              },
+              "layout": "expandable",
+              "purposeContent": {
+                "color": "#FBF9FF",
+                "opacity": 1
+              },
+              "purposeCornerRadius": "8",
+              "purposeFill": {
+                "color": "#2C2C39",
+                "opacity": 1
+              },
+              "purposeLinks": {
+                "color": "#FBF9FF",
+                "opacity": 1
+              },
+              "purposeOutline": {
+                "color": "#EBEDED",
+                "opacity": 1
+              },
+              "style": "filled"
+            },
+            "switchButtons": {
+              "off": {
+                "background": {
+                  "color": "#60606B",
+                  "opacity": 1
+                },
+                "text": {
+                  "color": "#FBF9FF",
+                  "opacity": 1,
+                  "underline": false
+                }
+              },
+              "on": {
+                "background": {
+                  "color": "#8000FF",
+                  "opacity": 1
+                },
+                "text": {
+                  "color": "#FBF9FF",
+                  "opacity": 1,
+                  "underline": false
+                }
+              }
+            }
+          },
+          "purposeListHeader": {
+            "acceptAllButton": {
+              "background": {
+                "color": "#393945",
+                "opacity": 1
+              },
+              "cornerRadius": "36",
+              "icon": {
+                "color": "",
+                "opacity": 1
+              },
+              "outline": {
+                "color": "#000000",
+                "opacity": 1
+              },
+              "style": "filled",
+              "text": {
+                "color": "#FBF9FF",
+                "opacity": 1,
+                "underline": false
+              }
+            },
+            "rejectAllButton": {
+              "background": {
+                "color": "#393945",
+                "opacity": 1
+              },
+              "cornerRadius": "36",
+              "icon": {
+                "color": "",
+                "opacity": 1
+              },
+              "outline": {
+                "color": "#000000",
+                "opacity": 1
+              },
+              "style": "filled",
+              "text": {
+                "color": "#FBF9FF",
+                "opacity": 1,
+                "underline": false
+              }
+            },
+            "title": {
+              "color": "#FBF9FF",
+              "opacity": 1,
+              "underline": false
+            }
+          }
+        },
+        "requests": {
+          "home": {
+            "dsrPortalLink": {
+              "arrowIcon": {
+                "color": "#ffffff",
+                "opacity": 1
+              },
+              "background": {
+                "color": "#606060",
+                "opacity": 1
+              },
+              "cornerRadius": 0,
+              "description": {
+                "color": "#ffffff",
+                "opacity": 1,
+                "underline": false
+              },
+              "title": {
+                "color": "#ffffff",
+                "opacity": 1,
+                "underline": false
+              }
+            },
+            "header": {
+              "description": {
+                "color": "#ffffff",
+                "opacity": 1,
+                "underline": false
+              },
+              "link": {
+                "color": "#ffffff",
+                "opacity": 1,
+                "underline": true
+              },
+              "title": {
+                "color": "#ffffff",
+                "opacity": 1,
+                "underline": false
+              }
+            },
+            "rightsList": {
+              "item": {
+                "arrowIcon": {
+                  "color": "#ffffff",
+                  "opacity": 1
+                },
+                "background": {
+                  "color": "#606060",
+                  "opacity": 1
+                },
+                "cornerRadius": 0,
+                "title": {
+                  "color": "#ffffff",
+                  "opacity": 1,
+                  "underline": false
+                }
+              },
+              "title": {
+                "color": "#ffffff",
+                "opacity": 1,
+                "underline": false
+              }
+            }
+          },
+          "rightForm": {
+            "actionButton": {
+              "background": {
+                "color": "#ffffff",
+                "opacity": 1
+              },
+              "cornerRadius": 0,
+              "icon": {
+                "color": "",
+                "opacity": 1
+              },
+              "outline": {
+                "color": "#000000",
+                "opacity": 1
+              },
+              "style": "filled",
+              "text": {
+                "color": "#000000",
+                "opacity": 1,
+                "underline": false
+              }
+            },
+            "form": {
+              "checkboxes": {
+                "error": {
+                  "background": {
+                    "color": "#F00000",
+                    "opacity": 1
+                  },
+                  "label": {
+                    "color": "#F00000",
+                    "opacity": 1
+                  }
+                },
+                "selected": {
+                  "background": {
+                    "color": "#606060",
+                    "opacity": 1
+                  },
+                  "label": {
+                    "color": "#ffffff",
+                    "opacity": 1
+                  }
+                },
+                "unselected": {
+                  "background": {
+                    "color": "#aaaaaa",
+                    "opacity": 1
+                  },
+                  "label": {
+                    "color": "#ffffff",
+                    "opacity": 1
+                  }
+                }
+              },
+              "dividers": {
+                "subtitle": {
+                  "color": "#ebebeb",
+                  "opacity": 1,
+                  "underline": false
+                },
+                "title": {
+                  "color": "#ebebeb",
+                  "opacity": 1,
+                  "underline": false
+                }
+              },
+              "fields": {
+                "active": {
+                  "background": {
+                    "color": "#FFFFFF",
+                    "opacity": 1
+                  },
+                  "outline": {
+                    "color": "#000000",
+                    "opacity": 1
+                  }
+                },
+                "cornerRadius": 0,
+                "error": {
+                  "background": {
+                    "color": "#FFFFFF",
+                    "opacity": 1
+                  },
+                  "outline": {
+                    "color": "#F00000",
+                    "opacity": 1
+                  }
+                },
+                "fieldLabel": {
+                  "color": "#000000",
+                  "opacity": 1,
+                  "underline": false
+                },
+                "hintText": {
+                  "color": "#C2C2C2",
+                  "opacity": 1,
+                  "underline": false
+                },
+                "inactive": {
+                  "background": {
+                    "color": "#FFFFFF",
+                    "opacity": 1
+                  },
+                  "outline": {
+                    "color": "#C2C2C2",
+                    "opacity": 1
+                  }
+                },
+                "inputText": {
+                  "color": "#000000",
+                  "opacity": 1,
+                  "underline": false
+                },
+                "style": "box"
+              }
+            },
+            "header": {
+              "returnButton": {
+                "background": {
+                  "color": "#606060",
+                  "opacity": 1
+                },
+                "cornerRadius": 0,
+                "icon": {
+                  "color": "#ffffff",
+                  "opacity": 1
+                }
+              },
+              "title": {
+                "color": "#ffffff",
+                "opacity": 1,
+                "underline": false
+              }
+            }
+          },
+          "submitted": {
+            "banner": {
+              "image": {
+                "name": "",
+                "url": ""
+              },
+              "visible": true
+            },
+            "footer": {
+              "actionButton": {
+                "background": {
+                  "color": "#ffffff",
+                  "opacity": 1
+                },
+                "outline": {
+                  "color": "#000000",
+                  "opacity": 1
+                },
+                "style": "outlined",
+                "text": {
+                  "color": "#ffffff",
+                  "opacity": 1
+                }
+              },
+              "background": {
+                "color": "#FFFFFF",
+                "opacity": 1
+              }
+            },
+            "header": {
+              "returnButton": {
+                "background": {
+                  "color": "#606060",
+                  "opacity": 1
+                },
+                "cornerRadius": 0,
+                "icon": {
+                  "color": "#ffffff",
+                  "opacity": 1
+                }
+              },
+              "title": {
+                "color": "#ffffff",
+                "opacity": 1,
+                "underline": false
+              }
+            },
+            "text": {
+              "description": {
+                "color": "#ffffff",
+                "opacity": 1,
+                "underline": false
+              },
+              "title": {
+                "color": "#ffffff",
+                "opacity": 1,
+                "underline": false
+              }
+            }
+          }
+        },
+        "subscriptions": {
+          "footer": {
+            "actionButton": {
+              "background": {
+                "color": "#ffffff",
+                "opacity": 1
+              },
+              "cornerRadius": 0,
+              "icon": {
+                "color": "",
+                "opacity": 1
+              },
+              "outline": {
+                "color": "#000000",
+                "opacity": 1
+              },
+              "style": "filled",
+              "text": {
+                "color": "#000000",
+                "opacity": 1,
+                "underline": false
+              }
+            },
+            "background": {
+              "color": "#FFFFFF",
+              "opacity": 1
+            }
+          },
+          "header": {
+            "description": {
+              "color": "#ffffff",
+              "opacity": 1,
+              "underline": false
+            },
+            "link": {
+              "color": "#ffffff",
+              "opacity": 1,
+              "underline": true
+            },
+            "title": {
+              "color": "#ffffff",
+              "opacity": 1,
+              "underline": false
+            }
+          },
+          "list": {
+            "checkbox": {
+              "selected": {
+                "background": {
+                  "color": "#000000",
+                  "opacity": 1
+                },
+                "label": {
+                  "color": "#ffffff",
+                  "opacity": 1
+                }
+              },
+              "unselected": {
+                "background": {
+                  "color": "#C1C6C8",
+                  "opacity": 1
+                },
+                "label": {
+                  "color": "#ffffff",
+                  "opacity": 1
+                }
+              }
+            },
+            "layout": {
+              "background": {
+                "color": "#606060",
+                "opacity": 1
+              },
+              "cornerRadius": 0,
+              "link": {
+                "color": "#000000",
+                "opacity": 1,
+                "underline": false
+              },
+              "style": "filled",
+              "text": {
+                "color": "#ffffff",
+                "opacity": 1,
+                "underline": false
+              }
+            },
+            "switchButton": {
+              "off": {
+                "background": {
+                  "color": "#929292",
+                  "opacity": 1
+                },
+                "text": {
+                  "color": "#ffffff",
+                  "opacity": 1,
+                  "underline": false
+                }
+              },
+              "on": {
+                "background": {
+                  "color": "#000000",
+                  "opacity": 1
+                },
+                "text": {
+                  "color": "#ffffff",
+                  "opacity": 1,
+                  "underline": false
+                }
+              }
+            }
+          },
+          "unsubscribeAll": {
+            "background": {
+              "color": "#606060",
+              "opacity": 1
+            },
+            "cornerRadius": 0,
+            "position": "top",
+            "switchButton": {
+              "off": {
+                "background": {
+                  "color": "#929292",
+                  "opacity": 1
+                },
+                "text": {
+                  "color": "#ffffff",
+                  "opacity": 1,
+                  "underline": false
+                }
+              },
+              "on": {
+                "background": {
+                  "color": "#000000",
+                  "opacity": 1
+                },
+                "text": {
+                  "color": "#ffffff",
+                  "opacity": 1,
+                  "underline": false
+                }
+              }
+            },
+            "text": {
+              "color": "#ffffff",
+              "opacity": 1
+            }
+          }
+        },
+        "welcome": {
+          "about": {
+            "link": {
+              "color": "#FBF9FF",
+              "opacity": 1,
+              "underline": true
+            },
+            "text": {
+              "color": "#C7C6CE",
+              "opacity": 1,
+              "underline": false
+            },
+            "title": {
+              "color": "#FBF9FF",
+              "opacity": 1,
+              "underline": false
+            }
+          },
+          "heroBanner": {
+            "image": {
+              "name": "",
+              "url": ""
+            },
+            "visible": false
+          },
+          "quickLinks": {
+            "link": {
+              "color": "#FBF9FF",
+              "opacity": 1,
+              "underline": false
+            },
+            "showArrows": true,
+            "title": {
+              "color": "#ffffff",
+              "opacity": 1,
+              "underline": false
+            }
+          },
+          "welcomeMsg": {
+            "link": {
+              "color": "#FBF9FF",
+              "opacity": 1,
+              "underline": true
+            },
+            "subtitle": {
+              "color": "#C7C6CE",
+              "opacity": 1,
+              "underline": false
+            },
+            "title": {
+              "color": "#FBF9FF",
+              "opacity": 1,
+              "underline": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "subscription": {
+    "topics": [],
+    "contactMethods": {},
+    "identities": {}
+  },
+  "isConfigPaused": false,
+  "tags": {
+    "2vFE54JkqHOk9D2KNfQaIU_100": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_101": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_102": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_117": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_133": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_134": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_135": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_137": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_138": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_29": {
+      "purposeCodes": [
+        "essential_services"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_45": {
+      "purposeCodes": [
+        "essential_services"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_70": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_72": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_73": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_74": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_76": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_77": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_78": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_79": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_81": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_82": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_83": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_84": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_85": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_87": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_88": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_89": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_95": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_96": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_97": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    },
+    "2vFE54JkqHOk9D2KNfQaIU_99": {
+      "purposeCodes": [
+        "targeted_advertising"
+      ]
+    }
+  },
+  "blockedCookies": {},
+  "globalPurposes": null
+}

@@ -1,0 +1,4 @@
+sheet,type,severity,message
+bets_log,column_order,HIGH,"Column mismatch. Expected: ['bet_id', 'date', 'player', 'stat', 'line', 'over_under', 'confidence', 'phase', 'result', 'updated'], Got: ['source_id', 'timestamp', 'player_name', 'market', 'line', 'phase', 'adjusted_prediction', 'wager_amount', 'odds', 'status', 'actual_result', 'result_confirmed', 'profit_loss', 'notes']"
+slips_log,read_error,CRITICAL,Reading tab 'slips_log' failed after 3 attempts: the header row in the worksheet is not unique
+settings,missing_data,HIGH,Bankroll setting not found

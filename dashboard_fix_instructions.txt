@@ -1,0 +1,13 @@
+﻿# Replace line 112 in the analyze_historical_performance method
+# Find this line:
+# phase_roi = phase_df["Payout"].str.replace("+", "").astype(float).sum()
+
+# Replace with:
+try:
+    # Handle both string and numeric payouts
+    if phase_df["Payout"].dtype == object:
+        phase_roi = phase_df["Payout"].str.replace("+", "").astype(float).sum()
+    else:
+        phase_roi = phase_df["Payout"].sum()
+except:
+    phase_roi = 0.0

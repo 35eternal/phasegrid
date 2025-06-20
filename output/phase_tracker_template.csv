@@ -1,0 +1,3 @@
+player_name,last_cycle_start,cycle_length,current_phase,confidence,notes
+Example Player 1,2025-06-04 07:23:00.972014,28,luteal,0.8,Regular 28-day cycle
+Example Player 2,2025-06-12 07:23:00.972026,30,follicular,0.9,"30-day cycle, occasional variation"

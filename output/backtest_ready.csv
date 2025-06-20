@@ -1,0 +1,6 @@
+player_name,stat_type,line,edge,confidence,raw_kelly,adv_phase,bankroll,pred_outcome,actual_odds,kelly_used,bet_percentage,actual_result
+A. Wilson,points,20.5,0.15,0.75,0.3,luteal,10000,over,0.87,0.09999999999999999,10.0,
+B. Stewart,rebounds,8.5,0.12,0.7,0.24,follicular,10000,over,0.95,0.048,4.8,
+C. Clark,fantasy_score,35.5,0.08,0.65,0.16,menstrual,10000,under,0.98,0.016,1.6,
+D. Ionescu,assists,6.5,0.2,0.8,0.4,ovulation,10000,over,0.88,0.08,8.0,
+E. Delle Donne,points,18.5,0.1,0.68,0.2,luteal,10000,under,0.9,0.06666666666666667,6.666666666666667,

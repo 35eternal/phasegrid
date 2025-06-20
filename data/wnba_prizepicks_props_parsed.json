@@ -1,0 +1,786 @@
+[
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 13.5,
+    "timestamp": "2025-06-16T20:09:03.465267"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-16T20:09:03.465272"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "3-PT Made",
+    "line": 3.5,
+    "timestamp": "2025-06-16T20:09:03.465275"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "3-PT Made",
+    "line": 2.5,
+    "timestamp": "2025-06-16T20:09:03.465277"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-16T20:09:03.465279"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 29.5,
+    "timestamp": "2025-06-16T20:09:03.465281"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-16T20:09:03.465283"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-16T20:09:03.465287"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 19.5,
+    "timestamp": "2025-06-16T20:09:03.465289"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-16T20:09:03.465291"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Rebs+Asts",
+    "line": 8.0,
+    "timestamp": "2025-06-16T20:09:03.465293"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Fantasy Score",
+    "line": 29.0,
+    "timestamp": "2025-06-16T20:09:03.465295"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 22.0,
+    "timestamp": "2025-06-16T20:09:03.465297"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-16T20:09:03.465299"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Pts+Asts",
+    "line": 17.5,
+    "timestamp": "2025-06-16T20:09:03.465301"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-16T20:09:03.465303"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-16T20:09:03.465305"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 4.0,
+    "timestamp": "2025-06-16T20:09:03.465307"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Pts+Rebs",
+    "line": 17.5,
+    "timestamp": "2025-06-16T20:09:03.465308"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-16T20:09:03.465310"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Assists",
+    "line": 2.5,
+    "timestamp": "2025-06-16T20:09:03.465311"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 24.5,
+    "timestamp": "2025-06-16T20:09:03.465313"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 2.5,
+    "timestamp": "2025-06-16T20:09:03.465316"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 12.5,
+    "timestamp": "2025-06-16T20:09:03.465318"
+  },
+  {
+    "player_name": "Gabby Williams",
+    "team_name": "SEA",
+    "stat_type": "Assists",
+    "line": 4.5,
+    "timestamp": "2025-06-16T20:09:03.465320"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-16T20:09:03.465322"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 7.5,
+    "timestamp": "2025-06-16T20:09:03.465324"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-16T20:09:03.465326"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 20.0,
+    "timestamp": "2025-06-16T20:09:03.465327"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Fantasy Score",
+    "line": 25.5,
+    "timestamp": "2025-06-16T20:09:03.465329"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-16T20:09:03.465331"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Pts+Rebs",
+    "line": 18.0,
+    "timestamp": "2025-06-16T20:09:03.465332"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 8.0,
+    "timestamp": "2025-06-16T20:09:03.465336"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-16T20:09:03.465338"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 11.5,
+    "timestamp": "2025-06-16T20:09:03.465340"
+  },
+  {
+    "player_name": "Ezi Magbegor",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 9.5,
+    "timestamp": "2025-06-16T20:09:03.465341"
+  },
+  {
+    "player_name": "Maddy Siegrist",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-16T20:09:03.465370"
+  },
+  {
+    "player_name": "Maddy Siegrist",
+    "team_name": "DAL",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-16T20:09:03.465372"
+  },
+  {
+    "player_name": "Maddy Siegrist",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 10.5,
+    "timestamp": "2025-06-16T20:09:03.465374"
+  },
+  {
+    "player_name": "Maddy Siegrist",
+    "team_name": "DAL",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-16T20:09:03.465376"
+  },
+  {
+    "player_name": "Maddy Siegrist",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-16T20:09:03.465378"
+  },
+  {
+    "player_name": "Maddy Siegrist",
+    "team_name": "DAL",
+    "stat_type": "Pts+Rebs",
+    "line": 15.0,
+    "timestamp": "2025-06-16T20:09:03.465379"
+  },
+  {
+    "player_name": "Maddy Siegrist",
+    "team_name": "DAL",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-16T20:09:03.465381"
+  },
+  {
+    "player_name": "Maddy Siegrist",
+    "team_name": "DAL",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-16T20:09:03.465383"
+  },
+  {
+    "player_name": "Maddy Siegrist",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-16T20:09:03.465384"
+  },
+  {
+    "player_name": "Maddy Siegrist",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 7.5,
+    "timestamp": "2025-06-16T20:09:03.465386"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Assists",
+    "line": 7.5,
+    "timestamp": "2025-06-16T20:09:03.465390"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-16T20:09:03.465392"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "3-PT Made",
+    "line": 3.5,
+    "timestamp": "2025-06-16T20:09:03.465394"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Pts+Asts",
+    "line": 23.0,
+    "timestamp": "2025-06-16T20:09:03.465396"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 18.0,
+    "timestamp": "2025-06-16T20:09:03.465397"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-16T20:09:03.465399"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Rebs+Asts",
+    "line": 8.0,
+    "timestamp": "2025-06-16T20:09:03.465400"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Assists",
+    "line": 3.5,
+    "timestamp": "2025-06-16T20:09:03.465402"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 29.5,
+    "timestamp": "2025-06-16T20:09:03.465404"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "3-PT Made",
+    "line": 1.5,
+    "timestamp": "2025-06-16T20:09:03.465406"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-16T20:09:03.465407"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "3-PT Made",
+    "line": 4.5,
+    "timestamp": "2025-06-16T20:09:03.465409"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 26.0,
+    "timestamp": "2025-06-16T20:09:03.465411"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 16.5,
+    "timestamp": "2025-06-16T20:09:03.465412"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Fantasy Score",
+    "line": 32.0,
+    "timestamp": "2025-06-16T20:09:03.465415"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Assists",
+    "line": 2.5,
+    "timestamp": "2025-06-16T20:09:03.465417"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Pts+Rebs",
+    "line": 21.5,
+    "timestamp": "2025-06-16T20:09:03.465418"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 24.5,
+    "timestamp": "2025-06-16T20:09:03.465420"
+  },
+  {
+    "player_name": "Arike Ogunbowale",
+    "team_name": "DAL",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-16T20:09:03.465422"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Fantasy Score",
+    "line": 35.0,
+    "timestamp": "2025-06-16T20:09:03.465424"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Assists",
+    "line": 11.5,
+    "timestamp": "2025-06-16T20:09:03.465426"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-16T20:09:03.465427"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Assists",
+    "line": 5.5,
+    "timestamp": "2025-06-16T20:09:03.465429"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 28.0,
+    "timestamp": "2025-06-16T20:09:03.465430"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Assists",
+    "line": 9.5,
+    "timestamp": "2025-06-16T20:09:03.465432"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Assists",
+    "line": 6.5,
+    "timestamp": "2025-06-16T20:09:03.465435"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Rebs+Asts",
+    "line": 10.0,
+    "timestamp": "2025-06-16T20:09:03.465437"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Pts+Asts",
+    "line": 25.5,
+    "timestamp": "2025-06-16T20:09:03.465439"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 18.5,
+    "timestamp": "2025-06-16T20:09:03.465441"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Assists",
+    "line": 7.0,
+    "timestamp": "2025-06-16T20:09:03.465442"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 24.5,
+    "timestamp": "2025-06-16T20:09:03.465444"
+  },
+  {
+    "player_name": "Skylar Diggins",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-16T20:09:03.465446"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 17.5,
+    "timestamp": "2025-06-16T20:09:03.465448"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 29.5,
+    "timestamp": "2025-06-16T20:09:03.465450"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Fantasy Score",
+    "line": 35.0,
+    "timestamp": "2025-06-16T20:09:03.465451"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-16T20:09:03.465453"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Pts+Rebs",
+    "line": 27.5,
+    "timestamp": "2025-06-16T20:09:03.465454"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 24.5,
+    "timestamp": "2025-06-16T20:09:03.465456"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-16T20:09:03.465458"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 20.5,
+    "timestamp": "2025-06-16T20:09:03.465460"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-16T20:09:03.465462"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 8.0,
+    "timestamp": "2025-06-16T20:09:03.465464"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 11.5,
+    "timestamp": "2025-06-16T20:09:03.465466"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 9.5,
+    "timestamp": "2025-06-16T20:09:03.465467"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 12.5,
+    "timestamp": "2025-06-16T20:09:03.465469"
+  },
+  {
+    "player_name": "Nneka Ogwumike",
+    "team_name": "SEA",
+    "stat_type": "Rebounds",
+    "line": 7.5,
+    "timestamp": "2025-06-16T20:09:03.465471"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Rebounds",
+    "line": 6.5,
+    "timestamp": "2025-06-16T20:09:03.465473"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 19.5,
+    "timestamp": "2025-06-16T20:09:03.465475"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 11.5,
+    "timestamp": "2025-06-16T20:09:03.465476"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Fantasy Score",
+    "line": 25.0,
+    "timestamp": "2025-06-16T20:09:03.465478"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Rebounds",
+    "line": 2.5,
+    "timestamp": "2025-06-16T20:09:03.465479"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Rebounds",
+    "line": 4.5,
+    "timestamp": "2025-06-16T20:09:03.465481"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Rebounds",
+    "line": 4.0,
+    "timestamp": "2025-06-16T20:09:03.465483"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 12.5,
+    "timestamp": "2025-06-16T20:09:03.465484"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Rebounds",
+    "line": 3.5,
+    "timestamp": "2025-06-16T20:09:03.465486"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Pts+Rebs",
+    "line": 17.0,
+    "timestamp": "2025-06-16T20:09:03.465488"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 19.0,
+    "timestamp": "2025-06-16T20:09:03.465490"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Rebounds",
+    "line": 5.5,
+    "timestamp": "2025-06-16T20:09:03.465492"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-16T20:09:03.465494"
+  },
+  {
+    "player_name": "DiJonai Carrington",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 14.5,
+    "timestamp": "2025-06-16T20:09:03.465496"
+  },
+  {
+    "player_name": "NaLyssa Smith",
+    "team_name": "DAL",
+    "stat_type": "Pts+Rebs",
+    "line": 14.0,
+    "timestamp": "2025-06-16T20:09:03.465498"
+  },
+  {
+    "player_name": "NaLyssa Smith",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 9.5,
+    "timestamp": "2025-06-16T20:09:03.465499"
+  },
+  {
+    "player_name": "Myisha Hines-Allen",
+    "team_name": "DAL",
+    "stat_type": "Points",
+    "line": 8.0,
+    "timestamp": "2025-06-16T20:09:03.465508"
+  },
+  {
+    "player_name": "Myisha Hines-Allen",
+    "team_name": "DAL",
+    "stat_type": "Pts+Rebs+Asts",
+    "line": 17.0,
+    "timestamp": "2025-06-16T20:09:03.465510"
+  },
+  {
+    "player_name": "Skylar Diggins + Arike Ogunbowale",
+    "team_name": "SEA/DAL",
+    "stat_type": "Points (Combo)",
+    "line": 36.5,
+    "timestamp": "2025-06-16T20:09:03.465520"
+  },
+  {
+    "player_name": "Skylar Diggins + Arike Ogunbowale",
+    "team_name": "SEA/DAL",
+    "stat_type": "Assists (Combo)",
+    "line": 12.0,
+    "timestamp": "2025-06-16T20:09:03.465522"
+  }
+]

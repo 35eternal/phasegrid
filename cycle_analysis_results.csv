@@ -1,0 +1,4 @@
+player_name,total_games,date_range,cycle_consistency_score,metric,classification,confidence,dip_count,avg_drop_magnitude,optimal_cycle_days,recent_dip_dates,recent_intervals
+Diana Taurasi,36,2024-05-14 to 2024-09-19,0.061,PTS,Likely Fatigue,0.888,14,0.429,25,"2024-09-05, 2024-09-13, 2024-09-19","4, 8, 6"
+Diana Taurasi,36,2024-05-14 to 2024-09-19,0.061,REB,Likely Fatigue,0.867,16,0.476,25,"2024-09-05, 2024-09-13, 2024-09-19","4, 8, 6"
+Diana Taurasi,36,2024-05-14 to 2024-09-19,0.061,AST,Likely Fatigue,1.06,12,0.639,28,"2024-08-16, 2024-09-05, 2024-09-19","33, 20, 14"

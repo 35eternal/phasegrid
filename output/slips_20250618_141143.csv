@@ -1,0 +1,4 @@
+slip_id,created,ticket_type,legs,stake,ev,status,payout,legs_detail
+22ce70ac9268,2025-06-18 14:11:43,power_play,3,22.22,0.1108,pending,133.3,A. Wilson|points|24.5|over;J. Jones|blocks|1.5|over;N. Howard|assists|5.5|under
+4e29dfb5ea92,2025-06-18 14:11:43,power_play,5,22.2,0.1099,pending,443.96,A. Wilson|points|24.5|over;J. Jones|blocks|1.5|over;N. Howard|assists|5.5|under;B. Stewart|rebounds|8.5|over;S. Loyd|points|18.5|over
+5854b4308be9,2025-06-18 14:11:43,power_play,4,20.36,0.0182,pending,203.65,A. Wilson|points|24.5|over;J. Jones|blocks|1.5|over;N. Howard|assists|5.5|under;B. Stewart|rebounds|8.5|over

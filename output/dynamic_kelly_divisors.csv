@@ -1,0 +1,5 @@
+phase,kelly_divisor,win_rate,bet_count,confidence_level,formula_used,minimum_bets_met,timestamp
+luteal,10.0,0.5556,9,INSUFFICIENT_DATA,"max(3, round(0.5 / win_rate, 2))",False,2025-06-17T20:36:44.386964
+menstrual,10.0,0.3333,12,INSUFFICIENT_DATA,"min(10, round(2 / win_rate, 2))",False,2025-06-17T20:36:44.386970
+follicular,10.0,0.3636,11,INSUFFICIENT_DATA,"max(4, round(0.7 / win_rate, 2))",False,2025-06-17T20:36:44.386971
+ovulatory,10.0,0.5,8,INSUFFICIENT_DATA,"max(5, round(0.75 / win_rate, 2))",False,2025-06-17T20:36:44.386973

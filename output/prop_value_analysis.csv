@@ -1,0 +1,19 @@
+Player,Stat,Line,Projection,Base_Avg,Hit_Probability,EV,Recommendation,Confidence,Volatility,Current_Streak,Risk_Level
+Jackie Young,Points,23.5,16.1,16.4,12.5,67.1,UNDER,82,0.472,neutral,EXTREME
+Jewell Loyd,3-PT Made,2.5,1.7,1.8,14.4,63.3,UNDER,77,0.791,unknown,EXTREME
+Satou Sabally,Rebounds,9.5,7.1,7.1,15.0,62.2,UNDER,85,0.188,neutral,EXTREME
+Jackie Young,3-PT Made,3.5,1.8,1.9,15.3,61.6,UNDER,77,0.677,unknown,EXTREME
+Satou Sabally,3-PT Made,4.5,2.1,2.2,15.3,61.6,UNDER,77,0.736,unknown,EXTREME
+Satou Sabally,Points,25.5,19.1,19.1,15.4,61.4,UNDER,85,0.225,neutral,EXTREME
+Chelsea Gray,Points,18.5,12.2,10.4,16.1,60.1,UNDER,72,0.379,hot,EXTREME
+Alyssa Thomas,Points,14.5,10.9,11.1,17.0,58.4,UNDER,82,0.324,neutral,EXTREME
+Jackie Young,Rebounds,5.5,4.1,4.3,18.2,56.2,UNDER,77,0.505,neutral,EXTREME
+Chelsea Gray,3-PT Made,2.5,1.2,1.3,18.5,55.6,UNDER,70,0.882,unknown,EXTREME
+Jewell Loyd,Assists,4.5,2.4,3.3,19.8,53.0,UNDER,67,0.613,cold,EXTREME
+Chelsea Gray,Rebounds,6.5,3.4,3.2,19.8,53.0,UNDER,67,0.602,hot,EXTREME
+Jewell Loyd,Rebounds,5.5,4.2,4.4,20.7,51.5,UNDER,77,0.524,neutral,EXTREME
+Chelsea Gray,Assists,5.5,4.4,4.5,21.6,49.7,UNDER,82,0.484,neutral,EXTREME
+Alyssa Thomas,Assists,9.5,7.9,8.1,25.8,41.6,UNDER,82,0.372,neutral,EXTREME
+Jackie Young,Assists,4.5,3.6,4.9,28.2,37.0,UNDER,62,0.384,cold,EXTREME
+Jewell Loyd,Points,16.5,12.9,17.9,28.8,35.9,UNDER,57,0.588,cold,EXTREME
+Satou Sabally,Assists,3.5,4.0,4.1,66.3,26.5,STRONG OVER,82,0.467,neutral,EXTREME

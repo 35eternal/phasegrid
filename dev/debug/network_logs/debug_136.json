@@ -1,0 +1,214 @@
+{
+  "app": {
+    "name": "PrizePicks",
+    "audio_enabled": true,
+    "show_powered_by": false,
+    "team_intro": "Thanks for contacting PrizePicks! How can we assist?",
+    "team_greeting": "Hi there \ud83e\udee1",
+    "messenger_background": "background-7",
+    "expected_response_delay_translation_key": "expected_response_delay_180",
+    "launcher_expected_response_delay_translation_key": "the_team_typically_replies_in_180",
+    "sms_notifications_enabled": false,
+    "inbound_conversations_disabled": false,
+    "office_hours_response": null,
+    "help_center_site_url": "https://intercom.help/prizepicks",
+    "messenger_logo_url": "https://downloads.intercomcdn.com/i/o/442018/f9bedbc1a4ba2ca12d864bbc/15d415780c5eb9378485e71e88de5f81.png",
+    "user_conversation_gifs_enabled": true,
+    "developer_workspace": false,
+    "upfront_email_collection_setting": "always",
+    "temporary_expectations_message": null,
+    "localized_expected_response_delay_short_text": "Under 3 minutes",
+    "localized_expected_response_delay_long_text": "We typically reply in under 3 minutes",
+    "help_center_id": null,
+    "article_auto_reaction_enabled": true,
+    "use_cache_for": []
+  },
+  "user": {
+    "id": "683f93ffaa431816100b4d1c",
+    "role": "visitor_role",
+    "locale": "en",
+    "has_conversations": false,
+    "anonymous_id": "013d462f-26f1-4cea-bc75-361294c6631f",
+    "country_code": "us",
+    "new_session": true,
+    "help_center_require_search": false,
+    "requires_cookie_consent": false,
+    "prevent_multiple_inbound_conversation": true,
+    "user_assignments": {}
+  },
+  "client_matches": [],
+  "launcher_settings": {
+    "alignment": "right",
+    "color": "#6EFF00",
+    "color_dark": null,
+    "has_required_features": true,
+    "horizontal_padding": 35,
+    "instant_boot_enabled": true,
+    "launcher_logo_url": "https://downloads.intercomcdn.com/i/o/436989/70fd024b687af13b813a7ac1/21a4abe97f0d6a17be09a499b3e13c76.png",
+    "launcher_logo_dark_url": null,
+    "secondary_color": "#6EFF00",
+    "secondary_color_dark": null,
+    "show_launcher": false,
+    "updated_at": 1748923933,
+    "vertical_padding": 28
+  },
+  "modules": {
+    "messages": {
+      "google_analytics_tracking_id": null
+    },
+    "rtm": {
+      "endpoints": [
+        "https://nexus-websocket-a.intercom.io/pubsub/5-_Xuc0k6a3567hQ9h9cCa2E1n05rKJn9GPhljVUNdfWDZ21zj_fXZSmicBJ_LiHrpEiqw8r1DjT4u3oaYyoeWUKdtQnDufDIaNxQT"
+      ]
+    },
+    "metrics": {
+      "enabled": false
+    },
+    "error_reporting": {
+      "disabled": false
+    },
+    "customization": {
+      "brand_name": "PrizePicks",
+      "messenger_logo_url": "https://downloads.intercomcdn.com/i/o/442018/f9bedbc1a4ba2ca12d864bbc/15d415780c5eb9378485e71e88de5f81.png",
+      "messenger_wallpaper": "background-7",
+      "action": {
+        "background_color": "#6EFF00",
+        "foreground_color": "#1c1c1c",
+        "foreground_color_low_contrast": "#1c1c1c"
+      },
+      "action_contrast_white": {
+        "background_color": "#1c1c1c",
+        "foreground_color": "#ffffff"
+      },
+      "action_contrast_dark": null,
+      "header": {
+        "background_color": "#ffffff",
+        "foreground_color": "#222222",
+        "background_color_dark": "#1c1c1c",
+        "foreground_color_dark": "#f7f7f7"
+      },
+      "theme_mode": "light",
+      "launcher_logo_dark_url": null,
+      "messenger_logo_dark_url": null
+    },
+    "home": {
+      "header": {
+        "background": {
+          "enabled": false,
+          "type": "image",
+          "color": "#6EFF00",
+          "fade_to_white": true,
+          "image_url": "https://downloads.intercomcdn.com/i/o/442017/37834b9883df73ad75039026/83d213e1968232563f9e2bf86c2206af.jpg",
+          "gradient": [
+            "#6250f8",
+            "#1f09d9"
+          ],
+          "animated": false,
+          "color_dark": null,
+          "gradient_dark": null,
+          "image_dark_url": "https://downloads.intercomcdn.com/i/o/442017/37834b9883df73ad75039026/83d213e1968232563f9e2bf86c2206af.jpg",
+          "type_dark": "solid",
+          "fade_to_dark": false
+        },
+        "content": {
+          "greeting": {
+            "content": "Hi there \ud83e\udee1",
+            "text_color": "#ffffff",
+            "opacity": 0.6
+          },
+          "introduction": {
+            "content": "How can we help?",
+            "text_color": "#ffffff",
+            "opacity": 1.0
+          },
+          "logo_url": "https://downloads.intercomcdn.com/i/o/442018/f9bedbc1a4ba2ca12d864bbc/15d415780c5eb9378485e71e88de5f81.png",
+          "logo_dark_url": null,
+          "show_avatars": true,
+          "close_button": {
+            "foreground_color": "#ffffff",
+            "background_color": "#000000",
+            "background_opacity": 0.2
+          },
+          "text_color_type": "light",
+          "text_color_type_dark": "dark"
+        },
+        "header_expanded": true,
+        "identity": "ai_agent"
+      },
+      "open_config": null
+    },
+    "features": {
+      "checklists": true,
+      "checklists_reminders": true,
+      "inbound_messages": true,
+      "inbound_lead_messaging": true,
+      "inbound_lead_messaging_docs_site": true,
+      "launcher_discovery_mode": true,
+      "marketo_enrichment_installed": false,
+      "hubspot_installed": false,
+      "google_analytics": false,
+      "single_page_app_rate_limiting": false,
+      "cross_site_cookies": false,
+      "cookie_secure_flag": false,
+      "ticket_creation": false,
+      "google_analytics_4_integration": true,
+      "view_in_help_center_button": true,
+      "customer_privacy_policy": false,
+      "eprivacy_cookie_compliance_required": false,
+      "persist_client_id_for_conversation_parts": true,
+      "composer_is_not_hiding": true,
+      "conversations_are_expandable": true,
+      "unified_reply_expectations": true,
+      "disable_fin_image_reading": false,
+      "end_salesforce_conversation": false,
+      "toggle_survey_visibility": true,
+      "dark_mode_enabled": false,
+      "delay_tour_render": false,
+      "disable_tickets_after_conversation_end": false,
+      "new_mobile_notifications_enabled": false
+    }
+  },
+  "unread_conversation_ids": [],
+  "unread_dismissed_conversation_ids": [],
+  "anonymous_session": "",
+  "identity_verification_ready": false,
+  "origin_cookie_domain": "prizepicks.com",
+  "cdas_breaching_limit": [],
+  "checklists": [],
+  "open_config": {
+    "form": "default",
+    "open_to": "home",
+    "spaces": [
+      {
+        "type": "home",
+        "label": "Home",
+        "navigation_label": "Home",
+        "badge": null
+      },
+      {
+        "type": "messages",
+        "label": "Messages",
+        "navigation_label": "Messages",
+        "badge": null
+      },
+      {
+        "type": "tickets",
+        "label": "Tickets",
+        "navigation_label": "Tickets",
+        "badge": null
+      },
+      {
+        "type": "help",
+        "label": "Help",
+        "navigation_label": "Help",
+        "badge": null
+      }
+    ],
+    "user_has_tickets": false,
+    "user_has_received_checklists": false,
+    "user_has_live_newsfeed": false,
+    "unified_style": true
+  },
+  "unread_tickets_count": 0,
+  "jwt_expired": false
+}

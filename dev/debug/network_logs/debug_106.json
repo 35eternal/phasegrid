@@ -1,0 +1,40 @@
+{
+  "d": [
+    {
+      "c": "cs",
+      "a": [
+        "42ac47666c30dfb9bb16cfe4a5836f5a842b7d3bbc521199738d44724a5a745b"
+      ]
+    },
+    {
+      "c": "vid",
+      "a": [
+        "4e559637-40db-11f0-860c-56d768987338"
+      ]
+    },
+    {
+      "c": "bl",
+      "a": [
+        "eyJmMHgzODRhOGNjZCI6eyJmMHgyYWRhNGY3YSI6dHJ1ZSwiZjB4M2FjMGQ4YzMiOiJjYWVkMDNiOS0wMTBiLTQ1ZGQtOWQ0ZS02NGEyYTUwNmViMzAiLCJmMHg0ZThiNWZkYSI6e30sImYweDVhMjkxOWMyIjoxNzI2MTYyMzEwNzA4LCJmMHg3OWMyNTJjMyI6e319fQ=="
+      ]
+    },
+    {
+      "c": "r",
+      "a": [
+        "false"
+      ]
+    },
+    {
+      "c": "p",
+      "a": [
+        "false"
+      ]
+    },
+    {
+      "c": "ff",
+      "a": [
+        "eyJmMHgzNzcwNWU2OCI6MC4wMSwiZjB4NDQ0ZDEzNzgiOjAuMDEsImYweDUxYzFjZmQwIjowLjA1LCJmMHg1NDZkNzhkMCI6MSwiZjB4NWEyOTE5YzIiOjE3MjE2MzQ4ODMyOTMsImYweDZmMGMzNjMwIjowLCJmMHg3Nzg4YmQ2NSI6MC4wMywiZjB4OTRkNWI4YSI6MC4xfQ=="
+      ]
+    }
+  ]
+}

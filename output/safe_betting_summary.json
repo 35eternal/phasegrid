@@ -1,0 +1,13 @@
+{
+  "timestamp": "2025-06-17 17:13:34",
+  "original_bets": 50,
+  "safe_bets": 19,
+  "removed_bets": 31,
+  "original_exposure": "0.85%",
+  "safe_exposure": "0.65%",
+  "phase_distribution": {
+    "luteal": 7,
+    "ovulatory": 7,
+    "follicular": 5
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "environmentCode": "production",
+  "identities": {
+    "swb_prizepicks_web_app": "e0bdda83-639d-47e2-bf91-4b856c3df361"
+  },
+  "jurisdictionCode": "default",
+  "propertyCode": "prizepicks_web_app"
+}

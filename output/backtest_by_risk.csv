@@ -1,0 +1,5 @@
+risk_tag,total_bets,win_rate,profit,avg_bet
+moderate,5,0.0,-132.78,0.027
+low_confidence,4,0.75,60.27,0.038
+high_confidence,4,0.5,-27.77,0.044
+phase_aligned,6,0.833,39.05,0.03

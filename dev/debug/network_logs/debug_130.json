@@ -1,0 +1,25 @@
+{
+  "behavioral": {
+    "host": "https://analytics.dv.socure.io",
+    "flags": {
+      "enabled": false
+    },
+    "sessionDuration": 300000,
+    "bundleGenerationInterval": 1000,
+    "sampleRate": 1.0,
+    "sessionIdleTimeoutSeconds": 600
+  },
+  "device": {
+    "host": "https://ingestion.dv.socure.io",
+    "flags": {
+      "enableFullPrecisionLocation": false,
+      "enableSilentNetworkAuth": false
+    }
+  },
+  "network": {
+    "host": "https://network.dv.socure.io",
+    "flags": {
+      "enabled": true
+    }
+  }
+}

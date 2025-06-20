@@ -1,0 +1,96 @@
+player_name,stat_type,line,predicted_value,confidence_score,volatility_score,recommendation,bbref_id,timestamp,confidence_over,confidence_under,over_hit_count,under_hit_count,percentile_20_value,trap_confirmed_by,anomaly_type,is_trap_line,debug_diff,debug_notes
+Marina Mabrey,3-PT Made,3.5,2.8,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.407009,,,0,0,,,NORMAL,False,0.7000000000000002,
+Marina Mabrey,Rebounds,5.5,5.2,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.410677,,,0,0,,,NORMAL,False,0.2999999999999998,
+Marina Mabrey,Points,17.5,17.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.412854,,,0,0,,,NORMAL,False,-0.10000000000000142,
+Marina Mabrey,Pts+Rebs+Asts,34.5,26.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.414890,0.01300000000000004,0.9,0,0,,confidence,DEMON,True,7.899999999999999,"diff=7.9, conf_over=0.013, conf_under=0.900"
+Marina Mabrey,Pts+Rebs+Asts,29.5,26.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.416956,,,0,0,,,NORMAL,False,2.8999999999999986,
+Marina Mabrey,Pts+Rebs+Asts,39.5,26.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.419234,0.01,0.9,0,0,,confidence,DEMON,True,12.899999999999999,"diff=12.9, conf_over=0.010, conf_under=0.900"
+Marina Mabrey,Points,29.5,17.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.421196,0.01,0.9,0,0,,confidence,DEMON,True,11.899999999999999,"diff=11.9, conf_over=0.010, conf_under=0.900"
+Marina Mabrey,3-PT Made,4.5,2.8,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.423151,,,0,0,,,NORMAL,False,1.7000000000000002,
+Marina Mabrey,Assists,5.5,3.8,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.425248,,,0,0,,,NORMAL,False,1.7000000000000002,
+Marina Mabrey,Fantasy Score,30.5,0.0,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.427379,0.01,0.9,0,0,,confidence,DEMON,True,30.5,"diff=30.5, conf_over=0.010, conf_under=0.900"
+Marina Mabrey,Pts+Rebs,22.5,22.8,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.429433,,,0,0,,,NORMAL,False,-0.3000000000000007,
+Marina Mabrey,Points,14.5,17.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.431366,0.724,0.15699999999999997,0,0,,,NORMAL,False,-3.1000000000000014,"diff=-3.1, conf_over=0.724, conf_under=0.157"
+Marina Mabrey,Points,24.5,17.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.433623,0.04300000000000004,0.8759999999999999,0,0,,confidence,DEMON,True,6.899999999999999,"diff=6.9, conf_over=0.043, conf_under=0.876"
+Marina Mabrey,Rebs+Asts,8.0,9.0,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.435612,,,0,0,,,NORMAL,False,-1.0,
+Marina Mabrey,Rebounds,3.5,5.2,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.437536,,,0,0,,,NORMAL,False,-1.7000000000000002,
+Marina Mabrey,Assists,4.5,3.8,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.439589,,,0,0,,,NORMAL,False,0.7000000000000002,
+Marina Mabrey,Rebounds,6.5,5.2,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.441575,,,0,0,,,NORMAL,False,1.2999999999999998,
+Marina Mabrey,Assists,2.5,3.8,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.443502,,,0,0,,,NORMAL,False,-1.2999999999999998,
+Marina Mabrey,Rebounds,4.5,5.2,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.445461,,,0,0,,,NORMAL,False,-0.7000000000000002,
+Marina Mabrey,Points,16.5,17.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.447504,,,0,0,,,NORMAL,False,-1.1000000000000014,
+Marina Mabrey,3-PT Made,5.5,2.8,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.449418,,,0,0,,,NORMAL,False,2.7,
+Marina Mabrey,Assists,6.5,3.8,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.451324,,,0,0,,,NORMAL,False,2.7,
+Marina Mabrey,Pts+Asts,21.5,21.4,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.453430,,,0,0,,,NORMAL,False,0.10000000000000142,
+Marina Mabrey,Pts+Rebs+Asts,24.5,26.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.455537,,,0,0,,,NORMAL,False,-2.1000000000000014,
+Marina Mabrey,Assists,3.0,3.8,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.457608,,,0,0,,,NORMAL,False,-0.7999999999999998,
+Marina Mabrey,Points,19.5,17.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.459636,,,0,0,,,NORMAL,False,1.8999999999999986,
+Marina Mabrey,Rebounds,7.5,5.2,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.461954,,,0,0,,,NORMAL,False,2.3,
+Marina Mabrey,3-PT Made,1.5,2.8,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.463990,,,0,0,,,NORMAL,False,-1.2999999999999998,
+Marina Mabrey,Pts+Rebs+Asts,26.0,26.6,0.0,0.5,PASS,mabrema01w,2025-06-17T11:02:51.466012,,,0,0,,,NORMAL,False,-0.6000000000000014,
+Caitlin Clark,Points,21.5,21.1,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.468619,,,0,0,,,NORMAL,False,0.3999999999999986,
+Caitlin Clark,Pts+Rebs+Asts,36.5,35.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.470624,,,0,0,,,NORMAL,False,1.0,
+Caitlin Clark,Fantasy Score,43.5,19.4,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.472556,0.01,0.9,0,0,,confidence,DEMON,True,24.1,"diff=24.1, conf_over=0.010, conf_under=0.900"
+Caitlin Clark,Assists,7.5,8.9,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.475836,,,0,0,,,NORMAL,False,-1.4000000000000004,
+Caitlin Clark,Points,19.5,21.1,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.477825,,,0,0,,,NORMAL,False,-1.6000000000000014,
+Caitlin Clark,Rebounds,5.5,5.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.479748,,,0,0,,,NORMAL,False,0.0,
+Caitlin Clark,Rebounds,9.5,5.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.481786,,,0,0,,,NORMAL,False,4.0,
+Caitlin Clark,Pts+Rebs+Asts,39.5,35.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.483813,,,0,0,,,NORMAL,False,4.0,
+Caitlin Clark,Rebounds,8.5,5.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.485755,,,0,0,,,NORMAL,False,3.0,
+Caitlin Clark,Assists,9.5,8.9,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.487733,,,0,0,,,NORMAL,False,0.5999999999999996,
+Caitlin Clark,Points,20.5,21.1,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.489769,,,0,0,,,NORMAL,False,-0.6000000000000014,
+Caitlin Clark,3-PT Made,3.5,3.3,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.491754,,,0,0,,,NORMAL,False,0.20000000000000018,
+Caitlin Clark,Points,29.5,21.1,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.493654,0.01,0.9,0,0,,confidence,DEMON,True,8.399999999999999,"diff=8.4, conf_over=0.010, conf_under=0.900"
+Caitlin Clark,Assists,11.5,8.9,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.495755,,,0,0,,,NORMAL,False,2.5999999999999996,
+Caitlin Clark,Pts+Rebs+Asts,44.5,35.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.497725,0.01,0.9,0,0,,confidence,DEMON,True,9.0,"diff=9.0, conf_over=0.010, conf_under=0.900"
+Caitlin Clark,3-PT Made,5.5,3.3,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.499627,,,0,0,,,NORMAL,False,2.2,
+Caitlin Clark,Pts+Rebs+Asts,49.5,35.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.501710,0.01,0.9,0,0,,confidence,DEMON,True,14.0,"diff=14.0, conf_over=0.010, conf_under=0.900"
+Caitlin Clark,Rebounds,6.0,5.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.503668,,,0,0,,,NORMAL,False,0.5,
+Caitlin Clark,Points,22.5,21.1,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.507432,,,0,0,,,NORMAL,False,1.3999999999999986,
+Caitlin Clark,Rebs+Asts,15.5,14.4,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.509857,,,0,0,,,NORMAL,False,1.0999999999999996,
+Caitlin Clark,Rebounds,4.5,5.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.511945,,,0,0,,,NORMAL,False,-1.0,
+Caitlin Clark,Pts+Asts,31.5,30.0,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.513988,,,0,0,,,NORMAL,False,1.5,
+Caitlin Clark,Assists,8.5,8.9,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.516201,,,0,0,,,NORMAL,False,-0.40000000000000036,
+Caitlin Clark,3-PT Made,4.5,3.3,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.518367,,,0,0,,,NORMAL,False,1.2000000000000002,
+Caitlin Clark,Points,17.5,21.1,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.520487,0.744,0.14199999999999996,0,0,,,NORMAL,False,-3.6000000000000014,"diff=-3.6, conf_over=0.744, conf_under=0.142"
+Caitlin Clark,Assists,13.5,8.9,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.522603,,,0,0,,,NORMAL,False,4.6,
+Caitlin Clark,Pts+Rebs+Asts,34.5,35.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.524674,,,0,0,,,NORMAL,False,-1.0,
+Caitlin Clark,3-PT Made,2.5,3.3,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.526582,,,0,0,,,NORMAL,False,-0.7999999999999998,
+Caitlin Clark,Pts+Rebs,27.5,26.6,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.528509,,,0,0,,,NORMAL,False,0.8999999999999986,
+Caitlin Clark,Points,24.5,21.1,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.530581,,,0,0,,,NORMAL,False,3.3999999999999986,
+Caitlin Clark,Rebounds,7.5,5.5,0.0,0.5,PASS,clarkca01w,2025-06-17T11:02:51.532489,,,0,0,,,NORMAL,False,2.0,
+Kelsey Mitchell,Pts+Rebs+Asts,20.5,21.4,0.0,0.5,PASS,mitchke01w,2025-06-17T11:02:51.535469,,,0,0,,,NORMAL,False,-0.8999999999999986,
+Kelsey Mitchell,Points,15.5,17.2,0.0,0.5,PASS,mitchke01w,2025-06-17T11:02:51.537723,,,0,0,,,NORMAL,False,-1.6999999999999993,
+Kelsey Mitchell,Points,19.5,17.2,0.0,0.5,PASS,mitchke01w,2025-06-17T11:02:51.539634,,,0,0,,,NORMAL,False,2.3000000000000007,
+Kelsey Mitchell,Points,17.0,17.2,0.0,0.5,PASS,mitchke01w,2025-06-17T11:02:51.541535,,,0,0,,,NORMAL,False,-0.1999999999999993,
+Kelsey Mitchell,Points,24.5,17.2,0.0,0.5,PASS,mitchke01w,2025-06-17T11:02:51.543816,0.031,0.892,0,0,,confidence,DEMON,True,7.300000000000001,"diff=7.3, conf_over=0.031, conf_under=0.892"
+Kelsey Mitchell,3-PT Made,3.5,1.7,0.0,0.5,PASS,mitchke01w,2025-06-17T11:02:51.545833,,,0,0,,,NORMAL,False,1.8,
+Kelsey Mitchell,Fantasy Score,24.5,0.0,0.0,0.5,PASS,mitchke01w,2025-06-17T11:02:51.547781,0.01,0.9,0,0,,confidence,DEMON,True,24.5,"diff=24.5, conf_over=0.010, conf_under=0.900"
+Kelsey Mitchell,Points,14.5,17.2,0.0,0.5,PASS,mitchke01w,2025-06-17T11:02:51.549743,,,0,0,,,NORMAL,False,-2.6999999999999993,
+Kelsey Mitchell,3-PT Made,2.5,1.7,0.0,0.5,PASS,mitchke01w,2025-06-17T11:02:51.552977,,,0,0,,,NORMAL,False,0.8,
+Kelsey Mitchell,3-PT Made,1.5,1.7,0.0,0.5,PASS,mitchke01w,2025-06-17T11:02:51.554904,,,0,0,,,NORMAL,False,-0.19999999999999996,
+Aliyah Boston,Points,14.5,13.9,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.557909,,,0,0,,,NORMAL,False,0.5999999999999996,
+Aliyah Boston,Rebounds,10.5,7.6,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.559811,,,0,0,,,NORMAL,False,2.9000000000000004,
+Aliyah Boston,Points,9.5,13.9,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.561746,0.776,0.118,0,0,,,NORMAL,False,-4.4,"diff=-4.4, conf_over=0.776, conf_under=0.118"
+Aliyah Boston,Rebounds,11.5,7.6,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.563787,,,0,0,,,NORMAL,False,3.9000000000000004,
+Aliyah Boston,Pts+Rebs+Asts,29.5,25.6,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.566160,,,0,0,,,NORMAL,False,3.8999999999999986,
+Aliyah Boston,Assists,5.5,4.1,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.568113,,,0,0,,,NORMAL,False,1.4000000000000004,
+Aliyah Boston,Points,19.5,13.9,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.570074,0.08200000000000002,0.824,0,0,,,VOLATILE,False,5.6,"diff=5.6, conf_over=0.082, conf_under=0.824"
+Aliyah Boston,Pts+Rebs+Asts,34.5,25.6,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.572271,0.01,0.9,0,0,,confidence,DEMON,True,8.899999999999999,"diff=8.9, conf_over=0.010, conf_under=0.900"
+Aliyah Boston,Assists,2.5,4.1,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.574211,,,0,0,,,NORMAL,False,-1.5999999999999996,
+Aliyah Boston,Points,13.5,13.9,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.576131,,,0,0,,,NORMAL,False,-0.40000000000000036,
+Aliyah Boston,Rebs+Asts,12.0,11.7,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.578281,,,0,0,,,NORMAL,False,0.3000000000000007,
+Aliyah Boston,Rebounds,9.5,7.6,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.580456,,,0,0,,,NORMAL,False,1.9000000000000004,
+Aliyah Boston,Points,11.5,13.9,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.582527,,,0,0,,,NORMAL,False,-2.4000000000000004,
+Aliyah Boston,Rebounds,6.5,7.6,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.584489,,,0,0,,,NORMAL,False,-1.0999999999999996,
+Aliyah Boston,Rebounds,7.5,7.6,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.586763,,,0,0,,,NORMAL,False,-0.09999999999999964,
+Aliyah Boston,Rebounds,5.5,7.6,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.588713,,,0,0,,,NORMAL,False,-2.0999999999999996,
+Aliyah Boston,Pts+Rebs+Asts,19.5,25.6,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.590788,0.8440000000000001,0.06699999999999998,0,0,,confidence,GOBLIN,True,-6.100000000000001,"diff=-6.1, conf_over=0.844, conf_under=0.067"
+Aliyah Boston,Pts+Rebs,21.5,21.5,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.592987,,,0,0,,,NORMAL,False,0.0,
+Aliyah Boston,Assists,4.5,4.1,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.595742,,,0,0,,,NORMAL,False,0.40000000000000036,
+Aliyah Boston,Assists,6.5,4.1,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.597868,,,0,0,,,NORMAL,False,2.4000000000000004,
+Aliyah Boston,Pts+Rebs+Asts,25.5,25.6,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.600096,,,0,0,,,NORMAL,False,-0.10000000000000142,
+Aliyah Boston,Pts+Asts,17.5,18.0,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.602118,,,0,0,,,NORMAL,False,-0.5,
+Aliyah Boston,Assists,4.0,4.1,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.606040,,,0,0,,,NORMAL,False,-0.09999999999999964,
+Aliyah Boston,Fantasy Score,31.5,0.0,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.608036,0.01,0.9,0,0,,confidence,DEMON,True,31.5,"diff=31.5, conf_over=0.010, conf_under=0.900"
+Aliyah Boston,Assists,3.5,4.1,0.0,0.5,PASS,bostoal01w,2025-06-17T11:02:51.609963,,,0,0,,,NORMAL,False,-0.5999999999999996,

@@ -1,0 +1,9 @@
+# Core dependencies only
+pandas
+numpy
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+pytest
+pytest-cov
+python-dotenv

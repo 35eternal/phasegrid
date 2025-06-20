@@ -1,0 +1,31 @@
+﻿# Add this after line 172 in push_slips method
+# Replace lines 177-187 with chunked version
+
+import math
+
+# Chunk the data for large uploads (after line 172)
+CHUNK_SIZE = 100
+if len(upload_data) > CHUNK_SIZE:
+    chunks = [upload_data[i:i+CHUNK_SIZE] for i in range(0, len(upload_data), CHUNK_SIZE)]
+    logger.info(f"Splitting {len(upload_data)} rows into {len(chunks)} chunks")
+    
+    for idx, chunk in enumerate(chunks):
+        chunk_start = next_row + (idx * CHUNK_SIZE)
+        chunk_end = chunk_start + len(chunk) - 1
+        range_str = f'A{chunk_start}:I{chunk_end}'
+        
+        self._handle_api_error(
+            worksheet.update,
+            range_str,
+            chunk
+        )
+        logger.info(f"Pushed chunk {idx+1}/{len(chunks)} ({len(chunk)} rows)")
+        time.sleep(1)  # Rate limit between chunks
+else:
+    # Original code for small uploads
+    range_str = f'A{next_row}:I{next_row + len(upload_data) - 1}'
+    self._handle_api_error(
+        worksheet.update,
+        range_str,
+        upload_data
+    )

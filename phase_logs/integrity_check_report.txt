@@ -1,0 +1,13 @@
+LOG INTEGRITY CHECK DETAILED REPORT
+Generated: 2025-06-17 20:28:35.136299
+============================================================
+
+STATISTICS:
+  total_bets: 0
+  resolved_bets: 0
+  unresolved_bets: 0
+  duplicates: 0
+  missing_in_phase_tracker: 0
+  missing_in_backtest: 0
+
+DETAILED ISSUES:

@@ -1,0 +1,43 @@
+PlayerFileName,GameID,GameDate,Matchup,Points,Assists,Rebounds,ThreesMade,Steals,Blocks,Turnovers,Minutes,Points_avg_1g,Points_delta,Assists_avg_1g,Assists_delta,Rebounds_avg_1g,Rebounds_delta,ThreesMade_avg_1g,ThreesMade_delta,Steals_avg_1g,Steals_delta,Blocks_avg_1g,Blocks_delta,Turnovers_avg_1g,Turnovers_delta,Minutes_avg_1g,Minutes_delta,DaysSinceLastGame,IsBackToBack,CyclePhase
+Caitlin Clark 2024.csv_season1,,,,20,,,,,,,,,,,,,,,,,,,,,,,,,False,0
+Caitlin Clark 2024.csv_season1,,,,9,,,,,,,,20.0,-11.0,,,,,,,,,,,,,,,,False,1
+Caitlin Clark 2024.csv_season1,,,,22,,,,,,,,9.0,13.0,,,,,,,,,,,,,,,,False,2
+Caitlin Clark 2024.csv_season1,,,,17,,,,,,,,22.0,-5.0,,,,,,,,,,,,,,,,False,3
+Caitlin Clark 2024.csv_season1,,,,11,,,,,,,,17.0,-6.0,,,,,,,,,,,,,,,,False,4
+Caitlin Clark 2024.csv_season1,,,,11,,,,,,,,11.0,0.0,,,,,,,,,,,,,,,,False,5
+Caitlin Clark 2024.csv_season1,,,,30,,,,,,,,11.0,19.0,,,,,,,,,,,,,,,,False,6
+Caitlin Clark 2024.csv_season2,,,,20,,,,,,,,,,,,,,,,,,,,,,,,,False,0
+Caitlin Clark 2024.csv_season2,,,,9,,,,,,,,20.0,-11.0,,,,,,,,,,,,,,,,False,1
+Caitlin Clark 2024.csv_season2,,,,22,,,,,,,,9.0,13.0,,,,,,,,,,,,,,,,False,2
+Caitlin Clark 2024.csv_season2,,,,17,,,,,,,,22.0,-5.0,,,,,,,,,,,,,,,,False,3
+Caitlin Clark 2024.csv_season2,,,,11,,,,,,,,17.0,-6.0,,,,,,,,,,,,,,,,False,4
+Caitlin Clark 2024.csv_season2,,,,11,,,,,,,,11.0,0.0,,,,,,,,,,,,,,,,False,5
+Caitlin Clark 2024.csv_season2,,,,30,,,,,,,,11.0,19.0,,,,,,,,,,,,,,,,False,6
+Caitlin Clark 2024.csv_season3,,,,20,,,,,,,,,,,,,,,,,,,,,,,,,False,0
+Caitlin Clark 2024.csv_season3,,,,9,,,,,,,,20.0,-11.0,,,,,,,,,,,,,,,,False,1
+Caitlin Clark 2024.csv_season3,,,,22,,,,,,,,9.0,13.0,,,,,,,,,,,,,,,,False,2
+Caitlin Clark 2024.csv_season3,,,,17,,,,,,,,22.0,-5.0,,,,,,,,,,,,,,,,False,3
+Caitlin Clark 2024.csv_season3,,,,11,,,,,,,,17.0,-6.0,,,,,,,,,,,,,,,,False,4
+Caitlin Clark 2024.csv_season3,,,,11,,,,,,,,11.0,0.0,,,,,,,,,,,,,,,,False,5
+Caitlin Clark 2024.csv_season3,,,,30,,,,,,,,11.0,19.0,,,,,,,,,,,,,,,,False,6
+clarkClark 2024.csv_season1,,,,20,,,,,,,,,,,,,,,,,,,,,,,,,False,0
+clarkClark 2024.csv_season1,,,,9,,,,,,,,20.0,-11.0,,,,,,,,,,,,,,,,False,1
+clarkClark 2024.csv_season1,,,,22,,,,,,,,9.0,13.0,,,,,,,,,,,,,,,,False,2
+clarkClark 2024.csv_season1,,,,17,,,,,,,,22.0,-5.0,,,,,,,,,,,,,,,,False,3
+clarkClark 2024.csv_season1,,,,11,,,,,,,,17.0,-6.0,,,,,,,,,,,,,,,,False,4
+clarkClark 2024.csv_season1,,,,11,,,,,,,,11.0,0.0,,,,,,,,,,,,,,,,False,5
+clarkClark 2024.csv_season1,,,,30,,,,,,,,11.0,19.0,,,,,,,,,,,,,,,,False,6
+clarkClark 2024.csv_season2,,,,20,,,,,,,,,,,,,,,,,,,,,,,,,False,0
+clarkClark 2024.csv_season2,,,,9,,,,,,,,20.0,-11.0,,,,,,,,,,,,,,,,False,1
+clarkClark 2024.csv_season2,,,,22,,,,,,,,9.0,13.0,,,,,,,,,,,,,,,,False,2
+clarkClark 2024.csv_season2,,,,17,,,,,,,,22.0,-5.0,,,,,,,,,,,,,,,,False,3
+clarkClark 2024.csv_season2,,,,11,,,,,,,,17.0,-6.0,,,,,,,,,,,,,,,,False,4
+clarkClark 2024.csv_season2,,,,11,,,,,,,,11.0,0.0,,,,,,,,,,,,,,,,False,5
+clarkClark 2024.csv_season2,,,,30,,,,,,,,11.0,19.0,,,,,,,,,,,,,,,,False,6
+clarkClark 2024.csv_season3,,,,20,,,,,,,,,,,,,,,,,,,,,,,,,False,0
+clarkClark 2024.csv_season3,,,,9,,,,,,,,20.0,-11.0,,,,,,,,,,,,,,,,False,1
+clarkClark 2024.csv_season3,,,,22,,,,,,,,9.0,13.0,,,,,,,,,,,,,,,,False,2
+clarkClark 2024.csv_season3,,,,17,,,,,,,,22.0,-5.0,,,,,,,,,,,,,,,,False,3
+clarkClark 2024.csv_season3,,,,11,,,,,,,,17.0,-6.0,,,,,,,,,,,,,,,,False,4
+clarkClark 2024.csv_season3,,,,11,,,,,,,,11.0,0.0,,,,,,,,,,,,,,,,False,5
+clarkClark 2024.csv_season3,,,,30,,,,,,,,11.0,19.0,,,,,,,,,,,,,,,,False,6

@@ -1,0 +1,29 @@
+﻿# After finding this line in push_slips method:
+# Update sheet
+if upload_data:
+    # ADD THIS CHUNKING CODE:
+    CHUNK_SIZE = 100
+    if len(upload_data) > CHUNK_SIZE:
+        # Process in chunks
+        for i in range(0, len(upload_data), CHUNK_SIZE):
+            chunk = upload_data[i:i+CHUNK_SIZE]
+            chunk_start = next_row + i
+            chunk_end = chunk_start + len(chunk) - 1
+            range_str = f'A{chunk_start}:I{chunk_end}'
+            
+            self._handle_api_error(
+                worksheet.update,
+                range_str,
+                chunk
+            )
+            logger.info(f"Pushed rows {i+1}-{min(i+CHUNK_SIZE, len(upload_data))} of {len(upload_data)}")
+            if i + CHUNK_SIZE < len(upload_data):
+                time.sleep(2)  # Rate limit between chunks
+    else:
+        # Original code for small uploads
+        range_str = f'A{next_row}:I{next_row + len(upload_data) - 1}'
+        self._handle_api_error(
+            worksheet.update,
+            range_str,
+            upload_data
+        )

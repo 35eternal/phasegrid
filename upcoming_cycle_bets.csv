@@ -1,0 +1,8 @@
+date,player,stat,bet_type,confidence,expected_drop,phase,expected_bounce
+2025-06-18,Kate Martin,AST,OVER,0.752,,RECOVERY,70.0
+2025-06-19,Cecilia Zandalasini,PTS,OVER,0.6768000000000001,,RECOVERY,70.0
+2025-06-20,Chennedy Carter,PTS,OVER,0.7304,,RECOVERY,44.66
+2025-06-22,Cheyenne Parker-Tyus,AST,OVER,0.7368000000000001,,RECOVERY,70.0
+2025-07-10,Kate Martin,AST,UNDER,0.94,100.0,PRE_DIP,
+2025-07-13,Cecilia Zandalasini,PTS,UNDER,0.846,100.0,PRE_DIP,
+2025-07-14,Chennedy Carter,PTS,UNDER,0.913,63.8,PRE_DIP,

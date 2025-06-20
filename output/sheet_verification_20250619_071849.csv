@@ -1,0 +1,2 @@
+sheet,type,severity,message
+bets_log,duplicate_entries,MEDIUM,Potential duplicate bets: 64 rows

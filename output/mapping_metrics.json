@@ -1,0 +1,20 @@
+{
+  "run_timestamp": "2025-06-15T17:20:55.491373",
+  "configuration": {
+    "requests_per_minute": 20,
+    "requests_per_hour": 800,
+    "retry_attempts": 3,
+    "fuzzy_threshold": 85,
+    "batch_size": 5
+  },
+  "statistics": {
+    "total_attempted": 5,
+    "successful_mappings": 0,
+    "failed_mappings": 5,
+    "skipped_existing": 0,
+    "api_calls_made": 15,
+    "fuzzy_matches": 0
+  },
+  "success_rate": 0.0,
+  "total_players_mapped": 0
+}
