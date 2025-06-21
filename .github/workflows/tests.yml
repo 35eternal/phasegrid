@@ -11,17 +11,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Install only pytest
-        run: pip install pytest
-      - name: Debug environment
+      - name: Test Python directly
         run: |
-          echo "Python version:"
-          python --version
-          echo "Pip version:"
-          pip --version
-          echo "Current directory:"
-          pwd
-          echo "Files in tests/:"
-          dir tests
-      - name: Run dummy test
-        run: python -m pytest tests/test_dummy.py::test_dummy -v
+          python -c "print('Python is working')"
+          python -c "assert True; print('Assertions work')"
+          python -c "import sys; print(f'Python version: {sys.version}')"
+      - name: Test if file exists
+        run: |
+          python -c "import os; print(f'Current dir: {os.getcwd()}')"
+          python -c "import os; print(f'Files: {os.listdir()}')"
+          python -c "import os; print(f'Tests dir exists: {os.path.exists(\"tests\")}')"
+      - name: Run test file directly
+        run: python tests/test_dummy.py
