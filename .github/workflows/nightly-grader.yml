@@ -1,0 +1,102 @@
+# This is a GitHub Actions workflow file
+# It tells GitHub: "Hey, please do these things automatically for me"
+
+name: Nightly Grader  # This is the name you'll see in GitHub
+
+# WHEN TO RUN THIS WORKFLOW
+on:
+  # Option 1: Run on a schedule (like an alarm clock)
+  schedule:
+    # This uses "cron" format - it's like a very specific alarm clock
+    # The format is: minute hour day month weekday
+    # Our setting: '0 6 * * *' means:
+    # - 0 = at minute 0 (exactly on the hour)
+    # - 6 = at hour 6 (6 AM UTC time)
+    # - * = every day of the month
+    # - * = every month
+    # - * = every day of the week
+    # This equals midnight in Phoenix during summer (MDT)
+    - cron: '0 6 * * *'
+    
+  # Option 2: Run when someone clicks a button (manual trigger)
+  workflow_dispatch:
+    # When someone runs this manually, they can turn on debug mode
+    inputs:
+      debug:
+        description: 'Enable debug logging'  # What this option does
+        required: false                      # They don't have to set this
+        default: 'false'                     # It's off by default
+
+# THE ACTUAL WORK TO DO
+jobs:
+  # We have one job called "grade-slips"
+  grade-slips:
+    # Use Ubuntu Linux (it's a type of computer operating system)
+    runs-on: ubuntu-latest
+    
+    # Give this job a friendly name
+    name: Grade Yesterday's Slips
+    
+    # Here are all the steps, in order:
+    steps:
+      # STEP 1: Download our code from GitHub
+      - name: Checkout repository
+        uses: actions/checkout@v4  # This is a pre-made action that downloads our code
+        
+      # STEP 2: Install Python (the programming language)
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4  # This installs Python for us
+        with:
+          python-version: '3.11'  # We want version 3.11 specifically
+          
+      # STEP 3: Upgrade pip (pip is Python's app store)
+      - name: Upgrade pip
+        run: |
+          python -m pip install --upgrade pip
+        # This makes sure we have the newest version of pip
+          
+      # STEP 4: Install all the Python packages we need
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+        # requirements.txt is like a shopping list of all the Python tools we need
+          
+      # STEP 5: Run our grader script!
+      - name: Run result grader
+        # First, set up all the secret passwords as environment variables
+        env:
+          # Google Sheets ID (like the address of our spreadsheet)
+          GSHEET_ID: ${{ secrets.GSHEET_ID }}
+          
+          # Google login info (so we can access the spreadsheet)
+          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+          
+          # Twilio account info (for sending text messages)
+          TWILIO_SID: ${{ secrets.TWILIO_SID }}        # Twilio username
+          TWILIO_AUTH: ${{ secrets.TWILIO_AUTH }}      # Twilio password
+          TWILIO_FROM: ${{ secrets.TWILIO_FROM }}      # Our phone number
+          PHONE_TO: ${{ secrets.PHONE_TO }}            # Who to text
+          
+          # Discord webhook (for sending alerts to Discord)
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          
+          # Sports API info (where to get game results)
+          RESULTS_API_URL: ${{ secrets.RESULTS_API_URL }}
+          
+          # Debug mode (was it turned on when someone ran this manually?)
+          DEBUG: ${{ github.event.inputs.debug || 'false' }}
+          
+        # Now actually run our Python script!
+        run: |
+          python scripts/result_grader.py
+          
+      # STEP 6: If something goes wrong, save the error logs
+      - name: Upload logs on failure
+        if: failure()  # Only do this step if something went wrong
+        uses: actions/upload-artifact@v3  # This saves files for us to download later
+        with:
+          name: grader-logs  # Name of the zip file
+          path: |            # What files to save:
+            *.log            # Any file ending in .log
+            logs/            # Everything in the logs folder
+          retention-days: 7  # Keep the files for 7 days then delete them
