@@ -18,3 +18,6 @@ colorlog==6.7.0
 
 # Twilio for SMS alerts
 twilio>=8.4.0
+
+# Web scraping
+beautifulsoup4==4.12.3
