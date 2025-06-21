@@ -5,14 +5,18 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-        python-version: ["3.13"]
+        python-version: ["3.11"]  # Only 3.11, not 3.13!
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - run: pip install -r requirements.txt
-      - run: pytest --cov=modules --cov=scripts --cov-report=xml
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Run tests
+        run: pytest tests/ --cov=modules --cov=scripts --cov-report=xml
       - uses: actions/upload-artifact@v4
         with:
           name: coverage-xml
