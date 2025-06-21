@@ -56,12 +56,12 @@ These are like passwords that GitHub needs to know. You must set these up in you
 
 | Secret Name | What Is It? | Where To Get It | Example |
 |-------------|-------------|-----------------|---------|
-| `GSHEET_ID` | Your Google Sheet's ID number | Look at your sheet's URL: `https://docs.google.com/spreadsheets/d/`**`1ABC123XYZ`**`/edit` | `1ABC123XYZ` |
-| `GOOGLE_CREDENTIALS` | Google service account login info | Download from Google Cloud Console (JSON file) | `{"type": "service_account", "project_id": "your-project", ...}` |
+| `SHEET_ID` | Your Google Sheet's ID number | Look at your sheet's URL: `https://docs.google.com/spreadsheets/d/`**`1ABC123XYZ`**`/edit` | `1ABC123XYZ` |
+| `GOOGLE_SA_JSON` | Google service account login info | Download from Google Cloud Console (JSON file) | `{"type": "service_account", "project_id": "your-project", ...}` |
 | `TWILIO_SID` | Twilio account ID | From twilio.com dashboard | `ACa1b2c3d4e5f6...` |
 | `TWILIO_AUTH` | Twilio password | From twilio.com dashboard | `abc123def456...` |
-| `TWILIO_FROM` | Your Twilio phone number | From twilio.com (must include +1) | `+14155551234` |
-| `PHONE_TO` | Phone to send texts to | Your phone (must include +1) | `+14155555678` |
+| `TWILIO_FROM` | Your Twilio phone number | From twilio.com (must include +1) | `+18331234567` |
+| `PHONE_TO` | Phone to send texts to | Your phone (must include +1) | `+14805551234` |
 | `DISCORD_WEBHOOK_URL` | Discord alert URL | From Discord server settings | `https://discord.com/api/webhooks/123/abc...` |
 | `RESULTS_API_URL` | Where to get game results | From your sports data provider | `https://api.sportsdata.com/results` |
 
@@ -80,13 +80,14 @@ cp .env.example .env
 Then add these lines to your `.env` file:
 ```bash
 # Google Sheets
-GSHEET_ID=your-sheet-id-here
+SHEET_ID=your-sheet-id-here
+GOOGLE_SA_JSON={"type": "service_account", ...your-full-json-here...}
 
 # Twilio (for text messages)
 TWILIO_SID=your-twilio-sid-here
 TWILIO_AUTH=your-twilio-auth-token-here
-TWILIO_FROM=+14155551234  # Your Twilio phone number
-PHONE_TO=+14155555678     # Your personal phone number
+TWILIO_FROM=+18331234567  # Your Twilio phone number
+PHONE_TO=+14805551234     # Your personal phone number
 
 # Discord (for alerts)
 DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/your-webhook-here
@@ -127,14 +128,14 @@ Sometimes you want to run the grader right now instead of waiting for midnight:
 Every night, you'll get a text that looks like this:
 
 ```
-🤖 PhaseGrid Nightly Grader Summary
+🤖 PhaseGrid Nightly Grader
 📅 Date: 2024-01-15
-📊 Total Slips: 25
+📊 Total: 25
 ✅ Wins: 15
 ❌ Losses: 8
 ⚠️ Errors: 2
 
-🚨 WARNING: 2 slips had grading errors!
+🚨 2 slips had errors!
 ```
 
 This tells you:
@@ -158,7 +159,7 @@ The grader expects your `paper_slips` sheet to have these columns:
 | G | `amount` | How much they bet | `$50` |
 | H | `timestamp` | When they made the bet | `2024-01-15 10:30:00` |
 | I | `grade` | **Added by grader!** WIN/LOSS/PUSH | `WIN` |
-| J | `details` | **Added by grader!** Explanation | `✅ Correct! Picked LAL and they won (110-105)` |
+| J | `details` | **Added by grader!** Explanation | `✅ Correct: LAL won (110-105)` |
 
 **Important:** Columns I and J are empty initially - the grader fills them in!
 
@@ -182,7 +183,7 @@ The grader expects your `paper_slips` sheet to have these columns:
 #### Problem: "Sheet not updating"
 **Solutions:**
 - ✅ Verify Google service account has "Editor" access to your sheet
-- ✅ Check GOOGLE_CREDENTIALS secret is the complete JSON (copy everything!)
+- ✅ Check GOOGLE_SA_JSON secret is the complete JSON (copy everything!)
 - ✅ Make sure sheet name is exactly "paper_slips"
 - ✅ Verify columns I and J exist in your sheet
 
@@ -199,27 +200,28 @@ When the grader runs, you'll see logs like this:
 
 ```
 ==================================================
-PHASEGRID NIGHTLY GRADER
-==================================================
-🚀 Starting the nightly grader...
+🚀 PHASEGRID NIGHTLY GRADER
 📅 Grading slips from: 2024-01-15
+==================================================
 Connecting to Google Sheets...
 ✅ Connected to Google Sheets!
 Setting up text messaging...
 ✅ Text messaging ready!
-📋 Looking for guesses from 2024-01-15...
-📊 Found 3 guesses from yesterday
-🏀 Checking who won the games on 2024-01-15...
-✅ Got the game results!
-📝 Starting to grade slips...
-Graded slip slip_001: WIN
-Graded slip slip_002: LOSS
-Graded slip slip_003: WIN
-✍️ Writing grades to the spreadsheet...
-✅ Updated 3 grades in the sheet!
-📱 Sending SMS from +14155551234 to +14155555678...
-✅ Text sent! Message ID: SM123abc...
-🎉 Nightly grader finished successfully!
+📋 Looking for slips from 2024-01-15...
+📊 Found 3 slips for 2024-01-15
+🏀 Fetching game results for 2024-01-15 (using stub data)...
+✅ Got game results!
+📝 Grading slips...
+  Slip slip_001: WIN
+  Slip slip_002: LOSS
+  Slip slip_003: WIN
+✍️ Writing grades to spreadsheet...
+✅ Updated 3 slip grades
+📱 Sending SMS from +18331234567 to +14805551234...
+✅ SMS sent! ID: SM123abc...
+==================================================
+🎉 Nightly grader completed successfully!
+==================================================
 ```
 
 ### 🆘 Getting Help
@@ -241,3 +243,30 @@ After setting this up:
 5. Check the results tomorrow morning
 
 Remember: The grader runs at midnight, so tomorrow morning you'll see yesterday's slips graded!
+
+### 🔌 API Integration
+
+The grader currently uses stub data for game results. To integrate a real sports API:
+
+1. Replace the `fetch_game_results` method in `result_grader.py`
+2. Update `RESULTS_API_URL` with your API endpoint
+3. Add any required API authentication headers
+4. Map the API response to the expected format:
+   ```python
+   {
+       "GAME_ID": {
+           "winner": "TEAM_CODE",
+           "score": "110-105"
+       }
+   }
+   ```
+
+### 📈 Future Enhancements
+
+Consider adding these features:
+- Support for point spread calculations
+- Win/loss streak tracking
+- Performance metrics per user
+- Weekly/monthly summary reports
+- Multiple notification channels (email, Slack)
+- Historical data analysis

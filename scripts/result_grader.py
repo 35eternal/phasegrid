@@ -1,372 +1,292 @@
 #!/usr/bin/env python3
 """
-WHAT THIS FILE DOES:
-This is our robot teacher that grades betting slips every night.
-It checks if people's guesses about basketball games were right or wrong.
+Nightly grader for PhaseGrid dry-run automation.
+Fetches yesterday's paper slips, retrieves actual game results,
+compares them, and sends notifications.
 """
 
-# STEP 1: Import all the tools we need (like getting your pencils and erasers ready)
-import os                          # Helps us read environment variables (secret passwords)
-import sys                         # Helps us work with the system
-import json                        # Helps us read data in JSON format
-import logging                     # Helps us write down what's happening (like a diary)
-from datetime import datetime, timedelta  # Helps us work with dates and time
-from typing import List, Dict, Optional, Tuple  # Helps us define what kind of data we're using
-import requests                    # Helps us talk to other websites
-from dotenv import load_dotenv     # Helps us load secret passwords from .env file
-from twilio.rest import Client     # Helps us send text messages
+import os
+import sys
+import json
+import logging
+from datetime import datetime, timedelta
+from typing import List, Dict, Optional, Tuple
+import requests
+from dotenv import load_dotenv
+from twilio.rest import Client
 
-# STEP 2: Tell Python where to find our other helper files
-# This is like telling someone "the bathroom is down the hall"
+# Add parent directory to path to import modules
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-# STEP 3: Import our own helper functions
-from utils.gsheet import get_sheet_service, append_to_sheet  # For talking to Google Sheets
-from utils.alerts import send_alert                          # For sending emergency alerts
+from utils.gsheet import get_sheet_service, append_to_sheet
+from utils.alerts import send_alert
 
-# STEP 4: Load all our secret passwords from the .env file
-# This is like opening a locked box with all our passwords inside
+# Load environment variables
 load_dotenv()
 
-# STEP 5: Set up our diary (logging) so we can see what's happening
+# Configure logging
 logging.basicConfig(
-    level=logging.INFO,  # We want to see all important messages
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'  # How to write each diary entry
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
-logger = logging.getLogger(__name__)  # This is our diary writer
+logger = logging.getLogger(__name__)
 
-# STEP 6: Define important values we'll use everywhere
-SHEET_ID = os.getenv('GSHEET_ID')  # The ID of our Google Sheet (like a home address)
-SHEET_NAME = 'paper_slips'          # The name of the tab in our sheet
-RESULTS_API_URL = os.getenv('RESULTS_API_URL', 'https://api.example.com/results')  # Where to get game results
+# Constants - USING YOUR EXISTING SECRET NAMES
+SHEET_ID = os.getenv('SHEET_ID')  # Changed from GSHEET_ID to match your existing secrets
+SHEET_NAME = 'paper_slips'
+RESULTS_API_URL = os.getenv('RESULTS_API_URL', 'https://api.example.com/results')
 
 
 class ResultGrader:
-    """
-    This is our robot teacher class. It knows how to:
-    1. Get yesterday's guesses from Google Sheets
-    2. Find out who really won the games
-    3. Grade each guess
-    4. Send text messages about the results
-    """
+    """Grades paper slips against actual game results."""
     
     def __init__(self):
-        """
-        This runs when we create a new robot teacher.
-        It's like the robot waking up and getting ready for work.
-        """
-        self.sheet_service = None    # We'll use this to talk to Google Sheets
-        self.twilio_client = None    # We'll use this to send text messages
-        # Figure out what yesterday's date was (we grade yesterday's guesses)
+        self.sheet_service = None
+        self.twilio_client = None
         self.yesterday = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
         
     def initialize(self):
-        """
-        This is where our robot teacher gets all its tools ready.
-        Like a teacher setting up their desk before class.
-        """
+        """Initialize services and connections."""
         try:
-            # First, connect to Google Sheets (like logging into Google)
+            # Initialize Google Sheets
             logger.info("Connecting to Google Sheets...")
             self.sheet_service = get_sheet_service()
             logger.info("✅ Connected to Google Sheets!")
             
-            # Next, set up text messaging (like turning on your phone)
-            account_sid = os.getenv('TWILIO_SID')     # Your Twilio username
-            auth_token = os.getenv('TWILIO_AUTH')     # Your Twilio password
-            
+            # Initialize Twilio
+            account_sid = os.getenv('TWILIO_SID')
+            auth_token = os.getenv('TWILIO_AUTH')
             if account_sid and auth_token:
                 logger.info("Setting up text messaging...")
                 self.twilio_client = Client(account_sid, auth_token)
                 logger.info("✅ Text messaging ready!")
             else:
-                logger.warning("⚠️ No Twilio passwords found. Can't send texts!")
+                logger.warning("⚠️ Twilio credentials not found. SMS notifications disabled.")
                 
         except Exception as e:
-            # If something goes wrong, tell everyone!
-            logger.error(f"❌ Robot teacher couldn't get ready: {e}")
+            logger.error(f"❌ Initialization failed: {e}")
             send_alert(f"ResultGrader initialization failed: {e}", severity="critical")
-            raise  # Stop everything - we can't continue
+            raise
             
     def fetch_yesterdays_slips(self) -> List[Dict]:
-        """
-        This function gets all of yesterday's guesses from our Google Sheet.
-        It's like opening the notebook and finding yesterday's homework.
-        
-        Returns: A list of all the guesses from yesterday
-        """
+        """Fetch yesterday's paper slips from Google Sheet."""
         try:
-            logger.info(f"📋 Looking for guesses from {self.yesterday}...")
+            logger.info(f"📋 Looking for slips from {self.yesterday}...")
             
-            # Ask Google Sheets for all the data
+            # Read all rows from the sheet
             result = self.sheet_service.spreadsheets().values().get(
-                spreadsheetId=SHEET_ID,      # Which spreadsheet to look at
-                range=f'{SHEET_NAME}!A:H'    # Look at columns A through H
+                spreadsheetId=SHEET_ID,
+                range=f'{SHEET_NAME}!A:H'
             ).execute()
             
-            # Get all the rows of data
             rows = result.get('values', [])
             if not rows:
-                logger.warning("📭 The sheet is empty!")
+                logger.warning("📭 No data found in sheet")
                 return []
                 
-            # The first row has the column names (like "date", "team", etc.)
+            # Parse rows (assuming header in first row)
             headers = rows[0]
-            yesterday_slips = []  # We'll put yesterday's guesses here
+            slips = []
             
-            # Look at each row (starting from row 2, because row 1 is headers)
             for row in rows[1:]:
-                # Turn the row into a dictionary (like a labeled box)
                 slip = dict(zip(headers, row))
-                
-                # Is this guess from yesterday?
+                # Filter for yesterday's slips
                 if slip.get('date') == self.yesterday:
-                    yesterday_slips.append(slip)  # Yes! Save it
+                    slips.append(slip)
                     
-            logger.info(f"📊 Found {len(yesterday_slips)} guesses from yesterday")
-            return yesterday_slips
+            logger.info(f"📊 Found {len(slips)} slips for {self.yesterday}")
+            return slips
             
         except Exception as e:
-            # Something went wrong! Tell everyone!
-            logger.error(f"❌ Couldn't get yesterday's guesses: {e}")
+            logger.error(f"❌ Failed to fetch slips: {e}")
             send_alert(f"Failed to fetch slips from Google Sheet: {e}", severity="high")
             raise
             
     def fetch_game_results(self, date: str) -> Dict:
-        """
-        This function finds out who actually won the games.
-        It's like checking the sports news to see the real scores.
-        
-        Args:
-            date: Which day's games to check (format: YYYY-MM-DD)
-            
-        Returns: A dictionary with all the game results
-        """
+        """Fetch actual game results for a given date."""
         try:
-            logger.info(f"🏀 Checking who won the games on {date}...")
+            logger.info(f"🏀 Fetching game results for {date} (using stub data)...")
             
-            # NOTE: This is pretend data for now!
-            # In real life, you would call a real sports API like this:
+            # STUB IMPLEMENTATION - Replace with real API call later
+            # Example for real implementation:
             # response = requests.get(f"{RESULTS_API_URL}?date={date}")
             # return response.json()
             
-            # For now, we're pretending these are the results:
-            fake_results = {
-                "LAL_vs_BOS": {
-                    "winner": "LAL",           # Lakers won
-                    "score": "110-105"         # Final score
-                },
-                "GSW_vs_NYK": {
-                    "winner": "GSW",           # Warriors won  
-                    "score": "120-115"
-                },
-                "MIA_vs_CHI": {
-                    "winner": "MIA",           # Heat won
-                    "score": "108-102"
-                }
+            # Stub data for testing
+            stub_results = {
+                "LAL_vs_BOS": {"winner": "LAL", "score": "110-105"},
+                "GSW_vs_NYK": {"winner": "GSW", "score": "120-115"},
+                "MIA_vs_CHI": {"winner": "MIA", "score": "108-102"},
+                "PHX_vs_DEN": {"winner": "PHX", "score": "118-114"},
+                "DAL_vs_MIL": {"winner": "DAL", "score": "105-100"},
             }
             
-            logger.info("✅ Got the game results!")
-            return fake_results
+            logger.info("✅ Got game results!")
+            return stub_results
             
         except Exception as e:
-            logger.error(f"❌ Couldn't get game results: {e}")
+            logger.error(f"❌ Failed to fetch game results: {e}")
             send_alert(f"Failed to fetch game results: {e}", severity="high")
             raise
             
     def grade_slip(self, slip: Dict, results: Dict) -> Tuple[str, str]:
         """
-        This grades one guess - was it right or wrong?
-        It's like marking one question on a test.
-        
-        Args:
-            slip: One person's guess
-            results: The actual game results
-            
-        Returns: 
-            - Grade (WIN/LOSS/ERROR)
-            - Explanation of why
+        Grade a single slip against actual results.
+        Returns: (grade, details)
         """
         try:
-            # Get the important info from the guess
-            game_key = slip.get('game_id', '')      # Which game they guessed on
-            picked_winner = slip.get('pick', '')     # Who they thought would win
-            spread = float(slip.get('spread', 0))   # By how many points
+            game_key = slip.get('game_id', '')
+            picked_winner = slip.get('pick', '')
+            spread = float(slip.get('spread', 0))
             
-            # Can we find this game in the results?
             if game_key not in results:
-                return 'ERROR', f"❓ Can't find game {game_key} in the results"
+                return 'ERROR', f"Game {game_key} not found in results"
                 
-            # Get what actually happened
             game_result = results[game_key]
             actual_winner = game_result.get('winner', '')
             score = game_result.get('score', '')
             
-            # Check if they guessed right!
+            # Simple win/loss logic (extend for spread calculations later)
             if picked_winner == actual_winner:
-                return 'WIN', f"✅ Correct! Picked {picked_winner} and they won ({score})"
+                return 'WIN', f"✅ Correct: {picked_winner} won ({score})"
             else:
-                return 'LOSS', f"❌ Wrong! Picked {picked_winner} but {actual_winner} won ({score})"
+                return 'LOSS', f"❌ Wrong: picked {picked_winner}, but {actual_winner} won ({score})"
                 
         except Exception as e:
-            logger.error(f"💥 Error grading slip: {e}")
-            return 'ERROR', f"Something went wrong: {str(e)}"
+            logger.error(f"Error grading slip: {e}")
+            return 'ERROR', str(e)
             
     def update_slip_grades(self, slips: List[Dict], grades: List[Tuple[str, str]]):
-        """
-        This writes the grades back to the Google Sheet.
-        It's like writing "A+" or "F" on each paper.
-        
-        Args:
-            slips: All the guesses we graded
-            grades: The grades for each guess
-        """
+        """Update the Google Sheet with grading results."""
         try:
-            logger.info("✍️ Writing grades to the spreadsheet...")
+            logger.info("✍️ Writing grades to spreadsheet...")
             
-            # We'll put all our updates here
+            # Prepare batch update
             updates = []
             
-            # For each slip and its grade...
+            # For this example, we'll write to columns I and J
+            # In production, you'd want to find the exact row for each slip
             for i, (slip, (grade, details)) in enumerate(zip(slips, grades)):
-                # For this example, we'll pretend we know which row to update
-                # In real life, you'd search for the right row based on the slip ID
-                row_num = i + 2  # Starting from row 2 (row 1 is headers)
-                
-                # Add this update to our list
+                # Starting from row 2 (assuming row 1 is headers)
+                row_num = i + 2
                 updates.append({
-                    'range': f'{SHEET_NAME}!I{row_num}:J{row_num}',  # Columns I and J
-                    'values': [[grade, details]]  # The grade and explanation
+                    'range': f'{SHEET_NAME}!I{row_num}:J{row_num}',
+                    'values': [[grade, details]]
                 })
                 
-            # Send all the updates to Google Sheets at once
             if updates:
                 body = {
-                    'valueInputOption': 'RAW',  # Write exactly what we say
-                    'data': updates             # All our updates
+                    'valueInputOption': 'RAW',
+                    'data': updates
                 }
                 self.sheet_service.spreadsheets().values().batchUpdate(
                     spreadsheetId=SHEET_ID,
                     body=body
                 ).execute()
-                logger.info(f"✅ Updated {len(updates)} grades in the sheet!")
+                logger.info(f"✅ Updated {len(updates)} slip grades")
                 
         except Exception as e:
-            logger.error(f"❌ Couldn't write grades to sheet: {e}")
+            logger.error(f"❌ Failed to update grades: {e}")
             send_alert(f"Failed to update slip grades: {e}", severity="high")
             raise
             
     def send_summary_sms(self, total_slips: int, grades: List[Tuple[str, str]]):
-        """
-        This sends a text message with the results.
-        It's like the teacher texting parents about how the class did.
-        
-        Args:
-            total_slips: How many guesses we graded
-            grades: All the grades we gave
-        """
+        """Send SMS summary of grading results."""
         if not self.twilio_client:
-            logger.warning("📵 Can't send texts - Twilio not set up")
+            logger.warning("📵 Twilio client not initialized, skipping SMS")
             return
             
         try:
-            # Count how many of each grade we gave
+            # Count results
             wins = sum(1 for grade, _ in grades if grade == 'WIN')
             losses = sum(1 for grade, _ in grades if grade == 'LOSS')
             errors = sum(1 for grade, _ in grades if grade == 'ERROR')
             
-            # Create the text message
+            # Create message
             message_body = (
-                f"🤖 PhaseGrid Nightly Grader Summary\n"
+                f"🤖 PhaseGrid Nightly Grader\n"
                 f"📅 Date: {self.yesterday}\n"
-                f"📊 Total Slips: {total_slips}\n"
+                f"📊 Total: {total_slips}\n"
                 f"✅ Wins: {wins}\n"
                 f"❌ Losses: {losses}\n"
                 f"⚠️ Errors: {errors}\n"
             )
             
-            # Add a warning if there were errors
             if errors > 0:
-                message_body += f"\n🚨 WARNING: {errors} slips had grading errors!"
+                message_body += f"\n🚨 {errors} slips had errors!"
                 
-            # Get phone numbers from environment
-            from_phone = os.getenv('TWILIO_FROM')  # Our phone number
-            to_phone = os.getenv('PHONE_TO')        # Who to text
+            # Send SMS
+            from_phone = os.getenv('TWILIO_FROM')
+            to_phone = os.getenv('PHONE_TO')
             
             logger.info(f"📱 Sending SMS from {from_phone} to {to_phone}...")
             
-            # Send the text!
             message = self.twilio_client.messages.create(
                 body=message_body,
                 from_=from_phone,
                 to=to_phone
             )
             
-            logger.info(f"✅ Text sent! Message ID: {message.sid}")
+            logger.info(f"✅ SMS sent! ID: {message.sid}")
             
         except Exception as e:
-            logger.error(f"❌ Couldn't send text message: {e}")
+            logger.error(f"❌ Failed to send SMS: {e}")
             send_alert(f"Failed to send summary SMS: {e}", severity="medium")
             
     def run(self):
-        """
-        This is the main function that runs everything in order.
-        It's like the teacher's lesson plan for the day.
-        """
+        """Main execution flow."""
         try:
-            logger.info("🚀 Starting the nightly grader...")
+            logger.info("=" * 50)
+            logger.info("🚀 PHASEGRID NIGHTLY GRADER")
             logger.info(f"📅 Grading slips from: {self.yesterday}")
+            logger.info("=" * 50)
             
-            # Step 1: Get ready
+            # Initialize services
             self.initialize()
             
-            # Step 2: Get yesterday's guesses
+            # Fetch yesterday's slips
             slips = self.fetch_yesterdays_slips()
             if not slips:
-                logger.info("😴 No slips to grade from yesterday. Going back to sleep!")
-                self.send_summary_sms(0, [])  # Still send a text saying "nothing to grade"
+                logger.info("😴 No slips to grade from yesterday")
+                self.send_summary_sms(0, [])
                 return
                 
-            # Step 3: Get the real game results
+            # Fetch game results
             results = self.fetch_game_results(self.yesterday)
             
-            # Step 4: Grade each guess
-            logger.info("📝 Starting to grade slips...")
+            # Grade each slip
+            logger.info("📝 Grading slips...")
             grades = []
             for slip in slips:
                 grade, details = self.grade_slip(slip, results)
                 grades.append((grade, details))
-                logger.info(f"Graded slip {slip.get('id', '???')}: {grade}")
+                slip_id = slip.get('id', 'unknown')
+                logger.info(f"  Slip {slip_id}: {grade}")
                 
-            # Step 5: Write grades back to the sheet
+            # Update sheet with grades
             self.update_slip_grades(slips, grades)
             
-            # Step 6: Send summary text message
+            # Send summary notification
             self.send_summary_sms(len(slips), grades)
             
-            # Step 7: Check if anything went wrong
+            # Check for critical issues
             error_count = sum(1 for grade, _ in grades if grade == 'ERROR')
             if error_count > 0:
                 send_alert(
-                    f"⚠️ Nightly grader finished but had {error_count} errors",
+                    f"⚠️ Nightly grader completed with {error_count} errors",
                     severity="high"
                 )
                 
-            logger.info("🎉 Nightly grader finished successfully!")
+            logger.info("=" * 50)
+            logger.info("🎉 Nightly grader completed successfully!")
+            logger.info("=" * 50)
             
         except Exception as e:
-            # If anything goes wrong, scream for help!
-            logger.error(f"💥 CRITICAL ERROR: Nightly grader crashed: {e}")
-            send_alert(f"🚨 Nightly grader FAILED COMPLETELY: {e}", severity="critical")
+            logger.error(f"💥 Nightly grader failed: {e}")
+            send_alert(f"🚨 Nightly grader critical failure: {e}", severity="critical")
             raise
 
 
-# This part runs when someone executes this file directly
 if __name__ == "__main__":
-    logger.info("=" * 50)
-    logger.info("PHASEGRID NIGHTLY GRADER")
-    logger.info("=" * 50)
-    
-    # Create our robot teacher and tell it to start working
     grader = ResultGrader()
     grader.run()
