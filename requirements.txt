@@ -21,3 +21,7 @@ twilio>=8.4.0
 
 # Web scraping
 beautifulsoup4==4.12.3
+# Google Sheets API
+google-auth==2.23.4
+google-auth-oauthlib==1.1.0
+google-api-python-client==2.95.0
