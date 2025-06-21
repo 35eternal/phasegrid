@@ -50,3 +50,36 @@ Follow these steps to configure Google Sheets integration for the PhaseGrid bett
 1. Copy `.env.example` to `.env`:
    ```bash
    cp .env.example .env
+## Daily Dry-Run Automation
+
+The project includes an automated workflow that generates dry-run betting slips daily and pushes them to a Google Sheet for tracking and analysis.
+
+### Purpose
+This scheduled workflow runs every day at 3:00 PM UTC to:
+- Generate paper trading slips for the current day
+- Mark them as dry-run with a unique batch ID
+- Push results to the configured Google Sheet
+
+### Required GitHub Secrets
+Configure these in your repository's Settings > Secrets:
+- `SHEET_ID`: Your Google Sheet ID
+- `GOOGLE_SA_JSON`: Service account JSON credentials for Google Sheets API access
+
+### Required Environment Variables
+Add these to your `.env` file:
+- `TWILIO_SID`: Twilio account SID
+- `TWILIO_AUTH`: Twilio auth token
+- `TWILIO_FROM`: Twilio phone number (sender)
+- `PHONE_TO`: Recipient phone number for alerts
+
+### Workflow Details
+- **File path**: `.github/workflows/dryrun.yml`
+- **Schedule**: Daily at 3:00 PM UTC (cron: `0 15 * * *`)
+- **Manual trigger**: You can also trigger manually from GitHub Actions tab
+
+### Manual Execution
+To run the dry-run generation manually:
+
+    python auto_paper.py
+
+Note: Currently the script generates slips for the current day. The `--days` parameter mentioned in the spec would need to be implemented in `auto_paper.py`.
