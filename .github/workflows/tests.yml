@@ -5,21 +5,19 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-        python-version: ["3.13"]
+        python-version: ["3.11"]  # Changed from 3.13 to 3.11!
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Test Python directly
-        run: |
-          python -c "print('Python is working')"
-          python -c "assert True; print('Assertions work')"
-          python -c "import sys; print(f'Python version: {sys.version}')"
-      - name: Test if file exists
-        run: |
-          python -c "import os; print(f'Current dir: {os.getcwd()}')"
-          python -c "import os; print(f'Files: {os.listdir()}')"
-          python -c "import os; print(f'Tests dir exists: {os.path.exists(\"tests\")}')"
-      - name: Run test file directly
-        run: python tests/test_dummy.py
+      - name: Upgrade pip
+        run: pip install --upgrade pip setuptools wheel
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run tests
+        run: pytest tests/ --cov=modules --cov=scripts --cov-report=xml
+      - uses: actions/upload-artifact@v4
+        with:
+          name: coverage-xml
+          path: coverage.xml
