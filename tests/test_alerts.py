@@ -284,6 +284,7 @@ class TestUtilityFunctions:
 @patch('requests.post')
 @patch('twilio.rest.Client')
 @pytest.mark.xfail(reason='Twilio mock not intercepting calls')
+def test_full_alert_flow(mock_twilio_client, mock_post):
 
     """Test complete alert flow."""
     # Set up mocks
