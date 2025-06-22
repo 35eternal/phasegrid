@@ -1,0 +1,606 @@
+# PhaseGrid Quick Start Guide
+
+## 🚀 Getting Started
+
+Welcome to PhaseGrid - an advanced WNBA betting analytics system that leverages player performance cycles, real-time data, and intelligent automation.
+
+### Prerequisites
+
+- Python 3.11+ (Note: You may have issues with numpy on Python 3.13, recommend 3.11)
+- Google Cloud account (for Sheets API)
+- Twilio account (optional, for SMS alerts)
+- Discord webhook (optional, for alerts)
+
+### Quick Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone [your-repo-url]
+   cd phasegrid
+   ```
+
+2. **Create virtual environment**
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate  # Windows
+   # source venv/bin/activate  # Mac/Linux
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Configure environment**
+   ```bash
+   copy .env.example .env  # Windows
+   # cp .env.example .env  # Mac/Linux
+   notepad .env  # Edit with your credentials
+   ```
+
+5. **Run your first slip generation**
+   ```bash
+   python auto_paper.py
+   ```
+
+## Daily Dry-Run Automation
+
+The dry-run automation system generates betting slips every morning based on real-time data from PrizePicks and historical performance analysis.
+
+### How It Works
+
+1. **Morning Generation (9 AM Phoenix time)**
+   - Fetches current WNBA props from PrizePicks
+   - Analyzes player performance cycles
+   - Generates confidence-scored betting slips
+   - Pushes to Google Sheets with unique IDs
+
+2. **Evening Grading (Midnight Phoenix time)**
+   - Fetches game results
+   - Grades all pending slips
+   - Updates Google Sheets
+   - Sends performance summary via SMS/Discord
+
+### Workflow Commands
+
+```bash
+# Generate today's slips
+python auto_paper.py
+
+# Grade yesterday's slips
+python scripts/result_grader.py
+
+# Backfill historical data
+python backfill.py --days 7
+```
+
+---
+
+## 🌙 Nightly Grader
+
+The nightly grader is like a robot teacher that grades betting slips while you sleep! Every night at midnight (Phoenix time), it automatically checks yesterday's predictions against the real game results.
+
+### 🎯 What Does It Do?
+
+Think of it like this:
+1. **Fetches Slips** 📋 - Gets all the betting predictions from yesterday
+2. **Gets Results** 🏀 - Finds out who actually won the games
+3. **Grades** ✍️ - Marks each prediction as WIN ✅, LOSS ❌, or PUSH 🤝
+4. **Updates Sheet** 📊 - Writes the grades back to Google Sheets
+5. **Sends Text** 📱 - Texts you a summary of how everyone did
+6. **Alerts** 🚨 - If something breaks, sends emergency alerts to Discord
+
+### ⏰ When Does It Run?
+
+The grader runs automatically every night at **midnight Phoenix time**:
+
+- **Winter (MST)**: 12:00 AM MST = 7:00 AM UTC
+- **Summer (MDT)**: 12:00 AM MDT = 6:00 AM UTC
+
+Currently set for summer time (MDT): `0 6 * * *` in cron format
+
+**What's cron format?** It's a special way to tell computers when to do things:
+```
+0 6 * * *
+│ │ │ │ │
+│ │ │ │ └─── Day of week (0-7, * means every day)
+│ │ │ └───── Month (1-12, * means every month)
+│ │ └─────── Day of month (1-31, * means every day)
+│ └───────── Hour (0-23, 6 means 6 AM UTC)
+└─────────── Minute (0-59, 0 means exactly on the hour)
+```
+
+### 🔐 Required Secrets (GitHub Settings)
+
+These are like passwords that GitHub needs to know. You must set these up in your repository:
+
+**How to add secrets:**
+1. Go to your GitHub repository
+2. Click "Settings" (it's in the top menu)
+3. Click "Secrets and variables" in the left menu
+4. Click "Actions"
+5. Click "New repository secret" button
+6. Add each secret below:
+
+| Secret Name | What Is It? | Where To Get It | Example |
+|-------------|-------------|-----------------|---------|
+| `SHEET_ID` | Your Google Sheet's ID number | Look at your sheet's URL: `https://docs.google.com/spreadsheets/d/`**`1ABC123XYZ`**`/edit` | `1ABC123XYZ` |
+| `GOOGLE_SA_JSON` | Google service account login info | Download from Google Cloud Console (JSON file) | `{"type": "service_account", "project_id": "your-project", ...}` |
+| `TWILIO_SID` | Twilio account ID | From twilio.com dashboard | `ACa1b2c3d4e5f6...` |
+| `TWILIO_AUTH` | Twilio password | From twilio.com dashboard | `abc123def456...` |
+| `TWILIO_FROM` | Your Twilio phone number | From twilio.com (must include +1) | `+18331234567` |
+| `PHONE_TO` | Phone to send texts to | Your phone (must include +1) | `+14805551234` |
+| `DISCORD_WEBHOOK_URL` | Discord alert URL | From Discord server settings | `https://discord.com/api/webhooks/123/abc...` |
+| `RESULTS_API_URL` | Where to get game results | From your sports data provider | `https://api.sportsdata.com/results` |
+
+### 🏠 Local Development Setup
+
+Want to test on your own computer? Here's how:
+
+#### 1. Create Your Environment File
+```bash
+# Copy the example file
+copy .env.example .env  # Windows
+# cp .env.example .env  # Mac/Linux
+
+# Open .env in your text editor and fill in these values:
+```
+
+Then add these lines to your `.env` file:
+```bash
+# Google Sheets
+SHEET_ID=your-sheet-id-here
+GOOGLE_SA_JSON={"type": "service_account", ...your-full-json-here...}
+
+# Twilio (for text messages)
+TWILIO_SID=your-twilio-sid-here
+TWILIO_AUTH=your-twilio-auth-token-here
+TWILIO_FROM=+18331234567  # Your Twilio phone number
+PHONE_TO=+14805551234     # Your personal phone number
+
+# Discord (for alerts)
+DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/your-webhook-here
+
+# Sports API
+RESULTS_API_URL=https://api.example.com/results
+
+# Bankroll Configuration
+BANKROLL=1000  # Your starting bankroll
+
+# PrizePicks Configuration
+PRIZEPICKS_API_KEY=your_prizepicks_api_key_if_available
+
+# Betting Configuration
+MIN_CONFIDENCE=0.65
+MAX_SLIPS_PER_DAY=10
+MIN_BET_PERCENT=0.01
+MAX_BET_PERCENT=0.05
+KELLY_FRACTION=0.25
+```
+
+#### 2. Install Python Packages
+```bash
+# Make sure you have Python 3.11 installed
+python --version  # Should show "Python 3.11.x"
+
+# Install all required packages
+pip install -r requirements.txt
+```
+
+#### 3. Run the Grader
+```bash
+# Run it manually
+python scripts/result_grader.py
+```
+
+### 🎮 Manual Trigger (Run It Yourself)
+
+Sometimes you want to run the grader right now instead of waiting for midnight:
+
+1. Go to your GitHub repository
+2. Click the "Actions" tab (top of the page)
+3. Click "Nightly Grader" in the left sidebar
+4. Click "Run workflow" button (on the right)
+5. (Optional) Check "Enable debug logging" for more details
+6. Click the green "Run workflow" button
+7. Watch it run! (refresh the page after a few seconds)
+
+### 📱 What The Text Message Looks Like
+
+Every night, you'll get a text that looks like this:
+
+```
+🤖 PhaseGrid Nightly Grader
+📅 Date: 2024-01-15
+📊 Total: 25
+✅ Wins: 15
+❌ Losses: 8
+⚠️ Errors: 2
+
+🚨 2 slips had errors!
+```
+
+This tells you:
+- How many betting slips were graded
+- How many were correct predictions (Wins)
+- How many were wrong (Losses)
+- How many couldn't be graded (Errors)
+
+### 📊 Google Sheet Structure
+
+The grader expects your `paper_slips` sheet to have these columns:
+
+| Column Letter | Column Name | What Goes Here | Example |
+|---------------|-------------|----------------|---------|
+| A | `id` | Unique ID for each slip | `slip_001` |
+| B | `date` | Date of the slip | `2024-01-15` |
+| C | `game_id` | Which game this is | `LAL_vs_BOS` |
+| D | `pick` | Team they picked to win | `LAL` |
+| E | `spread` | Point spread | `-3.5` |
+| F | `odds` | Betting odds | `-110` |
+| G | `amount` | How much they bet | `$50` |
+| H | `timestamp` | When they made the bet | `2024-01-15 10:30:00` |
+| I | `grade` | **Added by grader!** WIN/LOSS/PUSH | `WIN` |
+| J | `details` | **Added by grader!** Explanation | `✅ Correct: LAL won (110-105)` |
+
+**Important:** Columns I and J are empty initially - the grader fills them in!
+
+### 🔧 Troubleshooting Guide
+
+#### Problem: "No SMS received"
+**Solutions:**
+- ✅ Check Twilio account has money (they charge per text)
+- ✅ Verify phone numbers include country code (+1 for USA)
+- ✅ Make sure TWILIO_FROM is your Twilio number, not your personal number
+- ✅ Check GitHub secrets are set correctly (no quotes around values!)
+- ✅ Look at GitHub Actions logs for error messages
+
+#### Problem: "Grading errors"
+**Solutions:**
+- ✅ Make sure game IDs in slips match exactly with results API
+- ✅ Check the date format is YYYY-MM-DD everywhere
+- ✅ Verify results API is returning data
+- ✅ Look for typos in team names
+
+#### Problem: "Sheet not updating"
+**Solutions:**
+- ✅ Verify Google service account has "Editor" access to your sheet
+- ✅ Check GOOGLE_SA_JSON secret is the complete JSON (copy everything!)
+- ✅ Make sure sheet name is exactly "paper_slips"
+- ✅ Verify columns I and J exist in your sheet
+
+#### Problem: "Workflow not running"
+**Solutions:**
+- ✅ Check the workflow file is named exactly `nightly-grader.yml`
+- ✅ Verify it's in `.github/workflows/` folder
+- ✅ Check for typos in the cron schedule
+- ✅ Make sure GitHub Actions is enabled for your repository
+
+#### Problem: "numpy installation failed"
+**Solutions:**
+- ✅ Use Python 3.11 instead of 3.13 (numpy may have issues with 3.13)
+- ✅ Install Microsoft C++ Build Tools if on Windows
+- ✅ Try installing numpy separately: `pip install numpy==1.24.3`
+- ✅ Use pre-built wheel: `pip install numpy --only-binary :all:`
+
+### 📝 Example Log Output
+
+When the grader runs, you'll see logs like this:
+
+```
+==================================================
+🚀 PHASEGRID NIGHTLY GRADER
+📅 Grading slips from: 2024-01-15
+==================================================
+Connecting to Google Sheets...
+✅ Connected to Google Sheets!
+Setting up text messaging...
+✅ Text messaging ready!
+📋 Looking for slips from 2024-01-15...
+📊 Found 3 slips for 2024-01-15
+🏀 Fetching game results for 2024-01-15 (using stub data)...
+✅ Got game results!
+📝 Grading slips...
+  Slip slip_001: WIN
+  Slip slip_002: LOSS
+  Slip slip_003: WIN
+✍️ Writing grades to spreadsheet...
+✅ Updated 3 slip grades
+📱 Sending SMS from +18331234567 to +14805551234...
+✅ SMS sent! ID: SM123abc...
+==================================================
+🎉 Nightly grader completed successfully!
+==================================================
+```
+
+---
+
+## 🚀 Production Hardening Features
+
+### Overview
+
+PhaseGrid has been enhanced with production-ready features to make the system more reliable, scalable, and easier to operate.
+
+### 🎯 New Features
+
+#### 1. Real Sports Data Integration (PrizePicks + Basketball Reference)
+
+The system now pulls real-time data from:
+- **PrizePicks API**: Live player props and betting lines
+- **Basketball Reference**: Historical performance data
+- **WNBA Stats**: Current season statistics
+
+```python
+# Generate real slips with live data
+python auto_paper.py
+
+# Slips now include:
+# - Real player props from PrizePicks
+# - Confidence scores based on historical data
+# - Menstrual phase adjustments (if configured)
+# - Kelly Criterion bet sizing
+```
+
+#### 2. Intelligent Slip ID System
+
+Every slip now has a unique ID format: `PG-{hash}-{date}`
+- Prevents duplicate entries
+- Enables reliable tracking
+- Supports idempotent operations
+
+#### 3. Retry Logic & Error Handling
+
+All external API calls now include:
+- Exponential backoff (1s → 2s → 4s → 8s → 16s)
+- Configurable max retries (default: 5)
+- Graceful failure handling
+- Detailed error logging
+
+#### 4. SMS & Discord Alerts
+
+Get notified about important events:
+```python
+# Automatic alerts for:
+# - Grading complete (with win rate)
+# - High confidence opportunities (≥85%)
+# - Daily/weekly summaries
+# - Critical errors
+
+# Manual alerts:
+from alerts import send_quick_sms, send_quick_discord
+send_quick_sms("Custom message")
+send_quick_discord("Custom message", color=0x00FF00)
+```
+
+#### 5. Historical Backfill
+
+Generate slips for past dates:
+```bash
+# Backfill last 7 days
+python backfill.py --days 7
+
+# Force regeneration (ignore existing)
+python backfill.py --days 3 --force
+
+# Debug mode for troubleshooting
+python backfill.py --days 1 --debug
+```
+
+#### 6. Comprehensive Testing
+
+```bash
+# Run all tests with coverage
+pytest
+
+# Run specific test categories
+pytest -m unit          # Fast unit tests
+pytest -m integration   # Integration tests
+pytest -m "not slow"    # Skip slow tests
+
+# Generate coverage report
+pytest --cov-report=html
+# Open htmlcov/index.html in browser
+```
+
+### 📋 Production Features Setup
+
+#### 1. Enhanced Slip Generation
+The new `slips_generator.py` replaces the stub with:
+- Real PrizePicks data fetching
+- Player performance analysis
+- Confidence scoring
+- Kelly Criterion bet sizing
+- Phase-based adjustments
+
+#### 2. Alert System
+Configure alerts in `.env`:
+- SMS via Twilio for critical events
+- Discord webhooks for all notifications
+- Customizable thresholds
+- Multiple recipient support
+
+#### 3. Backfill Capability
+Never miss historical data:
+- Generates slips for any date range
+- Detects and skips existing slips
+- Batch processing for efficiency
+- Progress tracking and summaries
+
+### 🏃‍♂️ Daily Workflow
+
+#### Morning (Generate Slips)
+```bash
+# Generate today's slips
+python auto_paper.py
+
+# Check high confidence opportunities
+# (Automated alerts will be sent if any found)
+```
+
+#### Evening (Grade Results)
+```bash
+# Grade yesterday's slips
+python scripts/result_grader.py
+
+# Results automatically pushed to sheet
+# Alerts sent with performance summary
+```
+
+#### Weekly Maintenance
+```bash
+# Backfill any missed days
+python backfill.py --days 7
+
+# Run tests to ensure everything works
+pytest
+
+# Check logs for any issues
+type logs\phasegrid.log | findstr ERROR  # Windows
+# grep ERROR logs/phasegrid.log          # Mac/Linux
+```
+
+### 🔧 Configuration Options
+
+#### Betting Parameters (.env)
+```bash
+MIN_CONFIDENCE=0.65      # Only bet on 65%+ confidence
+MAX_SLIPS_PER_DAY=10    # Limit daily exposure
+MIN_BET_PERCENT=0.01    # Min 1% of bankroll
+MAX_BET_PERCENT=0.05    # Max 5% of bankroll
+KELLY_FRACTION=0.25     # Conservative Kelly sizing
+```
+
+#### Alert Thresholds
+- SMS alerts: Win rate ≥70% or ≤30%, profit ±$500
+- High confidence alerts: Confidence ≥85%
+- Error alerts: Critical errors only
+
+### 📊 Monitoring & Analytics
+
+#### Check Performance
+```python
+# View recent results in Google Sheets
+# Sheet auto-calculates:
+# - Daily/weekly/monthly win rates
+# - ROI and profit tracking
+# - Best performing prop types
+# - Player performance trends
+```
+
+#### Debug Issues
+```bash
+# Check logs
+tail -f logs/phasegrid.log  # Real-time log monitoring
+
+# Run in debug mode
+LOG_LEVEL=DEBUG python auto_paper.py
+
+# Test specific components
+python -m pytest tests/test_slips_generator.py -v
+```
+
+### 🆘 Getting Help
+
+If you're stuck:
+1. Check the GitHub Actions logs (Actions tab → click on the failed run)
+2. Look for error messages in red
+3. Check all your secrets are set correctly
+4. Make sure your `.env` file has all required values (for local testing)
+5. Ask for help in the team Discord channel!
+
+### 🚀 Next Steps
+
+After setting this up:
+1. Run it manually first to test (see Manual Trigger section)
+2. Check you received the summary text
+3. Verify grades appear in columns I and J of your sheet
+4. Let it run automatically tonight!
+5. Check the results tomorrow morning
+
+Remember: The grader runs at midnight, so tomorrow morning you'll see yesterday's slips graded!
+
+### 🔌 API Integration
+
+The system now integrates with multiple APIs:
+
+1. **PrizePicks Integration**
+   - Fetches live player props
+   - Updates throughout the day
+   - Handles rate limiting
+
+2. **Basketball Reference**
+   - Historical performance data
+   - Season averages
+   - Matchup history
+
+3. **Custom Results API**
+   - Configure your own endpoint
+   - Map to expected format
+   - Add authentication as needed
+
+### 📈 Future Enhancements
+
+Consider adding these features:
+- Support for point spread calculations
+- Win/loss streak tracking
+- Performance metrics per user
+- Weekly/monthly summary reports
+- Multiple notification channels (email, Slack)
+- Historical data analysis
+- Machine learning predictions
+- Multi-sport support
+- Live odds tracking
+- Arbitrage detection
+
+### 🚨 Safety Features
+
+1. **Bankroll Protection**
+   - Max 5% per bet (configurable)
+   - Daily slip limits
+   - Automatic stake sizing
+
+2. **Duplicate Prevention**
+   - Unique slip IDs
+   - Existing slip detection
+   - Idempotent operations
+
+3. **Error Recovery**
+   - Automatic retries
+   - Graceful degradation
+   - Detailed error logs
+
+4. **Data Validation**
+   - Props verification
+   - Line movement detection
+   - Odds validation
+
+---
+
+## 📚 Additional Resources
+
+- **GitHub Repository**: [Your repo URL]
+- **Google Sheets Template**: [Template URL]
+- **Discord Server**: [Invite link]
+- **Documentation**: [Wiki or docs URL]
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+- WNBA for providing amazing basketball
+- The PhaseGrid team for continuous improvements
+- All contributors and testers
+
+---
+
+**Remember**: Start small, test thoroughly, and scale gradually. Happy betting! 🏀📊
