@@ -1,10 +1,78 @@
 # PhaseGrid Quick Start Guide
 
-[Previous sections remain unchanged - don't delete anything above this!]
+## 🚀 Getting Started
+
+Welcome to PhaseGrid - an advanced WNBA betting analytics system that leverages player performance cycles, real-time data, and intelligent automation.
+
+### Prerequisites
+
+- Python 3.11+ (Note: You may have issues with numpy on Python 3.13, recommend 3.11)
+- Google Cloud account (for Sheets API)
+- Twilio account (optional, for SMS alerts)
+- Discord webhook (optional, for alerts)
+
+### Quick Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone [your-repo-url]
+   cd phasegrid
+   ```
+
+2. **Create virtual environment**
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate  # Windows
+   # source venv/bin/activate  # Mac/Linux
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Configure environment**
+   ```bash
+   copy .env.example .env  # Windows
+   # cp .env.example .env  # Mac/Linux
+   notepad .env  # Edit with your credentials
+   ```
+
+5. **Run your first slip generation**
+   ```bash
+   python auto_paper.py
+   ```
 
 ## Daily Dry-Run Automation
 
-[Previous dry-run documentation remains here - don't delete this section!]
+The dry-run automation system generates betting slips every morning based on real-time data from PrizePicks and historical performance analysis.
+
+### How It Works
+
+1. **Morning Generation (9 AM Phoenix time)**
+   - Fetches current WNBA props from PrizePicks
+   - Analyzes player performance cycles
+   - Generates confidence-scored betting slips
+   - Pushes to Google Sheets with unique IDs
+
+2. **Evening Grading (Midnight Phoenix time)**
+   - Fetches game results
+   - Grades all pending slips
+   - Updates Google Sheets
+   - Sends performance summary via SMS/Discord
+
+### Workflow Commands
+
+```bash
+# Generate today's slips
+python auto_paper.py
+
+# Grade yesterday's slips
+python scripts/result_grader.py
+
+# Backfill historical data
+python backfill.py --days 7
+```
 
 ---
 
@@ -72,7 +140,8 @@ Want to test on your own computer? Here's how:
 #### 1. Create Your Environment File
 ```bash
 # Copy the example file
-cp .env.example .env
+copy .env.example .env  # Windows
+# cp .env.example .env  # Mac/Linux
 
 # Open .env in your text editor and fill in these values:
 ```
@@ -94,6 +163,19 @@ DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/your-webhook-here
 
 # Sports API
 RESULTS_API_URL=https://api.example.com/results
+
+# Bankroll Configuration
+BANKROLL=1000  # Your starting bankroll
+
+# PrizePicks Configuration
+PRIZEPICKS_API_KEY=your_prizepicks_api_key_if_available
+
+# Betting Configuration
+MIN_CONFIDENCE=0.65
+MAX_SLIPS_PER_DAY=10
+MIN_BET_PERCENT=0.01
+MAX_BET_PERCENT=0.05
+KELLY_FRACTION=0.25
 ```
 
 #### 2. Install Python Packages
@@ -194,6 +276,13 @@ The grader expects your `paper_slips` sheet to have these columns:
 - ✅ Check for typos in the cron schedule
 - ✅ Make sure GitHub Actions is enabled for your repository
 
+#### Problem: "numpy installation failed"
+**Solutions:**
+- ✅ Use Python 3.11 instead of 3.13 (numpy may have issues with 3.13)
+- ✅ Install Microsoft C++ Build Tools if on Windows
+- ✅ Try installing numpy separately: `pip install numpy==1.24.3`
+- ✅ Use pre-built wheel: `pip install numpy --only-binary :all:`
+
 ### 📝 Example Log Output
 
 When the grader runs, you'll see logs like this:
@@ -224,6 +313,192 @@ Setting up text messaging...
 ==================================================
 ```
 
+---
+
+## 🚀 Production Hardening Features
+
+### Overview
+
+PhaseGrid has been enhanced with production-ready features to make the system more reliable, scalable, and easier to operate.
+
+### 🎯 New Features
+
+#### 1. Real Sports Data Integration (PrizePicks + Basketball Reference)
+
+The system now pulls real-time data from:
+- **PrizePicks API**: Live player props and betting lines
+- **Basketball Reference**: Historical performance data
+- **WNBA Stats**: Current season statistics
+
+```python
+# Generate real slips with live data
+python auto_paper.py
+
+# Slips now include:
+# - Real player props from PrizePicks
+# - Confidence scores based on historical data
+# - Menstrual phase adjustments (if configured)
+# - Kelly Criterion bet sizing
+```
+
+#### 2. Intelligent Slip ID System
+
+Every slip now has a unique ID format: `PG-{hash}-{date}`
+- Prevents duplicate entries
+- Enables reliable tracking
+- Supports idempotent operations
+
+#### 3. Retry Logic & Error Handling
+
+All external API calls now include:
+- Exponential backoff (1s → 2s → 4s → 8s → 16s)
+- Configurable max retries (default: 5)
+- Graceful failure handling
+- Detailed error logging
+
+#### 4. SMS & Discord Alerts
+
+Get notified about important events:
+```python
+# Automatic alerts for:
+# - Grading complete (with win rate)
+# - High confidence opportunities (≥85%)
+# - Daily/weekly summaries
+# - Critical errors
+
+# Manual alerts:
+from alerts import send_quick_sms, send_quick_discord
+send_quick_sms("Custom message")
+send_quick_discord("Custom message", color=0x00FF00)
+```
+
+#### 5. Historical Backfill
+
+Generate slips for past dates:
+```bash
+# Backfill last 7 days
+python backfill.py --days 7
+
+# Force regeneration (ignore existing)
+python backfill.py --days 3 --force
+
+# Debug mode for troubleshooting
+python backfill.py --days 1 --debug
+```
+
+#### 6. Comprehensive Testing
+
+```bash
+# Run all tests with coverage
+pytest
+
+# Run specific test categories
+pytest -m unit          # Fast unit tests
+pytest -m integration   # Integration tests
+pytest -m "not slow"    # Skip slow tests
+
+# Generate coverage report
+pytest --cov-report=html
+# Open htmlcov/index.html in browser
+```
+
+### 📋 Production Features Setup
+
+#### 1. Enhanced Slip Generation
+The new `slips_generator.py` replaces the stub with:
+- Real PrizePicks data fetching
+- Player performance analysis
+- Confidence scoring
+- Kelly Criterion bet sizing
+- Phase-based adjustments
+
+#### 2. Alert System
+Configure alerts in `.env`:
+- SMS via Twilio for critical events
+- Discord webhooks for all notifications
+- Customizable thresholds
+- Multiple recipient support
+
+#### 3. Backfill Capability
+Never miss historical data:
+- Generates slips for any date range
+- Detects and skips existing slips
+- Batch processing for efficiency
+- Progress tracking and summaries
+
+### 🏃‍♂️ Daily Workflow
+
+#### Morning (Generate Slips)
+```bash
+# Generate today's slips
+python auto_paper.py
+
+# Check high confidence opportunities
+# (Automated alerts will be sent if any found)
+```
+
+#### Evening (Grade Results)
+```bash
+# Grade yesterday's slips
+python scripts/result_grader.py
+
+# Results automatically pushed to sheet
+# Alerts sent with performance summary
+```
+
+#### Weekly Maintenance
+```bash
+# Backfill any missed days
+python backfill.py --days 7
+
+# Run tests to ensure everything works
+pytest
+
+# Check logs for any issues
+type logs\phasegrid.log | findstr ERROR  # Windows
+# grep ERROR logs/phasegrid.log          # Mac/Linux
+```
+
+### 🔧 Configuration Options
+
+#### Betting Parameters (.env)
+```bash
+MIN_CONFIDENCE=0.65      # Only bet on 65%+ confidence
+MAX_SLIPS_PER_DAY=10    # Limit daily exposure
+MIN_BET_PERCENT=0.01    # Min 1% of bankroll
+MAX_BET_PERCENT=0.05    # Max 5% of bankroll
+KELLY_FRACTION=0.25     # Conservative Kelly sizing
+```
+
+#### Alert Thresholds
+- SMS alerts: Win rate ≥70% or ≤30%, profit ±$500
+- High confidence alerts: Confidence ≥85%
+- Error alerts: Critical errors only
+
+### 📊 Monitoring & Analytics
+
+#### Check Performance
+```python
+# View recent results in Google Sheets
+# Sheet auto-calculates:
+# - Daily/weekly/monthly win rates
+# - ROI and profit tracking
+# - Best performing prop types
+# - Player performance trends
+```
+
+#### Debug Issues
+```bash
+# Check logs
+tail -f logs/phasegrid.log  # Real-time log monitoring
+
+# Run in debug mode
+LOG_LEVEL=DEBUG python auto_paper.py
+
+# Test specific components
+python -m pytest tests/test_slips_generator.py -v
+```
+
 ### 🆘 Getting Help
 
 If you're stuck:
@@ -246,20 +521,22 @@ Remember: The grader runs at midnight, so tomorrow morning you'll see yesterday'
 
 ### 🔌 API Integration
 
-The grader currently uses stub data for game results. To integrate a real sports API:
+The system now integrates with multiple APIs:
 
-1. Replace the `fetch_game_results` method in `result_grader.py`
-2. Update `RESULTS_API_URL` with your API endpoint
-3. Add any required API authentication headers
-4. Map the API response to the expected format:
-   ```python
-   {
-       "GAME_ID": {
-           "winner": "TEAM_CODE",
-           "score": "110-105"
-       }
-   }
-   ```
+1. **PrizePicks Integration**
+   - Fetches live player props
+   - Updates throughout the day
+   - Handles rate limiting
+
+2. **Basketball Reference**
+   - Historical performance data
+   - Season averages
+   - Matchup history
+
+3. **Custom Results API**
+   - Configure your own endpoint
+   - Map to expected format
+   - Add authentication as needed
 
 ### 📈 Future Enhancements
 
@@ -270,3 +547,60 @@ Consider adding these features:
 - Weekly/monthly summary reports
 - Multiple notification channels (email, Slack)
 - Historical data analysis
+- Machine learning predictions
+- Multi-sport support
+- Live odds tracking
+- Arbitrage detection
+
+### 🚨 Safety Features
+
+1. **Bankroll Protection**
+   - Max 5% per bet (configurable)
+   - Daily slip limits
+   - Automatic stake sizing
+
+2. **Duplicate Prevention**
+   - Unique slip IDs
+   - Existing slip detection
+   - Idempotent operations
+
+3. **Error Recovery**
+   - Automatic retries
+   - Graceful degradation
+   - Detailed error logs
+
+4. **Data Validation**
+   - Props verification
+   - Line movement detection
+   - Odds validation
+
+---
+
+## 📚 Additional Resources
+
+- **GitHub Repository**: [Your repo URL]
+- **Google Sheets Template**: [Template URL]
+- **Discord Server**: [Invite link]
+- **Documentation**: [Wiki or docs URL]
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+- WNBA for providing amazing basketball
+- The PhaseGrid team for continuous improvements
+- All contributors and testers
+
+---
+
+**Remember**: Start small, test thoroughly, and scale gradually. Happy betting! 🏀📊
