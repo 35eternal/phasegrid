@@ -87,12 +87,14 @@ class TestPrizePicksClient:
         """Test retry logic on API failure."""
         # First call fails, second succeeds
         mock_response_fail = Mock()
-mock_response_fail.raise_for_status.side_effect = Exception('API Error')
+        mock_response_fail.raise_for_status.side_effect = Exception('API Error')
         mock_response_fail.json.side_effect = Exception('API Error')
-        mock_get.side_effect = [
-            mock_response_fail,
-            Mock(json=Mock(return_value={'data': []}), raise_for_status=Mock())
-        ]
+        
+        mock_response_success = Mock()
+        mock_response_success.json.return_value = {'data': []}
+        mock_response_success.raise_for_status = Mock()
+        
+        mock_get.side_effect = [mock_response_fail, mock_response_success]
         
         client = PrizePicksClient()
         projections = client.get_projections('WNBA')
@@ -293,6 +295,7 @@ def test_date_range_handling(days_back, expected_calls):
         
         # Should only call API once for single day
         assert mock_client.get_projections.call_count == 1
+
 
 
 
