@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Generate real betting slips from PrizePicks and WNBA data."""
 
 import os
@@ -46,7 +46,7 @@ class PrizePicksClient:
             data = response.json()
             return data.get('data', [])
             
-        except Exception as e:
+        except requests.RequestException as e:  # Let other exceptions bubble up for retry
             logger.error(f"Error fetching PrizePicks projections: {e}")
             return []
     

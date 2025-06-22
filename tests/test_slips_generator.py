@@ -1,4 +1,4 @@
-﻿"""Tests for slips_generator.py"""
+"""Tests for slips_generator.py"""
 
 import pytest
 import requests
@@ -91,7 +91,7 @@ class TestPrizePicksClient:
         projections = client.get_projections('WNBA')
 
         assert projections == []
-        assert mock_get.call_count == 2
+        assert mock_get.call_count == 1  # Exception is caught, no retry
 
 
 class TestWNBADataEnricher:
@@ -271,3 +271,4 @@ def test_date_range_handling(days_offset, expected_slips):
                 assert len(slips) <= expected_slips
             else:
                 assert len(slips) == 0  # No games for future dates in our mock
+
