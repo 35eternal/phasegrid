@@ -31,3 +31,13 @@ htmlcov/
 .env.backup*
 .vscode/
 .idea/
+
+# Paper Trading outputs
+output/
+*.pyc
+__pycache__/
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+*_backup.py
