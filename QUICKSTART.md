@@ -690,3 +690,77 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 
 **Remember**: Start small, test thoroughly, and scale gradually. Happy betting! 🏀📊
+
+## Paper Trading Trial Mode
+
+The Paper Trading Trial feature simulates betting strategies using historical data and dynamic odds without risking real money. This mode is perfect for testing and refining your betting algorithms.
+
+### Overview
+
+Paper trading allows you to:
+- Test betting strategies against historical game results
+- Track simulated profit/loss over time
+- Analyze strategy performance with detailed metrics
+- Run backtests with custom date ranges
+
+### Usage
+
+Run the paper trader with the following command:
+
+```bash
+python scripts/paper_trader.py --date YYYYMMDD --results_source stub
+```
+
+#### Command Line Arguments
+
+| Argument | Description | Default | Example |
+|----------|-------------|---------|---------|
+| `--date` | Target date for simulation (YYYYMMDD format) | Required | `20240315` |
+| `--results_source` | Data source for game results | `stub` | `stub`, `api`, `csv` |
+| `--bankroll` | Starting bankroll amount | `1000.0` | `5000.0` |
+| `--bet_size` | Fixed bet size per game | `50.0` | `100.0` |
+| `--output_dir` | Directory for output files | `./output` | `./simulations` |
+
+### Output Files
+
+The paper trader generates two output files:
+
+1. **`simulation_YYYYMMDD.csv`** - Detailed bet-by-bet results
+   ```csv
+   game_id,team,bet_type,odds,bet_amount,win_loss,payout,running_bankroll
+   20240315_LA_NY,LA,moneyline,+150,50.0,win,75.0,1075.0
+   ```
+
+2. **`daily_summary.json`** - Summary statistics
+   ```json
+   {
+     "date": "20240315",
+     "total_bets": 8,
+     "wins": 5,
+     "losses": 3,
+     "win_rate": 0.625,
+     "starting_bankroll": 1000.0,
+     "ending_bankroll": 1150.0,
+     "net_profit": 150.0,
+     "roi": 0.15
+   }
+   ```
+
+### Integration with Dynamic Odds
+
+Paper trading works seamlessly with the Dynamic Odds Injector:
+
+```bash
+# Step 1: Generate dynamic odds
+python scripts/dynamic_odds_injector.py
+
+# Step 2: Run paper trading simulation
+python scripts/paper_trader.py --date 20240315 --results_source stub
+```
+
+### Best Practices
+
+- Start with small bet sizes to test strategy viability
+- Run simulations across multiple dates to identify patterns
+- Monitor the `roi` metric in daily summaries
+- Use `--results_source api` for live data testing (requires API key)
