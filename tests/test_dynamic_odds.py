@@ -89,11 +89,11 @@ class TestDynamicOddsInjector:
         """Test season phase detection."""
         # Mock different months
         test_cases = [
-            (7, "preseason"),
-            (10, "early_season"),
-            (12, "mid_season"),
-            (3, "late_season"),
-            (5, "playoffs")
+            (4, "preseason"),
+            (6, "mid_season"),
+            (8, "late_season"),
+            (9, "playoffs"),
+            (12, "default")  # Off-season
         ]
         
         for month, expected_phase in test_cases:

@@ -87,21 +87,21 @@ class DynamicOddsInjector:
         return min(max(0, fractional_kelly), 0.1)
     
     def get_current_phase(self):
-        """Determine current NBA season phase based on date."""
+        """Determine current WNBA season phase based on date."""
         month = datetime.now().month
         
-        if month in [7, 8, 9]:
+        if month == 4 or (month == 5 and datetime.now().day <= 15):
             return "preseason"
-        elif month == 10 or (month == 11 and datetime.now().day <= 15):
+        elif month == 5 and datetime.now().day > 15:
             return "early_season"
-        elif month in [11, 12, 1]:
+        elif month in [6, 7]:
             return "mid_season"
-        elif month in [2, 3]:
+        elif month == 8:
             return "late_season"
-        elif month in [4, 5, 6]:
+        elif month in [9, 10]:
             return "playoffs"
         else:
-            return "default"
+            return "default"  # Off-season (Nov-Mar)
     
     def load_data(self):
         """Load predictions and odds data from CSV files."""
