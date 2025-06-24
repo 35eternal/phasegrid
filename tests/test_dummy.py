@@ -1,4 +1,4 @@
-﻿print("Starting test_dummy.py")
+print("Starting test_dummy.py")
 
 def test_dummy():
     print("Running test_dummy")
@@ -15,3 +15,4 @@ if __name__ == "__main__":
     test_dummy()
     test_basic_math()
     print("All tests passed!")
+
