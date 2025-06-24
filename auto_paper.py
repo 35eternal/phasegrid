@@ -1,3 +1,8 @@
+﻿
+# Production hardened imports
+from auth.sheets_auth import get_sheets_service
+from api_clients.results_api import get_results_api_client
+
 #!/usr/bin/env python3
 """
 Enhanced Auto Paper Script for PhaseGrid
@@ -100,7 +105,7 @@ class EnhancedAutoPaper:
                 )
             
             self.sheet_service = build('sheets', 'v4', credentials=credentials)
-            logger.info("✅ Google Sheets service initialized")
+            logger.info("âœ… Google Sheets service initialized")
             
         except Exception as e:
             logger.error(f"Failed to initialize Google Sheets: {e}")
@@ -147,9 +152,9 @@ class EnhancedAutoPaper:
     def fetch_live_lines(self, league: str = "NBA") -> List[Dict]:
         """Fetch live lines from PrizePicks"""
         try:
-            logger.info(f"📡 Fetching live {league} lines from PrizePicks...")
+            logger.info(f"ðŸ“¡ Fetching live {league} lines from PrizePicks...")
             _, slips = self.prizepicks_client.fetch_current_board(league=league)
-            logger.info(f"✅ Fetched {len(slips)} live lines")
+            logger.info(f"âœ… Fetched {len(slips)} live lines")
             return slips
         except Exception as e:
             logger.error(f"Failed to fetch live lines: {e}")
@@ -274,7 +279,7 @@ class EnhancedAutoPaper:
             updated_cells = result.get('updates', {}).get('updatedCells', 0)
             updated_rows = len(new_slips)
             
-            logger.info(f"✅ Pushed {updated_rows} new slips, skipped {skipped_count} existing")
+            logger.info(f"âœ… Pushed {updated_rows} new slips, skipped {skipped_count} existing")
             
             return {
                 "updated": updated_rows,
@@ -290,10 +295,10 @@ class EnhancedAutoPaper:
         """Main execution flow"""
         try:
             logger.info("=" * 50)
-            logger.info(f"🚀 PHASEGRID AUTO PAPER - Batch: {self.batch_id}")
-            logger.info(f"📅 Date: {datetime.date.today()}")
-            logger.info(f"🏀 League: {league}")
-            logger.info(f"🔴 Dry Run: {self.dry_run}")
+            logger.info(f"ðŸš€ PHASEGRID AUTO PAPER - Batch: {self.batch_id}")
+            logger.info(f"ðŸ“… Date: {datetime.date.today()}")
+            logger.info(f"ðŸ€ League: {league}")
+            logger.info(f"ðŸ”´ Dry Run: {self.dry_run}")
             logger.info("=" * 50)
             
             # Initialize services
@@ -306,14 +311,14 @@ class EnhancedAutoPaper:
             
             # Generate and merge slips
             slips = self.merge_with_projections(live_lines)
-            logger.info(f"📋 Generated {len(slips)} total slips")
+            logger.info(f"ðŸ“‹ Generated {len(slips)} total slips")
             
             # Push to sheets
             result = self.push_to_sheets(slips)
             
             # Summary
             logger.info("=" * 50)
-            logger.info("📊 SUMMARY:")
+            logger.info("ðŸ“Š SUMMARY:")
             logger.info(f"  - Total slips: {len(slips)}")
             logger.info(f"  - New slips added: {result['updated']}")
             logger.info(f"  - Duplicate slips skipped: {result['skipped']}")
@@ -329,7 +334,7 @@ class EnhancedAutoPaper:
             }
             
         except Exception as e:
-            logger.error(f"💥 Auto paper failed: {e}")
+            logger.error(f"ðŸ’¥ Auto paper failed: {e}")
             raise
 
 
