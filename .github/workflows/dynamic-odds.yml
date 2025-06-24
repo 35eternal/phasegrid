@@ -1,0 +1,66 @@
+﻿name: Dynamic Odds Injector
+
+on:
+  schedule:
+    # Run daily at 12:00 ET (17:00 UTC)
+    - cron: '0 17 * * *'
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  calculate-wagers:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        ref: main
+    
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Cache pip dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Run Dynamic Odds Injector
+      env:
+        KELLY_FRACTION: ${{ vars.KELLY_FRACTION || '0.25' }}
+        BANKROLL: ${{ vars.BANKROLL || '1000' }}
+        MIN_EDGE: ${{ vars.MIN_EDGE || '0.02' }}
+        PHASE_CONFIG_PATH: ${{ vars.PHASE_CONFIG_PATH || 'config/phase_config.json' }}
+      run: |
+        python scripts/dynamic_odds_injector.py
+    
+    - name: Upload bets CSV as artifact
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: bets-${{ github.run_id }}
+        path: bets_*.csv
+        retention-days: 30
+    
+    - name: Create issue on failure
+      if: failure()
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const date = new Date().toISOString().split('T')[0];
+          github.rest.issues.create({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            title: `Dynamic Odds Injector Failed - ${date}`,
+            body: `The Dynamic Odds Injector workflow failed on ${date}.\n\nWorkflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}\n\nPlease check if predictions and odds files are available.`,
+            labels: ['bug', 'automated']
+          })
