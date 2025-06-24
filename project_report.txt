@@ -1,0 +1,793 @@
+﻿=== PROJECT STRUCTURE REPORT ===
+Generated on: 06/24/2025 08:21:13
+
+Current Location:
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor
+
+Git Status:
+On branch feat/production-hardening Changes not staged for commit:   (use "git add <file>..." to update what will be committed)   (use "git restore <file>..." to discard changes in working directory) 	modified:   .coverage 	modified:   .env 	modified:   modules/__pycache__/slip_optimizer.cpython-313.pyc 	modified:   scripts/__pycache__/__init__.cpython-313.pyc 	modified:   scripts/__pycache__/paper_trader.cpython-313.pyc 	modified:   scripts/__pycache__/repair_sheets.cpython-313.pyc 	modified:   scripts/__pycache__/repo_audit.cpython-313.pyc 	modified:   scripts/__pycache__/update_results.cpython-313.pyc 	modified:   scripts/__pycache__/verify_sheets.cpython-313.pyc 	modified:   tests/__pycache__/test_bankroll_optimizer.cpython-313-pytest-8.4.1.pyc 	modified:   tests/__pycache__/test_basic.cpython-313-pytest-8.4.1.pyc 	modified:   tests/__pycache__/test_comprehensive.cpython-313-pytest-8.4.1.pyc 	modified:   tests/__pycache__/test_connection.cpython-313-pytest-8.4.1.pyc 	modified:   tests/__pycache__/test_repair_sheets.cpython-313-pytest-8.4.1.pyc 	modified:   tests/__pycache__/test_result_ingestion.cpython-313-pytest-8.4.1.pyc 	modified:   tests/__pycache__/test_scripts.cpython-313-pytest-8.4.1.pyc 	modified:   tests/__pycache__/test_slip_optimizer.cpython-313-pytest-8.4.1.pyc 	modified:   tests/test_production_hardening.py  Untracked files:   (use "git add <file>..." to include in what will be committed) 	.env.backup 	auto_paper.py.backup_manual 	phasegrid/ 	tests/test_production_hardening.py.backup  no changes added to commit (use "git add" and/or "git commit -a")
+
+Git Remote:
+origin	https://github.com/35eternal/phasegrid.git (fetch) origin	https://github.com/35eternal/phasegrid.git (push)
+
+Main Files and Folders:
+
+Name                                    Mode   Length
+----                                    ----   ------
+.github                                 d-----       
+.pytest_cache                           d-----       
+.vscode                                 d-----       
+alerts                                  d-----       
+archived_cards                          d-----       
+archived_results                        d-----       
+backup_before_hardening                 d-----       
+checklists                              d-----       
+config                                  d-----       
+connection                              d-----       
+core                                    d-----       
+credentials                             d-----       
+data                                    d-----       
+dev                                     d-----       
+docs                                    d-----       
+htmlcov                                 d-----       
+input                                   d-----       
+logs                                    d-----       
+models                                  d-----       
+modules                                 d-----       
+odds_provider                           d-----       
+optimization                            d-----       
+output                                  d-----       
+phasegrid                               d-----       
+phase_logs                              d-----       
+predictions                             d-----       
+scripts                                 d-----       
+tests                                   d-----       
+__pycache__                             d-----       
+.coverage                               -a---- 86016 
+.DS_Store                               -a---- 6148  
+.env                                    -a---- 465   
+.env.backup                             -a---- 137   
+.env.example                            -a---- 1784  
+.gitignore                              -a---- 172   
+.python-version                         -a---- 7     
+add_phase_data.py                       -a---- 4512  
+alert_system.py                         -a---- 9568  
+analyze_bias.py                         -a---- 2852  
+analyze_bias_fixed.py                   -a---- 3251  
+analyze_props.py                        -a---- 1314  
+auto_paper.py                           -a---- 15020 
+auto_paper.py.backup_manual             -a---- 15020 
+auto_paper_backup.py                    -a---- 3335  
+auto_paper_old.py                       -a---- 3335  
+backfill.py                             -a---- 10016 
+backtest_detailed.csv                   -a---- 40916 
+bankroll_optimizer.py                   -a---- 120   
+betting_analyzer.py                     -a---- 2528  
+betting_dashboard.json                  -a---- 192   
+betting_dashboard.py                    -a---- 2690  
+betting_opportunities.csv               -a---- 583   
+check_columns.py                        -a---- 453   
+check_dates.py                          -a---- 390   
+check_results.py                        -a---- 545   
+check_scripts.py                        -a---- 1034  
+check_sheet_status.py                   -a---- 1773  
+chunking_instructions.txt               -a---- 1054  
+chunking_patch.txt                      -a---- 1043  
+config.py                               -a---- 1268  
+create_safe_card.py                     -a---- 661   
+create_slips_log.py                     -a---- 851   
+credentials.json                        -a---- 2373  
+cycle_analysis_relaxed.csv              -a---- 2597  
+cycle_analysis_results.csv              -a---- 576   
+cycle_betting_guide.csv                 -a---- 463   
+cycle_betting_system.py                 -a---- 6460  
+cycle_detector.py                       -a---- 15976 
+cycle_detector_fixed.py                 -a---- 15991 
+cycle_patterns.json                     -a---- 1547  
+cycle_pattern_summary.py                -a---- 3772  
+daily_betting.py                        -a---- 5315  
+daily_betting_card.csv                  -a---- 4496  
+daily_betting_card_adjusted.csv         -a---- 4757  
+daily_betting_card_fixed.csv            -a---- 4757  
+dashboard_fix_instructions.txt          -a---- 433   
+debug_alt_1878.json                     -a---- 3389  
+debug_alt_4074.json                     -a---- 19771 
+debug_audit.py                          -a---- 3364  
+debug_playbyplay_401736112.json         -a---- 2     
+debug_push.py                           -a---- 1049  
+debug_summary_401736112.json            -a---- 701926
+diagnose_data.py                        -a---- 1371  
+enhanced_cycle_detector.py              -a---- 14679 
+enhanced_cycle_results.csv              -a---- 40916 
+enhanced_cycle_results_top_patterns.csv -a---- 2444  
+expanded_wnba_scraper.py                -a---- 15159 
+final_backtester.py                     -a---- 17725 
+final_working_scraper.py                -a---- 11184 
+find_right_gamelogs.py                  -a---- 2083  
+fixed_working_backtester.py             -a---- 17366 
+fix_betting_card.py                     -a---- 791   
+fix_empty_rows.py                       -a---- 1232  
+fix_json_files.py                       -a---- 2475  
+fix_legacy_tests.py                     -a---- 2046  
+fix_payout_config.py                    -a---- 2787  
+fix_settings_method.txt                 -a---- 2367  
+generate_real_slips.py                  -a---- 6708  
+generate_sample_betting_card.py         -a---- 5458  
+generate_slips_final.py                 -a---- 8518  
+generate_slips_fixed.py                 -a---- 7037  
+live_gamelog_ingestion.py               -a---- 16793 
+live_ingestion.log                      -a---- 66325 
+live_odds.csv                           -a---- 3193  
+live_odds_matched.csv                   -a---- 3193  
+paper_trader.py                         -a---- 7873  
+performance_dashboard.py                -a---- 2038  
+phase_confidence_tracker.py             -a---- 11561 
+phase_results_tracker.csv               -a---- 3357  
+phase_risk_adapter.py                   -a---- 9389  
+phase_threshold_calculator.py           -a---- 5508  
+pipeline.py                             -a---- 1261  
+place_bets.py                           -a---- 702   
+premium_bet_alerts.txt                  -a---- 342   
+push_method_fix.txt                     -a---- 1812  
+pytest.ini                              -a---- 755   
+pytest_backup.ini                       -a---- 84    
+QUICKSTART.md                           -a---- 17988 
+QUICKSTART_backup.md                    -a---- 17988 
+QUICKSTART_old.md                       -a---- 1696  
+quick_backtest_test.py                  -a---- 5335  
+quick_fix.py                            -a---- 3367  
+README.md                               -a---- 1897  
+real_roi.py                             -a---- 1444  
+requirements.txt                        -a---- 618   
+requirements_minimal.txt                -a---- 146   
+requirements_old.txt                    -a---- 411   
+robust_backtest.py                      -a---- 3660  
+run_backtest.py                         -a---- 5046  
+run_backtest_fixed.py                   -a---- 4150  
+run_betting_workflow.py                 -a---- 115   
+run_betting_workflow_clean.py           -a---- 11457 
+run_enhanced_pipeline.py                -a---- 1214  
+run_enhancement.py                      -a---- 906   
+run_tests.py                            -a---- 1872  
+setup.bat                               -a---- 1175  
+setup.py                                -a---- 1189  
+setup_config.py                         -a---- 2046  
+setup_cycle_detector.py                 -a---- 19100 
+sheet_connector.py                      -a---- 7006  
+simple_backtester.py                    -a---- 10066 
+simple_diagnostic.py                    -a---- 3843  
+slips_generator.py                      -a---- 11234 
+slips_generator_backup.py               -a---- 948   
+slip_optimizer.py                       -a---- 17798 
+table_structure_debug.py                -a---- 3768  
+test_config.py                          -a---- 816   
+test_existing_backtester.py             -a---- 6789  
+test_lines.py                           -a---- 1756  
+test_sheets_connection.py               -a---- 1707  
+TEST_STATUS.md                          -a---- 1124  
+test_wnba_ingestion.py                  -a---- 3903  
+upcoming_cycle_bets.csv                 -a---- 514   
+update_phase_performance.py             -a---- 12795 
+update_results.py                       -a---- 20546 
+validate_cycles.py                      -a---- 1205  
+validation_template.py                  -a---- 930   
+verify_setup.py                         -a---- 1137  
+verify_sheets_actual.py                 -a---- 8972  
+wnba_basketball_ref_scraper.py          -a---- 15506 
+wnba_debug_test.py                      -a---- 3851  
+wnba_fixed_scraper.py                   -a---- 11603 
+working_backtester.py                   -a---- 14606 
+working_wnba_ingestion.py               -a---- 3902  
+
+
+
+
+Python Files Found:
+
+FullName                                                                                                                       
+--------                                                                                                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\add_phase_data.py                                                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\alert_system.py                                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\analyze_bias.py                                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\analyze_bias_fixed.py                                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\analyze_props.py                                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\auto_paper.py                                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\auto_paper_backup.py                                               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\auto_paper_old.py                                                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\backfill.py                                                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\bankroll_optimizer.py                                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\betting_analyzer.py                                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\betting_dashboard.py                                               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\check_columns.py                                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\check_dates.py                                                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\check_results.py                                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\check_scripts.py                                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\check_sheet_status.py                                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\config.py                                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\create_safe_card.py                                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\create_slips_log.py                                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\cycle_betting_system.py                                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\cycle_detector.py                                                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\cycle_detector_fixed.py                                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\cycle_pattern_summary.py                                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\daily_betting.py                                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\debug_audit.py                                                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\debug_push.py                                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\diagnose_data.py                                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\enhanced_cycle_detector.py                                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\expanded_wnba_scraper.py                                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\final_backtester.py                                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\final_working_scraper.py                                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\find_right_gamelogs.py                                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\fixed_working_backtester.py                                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\fix_betting_card.py                                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\fix_empty_rows.py                                                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\fix_json_files.py                                                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\fix_legacy_tests.py                                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\fix_payout_config.py                                               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\generate_real_slips.py                                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\generate_sample_betting_card.py                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\generate_slips_final.py                                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\generate_slips_fixed.py                                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\live_gamelog_ingestion.py                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\paper_trader.py                                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\performance_dashboard.py                                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phase_confidence_tracker.py                                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phase_risk_adapter.py                                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phase_threshold_calculator.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\pipeline.py                                                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\place_bets.py                                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\quick_backtest_test.py                                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\quick_fix.py                                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\real_roi.py                                                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\robust_backtest.py                                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\run_backtest.py                                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\run_backtest_fixed.py                                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\run_betting_workflow.py                                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\run_betting_workflow_clean.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\run_enhanced_pipeline.py                                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\run_enhancement.py                                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\run_tests.py                                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\setup.py                                                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\setup_config.py                                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\setup_cycle_detector.py                                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\sheet_connector.py                                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\simple_backtester.py                                               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\simple_diagnostic.py                                               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\slips_generator.py                                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\slips_generator_backup.py                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\slip_optimizer.py                                                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\table_structure_debug.py                                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\test_config.py                                                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\test_existing_backtester.py                                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\test_lines.py                                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\test_sheets_connection.py                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\test_wnba_ingestion.py                                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\update_phase_performance.py                                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\update_results.py                                                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\validate_cycles.py                                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\validation_template.py                                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\verify_setup.py                                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\verify_sheets_actual.py                                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\wnba_basketball_ref_scraper.py                                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\wnba_debug_test.py                                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\wnba_fixed_scraper.py                                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\working_backtester.py                                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\working_wnba_ingestion.py                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\alerts\notifier.py                                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\alerts\sms_notifier.py                                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\alerts\__init__.py                                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\backup_before_hardening\auto_paper.py                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\backup_before_hardening\prizepicks.py                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\backup_before_hardening\result_grader.py                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\backup_before_hardening\scripts_auto_paper.py                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\backup_before_hardening\slips_generator.py                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\connection\test_verify_sheets.py                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\core\analyzer.py                                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\core\analyzer_v2.py                                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\core\analzer_v2.py                                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\core\backtester.py                                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\core\batch_player_mapper.py                                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\core\betting_integration.py                                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\core\cycle_detector.py                                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\core\cycle_dip_detector.py                                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\core\edge_tracker.py                                               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\core\enhanced_analyzer.py                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\core\gamelog.py                                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\core\mapper.py                                                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\core\performance_cycle_detector.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\core\prediction_engine.py                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\core\prop_value_analyzer.py                                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\core\scraper.py                                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\core\scraper_backup.py                                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\core\utils.py                                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\core\volatility_analyzer.py                                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\core\__init__.py                                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\dev\finish_reorganization.py                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\dev\reorganize_project.py                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\dev\__init__.py                                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\dev\debug\capture_network_debug.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\dev\debug\parse_debug_jsons.py                                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\models\features.py                                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\models\__init__.py                                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\modules\bankroll_optimizer.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\modules\sheet_connector.py                                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\modules\slip_optimizer.py                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\modules\utils.py                                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\modules\wnba_betting_modules.py                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\modules\__init__.py                                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\odds_provider\prizepicks.py                                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\odds_provider\prizepicks_old.py                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\optimization\test_sheet_connector.py                               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\add_phase_data.py                                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\alert_system.py                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\analyze_bias.py                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\analyze_bias_fixed.py                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\analyze_props.py                                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\auto_paper.py                                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\auto_paper_backup.py                                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\backfill.py                                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\bankroll_optimizer.py                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\betting_analyzer.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\betting_dashboard.py                                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\check_columns.py                                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\check_dates.py                                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\check_results.py                                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\check_scripts.py                                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\check_sheet_status.py                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\config.py                                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\create_safe_card.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\create_slips_log.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\cycle_betting_system.py                                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\cycle_detector.py                                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\cycle_detector_fixed.py                                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\cycle_pattern_summary.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\daily_betting.py                                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\debug_audit.py                                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\debug_push.py                                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\diagnose_data.py                                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\enhanced_cycle_detector.py                               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\expanded_wnba_scraper.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\final_backtester.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\final_working_scraper.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\find_right_gamelogs.py                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\fixed_working_backtester.py                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\fix_betting_card.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\fix_empty_rows.py                                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\fix_json_files.py                                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\fix_legacy_tests.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\fix_payout_config.py                                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\generate_real_slips.py                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\generate_sample_betting_card.py                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\generate_slips_final.py                                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\generate_slips_fixed.py                                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\live_gamelog_ingestion.py                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\paper_trader.py                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\performance_dashboard.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\phase_confidence_tracker.py                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\phase_risk_adapter.py                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\phase_threshold_calculator.py                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\pipeline.py                                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\place_bets.py                                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\quick_backtest_test.py                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\quick_fix.py                                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\real_roi.py                                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\robust_backtest.py                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\run_backtest.py                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\run_backtest_fixed.py                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\run_betting_workflow.py                                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\run_betting_workflow_clean.py                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\run_enhanced_pipeline.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\run_enhancement.py                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\run_tests.py                                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\setup.py                                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\setup_config.py                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\setup_cycle_detector.py                                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\sheet_connector.py                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\simple_backtester.py                                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\simple_diagnostic.py                                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\slips_generator.py                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\slips_generator_backup.py                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\slip_optimizer.py                                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\table_structure_debug.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\test_existing_backtester.py                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\test_lines.py                                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\test_sheets_connection.py                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\test_wnba_ingestion.py                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\update_phase_performance.py                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\update_results.py                                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\validate_cycles.py                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\validation_template.py                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\verify_setup.py                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\verify_sheets_actual.py                                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\wnba_basketball_ref_scraper.py                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\wnba_debug_test.py                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\wnba_fixed_scraper.py                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\working_backtester.py                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\working_wnba_ingestion.py                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\alerts\notifier.py                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\alerts\sms_notifier.py                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\alerts\__init__.py                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\connection\test_verify_sheets.py                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\core\analyzer.py                                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\core\analyzer_v2.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\core\analzer_v2.py                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\core\backtester.py                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\core\batch_player_mapper.py                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\core\betting_integration.py                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\core\cycle_detector.py                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\core\cycle_dip_detector.py                               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\core\edge_tracker.py                                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\core\enhanced_analyzer.py                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\core\gamelog.py                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\core\mapper.py                                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\core\performance_cycle_detector.py                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\core\prediction_engine.py                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\core\prop_value_analyzer.py                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\core\scraper.py                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\core\scraper_backup.py                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\core\utils.py                                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\core\volatility_analyzer.py                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\core\__init__.py                                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\dev\finish_reorganization.py                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\dev\reorganize_project.py                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\dev\__init__.py                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\dev\debug\capture_network_debug.py                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\dev\debug\parse_debug_jsons.py                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\models\features.py                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\models\__init__.py                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\modules\bankroll_optimizer.py                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\modules\sheet_connector.py                               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\modules\slip_optimizer.py                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\modules\utils.py                                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\modules\wnba_betting_modules.py                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\modules\__init__.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\optimization\test_sheet_connector.py                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\analyze_performance.py                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\automate_daily_run.py                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\automate_daily_run_backup.py                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\auto_paper.py                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\betting_dashboard_simple.py                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\check_player_names.py                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\check_prizepicks_data.py                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\create_matched_odds.py                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\daily_analysis_pipeline.py                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\daily_betting_dashboard.py                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\find_all_props_files.py                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\find_prizepicks_files.py                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\fix_bets_log.py                                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\fix_bom.py                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\fix_headers.py                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\fix_settings.py                                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\generate_live_odds.py                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\paper_trader.py                                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\parse_large_prizepicks.py                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\parse_raw_prizepicks.py                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\phase_risk_analyzer.py                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\player_name_mapper.py                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\repair_sheets.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\repo_audit.py                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\result_grader.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\result_grader_backup.py                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\simple_audit.py                                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\simple_parse_prizepicks.py                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\simple_view_props.py                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\update_results.py                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\validate_betting_system.py                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\verify_sheets.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\view_current_props.py                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\__init__.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\analysis\analyze_gamelog.py                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\analysis\predict_all_players.py                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\analysis\train_model.py                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\analysis\visualize_player.py                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data\boost_dataset.py                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data\build_multi_player_dataset.py               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data\build_player_directory.py                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data\build_unified_gamelog_dataset.py            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data\debug_espn_response.py                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data\fetch_all_gamelogs.py                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data\fetch_bref_gamelogs_2024.py                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data\fetch_game_logs.py                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data\fetch_mapped_gamelogs.py                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data\fetch_wnba_gamelogs.py                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data\fetch_wnba_game_logs_2025.py                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data\fetch_wnba_players.py                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data\inspect_data.py                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data\live_gamelog_ingestion.py                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data\merge_props_with_players.py                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data\merge_props_with_player_map.py              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data\patch_minutes.py                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data\prep_wnba_gamelogs.py                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data\run_batch_fetch.py                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data\run_fetch.py                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\data_prep\add_actual_results.py                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\debugging\check_players.py                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\debugging\debug_basketball_reference.py          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\debugging\debug_columns.py                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\debugging\debug_gamelog_urls.py                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\debugging\debug_list_projection_teams.py         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\debugging\debug_player_mapping.py                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\debugging\debug_playwright_cards.py              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\debugging\debug_prizepicks_players.py            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\debugging\debug_raw_prizepicks.py                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\debugging\debug_search_wnba_names.py             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\debugging\inspect_columns.py                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\debugging\inspect_data.py                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\debugging\inspect_raw_json.py                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\debugging\manual_player_lookup.py                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\debugging\print_player_names.py                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\debugging\test_player_api.py                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\evaluation\analyze_prop_value.py                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\evaluation\batch_predict_props.py                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\evaluation\evaluate_props.py                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\evaluation\predict_prop_value.py                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\evaluation\validate_cycle_predictions.py         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\experiments\cache_player_html.py                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\experiments\dump_all_scripts_from_html.py        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\experiments\load_clark_html.py                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\experiments\parse_game_logs.py                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\experiments\parse_prizepicks_html.py             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\experiments\parse_prizepicks_json.py             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\experiments\parse_prizepicks_props.py            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\experiments\parse_raw_html_prizepicks.py         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\experiments\parse_script_22.py                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\experiments\scrape_prizepicks.py                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\features\features.py                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\features\feature_engineering.py                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\features\model_features.py                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\intelligence\advanced_cycle_modeling.py          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\intelligence\corrected_analysis.py               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\intelligence\cycle_performance_analysis.py       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\intelligence\cycle_risk_backtest.py              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\intelligence\diagnostic_cycle_props.py           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\intelligence\finalize_advanced_props.py          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\intelligence\fix_risk_tags.py                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\intelligence\generate_betting_slip.py            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\intelligence\menstrual_phase_estimator.py        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\intelligence\menstrual_phase_estimator_v2.py     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\intelligence\menstrual_phase_estimator_v2_corr...
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\intelligence\props_cycle_merger.py               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\intelligence\rolling_performance_trend.py        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\mapping\auto_build_final_player_map.py           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\mapping\auto_map_players.py                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\mapping\build_final_player_map.py                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\mapping\build_prizepicks_name_map.py             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\mapping\build_prizepicks_player_map.py           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\mapping\enhanced_player_mapping.py               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\mapping\extract_players_from_gamelogs.py         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\mapping\fix_mapping_csv.py                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\mapping\map_player_names.py                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\mapping\map_prizepicks_names.py                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\mapping\player_intelligence.py                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\mapping\prop_mapper.py                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\mapping\run_full_mapping.py                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\mapping\scrape_bbref_players.py                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\mapping\scrape_wnba_rosters.py                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\prediction\aggressive_trap_detector.py           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\prediction\filter_extreme_props.py               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\prediction\prepare_clean_props.py                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\prediction\run_prop_predictions.py               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\prediction\updated_betting_strategy.py           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\prediction\verify_trap_props.py                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\scraping\api_prizepicks_scraper.py               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\scraping\auto_scrape_prizepicks.py               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\scraping\fetch_and_parse_prizepicks.py           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\scraping\fetch_game_logs_playwright.py           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\scraping\fetch_prizepicks_player_ids.py          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\scraping\fetch_prizepicks_player_map.py          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\scraping\fetch_prizepicks_props.py               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\scraping\fetch_wnba_stats_api.py                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\scraping\fixed_wnba_scraper.py                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\scraping\intercept_and_save_prizepicks.py        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\scraping\playwright_scrape_names.py              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\scraping\rate_limit_aware_scraper.py             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\scraping\scrape_prizepicks_names.py              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\scraping\scrape_prizepicks_player_map.py         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\scraping\scrape_prizepicks_props.py              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\scraping\scrape_prizepicks_wnba_props.py         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\scraping\scrape_slates_and_props.py              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\scraping\scrape_wnba_props_fixed.py              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\scraping\simple_prizepicks_scraper.py            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\scraping\wnba_prizepicks_scraper.py              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\strategy\backtest_engine.py                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\strategy\bankroll_optimizer.py                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\tools\odds_scraper_stub.py                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\tools\phase_multiplier_engine.py                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\tools\phase_risk_adapter.py                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\tools\streamlit_dashboard.py                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\utilities\checklist_generator.py                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\utilities\confidence_visualizer.py               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\utilities\folder_prep.py                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\scripts\utilities\log_integrity_check.py                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\tests\test_alerts.py                                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\tests\test_bankroll_optimizer.py                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\tests\test_basic.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\tests\test_comprehensive.py                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\tests\test_connection.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\tests\test_dummy.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\tests\test_repair_sheets.py                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\tests\test_result_ingestion.py                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\tests\test_scripts.py                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\tests\test_slips_generator.py                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\phasegrid\tests\test_slip_optimizer.py                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\analyze_performance.py                                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\automate_daily_run.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\automate_daily_run_backup.py                               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\auto_paper_old.py                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\betting_dashboard_simple.py                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\check_player_names.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\check_prizepicks_data.py                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\create_matched_odds.py                                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\daily_analysis_pipeline.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\daily_betting_dashboard.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\find_all_props_files.py                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\find_prizepicks_files.py                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\fix_bets_log.py                                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\fix_bom.py                                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\fix_headers.py                                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\fix_settings.py                                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\generate_live_odds.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\paper_trader.py                                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\parse_large_prizepicks.py                                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\parse_raw_prizepicks.py                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\phase_risk_analyzer.py                                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\player_name_mapper.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\repair_sheets.py                                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\repo_audit.py                                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\result_grader.py                                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\result_grader_backup.py                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\result_grader_old.py                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\simple_audit.py                                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\simple_parse_prizepicks.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\simple_view_props.py                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\update_results.py                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\validate_betting_system.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\verify_sheets.py                                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\view_current_props.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\__init__.py                                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\analysis\analyze_gamelog.py                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\analysis\predict_all_players.py                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\analysis\train_model.py                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\analysis\visualize_player.py                               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data\boost_dataset.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data\build_multi_player_dataset.py                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data\build_player_directory.py                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data\build_unified_gamelog_dataset.py                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data\debug_espn_response.py                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data\fetch_all_gamelogs.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data\fetch_bref_gamelogs_2024.py                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data\fetch_game_logs.py                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data\fetch_mapped_gamelogs.py                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data\fetch_wnba_gamelogs.py                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data\fetch_wnba_game_logs_2025.py                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data\fetch_wnba_players.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data\inspect_data.py                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data\live_gamelog_ingestion.py                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data\merge_props_with_players.py                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data\merge_props_with_player_map.py                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data\patch_minutes.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data\prep_wnba_gamelogs.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data\run_batch_fetch.py                                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data\run_fetch.py                                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\data_prep\add_actual_results.py                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\debugging\check_players.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\debugging\debug_basketball_reference.py                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\debugging\debug_columns.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\debugging\debug_gamelog_urls.py                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\debugging\debug_list_projection_teams.py                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\debugging\debug_player_mapping.py                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\debugging\debug_playwright_cards.py                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\debugging\debug_prizepicks_players.py                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\debugging\debug_raw_prizepicks.py                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\debugging\debug_search_wnba_names.py                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\debugging\inspect_columns.py                               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\debugging\inspect_data.py                                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\debugging\inspect_raw_json.py                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\debugging\manual_player_lookup.py                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\debugging\print_player_names.py                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\debugging\test_player_api.py                               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\evaluation\analyze_prop_value.py                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\evaluation\batch_predict_props.py                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\evaluation\evaluate_props.py                               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\evaluation\predict_prop_value.py                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\evaluation\validate_cycle_predictions.py                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\experiments\cache_player_html.py                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\experiments\dump_all_scripts_from_html.py                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\experiments\load_clark_html.py                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\experiments\parse_game_logs.py                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\experiments\parse_prizepicks_html.py                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\experiments\parse_prizepicks_json.py                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\experiments\parse_prizepicks_props.py                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\experiments\parse_raw_html_prizepicks.py                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\experiments\parse_script_22.py                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\experiments\scrape_prizepicks.py                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\features\features.py                                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\features\feature_engineering.py                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\features\model_features.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\intelligence\advanced_cycle_modeling.py                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\intelligence\corrected_analysis.py                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\intelligence\cycle_performance_analysis.py                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\intelligence\cycle_risk_backtest.py                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\intelligence\diagnostic_cycle_props.py                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\intelligence\finalize_advanced_props.py                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\intelligence\fix_risk_tags.py                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\intelligence\generate_betting_slip.py                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\intelligence\menstrual_phase_estimator.py                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\intelligence\menstrual_phase_estimator_v2.py               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\intelligence\menstrual_phase_estimator_v2_corrected.py     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\intelligence\props_cycle_merger.py                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\intelligence\rolling_performance_trend.py                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\mapping\auto_build_final_player_map.py                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\mapping\auto_map_players.py                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\mapping\build_final_player_map.py                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\mapping\build_prizepicks_name_map.py                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\mapping\build_prizepicks_player_map.py                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\mapping\enhanced_player_mapping.py                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\mapping\extract_players_from_gamelogs.py                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\mapping\fix_mapping_csv.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\mapping\map_player_names.py                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\mapping\map_prizepicks_names.py                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\mapping\player_intelligence.py                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\mapping\prop_mapper.py                                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\mapping\run_full_mapping.py                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\mapping\scrape_bbref_players.py                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\mapping\scrape_wnba_rosters.py                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\prediction\aggressive_trap_detector.py                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\prediction\filter_extreme_props.py                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\prediction\prepare_clean_props.py                          
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\prediction\run_prop_predictions.py                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\prediction\updated_betting_strategy.py                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\prediction\verify_trap_props.py                            
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\scraping\api_prizepicks_scraper.py                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\scraping\auto_scrape_prizepicks.py                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\scraping\fetch_and_parse_prizepicks.py                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\scraping\fetch_game_logs_playwright.py                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\scraping\fetch_prizepicks_player_ids.py                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\scraping\fetch_prizepicks_player_map.py                    
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\scraping\fetch_prizepicks_props.py                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\scraping\fetch_wnba_stats_api.py                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\scraping\fixed_wnba_scraper.py                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\scraping\intercept_and_save_prizepicks.py                  
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\scraping\playwright_scrape_names.py                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\scraping\rate_limit_aware_scraper.py                       
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\scraping\scrape_prizepicks_names.py                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\scraping\scrape_prizepicks_player_map.py                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\scraping\scrape_prizepicks_props.py                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\scraping\scrape_prizepicks_wnba_props.py                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\scraping\scrape_slates_and_props.py                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\scraping\scrape_wnba_props_fixed.py                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\scraping\simple_prizepicks_scraper.py                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\scraping\wnba_prizepicks_scraper.py                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\strategy\backtest_engine.py                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\strategy\bankroll_optimizer.py                             
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\tools\odds_scraper_stub.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\tools\phase_multiplier_engine.py                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\tools\phase_risk_adapter.py                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\tools\streamlit_dashboard.py                               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\utilities\checklist_generator.py                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\utilities\confidence_visualizer.py                         
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\utilities\folder_prep.py                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\scripts\utilities\log_integrity_check.py                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\tests\test_alerts.py                                               
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\tests\test_bankroll_optimizer.py                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\tests\test_basic.py                                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\tests\test_comprehensive.py                                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\tests\test_connection.py                                           
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\tests\test_dummy.py                                                
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\tests\test_production_hardening.py                                 
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\tests\test_production_minimal.py                                   
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\tests\test_repair_sheets.py                                        
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\tests\test_result_ingestion.py                                     
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\tests\test_scripts.py                                              
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\tests\test_slips_generator.py                                      
+C:\Users\Soone\Downloads\wnba_predictor copy\wnba_predictor\tests\test_slip_optimizer.py                                       
+
+
+
+
+Current Git Branch:
+feat/production-hardening
+
+Last 5 Git Commits:
+09d5184 feat: production hardening a728e00 fix: add missing Google service account fields and correct retry count 5846dd0 fix: correct test assertions for backfill behavior 44844cc fix: replace corrupted backfill.py with clean version 0496b3b fix: remove remaining merge conflict markers from backfill.py

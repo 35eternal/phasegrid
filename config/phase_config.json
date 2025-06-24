@@ -1,0 +1,9 @@
+﻿{
+  "preseason": 0.3,
+  "early_season": 0.5,
+  "mid_season": 0.8,
+  "late_season": 1.0,
+  "playoffs": 1.2,
+  "default": 0.7,
+  "_comment": "Phase multipliers adjust Kelly fraction based on season timing. Lower values in preseason/early season due to model uncertainty, higher in playoffs when patterns are established."
+}
