@@ -16,7 +16,6 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from auto_paper import EnhancedAutoPaper
 from scripts.result_grader import EnhancedResultGrader
-=======
 """Backfill historical slips for PhaseGrid."""
 
 import argparse
@@ -34,7 +33,6 @@ from slips_generator import generate_slips
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
->>>>>>> 0dbb3630d4f4e32159e9c021f803b927a71d2293
 
 # Configure logging
 logging.basicConfig(
@@ -43,7 +41,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-<<<<<<< HEAD
 
 class HistoricalBackfill:
     """Handles historical data backfilling"""
@@ -252,7 +249,6 @@ Examples:
         '--sheet-id',
         type=str,
         help='Google Sheet ID (overrides SHEET_ID env var)'
-=======
 class SheetManager:
     """Manages Google Sheets operations for backfill."""
     
@@ -479,12 +475,10 @@ def main():
         '--debug',
         action='store_true',
         help='Enable debug logging'
->>>>>>> 0dbb3630d4f4e32159e9c021f803b927a71d2293
     )
     
     args = parser.parse_args()
     
-<<<<<<< HEAD
     # Validate arguments
     if args.no_generate and args.no_grade:
         parser.error("Cannot use both --no-generate and --no-grade")
