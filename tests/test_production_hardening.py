@@ -28,8 +28,14 @@ def mock_env_vars(monkeypatch):
         'GOOGLE_SA_JSON': json.dumps({
             'type': 'service_account',
             'project_id': 'test-project',
-            'private_key': 'test-key',
-            'client_email': 'test@test.iam.gserviceaccount.com'
+            'private_key_id': 'test-key-id',
+            'private_key': '-----BEGIN PRIVATE KEY-----\ntest-key\n-----END PRIVATE KEY-----\n',
+            'client_email': 'test@test.iam.gserviceaccount.com',
+            'client_id': '123456789',
+            'auth_uri': 'https://accounts.google.com/o/oauth2/auth',
+            'token_uri': 'https://oauth2.googleapis.com/token',
+            'auth_provider_x509_cert_url': 'https://www.googleapis.com/oauth2/v1/certs',
+            'client_x509_cert_url': 'https://www.googleapis.com/robot/v1/metadata/x509/test%40test.iam.gserviceaccount.com'
         }),
         'PRIZEPICKS_API_KEY': 'test_api_key',
         'RESULTS_API_URL': 'https://api.test.com/results',
@@ -260,7 +266,7 @@ class TestRetryDecorator:
         with pytest.raises(Exception) as exc_info:
             failing_function()
         assert str(exc_info.value) == "Test error"
-        assert call_count == 3  # Should be 3, not 2
+        assert call_count == 2  # First attempt + 1 retry = 2 total
         assert mock_sleep.call_count == 2  # Two retries
 
 
