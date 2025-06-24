@@ -7,3 +7,7 @@ __pycache__/
 
 # Extra credentials
 credentials*.json
+
+SHEET_ID=REPLACE_ME
+GOOGLE_CREDS=credentials.json
+BANKROLL=10000
