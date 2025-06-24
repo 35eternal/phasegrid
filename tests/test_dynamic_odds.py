@@ -8,7 +8,7 @@ import numpy as np
 import os
 import json
 from datetime import datetime
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch, MagicMock, mock_open
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -46,12 +46,16 @@ def injector():
         'MIN_EDGE': '0.02',
         'PHASE_CONFIG_PATH': 'config/phase_config.json'
     }):
-        # Mock phase config loading
-        with patch('builtins.open', create=True) as mock_open:
-            mock_open.return_value.__enter__.return_value.read.return_value = json.dumps({
-                "mid_season": 0.8,
-                "default": 0.7
-            })
+        # Mock the file open to return proper phase config
+        mock_config = {
+            "preseason": 0.3,
+            "early_season": 0.5,
+            "mid_season": 0.8,
+            "late_season": 1.0,
+            "playoffs": 1.2,
+            "default": 0.7
+        }
+        with patch('builtins.open', mock_open(read_data=json.dumps(mock_config))):
             return DynamicOddsInjector()
 
 
@@ -122,15 +126,15 @@ class TestDynamicOddsInjector:
         """Test bankroll constraint enforcement."""
         # Create scenario where total wagers exceed bankroll
         large_bets_df = pd.DataFrame({
-            'player_name': [f'Player{i}' for i in range(10)],
-            'market': ['points'] * 10,
-            'win_probability': [0.8] * 10,
-            'decimal_odds': [1.5] * 10,
-            'edge': [0.133] * 10,  # High edge to trigger large bets
-            'implied_prob': [0.667] * 10
+            'player_name': [f'Player{i}' for i in range(20)],  # More players to ensure we exceed bankroll
+            'market': ['points'] * 20,
+            'win_probability': [0.85] * 20,  # Higher win prob
+            'decimal_odds': [1.5] * 20,
+            'edge': [0.217] * 20,  # Higher edge (0.85 - 0.633)
+            'implied_prob': [0.667] * 20
         })
         
-        with patch.object(injector, 'get_current_phase', return_value='mid_season'):
+        with patch.object(injector, 'get_current_phase', return_value='playoffs'):  # Use playoffs multiplier (1.2)
             result_df = injector.calculate_wagers(large_bets_df)
         
         total_wager = result_df['recommended_wager'].sum()
@@ -182,14 +186,31 @@ class TestDynamicOddsInjector:
             'implied_prob': [0.5]
         })
         
-        # Test different phases
+        # Need to reload phase config for each test
         phases = ['preseason', 'mid_season', 'playoffs']
         expected_multipliers = [0.3, 0.8, 1.2]
         
         for phase, expected_mult in zip(phases, expected_multipliers):
-            with patch.object(injector, 'get_current_phase', return_value=phase):
-                result_df = injector.calculate_wagers(test_df.copy())
-                assert result_df['phase_multiplier'].iloc[0] == expected_mult
+            # Create a fresh injector with mocked config for each test
+            mock_config = {
+                "preseason": 0.3,
+                "early_season": 0.5,
+                "mid_season": 0.8,
+                "late_season": 1.0,
+                "playoffs": 1.2,
+                "default": 0.7
+            }
+            with patch('builtins.open', mock_open(read_data=json.dumps(mock_config))):
+                with patch.dict(os.environ, {
+                    'KELLY_FRACTION': '0.25',
+                    'BANKROLL': '1000',
+                    'MIN_EDGE': '0.02',
+                    'PHASE_CONFIG_PATH': 'config/phase_config.json'
+                }):
+                    test_injector = DynamicOddsInjector()
+                    with patch.object(test_injector, 'get_current_phase', return_value=phase):
+                        result_df = test_injector.calculate_wagers(test_df.copy())
+                        assert float(result_df['phase_multiplier'].iloc[0]) == expected_mult
     
     @patch('scripts.dynamic_odds_injector.pd.read_csv')
     def test_full_pipeline(self, mock_read_csv, injector, mock_predictions_df, mock_odds_df):
@@ -229,9 +250,19 @@ class TestEdgeCases:
         kelly = injector.calculate_kelly_percentage(0.55, 100.0)
         assert 0 <= kelly <= 0.1  # Should be within valid range
         
-        # Very low odds
-        kelly = injector.calculate_kelly_percentage(0.95, 1.01)
-        assert kelly > 0  # High win prob with low odds should still bet
+        # Very low odds with high win prob should still bet something
+        kelly = injector.calculate_kelly_percentage(0.95, 1.05)
+        # Full Kelly: (0.95 * 0.05 - 0.05) / 0.05 = -0.05 / 0.05 = -1
+        # But since 0.95 * 0.05 = 0.0475 and q = 0.05, it's actually negative
+        # So it should be capped at 0
+        assert kelly == 0.0
+        
+        # Better test: reasonable odds with high win prob
+        kelly = injector.calculate_kelly_percentage(0.8, 1.5)
+        # Full Kelly: (0.8 * 0.5 - 0.2) / 0.5 = 0.2 / 0.5 = 0.4
+        # Fractional: 0.4 * 0.25 = 0.1
+        # Should be capped at 0.1 (10%)
+        assert kelly == 0.1
     
     def test_invalid_phase_config(self):
         """Test fallback when phase config is invalid."""
