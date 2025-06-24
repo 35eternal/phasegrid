@@ -1,0 +1,65 @@
+name: Nightly Grader
+
+on:
+  schedule:
+    # Run at midnight Phoenix time (MDT = UTC-6)
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: 'Enable debug logging'
+        required: false
+        default: 'false'
+
+jobs:
+  grade-slips:
+    runs-on: ubuntu-latest
+    name: Grade Yesterday's Slips
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          
+      - name: Upgrade pip
+        run: |
+          python -m pip install --upgrade pip
+          
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          
+      - name: Run result grader
+        env:
+          # Google Sheets - USING YOUR EXISTING SECRET NAMES
+          SHEET_ID: ${{ secrets.SHEET_ID }}
+          GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
+          
+          # Twilio - NEW SECRETS YOU'LL ADD
+          TWILIO_SID: ${{ secrets.TWILIO_SID }}
+          TWILIO_AUTH: ${{ secrets.TWILIO_AUTH }}
+          TWILIO_FROM: ${{ secrets.TWILIO_FROM }}
+          PHONE_TO: ${{ secrets.PHONE_TO }}
+          
+          # Discord and API
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          RESULTS_API_URL: ${{ secrets.RESULTS_API_URL }}
+          
+          # Debug flag
+          DEBUG: ${{ github.event.inputs.debug || 'false' }}
+        run: |
+          python scripts/result_grader.py
+          
+      - name: Upload logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: grader-logs
+          path: |
+            *.log
+            logs/
+          retention-days: 7

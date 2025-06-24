@@ -1,3 +1,13 @@
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*/__pycache__/
+
+# Extra credentials
+credentials*.json
+
 SHEET_ID=REPLACE_ME
 GOOGLE_CREDS=credentials.json
 BANKROLL=10000

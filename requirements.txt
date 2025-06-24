@@ -1,17 +1,26 @@
-# Google Sheets API
+﻿# Google Sheets API
 google-api-python-client==2.95.0
 google-auth-httplib2==0.1.0
-google-auth-oauthlib==1.0.0
+google-auth-oauthlib==1.1.0
 
 # Testing
-pytest==7.4.0
-pytest-cov==4.1.0
-pytest-mock==3.11.1
+pytest==8.4.1
+pytest-cov==6.2.1
+pytest-mock==3.14.1
 
 # Core dependencies
-numpy==1.25.2
+numpy==1.26.4
 pandas==2.0.3
 python-dotenv==1.0.0
 
 # Logging
 colorlog==6.7.0
+
+# Twilio for SMS alerts
+twilio>=8.4.0
+
+# Web scraping
+beautifulsoup4==4.12.3
+
+# Google Auth
+google-auth==2.23.4
