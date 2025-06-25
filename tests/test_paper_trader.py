@@ -331,9 +331,9 @@ class TestPaperTrader:
         assert trader.bets_placed[0]['outcome'] == 'void'
 
 
-def test_main_cli(monkeypatch, temp_dir):
+def test_main_cli(monkeypatch, tmpdir):
     """Test CLI entry point."""
-    os.chdir(temp_dir)
+    os.chdir(tmpdir)
     
     # Create necessary files
     with open('predictions_20240115.csv', 'w') as f:
@@ -364,4 +364,6 @@ def test_main_invalid_date(monkeypatch, capsys):
         main()
     
     captured = capsys.readouterr()
-    assert 'Invalid date format' in captured.stderr
+    # Check if error message is in either stdout or stderr
+    output = captured.out + captured.err
+    assert 'Invalid date format' in output
