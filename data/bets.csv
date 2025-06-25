@@ -1,0 +1,4 @@
+﻿bet_id,timestamp,stake,odds,outcome,payout,strategy,bankroll
+1,2025-06-24T10:00:00,50.00,2.10,WIN,105.00,conservative,1055.00
+2,2025-06-24T11:00:00,75.00,1.85,LOSS,-75.00,moderate,980.00
+3,2025-06-24T12:00:00,100.00,2.25,WIN,225.00,aggressive,1205.00

@@ -16,6 +16,9 @@ on:
 jobs:
   paper-trading-simulation:
     runs-on: ubuntu-latest
+    outputs:
+      roi: ${{ steps.extract-roi.outputs.roi }}
+      summary: ${{ steps.extract-roi.outputs.summary }}
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -35,10 +38,6 @@ jobs:
         else
           echo "date=$(date +%Y%m%d)" >> $GITHUB_OUTPUT
         fi
-    # Temporarily skip tests to get paper trading working
-    # - name: Run tests
-    #   run: |
-    #     python -m pytest tests/test_paper_trader.py -v
     - name: Prepare test data
       run: |
         mkdir -p data
@@ -53,6 +52,18 @@ jobs:
         RESULTS_SOURCE: 'data/bets.csv'
       run: |
         python scripts/paper_trader.py --date ${{ steps.date.outputs.date }}
+    - name: Extract ROI for alerts
+      id: extract-roi
+      run: |
+        if [ -f output/daily_summary.json ]; then
+          ROI=$(cat output/daily_summary.json | python -c "import sys, json; print(json.load(sys.stdin)['roi_percent'])")
+          echo "roi=$ROI" >> $GITHUB_OUTPUT
+          echo "summary=$(cat output/daily_summary.json | jq -c .)" >> $GITHUB_OUTPUT
+          echo "ROI: $ROI%"
+        else
+          echo "roi=0" >> $GITHUB_OUTPUT
+          echo "summary={}" >> $GITHUB_OUTPUT
+        fi
     - name: Display simulation results
       if: always()
       run: |
@@ -89,15 +100,34 @@ jobs:
           cat output/daily_summary.json >> report.md
           echo '```' >> report.md
         fi
-  notify-results:
+  
+  check-alerts:
     needs: paper-trading-simulation
     if: always()
     runs-on: ubuntu-latest
     steps:
-    - name: Send notification
+    - name: Check ROI thresholds
+      env:
+        ROI: ${{ needs.paper-trading-simulation.outputs.roi }}
       run: |
-        if [ "${{ needs.paper-trading-simulation.result }}" == "success" ]; then
-          echo "✅ Paper trading simulation completed successfully"
+        echo "ROI: $ROI%"
+        if (( $(echo "$ROI > 20" | bc -l) )); then
+          echo "🚨 HIGH ROI ALERT: $ROI%"
+          echo "alert_type=high" >> $GITHUB_ENV
+        elif (( $(echo "$ROI < -20" | bc -l) )); then
+          echo "🚨 LOW ROI ALERT: $ROI%"
+          echo "alert_type=low" >> $GITHUB_ENV
         else
-          echo "❌ Paper trading simulation failed"
+          echo "✅ ROI within normal range: $ROI%"
+          echo "alert_type=none" >> $GITHUB_ENV
         fi
+    
+    - name: Send alert notification
+      if: env.alert_type != 'none'
+      run: |
+        if [ "${{ env.alert_type }}" == "high" ]; then
+          echo "📈 ALERT: Paper trading achieved exceptional ROI of ${{ needs.paper-trading-simulation.outputs.roi }}%!"
+        elif [ "${{ env.alert_type }}" == "low" ]; then
+          echo "📉 ALERT: Paper trading showing significant loss with ROI of ${{ needs.paper-trading-simulation.outputs.roi }}%!"
+        fi
+        # Add Discord/Slack/Twilio webhook here if configured
