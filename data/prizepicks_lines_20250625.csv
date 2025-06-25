@@ -1,0 +1,11 @@
+﻿player_name,prop_type,line,sport,opponent,home_away
+LeBron James,points,27.5,NBA,Warriors,home
+Stephen Curry,three_pointers,4.5,NBA,Lakers,away
+Nikola Jokic,rebounds,11.5,NBA,Suns,home
+Luka Doncic,assists,8.5,NBA,Celtics,away
+Jayson Tatum,points,28.5,NBA,Mavericks,home
+Kevin Durant,points,26.5,NBA,Heat,away
+Jimmy Butler,rebounds,6.5,NBA,Suns,home
+Chris Paul,assists,7.5,NBA,Nuggets,away
+Anthony Davis,blocks,2.5,NBA,Warriors,home
+Draymond Green,steals,1.5,NBA,Lakers,away
