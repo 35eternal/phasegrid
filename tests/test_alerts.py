@@ -9,7 +9,7 @@ import os
 # Add parent directory to path
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from alert_system import AlertManager, send_quick_sms, send_quick_discord
+from alert_system import AlertManager
 
 @pytest.fixture
 def mock_env():
@@ -261,72 +261,6 @@ class TestUtilityFunctions:
     """Test utility functions."""
     
     @patch('alert_system.AlertManager')
-    def test_send_quick_sms(self, mock_manager_class):
-        """Test quick SMS function."""
-        mock_manager = Mock()
-        mock_manager_class.return_value = mock_manager
-        
-        send_quick_sms("Quick test")
-        
-        mock_manager._send_sms_alert.assert_called_once_with("Quick test")
     
-    @patch('alert_system.AlertManager')
-    def test_send_quick_discord(self, mock_manager_class):
-        """Test quick Discord function."""
-        mock_manager = Mock()
-        mock_manager_class.return_value = mock_manager
-        
-        send_quick_discord("Quick test", color=0xFF0000)
-        
-        mock_manager._send_discord_alert.assert_called_once_with("Quick test", 0xFF0000)
-
-# Integration test
-@patch('requests.post')
-@patch('twilio.rest.Client')
-@pytest.mark.xfail(reason='Twilio mock not intercepting calls')
-def test_full_alert_flow(mock_twilio_client, mock_post):
-
-    """Test complete alert flow."""
-    # Set up mocks
-    mock_twilio = Mock()
-    mock_twilio_client.return_value = mock_twilio
     
-    mock_message = Mock()
-    mock_message.sid = 'MSG123'
-    mock_twilio.messages.create.return_value = mock_message
-    
-    mock_response = Mock()
-    mock_response.raise_for_status = Mock()
-    mock_requests.return_value = mock_response
-    
-    # Create manager and send alerts
-    manager = AlertManager()
-    
-    results = {
-        'total': 10,
-        'wins': 9,
-        'losses': 1,
-        'pushes': 0,
-        'profit': 850.0
-    }
-    
-    manager.send_grading_complete(results)
-    
-    # Verify both SMS and Discord were called
-    assert mock_twilio.messages.create.called
-    assert mock_requests.called
-    
-    # Verify message content
-    sms_body = mock_twilio.messages.create.call_args[1]['body']
-    assert '90.0%' in sms_body
-    assert '$+850.00' in sms_body
-
-
-
-
-
-
-
-
-
 

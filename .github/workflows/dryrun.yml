@@ -141,7 +141,7 @@ jobs:
 
     - name: Upload artifacts
       if: always()
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: dry-run-artifacts-${{ steps.dates.outputs.START_DATE }}
         path: |
@@ -152,7 +152,7 @@ jobs:
 
     - name: Upload logs
       if: failure()
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: error-logs-${{ github.run_id }}
         path: |
