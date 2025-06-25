@@ -1,0 +1,20 @@
+{
+  "start_date": "2025-06-25",
+  "end_date": "2025-06-26",
+  "completed_dates": [],
+  "last_run": "2025-06-25T20:07:06.013666+00:00",
+  "total_slips_generated": 0,
+  "errors": [
+    {
+      "date": "2025-06-25",
+      "error": "Failed to generate slips",
+      "timestamp": "2025-06-25T20:07:03.665164+00:00"
+    },
+    {
+      "date": "2025-06-26",
+      "error": "Failed to generate slips",
+      "timestamp": "2025-06-25T20:07:06.013656+00:00"
+    }
+  ],
+  "last_updated": "2025-06-25T20:07:06.013674+00:00"
+}

@@ -261,12 +261,9 @@ class EnhancedAutoPaper:
     def fetch_live_lines(self, league: str = "WNBA") -> List[Dict]:
         """Fetch live lines from PrizePicks"""
         try:
-            logger.info(f"?? Fetching live {league} lines from PrizePicks...")
-            projections = self.prizepicks_client.fetch_projections(league=league)
+            logger.info(f"📡 Fetching live {league} lines from PrizePicks...")
+            projections = self.prizepicks_client.get_projections(league=league)
             
-            # Convert to list format if needed
-            if isinstance(projections, dict):
-                projections = self.prizepicks_client.parse_projections_to_slips(projections)            
             # Convert to slip format
             slips = []
             for proj in projections:
