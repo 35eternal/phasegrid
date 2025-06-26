@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
 Enhanced Result Grader for PhaseGrid
 Grades slips by slip_id with retry logic and production API integration
@@ -27,6 +27,11 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
+
+class InsufficientSlipsError(Exception):
+    """Raised when there are not enough slips to grade"""
+    pass
+
 
 
 def exponential_backoff_retry(max_retries: int = 3, base_delay: float = 1.0, max_delay: float = 60.0):
@@ -88,13 +93,13 @@ class EnhancedResultGrader:
             # Initialize Google Sheets
             logger.info("Connecting to Google Sheets...")
             self.sheet_service = self._get_sheet_service()
-            logger.info("✅ Connected to Google Sheets!")
+            logger.info("âœ… Connected to Google Sheets!")
             
             # Initialize Twilio with local 10DLC number
             self._initialize_twilio()
             
         except Exception as e:
-            logger.error(f"❌ Initialization failed: {e}")
+            logger.error(f"âŒ Initialization failed: {e}")
             self._send_alert(f"ResultGrader initialization failed: {e}", severity="critical")
             raise
     
@@ -144,14 +149,14 @@ class EnhancedResultGrader:
                     phone_number = self.twilio_client.incoming_phone_numbers.list(
                         phone_number=from_number
                     )[0]
-                    logger.info(f"✅ Verified Twilio 10DLC number: {phone_number.phone_number}")
+                    logger.info(f"âœ… Verified Twilio 10DLC number: {phone_number.phone_number}")
                     logger.info(f"   - Friendly name: {phone_number.friendly_name}")
                     logger.info(f"   - SMS capable: {phone_number.capabilities.sms}")
                 except Exception as e:
                     logger.warning(f"Could not verify Twilio number: {e}")
                     
             else:
-                logger.warning("⚠️ Twilio credentials not found. SMS notifications disabled.")
+                logger.warning("âš ï¸ Twilio credentials not found. SMS notifications disabled.")
                 
         except Exception as e:
             logger.error(f"Twilio initialization error: {e}")
@@ -166,11 +171,11 @@ class EnhancedResultGrader:
                 return
             
             emoji = {
-                "critical": "🚨",
-                "high": "⚠️",
-                "medium": "📢",
-                "info": "ℹ️"
-            }.get(severity, "📌")
+                "critical": "ðŸš¨",
+                "high": "âš ï¸",
+                "medium": "ðŸ“¢",
+                "info": "â„¹ï¸"
+            }.get(severity, "ðŸ“Œ")
             
             payload = {
                 "content": f"{emoji} **PhaseGrid Alert** ({severity.upper()})\n{message}"
@@ -187,7 +192,7 @@ class EnhancedResultGrader:
     def fetch_slips_for_date(self, date: str) -> List[Dict]:
         """Fetch slips for a specific date from Google Sheet"""
         try:
-            logger.info(f"📋 Fetching slips for date: {date}")
+            logger.info(f"ðŸ“‹ Fetching slips for date: {date}")
             
             # Get all data from sheet
             result = self.sheet_service.spreadsheets().values().get(
@@ -197,7 +202,7 @@ class EnhancedResultGrader:
             
             rows = result.get('values', [])
             if not rows:
-                logger.warning("📭 No data found in sheet")
+                logger.warning("ðŸ“­ No data found in sheet")
                 return []
             
             # Parse header row
@@ -228,11 +233,11 @@ class EnhancedResultGrader:
                     (graded_idx == -1 or slip.get('graded') != 'TRUE')):
                     slips.append(slip)
                     
-            logger.info(f"📊 Found {len(slips)} ungraded slips for {date}")
+            logger.info(f"ðŸ“Š Found {len(slips)} ungraded slips for {date}")
             return slips
             
         except Exception as e:
-            logger.error(f"❌ Failed to fetch slips: {e}")
+            logger.error(f"âŒ Failed to fetch slips: {e}")
             self._send_alert(f"Failed to fetch slips from Google Sheet: {e}", severity="high")
             return []  # Return empty list instead of raising
     
@@ -240,7 +245,7 @@ class EnhancedResultGrader:
     def fetch_game_results(self, date: str) -> Dict:
         """Fetch actual game results from production API"""
         try:
-            logger.info(f"🏀 Fetching game results for {date}")
+            logger.info(f"ðŸ€ Fetching game results for {date}")
             
             # Production API call
             if self.results_api_key and self.results_api_url != 'https://api.example.com/results':
@@ -263,16 +268,16 @@ class EnhancedResultGrader:
                 response.raise_for_status()
                 
                 results = response.json()
-                logger.info(f"✅ Fetched results for {len(results.get('games', []))} games")
+                logger.info(f"âœ… Fetched results for {len(results.get('games', []))} games")
                 return self._normalize_results(results)
             
             else:
                 # Fallback to stub data for testing
-                logger.warning("⚠️ Using stub data - configure RESULTS_API_URL and RESULTS_API_KEY for production")
+                logger.warning("âš ï¸ Using stub data - configure RESULTS_API_URL and RESULTS_API_KEY for production")
                 return self._get_stub_results(date)
                 
         except Exception as e:
-            logger.error(f"❌ Failed to fetch game results: {e}")
+            logger.error(f"âŒ Failed to fetch game results: {e}")
             self._send_alert(f"Failed to fetch game results: {e}", severity="high")
             return {}
     
@@ -421,16 +426,16 @@ class EnhancedResultGrader:
                     body=body
                 ).execute()
                 
-                logger.info(f"✅ Updated slip {slip_id} (row {row_number}): {grade}")
+                logger.info(f"âœ… Updated slip {slip_id} (row {row_number}): {grade}")
             
         except Exception as e:
-            logger.error(f"❌ Failed to update slip {slip.get('slip_id', 'unknown')}: {e}")
+            logger.error(f"âŒ Failed to update slip {slip.get('slip_id', 'unknown')}: {e}")
             raise
     
     def send_summary_sms(self, total_slips: int, grades: List[Tuple[str, str, Dict]]):
         """Send SMS summary using verified 10DLC number"""
         if not self.twilio_client:
-            logger.warning("📵 Twilio client not initialized, skipping SMS")
+            logger.warning("ðŸ“µ Twilio client not initialized, skipping SMS")
             return
         
         try:
@@ -447,19 +452,19 @@ class EnhancedResultGrader:
             
             # Create message
             message_body = (
-                f"🤖 PhaseGrid Results\n"
-                f"📅 {self.grade_date}\n"
-                f"📊 Total: {total_slips}\n"
-                f"✅ Wins: {results_summary['WIN']}\n"
-                f"❌ Losses: {results_summary['LOSS']}\n"
-                f"📈 Win Rate: {win_rate:.1f}%\n"
+                f"ðŸ¤– PhaseGrid Results\n"
+                f"ðŸ“… {self.grade_date}\n"
+                f"ðŸ“Š Total: {total_slips}\n"
+                f"âœ… Wins: {results_summary['WIN']}\n"
+                f"âŒ Losses: {results_summary['LOSS']}\n"
+                f"ðŸ“ˆ Win Rate: {win_rate:.1f}%\n"
             )
             
             if results_summary['ERROR'] > 0:
-                message_body += f"⚠️ Errors: {results_summary['ERROR']}\n"
+                message_body += f"âš ï¸ Errors: {results_summary['ERROR']}\n"
             
             if results_summary['PENDING'] > 0:
-                message_body += f"⏳ Pending: {results_summary['PENDING']}\n"
+                message_body += f"â³ Pending: {results_summary['PENDING']}\n"
             
             # Send SMS
             from_phone = os.getenv('TWILIO_FROM')
@@ -471,7 +476,7 @@ class EnhancedResultGrader:
             if not to_phone.startswith('+'):
                 to_phone = f'+1{to_phone}'
             
-            logger.info(f"📱 Sending SMS from {from_phone} to {to_phone}")
+            logger.info(f"ðŸ“± Sending SMS from {from_phone} to {to_phone}")
             
             message = self.twilio_client.messages.create(
                 body=message_body,
@@ -479,18 +484,18 @@ class EnhancedResultGrader:
                 to=to_phone
             )
             
-            logger.info(f"✅ SMS sent! ID: {message.sid}")
+            logger.info(f"âœ… SMS sent! ID: {message.sid}")
             
         except Exception as e:
-            logger.error(f"❌ Failed to send SMS: {e}")
+            logger.error(f"âŒ Failed to send SMS: {e}")
             self._send_alert(f"Failed to send summary SMS: {e}", severity="medium")
     
     def run(self):
         """Main execution flow"""
         try:
             logger.info("=" * 50)
-            logger.info("🚀 PHASEGRID RESULT GRADER")
-            logger.info(f"📅 Grading slips from: {self.grade_date}")
+            logger.info("ðŸš€ PHASEGRID RESULT GRADER")
+            logger.info(f"ðŸ“… Grading slips from: {self.grade_date}")
             logger.info("=" * 50)
             
             # Initialize services
@@ -499,7 +504,7 @@ class EnhancedResultGrader:
             # Fetch slips to grade
             slips = self.fetch_slips_for_date(self.grade_date)
             if not slips:
-                logger.info("😴 No ungraded slips found")
+                logger.info("ðŸ˜´ No ungraded slips found")
                 self.send_summary_sms(0, [])
                 return
             
@@ -507,7 +512,7 @@ class EnhancedResultGrader:
             results = self.fetch_game_results(self.grade_date)
             
             # Grade each slip
-            logger.info(f"📝 Grading {len(slips)} slips...")
+            logger.info(f"ðŸ“ Grading {len(slips)} slips...")
             grades = []
             
             for slip in slips:
@@ -527,17 +532,17 @@ class EnhancedResultGrader:
             error_count = sum(1 for grade, _, _ in grades if grade == 'ERROR')
             if error_count > 0:
                 self._send_alert(
-                    f"⚠️ Result grader completed with {error_count} errors",
+                    f"âš ï¸ Result grader completed with {error_count} errors",
                     severity="high"
                 )
             
             logger.info("=" * 50)
-            logger.info("🎉 Result grader completed successfully!")
+            logger.info("ðŸŽ‰ Result grader completed successfully!")
             logger.info("=" * 50)
             
         except Exception as e:
-            logger.error(f"💥 Result grader failed: {e}")
-            self._send_alert(f"🚨 Result grader critical failure: {e}", severity="critical")
+            logger.error(f"ðŸ’¥ Result grader failed: {e}")
+            self._send_alert(f"ðŸš¨ Result grader critical failure: {e}", severity="critical")
             # Don't raise - let it complete gracefully
 
 
