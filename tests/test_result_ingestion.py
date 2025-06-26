@@ -311,5 +311,3 @@ def create_mock_open(payout_data):
     return mock_open
 
 
-if __name__ == "__main__":
-    pytest.main([__file__, "-v"])

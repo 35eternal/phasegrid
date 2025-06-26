@@ -1,0 +1,21 @@
+{
+  "total_test_files": 23,
+  "total_tests": 187,
+  "xfailed_tests": [
+    {
+      "file": "test_guard_rails.py",
+      "count": 2
+    }
+  ],
+  "skipped_tests": [
+    {
+      "file": "test_bankroll_optimizer.py",
+      "count": 14
+    },
+    {
+      "file": "test_scripts.py",
+      "count": 13
+    }
+  ],
+  "regular_tests": 158
+}

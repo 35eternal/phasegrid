@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Test suite for script modules."""
 
 import pytest
@@ -487,7 +487,4 @@ except ImportError:
     assert ResultsUpdater
     assert BettingWorkflow
 
-
-if __name__ == "__main__":
-    pytest.main([__file__, '-v'])
 
