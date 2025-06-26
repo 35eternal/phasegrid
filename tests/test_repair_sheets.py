@@ -187,5 +187,3 @@ class TestSheetConnectorIntegration:
         assert result['list'][1]['source_id'] == 'LIST_002'
 
 
-if __name__ == "__main__":
-    pytest.main([__file__, "-v"])

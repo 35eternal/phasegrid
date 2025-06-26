@@ -1,5 +1,5 @@
 [pytest]
-addopts = -v --cov=phasegrid --cov-report=term-missing --cov-report=html
+addopts = -v
 python_files = test_*.py
 python_classes = Test*
 python_functions = test_*

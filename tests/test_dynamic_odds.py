@@ -1,4 +1,4 @@
-﻿"""
+"""
 Test suite for Dynamic Odds Injector
 """
 
@@ -273,5 +273,3 @@ class TestEdgeCases:
             assert injector.phase_multipliers['default'] == 0.7
 
 
-if __name__ == "__main__":
-    pytest.main([__file__, "-v"])
