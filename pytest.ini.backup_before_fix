@@ -1,0 +1,11 @@
+[tool:pytest]
+testpaths = tests
+python_files = test_*.py
+python_classes = Test*
+python_functions = test_*
+
+# Ignore backup folders
+python_files = test_*.py
+python_classes = Test*
+python_functions = test_*
+norecursedirs = _archived_phasegrid_backup_20250626_100955 venv .git __pycache__ .pytest_cache htmlcov .vscode archive backups

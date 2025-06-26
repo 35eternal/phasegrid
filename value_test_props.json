@@ -1,0 +1,92 @@
+[
+  {
+    "prop_id": "VAL-001",
+    "player": "Caitlin Clark",
+    "stat": "points",
+    "line": 10.5,
+    "confidence": 0.76,
+    "value": 120,
+    "timestamp": "2025-06-26T12:00:00"
+  },
+  {
+    "prop_id": "VAL-002",
+    "player": "A'ja Wilson",
+    "stat": "rebounds",
+    "line": 11.5,
+    "confidence": 0.77,
+    "value": 130,
+    "timestamp": "2025-06-26T12:00:00"
+  },
+  {
+    "prop_id": "VAL-003",
+    "player": "Sabrina Ionescu",
+    "stat": "assists",
+    "line": 12.5,
+    "confidence": 0.78,
+    "value": 140,
+    "timestamp": "2025-06-26T12:00:00"
+  },
+  {
+    "prop_id": "VAL-004",
+    "player": "Breanna Stewart",
+    "stat": "points",
+    "line": 13.5,
+    "confidence": 0.79,
+    "value": 150,
+    "timestamp": "2025-06-26T12:00:00"
+  },
+  {
+    "prop_id": "VAL-005",
+    "player": "Arike Ogunbowale",
+    "stat": "3-pointers",
+    "line": 14.5,
+    "confidence": 0.8,
+    "value": 160,
+    "timestamp": "2025-06-26T12:00:00"
+  },
+  {
+    "prop_id": "VAL-006",
+    "player": "Napheesa Collier",
+    "stat": "points",
+    "line": 15.5,
+    "confidence": 0.81,
+    "value": 170,
+    "timestamp": "2025-06-26T12:00:00"
+  },
+  {
+    "prop_id": "VAL-007",
+    "player": "Kelsey Plum",
+    "stat": "assists",
+    "line": 16.5,
+    "confidence": 0.8200000000000001,
+    "value": 180,
+    "timestamp": "2025-06-26T12:00:00"
+  },
+  {
+    "prop_id": "VAL-008",
+    "player": "Jackie Young",
+    "stat": "points",
+    "line": 17.5,
+    "confidence": 0.8300000000000001,
+    "value": 190,
+    "timestamp": "2025-06-26T12:00:00"
+  },
+  {
+    "prop_id": "VAL-009",
+    "player": "Nneka Ogwumike",
+    "stat": "rebounds",
+    "line": 18.5,
+    "confidence": 0.84,
+    "value": 200,
+    "timestamp": "2025-06-26T12:00:00"
+  },
+  {
+    "prop_id": "VAL-010",
+    "player": "Jewell Loyd",
+    "stat": "points",
+    "line": 19.5,
+    "confidence": 0.85,
+    "value": 210,
+    "timestamp": "2025-06-26T12:00:00"
+  }
+]
