@@ -1,113 +1,129 @@
 ﻿"""
-Slip optimization module with detailed logging.
+Slip optimization module for PhaseGrid system.
 """
-
+from typing import List, Dict, Any, Optional
 import logging
-from typing import List, Dict, Any
-from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
 
 class SlipOptimizer:
-    """Enhanced optimizer with detailed filtering logs."""
+    """Optimizes slip generation based on various parameters."""
     
-    def __init__(self, config: Dict[str, Any]):
-        self.config = config
-        self.confidence_threshold = config.get('confidence_threshold', 0.75)
-        self.enable_logging = config.get('enable_detailed_logging', False)
-        self.last_run_stats = {}
+    def __init__(self, 
+                 bankroll: float = 1000.0,
+                 max_bet_pct: float = 0.05,
+                 min_edge: float = 0.05,
+                 correlation_threshold: float = 0.5):
+        """Initialize optimizer with configuration."""
+        self.bankroll = bankroll
+        self.max_bet_pct = max_bet_pct
+        self.min_edge = min_edge
+        self.correlation_threshold = correlation_threshold
+        logger.info(f"Initialized SlipOptimizer with bankroll=${bankroll}")
     
-    def optimize(self, props: List[Dict[str, Any]], date: str) -> List[Dict[str, Any]]:
-        """Optimize props to generate slips with detailed logging."""
-        self.last_run_stats = {
-            'total_props': len(props),
-            'filtered_by_confidence': 0,
-            'filtered_by_edge': 0,
-            'filtered_by_duplicate': 0,
-            'filtered_by_validity': 0,
-            'generated_slips': 0
-        }
+    def optimize(self, props: List[Dict[str, Any]], 
+                 date: Optional[str] = None) -> List[Dict[str, Any]]:
+        """
+        Optimize prop selection for slip generation.
         
-        slips = []
-        seen_combinations = set()
+        Args:
+            props: List of available props
+            date: Target date for optimization
+            
+        Returns:
+            List of optimized slips
+        """
+        if not props:
+            return []
+            
+        # Filter props by minimum edge
+        filtered_props = [
+            prop for prop in props 
+            if prop.get('edge', 0) >= self.min_edge
+        ]
         
-        for prop in props:
-            # Filter by confidence
-            if prop.get('confidence', 0) < self.confidence_threshold:
-                self._log_filter('confidence', prop)
-                self.last_run_stats['filtered_by_confidence'] += 1
-                continue
-            
-            # Filter edge cases
-            if self._is_edge_case(prop):
-                self._log_filter('edge', prop)
-                self.last_run_stats['filtered_by_edge'] += 1
-                continue
-            
-            # Filter duplicates
-            combo_key = f"{prop.get('prop_id')}:{prop.get('value')}"
-            if combo_key in seen_combinations:
-                self._log_filter('duplicate', prop)
-                self.last_run_stats['filtered_by_duplicate'] += 1
-                continue
-            
-            # Validate prop structure
-            if not self._is_valid_prop(prop):
-                self._log_filter('validity', prop)
-                self.last_run_stats['filtered_by_validity'] += 1
-                continue
-            
-            # Generate slip
-            slip = self._create_slip(prop, date)
-            slips.append(slip)
-            seen_combinations.add(combo_key)
-            self.last_run_stats['generated_slips'] += 1
-        
-        logger.info(f"Optimization stats: {self.last_run_stats}")
-        return slips
-    
-    def _log_filter(self, reason: str, prop: Dict[str, Any]) -> None:
-        """Log why a prop was filtered."""
-        if self.enable_logging:
-            logger.debug(
-                f"Filtered prop {prop.get('prop_id')} - "
-                f"reason: {reason}, confidence: {prop.get('confidence', 0)}"
+        # Calculate Kelly fraction for each prop
+        for prop in filtered_props:
+            prop['kelly_fraction'] = self.calculate_kelly_fraction(
+                prop.get('edge', 0),
+                prop.get('odds', 2.0)
             )
-    
-    def _is_edge_case(self, prop: Dict[str, Any]) -> bool:
-        """Check if prop represents an edge case."""
-        # Edge cases: extreme values, suspicious patterns
-        value = prop.get('value', 0)
-        if isinstance(value, (int, float)):
-            if value < -1000000 or value > 1000000:
-                return True
+            prop['bet_size'] = min(
+                prop['kelly_fraction'] * self.bankroll,
+                self.bankroll * self.max_bet_pct
+            )
         
-        # Check for test/demo props
-        prop_id = prop.get('prop_id', '')
-        if any(pattern in prop_id.lower() for pattern in ['test', 'demo', 'sample']):
-            return True
+        # Sort by expected value
+        filtered_props.sort(
+            key=lambda x: x.get('edge', 0) * x.get('bet_size', 0),
+            reverse=True
+        )
         
-        return False
+        # Apply correlation filter
+        optimized_slips = self._apply_correlation_filter(filtered_props)
+        
+        logger.info(f"Optimized {len(props)} props to {len(optimized_slips)} slips")
+        return optimized_slips
     
-    def _is_valid_prop(self, prop: Dict[str, Any]) -> bool:
-        """Validate prop has required structure."""
-        required_fields = ['prop_id', 'confidence', 'value', 'timestamp']
-        return all(field in prop for field in required_fields)
+    def calculate_kelly_fraction(self, edge: float, odds: float) -> float:
+        """
+        Calculate Kelly fraction for bet sizing.
+        
+        Args:
+            edge: Expected edge (as decimal, e.g., 0.05 for 5%)
+            odds: Decimal odds
+            
+        Returns:
+            Kelly fraction
+        """
+        if edge <= 0 or odds <= 1:
+            return 0.0
+            
+        # Kelly formula: f = (p*b - q) / b
+        # where p = probability of winning, q = probability of losing, b = odds-1
+        p = (1 + edge) / odds  # Implied probability + edge
+        q = 1 - p
+        b = odds - 1
+        
+        kelly = (p * b - q) / b if b > 0 else 0
+        
+        # Apply Kelly divisor for safety (quarter Kelly)
+        return max(0, min(kelly / 4, self.max_bet_pct))
     
-    def _create_slip(self, prop: Dict[str, Any], date: str) -> Dict[str, Any]:
-        """Create a slip from a validated prop."""
-        return {
-            'slip_id': f"SLIP-{prop['prop_id']}-{date}",
-            'prop_id': prop['prop_id'],
-            'value': prop['value'],
-            'confidence': prop['confidence'],
-            'date': date,
-            'timestamp': prop['timestamp'],
-            'source': prop.get('source', 'unknown'),
-            'created_at': datetime.now().isoformat()
-        }
+    def _apply_correlation_filter(self, props: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """Apply correlation filter to reduce correlated bets."""
+        if not props:
+            return []
+            
+        selected = [props[0]]  # Always include the best prop
+        
+        for prop in props[1:]:
+            # Check correlation with already selected props
+            is_correlated = False
+            for selected_prop in selected:
+                if self._calculate_correlation(prop, selected_prop) > self.correlation_threshold:
+                    is_correlated = True
+                    break
+                    
+            if not is_correlated:
+                selected.append(prop)
+                
+        return selected
     
-    def get_last_run_stats(self) -> Dict[str, Any]:
-        """Get statistics from the last optimization run."""
-        return self.last_run_stats.copy()
+    def _calculate_correlation(self, prop1: Dict[str, Any], prop2: Dict[str, Any]) -> float:
+        """Calculate correlation between two props."""
+        # Simple correlation based on same player/game
+        if prop1.get('player_id') == prop2.get('player_id'):
+            return 0.8
+        if prop1.get('game_id') == prop2.get('game_id'):
+            return 0.5
+        return 0.0
+    
+    def validate_edge(self, edge: float) -> bool:
+        """Validate edge is within acceptable range."""
+        return 0 <= edge <= 1
+    
+    def apply_bankroll_constraint(self, bet_size: float) -> float:
+        """Apply bankroll constraint to bet size."""
+        return min(bet_size, self.bankroll * self.max_bet_pct)

@@ -28,9 +28,9 @@ class TestStatsMain:
     
     def test_main_help(self, runner):
         """Test main --help command."""
-        from scripts.stats import main
+        from scripts.stats import cli
         
-        result = runner.invoke(main, ['--help'])
+        result = runner.invoke(cli, ['--help'])
         assert result.exit_code == 0
         assert 'Usage:' in result.output or 'Options:' in result.output
     
@@ -58,8 +58,8 @@ class TestStatsMain:
         })
         mock_generator_class.return_value = mock_generator
         
-        from scripts.stats import main
-        result = runner.invoke(main, [])
+        from scripts.stats import cli
+        result = runner.invoke(cli, [])
         
         # Should succeed and show output
         assert result.exit_code == 0
@@ -73,11 +73,11 @@ class TestStatsMain:
         mock_generator.calculate_daily_stats.return_value = pd.DataFrame()
         mock_generator_class.return_value = mock_generator
         
-        from scripts.stats import main
-        result = runner.invoke(main, ['--days', '30'])
+        from scripts.stats import cli
+        result = runner.invoke(cli, ['--days', '30'])
         
         # Check that load_data was called with days=30
-        mock_generator.load_data.assert_called_with(30)
+        mock_generator.load_data.assert_called_with(days=30)
     
     @patch('scripts.stats.StatsGenerator')
     def test_main_json_output(self, mock_generator_class, runner):
@@ -90,8 +90,8 @@ class TestStatsMain:
         })
         mock_generator_class.return_value = mock_generator
         
-        from scripts.stats import main
-        result = runner.invoke(main, ['--output', 'json'])
+        from scripts.stats import cli
+        result = runner.invoke(cli, ['--output', 'json'])
         
         assert result.exit_code == 0
         # Should contain JSON output
@@ -109,8 +109,8 @@ class TestStatsMain:
         mock_generator.generate_plotly_table.return_value = '<html>test</html>'
         mock_generator_class.return_value = mock_generator
         
-        from scripts.stats import main
-        result = runner.invoke(main, ['--output', 'html'])
+        from scripts.stats import cli
+        result = runner.invoke(cli, ['--output', 'html'])
         
         assert result.exit_code == 0
     
@@ -127,8 +127,8 @@ class TestStatsMain:
         
         output_file = tmp_path / 'output.json'
         
-        from scripts.stats import main
-        result = runner.invoke(main, ['--output', 'json', '--save-to', str(output_file)])
+        from scripts.stats import cli
+        result = runner.invoke(cli, ['--output', 'json', '--save-to', str(output_file)])
         
         assert result.exit_code == 0
         assert 'saved to' in result.output
@@ -138,8 +138,8 @@ class TestStatsMain:
         """Test main error handling."""
         mock_generator_class.side_effect = Exception("Test error")
         
-        from scripts.stats import main
-        result = runner.invoke(main, [])
+        from scripts.stats import cli
+        result = runner.invoke(cli, [])
         
         assert result.exit_code == 1
         assert 'Error' in result.output

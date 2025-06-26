@@ -72,3 +72,8 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+
+def run():
+    """Run the test suite."""
+    import pytest
+    return pytest.main()
