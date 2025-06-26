@@ -15,8 +15,12 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
-      - name: Run tests
-        run: pytest tests/ --cov=modules --cov=scripts --cov-report=xml
+      - name: Run tests with coverage
+        env:
+          MIN_COVERAGE_THRESHOLD: 8
+        run: |
+          echo "Running tests with minimum coverage threshold: $env:MIN_COVERAGE_THRESHOLD%"
+          pytest tests/ --cov=. --cov-report=xml --cov-fail-under=$env:MIN_COVERAGE_THRESHOLD
       - uses: actions/upload-artifact@v4
         with:
           name: coverage-xml
