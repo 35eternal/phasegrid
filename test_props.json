@@ -1,0 +1,56 @@
+[
+  {
+    "prop_id": "TEST-001",
+    "player": "Caitlin Clark",
+    "stat": "points",
+    "line": 25.5,
+    "confidence": 0.85,
+    "value": 100,
+    "timestamp": "2025-06-26T12:00:00"
+  },
+  {
+    "prop_id": "TEST-002",
+    "player": "Aja Wilson",
+    "stat": "rebounds",
+    "line": 10.5,
+    "confidence": 0.78,
+    "value": 150,
+    "timestamp": "2025-06-26T12:00:00"
+  },
+  {
+    "prop_id": "TEST-003",
+    "player": "Sabrina Ionescu",
+    "stat": "assists",
+    "line": 5.5,
+    "confidence": 0.82,
+    "value": 120,
+    "timestamp": "2025-06-26T12:00:00"
+  },
+  {
+    "prop_id": "TEST-004",
+    "player": "Breanna Stewart",
+    "stat": "points",
+    "line": 22.5,
+    "confidence": 0.79,
+    "value": 110,
+    "timestamp": "2025-06-26T12:00:00"
+  },
+  {
+    "prop_id": "TEST-005",
+    "player": "Arike Ogunbowale",
+    "stat": "3-pointers",
+    "line": 2.5,
+    "confidence": 0.81,
+    "value": 130,
+    "timestamp": "2025-06-26T12:00:00"
+  },
+  {
+    "prop_id": "TEST-006",
+    "player": "Napheesa Collier",
+    "stat": "points",
+    "line": 18.5,
+    "confidence": 0.77,
+    "value": 140,
+    "timestamp": "2025-06-26T12:00:00"
+  }
+]

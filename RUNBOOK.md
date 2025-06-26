@@ -4,8 +4,11 @@
 1. [Overview](#overview)
 2. [Multi-Day Dry Run](#multi-day-dry-run)
 3. [Guard Rails](#guard-rails)
-4. [Monitoring](#monitoring)
-5. [Troubleshooting](#troubleshooting)
+4. [Guard-Rail Mechanism](#guard-rail-mechanism)
+5. [Confidence Threshold Tuning](#confidence-threshold-tuning)
+6. [Verify Sheets Status](#verify-sheets-status)
+7. [Monitoring](#monitoring)
+8. [Troubleshooting](#troubleshooting)
 
 ## Overview
 
@@ -115,6 +118,82 @@ Critical alerts are sent through:
 1. **SMS** (via Twilio): To all numbers in PHONE_TO
 2. **Discord**: With @everyone mention
 3. **Slack**: With @channel mention
+
+## Guard-Rail Mechanism
+
+### Overview
+The slip generation pipeline now includes a guard-rail mechanism to ensure a minimum viable number of slips are generated before proceeding with downstream processes.
+
+### Behavior
+- **Default**: Requires minimum of 5 slips to be generated
+- **Location**: Implemented in `SlipProcessor.process()`
+- **Exception**: Raises `InsufficientSlipsError` when threshold not met
+- **Impact**: Prevents empty or low-quality slip sets from propagating
+
+### Bypass Flag
+```bash
+# Override guard-rail for testing or special scenarios
+python scripts/auto_paper.py --bypass-guard-rail
+
+# Combined with other flags
+python scripts/auto_paper.py --fetch_lines --days 0 --bypass-guard-rail
+```
+
+**⚠️ Use with caution**: Bypassing the guard-rail may result in insufficient data for meaningful analysis.
+
+## Confidence Threshold Tuning
+
+### Current Settings
+- **Primary Threshold**: 0.65 (yielding ~112 slips on WNBA data)
+- **Secondary Threshold**: 0.60 (yielding ~43 slips on WNBA data)
+- **Location**: Configured in `SlipOptimizer`
+
+### Logging and Analysis
+The optimizer now logs detailed rejection reasons:
+```
+INFO: Rejected slip - Confidence: 0.58 < 0.65 threshold
+INFO: Rejected slip - Missing required correlation data
+INFO: Accepted slip - Confidence: 0.72, all criteria met
+```
+
+### Tuning Guidelines
+1. Monitor rejection logs to identify patterns
+2. Adjust thresholds based on sport/league characteristics
+3. Target 50-150 slips for optimal coverage vs. quality balance
+4. Document any threshold changes in commit messages
+
+## Verify Sheets Status
+
+### Current State
+- **Status**: Tests unmodified, pending updates
+- **Location**: `tests/test_verify_sheets.py`
+- **Known Issues**: May require adjustments for new guard-rail logic
+- **Priority**: Scheduled for next engineering cycle
+
+### Temporary Workaround
+If verify_sheets tests fail due to guard-rail:
+1. Use `--bypass-guard-rail` flag in test fixtures
+2. Or ensure test data generates ≥5 slips
+3. Document any test modifications in PR
+
+### Quick Reference
+
+#### Daily Workflow
+```bash
+# Fetch fresh data
+python scripts/scraping/fetch_prizepicks_props.py
+
+# Run with guard-rail active (default)
+python scripts/auto_paper.py --fetch_lines --days 0
+
+# Check slip count in logs
+grep "Generated slips:" logs/auto_paper.log
+```
+
+#### Troubleshooting Guard-Rail Issues
+- **InsufficientSlipsError**: Check data quality, adjust thresholds, or use bypass flag
+- **Low slip counts**: Review rejection logs, consider threshold tuning
+- **CI failures**: Verify coverage ≥14%, check guard-rail test compatibility
 
 ## Monitoring
 

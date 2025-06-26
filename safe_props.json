@@ -1,0 +1,82 @@
+[
+  {
+    "prop_id": "SAFE-001",
+    "player": "Caitlin Clark",
+    "stat": "points",
+    "line": 20.5,
+    "confidence": 0.85,
+    "value": 150,
+    "timestamp": "2025-06-26T12:00:00",
+    "edge_score": 0.1
+  },
+  {
+    "prop_id": "SAFE-002",
+    "player": "Aja Wilson",
+    "stat": "rebounds",
+    "line": 9.5,
+    "confidence": 0.88,
+    "value": 175,
+    "timestamp": "2025-06-26T12:00:00",
+    "edge_score": 0.1
+  },
+  {
+    "prop_id": "SAFE-003",
+    "player": "Sabrina Ionescu",
+    "stat": "assists",
+    "line": 6.5,
+    "confidence": 0.82,
+    "value": 160,
+    "timestamp": "2025-06-26T12:00:00",
+    "edge_score": 0.1
+  },
+  {
+    "prop_id": "SAFE-004",
+    "player": "Breanna Stewart",
+    "stat": "points",
+    "line": 21.5,
+    "confidence": 0.79,
+    "value": 145,
+    "timestamp": "2025-06-26T12:00:00",
+    "edge_score": 0.1
+  },
+  {
+    "prop_id": "SAFE-005",
+    "player": "Arike Ogunbowale",
+    "stat": "points",
+    "line": 19.5,
+    "confidence": 0.81,
+    "value": 155,
+    "timestamp": "2025-06-26T12:00:00",
+    "edge_score": 0.1
+  },
+  {
+    "prop_id": "SAFE-006",
+    "player": "Napheesa Collier",
+    "stat": "rebounds",
+    "line": 7.5,
+    "confidence": 0.77,
+    "value": 140,
+    "timestamp": "2025-06-26T12:00:00",
+    "edge_score": 0.1
+  },
+  {
+    "prop_id": "SAFE-007",
+    "player": "Kelsey Plum",
+    "stat": "assists",
+    "line": 4.5,
+    "confidence": 0.83,
+    "value": 135,
+    "timestamp": "2025-06-26T12:00:00",
+    "edge_score": 0.1
+  },
+  {
+    "prop_id": "SAFE-008",
+    "player": "Jackie Young",
+    "stat": "points",
+    "line": 16.5,
+    "confidence": 0.8,
+    "value": 165,
+    "timestamp": "2025-06-26T12:00:00",
+    "edge_score": 0.1
+  }
+]

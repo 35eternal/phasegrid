@@ -1,0 +1,1122 @@
+[
+  {
+    "prop_id": "WNBA-0001",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Points",
+    "line": 13.5,
+    "confidence": 0.76,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465267"
+  },
+  {
+    "prop_id": "WNBA-0002",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Assists",
+    "line": 5.5,
+    "confidence": 0.77,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465272"
+  },
+  {
+    "prop_id": "WNBA-0003",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "3-PT Made",
+    "line": 3.5,
+    "confidence": 0.78,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465275"
+  },
+  {
+    "prop_id": "WNBA-0004",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "3-PT Made",
+    "line": 2.5,
+    "confidence": 0.79,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465277"
+  },
+  {
+    "prop_id": "WNBA-0005",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Rebounds",
+    "line": 4.5,
+    "confidence": 0.8,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465279"
+  },
+  {
+    "prop_id": "WNBA-0006",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Pts+Rebs+Asts",
+    "line": 29.5,
+    "confidence": 0.81,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465281"
+  },
+  {
+    "prop_id": "WNBA-0007",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Points",
+    "line": 19.5,
+    "confidence": 0.8200000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465283"
+  },
+  {
+    "prop_id": "WNBA-0008",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Rebounds",
+    "line": 5.5,
+    "confidence": 0.8300000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465287"
+  },
+  {
+    "prop_id": "WNBA-0009",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Pts+Rebs+Asts",
+    "line": 19.5,
+    "confidence": 0.84,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465289"
+  },
+  {
+    "prop_id": "WNBA-0010",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Rebounds",
+    "line": 7.5,
+    "confidence": 0.85,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465291"
+  },
+  {
+    "prop_id": "WNBA-0011",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Rebs+Asts",
+    "line": 8.0,
+    "confidence": 0.76,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465293"
+  },
+  {
+    "prop_id": "WNBA-0012",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Fantasy Score",
+    "line": 29.0,
+    "confidence": 0.77,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465295"
+  },
+  {
+    "prop_id": "WNBA-0013",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Pts+Rebs+Asts",
+    "line": 22.0,
+    "confidence": 0.78,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465297"
+  },
+  {
+    "prop_id": "WNBA-0014",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Points",
+    "line": 9.5,
+    "confidence": 0.79,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465299"
+  },
+  {
+    "prop_id": "WNBA-0015",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Pts+Asts",
+    "line": 17.5,
+    "confidence": 0.8,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465301"
+  },
+  {
+    "prop_id": "WNBA-0016",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Points",
+    "line": 11.5,
+    "confidence": 0.81,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465303"
+  },
+  {
+    "prop_id": "WNBA-0017",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Points",
+    "line": 14.5,
+    "confidence": 0.8200000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465305"
+  },
+  {
+    "prop_id": "WNBA-0018",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Rebounds",
+    "line": 4.0,
+    "confidence": 0.8300000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465307"
+  },
+  {
+    "prop_id": "WNBA-0019",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Pts+Rebs",
+    "line": 17.5,
+    "confidence": 0.84,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465308"
+  },
+  {
+    "prop_id": "WNBA-0020",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Rebounds",
+    "line": 3.5,
+    "confidence": 0.85,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465310"
+  },
+  {
+    "prop_id": "WNBA-0021",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Assists",
+    "line": 2.5,
+    "confidence": 0.76,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465311"
+  },
+  {
+    "prop_id": "WNBA-0022",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Pts+Rebs+Asts",
+    "line": 24.5,
+    "confidence": 0.77,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465313"
+  },
+  {
+    "prop_id": "WNBA-0023",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Rebounds",
+    "line": 2.5,
+    "confidence": 0.78,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465316"
+  },
+  {
+    "prop_id": "WNBA-0024",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Points",
+    "line": 12.5,
+    "confidence": 0.79,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465318"
+  },
+  {
+    "prop_id": "WNBA-0025",
+    "player": "Gabby Williams",
+    "team": "SEA",
+    "stat": "Assists",
+    "line": 4.5,
+    "confidence": 0.8,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465320"
+  },
+  {
+    "prop_id": "WNBA-0026",
+    "player": "Ezi Magbegor",
+    "team": "SEA",
+    "stat": "Rebounds",
+    "line": 6.5,
+    "confidence": 0.81,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465322"
+  },
+  {
+    "prop_id": "WNBA-0027",
+    "player": "Ezi Magbegor",
+    "team": "SEA",
+    "stat": "Points",
+    "line": 7.5,
+    "confidence": 0.8200000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465324"
+  },
+  {
+    "prop_id": "WNBA-0028",
+    "player": "Ezi Magbegor",
+    "team": "SEA",
+    "stat": "Points",
+    "line": 11.5,
+    "confidence": 0.8300000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465326"
+  },
+  {
+    "prop_id": "WNBA-0029",
+    "player": "Ezi Magbegor",
+    "team": "SEA",
+    "stat": "Pts+Rebs+Asts",
+    "line": 20.0,
+    "confidence": 0.84,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465327"
+  },
+  {
+    "prop_id": "WNBA-0030",
+    "player": "Ezi Magbegor",
+    "team": "SEA",
+    "stat": "Fantasy Score",
+    "line": 25.5,
+    "confidence": 0.85,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465329"
+  },
+  {
+    "prop_id": "WNBA-0031",
+    "player": "Ezi Magbegor",
+    "team": "SEA",
+    "stat": "Points",
+    "line": 14.5,
+    "confidence": 0.76,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465331"
+  },
+  {
+    "prop_id": "WNBA-0032",
+    "player": "Ezi Magbegor",
+    "team": "SEA",
+    "stat": "Pts+Rebs",
+    "line": 18.0,
+    "confidence": 0.77,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465332"
+  },
+  {
+    "prop_id": "WNBA-0033",
+    "player": "Ezi Magbegor",
+    "team": "SEA",
+    "stat": "Rebounds",
+    "line": 8.0,
+    "confidence": 0.78,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465336"
+  },
+  {
+    "prop_id": "WNBA-0034",
+    "player": "Ezi Magbegor",
+    "team": "SEA",
+    "stat": "Points",
+    "line": 9.5,
+    "confidence": 0.79,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465338"
+  },
+  {
+    "prop_id": "WNBA-0035",
+    "player": "Ezi Magbegor",
+    "team": "SEA",
+    "stat": "Rebounds",
+    "line": 11.5,
+    "confidence": 0.8,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465340"
+  },
+  {
+    "prop_id": "WNBA-0036",
+    "player": "Ezi Magbegor",
+    "team": "SEA",
+    "stat": "Rebounds",
+    "line": 9.5,
+    "confidence": 0.81,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465341"
+  },
+  {
+    "prop_id": "WNBA-0037",
+    "player": "Maddy Siegrist",
+    "team": "DAL",
+    "stat": "Points",
+    "line": 14.5,
+    "confidence": 0.8200000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465370"
+  },
+  {
+    "prop_id": "WNBA-0038",
+    "player": "Maddy Siegrist",
+    "team": "DAL",
+    "stat": "Rebounds",
+    "line": 5.5,
+    "confidence": 0.8300000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465372"
+  },
+  {
+    "prop_id": "WNBA-0039",
+    "player": "Maddy Siegrist",
+    "team": "DAL",
+    "stat": "Points",
+    "line": 10.5,
+    "confidence": 0.84,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465374"
+  },
+  {
+    "prop_id": "WNBA-0040",
+    "player": "Maddy Siegrist",
+    "team": "DAL",
+    "stat": "Rebounds",
+    "line": 4.5,
+    "confidence": 0.85,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465376"
+  },
+  {
+    "prop_id": "WNBA-0041",
+    "player": "Maddy Siegrist",
+    "team": "DAL",
+    "stat": "Points",
+    "line": 9.5,
+    "confidence": 0.76,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465378"
+  },
+  {
+    "prop_id": "WNBA-0042",
+    "player": "Maddy Siegrist",
+    "team": "DAL",
+    "stat": "Pts+Rebs",
+    "line": 15.0,
+    "confidence": 0.77,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465379"
+  },
+  {
+    "prop_id": "WNBA-0043",
+    "player": "Maddy Siegrist",
+    "team": "DAL",
+    "stat": "Rebounds",
+    "line": 3.5,
+    "confidence": 0.78,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465381"
+  },
+  {
+    "prop_id": "WNBA-0044",
+    "player": "Maddy Siegrist",
+    "team": "DAL",
+    "stat": "Rebounds",
+    "line": 7.5,
+    "confidence": 0.79,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465383"
+  },
+  {
+    "prop_id": "WNBA-0045",
+    "player": "Maddy Siegrist",
+    "team": "DAL",
+    "stat": "Points",
+    "line": 11.5,
+    "confidence": 0.8,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465384"
+  },
+  {
+    "prop_id": "WNBA-0046",
+    "player": "Maddy Siegrist",
+    "team": "DAL",
+    "stat": "Points",
+    "line": 7.5,
+    "confidence": 0.81,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465386"
+  },
+  {
+    "prop_id": "WNBA-0047",
+    "player": "Arike Ogunbowale",
+    "team": "DAL",
+    "stat": "Assists",
+    "line": 7.5,
+    "confidence": 0.8200000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465390"
+  },
+  {
+    "prop_id": "WNBA-0048",
+    "player": "Arike Ogunbowale",
+    "team": "DAL",
+    "stat": "Points",
+    "line": 14.5,
+    "confidence": 0.8300000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465392"
+  },
+  {
+    "prop_id": "WNBA-0049",
+    "player": "Arike Ogunbowale",
+    "team": "DAL",
+    "stat": "3-PT Made",
+    "line": 3.5,
+    "confidence": 0.84,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465394"
+  },
+  {
+    "prop_id": "WNBA-0050",
+    "player": "Arike Ogunbowale",
+    "team": "DAL",
+    "stat": "Pts+Asts",
+    "line": 23.0,
+    "confidence": 0.85,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465396"
+  },
+  {
+    "prop_id": "WNBA-0051",
+    "player": "Arike Ogunbowale",
+    "team": "DAL",
+    "stat": "Points",
+    "line": 18.0,
+    "confidence": 0.76,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465397"
+  },
+  {
+    "prop_id": "WNBA-0052",
+    "player": "Arike Ogunbowale",
+    "team": "DAL",
+    "stat": "Rebounds",
+    "line": 3.5,
+    "confidence": 0.77,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465399"
+  },
+  {
+    "prop_id": "WNBA-0053",
+    "player": "Arike Ogunbowale",
+    "team": "DAL",
+    "stat": "Rebs+Asts",
+    "line": 8.0,
+    "confidence": 0.78,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465400"
+  },
+  {
+    "prop_id": "WNBA-0054",
+    "player": "Arike Ogunbowale",
+    "team": "DAL",
+    "stat": "Assists",
+    "line": 3.5,
+    "confidence": 0.79,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465402"
+  },
+  {
+    "prop_id": "WNBA-0055",
+    "player": "Arike Ogunbowale",
+    "team": "DAL",
+    "stat": "Points",
+    "line": 29.5,
+    "confidence": 0.8,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465404"
+  },
+  {
+    "prop_id": "WNBA-0056",
+    "player": "Arike Ogunbowale",
+    "team": "DAL",
+    "stat": "3-PT Made",
+    "line": 1.5,
+    "confidence": 0.81,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465406"
+  },
+  {
+    "prop_id": "WNBA-0057",
+    "player": "Arike Ogunbowale",
+    "team": "DAL",
+    "stat": "Points",
+    "line": 19.5,
+    "confidence": 0.8200000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465407"
+  },
+  {
+    "prop_id": "WNBA-0058",
+    "player": "Arike Ogunbowale",
+    "team": "DAL",
+    "stat": "3-PT Made",
+    "line": 4.5,
+    "confidence": 0.8300000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465409"
+  },
+  {
+    "prop_id": "WNBA-0059",
+    "player": "Arike Ogunbowale",
+    "team": "DAL",
+    "stat": "Pts+Rebs+Asts",
+    "line": 26.0,
+    "confidence": 0.84,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465411"
+  },
+  {
+    "prop_id": "WNBA-0060",
+    "player": "Arike Ogunbowale",
+    "team": "DAL",
+    "stat": "Points",
+    "line": 16.5,
+    "confidence": 0.85,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465412"
+  },
+  {
+    "prop_id": "WNBA-0061",
+    "player": "Arike Ogunbowale",
+    "team": "DAL",
+    "stat": "Fantasy Score",
+    "line": 32.0,
+    "confidence": 0.76,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465415"
+  },
+  {
+    "prop_id": "WNBA-0062",
+    "player": "Arike Ogunbowale",
+    "team": "DAL",
+    "stat": "Assists",
+    "line": 2.5,
+    "confidence": 0.77,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465417"
+  },
+  {
+    "prop_id": "WNBA-0063",
+    "player": "Arike Ogunbowale",
+    "team": "DAL",
+    "stat": "Pts+Rebs",
+    "line": 21.5,
+    "confidence": 0.78,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465418"
+  },
+  {
+    "prop_id": "WNBA-0064",
+    "player": "Arike Ogunbowale",
+    "team": "DAL",
+    "stat": "Points",
+    "line": 24.5,
+    "confidence": 0.79,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465420"
+  },
+  {
+    "prop_id": "WNBA-0065",
+    "player": "Arike Ogunbowale",
+    "team": "DAL",
+    "stat": "Assists",
+    "line": 5.5,
+    "confidence": 0.8,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465422"
+  },
+  {
+    "prop_id": "WNBA-0066",
+    "player": "Skylar Diggins",
+    "team": "SEA",
+    "stat": "Fantasy Score",
+    "line": 35.0,
+    "confidence": 0.81,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465424"
+  },
+  {
+    "prop_id": "WNBA-0067",
+    "player": "Skylar Diggins",
+    "team": "SEA",
+    "stat": "Assists",
+    "line": 11.5,
+    "confidence": 0.8200000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465426"
+  },
+  {
+    "prop_id": "WNBA-0068",
+    "player": "Skylar Diggins",
+    "team": "SEA",
+    "stat": "Points",
+    "line": 19.5,
+    "confidence": 0.8300000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465427"
+  },
+  {
+    "prop_id": "WNBA-0069",
+    "player": "Skylar Diggins",
+    "team": "SEA",
+    "stat": "Assists",
+    "line": 5.5,
+    "confidence": 0.84,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465429"
+  },
+  {
+    "prop_id": "WNBA-0070",
+    "player": "Skylar Diggins",
+    "team": "SEA",
+    "stat": "Pts+Rebs+Asts",
+    "line": 28.0,
+    "confidence": 0.85,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465430"
+  },
+  {
+    "prop_id": "WNBA-0071",
+    "player": "Skylar Diggins",
+    "team": "SEA",
+    "stat": "Assists",
+    "line": 9.5,
+    "confidence": 0.76,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465432"
+  },
+  {
+    "prop_id": "WNBA-0072",
+    "player": "Skylar Diggins",
+    "team": "SEA",
+    "stat": "Assists",
+    "line": 6.5,
+    "confidence": 0.77,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465435"
+  },
+  {
+    "prop_id": "WNBA-0073",
+    "player": "Skylar Diggins",
+    "team": "SEA",
+    "stat": "Rebs+Asts",
+    "line": 10.0,
+    "confidence": 0.78,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465437"
+  },
+  {
+    "prop_id": "WNBA-0074",
+    "player": "Skylar Diggins",
+    "team": "SEA",
+    "stat": "Pts+Asts",
+    "line": 25.5,
+    "confidence": 0.79,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465439"
+  },
+  {
+    "prop_id": "WNBA-0075",
+    "player": "Skylar Diggins",
+    "team": "SEA",
+    "stat": "Points",
+    "line": 18.5,
+    "confidence": 0.8,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465441"
+  },
+  {
+    "prop_id": "WNBA-0076",
+    "player": "Skylar Diggins",
+    "team": "SEA",
+    "stat": "Assists",
+    "line": 7.0,
+    "confidence": 0.81,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465442"
+  },
+  {
+    "prop_id": "WNBA-0077",
+    "player": "Skylar Diggins",
+    "team": "SEA",
+    "stat": "Points",
+    "line": 24.5,
+    "confidence": 0.8200000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465444"
+  },
+  {
+    "prop_id": "WNBA-0078",
+    "player": "Skylar Diggins",
+    "team": "SEA",
+    "stat": "Points",
+    "line": 14.5,
+    "confidence": 0.8300000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465446"
+  },
+  {
+    "prop_id": "WNBA-0079",
+    "player": "Nneka Ogwumike",
+    "team": "SEA",
+    "stat": "Points",
+    "line": 17.5,
+    "confidence": 0.84,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465448"
+  },
+  {
+    "prop_id": "WNBA-0080",
+    "player": "Nneka Ogwumike",
+    "team": "SEA",
+    "stat": "Pts+Rebs+Asts",
+    "line": 29.5,
+    "confidence": 0.85,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465450"
+  },
+  {
+    "prop_id": "WNBA-0081",
+    "player": "Nneka Ogwumike",
+    "team": "SEA",
+    "stat": "Fantasy Score",
+    "line": 35.0,
+    "confidence": 0.76,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465451"
+  },
+  {
+    "prop_id": "WNBA-0082",
+    "player": "Nneka Ogwumike",
+    "team": "SEA",
+    "stat": "Points",
+    "line": 14.5,
+    "confidence": 0.77,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465453"
+  },
+  {
+    "prop_id": "WNBA-0083",
+    "player": "Nneka Ogwumike",
+    "team": "SEA",
+    "stat": "Pts+Rebs",
+    "line": 27.5,
+    "confidence": 0.78,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465454"
+  },
+  {
+    "prop_id": "WNBA-0084",
+    "player": "Nneka Ogwumike",
+    "team": "SEA",
+    "stat": "Points",
+    "line": 24.5,
+    "confidence": 0.79,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465456"
+  },
+  {
+    "prop_id": "WNBA-0085",
+    "player": "Nneka Ogwumike",
+    "team": "SEA",
+    "stat": "Rebounds",
+    "line": 6.5,
+    "confidence": 0.8,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465458"
+  },
+  {
+    "prop_id": "WNBA-0086",
+    "player": "Nneka Ogwumike",
+    "team": "SEA",
+    "stat": "Points",
+    "line": 20.5,
+    "confidence": 0.81,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465460"
+  },
+  {
+    "prop_id": "WNBA-0087",
+    "player": "Nneka Ogwumike",
+    "team": "SEA",
+    "stat": "Points",
+    "line": 19.5,
+    "confidence": 0.8200000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465462"
+  },
+  {
+    "prop_id": "WNBA-0088",
+    "player": "Nneka Ogwumike",
+    "team": "SEA",
+    "stat": "Rebounds",
+    "line": 8.0,
+    "confidence": 0.8300000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465464"
+  },
+  {
+    "prop_id": "WNBA-0089",
+    "player": "Nneka Ogwumike",
+    "team": "SEA",
+    "stat": "Rebounds",
+    "line": 11.5,
+    "confidence": 0.84,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465466"
+  },
+  {
+    "prop_id": "WNBA-0090",
+    "player": "Nneka Ogwumike",
+    "team": "SEA",
+    "stat": "Rebounds",
+    "line": 9.5,
+    "confidence": 0.85,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465467"
+  },
+  {
+    "prop_id": "WNBA-0091",
+    "player": "Nneka Ogwumike",
+    "team": "SEA",
+    "stat": "Rebounds",
+    "line": 12.5,
+    "confidence": 0.76,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465469"
+  },
+  {
+    "prop_id": "WNBA-0092",
+    "player": "Nneka Ogwumike",
+    "team": "SEA",
+    "stat": "Rebounds",
+    "line": 7.5,
+    "confidence": 0.77,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465471"
+  },
+  {
+    "prop_id": "WNBA-0093",
+    "player": "DiJonai Carrington",
+    "team": "DAL",
+    "stat": "Rebounds",
+    "line": 6.5,
+    "confidence": 0.78,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465473"
+  },
+  {
+    "prop_id": "WNBA-0094",
+    "player": "DiJonai Carrington",
+    "team": "DAL",
+    "stat": "Points",
+    "line": 19.5,
+    "confidence": 0.79,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465475"
+  },
+  {
+    "prop_id": "WNBA-0095",
+    "player": "DiJonai Carrington",
+    "team": "DAL",
+    "stat": "Points",
+    "line": 11.5,
+    "confidence": 0.8,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465476"
+  },
+  {
+    "prop_id": "WNBA-0096",
+    "player": "DiJonai Carrington",
+    "team": "DAL",
+    "stat": "Fantasy Score",
+    "line": 25.0,
+    "confidence": 0.81,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465478"
+  },
+  {
+    "prop_id": "WNBA-0097",
+    "player": "DiJonai Carrington",
+    "team": "DAL",
+    "stat": "Rebounds",
+    "line": 2.5,
+    "confidence": 0.8200000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465479"
+  },
+  {
+    "prop_id": "WNBA-0098",
+    "player": "DiJonai Carrington",
+    "team": "DAL",
+    "stat": "Rebounds",
+    "line": 4.5,
+    "confidence": 0.8300000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465481"
+  },
+  {
+    "prop_id": "WNBA-0099",
+    "player": "DiJonai Carrington",
+    "team": "DAL",
+    "stat": "Rebounds",
+    "line": 4.0,
+    "confidence": 0.84,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465483"
+  },
+  {
+    "prop_id": "WNBA-0100",
+    "player": "DiJonai Carrington",
+    "team": "DAL",
+    "stat": "Points",
+    "line": 12.5,
+    "confidence": 0.85,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465484"
+  },
+  {
+    "prop_id": "WNBA-0101",
+    "player": "DiJonai Carrington",
+    "team": "DAL",
+    "stat": "Rebounds",
+    "line": 3.5,
+    "confidence": 0.76,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465486"
+  },
+  {
+    "prop_id": "WNBA-0102",
+    "player": "DiJonai Carrington",
+    "team": "DAL",
+    "stat": "Pts+Rebs",
+    "line": 17.0,
+    "confidence": 0.77,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465488"
+  },
+  {
+    "prop_id": "WNBA-0103",
+    "player": "DiJonai Carrington",
+    "team": "DAL",
+    "stat": "Pts+Rebs+Asts",
+    "line": 19.0,
+    "confidence": 0.78,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465490"
+  },
+  {
+    "prop_id": "WNBA-0104",
+    "player": "DiJonai Carrington",
+    "team": "DAL",
+    "stat": "Rebounds",
+    "line": 5.5,
+    "confidence": 0.79,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465492"
+  },
+  {
+    "prop_id": "WNBA-0105",
+    "player": "DiJonai Carrington",
+    "team": "DAL",
+    "stat": "Points",
+    "line": 9.5,
+    "confidence": 0.8,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465494"
+  },
+  {
+    "prop_id": "WNBA-0106",
+    "player": "DiJonai Carrington",
+    "team": "DAL",
+    "stat": "Points",
+    "line": 14.5,
+    "confidence": 0.81,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465496"
+  },
+  {
+    "prop_id": "WNBA-0107",
+    "player": "NaLyssa Smith",
+    "team": "DAL",
+    "stat": "Pts+Rebs",
+    "line": 14.0,
+    "confidence": 0.8200000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465498"
+  },
+  {
+    "prop_id": "WNBA-0108",
+    "player": "NaLyssa Smith",
+    "team": "DAL",
+    "stat": "Points",
+    "line": 9.5,
+    "confidence": 0.8300000000000001,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465499"
+  },
+  {
+    "prop_id": "WNBA-0109",
+    "player": "Myisha Hines-Allen",
+    "team": "DAL",
+    "stat": "Points",
+    "line": 8.0,
+    "confidence": 0.84,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465508"
+  },
+  {
+    "prop_id": "WNBA-0110",
+    "player": "Myisha Hines-Allen",
+    "team": "DAL",
+    "stat": "Pts+Rebs+Asts",
+    "line": 17.0,
+    "confidence": 0.85,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465510"
+  },
+  {
+    "prop_id": "WNBA-0111",
+    "player": "Skylar Diggins + Arike Ogunbowale",
+    "team": "SEA/DAL",
+    "stat": "Points (Combo)",
+    "line": 36.5,
+    "confidence": 0.76,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465520"
+  },
+  {
+    "prop_id": "WNBA-0112",
+    "player": "Skylar Diggins + Arike Ogunbowale",
+    "team": "SEA/DAL",
+    "stat": "Assists (Combo)",
+    "line": 12.0,
+    "confidence": 0.77,
+    "value": 100,
+    "timestamp": "2025-06-16T20:09:03.465522"
+  }
+]

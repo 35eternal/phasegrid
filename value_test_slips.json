@@ -1,0 +1,102 @@
+[
+  {
+    "slip_id": "SLIP-VAL-001-2025-06-26",
+    "prop_id": "VAL-001",
+    "value": 120,
+    "confidence": 0.76,
+    "date": "2025-06-26",
+    "timestamp": "2025-06-26T12:00:00",
+    "source": "unknown",
+    "created_at": "2025-06-26T12:47:54.151803"
+  },
+  {
+    "slip_id": "SLIP-VAL-002-2025-06-26",
+    "prop_id": "VAL-002",
+    "value": 130,
+    "confidence": 0.77,
+    "date": "2025-06-26",
+    "timestamp": "2025-06-26T12:00:00",
+    "source": "unknown",
+    "created_at": "2025-06-26T12:47:54.151815"
+  },
+  {
+    "slip_id": "SLIP-VAL-003-2025-06-26",
+    "prop_id": "VAL-003",
+    "value": 140,
+    "confidence": 0.78,
+    "date": "2025-06-26",
+    "timestamp": "2025-06-26T12:00:00",
+    "source": "unknown",
+    "created_at": "2025-06-26T12:47:54.151820"
+  },
+  {
+    "slip_id": "SLIP-VAL-004-2025-06-26",
+    "prop_id": "VAL-004",
+    "value": 150,
+    "confidence": 0.79,
+    "date": "2025-06-26",
+    "timestamp": "2025-06-26T12:00:00",
+    "source": "unknown",
+    "created_at": "2025-06-26T12:47:54.151823"
+  },
+  {
+    "slip_id": "SLIP-VAL-005-2025-06-26",
+    "prop_id": "VAL-005",
+    "value": 160,
+    "confidence": 0.8,
+    "date": "2025-06-26",
+    "timestamp": "2025-06-26T12:00:00",
+    "source": "unknown",
+    "created_at": "2025-06-26T12:47:54.151825"
+  },
+  {
+    "slip_id": "SLIP-VAL-006-2025-06-26",
+    "prop_id": "VAL-006",
+    "value": 170,
+    "confidence": 0.81,
+    "date": "2025-06-26",
+    "timestamp": "2025-06-26T12:00:00",
+    "source": "unknown",
+    "created_at": "2025-06-26T12:47:54.151828"
+  },
+  {
+    "slip_id": "SLIP-VAL-007-2025-06-26",
+    "prop_id": "VAL-007",
+    "value": 180,
+    "confidence": 0.8200000000000001,
+    "date": "2025-06-26",
+    "timestamp": "2025-06-26T12:00:00",
+    "source": "unknown",
+    "created_at": "2025-06-26T12:47:54.151830"
+  },
+  {
+    "slip_id": "SLIP-VAL-008-2025-06-26",
+    "prop_id": "VAL-008",
+    "value": 190,
+    "confidence": 0.8300000000000001,
+    "date": "2025-06-26",
+    "timestamp": "2025-06-26T12:00:00",
+    "source": "unknown",
+    "created_at": "2025-06-26T12:47:54.151832"
+  },
+  {
+    "slip_id": "SLIP-VAL-009-2025-06-26",
+    "prop_id": "VAL-009",
+    "value": 200,
+    "confidence": 0.84,
+    "date": "2025-06-26",
+    "timestamp": "2025-06-26T12:00:00",
+    "source": "unknown",
+    "created_at": "2025-06-26T12:47:54.151834"
+  },
+  {
+    "slip_id": "SLIP-VAL-010-2025-06-26",
+    "prop_id": "VAL-010",
+    "value": 210,
+    "confidence": 0.85,
+    "date": "2025-06-26",
+    "timestamp": "2025-06-26T12:00:00",
+    "source": "unknown",
+    "created_at": "2025-06-26T12:47:54.151836"
+  }
+]
