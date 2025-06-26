@@ -1,0 +1,27 @@
+﻿[run]
+source = .
+omit = 
+    */tests/*
+    */venv/*
+    */__pycache__/*
+    */htmlcov/*
+    setup.py
+    */migrations/*
+    *_backup*.py
+    *_old.py
+    *_original*.py
+    */backup_*/*
+    test_*.py
+    quick_*.py
+    debug_*.py
+    fix_*.py
+    simple_*.py
+    
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    raise AssertionError
+    raise NotImplementedError
+    if __name__ == .__main__.:
+precision = 2
