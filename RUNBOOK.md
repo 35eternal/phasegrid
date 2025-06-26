@@ -426,3 +426,29 @@ The nightly grader now handles insufficient slip scenarios gracefully:
 - **Logging**: Warnings instead of errors for expected conditions
 - **Configurable threshold**: Set MIN_SLIPS_THRESHOLD env var
 - **Log retention**: 30 days (increased from 7)
+Test Coverage Update (June 2025)
+Coverage Achievement
+As of June 2025, the project has achieved 15%+ test coverage, meeting the minimum requirements for production deployment.
+New Test Files Added
+
+tests/test_small_files.py: Tests for utility scripts and small modules
+tests/test_betting_analysis.py: Tests for betting analysis modules
+tests/test_check_diagnostic.py: Tests for diagnostic and check scripts
+tests/test_coverage_booster.py: Additional tests for configuration and setup modules
+
+CI Coverage Enforcement
+The CI pipeline now enforces a minimum coverage of 14% (providing a 1% buffer from our 15% achievement). This ensures code quality doesn't regress below acceptable levels.
+Running Tests Locally
+bash# Run all tests
+pytest
+
+# Run with coverage report
+pytest --cov=. --cov-report=term
+
+# Run specific test files
+pytest tests/test_small_files.py tests/test_betting_analysis.py
+Coverage Monitoring
+Monitor coverage trends through:
+
+GitHub Actions artifacts (coverage.xml)
+Local coverage reports: pytest --cov=. --cov-report=html
