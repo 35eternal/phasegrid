@@ -386,3 +386,43 @@ For urgent issues:
 - Check Discord #alerts channel
 - Review GitHub Actions logs
 - Contact operations team lead
+## API Retry and Backoff Behavior
+
+### PrizePicks Scraper Resilience
+The PrizePicks scraper (scripts/scraping/fetch_prizepicks_props.py) now includes exponential backoff retry logic:
+
+- **Retry attempts**: 5 times maximum
+- **Backoff strategy**: Exponential with multiplier=1, max=30 seconds
+- **Total retry time**: Under 30 seconds
+- **Error handling**: Logs all attempts and raises after max retries
+
+This prevents transient API failures from breaking the data pipeline.
+
+## CI/CD Coverage Requirements
+
+### Test Coverage Enforcement
+The CI pipeline now enforces minimum test coverage:
+
+- **Current threshold**: 34% (configurable via MIN_COVERAGE_THRESHOLD env var)
+- **Configuration**: .github/workflows/tests.yml
+- **Failure behavior**: CI fails if coverage drops below threshold
+
+## Stats CLI Usage
+
+### Viewing Daily ROI Statistics
+The new stats CLI (scripts/stats.py) provides betting performance analytics:
+
+View last 7 days: python scripts/stats.py
+View last 30 days: python scripts/stats.py --days 30
+Export as HTML: python scripts/stats.py --output html --save-to stats.html
+Export as JSON: python scripts/stats.py --output json --save-to stats.json
+
+## Nightly Grader Enhancements
+
+### InsufficientSlipsError Handling
+The nightly grader now handles insufficient slip scenarios gracefully:
+
+- **Error class**: InsufficientSlipsError 
+- **Logging**: Warnings instead of errors for expected conditions
+- **Configurable threshold**: Set MIN_SLIPS_THRESHOLD env var
+- **Log retention**: 30 days (increased from 7)

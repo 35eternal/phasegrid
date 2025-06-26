@@ -764,3 +764,21 @@ python scripts/paper_trader.py --date 20240315 --results_source stub
 - Run simulations across multiple dates to identify patterns
 - Monitor the `roi` metric in daily summaries
 - Use `--results_source api` for live data testing (requires API key)
+
+## Viewing Performance Statistics
+
+### Using the Stats CLI
+After running the system for a few days, view your performance:
+
+View basic stats: python scripts/stats.py
+View extended history: python scripts/stats.py --days 30
+Generate HTML report: python scripts/stats.py --output html --save-to reports/weekly_stats.html
+Export data as JSON: python scripts/stats.py --output json --save-to data/stats_export.json
+
+### System Reliability Features
+
+The system now includes:
+- Automatic retry with exponential backoff for API calls
+- Test coverage enforcement at 34%
+- Enhanced error logging in nightly grader
+- Performance statistics tracking
