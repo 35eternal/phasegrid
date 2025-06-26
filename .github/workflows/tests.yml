@@ -20,7 +20,7 @@ jobs:
           MIN_COVERAGE_THRESHOLD: 34
         run: |
           echo "Running tests with minimum coverage threshold: $env:MIN_COVERAGE_THRESHOLD%"
-          pytest tests/ --cov=modules --cov=scripts --cov-report=xml --cov-fail-under=$env:MIN_COVERAGE_THRESHOLD
+          pytest tests/ --cov=. --cov-report=xml --cov-fail-under=$env:MIN_COVERAGE_THRESHOLD
       - uses: actions/upload-artifact@v4
         with:
           name: coverage-xml
