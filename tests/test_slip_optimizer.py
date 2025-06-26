@@ -1,212 +1,149 @@
-"""
-Unit tests for slip optimizer with POWER and FLEX support.
-Tests unique IDs, positive EV constraint, prop usage limits, and FLEX EV calculations.
-"""
-
-import pytest
+﻿# tests/test_slip_optimizer.py
+import unittest
+from unittest.mock import Mock, patch, MagicMock
 import pandas as pd
 import numpy as np
-from pathlib import Path
-import sys
-import json
-
-# Add parent directory to path
-sys.path.append(str(Path(__file__).parent.parent))
-
-from modules.slip_optimizer import SlipOptimizer
+from datetime import datetime
+from src.slip_optimizer import SlipOptimizer
 
 
-class TestSlipOptimizer:
-    """Test suite for SlipOptimizer functionality."""
-    
-    @pytest.fixture
-    def optimizer(self, tmp_path):
-        """Create optimizer with test payout config."""
-        # Create test payout config
-        payout_config = {
-            "power": {
-                "3": 10.0,
-                "4": 20.0,
-                "5": 40.0,
-                "6": 100.0
-            },
-            "flex": {
-                "3_of_3": 5.0,
-                "3_of_4": 2.5,
-                "4_of_4": 10.0,
-                "4_of_5": 4.0,
-                "5_of_5": 20.0,
-                "5_of_6": 10.0,
-                "6_of_6": 40.0
-            }
-        }
-        
-        config_path = tmp_path / "test_payouts.json"
-        with open(config_path, 'w') as f:
-            json.dump(payout_config, f)
-        
-        return SlipOptimizer(config_path)
-    
-    @pytest.fixture
-    def sample_props(self):
-        """Generate sample props DataFrame."""
-        np.random.seed(42)  # For reproducibility
-        
-        props = pd.DataFrame({
-            'prop_id': [f'P{i:03d}' for i in range(20)],
-            'player': [f'Player_{i}' for i in range(20)],
-            'type': ['points'] * 10 + ['rebounds'] * 10,
-            'line': np.random.uniform(15, 30, 20),
-            'implied_prob': np.random.uniform(0.45, 0.65, 20),
-            'phase': np.random.choice(['follicular', 'ovulatory', 'luteal', 'menstrual'], 20)
+class TestSlipOptimizer(unittest.TestCase):
+    def setUp(self):
+        """Set up test fixtures"""
+        self.optimizer = SlipOptimizer()
+        self.sample_predictions = pd.DataFrame({
+            'player': ['Player A', 'Player B', 'Player C', 'Player D'],
+            'stat': ['points', 'rebounds', 'assists', 'points'],
+            'projection': [25.5, 8.5, 6.5, 30.0],
+            'line': [24.5, 9.5, 5.5, 28.5],
+            'edge': [4.08, -10.53, 18.18, 5.26],
+            'confidence': [0.75, 0.45, 0.85, 0.70],
+            'ev': [1.08, 0.89, 1.18, 1.05]
         })
-        
-        return props
     
-    def test_power_ev_calculation(self, optimizer):
-        """Test POWER play EV calculation."""
-        # Test case 1: 3-leg parlay
-        props = [
-            {'implied_prob': 0.5},
-            {'implied_prob': 0.5},
-            {'implied_prob': 0.5}
+    def test_initialization(self):
+        """Test SlipOptimizer initialization"""
+        self.assertIsNotNone(self.optimizer)
+        self.assertEqual(self.optimizer.max_entries, 6)
+        self.assertEqual(self.optimizer.min_edge, 5.0)
+    
+    def test_calculate_correlation_matrix(self):
+        """Test correlation matrix calculation"""
+        corr_matrix = self.optimizer.calculate_correlation_matrix(self.sample_predictions)
+        self.assertEqual(corr_matrix.shape, (4, 4))
+        # Diagonal should be 1s
+        np.testing.assert_array_almost_equal(np.diag(corr_matrix), np.ones(4))
+    
+    def test_optimize_single_entry(self):
+        """Test single entry optimization"""
+        result = self.optimizer.optimize_single_entry(self.sample_predictions)
+        # Should return the highest EV entry
+        self.assertEqual(result['player'], 'Player C')
+        self.assertEqual(result['ev'], 1.18)
+    
+    def test_optimize_parlay(self):
+        """Test parlay optimization"""
+        parlay = self.optimizer.optimize_parlay(self.sample_predictions, legs=3)
+        self.assertEqual(len(parlay), 3)
+        # Should be sorted by EV descending
+        evs = [p['ev'] for p in parlay]
+        self.assertEqual(evs, sorted(evs, reverse=True))
+    
+    def test_apply_kelly_sizing(self):
+        """Test Kelly criterion sizing"""
+        bankroll = 1000
+        probability = 0.60
+        odds = 1.91
+        size = self.optimizer.apply_kelly_sizing(bankroll, probability, odds)
+        expected_kelly = (probability * odds - 1) / (odds - 1)
+        expected_size = bankroll * expected_kelly * self.optimizer.kelly_fraction
+        self.assertAlmostEqual(size, expected_size, places=2)
+    
+    def test_filter_by_constraints(self):
+        """Test filtering by constraints"""
+        # Add sport column for testing
+        self.sample_predictions['sport'] = ['NBA', 'NBA', 'NFL', 'NBA']
+        
+        constraints = {
+            'min_edge': 5.0,
+            'sports': ['NBA'],
+            'max_players_per_game': 2
+        }
+        filtered = self.optimizer.filter_by_constraints(self.sample_predictions, constraints)
+        # Should only have Player A and D (NBA with edge > 5)
+        self.assertEqual(len(filtered), 2)
+        self.assertTrue(all(filtered['sport'] == 'NBA'))
+        self.assertTrue(all(filtered['edge'] >= 5.0))
+    
+    def test_calculate_parlay_ev(self):
+        """Test parlay EV calculation"""
+        legs = [
+            {'ev': 1.10, 'probability': 0.55},
+            {'ev': 1.15, 'probability': 0.58},
+            {'ev': 1.08, 'probability': 0.54}
         ]
-        ev = optimizer.calculate_power_ev(props)
-        expected_ev = (10.0 * 0.125) - 1.0  # 10x payout, 0.125 win prob
-        assert abs(ev - expected_ev) < 0.001
-        
-        # Test case 2: 4-leg parlay
-        props = [
-            {'implied_prob': 0.6},
-            {'implied_prob': 0.6},
-            {'implied_prob': 0.6},
-            {'implied_prob': 0.6}
+        parlay_ev = self.optimizer.calculate_parlay_ev(legs)
+        expected_ev = 1.10 * 1.15 * 1.08
+        self.assertAlmostEqual(parlay_ev, expected_ev, places=4)
+    
+    def test_diversification_check(self):
+        """Test portfolio diversification"""
+        entries = [
+            {'player': 'Player A', 'sport': 'NBA', 'team': 'Lakers'},
+            {'player': 'Player B', 'sport': 'NBA', 'team': 'Lakers'},
+            {'player': 'Player C', 'sport': 'NFL', 'team': 'Chiefs'}
         ]
-        ev = optimizer.calculate_power_ev(props)
-        expected_ev = (20.0 * (0.6**4)) - 1.0
-        assert abs(ev - expected_ev) < 0.001
-        
-        # Test invalid sizes
-        assert optimizer.calculate_power_ev([]) == -1.0
-        assert optimizer.calculate_power_ev([{'implied_prob': 0.5}] * 7) == -1.0
+        diversity_score = self.optimizer.calculate_diversity_score(entries)
+        # Score should be between 0 and 1
+        self.assertGreaterEqual(diversity_score, 0.0)
+        self.assertLessEqual(diversity_score, 1.0)
     
-    def test_flex_ev_calculation(self, optimizer):
-        """Test FLEX play EV calculation with tiered payouts."""
-        # Test case: 3-leg FLEX
-        props = [
-            {'implied_prob': 0.6},
-            {'implied_prob': 0.6},
-            {'implied_prob': 0.6}
-        ]
-        
-        ev = optimizer.calculate_flex_ev(props)
-        
-        # Calculate expected value manually
-        # P(3 hits) = 0.6^3 = 0.216, payout = 5x
-        # P(2 hits) = 3 * 0.6^2 * 0.4 = 0.432, payout = 0x
-        expected_ev = (5.0 * 0.216) - 1.0
-        
-        assert abs(ev - expected_ev) < 0.001
-        
-        # Test 4-leg FLEX
-        props = [{'implied_prob': 0.5}] * 4
-        ev = optimizer.calculate_flex_ev(props)
-        
-        # P(4/4) = 0.5^4 = 0.0625, payout = 10x
-        # P(3/4) = 4 * 0.5^3 * 0.5 = 0.25, payout = 2.5x
-        expected_ev = (10.0 * 0.0625) + (2.5 * 0.25) - 1.0
-        
-        assert abs(ev - expected_ev) < 0.001
+    def test_optimize_with_correlation(self):
+        """Test optimization considering correlations"""
+        # Mock correlation matrix
+        with patch.object(self.optimizer, 'calculate_correlation_matrix') as mock_corr:
+            mock_corr.return_value = np.array([
+                [1.0, 0.8, 0.2, 0.1],
+                [0.8, 1.0, 0.3, 0.2],
+                [0.2, 0.3, 1.0, 0.1],
+                [0.1, 0.2, 0.1, 1.0]
+            ])
+            
+            result = self.optimizer.optimize_with_correlation(self.sample_predictions, max_correlation=0.5)
+            # Should avoid highly correlated picks
+            self.assertGreater(len(result), 0)
     
-    def test_unique_slip_ids(self, optimizer, sample_props):
-        """Test that all generated slips have unique IDs."""
-        slips = optimizer.generate_slips(sample_props, "power", target_slips=10)
+    def test_bankroll_management(self):
+        """Test bankroll management rules"""
+        bankroll = 1000
+        current_exposure = 200
         
-        slip_ids = [slip['slip_id'] for slip in slips]
-        assert len(slip_ids) == len(set(slip_ids))  # All unique
+        # Test max exposure limit
+        max_bet = self.optimizer.calculate_max_bet(bankroll, current_exposure)
+        self.assertLessEqual(max_bet + current_exposure, bankroll * 0.25)
         
-        # Test ID format
-        for slip_id in slip_ids:
-            assert slip_id.startswith("POWER_")
-            assert len(slip_id.split('_')) == 4  # POWER_YYYYMMDD_HHMMSS_NNN
+        # Test stop loss
+        self.optimizer.daily_loss = -100
+        should_stop = self.optimizer.check_stop_loss()
+        self.assertTrue(should_stop)
     
-    def test_positive_ev_constraint(self, optimizer, sample_props):
-        """Test that all generated slips have positive EV."""
-        # Generate slips with both types
-        power_slips = optimizer.generate_slips(sample_props, "power", target_slips=5)
-        flex_slips = optimizer.generate_slips(sample_props, "flex", target_slips=5)
+    def test_slip_generation(self):
+        """Test complete slip generation"""
+        slip = self.optimizer.generate_optimal_slip(
+            predictions=self.sample_predictions,
+            bankroll=1000,
+            strategy='balanced'
+        )
         
-        # Check all EVs are positive
-        for slip in power_slips + flex_slips:
-            assert slip['ev'] > 0, f"Slip {slip['slip_id']} has non-positive EV: {slip['ev']}"
-    
-    def test_max_prop_usage(self, optimizer, sample_props):
-        """Test that no prop appears in more than max_per_prop slips."""
-        slips = optimizer.generate_slips(sample_props, "power", target_slips=10)
+        self.assertIn('entries', slip)
+        self.assertIn('total_stake', slip)
+        self.assertIn('expected_return', slip)
+        self.assertIn('strategy', slip)
+        self.assertEqual(slip['strategy'], 'balanced')
         
-        # Count prop usage
-        prop_usage = {}
-        for slip in slips:
-            for prop in slip['props']:
-                prop_id = prop['prop_id']
-                prop_usage[prop_id] = prop_usage.get(prop_id, 0) + 1
-        
-        # Check max usage
-        for prop_id, usage in prop_usage.items():
-            assert usage <= optimizer.max_per_prop, f"Prop {prop_id} used {usage} times"
-    
-    def test_props_are_lists_not_tuples(self, optimizer, sample_props):
-        """Test that props in slips are lists, not tuples (bug fix verification)."""
-        slips = optimizer.generate_slips(sample_props, "power", target_slips=5)
-        
-        for slip in slips:
-            assert isinstance(slip['props'], list), f"Props should be list, got {type(slip['props'])}"
-            # Also check it's JSON serializable
-            json.dumps(slip['props'])  # Should not raise
-    
-    def test_beam_search_efficiency(self, optimizer, sample_props):
-        """Test that beam search controls combinatorial explosion."""
-        # With beam_width=50, should complete quickly even with many props
-        import time
-        
-        start = time.time()
-        slips = optimizer.generate_slips(sample_props, "power", target_slips=5, beam_width=50)
-        elapsed = time.time() - start
-        
-        assert elapsed < 2.0, f"Beam search took too long: {elapsed}s"
-        assert len(slips) > 0, "Should generate at least some slips"
-    
-    def test_portfolio_generation(self, optimizer, sample_props):
-        """Test portfolio generation with both ticket types."""
-        portfolio = optimizer.optimize_portfolio(sample_props, power_target=3, flex_target=3)
-        
-        assert 'power' in portfolio
-        assert 'flex' in portfolio
-        assert len(portfolio['power']) <= 3
-        assert len(portfolio['flex']) <= 3
-        
-        # Check ticket types are correct
-        for slip in portfolio['power']:
-            assert slip['ticket_type'] == 'POWER'
-        
-        for slip in portfolio['flex']:
-            assert slip['ticket_type'] == 'FLEX'
-    
-    def test_slip_size_constraints(self, optimizer, sample_props):
-        """Test that all slips have between 3-6 props."""
-        slips = optimizer.generate_slips(sample_props, "power", target_slips=10)
-        
-        for slip in slips:
-            assert 3 <= slip['n_props'] <= 6
-            assert len(slip['props']) == slip['n_props']
-    
-    def test_empty_props_handling(self, optimizer):
-        """Test handling of empty props DataFrame."""
-        empty_props = pd.DataFrame(columns=['prop_id', 'player', 'type', 'line', 'implied_prob', 'phase'])
-        
-        slips = optimizer.generate_slips(empty_props, "power", target_slips=5)
-        assert len(slips) == 0  # Should return empty list, not error
+        # Stake should not exceed bankroll limits
+        self.assertLessEqual(slip['total_stake'], 1000 * 0.10)  # 10% max per slip
 
 
-if __name__ == "__main__":
-    pytest.main([__file__, "-v"])
+if __name__ == '__main__':
+    unittest.main()
