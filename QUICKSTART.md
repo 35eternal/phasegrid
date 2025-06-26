@@ -1,6 +1,6 @@
-# PhaseGrid Quick Start Guide
+﻿# PhaseGrid Quick Start Guide
 
-## 🚀 Getting Started
+## ðŸš€ Getting Started
 
 Welcome to PhaseGrid - an advanced WNBA betting analytics system that leverages player performance cycles, real-time data, and intelligent automation.
 
@@ -76,21 +76,21 @@ python backfill.py --days 7
 
 ---
 
-## 🌙 Nightly Grader
+## ðŸŒ™ Nightly Grader
 
 The nightly grader is like a robot teacher that grades betting slips while you sleep! Every night at midnight (Phoenix time), it automatically checks yesterday's predictions against the real game results.
 
-### 🎯 What Does It Do?
+### ðŸŽ¯ What Does It Do?
 
 Think of it like this:
-1. **Fetches Slips** 📋 - Gets all the betting predictions from yesterday
-2. **Gets Results** 🏀 - Finds out who actually won the games
-3. **Grades** ✍️ - Marks each prediction as WIN ✅, LOSS ❌, or PUSH 🤝
-4. **Updates Sheet** 📊 - Writes the grades back to Google Sheets
-5. **Sends Text** 📱 - Texts you a summary of how everyone did
-6. **Alerts** 🚨 - If something breaks, sends emergency alerts to Discord
+1. **Fetches Slips** ðŸ“‹ - Gets all the betting predictions from yesterday
+2. **Gets Results** ðŸ€ - Finds out who actually won the games
+3. **Grades** âœï¸ - Marks each prediction as WIN âœ…, LOSS âŒ, or PUSH ðŸ¤
+4. **Updates Sheet** ðŸ“Š - Writes the grades back to Google Sheets
+5. **Sends Text** ðŸ“± - Texts you a summary of how everyone did
+6. **Alerts** ðŸš¨ - If something breaks, sends emergency alerts to Discord
 
-### ⏰ When Does It Run?
+### â° When Does It Run?
 
 The grader runs automatically every night at **midnight Phoenix time**:
 
@@ -102,15 +102,15 @@ Currently set for summer time (MDT): `0 6 * * *` in cron format
 **What's cron format?** It's a special way to tell computers when to do things:
 ```
 0 6 * * *
-│ │ │ │ │
-│ │ │ │ └─── Day of week (0-7, * means every day)
-│ │ │ └───── Month (1-12, * means every month)
-│ │ └─────── Day of month (1-31, * means every day)
-│ └───────── Hour (0-23, 6 means 6 AM UTC)
-└─────────── Minute (0-59, 0 means exactly on the hour)
+â”‚ â”‚ â”‚ â”‚ â”‚
+â”‚ â”‚ â”‚ â”‚ â””â”€â”€â”€ Day of week (0-7, * means every day)
+â”‚ â”‚ â”‚ â””â”€â”€â”€â”€â”€ Month (1-12, * means every month)
+â”‚ â”‚ â””â”€â”€â”€â”€â”€â”€â”€ Day of month (1-31, * means every day)
+â”‚ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€ Hour (0-23, 6 means 6 AM UTC)
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Minute (0-59, 0 means exactly on the hour)
 ```
 
-### 🔐 Required Secrets (GitHub Settings)
+### ðŸ” Required Secrets (GitHub Settings)
 
 These are like passwords that GitHub needs to know. You must set these up in your repository:
 
@@ -133,7 +133,7 @@ These are like passwords that GitHub needs to know. You must set these up in you
 | `DISCORD_WEBHOOK_URL` | Discord alert URL | From Discord server settings | `https://discord.com/api/webhooks/123/abc...` |
 | `RESULTS_API_URL` | Where to get game results | From your sports data provider | `https://api.sportsdata.com/results` |
 
-### 🏠 Local Development Setup
+### ðŸ  Local Development Setup
 
 Want to test on your own computer? Here's how:
 
@@ -193,7 +193,7 @@ pip install -r requirements.txt
 python scripts/result_grader.py
 ```
 
-### 🎮 Manual Trigger (Run It Yourself)
+### ðŸŽ® Manual Trigger (Run It Yourself)
 
 Sometimes you want to run the grader right now instead of waiting for midnight:
 
@@ -205,19 +205,19 @@ Sometimes you want to run the grader right now instead of waiting for midnight:
 6. Click the green "Run workflow" button
 7. Watch it run! (refresh the page after a few seconds)
 
-### 📱 What The Text Message Looks Like
+### ðŸ“± What The Text Message Looks Like
 
 Every night, you'll get a text that looks like this:
 
 ```
-🤖 PhaseGrid Nightly Grader
-📅 Date: 2024-01-15
-📊 Total: 25
-✅ Wins: 15
-❌ Losses: 8
-⚠️ Errors: 2
+ðŸ¤– PhaseGrid Nightly Grader
+ðŸ“… Date: 2024-01-15
+ðŸ“Š Total: 25
+âœ… Wins: 15
+âŒ Losses: 8
+âš ï¸ Errors: 2
 
-🚨 2 slips had errors!
+ðŸš¨ 2 slips had errors!
 ```
 
 This tells you:
@@ -226,7 +226,7 @@ This tells you:
 - How many were wrong (Losses)
 - How many couldn't be graded (Errors)
 
-### 📊 Google Sheet Structure
+### ðŸ“Š Google Sheet Structure
 
 The grader expects your `paper_slips` sheet to have these columns:
 
@@ -241,87 +241,87 @@ The grader expects your `paper_slips` sheet to have these columns:
 | G | `amount` | How much they bet | `$50` |
 | H | `timestamp` | When they made the bet | `2024-01-15 10:30:00` |
 | I | `grade` | **Added by grader!** WIN/LOSS/PUSH | `WIN` |
-| J | `details` | **Added by grader!** Explanation | `✅ Correct: LAL won (110-105)` |
+| J | `details` | **Added by grader!** Explanation | `âœ… Correct: LAL won (110-105)` |
 
 **Important:** Columns I and J are empty initially - the grader fills them in!
 
-### 🔧 Troubleshooting Guide
+### ðŸ”§ Troubleshooting Guide
 
 #### Problem: "No SMS received"
 **Solutions:**
-- ✅ Check Twilio account has money (they charge per text)
-- ✅ Verify phone numbers include country code (+1 for USA)
-- ✅ Make sure TWILIO_FROM is your Twilio number, not your personal number
-- ✅ Check GitHub secrets are set correctly (no quotes around values!)
-- ✅ Look at GitHub Actions logs for error messages
+- âœ… Check Twilio account has money (they charge per text)
+- âœ… Verify phone numbers include country code (+1 for USA)
+- âœ… Make sure TWILIO_FROM is your Twilio number, not your personal number
+- âœ… Check GitHub secrets are set correctly (no quotes around values!)
+- âœ… Look at GitHub Actions logs for error messages
 
 #### Problem: "Grading errors"
 **Solutions:**
-- ✅ Make sure game IDs in slips match exactly with results API
-- ✅ Check the date format is YYYY-MM-DD everywhere
-- ✅ Verify results API is returning data
-- ✅ Look for typos in team names
+- âœ… Make sure game IDs in slips match exactly with results API
+- âœ… Check the date format is YYYY-MM-DD everywhere
+- âœ… Verify results API is returning data
+- âœ… Look for typos in team names
 
 #### Problem: "Sheet not updating"
 **Solutions:**
-- ✅ Verify Google service account has "Editor" access to your sheet
-- ✅ Check GOOGLE_SA_JSON secret is the complete JSON (copy everything!)
-- ✅ Make sure sheet name is exactly "paper_slips"
-- ✅ Verify columns I and J exist in your sheet
+- âœ… Verify Google service account has "Editor" access to your sheet
+- âœ… Check GOOGLE_SA_JSON secret is the complete JSON (copy everything!)
+- âœ… Make sure sheet name is exactly "paper_slips"
+- âœ… Verify columns I and J exist in your sheet
 
 #### Problem: "Workflow not running"
 **Solutions:**
-- ✅ Check the workflow file is named exactly `nightly-grader.yml`
-- ✅ Verify it's in `.github/workflows/` folder
-- ✅ Check for typos in the cron schedule
-- ✅ Make sure GitHub Actions is enabled for your repository
+- âœ… Check the workflow file is named exactly `nightly-grader.yml`
+- âœ… Verify it's in `.github/workflows/` folder
+- âœ… Check for typos in the cron schedule
+- âœ… Make sure GitHub Actions is enabled for your repository
 
 #### Problem: "numpy installation failed"
 **Solutions:**
-- ✅ Use Python 3.11 instead of 3.13 (numpy may have issues with 3.13)
-- ✅ Install Microsoft C++ Build Tools if on Windows
-- ✅ Try installing numpy separately: `pip install numpy==1.24.3`
-- ✅ Use pre-built wheel: `pip install numpy --only-binary :all:`
+- âœ… Use Python 3.11 instead of 3.13 (numpy may have issues with 3.13)
+- âœ… Install Microsoft C++ Build Tools if on Windows
+- âœ… Try installing numpy separately: `pip install numpy==1.24.3`
+- âœ… Use pre-built wheel: `pip install numpy --only-binary :all:`
 
-### 📝 Example Log Output
+### ðŸ“ Example Log Output
 
 When the grader runs, you'll see logs like this:
 
 ```
 ==================================================
-🚀 PHASEGRID NIGHTLY GRADER
-📅 Grading slips from: 2024-01-15
+ðŸš€ PHASEGRID NIGHTLY GRADER
+ðŸ“… Grading slips from: 2024-01-15
 ==================================================
 Connecting to Google Sheets...
-✅ Connected to Google Sheets!
+âœ… Connected to Google Sheets!
 Setting up text messaging...
-✅ Text messaging ready!
-📋 Looking for slips from 2024-01-15...
-📊 Found 3 slips for 2024-01-15
-🏀 Fetching game results for 2024-01-15 (using stub data)...
-✅ Got game results!
-📝 Grading slips...
+âœ… Text messaging ready!
+ðŸ“‹ Looking for slips from 2024-01-15...
+ðŸ“Š Found 3 slips for 2024-01-15
+ðŸ€ Fetching game results for 2024-01-15 (using stub data)...
+âœ… Got game results!
+ðŸ“ Grading slips...
   Slip slip_001: WIN
   Slip slip_002: LOSS
   Slip slip_003: WIN
-✍️ Writing grades to spreadsheet...
-✅ Updated 3 slip grades
-📱 Sending SMS from +18331234567 to +14805551234...
-✅ SMS sent! ID: SM123abc...
+âœï¸ Writing grades to spreadsheet...
+âœ… Updated 3 slip grades
+ðŸ“± Sending SMS from +18331234567 to +14805551234...
+âœ… SMS sent! ID: SM123abc...
 ==================================================
-🎉 Nightly grader completed successfully!
+ðŸŽ‰ Nightly grader completed successfully!
 ==================================================
 ```
 
 ---
 
-## 🚀 Production Hardening Features
+## ðŸš€ Production Hardening Features
 
 ### Overview
 
 PhaseGrid has been enhanced with production-ready features to make the system more reliable, scalable, and easier to operate.
 
-### 🎯 New Features
+### ðŸŽ¯ New Features
 
 #### 1. Real Sports Data Integration (PrizePicks + Basketball Reference)
 
@@ -351,7 +351,7 @@ Every slip now has a unique ID format: `PG-{hash}-{date}`
 #### 3. Retry Logic & Error Handling
 
 All external API calls now include:
-- Exponential backoff (1s → 2s → 4s → 8s → 16s)
+- Exponential backoff (1s â†’ 2s â†’ 4s â†’ 8s â†’ 16s)
 - Configurable max retries (default: 5)
 - Graceful failure handling
 - Detailed error logging
@@ -362,7 +362,7 @@ Get notified about important events:
 ```python
 # Automatic alerts for:
 # - Grading complete (with win rate)
-# - High confidence opportunities (≥85%)
+# - High confidence opportunities (â‰¥85%)
 # - Daily/weekly summaries
 # - Critical errors
 
@@ -402,7 +402,7 @@ pytest --cov-report=html
 # Open htmlcov/index.html in browser
 ```
 
-### 📋 Production Features Setup
+### ðŸ“‹ Production Features Setup
 
 #### 1. Enhanced Slip Generation
 The new `slips_generator.py` replaces the stub with:
@@ -426,7 +426,7 @@ Never miss historical data:
 - Batch processing for efficiency
 - Progress tracking and summaries
 
-### 🏃‍♂️ Daily Workflow
+### ðŸƒâ€â™‚ï¸ Daily Workflow
 
 #### Morning (Generate Slips)
 ```bash
@@ -459,7 +459,7 @@ type logs\phasegrid.log | findstr ERROR  # Windows
 # grep ERROR logs/phasegrid.log          # Mac/Linux
 ```
 
-### 🔧 Configuration Options
+### ðŸ”§ Configuration Options
 
 #### Betting Parameters (.env)
 ```bash
@@ -471,11 +471,11 @@ KELLY_FRACTION=0.25     # Conservative Kelly sizing
 ```
 
 #### Alert Thresholds
-- SMS alerts: Win rate ≥70% or ≤30%, profit ±$500
-- High confidence alerts: Confidence ≥85%
+- SMS alerts: Win rate â‰¥70% or â‰¤30%, profit Â±$500
+- High confidence alerts: Confidence â‰¥85%
 - Error alerts: Critical errors only
 
-### 📊 Monitoring & Analytics
+### ðŸ“Š Monitoring & Analytics
 
 #### Check Performance
 ```python
@@ -499,16 +499,16 @@ LOG_LEVEL=DEBUG python auto_paper.py
 python -m pytest tests/test_slips_generator.py -v
 ```
 
-### 🆘 Getting Help
+### ðŸ†˜ Getting Help
 
 If you're stuck:
-1. Check the GitHub Actions logs (Actions tab → click on the failed run)
+1. Check the GitHub Actions logs (Actions tab â†’ click on the failed run)
 2. Look for error messages in red
 3. Check all your secrets are set correctly
 4. Make sure your `.env` file has all required values (for local testing)
 5. Ask for help in the team Discord channel!
 
-### 🚀 Next Steps
+### ðŸš€ Next Steps
 
 After setting this up:
 1. Run it manually first to test (see Manual Trigger section)
@@ -519,7 +519,7 @@ After setting this up:
 
 Remember: The grader runs at midnight, so tomorrow morning you'll see yesterday's slips graded!
 
-### 🔌 API Integration
+### ðŸ”Œ API Integration
 
 The system now integrates with multiple APIs:
 
@@ -538,7 +538,7 @@ The system now integrates with multiple APIs:
    - Map to expected format
    - Add authentication as needed
 
-### 📈 Future Enhancements
+### ðŸ“ˆ Future Enhancements
 
 Consider adding these features:
 - Support for point spread calculations
@@ -552,7 +552,7 @@ Consider adding these features:
 - Live odds tracking
 - Arbitrage detection
 
-### 🚨 Safety Features
+### ðŸš¨ Safety Features
 
 1. **Bankroll Protection**
    - Max 5% per bet (configurable)
@@ -576,7 +576,7 @@ Consider adding these features:
 
 ---
 
-## 💰 Dynamic Odds Injector
+## ðŸ’° Dynamic Odds Injector
 
 The Dynamic Odds Injector calculates optimal bet sizes using the Kelly Criterion with phase-based adjustments and bankroll constraints.
 
@@ -662,14 +662,14 @@ Customize phase multipliers by editing `config/phase_config.json`:
 
 ---
 
-## 📚 Additional Resources
+## ðŸ“š Additional Resources
 
 - **GitHub Repository**: [Your repo URL]
 - **Google Sheets Template**: [Template URL]
 - **Discord Server**: [Invite link]
 - **Documentation**: [Wiki or docs URL]
 
-## 🤝 Contributing
+## ðŸ¤ Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -677,11 +677,11 @@ Customize phase multipliers by editing `config/phase_config.json`:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## ðŸ“„ License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgments
+## ðŸ™ Acknowledgments
 
 - WNBA for providing amazing basketball
 - The PhaseGrid team for continuous improvements
@@ -689,7 +689,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-**Remember**: Start small, test thoroughly, and scale gradually. Happy betting! 🏀📊
+**Remember**: Start small, test thoroughly, and scale gradually. Happy betting! ðŸ€ðŸ“Š
 
 ## Paper Trading Trial Mode
 
@@ -782,3 +782,32 @@ The system now includes:
 - Test coverage enforcement at 34%
 - Enhanced error logging in nightly grader
 - Performance statistics tracking
+
+
+### Running Tests
+
+The project includes comprehensive test coverage (15%+) to ensure reliability:
+
+```bash
+# Run all tests
+pytest
+
+# Run with coverage report
+pytest --cov=. --cov-report=term
+
+# Check if coverage meets minimum (14%)
+pytest --cov=. --cov-fail-under=14
+
+# Run specific test categories
+pytest tests/test_small_files.py    # Utility module tests
+pytest tests/test_betting_analysis.py  # Betting logic tests
+pytest tests/test_check_diagnostic.py  # Diagnostic tool tests
+
+# Generate HTML coverage report
+pytest --cov=. --cov-report=html
+# Open htmlcov/index.html in browser
+```
+
+The CI pipeline automatically runs these tests on every push and pull request, ensuring code quality.
+
+
