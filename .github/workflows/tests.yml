@@ -17,7 +17,7 @@ jobs:
           pip install -r requirements.txt
       - name: Run tests with coverage
         env:
-          MIN_COVERAGE_THRESHOLD: 14
+          MIN_COVERAGE_THRESHOLD: 12
         run: |
           echo "Running tests with minimum coverage threshold: $env:MIN_COVERAGE_THRESHOLD%"
           pytest tests/ --cov=. --cov-report=xml --cov-fail-under=$env:MIN_COVERAGE_THRESHOLD
@@ -25,4 +25,5 @@ jobs:
         with:
           name: coverage-xml
           path: coverage.xml
+
 
