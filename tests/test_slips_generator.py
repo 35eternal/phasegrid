@@ -1,4 +1,4 @@
-"""Tests for slips_generator.py"""
+﻿"""Tests for slips_generator.py"""
 
 import pytest
 import requests
@@ -73,7 +73,6 @@ class TestPrizePicksClient:
         assert projections[0]['player_name'] == "A'ja Wilson"
         mock_get.assert_called_once()
 
-    @pytest.mark.xfail(reason='Retry mock needs investigation')
     @patch('requests.get')
     def test_get_projections_retry_on_failure(self, mock_get):
         """Test retry logic on API failure."""
@@ -272,6 +271,7 @@ def test_date_range_handling(days_offset, expected_slips):
                 assert len(slips) <= expected_slips
             else:
                 assert len(slips) == 0  # No games for future dates in our mock
+
 
 
 
