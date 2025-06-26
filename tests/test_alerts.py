@@ -1,5 +1,5 @@
 import pytest
-pytest.skip('Temporarily skipping due to syntax issues', allow_module_level=True)
+pytest.skip('Skipping due to syntax errors', allow_module_level=True)
 
 #!/usr/bin/env python3
 """Tests for alerts.py"""
@@ -269,5 +269,6 @@ class TestUtilityFunctions:
 
 
 # End of file
+
 
 
