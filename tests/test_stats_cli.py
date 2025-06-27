@@ -4,10 +4,11 @@ Tests for stats CLI module
 import pytest
 import pandas as pd
 import json
-from unittest.mock import Mock, patch, MagicMock
+from unittest.mock import Mock, patch, MagicMock, mock_open, PropertyMock
 from click.testing import CliRunner
 from pathlib import Path
 import tempfile
+from io import StringIO
 
 
 @pytest.fixture
@@ -60,50 +61,63 @@ def setup_test_environment(tmp_path):
         'Result': ['WON', 'LOST', 'WON', 'WON', 'LOST'],
         'Status': ['Settled', 'Settled', 'Settled', 'Settled', 'Settled']
     })
-    
+
     csv_path = tmp_path / 'bets_log.csv'
     bets_data.to_csv(csv_path, index=False)
-    
+
     return tmp_path
 
 
 class TestStatsGenerator:
     """Test StatsGenerator class."""
-    
+
     def test_init(self, stats_generator):
         """Test StatsGenerator initialization."""
         assert stats_generator.data_source == 'csv'
         assert stats_generator.bets_log_path.name == 'bets_log.csv'
-    
-    def test_load_data_from_csv(self, stats_generator, sample_betting_data, tmp_path):
+
+    @patch.object(Path, 'exists')
+    @patch('scripts.stats.pd.read_csv')
+    def test_load_data_from_csv(self, mock_read_csv, mock_path_exists, stats_generator):
         """Test loading data from CSV file."""
-        # Create a temporary CSV file with correct column names
-        csv_file = tmp_path / 'bets_log.csv'
-        sample_betting_data.to_csv(csv_file, index=False)
-        
-        # Mock the path
-        stats_generator.bets_log_path = csv_file
+        # Setup mocks
+        mock_path_exists.return_value = True
+        mock_df = pd.DataFrame({
+            'Date': ['2024-01-01', '2024-01-02', '2024-01-03'],
+            'Bet ID': ['BET001', 'BET002', 'BET003'],
+            'Stake': [10.0, 20.0, 15.0],
+            'Payout': [15.0, 0.0, 22.5],
+            'Result': ['WON', 'LOST', 'WON'],
+            'Status': ['Settled', 'Settled', 'Settled']
+        })
+        mock_read_csv.return_value = mock_df
         
         # Load data
         result = stats_generator.load_data(days=7)
-        
+
+        # Verify
         assert isinstance(result, pd.DataFrame)
         assert len(result) == 3
         assert 'date' in result.columns
         assert 'stake' in result.columns
         assert 'payout' in result.columns
-    
+        mock_read_csv.assert_called_once_with(stats_generator.bets_log_path)
+
     def test_load_data_no_csv_file(self, stats_generator):
         """Test loading data when CSV file doesn't exist."""
         stats_generator.bets_log_path = Path('nonexistent.csv')
         result = stats_generator.load_data()
         assert isinstance(result, pd.DataFrame)
         assert len(result) == 0
-    
+
+    @patch.object(Path, 'exists')
     @patch('scripts.stats.pd.read_csv')
-    def test_load_data_with_date_filtering(self, mock_read_csv, stats_generator):
+    def test_load_data_with_date_filtering(self, mock_read_csv, mock_path_exists, stats_generator):
         """Test that data is filtered by date range."""
-        # Create data with various dates - using correct column names
+        # Setup mocks
+        mock_path_exists.return_value = True
+        
+        # Create data with various dates
         mock_df = pd.DataFrame({
             'Date': pd.date_range('2024-01-01', periods=10, freq='D'),
             'Bet ID': [f'BET{i:03d}' for i in range(10)],
@@ -112,25 +126,22 @@ class TestStatsGenerator:
             'Result': ['WON'] * 10
         })
         mock_read_csv.return_value = mock_df
-        
-        # Make the path exist for the test
-        stats_generator.bets_log_path = Path('dummy.csv')
-        with patch.object(Path, 'exists', return_value=True):
-            # Test loading last 7 days
-            result = stats_generator.load_data(days=7)
-            mock_read_csv.assert_called_once()
+
+        # Test loading last 7 days
+        result = stats_generator.load_data(days=7)
+        mock_read_csv.assert_called_once()
 
 
 class TestStatsCLI:
     """Test CLI commands."""
-    
+
     def test_cli_help(self, runner):
         """Test CLI help command."""
         from scripts.stats import cli
         result = runner.invoke(cli, ['--help'])
         assert result.exit_code == 0
         assert 'Generate betting statistics report' in result.output
-    
+
     @patch('scripts.stats.StatsGenerator')
     def test_cli_default_command(self, mock_generator_class, runner, mock_data):
         """Test running CLI with default options."""
@@ -154,12 +165,12 @@ class TestStatsCLI:
             'win_rate': 100.0
         }
         mock_generator_class.return_value = mock_generator
-        
+
         from scripts.stats import cli
         result = runner.invoke(cli, [])
         assert result.exit_code == 0
         assert 'Generating stats' in result.output
-    
+
     def test_cli_with_days_option(self, runner):
         """Test CLI with --days option."""
         from scripts.stats import cli
@@ -176,10 +187,10 @@ class TestStatsCLI:
                 'win_rate': 0
             }
             mock_cls.return_value = mock_instance
-            
+
             result = runner.invoke(cli, ['--days', '30'])
             assert result.exit_code == 1  # No data found
-    
+
     def test_cli_with_format_option(self, runner):
         """Test CLI with different output formats."""
         from scripts.stats import cli
@@ -199,21 +210,21 @@ class TestStatsCLI:
                 'win_rate': 60.0
             }
             mock_cls.return_value = mock_instance
-            
+
             # Test JSON output
             result = runner.invoke(cli, ['--output', 'json'])
             assert result.exit_code == 0
-            
+
             # Test HTML output
             with patch.object(mock_instance, 'export_html_report'):
                 result = runner.invoke(cli, ['--output', 'html'])
                 assert result.exit_code == 0
-    
+
     def test_cli_with_output_file(self, runner, tmp_path):
         """Test CLI with output file option."""
         from scripts.stats import cli
         output_file = tmp_path / 'test_output.json'
-        
+
         with patch('scripts.stats.StatsGenerator') as mock_cls:
             mock_instance = MagicMock()
             mock_instance.load_data.return_value = pd.DataFrame({'test': [1]})
@@ -230,11 +241,11 @@ class TestStatsCLI:
                 'win_rate': 60.0
             }
             mock_cls.return_value = mock_instance
-            
+
             result = runner.invoke(cli, ['--output', 'json', '--file', str(output_file)])
             assert result.exit_code == 0
             assert output_file.exists()
-    
+
     def test_cli_error_handling(self, runner):
         """Test CLI error handling."""
         from scripts.stats import cli
@@ -242,7 +253,7 @@ class TestStatsCLI:
             mock_instance = MagicMock()
             mock_instance.load_data.return_value = pd.DataFrame()  # Empty data
             mock_cls.return_value = mock_instance
-            
+
             result = runner.invoke(cli)
             assert result.exit_code == 1
             assert 'No data found' in result.output
@@ -250,7 +261,7 @@ class TestStatsCLI:
 
 class TestStatsCalculation:
     """Test statistics calculation methods."""
-    
+
     def test_calculate_roi(self, stats_generator, sample_betting_data):
         """Test ROI calculation."""
         # Convert to lowercase columns as expected by the method
@@ -262,12 +273,12 @@ class TestStatsCalculation:
             'Result': 'result'
         })
         df['date'] = pd.to_datetime(df['date'])
-        
+
         result = stats_generator.calculate_daily_roi(df)
         assert not result.empty
         assert 'roi_percent' in result.columns
         assert 'net_profit' in result.columns
-    
+
     def test_generate_summary_stats(self, stats_generator, sample_betting_data):
         """Test summary statistics generation."""
         # Convert to lowercase columns
@@ -278,7 +289,7 @@ class TestStatsCalculation:
             'Payout': 'payout',
             'Result': 'result'
         })
-        
+
         stats = stats_generator.generate_summary_stats(df)
         assert stats['total_bets'] == 3
         assert stats['total_stake'] == 45.0
@@ -289,7 +300,7 @@ class TestStatsCalculation:
 
 class TestPlotlyVisualization:
     """Test Plotly visualization methods."""
-    
+
     def test_create_plotly_chart(self, stats_generator):
         """Test creating Plotly chart."""
         daily_stats = pd.DataFrame({
@@ -297,11 +308,11 @@ class TestPlotlyVisualization:
             'roi_percent': [50.0, -25.0],
             'net_profit': [50, -50]
         })
-        
+
         fig = stats_generator.create_roi_chart(daily_stats)
         assert fig is not None
         assert len(fig.data) == 2  # Line chart + bar chart
-    
+
     def test_export_html_report(self, stats_generator, tmp_path):
         """Test HTML report export."""
         daily_stats = pd.DataFrame({
@@ -320,35 +331,48 @@ class TestPlotlyVisualization:
             'roi_percent': 50.0,
             'win_rate': 60.0
         }
-        
+
         output_file = tmp_path / 'test_report.html'
         result = stats_generator.export_html_report(
             daily_stats, summary_stats, str(output_file)
         )
-        
+
         assert output_file.exists()
         assert result == str(output_file)
 
 
 class TestIntegration:
     """Integration tests."""
-    
-    def test_full_stats_generation_flow(self, setup_test_environment):
+
+    @patch.object(Path, 'exists')
+    @patch('scripts.stats.pd.read_csv')
+    def test_full_stats_generation_flow(self, mock_read_csv, mock_path_exists):
         """Test the complete stats generation workflow."""
         from scripts.stats import StatsGenerator
-        
-        # Use test environment
+
+        # Setup mocks
+        mock_path_exists.return_value = True
+        mock_df = pd.DataFrame({
+            'Date': ['2024-01-01', '2024-01-02', '2024-01-03', '2024-01-04', '2024-01-05'],
+            'Bet ID': ['B001', 'B002', 'B003', 'B004', 'B005'],
+            'Stake': [100, 200, 150, 100, 250],
+            'Payout': [150, 0, 225, 180, 0],
+            'Result': ['WON', 'LOST', 'WON', 'WON', 'LOST'],
+            'Status': ['Settled', 'Settled', 'Settled', 'Settled', 'Settled']
+        })
+        mock_read_csv.return_value = mock_df
+
+        # Create generator
         generator = StatsGenerator()
-        generator.bets_log_path = setup_test_environment / 'bets_log.csv'
         
         # Load data
         data = generator.load_data()
         assert len(data) > 0
-        
+
         # Calculate stats
         daily_stats = generator.calculate_daily_stats(data)
         assert not daily_stats.empty
-        
+
         # Generate summary
         summary = generator.generate_summary_stats(data)
         assert summary['total_bets'] == 5
