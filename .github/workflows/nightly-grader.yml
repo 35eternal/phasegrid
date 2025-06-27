@@ -69,7 +69,6 @@ jobs:
           GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
 
       - name: Grade slips with comprehensive error handling
-        if: always()
         env:
           # Google Sheets
           SHEET_ID: ${{ secrets.SHEET_ID }}
