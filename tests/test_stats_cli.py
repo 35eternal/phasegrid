@@ -1,4 +1,4 @@
-﻿"""
+"""
 Tests for stats CLI module
 """
 import pytest
@@ -76,28 +76,39 @@ class TestStatsGenerator:
         assert stats_generator.data_source == 'csv'
         assert stats_generator.bets_log_path.name == 'bets_log.csv'
 
-    @patch.object(Path, 'exists')
     @patch('scripts.stats.pd.read_csv')
-    def test_load_data_from_csv(self, mock_read_csv, mock_path_exists, stats_generator):
+    def test_load_data_from_csv(self, mock_read_csv, stats_generator):
         """Test loading data from CSV file."""
+        from unittest.mock import Mock
+        
         # Setup mocks
-        mock_path_exists.return_value = True
+        stats_generator.data_source = 'csv'
+        
+        # Replace the path with a Mock that has exists returning True
+        original_path = stats_generator.bets_log_path
+        mock_path = Mock()
+        mock_path.exists.return_value = True
+        mock_path.__str__ = lambda self: str(original_path)
+        stats_generator.bets_log_path = mock_path
+        
         mock_df = pd.DataFrame({
-            'Date': ['2024-01-01', '2024-01-02', '2024-01-03'],
-            'Bet ID': ['BET001', 'BET002', 'BET003'],
-            'Stake': [10.0, 20.0, 15.0],
-            'Payout': [15.0, 0.0, 22.5],
-            'Result': ['WON', 'LOST', 'WON'],
-            'Status': ['Settled', 'Settled', 'Settled']
+            'date': ['2024-01-01', '2024-01-02', '2024-01-03'],
+            'bet_id': ['BET001', 'BET002', 'BET003'],
+            'stake': [10.0, 20.0, 15.0],
+            'payout': [15.0, 0.0, 22.5],
+            'result': ['WON', 'LOST', 'WON'],
+            'status': ['Settled', 'Settled', 'Settled']
         })
         mock_read_csv.return_value = mock_df
-        
+
         # Load data
         result = stats_generator.load_data(days=7)
 
         # Verify
         assert isinstance(result, pd.DataFrame)
         assert len(result) == 3
+        assert all(col in result.columns for col in ['date', 'bet_id', 'stake', 'payout', 'result', 'status'])
+        mock_read_csv.assert_called_once_with(mock_path)
         assert 'date' in result.columns
         assert 'stake' in result.columns
         assert 'payout' in result.columns
@@ -111,11 +122,12 @@ class TestStatsGenerator:
         assert len(result) == 0
 
     @patch.object(Path, 'exists')
-    @patch('scripts.stats.pd.read_csv')
+    @patch('pandas.read_csv')
     def test_load_data_with_date_filtering(self, mock_read_csv, mock_path_exists, stats_generator):
         """Test that data is filtered by date range."""
-        # Setup mocks
+        # Setup mocks - mock the specific path's exists method
         mock_path_exists.return_value = True
+
         
         # Create data with various dates
         mock_df = pd.DataFrame({
@@ -126,6 +138,8 @@ class TestStatsGenerator:
             'Result': ['WON'] * 10
         })
         mock_read_csv.return_value = mock_df
+        # Also set side_effect to always return our mock_df
+        mock_read_csv.side_effect = lambda *args, **kwargs: mock_df
 
         # Test loading last 7 days
         result = stats_generator.load_data(days=7)
@@ -344,30 +358,45 @@ class TestPlotlyVisualization:
 class TestIntegration:
     """Integration tests."""
 
-    @patch.object(Path, 'exists')
     @patch('scripts.stats.pd.read_csv')
-    def test_full_stats_generation_flow(self, mock_read_csv, mock_path_exists):
+    def test_full_stats_generation_flow(self, mock_read_csv):
         """Test the complete stats generation workflow."""
         from scripts.stats import StatsGenerator
+        from unittest.mock import Mock
 
         # Setup mocks
-        mock_path_exists.return_value = True
         mock_df = pd.DataFrame({
-            'Date': ['2024-01-01', '2024-01-02', '2024-01-03', '2024-01-04', '2024-01-05'],
-            'Bet ID': ['B001', 'B002', 'B003', 'B004', 'B005'],
-            'Stake': [100, 200, 150, 100, 250],
-            'Payout': [150, 0, 225, 180, 0],
-            'Result': ['WON', 'LOST', 'WON', 'WON', 'LOST'],
-            'Status': ['Settled', 'Settled', 'Settled', 'Settled', 'Settled']
+            'date': ['2024-01-01', '2024-01-02', '2024-01-03', '2024-01-04', '2024-01-05'],
+            'bet_id': ['B001', 'B002', 'B003', 'B004', 'B005'],
+            'stake': [100, 200, 150, 100, 250],
+            'payout': [150, 0, 225, 180, 0],
+            'result': ['WON', 'LOST', 'WON', 'WON', 'LOST'],
+            'status': ['Settled', 'Settled', 'Settled', 'Settled', 'Settled']
         })
         mock_read_csv.return_value = mock_df
 
-        # Create generator
+        # Create generator and set data source
         generator = StatsGenerator()
+        generator.data_source = 'csv'
         
+        # Replace the path with a Mock that has exists returning True
+        original_path = generator.bets_log_path
+        mock_path = Mock()
+        mock_path.exists.return_value = True
+        mock_path.__str__ = lambda self: str(original_path)
+        generator.bets_log_path = mock_path
+
         # Load data
         data = generator.load_data()
         assert len(data) > 0
+        
+        # Calculate stats
+        stats = generator.generate_summary_stats(data)
+        
+        # Verify stats
+        assert stats['total_bets'] == 5
+        assert stats['total_stake'] == 800.0
+        assert stats['total_payout'] == 555.0
 
         # Calculate stats
         daily_stats = generator.calculate_daily_stats(data)
