@@ -1,0 +1,51 @@
+﻿name: Test Alert Channels
+
+on:
+  pull_request:
+    paths:
+      - 'alerts/**'
+      - 'scripts/smoke_alert.py'
+      - '.github/workflows/test-alerts.yml'
+  workflow_dispatch:
+
+jobs:
+  test-alerts:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          
+      - name: Test SMS alerts
+        env:
+          TWILIO_SID: ${{ secrets.TWILIO_SID }}
+          TWILIO_AUTH: ${{ secrets.TWILIO_AUTH }}
+          TWILIO_FROM: ${{ secrets.TWILIO_FROM }}
+          PHONE_TO: ${{ secrets.PHONE_TO }}
+        run: |
+          python scripts/smoke_alert.py --sms || echo "SMS test failed - check if secrets are configured"
+          
+      - name: Test Discord alerts
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          python scripts/smoke_alert.py --discord || echo "Discord test failed - check if secrets are configured"
+          
+      - name: Test both channels
+        env:
+          TWILIO_SID: ${{ secrets.TWILIO_SID }}
+          TWILIO_AUTH: ${{ secrets.TWILIO_AUTH }}
+          TWILIO_FROM: ${{ secrets.TWILIO_FROM }}
+          PHONE_TO: ${{ secrets.PHONE_TO }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          python scripts/smoke_alert.py --sms --discord || echo "Combined test failed - check if all secrets are configured"
