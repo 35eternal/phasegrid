@@ -1,4 +1,4 @@
-﻿name: Test Alert Channels
+name: Test Alert Channels
 
 on:
   pull_request:
@@ -37,8 +37,15 @@ jobs:
       - name: Test Discord alerts
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
           python scripts/smoke_alert.py --discord || echo "Discord test failed - check if secrets are configured"
+
+      - name: Test Slack alerts
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          python scripts/smoke_alert.py --slack || echo "Slack test failed - check if secrets are configured"
           
       - name: Test both channels
         env:
@@ -47,5 +54,6 @@ jobs:
           TWILIO_FROM: ${{ secrets.TWILIO_FROM }}
           PHONE_TO: ${{ secrets.PHONE_TO }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
-          python scripts/smoke_alert.py --sms --discord || echo "Combined test failed - check if all secrets are configured"
+          python scripts/smoke_alert.py --sms --discord --slack || echo "Combined test failed - check if all secrets are configured"
