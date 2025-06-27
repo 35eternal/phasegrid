@@ -151,6 +151,44 @@ def send_discord_alert(message: str) -> bool:
         return False
 
 
+
+
+def send_slack_alert(message: str) -> bool:
+    """
+    Send alert to Slack webhook
+    
+    Args:
+        message: Message to send
+        
+    Returns:
+        bool: True if successful, False otherwise
+    """
+    try:
+        webhook_url = os.getenv("SLACK_WEBHOOK_URL", "")
+        
+        if not webhook_url:
+            logger.error("SLACK_WEBHOOK_URL not configured")
+            return False
+        
+        payload = {
+            "text": message,
+            "username": "PhaseGrid Bot",
+            "icon_emoji": ":chart_with_upwards_trend:"
+        }
+        
+        response = requests.post(webhook_url, json=payload)
+        response.raise_for_status()
+        
+        logger.info("Slack alert sent successfully")
+        return True
+        
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Slack webhook error: {e}")
+        return False
+    except Exception as e:
+        logger.error(f"Unexpected error sending Slack alert: {e}")
+        return False
+
 # For backward compatibility
 if __name__ == "__main__":
     # Test the notifier
@@ -167,3 +205,4 @@ if __name__ == "__main__":
     print(f"\nTesting Discord...")
     discord_result = send_discord_alert(test_message)
     print(f"Discord result: {discord_result}")
+
