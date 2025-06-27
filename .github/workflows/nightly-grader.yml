@@ -16,40 +16,41 @@ jobs:
   grade-slips:
     runs-on: ubuntu-latest
     name: Grade Yesterday's Slips
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        
+
       - name: Set up Python 3.11
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-          
+
       - name: Upgrade pip
         run: |
           python -m pip install --upgrade pip
-          
+
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          
+
       - name: Validate required secrets
         run: |
           python -c "
           import os
           import sys
-          
+
           required_secrets = [
               'TWILIO_SID',
-              'TWILIO_AUTH', 
+              'TWILIO_AUTH',
               'TWILIO_FROM',
               'PHONE_TO',
               'DISCORD_WEBHOOK_URL',
+              'SLACK_WEBHOOK_URL',
               'SHEET_ID',
               'GOOGLE_SA_JSON'
           ]
-          
+
           missing = [s for s in required_secrets if not os.environ.get(s)]
           if missing:
               print(f'ERROR: Missing required secrets: {missing}')
@@ -63,10 +64,12 @@ jobs:
           TWILIO_FROM: ${{ secrets.TWILIO_FROM }}
           PHONE_TO: ${{ secrets.PHONE_TO }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           SHEET_ID: ${{ secrets.SHEET_ID }}
           GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
-          
+
       - name: Grade slips with comprehensive error handling
+        if: always()
         env:
           # Google Sheets
           SHEET_ID: ${{ secrets.SHEET_ID }}
@@ -76,8 +79,10 @@ jobs:
           TWILIO_AUTH: ${{ secrets.TWILIO_AUTH }}
           TWILIO_FROM: ${{ secrets.TWILIO_FROM }}
           PHONE_TO: ${{ secrets.PHONE_TO }}
-          # Discord and API
+          # Discord and Slack
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          # Results API
           RESULTS_API_URL: ${{ secrets.RESULTS_API_URL }}
           # Debug flag
           DEBUG: ${{ github.event.inputs.debug || 'false' }}
@@ -87,64 +92,70 @@ jobs:
           import sys
           import os
           import traceback
-          
+
           # Add project root to path
           sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-          
+
           try:
-              # Import the alert functions
-              from alerts.notifier import send_sms, send_discord_alert
-              
+              # Import the alert functions - NOW INCLUDING SLACK!
+              from alerts.notifier import send_sms, send_discord_alert, send_slack_alert
+
               # Import and run the grader
               from scripts.result_grader import main as grade_main
-              
+
               print("Starting nightly grading process...")
               results = grade_main()
-              
+
               # Format success message
               if isinstance(results, dict):
                   success_msg = f"✅ Graded {results.get('total_slips', 0)} slips successfully"
               else:
                   success_msg = "✅ Nightly grading completed successfully"
-              
+
               print(success_msg)
-              
-              # Send success alerts
+
+              # Send success alerts to ALL channels
               try:
                   send_sms(success_msg)
                   print("SMS alert sent successfully")
               except Exception as sms_error:
                   print(f"SMS alert failed: {sms_error}")
-              
+
               try:
                   send_discord_alert(success_msg)
                   print("Discord alert sent successfully")
               except Exception as discord_error:
                   print(f"Discord alert failed: {discord_error}")
                   
+              try:
+                  send_slack_alert(success_msg)
+                  print("Slack alert sent successfully")
+              except Exception as slack_error:
+                  print(f"Slack alert failed: {slack_error}")
+
           except Exception as e:
               error_msg = f"🚨 Nightly grading FAILED: {str(e)}"
               print(f"ERROR: {error_msg}")
               traceback.print_exc()
-              
+
               # Import alert functions if not already imported
               try:
                   if 'send_sms' not in locals():
-                      from alerts.notifier import send_sms, send_discord_alert
+                      from alerts.notifier import send_sms, send_discord_alert, send_slack_alert
               except:
                   print("Failed to import alert functions")
                   sys.exit(1)
-              
-              # Always attempt to send failure alerts
+
+              # Always attempt to send failure alerts to ALL channels
               alert_sent = False
-              
+
               try:
                   send_sms(error_msg[:160])  # SMS has character limit
                   print("Failure SMS alert sent")
                   alert_sent = True
               except Exception as sms_error:
                   print(f"Could not send SMS alert: {sms_error}")
-              
+
               try:
                   detailed_error = f"{error_msg}\n\nCheck GitHub Actions logs for details:\nhttps://github.com/${{github.repository}}/actions/runs/${{github.run_id}}"
                   send_discord_alert(detailed_error)
@@ -152,16 +163,24 @@ jobs:
                   alert_sent = True
               except Exception as discord_error:
                   print(f"Could not send Discord alert: {discord_error}")
-              
+                  
+              try:
+                  detailed_error = f"{error_msg}\n\nWorkflow run: https://github.com/${{github.repository}}/actions/runs/${{github.run_id}}"
+                  send_slack_alert(detailed_error)
+                  print("Failure Slack alert sent")
+                  alert_sent = True
+              except Exception as slack_error:
+                  print(f"Could not send Slack alert: {slack_error}")
+
               if not alert_sent:
                   print("CRITICAL: Could not send any failure alerts!")
-              
+
               sys.exit(1)
           EOF
-          
+
           # Run the wrapper script
           python run_grader_with_alerts.py
-          
+
       - name: Upload logs
         if: always()
         uses: actions/upload-artifact@v4
