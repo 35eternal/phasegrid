@@ -452,3 +452,60 @@ Monitor coverage trends through:
 
 GitHub Actions artifacts (coverage.xml)
 Local coverage reports: pytest --cov=. --cov-report=html
+
+## SMS Configuration
+
+### Prerequisites
+1. Active Twilio account with SMS-capable phone number
+2. GitHub repository admin access to set secrets
+
+### Setup Steps
+
+1. **Obtain Twilio Credentials**
+   - Log into Twilio Console (https://console.twilio.com)
+   - Copy Account SID from dashboard
+   - Generate new Auth Token if needed
+   - Note your Twilio phone number (format: +1234567890)
+
+2. **Configure GitHub Secrets**
+   Navigate to Settings > Secrets and variables > Actions, then add:
+   - TWILIO_SID: Your Account SID
+   - TWILIO_AUTH: Your Auth Token
+   - TWILIO_FROM: Your Twilio phone number
+   - PHONE_TO: Alert recipient phone number
+   - SLACK_WEBHOOK_URL: Your Slack webhook URL
+
+3. **Test Configuration**
+   Set environment variables locally:
+   export TWILIO_SID="your_account_sid"
+   export TWILIO_AUTH="your_auth_token"
+   export TWILIO_FROM="+1234567890"
+   export PHONE_TO="+0987654321"
+   
+   Run smoke test:
+   python scripts/smoke_alert.py --sms
+
+4. **Verify in CI**
+   - Trigger manual workflow run with workflow_dispatch
+   - Check Actions logs for "SMS alert sent: True"
+   - Confirm SMS receipt within 15 seconds
+
+### Troubleshooting
+
+| Issue | Solution |
+|-------|----------|
+| "SMS disabled - missing credentials" | Verify all 4 secrets are set in GitHub |
+| "Twilio error: Invalid phone number" | Ensure E.164 format (+1234567890) |
+| "Authentication error" | Regenerate auth token in Twilio console |
+| SMS not received | Check Twilio logs, verify phone can receive SMS |
+
+### Cost Management
+- SMS alerts trigger on both success and failure
+- Monitor usage at console.twilio.com/usage
+- Consider using test credentials for development
+
+### Testing with Twilio Test Credentials
+For CI/CD testing without charges:
+- Use test Account SID: ACtest_sid_12345
+- Use magic number: +15005550006 as sender
+- Test recipients: +15005551234 (always succeeds)
