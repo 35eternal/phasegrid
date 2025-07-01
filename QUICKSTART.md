@@ -920,3 +920,23 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 
 **Remember**: Start small, test thoroughly, and scale gradually. Happy betting! 🏀📊
+
+## Alert Testing
+
+### SMS Alerts
+Test SMS functionality after configuring Twilio credentials:
+
+Basic SMS test:
+python scripts/smoke_alert.py --sms
+
+Expected output:
+Testing SMS...
+SMS result: True
+
+### Slack Alerts
+python scripts/smoke_alert.py --slack
+
+### All Alerts
+Test all configured alert channels:
+python scripts/smoke_alert.py --sms --discord --slack
+>>>>>>> origin/main

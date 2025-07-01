@@ -599,3 +599,4 @@ Check logs for:
 - `"Using HTML fallback for NBA projections"` - Fallback activated
 - `"Successfully extracted X projections from HTML"` - Fallback succeeded
 - `"Both API and HTML methods failed"` - Complete failure
+>>>>>>> origin/main
