@@ -1,0 +1,19 @@
+﻿{
+  "test_mode": true,
+  "projections": [
+    {
+      "player_name": "A'ja Wilson",
+      "stat_type": "Points",
+      "line": 24.5,
+      "odds": -110,
+      "game_time": "2025-07-01T19:00:00"
+    },
+    {
+      "player_name": "Breanna Stewart", 
+      "stat_type": "Rebounds",
+      "line": 8.5,
+      "odds": -115,
+      "game_time": "2025-07-01T19:00:00"
+    }
+  ]
+}
