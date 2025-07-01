@@ -811,3 +811,22 @@ pytest --cov=. --cov-report=html
 The CI pipeline automatically runs these tests on every push and pull request, ensuring code quality.
 
 
+
+## Alert Testing
+
+### SMS Alerts
+Test SMS functionality after configuring Twilio credentials:
+
+Basic SMS test:
+python scripts/smoke_alert.py --sms
+
+Expected output:
+Testing SMS...
+SMS result: True
+
+### Slack Alerts
+python scripts/smoke_alert.py --slack
+
+### All Alerts
+Test all configured alert channels:
+python scripts/smoke_alert.py --sms --discord --slack

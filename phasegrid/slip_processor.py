@@ -1,41 +1,36 @@
 ﻿"""
-Enhanced SlipProcessor with guard-rail enforcement and detailed logging.
+Slip processing module with guard-rail enforcement.
 """
-
-import os
 import logging
-from typing import List, Dict, Any, Optional
 from datetime import datetime
-from .errors import InsufficientSlipsError, ConfigurationError
+from typing import List, Dict, Any, Optional
+
 from .slip_optimizer import SlipOptimizer
+from .errors import InsufficientSlipsError
 
 logger = logging.getLogger(__name__)
 
 
 class SlipProcessor:
-    """Processes and validates slip generation with guard-rail enforcement."""
+    """Process props and generate slips with guard-rail enforcement."""
     
-    def __init__(self, config: Optional[Dict[str, Any]] = None):
-        self.config = config or {}
-        self.bypass_guard_rail = self.config.get('bypass_guard_rail', False)
-        self.minimum_slips = int(os.getenv('MINIMUM_SLIPS_PER_DAY', '5'))
-        self.slip_confidence_threshold = float(
-            os.getenv('SLIP_CONFIDENCE_THRESHOLD', '0.75')
-        )
+    def __init__(self, 
+                 minimum_slips: int = 5,
+                 bypass_guard_rail: bool = False):
+        """
+        Initialize slip processor.
         
-        # Initialize optimizer with enhanced logging
-        self.optimizer = SlipOptimizer({
-            'confidence_threshold': self.slip_confidence_threshold,
-            'enable_detailed_logging': True
-        })
-        
-        logger.info(
-            f"SlipProcessor initialized with threshold={self.slip_confidence_threshold}, "
-            f"minimum_slips={self.minimum_slips}, bypass={self.bypass_guard_rail}"
-        )
+        Args:
+            minimum_slips: Minimum number of slips required per day
+            bypass_guard_rail: Whether to bypass minimum slip requirement
+        """
+        self.minimum_slips = minimum_slips
+        self.bypass_guard_rail = bypass_guard_rail
+        self.optimizer = SlipOptimizer()
+        logger.info(f"Initialized SlipProcessor (bypass_guard_rail={bypass_guard_rail})")
     
-    def process(self, 
-                props: List[Dict[str, Any]], 
+    def process(self,
+                props: List[Dict[str, Any]],
                 date: Optional[str] = None) -> List[Dict[str, Any]]:
         """
         Process props and generate slips with guard-rail enforcement.
@@ -52,7 +47,7 @@ class SlipProcessor:
         """
         if date is None:
             date = datetime.now().strftime('%Y-%m-%d')
-        
+            
         logger.info(f"Processing {len(props)} props for date {date}")
         
         # Generate slips with detailed logging
@@ -67,40 +62,55 @@ class SlipProcessor:
                 f"Guard-rail violation: {slip_count} slips < {self.minimum_slips} minimum"
             )
             raise InsufficientSlipsError(slip_count, self.minimum_slips)
-        
-        if slip_count < self.minimum_slips and self.bypass_guard_rail:
+            
+        if self.bypass_guard_rail and slip_count < self.minimum_slips:
             logger.warning(
                 f"Guard-rail bypassed: {slip_count} slips < {self.minimum_slips} minimum"
             )
-        
+            
         return slips
     
-    def set_bypass_guard_rail(self, bypass: bool) -> None:
-        """Enable or disable guard-rail bypass."""
-        self.bypass_guard_rail = bypass
-        logger.info(f"Guard-rail bypass set to: {bypass}")
-    
-    def adjust_confidence_threshold(self, new_threshold: float) -> None:
+    def validate_props(self, props: List[Dict[str, Any]]) -> List[str]:
         """
-        Adjust the confidence threshold for slip generation.
+        Validate input props for required fields.
         
         Args:
-            new_threshold: New confidence threshold between 0.0 and 1.0
+            props: List of props to validate
+            
+        Returns:
+            List of validation errors (empty if all valid)
         """
-        if not 0.0 <= new_threshold <= 1.0:
-            raise ConfigurationError(
-                f"Invalid confidence threshold: {new_threshold}"
-            )
+        errors = []
+        required_fields = ['player_id', 'market', 'line', 'odds']
         
-        old_threshold = self.slip_confidence_threshold
-        self.slip_confidence_threshold = new_threshold
-        self.optimizer.config['confidence_threshold'] = new_threshold
-        self.optimizer.confidence_threshold = new_threshold
-        
-        logger.info(
-            f"Adjusted confidence threshold: {old_threshold} -> {new_threshold}"
-        )
+        for i, prop in enumerate(props):
+            for field in required_fields:
+                if field not in prop:
+                    errors.append(f"Prop {i}: Missing required field '{field}'")
+                    
+        return errors
     
-    def get_optimization_stats(self) -> Dict[str, Any]:
-        """Get statistics from the last optimization run."""
-        return self.optimizer.get_last_run_stats()
+    def generate_slip_metadata(self, slip: Dict[str, Any]) -> Dict[str, Any]:
+        """Generate metadata for a slip."""
+        return {
+            'generated_at': datetime.now().isoformat(),
+            'processor_version': '1.0.0',
+            'guard_rail_bypassed': self.bypass_guard_rail,
+            **slip
+        }
+    
+    def batch_process(self, 
+                     props_by_date: Dict[str, List[Dict[str, Any]]]) -> Dict[str, List[Dict[str, Any]]]:
+        """Process props for multiple dates."""
+        results = {}
+        
+        for date, props in props_by_date.items():
+            try:
+                results[date] = self.process(props, date)
+            except InsufficientSlipsError as e:
+                logger.error(f"Failed to process {date}: {e}")
+                if not self.bypass_guard_rail:
+                    raise
+                results[date] = []  # Empty list if bypassed
+                
+        return results

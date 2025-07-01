@@ -7,9 +7,11 @@ import logging
 import os
 import sys
 from datetime import datetime
-from typing import Optional
+from typing import Optional, List, Dict, Any
 
 from .slip_processor import SlipProcessor
+from .slip_optimizer import SlipOptimizer
+from .verify_sheets import SheetVerifier
 from .errors import InsufficientSlipsError, PhaseGridError
 
 
@@ -27,13 +29,22 @@ def create_parser() -> argparse.ArgumentParser:
         description='PhaseGrid - Slip Generation and Processing System',
         formatter_class=argparse.RawDescriptionHelpFormatter
     )
-    
+
+    # Global arguments
+    parser.add_argument(
+        '--log-level',
+        type=str,
+        default='INFO',
+        choices=['DEBUG', 'INFO', 'WARNING', 'ERROR'],
+        help='Set logging level'
+    )
+
     # Subcommands
     subparsers = parser.add_subparsers(dest='command', help='Available commands')
-    
+
     # Process command
     process_parser = subparsers.add_parser(
-        'process', 
+        'process',
         help='Process props and generate slips'
     )
     process_parser.add_argument(
@@ -48,131 +59,152 @@ def create_parser() -> argparse.ArgumentParser:
         help='Bypass the minimum slip count requirement (default: 5 slips/day)'
     )
     process_parser.add_argument(
-        '--confidence-threshold',
-        type=float,
-        default=None,
-        help=f'Override confidence threshold for slip generation. '
-             f'Default: {os.getenv("SLIP_CONFIDENCE_THRESHOLD", "0.75")} '
-             f'(range: 0.0-1.0, lower = more slips)'
-    )
-    process_parser.add_argument(
-        '--input-file',
+        '--props-file',
         type=str,
-        default='props.json',
-        help='Input file containing props to process'
+        help='Path to props JSON file'
     )
     process_parser.add_argument(
-        '--output-file',
+        '--output',
         type=str,
         default='slips.json',
         help='Output file for generated slips'
     )
-    
-    # Stats command
-    stats_parser = subparsers.add_parser(
-        'stats',
-        help='Display slip generation statistics'
+
+    # Verify command
+    verify_parser = subparsers.add_parser(
+        'verify',
+        help='Verify sheets data integrity'
     )
-    stats_parser.add_argument(
-        '--date',
+    verify_parser.add_argument(
+        '--sheet',
         type=str,
-        default=None,
-        help='Date to display stats for (YYYY-MM-DD)'
+        required=True,
+        help='Sheet name to verify'
     )
-    
-    # Config command
-    config_parser = subparsers.add_parser(
-        'config',
-        help='Display current configuration'
+    verify_parser.add_argument(
+        '--fix',
+        action='store_true',
+        help='Attempt to fix validation errors'
     )
-    
-    # Global options
-    parser.add_argument(
-        '--log-level',
-        choices=['DEBUG', 'INFO', 'WARNING', 'ERROR'],
-        default='INFO',
-        help='Set logging level'
+
+    # Optimize command
+    optimize_parser = subparsers.add_parser(
+        'optimize',
+        help='Optimize slip generation parameters'
     )
-    
+    optimize_parser.add_argument(
+        '--bankroll',
+        type=float,
+        default=1000.0,
+        help='Total bankroll for optimization'
+    )
+    optimize_parser.add_argument(
+        '--risk-level',
+        type=str,
+        choices=['conservative', 'moderate', 'aggressive'],
+        default='moderate',
+        help='Risk level for optimization'
+    )
+
     return parser
 
 
-def process_command(args):
-    """Handle the process command."""
-    import json
+def process_data(props: List[Dict[str, Any]], 
+                 date: Optional[str] = None,
+                 bypass_guard_rail: bool = False) -> List[Dict[str, Any]]:
+    """Process props data and generate slips."""
+    processor = SlipProcessor()
+    if bypass_guard_rail:
+        processor.bypass_guard_rail = True
     
-    # Load configuration
-    config = {
-        'bypass_guard_rail': args.bypass_guard_rail
+    return processor.process(props, date)
+
+
+def verify_sheets(sheet_name: str, fix: bool = False) -> bool:
+    """Verify sheet data integrity."""
+    verifier = SheetVerifier()
+    errors = verifier.verify_sheet(sheet_name)
+    
+    if errors:
+        print(f"Found {len(errors)} validation errors in {sheet_name}")
+        for error in errors:
+            print(f"  - {error}")
+        
+        if fix:
+            print("Attempting to fix errors...")
+            # Implementation for fixing errors
+            pass
+        return False
+    
+    print(f"Sheet {sheet_name} passed all validations!")
+    return True
+
+
+def optimize_slips(bankroll: float, risk_level: str) -> Dict[str, Any]:
+    """Optimize slip generation parameters."""
+    optimizer = SlipOptimizer()
+    
+    # Set parameters based on risk level
+    if risk_level == 'conservative':
+        max_bet_pct = 0.02
+        min_edge = 0.10
+    elif risk_level == 'aggressive':
+        max_bet_pct = 0.10
+        min_edge = 0.03
+    else:  # moderate
+        max_bet_pct = 0.05
+        min_edge = 0.05
+    
+    params = {
+        'bankroll': bankroll,
+        'max_bet_pct': max_bet_pct,
+        'min_edge': min_edge,
+        'risk_level': risk_level
     }
     
-    # Initialize processor
-    processor = SlipProcessor(config)
+    print(f"Optimization parameters for {risk_level} strategy:")
+    print(f"  Bankroll: ${bankroll}")
+    print(f"  Max bet percentage: {max_bet_pct * 100}%")
+    print(f"  Minimum edge required: {min_edge * 100}%")
     
-    # Override confidence threshold if specified
-    if args.confidence_threshold is not None:
-        processor.adjust_confidence_threshold(args.confidence_threshold)
-    
-    # Load props from input file
-    try:
-        with open(args.input_file, 'r') as f:
-            props = json.load(f)
-    except FileNotFoundError:
-        logging.error(f"Input file not found: {args.input_file}")
-        return 1
-    except json.JSONDecodeError as e:
-        logging.error(f"Invalid JSON in input file: {e}")
-        return 1
-    
-    # Process props
-    try:
-        slips = processor.process(props, args.date)
-        logging.info(f"Successfully generated {len(slips)} slips")
-        
-        # Save slips to output file
-        with open(args.output_file, 'w') as f:
-            json.dump(slips, f, indent=2)
-        
-        # Display statistics
-        stats = processor.get_optimization_stats()
-        print(f"\nSlip Generation Summary:")
-        print(f"  Total props processed: {stats['total_props']}")
-        print(f"  Slips generated: {stats['generated_slips']}")
-        print(f"  Filtered by confidence: {stats['filtered_by_confidence']}")
-        print(f"  Filtered by edge cases: {stats['filtered_by_edge']}")
-        print(f"  Filtered by duplicates: {stats['filtered_by_duplicate']}")
-        print(f"  Filtered by validity: {stats['filtered_by_validity']}")
-        print(f"\nSlips saved to: {args.output_file}")
-        
-        return 0
-        
-    except InsufficientSlipsError as e:
-        logging.error(str(e))
-        print(f"\nERROR: {e}")
-        print("\nTo bypass this check, use the --bypass-guard-rail flag")
-        print("Warning: Bypassing may result in incomplete data processing")
-        return 1
-    except PhaseGridError as e:
-        logging.error(f"Processing error: {e}")
-        return 1
+    return params
 
 
-def stats_command(args):
-    """Handle the stats command."""
-    # TODO: Implement statistics retrieval
-    print(f"Statistics for date: {args.date or 'today'}")
-    print("Feature not yet implemented")
-    return 0
-
-
-def config_command(args):
-    """Handle the config command."""
-    print("Current PhaseGrid Configuration:")
-    print(f"  SLIP_CONFIDENCE_THRESHOLD: {os.getenv('SLIP_CONFIDENCE_THRESHOLD', '0.75')}")
-    print(f"  MINIMUM_SLIPS_PER_DAY: {os.getenv('MINIMUM_SLIPS_PER_DAY', '5')}")
-    print(f"  LOG_LEVEL: {os.getenv('LOG_LEVEL', 'INFO')}")
-    print(f"  ENABLE_DETAILED_SLIP_LOGGING: {os.getenv('ENABLE_DETAILED_SLIP_LOGGING', 'true')}")
-    return 0
+def process_command(args: argparse.Namespace):
+    """Process the command based on parsed arguments."""
+    if args.command == 'process':
+        # Load props
+        if args.props_file:
+            import json
+            with open(args.props_file, 'r') as f:
+                props = json.load(f)
+        else:
+            props = []
+        
+        try:
+            slips = process_data(props, args.date, args.bypass_guard_rail)
+            print(f"Generated {len(slips)} slips")
+            
+            # Save output
+            import json
+            with open(args.output, 'w') as f:
+                json.dump(slips, f, indent=2)
+                
+        except InsufficientSlipsError as e:
+            print(f"Error: {e}")
+            sys.exit(1)
+            
+    elif args.command == 'verify':
+        success = verify_sheets(args.sheet, args.fix)
+        sys.exit(0 if success else 1)
+        
+    elif args.command == 'optimize':
+        params = optimize_slips(args.bankroll, args.risk_level)
+        # Could save params to a config file here
+        
+    else:
+        print("No command specified. Use --help for usage information.")
+        sys.exit(1)
 
 
 def main():
@@ -183,17 +215,9 @@ def main():
     # Setup logging
     setup_logging(args.log_level)
     
-    # Handle commands
-    if args.command == 'process':
-        return process_command(args)
-    elif args.command == 'stats':
-        return stats_command(args)
-    elif args.command == 'config':
-        return config_command(args)
-    else:
-        parser.print_help()
-        return 1
+    # Process the command
+    process_command(args)
 
 
 if __name__ == '__main__':
-    sys.exit(main())
+    main()
