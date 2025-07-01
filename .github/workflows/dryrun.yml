@@ -26,7 +26,7 @@ on:
 jobs:
   dry-run:
     runs-on: ubuntu-latest
-    
+
     env:
       # Set timezone to UTC for consistency
       TZ: UTC
@@ -56,7 +56,7 @@ jobs:
       run: |
         echo "🗄️ Running database migration..."
         python scripts/migrate_schema.py
-        
+
     - name: Set date range
       id: dates
       run: |
@@ -64,7 +64,7 @@ jobs:
           # Use provided dates or defaults for manual runs
           START_DATE="${{ github.event.inputs.start_date }}"
           END_DATE="${{ github.event.inputs.end_date }}"
-          
+
           # If dates not provided, use defaults
           if [ -z "$START_DATE" ]; then
             START_DATE="2025-06-26"
@@ -77,7 +77,7 @@ jobs:
           START_DATE=$(date +%Y-%m-%d)
           END_DATE=$(date +%Y-%m-%d)
         fi
-        
+
         echo "START_DATE=$START_DATE" >> $GITHUB_OUTPUT
         echo "END_DATE=$END_DATE" >> $GITHUB_OUTPUT
         echo "📅 Date range: $START_DATE to $END_DATE"
@@ -86,6 +86,7 @@ jobs:
       env:
         GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
         GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+        SHEET_ID: ${{ secrets.SHEET_ID }}
         RESULTS_API_KEY: ${{ secrets.RESULTS_API_KEY }}
         RESULTS_API_URL: ${{ secrets.RESULTS_API_URL }}
         DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
@@ -96,20 +97,43 @@ jobs:
         PHONE_TO: ${{ secrets.PHONE_TO }}
       run: |
         echo "🚀 Starting dry-run paper trading..."
-        
+
         # Determine guard rail flag
         GUARD_RAIL_FLAG=""
         if [ "${{ github.event.inputs.bypass_guard_rail }}" == "true" ]; then
           GUARD_RAIL_FLAG="--bypass-guard-rail"
         fi
-        
+
         # Run the enhanced auto paper script
-        python auto_paper.py \ --bypass-guard-rail
+        python auto_paper.py \
           --start-date "${{ steps.dates.outputs.START_DATE }}" \
           --end-date "${{ steps.dates.outputs.END_DATE }}" \
           --dry-run \
           --min-slips 5 \
           $GUARD_RAIL_FLAG
+
+    # NEW STEP: Sheet Health Check
+    - name: Sheet Health Check
+      id: sheet-ping
+      if: success()  # Only run if slip generation succeeded
+      env:
+        GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
+        SHEET_ID: ${{ secrets.SHEET_ID }}
+      run: |
+        echo "🏥 Running Google Sheets health check..."
+        
+        # Run the sheet ping script
+        python scripts/sheet_ping.py
+        
+        # Capture exit code
+        PING_EXIT_CODE=$?
+        
+        if [ $PING_EXIT_CODE -eq 0 ]; then
+          echo "✅ Sheet health check passed!"
+        else
+          echo "❌ Sheet health check failed with exit code: $PING_EXIT_CODE"
+          exit $PING_EXIT_CODE
+        fi
 
     - name: Generate summary report
       if: always()
@@ -119,18 +143,18 @@ jobs:
         import json
         import os
         from datetime import datetime
-        
+
         # Read state file if exists
         state_file = 'data/run_states/dry_run_${{ steps.dates.outputs.START_DATE }}_to_${{ steps.dates.outputs.END_DATE }}.json'
         if os.path.exists(state_file):
             with open(state_file, 'r') as f:
                 state = json.load(f)
-            
+
             print('## Dry Run Summary')
             print(f'**Date Range**: {state.get(\"start_date\")} to {state.get(\"end_date\")}')
             print(f'**Completed Days**: {len(state.get(\"completed_dates\", []))}')
             print(f'**Total Slips Generated**: {state.get(\"total_slips_generated\", 0)}')
-            
+
             if state.get('errors'):
                 print(f'**Errors**: {len(state.get(\"errors\", []))}')
                 for error in state.get('errors', []):
@@ -170,7 +194,7 @@ jobs:
           STATUS="❌ Failed"
           COLOR="15158332"
         fi
-        
+
         # Send Discord notification
         if [ ! -z "$DISCORD_WEBHOOK_URL" ]; then
           curl -X POST $DISCORD_WEBHOOK_URL \
@@ -188,4 +212,3 @@ jobs:
               }]
             }"
         fi
-
