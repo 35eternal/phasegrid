@@ -1,6 +1,6 @@
 ﻿# PhaseGrid Quick Start Guide
 
-## ðŸš€ Getting Started
+## 🚀 Getting Started
 
 Welcome to PhaseGrid - an advanced WNBA betting analytics system that leverages player performance cycles, real-time data, and intelligent automation.
 
@@ -8,8 +8,8 @@ Welcome to PhaseGrid - an advanced WNBA betting analytics system that leverages 
 
 - Python 3.11+ (Note: You may have issues with numpy on Python 3.13, recommend 3.11)
 - Google Cloud account (for Sheets API)
-- Twilio account (optional, for SMS alerts)
-- Discord webhook (optional, for alerts)
+- Discord webhook (for alerts)
+- Slack webhook (optional, for team alerts)
 
 ### Quick Setup
 
@@ -59,7 +59,7 @@ The dry-run automation system generates betting slips every morning based on rea
    - Fetches game results
    - Grades all pending slips
    - Updates Google Sheets
-   - Sends performance summary via SMS/Discord
+   - Sends performance summary via Discord/Slack
 
 ### Workflow Commands
 
@@ -76,21 +76,21 @@ python backfill.py --days 7
 
 ---
 
-## ðŸŒ™ Nightly Grader
+## 🌙 Nightly Grader
 
 The nightly grader is like a robot teacher that grades betting slips while you sleep! Every night at midnight (Phoenix time), it automatically checks yesterday's predictions against the real game results.
 
-### ðŸŽ¯ What Does It Do?
+### 🎯 What Does It Do?
 
 Think of it like this:
-1. **Fetches Slips** ðŸ“‹ - Gets all the betting predictions from yesterday
-2. **Gets Results** ðŸ€ - Finds out who actually won the games
-3. **Grades** âœï¸ - Marks each prediction as WIN âœ…, LOSS âŒ, or PUSH ðŸ¤
-4. **Updates Sheet** ðŸ“Š - Writes the grades back to Google Sheets
-5. **Sends Text** ðŸ“± - Texts you a summary of how everyone did
-6. **Alerts** ðŸš¨ - If something breaks, sends emergency alerts to Discord
+1. **Fetches Slips** 📋 - Gets all the betting predictions from yesterday
+2. **Gets Results** 🏀 - Finds out who actually won the games
+3. **Grades** ✏️ - Marks each prediction as WIN ✅, LOSS ❌, or PUSH 🤷
+4. **Updates Sheet** 📊 - Writes the grades back to Google Sheets
+5. **Sends Alerts** 💬 - Notifies you via Discord/Slack
+6. **Error Handling** 🚨 - If something breaks, sends emergency alerts
 
-### â° When Does It Run?
+### ⏰ When Does It Run?
 
 The grader runs automatically every night at **midnight Phoenix time**:
 
@@ -102,15 +102,15 @@ Currently set for summer time (MDT): `0 6 * * *` in cron format
 **What's cron format?** It's a special way to tell computers when to do things:
 ```
 0 6 * * *
-â”‚ â”‚ â”‚ â”‚ â”‚
-â”‚ â”‚ â”‚ â”‚ â””â”€â”€â”€ Day of week (0-7, * means every day)
-â”‚ â”‚ â”‚ â””â”€â”€â”€â”€â”€ Month (1-12, * means every month)
-â”‚ â”‚ â””â”€â”€â”€â”€â”€â”€â”€ Day of month (1-31, * means every day)
-â”‚ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€ Hour (0-23, 6 means 6 AM UTC)
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Minute (0-59, 0 means exactly on the hour)
+│ │ │ │ │
+│ │ │ │ └─── Day of week (0-7, * means every day)
+│ │ │ └───── Month (1-12, * means every month)
+│ │ └─────── Day of month (1-31, * means every day)
+│ └───────── Hour (0-23, 6 means 6 AM UTC)
+└─────────── Minute (0-59, 0 means exactly on the hour)
 ```
 
-### ðŸ” Required Secrets (GitHub Settings)
+### 🔐 Required Secrets (GitHub Settings)
 
 These are like passwords that GitHub needs to know. You must set these up in your repository:
 
@@ -126,14 +126,11 @@ These are like passwords that GitHub needs to know. You must set these up in you
 |-------------|-------------|-----------------|---------|
 | `SHEET_ID` | Your Google Sheet's ID number | Look at your sheet's URL: `https://docs.google.com/spreadsheets/d/`**`1ABC123XYZ`**`/edit` | `1ABC123XYZ` |
 | `GOOGLE_SA_JSON` | Google service account login info | Download from Google Cloud Console (JSON file) | `{"type": "service_account", "project_id": "your-project", ...}` |
-| `TWILIO_SID` | Twilio account ID | From twilio.com dashboard | `ACa1b2c3d4e5f6...` |
-| `TWILIO_AUTH` | Twilio password | From twilio.com dashboard | `abc123def456...` |
-| `TWILIO_FROM` | Your Twilio phone number | From twilio.com (must include +1) | `+18331234567` |
-| `PHONE_TO` | Phone to send texts to | Your phone (must include +1) | `+14805551234` |
 | `DISCORD_WEBHOOK_URL` | Discord alert URL | From Discord server settings | `https://discord.com/api/webhooks/123/abc...` |
+| `SLACK_WEBHOOK_URL` | Slack alert URL (optional) | From Slack app settings | `https://hooks.slack.com/services/123/456/abc...` |
 | `RESULTS_API_URL` | Where to get game results | From your sports data provider | `https://api.sportsdata.com/results` |
 
-### ðŸ  Local Development Setup
+### 🏠 Local Development Setup
 
 Want to test on your own computer? Here's how:
 
@@ -152,14 +149,11 @@ Then add these lines to your `.env` file:
 SHEET_ID=your-sheet-id-here
 GOOGLE_SA_JSON={"type": "service_account", ...your-full-json-here...}
 
-# Twilio (for text messages)
-TWILIO_SID=your-twilio-sid-here
-TWILIO_AUTH=your-twilio-auth-token-here
-TWILIO_FROM=+18331234567  # Your Twilio phone number
-PHONE_TO=+14805551234     # Your personal phone number
-
-# Discord (for alerts)
+# Discord (required for alerts)
 DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/your-webhook-here
+
+# Slack (optional team alerts)
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/your-webhook-here
 
 # Sports API
 RESULTS_API_URL=https://api.example.com/results
@@ -193,7 +187,7 @@ pip install -r requirements.txt
 python scripts/result_grader.py
 ```
 
-### ðŸŽ® Manual Trigger (Run It Yourself)
+### 🎮 Manual Trigger (Run It Yourself)
 
 Sometimes you want to run the grader right now instead of waiting for midnight:
 
@@ -205,19 +199,28 @@ Sometimes you want to run the grader right now instead of waiting for midnight:
 6. Click the green "Run workflow" button
 7. Watch it run! (refresh the page after a few seconds)
 
-### ðŸ“± What The Text Message Looks Like
+### 📱 What The Alerts Look Like
 
-Every night, you'll get a text that looks like this:
+Every night, you'll get alerts that look like this:
 
+**Discord Message:**
 ```
-ðŸ¤– PhaseGrid Nightly Grader
-ðŸ“… Date: 2024-01-15
-ðŸ“Š Total: 25
-âœ… Wins: 15
-âŒ Losses: 8
-âš ï¸ Errors: 2
+🤖 PhaseGrid Nightly Grader
+📅 Date: 2024-01-15
+📊 Total: 25
+✅ Wins: 15
+❌ Losses: 8
+⚠️ Errors: 2
 
-ðŸš¨ 2 slips had errors!
+🚨 2 slips had errors!
+```
+
+**Slack Message:**
+```
+PhaseGrid Bot
+✅ Graded 25 slips successfully
+Win Rate: 60% (15W/8L)
+Check sheet for details
 ```
 
 This tells you:
@@ -226,7 +229,7 @@ This tells you:
 - How many were wrong (Losses)
 - How many couldn't be graded (Errors)
 
-### ðŸ“Š Google Sheet Structure
+### 📊 Google Sheet Structure
 
 The grader expects your `paper_slips` sheet to have these columns:
 
@@ -241,87 +244,90 @@ The grader expects your `paper_slips` sheet to have these columns:
 | G | `amount` | How much they bet | `$50` |
 | H | `timestamp` | When they made the bet | `2024-01-15 10:30:00` |
 | I | `grade` | **Added by grader!** WIN/LOSS/PUSH | `WIN` |
-| J | `details` | **Added by grader!** Explanation | `âœ… Correct: LAL won (110-105)` |
+| J | `details` | **Added by grader!** Explanation | `✅ Correct: LAL won (110-105)` |
 
 **Important:** Columns I and J are empty initially - the grader fills them in!
 
-### ðŸ”§ Troubleshooting Guide
+### 🔧 Troubleshooting Guide
 
-#### Problem: "No SMS received"
+#### Problem: "No alerts received"
 **Solutions:**
-- âœ… Check Twilio account has money (they charge per text)
-- âœ… Verify phone numbers include country code (+1 for USA)
-- âœ… Make sure TWILIO_FROM is your Twilio number, not your personal number
-- âœ… Check GitHub secrets are set correctly (no quotes around values!)
-- âœ… Look at GitHub Actions logs for error messages
+- ✅ Check Discord webhook URL is correct in `.env`
+- ✅ Verify Slack webhook URL if using Slack
+- ✅ Make sure webhook URLs start with `https://`
+- ✅ Check GitHub secrets are set correctly (no quotes around values!)
+- ✅ Look at GitHub Actions logs for error messages
 
 #### Problem: "Grading errors"
 **Solutions:**
-- âœ… Make sure game IDs in slips match exactly with results API
-- âœ… Check the date format is YYYY-MM-DD everywhere
-- âœ… Verify results API is returning data
-- âœ… Look for typos in team names
+- ✅ Make sure game IDs in slips match exactly with results API
+- ✅ Check the date format is YYYY-MM-DD everywhere
+- ✅ Verify results API is returning data
+- ✅ Look for typos in team names
 
 #### Problem: "Sheet not updating"
 **Solutions:**
-- âœ… Verify Google service account has "Editor" access to your sheet
-- âœ… Check GOOGLE_SA_JSON secret is the complete JSON (copy everything!)
-- âœ… Make sure sheet name is exactly "paper_slips"
-- âœ… Verify columns I and J exist in your sheet
+- ✅ Verify Google service account has "Editor" access to your sheet
+- ✅ Check GOOGLE_SA_JSON secret is the complete JSON (copy everything!)
+- ✅ Make sure sheet name is exactly "paper_slips"
+- ✅ Verify columns I and J exist in your sheet
 
 #### Problem: "Workflow not running"
 **Solutions:**
-- âœ… Check the workflow file is named exactly `nightly-grader.yml`
-- âœ… Verify it's in `.github/workflows/` folder
-- âœ… Check for typos in the cron schedule
-- âœ… Make sure GitHub Actions is enabled for your repository
+- ✅ Check the workflow file is named exactly `nightly-grader.yml`
+- ✅ Verify it's in `.github/workflows/` folder
+- ✅ Check for typos in the cron schedule
+- ✅ Make sure GitHub Actions is enabled for your repository
 
 #### Problem: "numpy installation failed"
 **Solutions:**
-- âœ… Use Python 3.11 instead of 3.13 (numpy may have issues with 3.13)
-- âœ… Install Microsoft C++ Build Tools if on Windows
-- âœ… Try installing numpy separately: `pip install numpy==1.24.3`
-- âœ… Use pre-built wheel: `pip install numpy --only-binary :all:`
+- ✅ Use Python 3.11 instead of 3.13 (numpy may have issues with 3.13)
+- ✅ Install Microsoft C++ Build Tools if on Windows
+- ✅ Try installing numpy separately: `pip install numpy==1.24.3`
+- ✅ Use pre-built wheel: `pip install numpy --only-binary :all:`
 
-### ðŸ“ Example Log Output
+### 📃 Example Log Output
 
 When the grader runs, you'll see logs like this:
 
 ```
 ==================================================
-ðŸš€ PHASEGRID NIGHTLY GRADER
-ðŸ“… Grading slips from: 2024-01-15
+🚀 PHASEGRID NIGHTLY GRADER
+📅 Grading slips from: 2024-01-15
 ==================================================
 Connecting to Google Sheets...
-âœ… Connected to Google Sheets!
-Setting up text messaging...
-âœ… Text messaging ready!
-ðŸ“‹ Looking for slips from 2024-01-15...
-ðŸ“Š Found 3 slips for 2024-01-15
-ðŸ€ Fetching game results for 2024-01-15 (using stub data)...
-âœ… Got game results!
-ðŸ“ Grading slips...
+✅ Connected to Google Sheets!
+Setting up alerts...
+✅ Discord webhook configured!
+✅ Slack webhook configured!
+📋 Looking for slips from 2024-01-15...
+📊 Found 3 slips for 2024-01-15
+🏀 Fetching game results for 2024-01-15 (using stub data)...
+✅ Got game results!
+📝 Grading slips...
   Slip slip_001: WIN
   Slip slip_002: LOSS
   Slip slip_003: WIN
-âœï¸ Writing grades to spreadsheet...
-âœ… Updated 3 slip grades
-ðŸ“± Sending SMS from +18331234567 to +14805551234...
-âœ… SMS sent! ID: SM123abc...
+✏️ Writing grades to spreadsheet...
+✅ Updated 3 slip grades
+💬 Sending Discord alert...
+✅ Discord alert sent!
+💬 Sending Slack alert...
+✅ Slack alert sent!
 ==================================================
-ðŸŽ‰ Nightly grader completed successfully!
+🎉 Nightly grader completed successfully!
 ==================================================
 ```
 
 ---
 
-## ðŸš€ Production Hardening Features
+## 🚀 Production Hardening Features
 
 ### Overview
 
 PhaseGrid has been enhanced with production-ready features to make the system more reliable, scalable, and easier to operate.
 
-### ðŸŽ¯ New Features
+### 🎯 New Features
 
 #### 1. Real Sports Data Integration (PrizePicks + Basketball Reference)
 
@@ -351,25 +357,25 @@ Every slip now has a unique ID format: `PG-{hash}-{date}`
 #### 3. Retry Logic & Error Handling
 
 All external API calls now include:
-- Exponential backoff (1s â†’ 2s â†’ 4s â†’ 8s â†’ 16s)
+- Exponential backoff (1s → 2s → 4s → 8s → 16s)
 - Configurable max retries (default: 5)
 - Graceful failure handling
 - Detailed error logging
 
-#### 4. SMS & Discord Alerts
+#### 4. Discord & Slack Alerts
 
 Get notified about important events:
 ```python
 # Automatic alerts for:
 # - Grading complete (with win rate)
-# - High confidence opportunities (â‰¥85%)
+# - High confidence opportunities (≥85%)
 # - Daily/weekly summaries
 # - Critical errors
 
 # Manual alerts:
-from alerts import send_quick_sms, send_quick_discord
-send_quick_sms("Custom message")
-send_quick_discord("Custom message", color=0x00FF00)
+from alerts.notifier import send_discord_alert, send_slack_alert
+send_discord_alert("Custom message")
+send_slack_alert("Custom message")
 ```
 
 #### 5. Historical Backfill
@@ -402,7 +408,7 @@ pytest --cov-report=html
 # Open htmlcov/index.html in browser
 ```
 
-### ðŸ“‹ Production Features Setup
+### 📋 Production Features Setup
 
 #### 1. Enhanced Slip Generation
 The new `slips_generator.py` replaces the stub with:
@@ -414,10 +420,10 @@ The new `slips_generator.py` replaces the stub with:
 
 #### 2. Alert System
 Configure alerts in `.env`:
-- SMS via Twilio for critical events
 - Discord webhooks for all notifications
+- Slack webhooks for team collaboration
 - Customizable thresholds
-- Multiple recipient support
+- Multiple channel support
 
 #### 3. Backfill Capability
 Never miss historical data:
@@ -426,7 +432,7 @@ Never miss historical data:
 - Batch processing for efficiency
 - Progress tracking and summaries
 
-### ðŸƒâ€â™‚ï¸ Daily Workflow
+### 🏃‍♂️ Daily Workflow
 
 #### Morning (Generate Slips)
 ```bash
@@ -459,7 +465,7 @@ type logs\phasegrid.log | findstr ERROR  # Windows
 # grep ERROR logs/phasegrid.log          # Mac/Linux
 ```
 
-### ðŸ”§ Configuration Options
+### 🔧 Configuration Options
 
 #### Betting Parameters (.env)
 ```bash
@@ -471,11 +477,11 @@ KELLY_FRACTION=0.25     # Conservative Kelly sizing
 ```
 
 #### Alert Thresholds
-- SMS alerts: Win rate â‰¥70% or â‰¤30%, profit Â±$500
-- High confidence alerts: Confidence â‰¥85%
+- High confidence alerts: Confidence ≥85%
 - Error alerts: Critical errors only
+- Daily summaries: Sent at end of grading
 
-### ðŸ“Š Monitoring & Analytics
+### 📊 Monitoring & Analytics
 
 #### Check Performance
 ```python
@@ -499,27 +505,27 @@ LOG_LEVEL=DEBUG python auto_paper.py
 python -m pytest tests/test_slips_generator.py -v
 ```
 
-### ðŸ†˜ Getting Help
+### 🆘 Getting Help
 
 If you're stuck:
-1. Check the GitHub Actions logs (Actions tab â†’ click on the failed run)
+1. Check the GitHub Actions logs (Actions tab → click on the failed run)
 2. Look for error messages in red
 3. Check all your secrets are set correctly
 4. Make sure your `.env` file has all required values (for local testing)
-5. Ask for help in the team Discord channel!
+5. Post in Discord with your error message!
 
-### ðŸš€ Next Steps
+### 🚀 Next Steps
 
 After setting this up:
 1. Run it manually first to test (see Manual Trigger section)
-2. Check you received the summary text
+2. Check you received the alerts
 3. Verify grades appear in columns I and J of your sheet
 4. Let it run automatically tonight!
 5. Check the results tomorrow morning
 
 Remember: The grader runs at midnight, so tomorrow morning you'll see yesterday's slips graded!
 
-### ðŸ”Œ API Integration
+### 🔌 API Integration
 
 The system now integrates with multiple APIs:
 
@@ -527,6 +533,7 @@ The system now integrates with multiple APIs:
    - Fetches live player props
    - Updates throughout the day
    - Handles rate limiting
+   - HTML fallback when API fails
 
 2. **Basketball Reference**
    - Historical performance data
@@ -538,21 +545,21 @@ The system now integrates with multiple APIs:
    - Map to expected format
    - Add authentication as needed
 
-### ðŸ“ˆ Future Enhancements
+### 📈 Future Enhancements
 
 Consider adding these features:
 - Support for point spread calculations
 - Win/loss streak tracking
 - Performance metrics per user
 - Weekly/monthly summary reports
-- Multiple notification channels (email, Slack)
+- Multiple notification channels (email, Telegram)
 - Historical data analysis
 - Machine learning predictions
 - Multi-sport support
 - Live odds tracking
 - Arbitrage detection
 
-### ðŸš¨ Safety Features
+### 🚨 Safety Features
 
 1. **Bankroll Protection**
    - Max 5% per bet (configurable)
@@ -576,7 +583,7 @@ Consider adding these features:
 
 ---
 
-## ðŸ’° Dynamic Odds Injector
+## 💰 Dynamic Odds Injector
 
 The Dynamic Odds Injector calculates optimal bet sizes using the Kelly Criterion with phase-based adjustments and bankroll constraints.
 
@@ -662,34 +669,82 @@ Customize phase multipliers by editing `config/phase_config.json`:
 
 ---
 
-## ðŸ“š Additional Resources
+## 🔔 Alert Setup
 
-- **GitHub Repository**: [Your repo URL]
-- **Google Sheets Template**: [Template URL]
-- **Discord Server**: [Invite link]
-- **Documentation**: [Wiki or docs URL]
+PhaseGrid sends notifications through Discord and Slack when:
+- Daily slip generation completes
+- Nightly grading runs (success or failure)  
+- Errors occur in workflows
+- Sheet connectivity issues detected
 
-## ðŸ¤ Contributing
+### Quick Discord Setup (2 minutes)
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. **Create Discord Webhook**
+   - Go to your Discord server
+   - Server Settings → Integrations → Webhooks
+   - Click "New Webhook"
+   - Name it "PhaseGrid Bot"
+   - Choose your alerts channel
+   - Copy webhook URL
 
-## ðŸ“„ License
+2. **Add to .env file**
+   ```
+   DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/1234567890/abcdefghijk...
+   ```
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+3. **Test It**
+   ```bash
+   python -c "from alerts.notifier import send_discord_alert; send_discord_alert('PhaseGrid Discord test!')"
+   ```
 
-## ðŸ™ Acknowledgments
+### Quick Slack Setup (3 minutes)
 
-- WNBA for providing amazing basketball
-- The PhaseGrid team for continuous improvements
-- All contributors and testers
+1. **Create Slack App & Webhook**
+   - Go to: https://api.slack.com/apps
+   - Create app → From scratch → Name: "PhaseGrid Bot"
+   - Features → Incoming Webhooks → ON
+   - Add to workspace → Pick channel
+   - Copy webhook URL
+
+2. **Add to .env file**
+   ```
+   SLACK_WEBHOOK_URL=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXX
+   ```
+
+3. **Test It**
+   ```bash
+   python -c "from alerts.notifier import send_slack_alert; send_slack_alert('PhaseGrid Slack test!')"
+   ```
+
+### Verify Everything Works
+
+Run this command to test all alerts at once:
+
+```bash
+# Make sure you've set up .env with your webhooks first
+python -c "
+from alerts.notifier import send_discord_alert, send_slack_alert
+print('Testing Discord...', send_discord_alert('PhaseGrid test - Discord'))  
+print('Testing Slack...', send_slack_alert('PhaseGrid test - Slack'))
+"
+```
+
+You should see:
+- `Testing Discord... True` (and a message in Discord!)
+- `Testing Slack... True` (and a message in Slack!)
+
+### What Triggers Alerts
+
+- **Success**: "✅ Graded 15 slips successfully"
+- **Failure**: "🚨 Nightly grading FAILED: [error details]"
+- **Sheet Issues**: "❌ Sheet health check failed"
+- **Workflow Links**: Direct links to GitHub Actions logs
+
+### Note on SMS
+
+SMS notifications via Twilio require 10DLC registration (1-3 days) and are not available on trial accounts. Discord and Slack provide instant, free notifications that work just as well!
 
 ---
-
-**Remember**: Start small, test thoroughly, and scale gradually. Happy betting! ðŸ€ðŸ“Š
 
 ## Paper Trading Trial Mode
 
@@ -782,7 +837,7 @@ The system now includes:
 - Test coverage enforcement at 34%
 - Enhanced error logging in nightly grader
 - Performance statistics tracking
-
+- HTML fallback for PrizePicks when API fails
 
 ### Running Tests
 
@@ -810,7 +865,61 @@ pytest --cov=. --cov-report=html
 
 The CI pipeline automatically runs these tests on every push and pull request, ensuring code quality.
 
+## Alert Testing
 
+### Discord Alerts
+Test Discord functionality after configuring webhook:
+```bash
+python scripts/smoke_alert.py --discord
+```
+
+Expected output:
+```
+Testing Discord...
+Discord result: True
+```
+
+### Slack Alerts
+```bash
+python scripts/smoke_alert.py --slack
+```
+
+### All Alerts
+Test all configured alert channels:
+```bash
+python scripts/smoke_alert.py --discord --slack
+```
+
+---
+
+## 📚 Additional Resources
+
+- **GitHub Repository**: [Your repo URL]
+- **Google Sheets Template**: [Template URL]
+- **Discord Server**: [Invite link]
+- **Documentation**: [Wiki or docs URL]
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+- WNBA for providing amazing basketball
+- The PhaseGrid team for continuous improvements
+- All contributors and testers
+
+---
+
+**Remember**: Start small, test thoroughly, and scale gradually. Happy betting! 🏀📊
 
 ## Alert Testing
 
@@ -830,3 +939,4 @@ python scripts/smoke_alert.py --slack
 ### All Alerts
 Test all configured alert channels:
 python scripts/smoke_alert.py --sms --discord --slack
+>>>>>>> origin/main
