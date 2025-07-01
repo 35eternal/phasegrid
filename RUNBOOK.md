@@ -509,3 +509,93 @@ For CI/CD testing without charges:
 - Use test Account SID: ACtest_sid_12345
 - Use magic number: +15005550006 as sender
 - Test recipients: +15005551234 (always succeeds)
+
+## Alert Configuration (Discord/Slack)
+
+PhaseGrid uses Discord and Slack for notifications (SMS via Twilio requires 10DLC registration).
+
+### Setting Up Alerts
+
+1. **Discord Webhook**
+   - Server Settings → Integrations → Webhooks → New Webhook
+   - Add URL to `.env`: `DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/...`
+
+2. **Slack Webhook**  
+   - Create app at api.slack.com → Incoming Webhooks → Add to Workspace
+   - Add URL to `.env`: `SLACK_WEBHOOK_URL=https://hooks.slack.com/services/...`
+
+3. **Test Alerts**
+   ```bash
+   python -c "from alerts.notifier import send_discord_alert; send_discord_alert('Test')"
+   python -c "from alerts.notifier import send_slack_alert; send_slack_alert('Test')"
+   ```
+
+### Sheet Health Check
+
+The `sheet-ping` job ensures Google Sheets connectivity after slip generation:
+
+#### How It Works
+
+1. Runs after successful slip generation in `dryrun.yml`
+2. Attempts to connect and read from configured sheet
+3. Exit codes:
+   - `0`: Success - Sheet accessible
+   - `1`: General connection failure
+   - `2`: Authentication failure (check GOOGLE_SA_JSON)
+   - `3`: Sheet not accessible (check SHEET_ID and permissions)
+
+#### Troubleshooting Sheet Ping Failures
+
+1. **Authentication Failed (Exit Code 2)**
+   - Verify `GOOGLE_SA_JSON` secret is properly formatted
+   - Check service account has not been deleted
+   - Ensure JSON is not corrupted during copy/paste
+
+2. **Sheet Not Accessible (Exit Code 3)**
+   - Verify `SHEET_ID` matches your Google Sheet
+   - Check service account email has Editor access
+   - Sheet ID format: Extract from URL `https://docs.google.com/spreadsheets/d/[SHEET_ID]/edit`
+
+3. **Manual Test**
+   ```bash
+   # Set environment variables
+   export SHEET_ID="your-sheet-id"
+   export GOOGLE_SA_JSON='{"type": "service_account", ...}'
+   
+   # Run ping test
+   python scripts/sheet_ping.py
+   ```
+
+### PrizePicks HTML Fallback
+
+The system now includes automatic HTML fallback for PrizePicks data:
+
+#### When Fallback Activates
+
+1. API returns empty data (`{"data": []}`)
+2. API request fails (timeout, 500 error, etc.)
+3. API rate limit exceeded
+
+#### How It Works
+
+1. Fetches PrizePicks web page for the sport
+2. Extracts projection data from embedded JavaScript
+3. Falls back to parsing visible HTML cards if needed
+4. Returns data in same format as API
+
+#### Testing Fallback
+
+```bash
+# Test HTML fallback directly
+python odds_provider/prizepicks.py --test-html --league NBA
+
+# Force fallback by using wrong API key
+PRIZEPICKS_API_KEY="invalid" python odds_provider/prizepicks.py
+```
+
+#### Monitoring Fallback Usage
+
+Check logs for:
+- `"Using HTML fallback for NBA projections"` - Fallback activated
+- `"Successfully extracted X projections from HTML"` - Fallback succeeded
+- `"Both API and HTML methods failed"` - Complete failure
