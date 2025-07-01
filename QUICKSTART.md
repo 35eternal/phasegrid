@@ -922,7 +922,4 @@ python scripts/smoke_alert.py --slack
 ### All Alerts
 Test all configured alert channels:
 python scripts/smoke_alert.py --sms --discord --slack
-<<<<<<< HEAD
 =======
->>>>>>> origin/main
->>>>>>> feat/alert-finalization

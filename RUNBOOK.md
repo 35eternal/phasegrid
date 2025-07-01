@@ -577,4 +577,3 @@ Check logs for:
 ### Alert Thresholds
 - Minimum slips required: =5
 - Alert channels: Discord, Slack, SMS
->>>>>>> feat/alert-finalization
