@@ -1,8 +1,8 @@
-﻿# PhaseGrid Pipeline
+# PhaseGrid Pipeline
 
 Production-ready pipeline for automated sports data processing, featuring daily dry-runs, nightly grading, and PrizePicks integration.
 
-## 🚀 Features
+## ?? Features
 
 - **Daily Dry-Run Analysis**: Automated paper trading simulation (`auto_paper.py`)
 - **Nightly Result Grading**: Comprehensive grading system (`result_grader.py`)
@@ -10,14 +10,14 @@ Production-ready pipeline for automated sports data processing, featuring daily 
 - **Backfill Capability**: Historical data processing (`backfill.py`)
 - **Production Hardened**: Enterprise-ready with proper authentication, error handling, and monitoring
 
-## 📋 Prerequisites
+## ?? Prerequisites
 
 - Python 3.8+
 - Google Cloud Service Account (for Sheets API access)
 - Results API credentials
 - Docker (optional, for containerized deployment)
 
-## 🔧 Installation
+## ?? Installation
 
 ### 1. Clone the repository:
 
@@ -33,7 +33,7 @@ Production-ready pipeline for automated sports data processing, featuring daily 
     cp config/production/production.env.example config/production/production.env
     # Edit config/production/production.env with your values
 
-## 🔐 Authentication Setup
+## ?? Authentication Setup
 
 ### Google Sheets Authentication
 
@@ -67,7 +67,7 @@ Configure the Results API endpoint and key:
     export RESULTS_API_URL=https://api.phasegrid.com/v1/
     export RESULTS_API_KEY=your-api-key-here
 
-## 🏃 Running the Pipeline
+## ?? Running the Pipeline
 
 ### Daily Dry-Run
 
@@ -85,7 +85,7 @@ Configure the Results API endpoint and key:
 
     pytest -v --cov=. --cov-report=term-missing
 
-## 🧪 Testing
+## ?? Testing
 
 The test suite includes comprehensive unit tests with mocked external dependencies:
 
@@ -98,11 +98,11 @@ The test suite includes comprehensive unit tests with mocked external dependenci
 
     pytest --cov=. --cov-report=html --cov-report=term-missing
 
-### Coverage threshold enforcement (≥80%)
+### Coverage threshold enforcement (=80%)
 
     pytest --cov=. --cov-fail-under=80
 
-## 📊 Production Deployment
+## ?? Production Deployment
 
 ### Docker Deployment
 
@@ -124,31 +124,31 @@ Run with production config:
 
 | Variable | Description | Required |
 |----------|-------------|----------|
-| GOOGLE_APPLICATION_CREDENTIALS | Path to Google service account JSON | ✅ |
-| RESULTS_API_URL | Results API endpoint URL | ✅ |
-| RESULTS_API_KEY | Results API authentication key | ✅ |
-| LOG_LEVEL | Logging level (DEBUG, INFO, WARNING, ERROR) | ❌ |
-| SENTRY_DSN | Sentry error tracking DSN | ❌ |
-| ENVIRONMENT | Deployment environment (production, staging) | ❌ |
+| GOOGLE_APPLICATION_CREDENTIALS | Path to Google service account JSON | ? |
+| RESULTS_API_URL | Results API endpoint URL | ? |
+| RESULTS_API_KEY | Results API authentication key | ? |
+| LOG_LEVEL | Logging level (DEBUG, INFO, WARNING, ERROR) | ? |
+| SENTRY_DSN | Sentry error tracking DSN | ? |
+| ENVIRONMENT | Deployment environment (production, staging) | ? |
 
-## 🔍 Monitoring
+## ?? Monitoring
 
 - **Health Check Endpoint**: http://localhost:8080/health
 - **Metrics Endpoint**: http://localhost:9090/metrics
 - **Logs**: JSON-formatted logs written to /var/log/phasegrid/app.log
 
-## 🛡️ Production Hardening Features
+## ??? Production Hardening Features
 
-- ✅ **Secure Authentication**: File-based Google credentials, API key authentication
-- ✅ **Error Handling**: Comprehensive exception handling with retries
-- ✅ **Connection Pooling**: Optimized HTTP connections with retry logic
-- ✅ **Input Validation**: Strict validation of all API inputs
-- ✅ **Test Coverage**: >80% test coverage with mocked dependencies
-- ✅ **Logging**: Structured JSON logging for production monitoring
-- ✅ **Rate Limiting**: Built-in rate limiting for external API calls
-- ✅ **Batch Processing**: Efficient batch operations for large datasets
+- ? **Secure Authentication**: File-based Google credentials, API key authentication
+- ? **Error Handling**: Comprehensive exception handling with retries
+- ? **Connection Pooling**: Optimized HTTP connections with retry logic
+- ? **Input Validation**: Strict validation of all API inputs
+- ? **Test Coverage**: >80% test coverage with mocked dependencies
+- ? **Logging**: Structured JSON logging for production monitoring
+- ? **Rate Limiting**: Built-in rate limiting for external API calls
+- ? **Batch Processing**: Efficient batch operations for large datasets
 
-## 📝 API Integration
+## ?? API Integration
 
 ### Results API Client
 
@@ -177,7 +177,7 @@ The production-ready Results API client includes:
     all_results = [...]  # Large list
     responses = client.batch_submit(all_results, batch_size=100)
 
-## 🤝 Contributing
+## ?? Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feat/amazing-feature`)
@@ -185,11 +185,11 @@ The production-ready Results API client includes:
 4. Push to the branch (`git push origin feat/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## ?? License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🆘 Support
+## ?? Support
 
 For issues and questions:
 - Create an issue in the GitHub repository
@@ -197,6 +197,6 @@ For issues and questions:
 
 ---
 
-**Production Status**: ✅ All systems operational
+**Production Status**: ? All systems operational
 
 Last updated: 2025-06-24

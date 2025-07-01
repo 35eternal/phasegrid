@@ -452,3 +452,128 @@ Monitor coverage trends through:
 
 GitHub Actions artifacts (coverage.xml)
 Local coverage reports: pytest --cov=. --cov-report=html
+
+## SMS Configuration
+
+### Prerequisites
+1. Active Twilio account with SMS-capable phone number
+2. GitHub repository admin access to set secrets
+
+### Setup Steps
+
+1. **Obtain Twilio Credentials**
+   - Log into Twilio Console (https://console.twilio.com)
+   - Copy Account SID from dashboard
+   - Generate new Auth Token if needed
+   - Note your Twilio phone number (format: +1234567890)
+
+2. **Configure GitHub Secrets**
+   Navigate to Settings > Secrets and variables > Actions, then add:
+   - TWILIO_SID: Your Account SID
+   - TWILIO_AUTH: Your Auth Token
+   - TWILIO_FROM: Your Twilio phone number
+   - PHONE_TO: Alert recipient phone number
+   - SLACK_WEBHOOK_URL: Your Slack webhook URL
+
+3. **Test Configuration**
+   Set environment variables locally:
+   export TWILIO_SID="your_account_sid"
+   export TWILIO_AUTH="your_auth_token"
+   export TWILIO_FROM="+1234567890"
+   export PHONE_TO="+0987654321"
+   
+   Run smoke test:
+   python scripts/smoke_alert.py --sms
+
+4. **Verify in CI**
+   - Trigger manual workflow run with workflow_dispatch
+   - Check Actions logs for "SMS alert sent: True"
+   - Confirm SMS receipt within 15 seconds
+
+### Troubleshooting
+
+| Issue | Solution |
+|-------|----------|
+| "SMS disabled - missing credentials" | Verify all 4 secrets are set in GitHub |
+| "Twilio error: Invalid phone number" | Ensure E.164 format (+1234567890) |
+| "Authentication error" | Regenerate auth token in Twilio console |
+| SMS not received | Check Twilio logs, verify phone can receive SMS |
+
+### Cost Management
+- SMS alerts trigger on both success and failure
+- Monitor usage at console.twilio.com/usage
+- Consider using test credentials for development
+
+### Testing with Twilio Test Credentials
+For CI/CD testing without charges:
+- Use test Account SID: ACtest_sid_12345
+- Use magic number: +15005550006 as sender
+- Test recipients: +15005551234 (always succeeds)
+
+## Alert Troubleshooting
+
+### Alert Configuration
+=======
+## Alert Configuration (Discord/Slack)
+PhaseGrid uses Discord and Slack for notifications (SMS via Twilio requires 10DLC registration).
+### Setting Up Alerts
+1. **Discord Webhook**
+   - Server Settings → Integrations → Webhooks → New Webhook
+   - Add URL to `.env`: `DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/...`
+2. **Slack Webhook**  
+   - Create app at api.slack.com → Incoming Webhooks → Add to Workspace
+   - Add URL to `.env`: `SLACK_WEBHOOK_URL=https://hooks.slack.com/services/...`
+3. **Test Alerts**
+   ```bash
+   python -c "from alerts.notifier import send_discord_alert; send_discord_alert('Test')"
+   python -c "from alerts.notifier import send_slack_alert; send_slack_alert('Test')"
+   ```
+### Sheet Health Check
+The `sheet-ping` job ensures Google Sheets connectivity after slip generation:
+#### How It Works
+1. Runs after successful slip generation in `dryrun.yml`
+2. Attempts to connect and read from configured sheet
+3. Exit codes:
+   - `0`: Success - Sheet accessible
+   - `1`: General connection failure
+   - `2`: Authentication failure (check GOOGLE_SA_JSON)
+   - `3`: Sheet not accessible (check SHEET_ID and permissions)
+#### Troubleshooting Sheet Ping Failures
+1. **Authentication Failed (Exit Code 2)**
+   - Verify `GOOGLE_SA_JSON` secret is properly formatted
+   - Check service account has not been deleted
+   - Ensure JSON is not corrupted during copy/paste
+2. **Sheet Not Accessible (Exit Code 3)**
+   - Verify `SHEET_ID` matches your Google Sheet
+   - Check service account email has Editor access
+   - Sheet ID format: Extract from URL `https://docs.google.com/spreadsheets/d/[SHEET_ID]/edit`
+3. **Manual Test**
+   # Set environment variables
+   export SHEET_ID="your-sheet-id"
+   export GOOGLE_SA_JSON='{"type": "service_account", ...}'
+   # Run ping test
+   python scripts/sheet_ping.py
+### PrizePicks HTML Fallback
+The system now includes automatic HTML fallback for PrizePicks data:
+#### When Fallback Activates
+1. API returns empty data (`{"data": []}`)
+2. API request fails (timeout, 500 error, etc.)
+3. API rate limit exceeded
+1. Fetches PrizePicks web page for the sport
+2. Extracts projection data from embedded JavaScript
+3. Falls back to parsing visible HTML cards if needed
+4. Returns data in same format as API
+#### Testing Fallback
+# Test HTML fallback directly
+python odds_provider/prizepicks.py --test-html --league NBA
+# Force fallback by using wrong API key
+PRIZEPICKS_API_KEY="invalid" python odds_provider/prizepicks.py
+#### Monitoring Fallback Usage
+Check logs for:
+- `"Using HTML fallback for NBA projections"` - Fallback activated
+- `"Successfully extracted X projections from HTML"` - Fallback succeeded
+- `"Both API and HTML methods failed"` - Complete failure
+
+### Alert Thresholds
+- Minimum slips required: =5
+- Alert channels: Discord, Slack, SMS
