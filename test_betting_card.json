@@ -1,0 +1,38 @@
+[
+  {
+    "slip_id": "TEST-1-20250701",
+    "date": "2025-07-01",
+    "player": "A'ja Wilson",
+    "prop_type": "Points",
+    "line": 24.5,
+    "pick": "over",
+    "odds": -110,
+    "confidence": 0.72,
+    "amount": 50.0,
+    "reasoning": "Test slip for system verification"
+  },
+  {
+    "slip_id": "TEST-2-20250701",
+    "date": "2025-07-01",
+    "player": "Breanna Stewart",
+    "prop_type": "Rebounds",
+    "line": 8.5,
+    "pick": "under",
+    "odds": -115,
+    "confidence": 0.68,
+    "amount": 50.0,
+    "reasoning": "Test slip for system verification"
+  },
+  {
+    "slip_id": "TEST-3-20250701",
+    "date": "2025-07-01",
+    "player": "Napheesa Collier",
+    "prop_type": "Assists",
+    "line": 4.5,
+    "pick": "under",
+    "odds": -105,
+    "confidence": 0.65,
+    "amount": 50.0,
+    "reasoning": "Test slip for system verification"
+  }
+]

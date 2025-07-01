@@ -1,0 +1,91 @@
+{
+  "date": "2025-07-01",
+  "slips": [
+    {
+      "slip_id": "TEST_20250701_001",
+      "player": "Test Player 1",
+      "team": "Test Team",
+      "opponent": "Opponent Team",
+      "stat_type": "Points",
+      "line": 15.5,
+      "over_under": "over",
+      "confidence": 0.65,
+      "projected": 18.5,
+      "timestamp": "2025-07-01T16:05:21.379536"
+    },
+    {
+      "slip_id": "TEST_20250701_002",
+      "player": "Test Player 2",
+      "team": "Test Team",
+      "opponent": "Opponent Team",
+      "stat_type": "Rebounds",
+      "line": 16.5,
+      "over_under": "under",
+      "confidence": 0.7000000000000001,
+      "projected": 19.5,
+      "timestamp": "2025-07-01T16:05:21.379544"
+    },
+    {
+      "slip_id": "TEST_20250701_003",
+      "player": "Test Player 3",
+      "team": "Test Team",
+      "opponent": "Opponent Team",
+      "stat_type": "Assists",
+      "line": 17.5,
+      "over_under": "over",
+      "confidence": 0.75,
+      "projected": 20.5,
+      "timestamp": "2025-07-01T16:05:21.379548"
+    },
+    {
+      "slip_id": "TEST_20250701_004",
+      "player": "Test Player 4",
+      "team": "Test Team",
+      "opponent": "Opponent Team",
+      "stat_type": "Points",
+      "line": 18.5,
+      "over_under": "under",
+      "confidence": 0.8,
+      "projected": 21.5,
+      "timestamp": "2025-07-01T16:05:21.379551"
+    },
+    {
+      "slip_id": "TEST_20250701_005",
+      "player": "Test Player 5",
+      "team": "Test Team",
+      "opponent": "Opponent Team",
+      "stat_type": "Rebounds",
+      "line": 19.5,
+      "over_under": "over",
+      "confidence": 0.8500000000000001,
+      "projected": 22.5,
+      "timestamp": "2025-07-01T16:05:21.379554"
+    },
+    {
+      "slip_id": "TEST_20250701_006",
+      "player": "Test Player 6",
+      "team": "Test Team",
+      "opponent": "Opponent Team",
+      "stat_type": "Assists",
+      "line": 20.5,
+      "over_under": "under",
+      "confidence": 0.9,
+      "projected": 23.5,
+      "timestamp": "2025-07-01T16:05:21.379558"
+    },
+    {
+      "slip_id": "TEST_20250701_007",
+      "player": "Test Player 7",
+      "team": "Test Team",
+      "opponent": "Opponent Team",
+      "stat_type": "Points",
+      "line": 21.5,
+      "over_under": "over",
+      "confidence": 0.9500000000000001,
+      "projected": 24.5,
+      "timestamp": "2025-07-01T16:05:21.379561"
+    }
+  ],
+  "total": 7,
+  "source": "test_generator"
+}

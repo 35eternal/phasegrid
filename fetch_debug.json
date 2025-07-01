@@ -1,0 +1,10 @@
+{
+  "data": [],
+  "links": {
+    "self": "api.prizepicks.com/projections?league_id=7&per_page=250&single_stat=True&include=stat_type%2Cnew_player%2Cleague%2Cgame"
+  },
+  "meta": {
+    "current_page": 1,
+    "total_pages": 1
+  }
+}
