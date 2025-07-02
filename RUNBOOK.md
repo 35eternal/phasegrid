@@ -1,4 +1,4 @@
-# PhaseGrid Operations Runbook
+﻿# PhaseGrid Operations Runbook
 
 ## Table of Contents
 1. [Overview](#overview)
@@ -40,7 +40,6 @@ python auto_paper.py [OPTIONS]
 - `--production`: Run in production mode (disables dry-run)
 - `--timezone TZ`: Timezone override (e.g., America/New_York, default: UTC)
 - `--min-slips N`: Minimum slips required per day (default: 5)
-- `--bypass-guard-rail`: Bypass guard rail checks
 - `--no-resume`: Do not resume from saved state
 
 #### Examples
@@ -69,7 +68,6 @@ python auto_paper.py --start-date 2025-06-26 --end-date 2025-07-05 --timezone Am
 
 **Bypass guard rails for testing:**
 ```bash
-python auto_paper.py --bypass-guard-rail --min-slips 10
 ```
 
 ### State Persistence
@@ -108,8 +106,6 @@ The system includes a guard rail that checks if enough slips were generated each
 # Set custom minimum
 python auto_paper.py --min-slips 10
 
-# Bypass for testing
-python auto_paper.py --bypass-guard-rail
 ```
 
 ### Alert Channels
@@ -132,14 +128,10 @@ The slip generation pipeline now includes a guard-rail mechanism to ensure a min
 
 ### Bypass Flag
 ```bash
-# Override guard-rail for testing or special scenarios
-python scripts/auto_paper.py --bypass-guard-rail
-
 # Combined with other flags
-python scripts/auto_paper.py --fetch_lines --days 0 --bypass-guard-rail
 ```
 
-**⚠️ Use with caution**: Bypassing the guard-rail may result in insufficient data for meaningful analysis.
+**âš ï¸ Use with caution**: Bypassing the guard-rail may result in insufficient data for meaningful analysis.
 
 ## Confidence Threshold Tuning
 
@@ -172,8 +164,7 @@ INFO: Accepted slip - Confidence: 0.72, all criteria met
 
 ### Temporary Workaround
 If verify_sheets tests fail due to guard-rail:
-1. Use `--bypass-guard-rail` flag in test fixtures
-2. Or ensure test data generates ≥5 slips
+2. Or ensure test data generates â‰¥5 slips
 3. Document any test modifications in PR
 
 ### Quick Reference
@@ -193,7 +184,7 @@ grep "Generated slips:" logs/auto_paper.log
 #### Troubleshooting Guard-Rail Issues
 - **InsufficientSlipsError**: Check data quality, adjust thresholds, or use bypass flag
 - **Low slip counts**: Review rejection logs, consider threshold tuning
-- **CI failures**: Verify coverage ≥14%, check guard-rail test compatibility
+- **CI failures**: Verify coverage â‰¥14%, check guard-rail test compatibility
 
 ## Monitoring
 
@@ -326,7 +317,7 @@ The `dryrun.yml` workflow supports:
 - **Automatic runs**: On push/PR to specified branches
 
 Manual trigger via GitHub UI:
-1. Go to Actions → Dry Run workflow
+1. Go to Actions â†’ Dry Run workflow
 2. Click "Run workflow"
 3. Enter start/end dates (optional)
 4. Check "bypass_guard_rail" if needed
@@ -367,7 +358,6 @@ Required in GitHub Secrets:
 3. Check model outputs
 4. Manually run for the affected date:
    ```bash
-   python auto_paper.py --start-date YYYY-MM-DD --bypass-guard-rail
    ```
 
 ### If Database Corrupted
@@ -518,10 +508,10 @@ For CI/CD testing without charges:
 PhaseGrid uses Discord and Slack for notifications (SMS via Twilio requires 10DLC registration).
 ### Setting Up Alerts
 1. **Discord Webhook**
-   - Server Settings → Integrations → Webhooks → New Webhook
+   - Server Settings â†’ Integrations â†’ Webhooks â†’ New Webhook
    - Add URL to `.env`: `DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/...`
 2. **Slack Webhook**  
-   - Create app at api.slack.com → Incoming Webhooks → Add to Workspace
+   - Create app at api.slack.com â†’ Incoming Webhooks â†’ Add to Workspace
    - Add URL to `.env`: `SLACK_WEBHOOK_URL=https://hooks.slack.com/services/...`
 3. **Test Alerts**
    ```bash
@@ -577,3 +567,4 @@ Check logs for:
 ### Alert Thresholds
 - Minimum slips required: =5
 - Alert channels: Discord, Slack, SMS
+
