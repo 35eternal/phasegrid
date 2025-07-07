@@ -112,8 +112,9 @@ class TestStatsGenerator:
         
         result = stats_generator.load_data()
         
-        # Should return None when file doesn't exist
-        assert result is None
+        # Should return empty DataFrame when file doesn't exist
+        assert isinstance(result, pd.DataFrame)
+        assert result.empty
     
     @patch('pathlib.Path.exists')
     @patch('scripts.stats.pd.read_csv')
