@@ -1,4 +1,4 @@
-﻿"""Alert notification system with centralized secret management."""
+"""Alert notification system with centralized secret management."""
 import os
 import sys
 import logging
@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 def get_secret(name: str, default: str = "mock-value") -> str:
     """
     Centralized secret retrieval with fallback to mock values.
-    
+
     This allows tests and CI to run without real credentials while
     still maintaining the ability to use real credentials in production.
 
@@ -24,6 +24,10 @@ def get_secret(name: str, default: str = "mock-value") -> str:
         The secret value or the default
     """
     value = os.getenv(name, default)
+    
+    # Return default if value is empty or None
+    if not value:
+        value = default
 
     # Log when using mock values (but don't log real values!)
     if value == default:
@@ -46,15 +50,15 @@ class AlertNotifier:
             if not os.getenv('TESTING', '').lower() == 'true':
                 # Only exit in production, not during tests
                 sys.exit(1)
-        
+
         # Discord configuration
         self.discord_webhook = get_secret("DISCORD_WEBHOOK_URL", "https://discord.mock/webhook")
-        if 'mock' in self.discord_webhook:
+        if not self.discord_webhook or 'mock' in self.discord_webhook:
             logger.warning("Using mock Discord webhook - secrets may not be loaded")
-        
+
         # Slack configuration
         self.slack_webhook = get_secret("SLACK_WEBHOOK_URL", "https://slack.mock/webhook")
-        if 'mock' in self.slack_webhook:
+        if not self.slack_webhook or 'mock' in self.slack_webhook:
             logger.warning("Using mock Slack webhook - secrets may not be loaded")
 
         # Twilio SMS configuration
@@ -65,7 +69,11 @@ class AlertNotifier:
 
         # Initialize Twilio client (will be None if using mocks)
         self.twilio_client = None
-        if not any(x in [self.twilio_account_sid, self.twilio_auth_token] for x in ["mock", None]):
+        # Check if either credential contains "mock" or is empty
+        if ("mock" not in self.twilio_account_sid and 
+            "mock" not in self.twilio_auth_token and
+            self.twilio_account_sid and 
+            self.twilio_auth_token):
             try:
                 self.twilio_client = Client(self.twilio_account_sid, self.twilio_auth_token)
                 logger.info("Twilio client initialized successfully")
@@ -74,7 +82,7 @@ class AlertNotifier:
 
     def send_discord_alert(self, message: str, username: str = "WNBA Bot") -> bool:
         """Send alert to Discord channel."""
-        if "mock" in self.discord_webhook:
+        if not self.discord_webhook or "mock" in self.discord_webhook:
             logger.info(f"[MOCK] Would send Discord alert: {message}")
             return True
 
@@ -98,7 +106,7 @@ class AlertNotifier:
         username: str = "WNBA Bot"
     ) -> bool:
         """Send alert to Slack channel."""
-        if "mock" in self.slack_webhook:
+        if not self.slack_webhook or "mock" in self.slack_webhook:
             logger.info(f"[MOCK] Would send Slack alert: {message}")
             return True
 
@@ -143,20 +151,54 @@ class AlertNotifier:
             "discord": self.send_discord_alert(message),
             "slack": self.send_slack_alert(message)
         }
-        
+
         if include_sms:
             results["sms"] = self.send_sms_alert(message)
-            
+
         logger.info(f"Alert results: {results}")
         return results
 
     def send_error_alert(self, error_message: str) -> Dict[str, bool]:
         """Send high-priority error alert."""
-        formatted_message = f"🚨 ERROR: {error_message}"
+        formatted_message = f"?? ERROR: {error_message}"
         return self.send_all_alerts(formatted_message, include_sms=True)
 
     def send_success_alert(self, success_message: str) -> Dict[str, bool]:
         """Send success notification."""
-        formatted_message = f"✅ SUCCESS: {success_message}"
+        formatted_message = f"? SUCCESS: {success_message}"
         # Don't include SMS for success messages to avoid spam
         return self.send_all_alerts(formatted_message, include_sms=False)
+
+
+# Standalone functions for backward compatibility and workflow usage
+_notifier_instance = None
+
+def _get_notifier():
+    """Get or create a singleton AlertNotifier instance."""
+    global _notifier_instance
+    if _notifier_instance is None:
+        _notifier_instance = AlertNotifier()
+    return _notifier_instance
+
+def _reset_notifier():
+    """Reset the singleton instance (for testing)."""
+    global _notifier_instance
+    _notifier_instance = None
+
+def send_sms(message: str, to_number: Optional[str] = None) -> bool:
+    """Standalone SMS function for workflows."""
+    notifier = _get_notifier()
+    return notifier.send_sms_alert(message, to_number)
+
+def send_discord_alert(message: str, username: str = "WNBA Bot") -> bool:
+    """Standalone Discord function for workflows."""
+    notifier = _get_notifier()
+    return notifier.send_discord_alert(message, username)
+
+def send_slack_alert(message: str, channel: Optional[str] = None, username: str = "WNBA Bot") -> bool:
+    """Standalone Slack function for workflows."""
+    notifier = _get_notifier()
+    return notifier.send_slack_alert(message, channel, username)
+
+# For convenience, also export the class methods
+__all__ = ['AlertNotifier', 'send_sms', 'send_discord_alert', 'send_slack_alert']
