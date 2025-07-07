@@ -1,7 +1,7 @@
-"""Unit tests for alert notification system - PG-102"""
+"""Unit tests for alert notification system - PG-102 (CI-compatible version)"""
 import pytest
 import os
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch, MagicMock, ANY
 import sys
 
 # Add project root to path for imports
@@ -19,7 +19,12 @@ from alerts.notifier import (
 class TestAlertNotifier:
     """Test the AlertNotifier class methods."""
     
-    @patch.dict(os.environ, {'GOOGLE_SA_JSON': 'test-json', 'TESTING': 'true'})
+    @patch.dict(os.environ, {
+        'GOOGLE_SA_JSON': 'test-json', 
+        'TESTING': 'true',
+        'DISCORD_WEBHOOK_URL': '',  # Force empty to use mock
+        'SLACK_WEBHOOK_URL': ''     # Force empty to use mock
+    }, clear=True)
     def test_init_with_mocks(self):
         """Test initialization with mock values."""
         notifier = AlertNotifier()
@@ -67,21 +72,33 @@ class TestAlertNotifier:
         assert call_args[1]['json']['text'] == "Test message"
         assert call_args[1]['json']['channel'] == "#test"
     
-    @patch.dict(os.environ, {'GOOGLE_SA_JSON': 'test-json', 'TESTING': 'true'})
+    @patch.dict(os.environ, {
+        'GOOGLE_SA_JSON': 'test-json', 
+        'TESTING': 'true',
+        'TWILIO_SID': '',
+        'TWILIO_AUTH': ''
+    }, clear=True)
     def test_sms_mock_mode(self):
         """Test SMS in mock mode."""
         notifier = AlertNotifier()
         result = notifier.send_sms_alert("Test SMS")
         assert result is True  # Should return True in mock mode
     
-    @patch.dict(os.environ, {'GOOGLE_SA_JSON': 'test-json', 'TESTING': 'true'})
+    @patch.dict(os.environ, {
+        'GOOGLE_SA_JSON': 'test-json', 
+        'TESTING': 'true',
+        'DISCORD_WEBHOOK_URL': '',
+        'SLACK_WEBHOOK_URL': '',
+        'TWILIO_SID': '',
+        'TWILIO_AUTH': ''
+    }, clear=True)
     def test_send_all_alerts(self):
         """Test sending alerts through all channels."""
         notifier = AlertNotifier()
         results = notifier.send_all_alerts("Test all channels", include_sms=True)
         
         assert 'discord' in results
-        assert 'slack' in results
+        assert 'slack' in results  
         assert 'sms' in results
         assert all(results.values())  # All should be True in mock mode
 
@@ -89,7 +106,12 @@ class TestAlertNotifier:
 class TestStandaloneFunctions:
     """Test the standalone alert functions for workflow compatibility."""
     
-    @patch.dict(os.environ, {'GOOGLE_SA_JSON': 'test-json', 'TESTING': 'true'})
+    @patch.dict(os.environ, {
+        'GOOGLE_SA_JSON': 'test-json', 
+        'TESTING': 'true',
+        'TWILIO_SID': '',
+        'TWILIO_AUTH': ''
+    }, clear=True)
     def test_send_sms_standalone(self):
         """Test standalone send_sms function."""
         result = send_sms("Test standalone SMS")
@@ -129,7 +151,7 @@ class TestStandaloneFunctions:
         # Import the private function
         from alerts.notifier import _get_notifier
         
-        # Get notifier twice
+        # Get notifier twice  
         notifier1 = _get_notifier()
         notifier2 = _get_notifier()
         
