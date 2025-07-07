@@ -160,3 +160,30 @@ class AlertNotifier:
         formatted_message = f"✅ SUCCESS: {success_message}"
         # Don't include SMS for success messages to avoid spam
         return self.send_all_alerts(formatted_message, include_sms=False)
+# Standalone functions for backward compatibility and workflow usage
+_notifier_instance = None
+
+def _get_notifier():
+    """Get or create a singleton AlertNotifier instance."""
+    global _notifier_instance
+    if _notifier_instance is None:
+        _notifier_instance = AlertNotifier()
+    return _notifier_instance
+
+def send_sms(message: str, to_number: Optional[str] = None) -> bool:
+    """Standalone SMS function for workflows."""
+    notifier = _get_notifier()
+    return notifier.send_sms_alert(message, to_number)
+
+def send_discord_alert(message: str, username: str = "WNBA Bot") -> bool:
+    """Standalone Discord function for workflows."""
+    notifier = _get_notifier()
+    return notifier.send_discord_alert(message, username)
+
+def send_slack_alert(message: str, channel: Optional[str] = None, username: str = "WNBA Bot") -> bool:
+    """Standalone Slack function for workflows."""
+    notifier = _get_notifier()
+    return notifier.send_slack_alert(message, channel, username)
+
+# For convenience, also export the class methods
+__all__ = ['AlertNotifier', 'send_sms', 'send_discord_alert', 'send_slack_alert']
