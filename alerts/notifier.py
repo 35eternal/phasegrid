@@ -24,9 +24,13 @@ def get_secret(name: str, default: str = "mock-value") -> str:
         The secret value or the default
     """
     value = os.getenv(name, default)
+    
+    # Return default if value is empty or None
+    if not value:
+        value = default
 
     # Log when using mock values (but don't log real values!)
-    if value == default or not value:  # Treat empty strings as mock
+    if value == default:
         logger.debug(f"Using mock value for {name}")
     else:
         logger.debug(f"Using real value for {name}")
@@ -171,6 +175,11 @@ def _get_notifier():
     if _notifier_instance is None:
         _notifier_instance = AlertNotifier()
     return _notifier_instance
+
+def _reset_notifier():
+    """Reset the singleton instance (for testing)."""
+    global _notifier_instance
+    _notifier_instance = None
 
 def send_sms(message: str, to_number: Optional[str] = None) -> bool:
     """Standalone SMS function for workflows."""

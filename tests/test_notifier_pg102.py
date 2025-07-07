@@ -12,8 +12,17 @@ from alerts.notifier import (
     send_sms, 
     send_discord_alert, 
     send_slack_alert,
-    get_secret
+    get_secret,
+    _reset_notifier
 )
+
+
+@pytest.fixture(autouse=True)
+def reset_notifier_singleton():
+    """Reset the notifier singleton before each test."""
+    _reset_notifier()
+    yield
+    _reset_notifier()
 
 
 class TestAlertNotifier:
@@ -216,3 +225,4 @@ class TestErrorHandling:
         result = notifier.send_slack_alert("Test message")
         
         assert result is False  # Should return False on error
+
