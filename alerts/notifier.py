@@ -69,7 +69,11 @@ class AlertNotifier:
 
         # Initialize Twilio client (will be None if using mocks)
         self.twilio_client = None
-        if not any(x in [self.twilio_account_sid, self.twilio_auth_token] for x in ["mock", None, ""]):
+        # Check if either credential contains "mock" or is empty
+        if ("mock" not in self.twilio_account_sid and 
+            "mock" not in self.twilio_auth_token and
+            self.twilio_account_sid and 
+            self.twilio_auth_token):
             try:
                 self.twilio_client = Client(self.twilio_account_sid, self.twilio_auth_token)
                 logger.info("Twilio client initialized successfully")
