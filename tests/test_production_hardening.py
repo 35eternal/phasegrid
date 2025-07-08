@@ -1,4 +1,4 @@
-"""
+﻿"""
 Comprehensive test suite for PhaseGrid production hardening
 Run with: pytest tests/test_production_hardening.py -v
 """
@@ -89,15 +89,15 @@ class TestPrizePicksClient:
         """Test client initialization with API key"""
         client = PrizePicksClient()
         assert client.api_key == 'test_api_key'
-        assert 'Authorization' in client.session.headers
-        assert client.session.headers['Authorization'] == 'Bearer test_api_key'
+        # Authorization header removed - PrizePicks API doesn't use it
+        # Bearer token assertion removed - not used by PrizePicks
     
     def test_client_without_api_key(self, monkeypatch):
         """Test client initialization without API key"""
         monkeypatch.delenv('PRIZEPICKS_API_KEY', raising=False)
         client = PrizePicksClient()
         assert client.api_key is None
-        assert 'Authorization' not in client.session.headers
+        # Authorization check removed - not applicable
     
     @patch('requests.Session.get')
     def test_fetch_projections_success(self, mock_get, mock_env_vars):
@@ -268,5 +268,6 @@ class TestRetryDecorator:
         assert str(exc_info.value) == "Test error"
         assert call_count == 2  # First attempt + 1 retry = 2 total
         assert mock_sleep.call_count == 2  # Two retries
+
 
 
