@@ -11,9 +11,7 @@ import json
 import tempfile
 import os
 
-from phasegrid.cycle_tracker import (
-    CycleEntry, CycleTracker, DEFAULT_PHASE_CONFIG
-)
+from phasegrid.cycle_tracker import CycleEntry, CycleTracker
 
 
 class TestCycleEntry(unittest.TestCase):
@@ -271,7 +269,7 @@ class TestPhaseConfiguration(unittest.TestCase):
         
         for phase in phases:
             self.assertIn(phase, DEFAULT_PHASE_CONFIG["phase_modifiers"])
-            phase_config = DEFAULT_PHASE_CONFIG["phase_modifiers"][phase]
+            phase_config = CycleTracker.DEFAULT_PHASE_CONFIG["phase_modifiers"][phase]
             
             self.assertIn("base", phase_config)
             self.assertIn("props", phase_config)
