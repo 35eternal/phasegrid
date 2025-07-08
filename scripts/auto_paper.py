@@ -1,10 +1,13 @@
 ﻿#!/usr/bin/env python
 """Auto paper trading script for PhaseGrid."""
 import sys
+import os
+# Add project root to path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import csv
 import argparse
 from datetime import datetime
-
 # Import from project modules
 from odds_provider.prizepicks import fetch_current_board
 from slip_optimizer import SlipOptimizer
@@ -14,6 +17,9 @@ except ImportError:
     print("[Warning] sheets_integration module not found, skipping Google Sheets upload")
     push_slips_to_sheets = None
 from utils.csv_writer import write_csv
+from phasegrid.anomaly_filter import AnomalyFilter
+from utils.csv_writer import write_csv
+from phasegrid.anomaly_filter import AnomalyFilter
 
 def read_and_transform_board(csv_filename):
     """Read CSV file and transform to format expected by SlipOptimizer."""
@@ -86,6 +92,14 @@ def main():
     # Read and transform the CSV data
     board = read_and_transform_board(csv_filename)
     print(f"Loaded {len(board)} props from PrizePicks")
+
+    # Filter out PrizePicks Demons and Goblins
+    anomaly_filter = AnomalyFilter(tolerance_percentage=15.0)
+    original_count = len(board)
+    board = anomaly_filter.filter_anomalies(board)
+    filtered_count = original_count - len(board)
+    print(f"Filtered {filtered_count} demon/goblin projections, {len(board)} standard projections remaining")
+
 
     # Build optimal slips
     optimizer = SlipOptimizer()
