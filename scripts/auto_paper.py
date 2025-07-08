@@ -23,38 +23,20 @@ def read_and_transform_board(csv_filename):
     if not os.path.exists(csv_filename):
         print(f"[Warning] CSV file {csv_filename} not found, using mock data")
         # Return mock data for testing
-        return [
-            {
-                'player': 'Test Player 1',
-                'prop_type': 'Points',
-                'line': 25.5,
-                'over_under': 'over',
+        mock_data = []
+        for i in range(60):  # Generate 60 mock entries
+            mock_data.append({
+                'player': f'Test Player {i % 10 + 1}',
+                'prop_type': ['Points', 'Rebounds', 'Assists'][i % 3],
+                'line': 10.5 + (i % 20),
+                'over_under': 'over' if i % 2 == 0 else 'under',
                 'odds': -110.0,
-                'confidence': 0.85,
-                'game': 'Game 1'
-            },
-            {
-                'player': 'Test Player 2',
-                'prop_type': 'Rebounds',
-                'line': 8.5,
-                'over_under': 'under',
-                'odds': -110.0,
-                'confidence': 0.80,
-                'game': 'Game 1'
-            },
-            {
-                'player': 'Test Player 3',
-                'prop_type': 'Assists',
-                'line': 6.5,
-                'over_under': 'over',
-                'odds': -110.0,
-                'confidence': 0.75,
-                'game': 'Game 2'
-            }
-        ] * 20  # Multiply to ensure we have enough data for slip generation
+                'confidence': 0.70 + (i % 20) * 0.01,
+                'game': f'Game {i % 5 + 1}'
+            })
+        return mock_data
     
-def read_and_transform_board(csv_filename):
-    """Read CSV file and transform to format expected by SlipOptimizer."""
+    # Original code for reading CSV
     bets = []
     with open(csv_filename, 'r') as f:
         reader = csv.DictReader(f)
