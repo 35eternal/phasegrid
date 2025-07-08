@@ -38,7 +38,8 @@ jobs:
 
     - name: Run auto paper trading
       run: |
-        python scripts/auto_paper.py --date today
+        export PYTHONPATH="${PYTHONPATH}:${GITHUB_WORKSPACE}"
+        python scripts/auto_paper.py --date today --dry_run
 
     - name: Check slip count
       run: |
