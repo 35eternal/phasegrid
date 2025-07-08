@@ -1,0 +1,23 @@
+{
+  "aja wilson": {
+    "created_at": "2025-07-08T23:33:56.054810",
+    "last_accessed": "2025-07-08T23:33:56.054810",
+    "normalized_name": "aja wilson",
+    "original_name": "A'ja Wilson",
+    "uuid": "23332075-8bce-4287-a04c-a945ba6431b4"
+  },
+  "breanna stewart": {
+    "created_at": "2025-07-08T23:33:56.055728",
+    "last_accessed": "2025-07-08T23:33:56.055728",
+    "normalized_name": "breanna stewart",
+    "original_name": "Breanna Stewart",
+    "uuid": "953a9d3d-dfa0-4df7-b560-b93280dbd516"
+  },
+  "diana taurasi": {
+    "created_at": "2025-07-08T23:33:56.056480",
+    "last_accessed": "2025-07-08T23:33:56.056480",
+    "normalized_name": "diana taurasi",
+    "original_name": "Diana Taurasi",
+    "uuid": "d8edcf65-7ba9-4424-ba62-8d088eb50a1b"
+  }
+}
