@@ -1,0 +1,23 @@
+[
+  {
+    "player_name": "A'ja Wilson",
+    "date": "2025-07-08",
+    "cycle_phase": "ovulatory",
+    "cycle_day": 14,
+    "confidence_score": 0.95
+  },
+  {
+    "player_name": "Breanna Stewart",
+    "date": "2025-07-08",
+    "cycle_phase": "follicular",
+    "cycle_day": 7,
+    "confidence_score": 0.90
+  },
+  {
+    "player_name": "Diana Taurasi",
+    "date": "2025-07-08",
+    "cycle_phase": "luteal",
+    "cycle_day": 21,
+    "confidence_score": 0.85
+  }
+]

@@ -1,0 +1,4306 @@
+{
+  "data": [
+    {
+      "type": "league",
+      "id": "2",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "baseball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/25.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 25,
+        "name": "MLB",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 5911,
+        "rank": 25,
+        "show_trending": true
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "2"
+            },
+            {
+              "type": "projection_filter",
+              "id": "42"
+            },
+            {
+              "type": "projection_filter",
+              "id": "45"
+            },
+            {
+              "type": "projection_filter",
+              "id": "58"
+            },
+            {
+              "type": "projection_filter",
+              "id": "69"
+            },
+            {
+              "type": "projection_filter",
+              "id": "70"
+            },
+            {
+              "type": "projection_filter",
+              "id": "101"
+            },
+            {
+              "type": "projection_filter",
+              "id": "162"
+            },
+            {
+              "type": "projection_filter",
+              "id": "172"
+            },
+            {
+              "type": "projection_filter",
+              "id": "173"
+            },
+            {
+              "type": "projection_filter",
+              "id": "231"
+            },
+            {
+              "type": "projection_filter",
+              "id": "232"
+            },
+            {
+              "type": "projection_filter",
+              "id": "233"
+            },
+            {
+              "type": "projection_filter",
+              "id": "234"
+            },
+            {
+              "type": "projection_filter",
+              "id": "281"
+            },
+            {
+              "type": "projection_filter",
+              "id": "282"
+            },
+            {
+              "type": "projection_filter",
+              "id": "311"
+            },
+            {
+              "type": "projection_filter",
+              "id": "372"
+            },
+            {
+              "type": "projection_filter",
+              "id": "410"
+            },
+            {
+              "type": "projection_filter",
+              "id": "424"
+            },
+            {
+              "type": "projection_filter",
+              "id": "638"
+            },
+            {
+              "type": "projection_filter",
+              "id": "639"
+            },
+            {
+              "type": "projection_filter",
+              "id": "640"
+            },
+            {
+              "type": "projection_filter",
+              "id": "924"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "3",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/24.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 24,
+        "name": "WNBA",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 507,
+        "rank": 30,
+        "show_trending": true
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "1"
+            },
+            {
+              "type": "projection_filter",
+              "id": "14"
+            },
+            {
+              "type": "projection_filter",
+              "id": "2"
+            },
+            {
+              "type": "projection_filter",
+              "id": "19"
+            },
+            {
+              "type": "projection_filter",
+              "id": "20"
+            },
+            {
+              "type": "projection_filter",
+              "id": "22"
+            },
+            {
+              "type": "projection_filter",
+              "id": "23"
+            },
+            {
+              "type": "projection_filter",
+              "id": "24"
+            },
+            {
+              "type": "projection_filter",
+              "id": "31"
+            },
+            {
+              "type": "projection_filter",
+              "id": "68"
+            },
+            {
+              "type": "projection_filter",
+              "id": "105"
+            },
+            {
+              "type": "projection_filter",
+              "id": "106"
+            },
+            {
+              "type": "projection_filter",
+              "id": "243"
+            },
+            {
+              "type": "projection_filter",
+              "id": "244"
+            },
+            {
+              "type": "projection_filter",
+              "id": "245"
+            },
+            {
+              "type": "projection_filter",
+              "id": "386"
+            },
+            {
+              "type": "projection_filter",
+              "id": "392"
+            },
+            {
+              "type": "projection_filter",
+              "id": "403"
+            },
+            {
+              "type": "projection_filter",
+              "id": "404"
+            },
+            {
+              "type": "projection_filter",
+              "id": "425"
+            },
+            {
+              "type": "projection_filter",
+              "id": "426"
+            },
+            {
+              "type": "projection_filter",
+              "id": "427"
+            },
+            {
+              "type": "projection_filter",
+              "id": "428"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "194",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/24.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 24,
+        "name": "WNBA2H",
+        "parent_id": 3,
+        "parent_name": "WNBA",
+        "projections_count": 0,
+        "rank": 31,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "195",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/24.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 24,
+        "name": "WNBA4Q",
+        "parent_id": 3,
+        "parent_name": "WNBA",
+        "projections_count": 0,
+        "rank": 32,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "5",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "tennis",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/54.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 54,
+        "name": "TENNIS",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 223,
+        "rank": 80,
+        "show_trending": true
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "1"
+            },
+            {
+              "type": "projection_filter",
+              "id": "14"
+            },
+            {
+              "type": "projection_filter",
+              "id": "2"
+            },
+            {
+              "type": "projection_filter",
+              "id": "61"
+            },
+            {
+              "type": "projection_filter",
+              "id": "62"
+            },
+            {
+              "type": "projection_filter",
+              "id": "63"
+            },
+            {
+              "type": "projection_filter",
+              "id": "103"
+            },
+            {
+              "type": "projection_filter",
+              "id": "864"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "40",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/26.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 26,
+        "name": "NBASL",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 65,
+        "rank": 81,
+        "show_trending": true
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "2"
+            },
+            {
+              "type": "projection_filter",
+              "id": "19"
+            },
+            {
+              "type": "projection_filter",
+              "id": "20"
+            },
+            {
+              "type": "projection_filter",
+              "id": "22"
+            },
+            {
+              "type": "projection_filter",
+              "id": "31"
+            },
+            {
+              "type": "projection_filter",
+              "id": "106"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "243",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "soccer",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/52.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 52,
+        "name": "SOCCER2H",
+        "parent_id": 82,
+        "parent_name": "SOCCER",
+        "projections_count": 0,
+        "rank": 84,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "1",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "golf",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/44.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 44,
+        "name": "PGA",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 85,
+        "show_trending": true
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "82",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "soccer",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/52.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 52,
+        "name": "SOCCER",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 1576,
+        "rank": 87,
+        "show_trending": true
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "2"
+            },
+            {
+              "type": "projection_filter",
+              "id": "20"
+            },
+            {
+              "type": "projection_filter",
+              "id": "29"
+            },
+            {
+              "type": "projection_filter",
+              "id": "48"
+            },
+            {
+              "type": "projection_filter",
+              "id": "50"
+            },
+            {
+              "type": "projection_filter",
+              "id": "104"
+            },
+            {
+              "type": "projection_filter",
+              "id": "269"
+            },
+            {
+              "type": "projection_filter",
+              "id": "270"
+            },
+            {
+              "type": "projection_filter",
+              "id": "271"
+            },
+            {
+              "type": "projection_filter",
+              "id": "272"
+            },
+            {
+              "type": "projection_filter",
+              "id": "277"
+            },
+            {
+              "type": "projection_filter",
+              "id": "278"
+            },
+            {
+              "type": "projection_filter",
+              "id": "429"
+            },
+            {
+              "type": "projection_filter",
+              "id": "430"
+            },
+            {
+              "type": "projection_filter",
+              "id": "455"
+            },
+            {
+              "type": "projection_filter",
+              "id": "718"
+            },
+            {
+              "type": "projection_filter",
+              "id": "895"
+            },
+            {
+              "type": "projection_filter",
+              "id": "896"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "145",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "cod",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/36.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 36,
+        "name": "COD",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 90,
+        "show_trending": true
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "231",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "baseball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/25.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 25,
+        "name": "MLBLIVE",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 57,
+        "rank": 129,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "237"
+            },
+            {
+              "type": "projection_filter",
+              "id": "867"
+            },
+            {
+              "type": "projection_filter",
+              "id": "888"
+            },
+            {
+              "type": "projection_filter",
+              "id": "889"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "193",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/24.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 24,
+        "name": "WNBA1H",
+        "parent_id": 3,
+        "parent_name": "WNBA",
+        "projections_count": 8,
+        "rank": 130,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "2"
+            },
+            {
+              "type": "projection_filter",
+              "id": "19"
+            },
+            {
+              "type": "projection_filter",
+              "id": "106"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "308",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/24.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 24,
+        "name": "WNBA1Q",
+        "parent_id": 3,
+        "parent_name": "WNBA",
+        "projections_count": 8,
+        "rank": 131,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "19"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "242",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "soccer",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/7.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 7,
+        "name": "SOCCER1H",
+        "parent_id": 82,
+        "parent_name": "SOCCER",
+        "projections_count": 13,
+        "rank": 133,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "48"
+            },
+            {
+              "type": "projection_filter",
+              "id": "50"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "12",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "boxing",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/23.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 23,
+        "name": "MMA",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 68,
+        "rank": 150,
+        "show_trending": true
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "2"
+            },
+            {
+              "type": "projection_filter",
+              "id": "43"
+            },
+            {
+              "type": "projection_filter",
+              "id": "51"
+            },
+            {
+              "type": "projection_filter",
+              "id": "52"
+            },
+            {
+              "type": "projection_filter",
+              "id": "770"
+            },
+            {
+              "type": "projection_filter",
+              "id": "934"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "260",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "boxing",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/2.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 2,
+        "name": "Power Slap",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 152,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "244",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "tennis",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/54.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 54,
+        "name": "TENNIS LIVE",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 152,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "273",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "hockey",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/45.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 45,
+        "name": "PWHL",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 195,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "310",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/1.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 1,
+        "name": "NBASL2H",
+        "parent_id": 40,
+        "parent_name": "NBASL",
+        "projections_count": 0,
+        "rank": 200,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "289",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "golf",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/4.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 4,
+        "name": "TGL",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 201,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "228",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "golf",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/4.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 4,
+        "name": "LIVGOLF",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 202,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "131",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "golf",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/42.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 42,
+        "name": "EUROGOLF",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 203,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "256",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "golf",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/43.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 43,
+        "name": "LPGA",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 204,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "266",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/55.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 55,
+        "name": "SPECIALS",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 205,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "158",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/1.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 1,
+        "name": "GLEAGUE",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 212,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "151",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/1.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 1,
+        "name": "EURO",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 213,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "307",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/1.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 1,
+        "name": "TNC",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 214,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "238",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/32.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 32,
+        "name": "AUSNBL",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 214,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "299",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/1.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 1,
+        "name": "BBL",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 215,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "185",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/1.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 1,
+        "name": "FIBA",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 215,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "38",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/1.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 1,
+        "name": "BIG3",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 215,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "255",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/1.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 1,
+        "name": "SACB",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 215,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "253",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/1.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 1,
+        "name": "FPA",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 215,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "301",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/1.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 1,
+        "name": "KBL",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 216,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "189",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "baseball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/22.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 22,
+        "name": "NCAAB",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 216,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "135",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "baseball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/22.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 22,
+        "name": "KBO",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 217,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "298",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "baseball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/22.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 22,
+        "name": "NPB",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 218,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "42",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "boxing",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/35.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 35,
+        "name": "BOXING",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 3,
+        "rank": 218,
+        "show_trending": true
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "2"
+            },
+            {
+              "type": "projection_filter",
+              "id": "43"
+            },
+            {
+              "type": "projection_filter",
+              "id": "53"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "275",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "baseball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/53.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 53,
+        "name": "WCWS",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 219,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "4",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "nascar",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/49.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 49,
+        "name": "NASCAR",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 219,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "125",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "nascar",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/9.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 9,
+        "name": "F1",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 220,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "270",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "nascar",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/49.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 49,
+        "name": "INDYCAR",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 221,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "138",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "nascar",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/49.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 49,
+        "name": "TRUCKS",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 221,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "137",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "nascar",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/9.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 9,
+        "name": "XFINITY",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 222,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "11",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "football",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/3.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 3,
+        "name": "CFL",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 223,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "271",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "football",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/3.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 3,
+        "name": "UFL",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 223,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "165",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "football",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/3.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 3,
+        "name": "AFL",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 223,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "269",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/58.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 58,
+        "name": "DARTS",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 224,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "175",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/1.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 1,
+        "name": "WEURO",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 225,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "287",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/1.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 1,
+        "name": "EUROCUP",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 225,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "162",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "baseball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/37.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 37,
+        "name": "CRICKET",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 146,
+        "rank": 225,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "2"
+            },
+            {
+              "type": "projection_filter",
+              "id": "183"
+            },
+            {
+              "type": "projection_filter",
+              "id": "184"
+            },
+            {
+              "type": "projection_filter",
+              "id": "431"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "230",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "lacrosse",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/47.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 47,
+        "name": "LAX",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 227,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "305",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "hockey",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/47.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 47,
+        "name": "CLAX",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 228,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "283",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/28.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 28,
+        "name": "BEACHVB",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 228,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "285",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/8.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 8,
+        "name": "BAD",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 228,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "286",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "tennis",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/31.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 31,
+        "name": "TT",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 42,
+        "rank": 228,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "94"
+            },
+            {
+              "type": "projection_filter",
+              "id": "862"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "302",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/1.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 1,
+        "name": "BCL",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 240,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "265",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "csgo",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/38.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 38,
+        "name": "CS2",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 59,
+        "rank": 249,
+        "show_trending": true
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "330"
+            },
+            {
+              "type": "projection_filter",
+              "id": "337"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "121",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "lol",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/48.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 48,
+        "name": "LoL",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 48,
+        "rank": 251,
+        "show_trending": true
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "2"
+            },
+            {
+              "type": "projection_filter",
+              "id": "331"
+            },
+            {
+              "type": "projection_filter",
+              "id": "542"
+            },
+            {
+              "type": "projection_filter",
+              "id": "752"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "267",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "game",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/5.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 5,
+        "name": "HALO",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 252,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "159",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "valorant",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/29.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 29,
+        "name": "VAL",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 74,
+        "rank": 253,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "330"
+            },
+            {
+              "type": "projection_filter",
+              "id": "334"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "274",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/59.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 59,
+        "name": "R6",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 50,
+        "rank": 254,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "332"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "174",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "dota",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/40.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 40,
+        "name": "Dota2",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 56,
+        "rank": 255,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "330"
+            },
+            {
+              "type": "projection_filter",
+              "id": "500"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "161",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "rl",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/50.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 50,
+        "name": "RL",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 256,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "268",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/57.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 57,
+        "name": "APEX",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 257,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "9",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "football",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/30.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 30,
+        "name": "NFL",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 104,
+        "rank": 299,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "2"
+            },
+            {
+              "type": "projection_filter",
+              "id": "15"
+            },
+            {
+              "type": "projection_filter",
+              "id": "16"
+            },
+            {
+              "type": "projection_filter",
+              "id": "17"
+            },
+            {
+              "type": "projection_filter",
+              "id": "313"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "163",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "football",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/30.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 30,
+        "name": "NFLSZN",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 447,
+        "rank": 300,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "2"
+            },
+            {
+              "type": "projection_filter",
+              "id": "15"
+            },
+            {
+              "type": "projection_filter",
+              "id": "16"
+            },
+            {
+              "type": "projection_filter",
+              "id": "17"
+            },
+            {
+              "type": "projection_filter",
+              "id": "44"
+            },
+            {
+              "type": "projection_filter",
+              "id": "46"
+            },
+            {
+              "type": "projection_filter",
+              "id": "47"
+            },
+            {
+              "type": "projection_filter",
+              "id": "77"
+            },
+            {
+              "type": "projection_filter",
+              "id": "83"
+            },
+            {
+              "type": "projection_filter",
+              "id": "262"
+            },
+            {
+              "type": "projection_filter",
+              "id": "263"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "188",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/26.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 26,
+        "name": "NBASZN2",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 301,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "173",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/26.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 26,
+        "name": "NBASZN",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 38,
+        "rank": 301,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": [
+            {
+              "type": "projection_filter",
+              "id": "2"
+            },
+            {
+              "type": "projection_filter",
+              "id": "393"
+            },
+            {
+              "type": "projection_filter",
+              "id": "394"
+            },
+            {
+              "type": "projection_filter",
+              "id": "395"
+            },
+            {
+              "type": "projection_filter",
+              "id": "396"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "190",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "baseball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/25.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 25,
+        "name": "MLBSZN",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 303,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "261",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "baseball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/25.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 25,
+        "name": "MLBSZN2",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 303,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "236",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "hockey",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/45.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 45,
+        "name": "NHLSZN",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 305,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "172",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "football",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/3.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 3,
+        "name": "CFBSZN",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 307,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "262",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "soccer",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/7.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 7,
+        "name": "SOCCERSZN",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 308,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "291",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "nascar",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/49.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 49,
+        "name": "NASCARSZN",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 310,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "252",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/24.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 24,
+        "name": "WNBASZN",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 312,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "306",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "hockey",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/47.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 47,
+        "name": "LAXSZN",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 350,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "245",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "football",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/30.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 30,
+        "name": "NFL1Q",
+        "parent_id": 9,
+        "parent_name": "NFL",
+        "projections_count": 0,
+        "rank": 996,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "25",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "football",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/30.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 30,
+        "name": "NFL2H",
+        "parent_id": 9,
+        "parent_name": "NFL",
+        "projections_count": 0,
+        "rank": 996,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "152",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "football",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/30.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 30,
+        "name": "NFL4Q",
+        "parent_id": 9,
+        "parent_name": "NFL",
+        "projections_count": 0,
+        "rank": 996,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "35",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "football",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/30.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 30,
+        "name": "NFL1H",
+        "parent_id": 9,
+        "parent_name": "NFL",
+        "projections_count": 0,
+        "rank": 996,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "251",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "hockey",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/45.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 45,
+        "name": "NHL SERIES",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 997,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "8",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "hockey",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/45.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 45,
+        "name": "NHL",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 997,
+        "show_trending": true
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "234",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "hockey",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/45.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 45,
+        "name": "NHL2P",
+        "parent_id": 8,
+        "parent_name": "NHL",
+        "projections_count": 0,
+        "rank": 997,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "226",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "hockey",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/45.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 45,
+        "name": "NHL3P",
+        "parent_id": 8,
+        "parent_name": "NHL",
+        "projections_count": 0,
+        "rank": 997,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "227",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "hockey",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/45.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 45,
+        "name": "NHL1P",
+        "parent_id": 8,
+        "parent_name": "NHL",
+        "projections_count": 0,
+        "rank": 997,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "20",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/33.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 33,
+        "name": "CBB",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 998,
+        "show_trending": true
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "155",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/33.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 33,
+        "name": "CBB2H",
+        "parent_id": 20,
+        "parent_name": "CBB",
+        "projections_count": 0,
+        "rank": 998,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "290",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/33.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 33,
+        "name": "CBB1H",
+        "parent_id": 20,
+        "parent_name": "CBB",
+        "projections_count": 0,
+        "rank": 998,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "250",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/1.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 1,
+        "name": "NBA SERIES",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 999,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "7",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/26.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 26,
+        "name": "NBA",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 999,
+        "show_trending": true
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "80",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/26.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 26,
+        "name": "NBA2H",
+        "parent_id": 7,
+        "parent_name": "NBA",
+        "projections_count": 0,
+        "rank": 999,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "192",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/1.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 1,
+        "name": "NBA1Q",
+        "parent_id": 7,
+        "parent_name": "NBA",
+        "projections_count": 0,
+        "rank": 999,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "84",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/1.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 1,
+        "name": "NBA1H",
+        "parent_id": 7,
+        "parent_name": "NBA",
+        "projections_count": 0,
+        "rank": 999,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "149",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/26.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 26,
+        "name": "NBA4Q",
+        "parent_id": 7,
+        "parent_name": "NBA",
+        "projections_count": 0,
+        "rank": 999,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "304",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "football",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/3.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 3,
+        "name": "NFL Draft",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 1000,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "241",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "soccer",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/7.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 7,
+        "name": "World Cup",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 1000,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "143",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/21.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 21,
+        "name": "HOTDOG",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 1000,
+        "show_trending": true
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "254",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/1.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 1,
+        "name": "LBSA",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 1000,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "118",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "football",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/3.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 3,
+        "name": "COMBINE",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 1000,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "150",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "football",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/3.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 3,
+        "name": "CFB2H",
+        "parent_id": 15,
+        "parent_name": "CFB",
+        "projections_count": 0,
+        "rank": 1000,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "15",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "football",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/41.svg",
+        "last_five_games_enabled": true,
+        "league_icon_id": 41,
+        "name": "CFB",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 1000,
+        "show_trending": true
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "184",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "football",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/3.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 3,
+        "name": "CFB1H",
+        "parent_id": 15,
+        "parent_name": "CFB",
+        "projections_count": 0,
+        "rank": 1000,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "153",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": true,
+        "icon": "football",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/3.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 3,
+        "name": "CFB4Q",
+        "parent_id": 15,
+        "parent_name": "CFB",
+        "projections_count": 0,
+        "rank": 1000,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "284",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "soccer",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/7.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 7,
+        "name": "HANDBALL",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 1000,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "44",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "football",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/30.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 30,
+        "name": "NFLP",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 1000,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "288",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/1.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 1,
+        "name": "UNR",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 1000,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "176",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/1.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 1,
+        "name": "WCBB",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": 1000,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "272",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/1.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": 1,
+        "name": "WCBB2H",
+        "parent_id": 176,
+        "parent_name": "WCBB",
+        "projections_count": 0,
+        "rank": 1000,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "league",
+      "id": "303",
+      "attributes": {
+        "active": true,
+        "f2p_enabled": false,
+        "icon": "basketball",
+        "image_url": "https://static.prizepicks.com/images/leagues/production/basketball.svg",
+        "last_five_games_enabled": false,
+        "league_icon_id": null,
+        "name": "Moments",
+        "parent_id": null,
+        "parent_name": null,
+        "projections_count": 0,
+        "rank": null,
+        "show_trending": false
+      },
+      "relationships": {
+        "projection_filters": {
+          "data": []
+        }
+      }
+    }
+  ],
+  "included": [
+    {
+      "type": "projection_filter",
+      "id": "14",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Fantasy Score",
+        "rank": 7,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "48",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Goalie Saves",
+        "rank": 0,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "770",
+      "attributes": {
+        "lfg_ignored_leagues": null,
+        "name": "Significant Strikes (Combo)",
+        "rank": 5,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "53",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Total Punches Landed",
+        "rank": 1,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "281",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Hitter Strikeouts",
+        "rank": 20,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "639",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Doubles",
+        "rank": 4,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "924",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "1st Inning Walks Allowed",
+        "rank": 5,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "271",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Clearances",
+        "rank": 8,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "867",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "1st Inning Pitches Thrown",
+        "rank": null,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "43",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Fight Time (Mins)",
+        "rank": 2,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "337",
+      "attributes": {
+        "lfg_ignored_leagues": [
+          265
+        ],
+        "name": "MAPS 1-2 Headshots",
+        "rank": 12,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "334",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "MAP 3 Kills",
+        "rank": 40,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "311",
+      "attributes": {
+        "lfg_ignored_leagues": [
+          10
+        ],
+        "name": "Pitcher Strikeouts",
+        "rank": 0,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "19",
+      "attributes": {
+        "lfg_ignored_leagues": [
+          305
+        ],
+        "name": "Points",
+        "rank": 0,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "68",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Free Throws Made",
+        "rank": 11,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "50",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Shots",
+        "rank": 0,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "269",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Shots Assisted",
+        "rank": 7,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "278",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Passes Attempted",
+        "rank": 4,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "83",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "INT",
+        "rank": 13,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "394",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Rebounds Per Game AVG",
+        "rank": null,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "233",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Pitches Thrown",
+        "rank": 8,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "234",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Walks Allowed",
+        "rank": 5,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "70",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Home Runs",
+        "rank": 3,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "24",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Turnovers",
+        "rank": 33,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "272",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Tackles",
+        "rank": 9,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "895",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Offsides",
+        "rank": null,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "934",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "RD 1 Significant Strikes",
+        "rank": 12,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "752",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "MAPS 1-3 Assists",
+        "rank": 2,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "101",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Hits",
+        "rank": 10,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "372",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Stolen Bases",
+        "rank": 4,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "386",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "FG Attempted",
+        "rank": 12,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "62",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Total Games",
+        "rank": 0,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "237",
+      "attributes": {
+        "lfg_ignored_leagues": [
+          2
+        ],
+        "name": "1st Inning Hits Allowed",
+        "rank": 2,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "330",
+      "attributes": {
+        "lfg_ignored_leagues": [
+          265
+        ],
+        "name": "MAPS 1-2 Kills",
+        "rank": 9,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "16",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Pass Yards",
+        "rank": 0,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "393",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Points Per Game AVG",
+        "rank": null,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "231",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Earned Runs Allowed",
+        "rank": 10,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "106",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Pts+Rebs+Asts",
+        "rank": 1,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "404",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Defensive Rebounds",
+        "rank": 6,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "426",
+      "attributes": {
+        "lfg_ignored_leagues": [
+          7
+        ],
+        "name": "Assists (Combo)",
+        "rank": 10,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "61",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Aces",
+        "rank": 3,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "63",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Total Games Won",
+        "rank": 3,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "430",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Shots (Combo)",
+        "rank": 3,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "889",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "1+2+3 Inning Pitcher Strikeouts",
+        "rank": null,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "1",
+      "attributes": {
+        "lfg_ignored_leagues": null,
+        "name": "Fantasy Score",
+        "rank": 2,
+        "short_name": "",
+        "type": "ProjectionType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "429",
+      "attributes": {
+        "lfg_ignored_leagues": [
+          8
+        ],
+        "name": "Goalie Saves (Combo)",
+        "rank": 4,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "896",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Goals Allowed (Combo)",
+        "rank": 1,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "51",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Significant Strikes",
+        "rank": 0,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "52",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Takedowns",
+        "rank": 10,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "183",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Fours",
+        "rank": 2,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "94",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Total Points",
+        "rank": 6,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "542",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "MAPS 1-3 Kills (Combo)",
+        "rank": 0,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "864",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Double Faults",
+        "rank": null,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "232",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Hits Allowed",
+        "rank": 4,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "45",
+      "attributes": {
+        "lfg_ignored_leagues": [
+          10
+        ],
+        "name": "Pitching Outs",
+        "rank": 7,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "173",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Pitcher Fantasy Score",
+        "rank": 4,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "282",
+      "attributes": {
+        "lfg_ignored_leagues": [
+          10
+        ],
+        "name": "Hits+Runs+RBIs",
+        "rank": 0,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "424",
+      "attributes": {
+        "lfg_ignored_leagues": [
+          2
+        ],
+        "name": "Pitcher Strikeouts (Combo)",
+        "rank": 7,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "20",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Assists",
+        "rank": 3,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "425",
+      "attributes": {
+        "lfg_ignored_leagues": [
+          7,
+          8
+        ],
+        "name": "Points (Combo)",
+        "rank": 8,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "31",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "3-PT Made",
+        "rank": 3,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "244",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Pts+Asts",
+        "rank": 3,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "428",
+      "attributes": {
+        "lfg_ignored_leagues": [
+          7
+        ],
+        "name": "3-PT Made (Combo)",
+        "rank": 10,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "103",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Break Points Won",
+        "rank": 8,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "29",
+      "attributes": {
+        "lfg_ignored_leagues": [
+          305
+        ],
+        "name": "Goals",
+        "rank": 1,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "500",
+      "attributes": {
+        "lfg_ignored_leagues": [
+          265
+        ],
+        "name": "MAPS 1-2 Kills (Combo)",
+        "rank": 8,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "77",
+      "attributes": {
+        "lfg_ignored_leagues": [
+          25,
+          35,
+          152,
+          245,
+          163,
+          263,
+          15,
+          150,
+          153,
+          184
+        ],
+        "name": "Sacks",
+        "rank": 11,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "58",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Runs",
+        "rank": 16,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "245",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Rebs+Asts",
+        "rank": 7,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "427",
+      "attributes": {
+        "lfg_ignored_leagues": [
+          7
+        ],
+        "name": "Rebounds (Combo)",
+        "rank": 10,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "313",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Rush+Rec TDs",
+        "rank": 2,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "46",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Rush TDs",
+        "rank": 5,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "47",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Rec TDs",
+        "rank": 4,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "403",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Offensive Rebounds",
+        "rank": 7,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "270",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Goal + Assist",
+        "rank": 6,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "277",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Cards",
+        "rank": 3,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "162",
+      "attributes": {
+        "lfg_ignored_leagues": [
+          2
+        ],
+        "name": "1st Inning Runs Allowed",
+        "rank": 2,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "105",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Blks+Stls",
+        "rank": 31,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "331",
+      "attributes": {
+        "lfg_ignored_leagues": [
+          265
+        ],
+        "name": "MAPS 1-3 Kills",
+        "rank": 1,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "395",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Assists Per Game AVG",
+        "rank": null,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "243",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Pts+Rebs",
+        "rank": 18,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "392",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "3-PT Attempted",
+        "rank": 8,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "455",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Shots On Target (Combo)",
+        "rank": 4,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "431",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "1st Inning Runs",
+        "rank": null,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "44",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Pass TDs",
+        "rank": 3,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "262",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "100+ Rush Yard Games",
+        "rank": 32,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "69",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "RBIs",
+        "rank": 15,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "638",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Triples",
+        "rank": null,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "22",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Rebounds",
+        "rank": 2,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "888",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "1+2 Inning Pitcher Strikeouts",
+        "rank": null,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "862",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Total Points Won",
+        "rank": null,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "332",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "MAP 1 Kills",
+        "rank": 20,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "42",
+      "attributes": {
+        "lfg_ignored_leagues": [
+          10
+        ],
+        "name": "Total Bases",
+        "rank": 1,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "410",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Walks",
+        "rank": 8,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "104",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Shots On Target",
+        "rank": 2,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "718",
+      "attributes": {
+        "lfg_ignored_leagues": [
+          82
+        ],
+        "name": "Attempted Dribbles",
+        "rank": 10,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "184",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Sixes",
+        "rank": 3,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "15",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Rush Yards",
+        "rank": 2,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "17",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Receiving Yards",
+        "rank": 3,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "263",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "100+ Rec Yard Games",
+        "rank": 33,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "2",
+      "attributes": {
+        "lfg_ignored_leagues": null,
+        "name": "Single Stat",
+        "rank": null,
+        "short_name": "",
+        "type": "ProjectionType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "23",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Steals",
+        "rank": 24,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "396",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "3PT Made Per Game AVG",
+        "rank": null,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "172",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Hitter Fantasy Score",
+        "rank": 2,
+        "short_name": "",
+        "type": "StatType"
+      }
+    },
+    {
+      "type": "projection_filter",
+      "id": "640",
+      "attributes": {
+        "lfg_ignored_leagues": [],
+        "name": "Singles",
+        "rank": 6,
+        "short_name": "",
+        "type": "StatType"
+      }
+    }
+  ]
+}

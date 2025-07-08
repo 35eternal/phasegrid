@@ -1,0 +1,35 @@
+{
+  "23332075-8bce-4287-a04c-a945ba6431b4_2025-07-08": {
+    "id": "9ffa744a-c435-4121-9f4f-507113a35138",
+    "player_id": "23332075-8bce-4287-a04c-a945ba6431b4",
+    "date": "2025-07-08",
+    "cycle_phase": "ovulatory",
+    "cycle_day": 14,
+    "confidence_score": 0.95,
+    "source": "user_input",
+    "created_at": "2025-07-08T17:33:56.055702",
+    "updated_at": "2025-07-08T17:33:56.055712"
+  },
+  "953a9d3d-dfa0-4df7-b560-b93280dbd516_2025-07-08": {
+    "id": "487edebe-265a-4ce4-842f-8867908b1652",
+    "player_id": "953a9d3d-dfa0-4df7-b560-b93280dbd516",
+    "date": "2025-07-08",
+    "cycle_phase": "follicular",
+    "cycle_day": 7,
+    "confidence_score": 0.9,
+    "source": "user_input",
+    "created_at": "2025-07-08T17:33:56.056467",
+    "updated_at": "2025-07-08T17:33:56.056468"
+  },
+  "d8edcf65-7ba9-4424-ba62-8d088eb50a1b_2025-07-08": {
+    "id": "3831d300-1592-4cdc-b83d-3d1dff1b3103",
+    "player_id": "d8edcf65-7ba9-4424-ba62-8d088eb50a1b",
+    "date": "2025-07-08",
+    "cycle_phase": "luteal",
+    "cycle_day": 21,
+    "confidence_score": 0.85,
+    "source": "user_input",
+    "created_at": "2025-07-08T17:33:56.057218",
+    "updated_at": "2025-07-08T17:33:56.057219"
+  }
+}

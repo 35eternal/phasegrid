@@ -1,0 +1,49 @@
+{
+  "test_fixtures": [
+    {
+      "player_id": "550e8400-e29b-41d4-a716-446655440001",
+      "date": "2025-07-01",
+      "cycle_phase": "follicular",
+      "cycle_day": 7,
+      "confidence_score": 1.0,
+      "source": "test_fixture"
+    },
+    {
+      "player_id": "550e8400-e29b-41d4-a716-446655440001",
+      "date": "2025-07-08",
+      "cycle_phase": "ovulatory",
+      "cycle_day": 14,
+      "confidence_score": 1.0,
+      "source": "test_fixture"
+    },
+    {
+      "player_id": "550e8400-e29b-41d4-a716-446655440002",
+      "date": "2025-07-05",
+      "cycle_phase": "luteal",
+      "cycle_day": 21,
+      "confidence_score": 0.95,
+      "source": "predicted"
+    },
+    {
+      "player_id": "550e8400-e29b-41d4-a716-446655440002",
+      "date": "2025-07-08",
+      "cycle_phase": "menstrual",
+      "cycle_day": 2,
+      "confidence_score": 1.0,
+      "source": "user_input"
+    },
+    {
+      "player_id": "550e8400-e29b-41d4-a716-446655440003",
+      "date": "2025-06-15",
+      "cycle_phase": "follicular",
+      "cycle_day": 10,
+      "confidence_score": 0.85,
+      "source": "imported"
+    }
+  ],
+  "player_mapping": {
+    "550e8400-e29b-41d4-a716-446655440001": "Test Player 1 (A'ja Wilson analog)",
+    "550e8400-e29b-41d4-a716-446655440002": "Test Player 2 (Breanna Stewart analog)",
+    "550e8400-e29b-41d4-a716-446655440003": "Test Player 3 (Napheesa Collier analog)"
+  }
+}

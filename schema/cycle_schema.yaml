@@ -1,0 +1,76 @@
+﻿# cycle_schema.yaml
+# PG-109: Menstrual Cycle Tracking Schema
+# Privacy-compliant data structure for cycle-aware performance modeling
+
+table: cycle_data
+description: Stores anonymized menstrual cycle phase data for WNBA players
+columns:
+  - name: id
+    type: uuid
+    primary_key: true
+    description: Unique identifier for each cycle entry
+  
+  - name: player_id
+    type: uuid
+    description: Anonymized player identifier (maps to internal player registry)
+    nullable: false
+    index: true
+  
+  - name: date
+    type: date
+    description: Calendar date of observation
+    nullable: false
+    index: true
+  
+  - name: cycle_phase
+    type: varchar(16)
+    description: Current menstrual cycle phase
+    enum: ["follicular", "ovulatory", "luteal", "menstrual"]
+    nullable: false
+  
+  - name: cycle_day
+    type: integer
+    description: Day number within current cycle (1-35 typically)
+    nullable: true
+    constraints:
+      min: 1
+      max: 50
+  
+  - name: confidence_score
+    type: decimal(3,2)
+    description: Data confidence level (0.00-1.00)
+    default: 1.0
+    nullable: false
+  
+  - name: source
+    type: varchar(32)
+    description: Data source identifier
+    enum: ["user_input", "predicted", "imported", "test_fixture"]
+    default: "user_input"
+  
+  - name: created_at
+    type: timestamp
+    default: now()
+    description: Record creation timestamp
+  
+  - name: updated_at
+    type: timestamp
+    default: now()
+    on_update: now()
+    description: Last modification timestamp
+
+indexes:
+  - name: idx_player_date
+    columns: [player_id, date]
+    unique: true
+    description: Ensures one entry per player per date
+  
+  - name: idx_date_phase
+    columns: [date, cycle_phase]
+    description: Optimizes phase-based queries
+
+privacy_notes:
+  - Player IDs must be UUID v4 to prevent reverse engineering
+  - No PII (names, birthdates, etc.) stored in this table
+  - Data retention policy: 2 years rolling window
+  - Opt-in required before any data collection
