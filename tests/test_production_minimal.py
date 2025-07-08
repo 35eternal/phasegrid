@@ -18,7 +18,7 @@ class TestProductionHardening:
         from odds_provider.prizepicks import PrizePicksClient
         client = PrizePicksClient(api_key="test_key")
         assert client.api_key == "test_key"
-        assert "Authorization" in client.session.headers
+        # Authorization header removed - PrizePicks API doesn't use it
     
     def test_prizepicks_client_without_key(self):
         """Test PrizePicks client without API key"""
@@ -77,3 +77,4 @@ class TestProductionHardening:
         assert exponential_backoff_retry is not None
         assert EnhancedResultGrader is not None
         assert main is not None
+
