@@ -1,0 +1,71 @@
+{
+  "phase_modifiers": {
+    "follicular": {
+      "description": "Early cycle phase - rising energy and focus",
+      "base_modifier": 1.05,
+      "prop_modifiers": {
+        "points": 1.03,
+        "rebounds": 1.05,
+        "assists": 1.04,
+        "steals": 1.06,
+        "blocks": 1.02,
+        "3PM": 1.04,
+        "FGA": 1.02,
+        "turnovers": 0.98
+      }
+    },
+    "ovulatory": {
+      "description": "Peak performance window - highest energy",
+      "base_modifier": 1.10,
+      "prop_modifiers": {
+        "points": 1.08,
+        "rebounds": 1.10,
+        "assists": 1.12,
+        "steals": 1.15,
+        "blocks": 1.08,
+        "3PM": 1.10,
+        "FGA": 1.05,
+        "turnovers": 0.95
+      }
+    },
+    "luteal": {
+      "description": "Post-ovulation - declining energy",
+      "base_modifier": 0.95,
+      "prop_modifiers": {
+        "points": 0.96,
+        "rebounds": 0.94,
+        "assists": 0.95,
+        "steals": 0.93,
+        "blocks": 0.95,
+        "3PM": 0.94,
+        "FGA": 0.98,
+        "turnovers": 1.02
+      }
+    },
+    "menstrual": {
+      "description": "Menstruation - lower baseline performance",
+      "base_modifier": 0.90,
+      "prop_modifiers": {
+        "points": 0.92,
+        "rebounds": 0.88,
+        "assists": 0.90,
+        "steals": 0.87,
+        "blocks": 0.89,
+        "3PM": 0.88,
+        "FGA": 0.95,
+        "turnovers": 1.05
+      }
+    }
+  },
+  "cycle_tracking": {
+    "enabled": true,
+    "use_prop_specific_modifiers": true,
+    "stale_data_threshold_days": 35,
+    "default_confidence_threshold": 0.7
+  },
+  "privacy": {
+    "anonymize_player_ids": true,
+    "data_retention_days": 730,
+    "require_opt_in": true
+  }
+}
