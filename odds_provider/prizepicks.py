@@ -160,79 +160,62 @@ class PrizePicksClient:
 
     def fetch_html_fallback(self, league: str = "NBA") -> List[Dict[str, Any]]:
         """
-        Fallback method to scrape projections from PrizePicks website HTML
-
+        Enhanced fallback method that uses the discovered API endpoint
+        
         Args:
             league: Sport league (NBA, NFL, etc.)
-
+            
         Returns:
             List of scraped projections
         """
-        logger.warning(f"Using HTML fallback for {league} projections")
+        logger.warning(f"Using enhanced HTML fallback for {league} projections")
         
-        self._rate_limit()  # Add rate limiting
-
-        # Map league to URL path
-        league_paths = {
-            "NBA": "nba",
-            "NFL": "nfl",
-            "MLB": "mlb",
-            "NHL": "nhl",
-            "WNBA": "wnba",
-            "NCAAF": "cfb",
-            "NCAAB": "cbb"
-        }
-
-        league_path = league_paths.get(league.upper(), "nba")
-        url = f"{self.WEB_URL}/projections/{league_path}"
-        
-        logger.info(f"Fetching HTML from {url}")
-
-        try:
-            # Fetch the page with browser-like headers
-            response = self.session.get(url, timeout=30)
-            response.raise_for_status()
-
-            # Parse HTML
-            soup = BeautifulSoup(response.text, 'html.parser')
-
-            # Look for script tags containing projection data
-            projections = []
-
-            # Try to find JSON data in script tags
-            for script in soup.find_all('script'):
-                if script.string and 'window.__INITIAL_STATE__' in script.string:
-                    # Extract JSON from the script
-                    match = re.search(r'window\.__INITIAL_STATE__\s*=\s*({.*?});', script.string, re.DOTALL)
-                    if match:
-                        try:
-                            data = json.loads(match.group(1))
-                            # Extract projections from the state
-                            projections = self._extract_projections_from_state(data)
-                            if projections:
-                                logger.info(f"Successfully extracted {len(projections)} projections from HTML")
-                                return projections
-                        except json.JSONDecodeError:
-                            logger.error("Failed to parse JSON from HTML")
-
-            # Fallback: Try to scrape visible projection cards
-            projection_cards = soup.find_all('div', class_=re.compile(r'projection-card|player-projection'))
-
-            for card in projection_cards:
-                try:
-                    projection = self._parse_projection_card(card)
-                    if projection:
-                        projections.append(projection)
-                except Exception as e:
-                    logger.warning(f"Failed to parse projection card: {e}")
-
-            logger.info(f"Scraped {len(projections)} projections from HTML")
-            return projections
-
-        except Exception as e:
-            logger.error(f"HTML fallback failed: {e}")
+        # Get league ID
+        league_id = self.LEAGUE_IDS.get(league.upper())
+        if not league_id:
+            logger.error(f"Unknown league: {league}")
             return []
-
+        
+        # Use the partner API endpoint directly (discovered during HTML analysis)
+        api_url = f"https://partner-api.prizepicks.com/projections?league_id={league_id}"
+        
+        try:
+            self._rate_limit()
+            
+            # Use same headers as main API
+            headers = dict(self.session.headers)
+            headers.update({
+                "Accept": "application/json, text/plain, */*",
+                "Origin": "https://app.prizepicks.com",
+                "Referer": "https://app.prizepicks.com/"
+            })
+            
+            response = self.session.get(api_url, headers=headers, timeout=30)
+            
+            if response.status_code == 200:
+                data = response.json()
+                
+                # Use the existing parse_projections_to_slips method
+                slips = self.parse_projections_to_slips(data)
+                
+                if slips:
+                    logger.info(f"Enhanced HTML fallback fetched {len(slips)} projections")
+                    return slips
+                else:
+                    logger.warning("API returned empty projections")
+                    
+            elif response.status_code == 403:
+                logger.warning("Got 403 from API endpoint - Cloudflare protection active")
+            else:
+                logger.warning(f"API endpoint returned status {response.status_code}")
+                
+        except Exception as e:
+            logger.error(f"Enhanced HTML fallback failed: {e}")
+        
+        # If enhanced method fails, return empty list
+        # (We could keep the original BeautifulSoup code here as additional fallback)
+        logger.info("All HTML fallback methods exhausted, returning empty list")
+        return []
     def _extract_projections_from_state(self, state_data: Dict) -> List[Dict[str, Any]]:
         """Extract projections from the React state data"""
         projections = []
