@@ -74,13 +74,13 @@ class PrizePicksClient:
 
     # Sport league IDs
     LEAGUE_IDS = {
-        "NBA": 2,
-        "NFL": 1,
-        "MLB": 3,
-        "NHL": 4,
-        "WNBA": 7,
-        "NCAAF": 5,
-        "NCAAB": 6
+        "NBA": 7,
+        "NFL": 9,
+        "MLB": 2,
+        "NHL": 8,
+        "WNBA": 3,
+        "NCAAF": 15,
+        "NCAAB": 20
     }
 
     def __init__(self, api_key: Optional[str] = None):
@@ -685,3 +685,4 @@ if __name__ == "__main__":
         if slips:
             print("\nSample slip:")
             print(json.dumps(slips[0], indent=2))
+
