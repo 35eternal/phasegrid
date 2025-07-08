@@ -8,7 +8,11 @@ from datetime import datetime
 # Import from project modules
 from odds_provider.prizepicks import fetch_current_board
 from slip_optimizer import SlipOptimizer
-from sheets_integration import push_slips_to_sheets
+try:
+    from sheets_integration import push_slips_to_sheets
+except ImportError:
+    print("[Warning] sheets_integration module not found, skipping Google Sheets upload")
+    push_slips_to_sheets = None
 from utils.csv_writer import write_csv
 
 def read_and_transform_board(csv_filename):
@@ -79,7 +83,10 @@ def main():
 
     if not args.dry_run:
         # Push to Google Sheets
-        push_slips_to_sheets(slips)
+        if push_slips_to_sheets:
+            push_slips_to_sheets(slips)
+        else:
+            print("[Skipped] Google Sheets upload - module not available")
         print("Pushed slips to Google Sheets")
 
     # Write to CSV
