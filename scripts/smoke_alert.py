@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python
+#!/usr/bin/env python
 """
 Smoke test script for PhaseGrid alert channels.
 Usage:
@@ -22,15 +22,16 @@ def test_discord():
     """Test Discord alert channel."""
     try:
         test_message = f"Test Discord alert from PhaseGrid - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} UTC"
-        result = send_discord_alert(test_message, alert_type="info")
+        # Fixed: removed alert_type parameter
+        result = send_discord_alert(test_message)
         if result:
-            print("✅ Discord test passed")
+            print("? Discord test passed")
             return True
         else:
-            print("❌ Discord test failed - check logs above")
+            print("? Discord test failed - check logs above")
             return False
     except Exception as e:
-        print(f"❌ Discord test failed with exception: {e}")
+        print(f"? Discord test failed with exception: {e}")
         return False
 
 
@@ -38,15 +39,16 @@ def test_slack():
     """Test Slack alert channel."""
     try:
         test_message = f"Test Slack alert from PhaseGrid - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} UTC"
-        result = send_slack_alert(test_message, channel="#phasegrid-alerts")
+        # Fixed: removed channel parameter
+        result = send_slack_alert(test_message)
         if result:
-            print("✅ Slack test passed")
+            print("? Slack test passed")
             return True
         else:
-            print("❌ Slack test failed - check logs above")
+            print("? Slack test failed - check logs above")
             return False
     except Exception as e:
-        print(f"❌ Slack test failed with exception: {e}")
+        print(f"? Slack test failed with exception: {e}")
         return False
 
 
@@ -54,32 +56,32 @@ def main():
     parser = argparse.ArgumentParser(description='Test PhaseGrid alert channels')
     parser.add_argument('--discord', action='store_true', help='Test Discord alerts')
     parser.add_argument('--slack', action='store_true', help='Test Slack alerts')
-    
+
     args = parser.parse_args()
-    
+
     if not args.discord and not args.slack:
         print("Error: Please specify at least one channel to test (--discord or --slack)")
         print("Usage: python scripts/smoke_alert.py --discord --slack")
         return 1
-    
+
     all_passed = True
-    
+
     if args.discord:
         print("Testing Discord alerts...")
         if not test_discord():
             all_passed = False
-    
+
     if args.slack:
         print("Testing Slack alerts...")
         if not test_slack():
             all_passed = False
-    
+
     if all_passed:
-        print("\n✨ All tests passed!")
+        print("\n? All tests passed!")
     else:
-        print("\n❌ Some tests failed. Check the output above for details.")
+        print("\n? Some tests failed. Check the output above for details.")
         return 1
-    
+
     return 0
 
 
