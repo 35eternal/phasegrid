@@ -19,5 +19,23 @@
     "normalized_name": "diana taurasi",
     "original_name": "Diana Taurasi",
     "uuid": "d8edcf65-7ba9-4424-ba62-8d088eb50a1b"
+  },
+  "caitlin clark": {
+    "uuid": "6017eb77-0154-4a5a-9ba9-25a83cef70f3",
+    "original_name": "Caitlin Clark",
+    "created_at": "2025-07-08T20:25:28.951863",
+    "last_accessed": "2025-07-08T20:25:28.951878"
+  },
+  "angel reese": {
+    "uuid": "2fec3629-0b0d-4e39-bc7b-aea64678a245",
+    "original_name": "Angel Reese",
+    "created_at": "2025-07-08T20:25:49.924297",
+    "last_accessed": "2025-07-08T20:25:49.924302"
+  },
+  "sabrina ionescu": {
+    "uuid": "1b0b036c-7076-400d-9a20-2c499321d390",
+    "original_name": "Sabrina Ionescu",
+    "created_at": "2025-07-08T20:25:57.911361",
+    "last_accessed": "2025-07-08T20:25:57.911367"
   }
 }
