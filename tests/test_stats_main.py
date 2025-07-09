@@ -135,7 +135,6 @@ class TestStatsMain:
         assert 'saved to' in result.output
     
     @patch('scripts.stats.StatsGenerator')
-    @pytest.mark.xfail(reason="Legacy test - needs update")
     def test_main_error_handling(self, mock_generator_class, runner):
         """Test main error handling."""
         mock_generator_class.side_effect = Exception("Test error")

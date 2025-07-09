@@ -88,7 +88,6 @@ def pytest_collection_modifyitems(config, items):
         "test_idempotency": "legacy-deprecated: Idempotency logic changed",
         "test_partial_results_handling": "legacy-deprecated: Partial results handling changed",
         "test_phase_results_tracking": "legacy-deprecated: Phase tracking changed",
-        "test_empty_results_handling": "legacy-deprecated: Empty results handling changed",
         "test_api_scraping_stub": "legacy-deprecated: API scraping removed",
         "test_invalid_csv_handling": "legacy-deprecated: CSV validation changed",
         "test_settled_timestamp": "legacy-deprecated: Timestamp handling changed",
