@@ -1,0 +1,6 @@
+slip_id,slip_type,num_legs,expected_value,player,prop_type,line,over_under,odds,confidence,game,timestamp
+1,Power,3,0.4118,B. Jones,rebounds,8.5,under,-110,0.6200,NY @ CHI,2025-07-07T14:35:22.122925
+1,Power,3,0.4118,D. Smith,points,18.5,under,-120,0.6000,DAL @ PHX,2025-07-07T14:35:22.122925
+1,Power,3,0.4118,A. Wilson,points,22.5,under,-115,0.5800,LAS @ LA,2025-07-07T14:35:22.122925
+2,Power,2,0.3020,B. Jones,rebounds,8.5,under,-110,0.6200,NY @ CHI,2025-07-07T14:35:22.122925
+2,Power,2,0.3020,D. Smith,points,18.5,under,-120,0.6000,DAL @ PHX,2025-07-07T14:35:22.122925

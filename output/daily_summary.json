@@ -1,0 +1,11 @@
+{
+  "date": "2025-06-24",
+  "starting_bankroll": 10000.0,
+  "total_bets": 3,
+  "wins": 2,
+  "losses": 1,
+  "win_rate_percent": 66.67,
+  "roi_percent": 2.55,
+  "total_payout": 255.0,
+  "ending_bankroll": 10255.0
+}

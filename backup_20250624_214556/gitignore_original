@@ -1,0 +1,43 @@
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*/__pycache__/
+
+# Extra credentials
+credentials*.json
+
+SHEET_ID=REPLACE_ME
+GOOGLE_CREDS=credentials.json
+BANKROLL=10000
+# Paper Trading exclusions
+phasegrid/
+*.backup
+*.bak
+*_backup.py
+*_backup_*.py
+QUICKSTART_*.md
+output/simulation_*.csv
+output/daily_summary*.json
+.pytest_cache/
+__pycache__/
+*.pyc
+.coverage
+htmlcov/
+*.log
+.DS_Store
+.env.local
+.env.backup*
+.vscode/
+.idea/
+
+# Paper Trading outputs
+output/
+*.pyc
+__pycache__/
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+*_backup.py
