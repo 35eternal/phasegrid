@@ -1,0 +1,36 @@
+﻿A2: Sheet Health & Purge - Evidence Report
+==========================================
+Date: 2025-07-09
+Engineer: Eng-C
+Branch: feat/a2-sheet-health
+
+1. CSV Backup:
+   - Location: data/backup_paper_slips_20250709.csv
+   - Rows backed up: 52
+   - Backup completed: ✅
+
+2. Sheet Status:
+   - All rows cleared successfully: ✅
+   - Current row count: 0
+   - Screenshot captured: ✅
+
+3. Service Account Verification:
+   - Service Account: betsync-bot@wnba-betting-system.iam.gserviceaccount.com
+   - Sheet access: Editor permissions ✅
+   - Connection test: ✅ Sheet ping successful
+
+4. Authentication Fix:
+   - Created new service account key
+   - Updated credentials/service_account.json
+   - Fixed encoding issues
+   - sheet_ping.py output:
+     ✅ Successfully connected to sheet: 'BetSync Master Sheet'
+     ✅ Sheet read access confirmed
+     ✅ Sheet ping successful at 2025-07-09T12:20:24
+
+5. Configuration Updates:
+   - Updated .env with new GOOGLE_SA_JSON (base64)
+   - Added GOOGLE_APPLICATION_CREDENTIALS path
+   - Modified scripts/sheet_ping.py to load dotenv
+
+No blockers encountered. Task completed within time limit.
