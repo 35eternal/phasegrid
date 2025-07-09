@@ -1,0 +1,25 @@
+slip_id,slip_type,num_legs,expected_value,player,prop_type,line,over_under,odds,confidence,game,timestamp
+1,Flex,4,2.8199,Breanna Stewart,3-Pointers Made,2.5,over,-115,0.7663,NY @ LV,2025-07-07T15:33:03.836081
+1,Flex,4,2.8199,Caitlin Clark,Rebounds,6.4,over,-110,0.7065,ATL @ IND,2025-07-07T15:33:03.836081
+1,Flex,4,2.8199,Jewell Loyd,Rebounds,5.3,over,-120,0.6998,PHX @ SEA,2025-07-07T15:33:03.836081
+1,Flex,4,2.8199,A'ja Wilson,Rebounds,7.7,over,-120,0.7594,NY @ LV,2025-07-07T15:33:03.836081
+2,Power,3,1.5517,Breanna Stewart,3-Pointers Made,2.5,over,-115,0.7663,NY @ LV,2025-07-07T15:33:03.836081
+2,Power,3,1.5517,Caitlin Clark,Rebounds,6.4,over,-110,0.7065,ATL @ IND,2025-07-07T15:33:03.836081
+2,Power,3,1.5517,Jordin Canada,Points,10.3,over,-110,0.6917,LA @ CHI,2025-07-07T15:33:03.836081
+3,Power,3,1.5517,Breanna Stewart,3-Pointers Made,2.5,over,-115,0.7663,NY @ LV,2025-07-07T15:33:03.836081
+3,Power,3,1.5517,Jordin Canada,Points,10.3,over,-110,0.6917,LA @ CHI,2025-07-07T15:33:03.836081
+3,Power,3,1.5517,Caitlin Clark,Rebounds,6.4,over,-110,0.7065,ATL @ IND,2025-07-07T15:33:03.836081
+4,Power,3,1.4791,Breanna Stewart,3-Pointers Made,2.5,over,-115,0.7663,NY @ LV,2025-07-07T15:33:03.836081
+4,Power,3,1.4791,Caitlin Clark,Rebounds,6.4,over,-110,0.7065,ATL @ IND,2025-07-07T15:33:03.836081
+4,Power,3,1.4791,Jewell Loyd,Rebounds,5.3,over,-120,0.6998,PHX @ SEA,2025-07-07T15:33:03.836081
+5,Flex,3,1.4198,Breanna Stewart,3-Pointers Made,2.5,over,-115,0.7663,NY @ LV,2025-07-07T15:33:03.836081
+5,Flex,3,1.4198,Caitlin Clark,Rebounds,6.4,over,-110,0.7065,ATL @ IND,2025-07-07T15:33:03.836081
+5,Flex,3,1.4198,Jewell Loyd,Rebounds,5.3,over,-120,0.6998,PHX @ SEA,2025-07-07T15:33:03.836081
+6,Power,2,0.9323,Breanna Stewart,3-Pointers Made,2.5,over,-115,0.7663,NY @ LV,2025-07-07T15:33:03.836081
+6,Power,2,0.9323,Caitlin Clark,Rebounds,6.4,over,-110,0.7065,ATL @ IND,2025-07-07T15:33:03.836081
+7,Power,2,0.9072,Breanna Stewart,3-Pointers Made,2.5,over,-115,0.7663,NY @ LV,2025-07-07T15:33:03.836081
+7,Power,2,0.9072,Aliyah Boston,3-Pointers Made,2.5,over,-110,0.6973,ATL @ IND,2025-07-07T15:33:03.836081
+8,Power,2,0.8918,Breanna Stewart,3-Pointers Made,2.5,over,-115,0.7663,NY @ LV,2025-07-07T15:33:03.836081
+8,Power,2,0.8918,Jordin Canada,Points,10.3,over,-110,0.6917,LA @ CHI,2025-07-07T15:33:03.836081
+9,Flex,2,0.2473,Breanna Stewart,3-Pointers Made,2.5,over,-115,0.7663,NY @ LV,2025-07-07T15:33:03.836081
+9,Flex,2,0.2473,Caitlin Clark,Rebounds,6.4,over,-110,0.7065,ATL @ IND,2025-07-07T15:33:03.836081

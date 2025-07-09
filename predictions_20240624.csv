@@ -1,0 +1,4 @@
+game_id,bet_type,pick,odds,confidence
+G001,spread,home,-110,0.65
+G002,total,over,+120,0.55
+G003,moneyline,away,-150,0.70

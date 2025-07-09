@@ -6,12 +6,24 @@
     "original_name": "A'ja Wilson",
     "uuid": "23332075-8bce-4287-a04c-a945ba6431b4"
   },
+  "angel reese": {
+    "created_at": "2025-07-08T20:25:49.924297",
+    "last_accessed": "2025-07-08T20:25:49.924302",
+    "original_name": "Angel Reese",
+    "uuid": "2fec3629-0b0d-4e39-bc7b-aea64678a245"
+  },
   "breanna stewart": {
     "created_at": "2025-07-08T23:33:56.055728",
     "last_accessed": "2025-07-08T23:33:56.055728",
     "normalized_name": "breanna stewart",
     "original_name": "Breanna Stewart",
     "uuid": "953a9d3d-dfa0-4df7-b560-b93280dbd516"
+  },
+  "caitlin clark": {
+    "created_at": "2025-07-08T20:25:28.951863",
+    "last_accessed": "2025-07-08T20:25:28.951878",
+    "original_name": "Caitlin Clark",
+    "uuid": "6017eb77-0154-4a5a-9ba9-25a83cef70f3"
   },
   "diana taurasi": {
     "created_at": "2025-07-08T23:33:56.056480",
@@ -20,22 +32,17 @@
     "original_name": "Diana Taurasi",
     "uuid": "d8edcf65-7ba9-4424-ba62-8d088eb50a1b"
   },
-  "caitlin clark": {
-    "uuid": "6017eb77-0154-4a5a-9ba9-25a83cef70f3",
-    "original_name": "Caitlin Clark",
-    "created_at": "2025-07-08T20:25:28.951863",
-    "last_accessed": "2025-07-08T20:25:28.951878"
-  },
-  "angel reese": {
-    "uuid": "2fec3629-0b0d-4e39-bc7b-aea64678a245",
-    "original_name": "Angel Reese",
-    "created_at": "2025-07-08T20:25:49.924297",
-    "last_accessed": "2025-07-08T20:25:49.924302"
-  },
   "sabrina ionescu": {
-    "uuid": "1b0b036c-7076-400d-9a20-2c499321d390",
-    "original_name": "Sabrina Ionescu",
     "created_at": "2025-07-08T20:25:57.911361",
-    "last_accessed": "2025-07-08T20:25:57.911367"
+    "last_accessed": "2025-07-08T20:25:57.911367",
+    "original_name": "Sabrina Ionescu",
+    "uuid": "1b0b036c-7076-400d-9a20-2c499321d390"
+  },
+  "test player": {
+    "created_at": "2025-07-09T21:59:06.377243",
+    "last_accessed": "2025-07-09T21:59:06.377243",
+    "normalized_name": "test player",
+    "original_name": "Test Player",
+    "uuid": "a06f2158-8afc-4e47-801c-55a82b217e74"
   }
 }

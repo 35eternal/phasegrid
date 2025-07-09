@@ -1,0 +1,821 @@
+﻿dry-run	UNKNOWN STEP	∩╗┐2025-07-08T12:18:23.9614588Z Current runner version: '2.325.0'
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9640754Z ##[group]Runner Image Provisioner
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9641813Z Hosted Compute Agent
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9642565Z Version: 20250620.352
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9643210Z Commit: f262f3aba23b10ea191b2a62bdee1ca4c3d344da
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9643878Z Build Date: 2025-06-20T19:27:17Z
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9644578Z ##[endgroup]
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9645137Z ##[group]Operating System
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9645684Z Ubuntu
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9646187Z 24.04.2
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9646660Z LTS
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9647111Z ##[endgroup]
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9647978Z ##[group]Runner Image
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9648553Z Image: ubuntu-24.04
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9649021Z Version: 20250622.1.0
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9650146Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250622.1/images/ubuntu/Ubuntu2404-Readme.md
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9651719Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250622.1
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9652817Z ##[endgroup]
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9653895Z ##[group]GITHUB_TOKEN Permissions
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9656576Z Contents: read
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9657122Z Metadata: read
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9658115Z Packages: read
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9658662Z ##[endgroup]
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9660707Z Secret source: Actions
+dry-run	UNKNOWN STEP	2025-07-08T12:18:23.9661795Z Prepare workflow directory
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.0074194Z Prepare all required actions
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.0129517Z Getting action download info
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.4820400Z ##[group]Download immutable action package 'actions/checkout@v3'
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.4821508Z Version: 3.6.0
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.4822578Z Digest: sha256:942562b9c7d4b1f2557f1da21f4d3eb4eb4fd01f2ad78b2a6e187d1b193e0a0f
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.4824034Z Source commit SHA: f43a0e5ff2bd294095638e18286ca9a3d1956744
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.4824794Z ##[endgroup]
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.5969751Z ##[group]Download immutable action package 'actions/setup-python@v4'
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.5970758Z Version: 4.9.1
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.5971654Z Digest: sha256:f03e505388af670b5a108629e0ba26befc08d5c62b41f46146a45fe29ae509a5
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.5972682Z Source commit SHA: 7f4fc3e22c37d6ff65e88745f38bd3157c663f7c
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.5973493Z ##[endgroup]
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.9150142Z Complete job name: dry-run
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.9838405Z ##[group]Run actions/checkout@v3
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.9839441Z with:
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.9839917Z   repository: 35eternal/phasegrid
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.9840633Z   token: ***
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.9841059Z   ssh-strict: true
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.9841514Z   persist-credentials: true
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.9842009Z   clean: true
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.9842448Z   sparse-checkout-cone-mode: true
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.9842985Z   fetch-depth: 1
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.9843417Z   fetch-tags: false
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.9843932Z   lfs: false
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.9844348Z   submodules: false
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.9844805Z   set-safe-directory: true
+dry-run	UNKNOWN STEP	2025-07-08T12:18:24.9845543Z ##[endgroup]
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.0703474Z Syncing repository: 35eternal/phasegrid
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.0705535Z ##[group]Getting Git version info
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.0706470Z Working directory is '/home/runner/work/phasegrid/phasegrid'
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.0708058Z [command]/usr/bin/git version
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.0918841Z git version 2.49.0
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.0948313Z ##[endgroup]
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.0962184Z Temporarily overriding HOME='/home/runner/work/_temp/2e79afa2-968e-44ef-8249-c95186bce782' before making global git config changes
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.0965688Z Adding repository directory to the temporary git global config as a safe directory
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.0968340Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/phasegrid/phasegrid
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.0999421Z Deleting the contents of '/home/runner/work/phasegrid/phasegrid'
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1003224Z ##[group]Initializing the repository
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1006008Z [command]/usr/bin/git init /home/runner/work/phasegrid/phasegrid
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1066552Z hint: Using 'master' as the name for the initial branch. This default branch name
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1069181Z hint: is subject to change. To configure the initial branch name to use in all
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1071680Z hint: of your new repositories, which will suppress this warning, call:
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1073911Z hint:
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1075720Z hint: 	git config --global init.defaultBranch <name>
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1078127Z hint:
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1080240Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1084142Z hint: 'development'. The just-created branch can be renamed via this command:
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1086083Z hint:
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1087079Z hint: 	git branch -m <name>
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1089012Z Initialized empty Git repository in /home/runner/work/phasegrid/phasegrid/.git/
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1092381Z [command]/usr/bin/git remote add origin https://github.com/35eternal/phasegrid
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1121497Z ##[endgroup]
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1123178Z ##[group]Disabling automatic garbage collection
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1124841Z [command]/usr/bin/git config --local gc.auto 0
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1154227Z ##[endgroup]
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1155845Z ##[group]Setting up auth
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1160912Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1190497Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1483137Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1514532Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1739386Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1771855Z ##[endgroup]
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1773265Z ##[group]Fetching the repository
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.1780728Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +35a3f95b364714d146444e45fc0b9068545fe08b:refs/remotes/origin/main
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4672685Z remote: Enumerating objects: 815, done.        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4675306Z remote: Counting objects:   0% (1/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4676731Z remote: Counting objects:   1% (9/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4678403Z remote: Counting objects:   2% (17/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4679912Z remote: Counting objects:   3% (25/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4681351Z remote: Counting objects:   4% (33/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4682430Z remote: Counting objects:   5% (41/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4683389Z remote: Counting objects:   6% (49/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4684343Z remote: Counting objects:   7% (58/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4685352Z remote: Counting objects:   8% (66/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4686310Z remote: Counting objects:   9% (74/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4687253Z remote: Counting objects:  10% (82/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4688504Z remote: Counting objects:  11% (90/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4690248Z remote: Counting objects:  12% (98/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4691843Z remote: Counting objects:  13% (106/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4693593Z remote: Counting objects:  14% (115/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4695610Z remote: Counting objects:  15% (123/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4697341Z remote: Counting objects:  16% (131/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4699244Z remote: Counting objects:  17% (139/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4700531Z remote: Counting objects:  18% (147/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4701874Z remote: Counting objects:  19% (155/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4703437Z remote: Counting objects:  20% (163/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4704936Z remote: Counting objects:  21% (172/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4706090Z remote: Counting objects:  22% (180/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4707658Z remote: Counting objects:  23% (188/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4709395Z remote: Counting objects:  24% (196/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4711272Z remote: Counting objects:  25% (204/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4712754Z remote: Counting objects:  26% (212/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4714227Z remote: Counting objects:  27% (221/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4715798Z remote: Counting objects:  28% (229/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4717294Z remote: Counting objects:  29% (237/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4719049Z remote: Counting objects:  30% (245/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4720541Z remote: Counting objects:  31% (253/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4722065Z remote: Counting objects:  32% (261/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4723702Z remote: Counting objects:  33% (269/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4725226Z remote: Counting objects:  34% (278/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4726744Z remote: Counting objects:  35% (286/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4728531Z remote: Counting objects:  36% (294/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4730068Z remote: Counting objects:  37% (302/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4731589Z remote: Counting objects:  38% (310/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4733195Z remote: Counting objects:  39% (318/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4734838Z remote: Counting objects:  40% (326/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4736472Z remote: Counting objects:  41% (335/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4738273Z remote: Counting objects:  42% (343/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4739943Z remote: Counting objects:  43% (351/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4741613Z remote: Counting objects:  44% (359/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4743299Z remote: Counting objects:  45% (367/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4744936Z remote: Counting objects:  46% (375/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4746553Z remote: Counting objects:  47% (384/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4748251Z remote: Counting objects:  48% (392/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4749828Z remote: Counting objects:  49% (400/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4751616Z remote: Counting objects:  50% (408/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4753196Z remote: Counting objects:  51% (416/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4754789Z remote: Counting objects:  52% (424/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4756345Z remote: Counting objects:  53% (432/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4758001Z remote: Counting objects:  54% (441/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4759529Z remote: Counting objects:  55% (449/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4761055Z remote: Counting objects:  56% (457/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4762599Z remote: Counting objects:  57% (465/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4764122Z remote: Counting objects:  58% (473/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4765662Z remote: Counting objects:  59% (481/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4767197Z remote: Counting objects:  60% (489/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4768845Z remote: Counting objects:  61% (498/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4770400Z remote: Counting objects:  62% (506/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4771940Z remote: Counting objects:  63% (514/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4773495Z remote: Counting objects:  64% (522/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4775011Z remote: Counting objects:  65% (530/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4776532Z remote: Counting objects:  66% (538/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4778167Z remote: Counting objects:  67% (547/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4779714Z remote: Counting objects:  68% (555/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4781233Z remote: Counting objects:  69% (563/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4782768Z remote: Counting objects:  70% (571/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4784330Z remote: Counting objects:  71% (579/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4785896Z remote: Counting objects:  72% (587/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4787550Z remote: Counting objects:  73% (595/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4789272Z remote: Counting objects:  74% (604/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4790840Z remote: Counting objects:  75% (612/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4792405Z remote: Counting objects:  76% (620/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4793954Z remote: Counting objects:  77% (628/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4795507Z remote: Counting objects:  78% (636/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4797028Z remote: Counting objects:  79% (644/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4798651Z remote: Counting objects:  80% (652/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4800178Z remote: Counting objects:  81% (661/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4801721Z remote: Counting objects:  82% (669/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4803243Z remote: Counting objects:  83% (677/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4804765Z remote: Counting objects:  84% (685/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4806324Z remote: Counting objects:  85% (693/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4807933Z remote: Counting objects:  86% (701/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4809472Z remote: Counting objects:  87% (710/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4811000Z remote: Counting objects:  88% (718/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4812535Z remote: Counting objects:  89% (726/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4814061Z remote: Counting objects:  90% (734/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4815557Z remote: Counting objects:  91% (742/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4817050Z remote: Counting objects:  92% (750/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4818651Z remote: Counting objects:  93% (758/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4820338Z remote: Counting objects:  94% (767/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4822042Z remote: Counting objects:  95% (775/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4824162Z remote: Counting objects:  96% (783/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4825628Z remote: Counting objects:  97% (791/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4827061Z remote: Counting objects:  98% (799/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4828621Z remote: Counting objects:  99% (807/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4830121Z remote: Counting objects: 100% (815/815)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4831639Z remote: Counting objects: 100% (815/815), done.        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4833201Z remote: Compressing objects:   0% (1/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4834842Z remote: Compressing objects:   1% (8/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4836427Z remote: Compressing objects:   2% (15/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4838172Z remote: Compressing objects:   3% (22/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4839663Z remote: Compressing objects:   4% (30/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4841139Z remote: Compressing objects:   5% (37/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4842594Z remote: Compressing objects:   6% (44/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4844086Z remote: Compressing objects:   7% (51/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4845567Z remote: Compressing objects:   8% (59/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4847032Z remote: Compressing objects:   9% (66/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4848613Z remote: Compressing objects:  10% (73/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4850084Z remote: Compressing objects:  11% (81/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4851553Z remote: Compressing objects:  12% (88/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4853025Z remote: Compressing objects:  13% (95/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4854495Z remote: Compressing objects:  14% (102/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4855963Z remote: Compressing objects:  15% (110/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4857543Z remote: Compressing objects:  16% (117/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4859054Z remote: Compressing objects:  17% (124/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4860571Z remote: Compressing objects:  18% (132/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4862061Z remote: Compressing objects:  19% (139/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.4933842Z remote: Compressing objects:  20% (146/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5499265Z remote: Compressing objects:  21% (153/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5502575Z remote: Compressing objects:  22% (161/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5511695Z remote: Compressing objects:  23% (168/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5519688Z remote: Compressing objects:  24% (175/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5536494Z remote: Compressing objects:  25% (182/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5542815Z remote: Compressing objects:  26% (190/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5545469Z remote: Compressing objects:  27% (197/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5548095Z remote: Compressing objects:  28% (204/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5550164Z remote: Compressing objects:  29% (212/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5552835Z remote: Compressing objects:  30% (219/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5554922Z remote: Compressing objects:  31% (226/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5557756Z remote: Compressing objects:  32% (233/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5562332Z remote: Compressing objects:  33% (241/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5569176Z remote: Compressing objects:  34% (248/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5579990Z remote: Compressing objects:  35% (255/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5583696Z remote: Compressing objects:  36% (263/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5591187Z remote: Compressing objects:  37% (270/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5596598Z remote: Compressing objects:  38% (277/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5598735Z remote: Compressing objects:  39% (284/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5600208Z remote: Compressing objects:  40% (292/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5601641Z remote: Compressing objects:  41% (299/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5606556Z remote: Compressing objects:  42% (306/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5614976Z remote: Compressing objects:  43% (314/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5618515Z remote: Compressing objects:  44% (321/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5630986Z remote: Compressing objects:  45% (328/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5642275Z remote: Compressing objects:  46% (335/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5660155Z remote: Compressing objects:  47% (343/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5678723Z remote: Compressing objects:  48% (350/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5682841Z remote: Compressing objects:  49% (357/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5685343Z remote: Compressing objects:  50% (364/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5690154Z remote: Compressing objects:  51% (372/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5708206Z remote: Compressing objects:  52% (379/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5714597Z remote: Compressing objects:  53% (386/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5721080Z remote: Compressing objects:  54% (394/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5727677Z remote: Compressing objects:  55% (401/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5743015Z remote: Compressing objects:  56% (408/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5760150Z remote: Compressing objects:  57% (415/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5766352Z remote: Compressing objects:  58% (423/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5769888Z remote: Compressing objects:  59% (430/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5772053Z remote: Compressing objects:  60% (437/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5776594Z remote: Compressing objects:  61% (445/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5784233Z remote: Compressing objects:  62% (452/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5794197Z remote: Compressing objects:  63% (459/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5809289Z remote: Compressing objects:  64% (466/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5816765Z remote: Compressing objects:  65% (474/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5822909Z remote: Compressing objects:  66% (481/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5825089Z remote: Compressing objects:  67% (488/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5826999Z remote: Compressing objects:  68% (496/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5829520Z remote: Compressing objects:  69% (503/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5831914Z remote: Compressing objects:  70% (510/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5833772Z remote: Compressing objects:  71% (517/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5856847Z remote: Compressing objects:  72% (525/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5865125Z remote: Compressing objects:  73% (532/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.5875042Z remote: Compressing objects:  74% (539/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8040501Z remote: Compressing objects:  75% (546/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8052072Z remote: Compressing objects:  76% (554/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8055103Z remote: Compressing objects:  77% (561/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8059251Z remote: Compressing objects:  78% (568/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8068272Z remote: Compressing objects:  79% (576/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8072558Z remote: Compressing objects:  80% (583/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8074628Z remote: Compressing objects:  81% (590/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8076771Z remote: Compressing objects:  82% (597/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8078596Z remote: Compressing objects:  83% (605/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8104049Z remote: Compressing objects:  84% (612/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8105514Z remote: Compressing objects:  85% (619/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8115496Z remote: Compressing objects:  86% (627/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8117289Z remote: Compressing objects:  87% (634/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8119146Z remote: Compressing objects:  88% (641/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8142091Z remote: Compressing objects:  89% (648/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8147691Z remote: Compressing objects:  90% (656/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8150514Z remote: Compressing objects:  91% (663/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8152346Z remote: Compressing objects:  92% (670/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8157598Z remote: Compressing objects:  93% (678/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8159438Z remote: Compressing objects:  94% (685/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8161529Z remote: Compressing objects:  95% (692/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8164134Z remote: Compressing objects:  96% (699/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8165697Z remote: Compressing objects:  97% (707/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8168402Z remote: Compressing objects:  98% (714/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8169822Z remote: Compressing objects:  99% (721/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8171130Z remote: Compressing objects: 100% (728/728)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8172536Z remote: Compressing objects: 100% (728/728), done.        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8190372Z Receiving objects:   0% (1/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8191998Z Receiving objects:   1% (9/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8195453Z Receiving objects:   2% (17/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8197556Z Receiving objects:   3% (25/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8319732Z Receiving objects:   4% (33/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8326187Z Receiving objects:   5% (41/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8328912Z Receiving objects:   6% (49/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8340817Z Receiving objects:   7% (58/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8483273Z Receiving objects:   8% (66/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8491292Z Receiving objects:   9% (74/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8495550Z Receiving objects:  10% (82/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8498751Z Receiving objects:  11% (90/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8501343Z Receiving objects:  12% (98/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8541013Z Receiving objects:  13% (106/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8543150Z Receiving objects:  14% (115/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8614419Z Receiving objects:  15% (123/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8640748Z Receiving objects:  16% (131/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8653006Z Receiving objects:  17% (139/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8700805Z Receiving objects:  18% (147/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8740239Z Receiving objects:  19% (155/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8792657Z Receiving objects:  20% (163/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:25.8808441Z Receiving objects:  21% (172/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.0670980Z Receiving objects:  22% (180/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.0787932Z Receiving objects:  23% (188/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.0821224Z Receiving objects:  24% (196/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.1449281Z Receiving objects:  25% (204/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.1499534Z Receiving objects:  26% (212/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.1539507Z Receiving objects:  27% (221/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.1623460Z Receiving objects:  28% (229/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.1634386Z Receiving objects:  29% (237/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.2529339Z Receiving objects:  30% (245/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3029494Z Receiving objects:  31% (253/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3034456Z Receiving objects:  32% (261/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3348275Z Receiving objects:  33% (269/815)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3367733Z Receiving objects:  34% (278/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3382513Z Receiving objects:  35% (286/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3483416Z Receiving objects:  36% (294/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3594747Z Receiving objects:  37% (302/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3671806Z Receiving objects:  38% (310/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3724674Z Receiving objects:  39% (318/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3728083Z Receiving objects:  40% (326/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3730044Z Receiving objects:  41% (335/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3787986Z Receiving objects:  42% (343/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3793206Z Receiving objects:  43% (351/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3798135Z Receiving objects:  44% (359/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3801015Z Receiving objects:  45% (367/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3804388Z Receiving objects:  46% (375/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3814046Z Receiving objects:  47% (384/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3816405Z Receiving objects:  48% (392/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3819127Z Receiving objects:  49% (400/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3821568Z Receiving objects:  50% (408/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3823636Z Receiving objects:  51% (416/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3946656Z Receiving objects:  52% (424/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.3996243Z Receiving objects:  53% (432/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.4002102Z Receiving objects:  54% (441/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.4138450Z Receiving objects:  55% (449/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.4142196Z Receiving objects:  56% (457/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.4822659Z Receiving objects:  57% (465/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5315012Z Receiving objects:  58% (473/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5319273Z Receiving objects:  59% (481/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5325506Z Receiving objects:  60% (489/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5329527Z Receiving objects:  61% (498/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5332014Z Receiving objects:  62% (506/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5334509Z Receiving objects:  63% (514/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5337001Z Receiving objects:  64% (522/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5339843Z Receiving objects:  65% (530/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5344785Z Receiving objects:  66% (538/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5348605Z Receiving objects:  67% (547/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5351091Z Receiving objects:  68% (555/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5738384Z Receiving objects:  69% (563/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5740969Z Receiving objects:  70% (571/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5744240Z Receiving objects:  71% (579/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5748425Z Receiving objects:  72% (587/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5753329Z Receiving objects:  73% (595/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5755826Z Receiving objects:  74% (604/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5759765Z Receiving objects:  75% (612/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5763958Z Receiving objects:  76% (620/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5767245Z Receiving objects:  77% (628/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5770743Z Receiving objects:  78% (636/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5776491Z Receiving objects:  79% (644/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5781370Z Receiving objects:  80% (652/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5784850Z Receiving objects:  81% (661/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5790068Z Receiving objects:  82% (669/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5792888Z Receiving objects:  83% (677/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5800425Z Receiving objects:  84% (685/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5804616Z Receiving objects:  85% (693/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5809751Z Receiving objects:  86% (701/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5814587Z Receiving objects:  87% (710/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5821350Z Receiving objects:  88% (718/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5825282Z Receiving objects:  89% (726/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5830151Z Receiving objects:  90% (734/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5832589Z Receiving objects:  91% (742/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5836612Z Receiving objects:  92% (750/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5839652Z Receiving objects:  93% (758/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5842227Z Receiving objects:  94% (767/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5848938Z remote: Total 815 (delta 67), reused 745 (delta 60), pack-reused 0 (from 0)        
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5855141Z Receiving objects:  95% (775/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5857727Z Receiving objects:  96% (783/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5861222Z Receiving objects:  97% (791/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5864976Z Receiving objects:  98% (799/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5869576Z Receiving objects:  99% (807/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5872317Z Receiving objects: 100% (815/815), 4.04 MiB | 8.08 MiB/s
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5876181Z Receiving objects: 100% (815/815), 9.22 MiB | 12.01 MiB/s, done.
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5879859Z Resolving deltas:   0% (0/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5881465Z Resolving deltas:   2% (2/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5883276Z Resolving deltas:   4% (3/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5884913Z Resolving deltas:   5% (4/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5886529Z Resolving deltas:   7% (5/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5888322Z Resolving deltas:  10% (7/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5889845Z Resolving deltas:  11% (8/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5891452Z Resolving deltas:  13% (9/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5893083Z Resolving deltas:  14% (10/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5894661Z Resolving deltas:  16% (11/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5896218Z Resolving deltas:  17% (12/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5897951Z Resolving deltas:  19% (13/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5899516Z Resolving deltas:  22% (15/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5901070Z Resolving deltas:  23% (16/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5949651Z Resolving deltas:  25% (17/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5952607Z Resolving deltas:  26% (18/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5954331Z Resolving deltas:  28% (19/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5955994Z Resolving deltas:  29% (20/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5957899Z Resolving deltas:  31% (21/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5967238Z Resolving deltas:  32% (22/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5969133Z Resolving deltas:  34% (23/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5976443Z Resolving deltas:  35% (24/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5989616Z Resolving deltas:  37% (25/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.5997058Z Resolving deltas:  38% (26/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6029034Z Resolving deltas:  40% (27/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6039139Z Resolving deltas:  41% (28/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6259454Z Resolving deltas:  43% (29/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6409075Z Resolving deltas:  44% (30/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6459235Z Resolving deltas:  46% (31/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6478666Z Resolving deltas:  47% (32/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6490110Z Resolving deltas:  49% (33/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6494068Z Resolving deltas:  50% (34/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6497065Z Resolving deltas:  52% (35/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6500578Z Resolving deltas:  53% (36/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6503593Z Resolving deltas:  55% (37/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6505605Z Resolving deltas:  56% (38/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6508039Z Resolving deltas:  58% (39/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6515288Z Resolving deltas:  59% (40/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6517778Z Resolving deltas:  61% (41/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6520144Z Resolving deltas:  62% (42/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6522037Z Resolving deltas:  64% (43/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6524417Z Resolving deltas:  65% (44/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6526292Z Resolving deltas:  67% (45/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6528808Z Resolving deltas:  68% (46/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6530750Z Resolving deltas:  70% (47/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6532554Z Resolving deltas:  71% (48/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6550143Z Resolving deltas:  73% (49/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6553907Z Resolving deltas:  74% (50/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6556263Z Resolving deltas:  76% (51/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6559381Z Resolving deltas:  77% (52/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6561332Z Resolving deltas:  79% (53/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6562951Z Resolving deltas:  80% (54/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6564520Z Resolving deltas:  82% (55/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6566112Z Resolving deltas:  83% (56/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6568069Z Resolving deltas:  85% (57/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6569657Z Resolving deltas:  86% (58/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6571215Z Resolving deltas:  88% (59/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6572774Z Resolving deltas:  89% (60/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6574398Z Resolving deltas:  91% (61/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6575976Z Resolving deltas:  92% (62/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6834389Z Resolving deltas:  94% (63/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6957687Z Resolving deltas:  95% (64/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.6961117Z Resolving deltas:  97% (65/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.7143534Z Resolving deltas:  98% (66/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.7145471Z Resolving deltas: 100% (67/67)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.7147226Z Resolving deltas: 100% (67/67), done.
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.7220537Z From https://github.com/35eternal/phasegrid
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.7222150Z  * [new ref]         35a3f95b364714d146444e45fc0b9068545fe08b -> origin/main
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.7252437Z ##[endgroup]
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.7255267Z ##[group]Determining the checkout info
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.7258131Z ##[endgroup]
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.7260395Z ##[group]Checking out the ref
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.7262980Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.9520549Z Switched to a new branch 'main'
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.9525032Z branch 'main' set up to track 'origin/main'.
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.9548641Z ##[endgroup]
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.9586436Z [command]/usr/bin/git log -1 --format='%H'
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.9609194Z '35a3f95b364714d146444e45fc0b9068545fe08b'
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.9892333Z ##[group]Run actions/setup-python@v4
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.9893365Z with:
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.9894081Z   python-version: 3.11
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.9894934Z   check-latest: false
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.9896025Z   token: ***
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.9896796Z   update-environment: true
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.9898055Z   allow-prereleases: false
+dry-run	UNKNOWN STEP	2025-07-08T12:18:26.9898963Z ##[endgroup]
+dry-run	UNKNOWN STEP	2025-07-08T12:18:27.1562864Z ##[group]Installed versions
+dry-run	UNKNOWN STEP	2025-07-08T12:18:27.2240034Z Successfully set up CPython (3.11.13)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:27.2242660Z ##[endgroup]
+dry-run	UNKNOWN STEP	2025-07-08T12:18:27.2385624Z ##[group]Run python -m pip install --upgrade pip
+dry-run	UNKNOWN STEP	2025-07-08T12:18:27.2386930Z [36;1mpython -m pip install --upgrade pip[0m
+dry-run	UNKNOWN STEP	2025-07-08T12:18:27.2388244Z [36;1mpip install -r requirements.txt[0m
+dry-run	UNKNOWN STEP	2025-07-08T12:18:27.2618662Z shell: /usr/bin/bash -e {0}
+dry-run	UNKNOWN STEP	2025-07-08T12:18:27.2619604Z env:
+dry-run	UNKNOWN STEP	2025-07-08T12:18:27.2620591Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+dry-run	UNKNOWN STEP	2025-07-08T12:18:27.2622239Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+dry-run	UNKNOWN STEP	2025-07-08T12:18:27.2623861Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+dry-run	UNKNOWN STEP	2025-07-08T12:18:27.2625311Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+dry-run	UNKNOWN STEP	2025-07-08T12:18:27.2626945Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+dry-run	UNKNOWN STEP	2025-07-08T12:18:27.2628497Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+dry-run	UNKNOWN STEP	2025-07-08T12:18:27.2629671Z ##[endgroup]
+dry-run	UNKNOWN STEP	2025-07-08T12:18:30.2855478Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages (25.1.1)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:30.9140280Z Collecting python-dotenv>=1.0.0 (from -r requirements.txt (line 2))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:30.9488371Z   Downloading python_dotenv-1.1.1-py3-none-any.whl.metadata (24 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:30.9860353Z Collecting requests>=2.31.0 (from -r requirements.txt (line 3))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:30.9899930Z   Downloading requests-2.32.4-py3-none-any.whl.metadata (4.9 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.0075027Z Collecting tenacity>=8.2.3 (from -r requirements.txt (line 4))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.0113282Z   Downloading tenacity-9.1.2-py3-none-any.whl.metadata (1.2 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.0559813Z Collecting google-auth>=2.23.0 (from -r requirements.txt (line 7))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.0600581Z   Downloading google_auth-2.40.3-py2.py3-none-any.whl.metadata (6.2 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.0796857Z Collecting google-auth-oauthlib>=1.1.0 (from -r requirements.txt (line 8))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.0840127Z   Downloading google_auth_oauthlib-1.2.2-py3-none-any.whl.metadata (2.7 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.1330714Z Collecting google-api-python-client>=2.100.0 (from -r requirements.txt (line 9))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.1367758Z   Downloading google_api_python_client-2.175.0-py3-none-any.whl.metadata (7.0 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.1845148Z Collecting twilio>=8.10.0 (from -r requirements.txt (line 11))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.1942599Z   Downloading twilio-9.6.4-py2.py3-none-any.whl.metadata (13 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.2284782Z Collecting pytest>=7.4.0 (from -r requirements.txt (line 13))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.2328544Z   Downloading pytest-8.4.1-py3-none-any.whl.metadata (7.7 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.2491564Z Collecting pytest-cov>=4.1.0 (from -r requirements.txt (line 14))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.2528431Z   Downloading pytest_cov-6.2.1-py3-none-any.whl.metadata (30 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.2722643Z Collecting pytest-mock>=3.12.0 (from -r requirements.txt (line 15))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.2760151Z   Downloading pytest_mock-3.14.1-py3-none-any.whl.metadata (3.9 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.3763934Z Collecting pandas>=2.1.0 (from -r requirements.txt (line 17))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.3804520Z   Downloading pandas-2.3.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (91 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.5748020Z Collecting numpy>=1.24.0 (from -r requirements.txt (line 18))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.5790144Z   Downloading numpy-2.3.1-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (62 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.6020641Z Collecting python-dateutil>=2.8.2 (from -r requirements.txt (line 20))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.6056535Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.6236111Z Collecting colorlog>=6.7.0 (from -r requirements.txt (line 22))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.6273119Z   Downloading colorlog-6.9.0-py3-none-any.whl.metadata (10 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.6451678Z Collecting typing-extensions>=4.8.0 (from -r requirements.txt (line 24))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.6489131Z   Downloading typing_extensions-4.14.1-py3-none-any.whl.metadata (3.0 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.7117292Z Collecting black>=23.9.0 (from -r requirements.txt (line 26))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.7158606Z   Downloading black-25.1.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl.metadata (81 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.7424662Z Collecting flake8>=6.1.0 (from -r requirements.txt (line 27))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.7462012Z   Downloading flake8-7.3.0-py2.py3-none-any.whl.metadata (3.8 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.8330577Z Collecting mypy>=1.5.0 (from -r requirements.txt (line 28))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.8379606Z   Downloading mypy-1.16.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl.metadata (2.1 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.8663846Z Collecting isort>=5.12.0 (from -r requirements.txt (line 29))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.8701992Z   Downloading isort-6.0.1-py3-none-any.whl.metadata (11 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.9114401Z Collecting sphinx>=7.2.0 (from -r requirements.txt (line 31))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.9153542Z   Downloading sphinx-8.2.3-py3-none-any.whl.metadata (7.0 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.9365712Z Collecting sphinx-rtd-theme>=1.3.0 (from -r requirements.txt (line 32))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.9410334Z   Downloading sphinx_rtd_theme-3.0.2-py2.py3-none-any.whl.metadata (4.4 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.9616942Z Collecting gspread (from -r requirements.txt (line 33))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.9654963Z   Downloading gspread-6.2.1-py3-none-any.whl.metadata (11 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:31.9996890Z Collecting nba-api (from -r requirements.txt (line 34))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.0044972Z   Downloading nba_api-1.10.0-py3-none-any.whl.metadata (5.8 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.0215911Z Collecting beautifulsoup4 (from -r requirements.txt (line 35))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.0253713Z   Downloading beautifulsoup4-4.13.4-py3-none-any.whl.metadata (3.8 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.3832807Z Collecting ruff>=0.1.0 (from -r requirements.txt (line 38))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.3875446Z   Downloading ruff-0.12.2-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (25 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.4245981Z Collecting plotly>=5.14.0 (from -r requirements.txt (line 40))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.4285754Z   Downloading plotly-6.2.0-py3-none-any.whl.metadata (8.5 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.5042970Z Collecting charset_normalizer<4,>=2 (from requests>=2.31.0->-r requirements.txt (line 3))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.5084982Z   Downloading charset_normalizer-3.4.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (35 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.5245779Z Collecting idna<4,>=2.5 (from requests>=2.31.0->-r requirements.txt (line 3))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.5282342Z   Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.5557037Z Collecting urllib3<3,>=1.21.1 (from requests>=2.31.0->-r requirements.txt (line 3))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.5595440Z   Downloading urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.5792275Z Collecting certifi>=2017.4.17 (from requests>=2.31.0->-r requirements.txt (line 3))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.5829528Z   Downloading certifi-2025.6.15-py3-none-any.whl.metadata (2.4 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.6123584Z Collecting cachetools<6.0,>=2.0.0 (from google-auth>=2.23.0->-r requirements.txt (line 7))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.6163406Z   Downloading cachetools-5.5.2-py3-none-any.whl.metadata (5.4 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.6346815Z Collecting pyasn1-modules>=0.2.1 (from google-auth>=2.23.0->-r requirements.txt (line 7))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.6383586Z   Downloading pyasn1_modules-0.4.2-py3-none-any.whl.metadata (3.5 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.6550353Z Collecting rsa<5,>=3.1.4 (from google-auth>=2.23.0->-r requirements.txt (line 7))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.6590722Z   Downloading rsa-4.9.1-py3-none-any.whl.metadata (5.6 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.6830224Z Collecting pyasn1>=0.1.3 (from rsa<5,>=3.1.4->google-auth>=2.23.0->-r requirements.txt (line 7))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.6867931Z   Downloading pyasn1-0.6.1-py3-none-any.whl.metadata (8.4 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.7132111Z Collecting requests-oauthlib>=0.7.0 (from google-auth-oauthlib>=1.1.0->-r requirements.txt (line 8))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.7167853Z   Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl.metadata (11 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.7324856Z Collecting httplib2<1.0.0,>=0.19.0 (from google-api-python-client>=2.100.0->-r requirements.txt (line 9))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.7361554Z   Downloading httplib2-0.22.0-py3-none-any.whl.metadata (2.6 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.7714811Z Collecting google-auth-httplib2<1.0.0,>=0.2.0 (from google-api-python-client>=2.100.0->-r requirements.txt (line 9))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.7751933Z   Downloading google_auth_httplib2-0.2.0-py2.py3-none-any.whl.metadata (2.2 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.8374539Z Collecting google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0,>=1.31.5 (from google-api-python-client>=2.100.0->-r requirements.txt (line 9))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.8413302Z   Downloading google_api_core-2.25.1-py3-none-any.whl.metadata (3.0 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.8552374Z Collecting uritemplate<5,>=3.0.1 (from google-api-python-client>=2.100.0->-r requirements.txt (line 9))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.8588562Z   Downloading uritemplate-4.2.0-py3-none-any.whl.metadata (2.6 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.8789555Z Collecting googleapis-common-protos<2.0.0,>=1.56.2 (from google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0,>=1.31.5->google-api-python-client>=2.100.0->-r requirements.txt (line 9))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:32.8826757Z   Downloading googleapis_common_protos-1.70.0-py3-none-any.whl.metadata (9.3 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:33.1211936Z Collecting protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.19.5 (from google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0,>=1.31.5->google-api-python-client>=2.100.0->-r requirements.txt (line 9))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:33.1281627Z   Downloading protobuf-6.31.1-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:33.1453346Z Collecting proto-plus<2.0.0,>=1.22.3 (from google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0,>=1.31.5->google-api-python-client>=2.100.0->-r requirements.txt (line 9))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:33.1491779Z   Downloading proto_plus-1.26.1-py3-none-any.whl.metadata (2.2 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:33.2642974Z Collecting pyparsing!=3.0.0,!=3.0.1,!=3.0.2,!=3.0.3,<4,>=2.4.2 (from httplib2<1.0.0,>=0.19.0->google-api-python-client>=2.100.0->-r requirements.txt (line 9))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:33.2690673Z   Downloading pyparsing-3.2.3-py3-none-any.whl.metadata (5.0 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:33.3492989Z Collecting PyJWT<3.0.0,>=2.0.0 (from twilio>=8.10.0->-r requirements.txt (line 11))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:33.3531170Z   Downloading PyJWT-2.10.1-py3-none-any.whl.metadata (4.0 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:33.8538973Z Collecting aiohttp>=3.8.4 (from twilio>=8.10.0->-r requirements.txt (line 11))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:33.8579046Z   Downloading aiohttp-3.12.13-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.6 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:33.8736227Z Collecting aiohttp-retry>=2.8.3 (from twilio>=8.10.0->-r requirements.txt (line 11))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:33.8771691Z   Downloading aiohttp_retry-2.9.1-py3-none-any.whl.metadata (8.8 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:33.8910505Z Collecting iniconfig>=1 (from pytest>=7.4.0->-r requirements.txt (line 13))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:33.8961873Z   Downloading iniconfig-2.1.0-py3-none-any.whl.metadata (2.7 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:33.9135823Z Collecting packaging>=20 (from pytest>=7.4.0->-r requirements.txt (line 13))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:33.9171376Z   Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:33.9304963Z Collecting pluggy<2,>=1.5 (from pytest>=7.4.0->-r requirements.txt (line 13))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:33.9341114Z   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:33.9551284Z Collecting pygments>=2.7.2 (from pytest>=7.4.0->-r requirements.txt (line 13))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:33.9588981Z   Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.2412951Z Collecting coverage>=7.5 (from coverage[toml]>=7.5->pytest-cov>=4.1.0->-r requirements.txt (line 14))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.2455783Z   Downloading coverage-7.9.2-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (8.9 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.2930020Z Collecting pytz>=2020.1 (from pandas>=2.1.0->-r requirements.txt (line 17))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.2968247Z   Downloading pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.3116895Z Collecting tzdata>=2022.7 (from pandas>=2.1.0->-r requirements.txt (line 17))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.3152446Z   Downloading tzdata-2025.2-py2.py3-none-any.whl.metadata (1.4 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.3320201Z Collecting six>=1.5 (from python-dateutil>=2.8.2->-r requirements.txt (line 20))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.3356819Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.3564014Z Collecting click>=8.0.0 (from black>=23.9.0->-r requirements.txt (line 26))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.3601839Z   Downloading click-8.2.1-py3-none-any.whl.metadata (2.5 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.3732484Z Collecting mypy-extensions>=0.4.3 (from black>=23.9.0->-r requirements.txt (line 26))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.3770192Z   Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.3928064Z Collecting pathspec>=0.9.0 (from black>=23.9.0->-r requirements.txt (line 26))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.3963300Z   Downloading pathspec-0.12.1-py3-none-any.whl.metadata (21 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.4150085Z Collecting platformdirs>=2 (from black>=23.9.0->-r requirements.txt (line 26))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.4186260Z   Downloading platformdirs-4.3.8-py3-none-any.whl.metadata (12 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.4330078Z Collecting mccabe<0.8.0,>=0.7.0 (from flake8>=6.1.0->-r requirements.txt (line 27))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.4369228Z   Downloading mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.4505196Z Collecting pycodestyle<2.15.0,>=2.14.0 (from flake8>=6.1.0->-r requirements.txt (line 27))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.4542522Z   Downloading pycodestyle-2.14.0-py2.py3-none-any.whl.metadata (4.5 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.4701472Z Collecting pyflakes<3.5.0,>=3.4.0 (from flake8>=6.1.0->-r requirements.txt (line 27))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.4738205Z   Downloading pyflakes-3.4.0-py2.py3-none-any.whl.metadata (3.5 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.4968486Z Collecting sphinxcontrib-applehelp>=1.0.7 (from sphinx>=7.2.0->-r requirements.txt (line 31))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.5012367Z   Downloading sphinxcontrib_applehelp-2.0.0-py3-none-any.whl.metadata (2.3 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.5118558Z Collecting sphinxcontrib-devhelp>=1.0.6 (from sphinx>=7.2.0->-r requirements.txt (line 31))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.5154639Z   Downloading sphinxcontrib_devhelp-2.0.0-py3-none-any.whl.metadata (2.3 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.5261441Z Collecting sphinxcontrib-htmlhelp>=2.0.6 (from sphinx>=7.2.0->-r requirements.txt (line 31))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.5298005Z   Downloading sphinxcontrib_htmlhelp-2.1.0-py3-none-any.whl.metadata (2.3 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.5394625Z Collecting sphinxcontrib-jsmath>=1.0.1 (from sphinx>=7.2.0->-r requirements.txt (line 31))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.5433436Z   Downloading sphinxcontrib_jsmath-1.0.1-py2.py3-none-any.whl.metadata (1.4 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.5537141Z Collecting sphinxcontrib-qthelp>=1.0.6 (from sphinx>=7.2.0->-r requirements.txt (line 31))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.5574071Z   Downloading sphinxcontrib_qthelp-2.0.0-py3-none-any.whl.metadata (2.3 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.5680809Z Collecting sphinxcontrib-serializinghtml>=1.1.9 (from sphinx>=7.2.0->-r requirements.txt (line 31))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.5718780Z   Downloading sphinxcontrib_serializinghtml-2.0.0-py3-none-any.whl.metadata (2.4 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.5868117Z Collecting Jinja2>=3.1 (from sphinx>=7.2.0->-r requirements.txt (line 31))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.5904328Z   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.6090710Z Collecting docutils<0.22,>=0.20 (from sphinx>=7.2.0->-r requirements.txt (line 31))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.6129368Z   Downloading docutils-0.21.2-py3-none-any.whl.metadata (2.8 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.6237718Z Collecting snowballstemmer>=2.2 (from sphinx>=7.2.0->-r requirements.txt (line 31))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.6276826Z   Downloading snowballstemmer-3.0.1-py3-none-any.whl.metadata (7.9 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.7146194Z Collecting babel>=2.13 (from sphinx>=7.2.0->-r requirements.txt (line 31))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.7187296Z   Downloading babel-2.17.0-py3-none-any.whl.metadata (2.0 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.7322047Z Collecting alabaster>=0.7.14 (from sphinx>=7.2.0->-r requirements.txt (line 31))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.7358948Z   Downloading alabaster-1.0.0-py3-none-any.whl.metadata (2.8 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.7472457Z Collecting imagesize>=1.3 (from sphinx>=7.2.0->-r requirements.txt (line 31))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.7511412Z   Downloading imagesize-1.4.1-py2.py3-none-any.whl.metadata (1.5 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.7721899Z Collecting roman-numerals-py>=1.0.0 (from sphinx>=7.2.0->-r requirements.txt (line 31))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.7758420Z   Downloading roman_numerals_py-3.1.0-py3-none-any.whl.metadata (3.6 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.8090827Z Collecting sphinxcontrib-jquery<5,>=4 (from sphinx-rtd-theme>=1.3.0->-r requirements.txt (line 32))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.8129188Z   Downloading sphinxcontrib_jquery-4.1-py2.py3-none-any.whl.metadata (2.6 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.8960577Z Collecting soupsieve>1.2 (from beautifulsoup4->-r requirements.txt (line 35))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.8998241Z   Downloading soupsieve-2.7-py3-none-any.whl.metadata (4.6 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.9450708Z Collecting narwhals>=1.15.1 (from plotly>=5.14.0->-r requirements.txt (line 40))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.9490422Z   Downloading narwhals-1.46.0-py3-none-any.whl.metadata (11 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.9692907Z Collecting aiohappyeyeballs>=2.5.0 (from aiohttp>=3.8.4->twilio>=8.10.0->-r requirements.txt (line 11))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.9731603Z   Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata (5.9 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.9854258Z Collecting aiosignal>=1.1.2 (from aiohttp>=3.8.4->twilio>=8.10.0->-r requirements.txt (line 11))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:34.9893700Z   Downloading aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.0050227Z Collecting attrs>=17.3.0 (from aiohttp>=3.8.4->twilio>=8.10.0->-r requirements.txt (line 11))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.0085898Z   Downloading attrs-25.3.0-py3-none-any.whl.metadata (10 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.0751241Z Collecting frozenlist>=1.1.1 (from aiohttp>=3.8.4->twilio>=8.10.0->-r requirements.txt (line 11))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.0794101Z   Downloading frozenlist-1.7.0-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (18 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.2918449Z Collecting multidict<7.0,>=4.5 (from aiohttp>=3.8.4->twilio>=8.10.0->-r requirements.txt (line 11))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.2959405Z   Downloading multidict-6.6.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.3 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.3368020Z Collecting propcache>=0.2.0 (from aiohttp>=3.8.4->twilio>=8.10.0->-r requirements.txt (line 11))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.3406372Z   Downloading propcache-0.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (12 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.5693519Z Collecting yarl<2.0,>=1.17.0 (from aiohttp>=3.8.4->twilio>=8.10.0->-r requirements.txt (line 11))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.5735247Z   Downloading yarl-1.20.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (73 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.7560665Z Collecting MarkupSafe>=2.0 (from Jinja2>=3.1->sphinx>=7.2.0->-r requirements.txt (line 31))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.7599945Z   Downloading MarkupSafe-3.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.0 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.8017733Z Collecting oauthlib>=3.0.0 (from requests-oauthlib>=0.7.0->google-auth-oauthlib>=1.1.0->-r requirements.txt (line 8))
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.8054710Z   Downloading oauthlib-3.3.1-py3-none-any.whl.metadata (7.9 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.8421147Z Downloading python_dotenv-1.1.1-py3-none-any.whl (20 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.8475730Z Downloading requests-2.32.4-py3-none-any.whl (64 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.8534671Z Downloading charset_normalizer-3.4.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (147 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.8601046Z Downloading idna-3.10-py3-none-any.whl (70 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.8659787Z Downloading urllib3-2.5.0-py3-none-any.whl (129 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.8719007Z Downloading tenacity-9.1.2-py3-none-any.whl (28 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.8782204Z Downloading google_auth-2.40.3-py2.py3-none-any.whl (216 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.8847367Z Downloading cachetools-5.5.2-py3-none-any.whl (10 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.8903629Z Downloading rsa-4.9.1-py3-none-any.whl (34 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.8965180Z Downloading google_auth_oauthlib-1.2.2-py3-none-any.whl (19 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.9021666Z Downloading google_api_python_client-2.175.0-py3-none-any.whl (13.7 MB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.9631064Z    ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöü 13.7/13.7 MB 231.8 MB/s eta 0:00:00
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.9671375Z Downloading google_api_core-2.25.1-py3-none-any.whl (160 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.9734271Z Downloading google_auth_httplib2-0.2.0-py2.py3-none-any.whl (9.3 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.9789845Z Downloading googleapis_common_protos-1.70.0-py3-none-any.whl (294 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:35.9856210Z Downloading httplib2-0.22.0-py3-none-any.whl (96 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.0049971Z Downloading proto_plus-1.26.1-py3-none-any.whl (50 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.0105731Z Downloading protobuf-6.31.1-cp39-abi3-manylinux2014_x86_64.whl (321 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.0174142Z Downloading pyparsing-3.2.3-py3-none-any.whl (111 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.0232617Z Downloading uritemplate-4.2.0-py3-none-any.whl (11 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.0297957Z Downloading twilio-9.6.4-py2.py3-none-any.whl (1.9 MB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.0415231Z    ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöü 1.9/1.9 MB 178.2 MB/s eta 0:00:00
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.0455183Z Downloading PyJWT-2.10.1-py3-none-any.whl (22 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.0512008Z Downloading pytest-8.4.1-py3-none-any.whl (365 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.0584741Z Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.0640550Z Downloading pytest_cov-6.2.1-py3-none-any.whl (24 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.0717764Z Downloading pytest_mock-3.14.1-py3-none-any.whl (9.9 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.0775553Z Downloading pandas-2.3.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.4 MB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.1339177Z    ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöü 12.4/12.4 MB 226.3 MB/s eta 0:00:00
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.1380973Z Downloading numpy-2.3.1-cp311-cp311-manylinux_2_28_x86_64.whl (16.9 MB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.2132802Z    ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöü 16.9/16.9 MB 230.4 MB/s eta 0:00:00
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.2180142Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.2355672Z Downloading colorlog-6.9.0-py3-none-any.whl (11 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.2432152Z Downloading typing_extensions-4.14.1-py3-none-any.whl (43 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.2493073Z Downloading black-25.1.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl (1.7 MB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.2600662Z    ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöü 1.7/1.7 MB 189.5 MB/s eta 0:00:00
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.2637181Z Downloading flake8-7.3.0-py2.py3-none-any.whl (57 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.2694249Z Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.2750145Z Downloading pycodestyle-2.14.0-py2.py3-none-any.whl (31 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.2805072Z Downloading pyflakes-3.4.0-py2.py3-none-any.whl (63 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.2894792Z Downloading mypy-1.16.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl (12.5 MB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.3550132Z    ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöü 12.5/12.5 MB 195.0 MB/s eta 0:00:00
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.3587672Z Downloading isort-6.0.1-py3-none-any.whl (94 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.3684323Z Downloading sphinx-8.2.3-py3-none-any.whl (3.6 MB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.3882469Z    ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöü 3.6/3.6 MB 195.0 MB/s eta 0:00:00
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.3920544Z Downloading docutils-0.21.2-py3-none-any.whl (587 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.3978964Z    ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöü 587.4/587.4 kB 93.5 MB/s eta 0:00:00
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.4016655Z Downloading sphinx_rtd_theme-3.0.2-py2.py3-none-any.whl (7.7 MB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.4401499Z    ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöü 7.7/7.7 MB 212.6 MB/s eta 0:00:00
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.4441395Z Downloading sphinxcontrib_jquery-4.1-py2.py3-none-any.whl (121 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.4521535Z Downloading gspread-6.2.1-py3-none-any.whl (59 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.4590689Z Downloading nba_api-1.10.0-py3-none-any.whl (285 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.4660632Z Downloading beautifulsoup4-4.13.4-py3-none-any.whl (187 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.4722866Z Downloading ruff-0.12.2-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.6 MB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.5302109Z    ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöü 11.6/11.6 MB 205.5 MB/s eta 0:00:00
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.5345974Z Downloading plotly-6.2.0-py3-none-any.whl (9.6 MB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.5776911Z    ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöü 9.6/9.6 MB 233.3 MB/s eta 0:00:00
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.5820748Z Downloading aiohttp-3.12.13-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.7 MB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.5966093Z    ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöü 1.7/1.7 MB 121.2 MB/s eta 0:00:00
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.6005005Z Downloading multidict-6.6.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (246 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.6071716Z Downloading yarl-1.20.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (348 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.6153132Z Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl (15 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.6210076Z Downloading aiohttp_retry-2.9.1-py3-none-any.whl (10.0 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.6267067Z Downloading aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.6323180Z Downloading alabaster-1.0.0-py3-none-any.whl (13 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.6376229Z Downloading attrs-25.3.0-py3-none-any.whl (63 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.6432966Z Downloading babel-2.17.0-py3-none-any.whl (10.2 MB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.6900427Z    ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöü 10.2/10.2 MB 224.6 MB/s eta 0:00:00
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.6939875Z Downloading certifi-2025.6.15-py3-none-any.whl (157 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.7002319Z Downloading click-8.2.1-py3-none-any.whl (102 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.7066719Z Downloading coverage-7.9.2-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (244 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.7134855Z Downloading frozenlist-1.7.0-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (235 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.7196095Z Downloading imagesize-1.4.1-py2.py3-none-any.whl (8.8 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.7252161Z Downloading iniconfig-2.1.0-py3-none-any.whl (6.0 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.7305702Z Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.7365426Z Downloading MarkupSafe-3.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (23 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.7420412Z Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.7474283Z Downloading narwhals-1.46.0-py3-none-any.whl (373 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.7546515Z Downloading packaging-25.0-py3-none-any.whl (66 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.7603419Z Downloading pathspec-0.12.1-py3-none-any.whl (31 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.7657051Z Downloading platformdirs-4.3.8-py3-none-any.whl (18 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.7714750Z Downloading propcache-0.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (213 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.7806796Z Downloading pyasn1-0.6.1-py3-none-any.whl (83 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.7867777Z Downloading pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.7930521Z Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.8019471Z    ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöü 1.2/1.2 MB 154.1 MB/s eta 0:00:00
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.8058670Z Downloading pytz-2025.2-py2.py3-none-any.whl (509 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.8133721Z Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl (24 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.8190600Z Downloading oauthlib-3.3.1-py3-none-any.whl (160 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.8310168Z Downloading roman_numerals_py-3.1.0-py3-none-any.whl (7.7 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.8365732Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.8422342Z Downloading snowballstemmer-3.0.1-py3-none-any.whl (103 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.8482889Z Downloading soupsieve-2.7-py3-none-any.whl (36 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.8539622Z Downloading sphinxcontrib_applehelp-2.0.0-py3-none-any.whl (119 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.8596898Z Downloading sphinxcontrib_devhelp-2.0.0-py3-none-any.whl (82 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.8653721Z Downloading sphinxcontrib_htmlhelp-2.1.0-py3-none-any.whl (98 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.8714644Z Downloading sphinxcontrib_jsmath-1.0.1-py2.py3-none-any.whl (5.1 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.8768063Z Downloading sphinxcontrib_qthelp-2.0.0-py3-none-any.whl (88 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.8824925Z Downloading sphinxcontrib_serializinghtml-2.0.0-py3-none-any.whl (92 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:36.8886275Z Downloading tzdata-2025.2-py2.py3-none-any.whl (347 kB)
+dry-run	UNKNOWN STEP	2025-07-08T12:18:37.2315635Z Installing collected packages: pytz, urllib3, uritemplate, tzdata, typing-extensions, tenacity, sphinxcontrib-serializinghtml, sphinxcontrib-qthelp, sphinxcontrib-jsmath, sphinxcontrib-htmlhelp, sphinxcontrib-devhelp, sphinxcontrib-applehelp, soupsieve, snowballstemmer, six, ruff, roman-numerals-py, python-dotenv, pyparsing, PyJWT, pygments, pyflakes, pycodestyle, pyasn1, protobuf, propcache, pluggy, platformdirs, pathspec, packaging, oauthlib, numpy, narwhals, mypy-extensions, multidict, mccabe, MarkupSafe, isort, iniconfig, imagesize, idna, frozenlist, docutils, coverage, colorlog, click, charset_normalizer, certifi, cachetools, babel, attrs, alabaster, aiohappyeyeballs, yarl, rsa, requests, python-dateutil, pytest, pyasn1-modules, proto-plus, plotly, mypy, Jinja2, httplib2, googleapis-common-protos, flake8, black, beautifulsoup4, aiosignal, sphinx, requests-oauthlib, pytest-mock, pytest-cov, pandas, google-auth, aiohttp, sphinxcontrib-jquery, nba-api, google-auth-oauthlib, google-auth-httplib2, google-api-core, aiohttp-retry, twilio, sphinx-rtd-theme, gspread, google-api-python-client
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.1389610Z 
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.1436857Z Successfully installed Jinja2-3.1.6 MarkupSafe-3.0.2 PyJWT-2.10.1 aiohappyeyeballs-2.6.1 aiohttp-3.12.13 aiohttp-retry-2.9.1 aiosignal-1.4.0 alabaster-1.0.0 attrs-25.3.0 babel-2.17.0 beautifulsoup4-4.13.4 black-25.1.0 cachetools-5.5.2 certifi-2025.6.15 charset_normalizer-3.4.2 click-8.2.1 colorlog-6.9.0 coverage-7.9.2 docutils-0.21.2 flake8-7.3.0 frozenlist-1.7.0 google-api-core-2.25.1 google-api-python-client-2.175.0 google-auth-2.40.3 google-auth-httplib2-0.2.0 google-auth-oauthlib-1.2.2 googleapis-common-protos-1.70.0 gspread-6.2.1 httplib2-0.22.0 idna-3.10 imagesize-1.4.1 iniconfig-2.1.0 isort-6.0.1 mccabe-0.7.0 multidict-6.6.3 mypy-1.16.1 mypy-extensions-1.1.0 narwhals-1.46.0 nba-api-1.10.0 numpy-2.3.1 oauthlib-3.3.1 packaging-25.0 pandas-2.3.1 pathspec-0.12.1 platformdirs-4.3.8 plotly-6.2.0 pluggy-1.6.0 propcache-0.3.2 proto-plus-1.26.1 protobuf-6.31.1 pyasn1-0.6.1 pyasn1-modules-0.4.2 pycodestyle-2.14.0 pyflakes-3.4.0 pygments-2.19.2 pyparsing-3.2.3 pytest-8.4.1 pytest-cov-6.2.1 pytest-mock-3.14.1 python-dateutil-2.9.0.post0 python-dotenv-1.1.1 pytz-2025.2 requests-2.32.4 requests-oauthlib-2.0.0 roman-numerals-py-3.1.0 rsa-4.9.1 ruff-0.12.2 six-1.17.0 snowballstemmer-3.0.1 soupsieve-2.7 sphinx-8.2.3 sphinx-rtd-theme-3.0.2 sphinxcontrib-applehelp-2.0.0 sphinxcontrib-devhelp-2.0.0 sphinxcontrib-htmlhelp-2.1.0 sphinxcontrib-jquery-4.1 sphinxcontrib-jsmath-1.0.1 sphinxcontrib-qthelp-2.0.0 sphinxcontrib-serializinghtml-2.0.0 tenacity-9.1.2 twilio-9.6.4 typing-extensions-4.14.1 tzdata-2025.2 uritemplate-4.2.0 urllib3-2.5.0 yarl-1.20.1
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8324240Z ##[group]Run echo "$GOOGLE_SA_JSON" | base64 -d > credentials.json
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8325005Z [36;1mecho "$GOOGLE_SA_JSON" | base64 -d > credentials.json[0m
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8325520Z [36;1mecho "DISCORD_WEBHOOK_URL=$DISCORD_WEBHOOK_URL" >> $GITHUB_ENV[0m
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8326046Z [36;1mecho "SLACK_WEBHOOK_URL=$SLACK_WEBHOOK_URL" >> $GITHUB_ENV[0m
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8384120Z shell: /usr/bin/bash -e {0}
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8384419Z env:
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8384756Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8385332Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8385892Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8386391Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8386884Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8387426Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8477670Z   GOOGLE_SA_JSON: ***
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8478149Z   DISCORD_WEBHOOK_URL: ***
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8478453Z   SLACK_WEBHOOK_URL: ***
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8478657Z ##[endgroup]
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8595713Z ##[group]Run python scripts/auto_paper.py --date today
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8596094Z [36;1mpython scripts/auto_paper.py --date today[0m
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8650736Z shell: /usr/bin/bash -e {0}
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8651017Z env:
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8651322Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8651856Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8652378Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8652842Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8653307Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8653772Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8654349Z   DISCORD_WEBHOOK_URL: ***
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8654724Z   SLACK_WEBHOOK_URL: ***
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8654998Z ##[endgroup]
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8931347Z Traceback (most recent call last):
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8939224Z   File "/home/runner/work/phasegrid/phasegrid/scripts/auto_paper.py", line 8, in <module>
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8940057Z     from odds_provider.prizepicks import fetch_current_board
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8940771Z ModuleNotFoundError: No module named 'odds_provider'
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.8982665Z ##[error]Process completed with exit code 1.
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.9090765Z Post job cleanup.
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.9797663Z [command]/usr/bin/git version
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.9832027Z git version 2.49.0
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.9874999Z Temporarily overriding HOME='/home/runner/work/_temp/bd1ee48c-4fcb-4273-88a9-d39b8bc58b2f' before making global git config changes
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.9876407Z Adding repository directory to the temporary git global config as a safe directory
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.9880033Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/phasegrid/phasegrid
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.9912649Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+dry-run	UNKNOWN STEP	2025-07-08T12:18:53.9942113Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+dry-run	UNKNOWN STEP	2025-07-08T12:18:54.0165447Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+dry-run	UNKNOWN STEP	2025-07-08T12:18:54.0185372Z http.https://github.com/.extraheader
+dry-run	UNKNOWN STEP	2025-07-08T12:18:54.0197642Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+dry-run	UNKNOWN STEP	2025-07-08T12:18:54.0227100Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+dry-run	UNKNOWN STEP	2025-07-08T12:18:54.0573646Z Cleaning up orphan processes

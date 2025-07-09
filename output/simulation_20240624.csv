@@ -1,0 +1,4 @@
+game_id,bet_type,pick,odds,stake,outcome,payout,profit,bankroll_after
+G001,spread,home,-110,50.0,win,95.45454545454545,45.45454545454545,1045.4545454545455
+G002,total,over,120,52.27,loss,0.0,-52.27,993.1845454545455
+G003,moneyline,away,-150,49.66,push,49.66,0.0,993.1845454545455

@@ -1,0 +1,62 @@
+﻿"""Transform PrizePicks data to SlipOptimizer format"""
+
+def transform_board_data(board_data):
+    """Transform PrizePicks board data to SlipOptimizer format
+    
+    Args:
+        board_data: List of props from PrizePicks
+        
+    Returns:
+        List of transformed bets ready for SlipOptimizer
+    """
+    transformed = []
+    
+    for prop in board_data:
+        # Check if it already has the required format
+        if 'odds' in prop and 'over_under' in prop:
+            transformed.append(prop)
+            continue
+            
+        # Transform from PrizePicks format
+        # Handle both over_odds/under_odds and odds field formats
+        if 'over_odds' in prop and 'under_odds' in prop:
+            # Create over version
+            over_bet = {
+                'player': prop.get('player'),
+                'team': prop.get('team'),
+                'prop_type': prop.get('prop_type'),
+                'line': prop.get('line'),
+                'over_under': 'over',
+                'odds': prop.get('over_odds'),
+                'confidence': prop.get('confidence', 0.55),
+                'game': prop.get('game')
+            }
+            transformed.append(over_bet)
+            
+            # Create under version
+            under_bet = {
+                'player': prop.get('player'),
+                'team': prop.get('team'),
+                'prop_type': prop.get('prop_type'),
+                'line': prop.get('line'),
+                'over_under': 'under',
+                'odds': prop.get('under_odds'),
+                'confidence': max(0.45, prop.get('confidence', 0.55) - 0.05),
+                'game': prop.get('game')
+            }
+            transformed.append(under_bet)
+        else:
+            # Single odds field - determine over/under from projection
+            bet = {
+                'player': prop.get('player'),
+                'team': prop.get('team'),
+                'prop_type': prop.get('prop_type', prop.get('stat_type')),
+                'line': prop.get('line', prop.get('line_score')),
+                'over_under': prop.get('pick', 'over'),  # Default to over if not specified
+                'odds': prop.get('odds', -110),  # Default odds
+                'confidence': prop.get('confidence', 0.55),
+                'game': prop.get('game', f"{prop.get('away_team', '')} @ {prop.get('home_team', '')}")
+            }
+            transformed.append(bet)
+    
+    return transformed

@@ -1,0 +1,6 @@
+game_id,bet_type,selection,odds,stake,result,payout,profit,running_bankroll
+nba_20240620_lal_bos,moneyline,Lakers,180.0,100.0,win,280.0,180.0,1180.0
+nba_20240620_gsw_dal,moneyline,Warriors,-150.0,150.0,loss,0.0,-150.0,1030.0
+nba_20240620_phx_den,total,over,-110.0,110.0,win,210.0,100.0,1130.0
+nba_20240620_mil_mia,spread,Heat,110.0,100.0,win,210.0,110.0,1240.0
+nfl_20240620_buf_kc,moneyline,Chiefs,-180.0,180.0,win,280.0,100.0,1340.0
