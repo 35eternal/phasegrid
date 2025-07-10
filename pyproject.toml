@@ -39,7 +39,7 @@ python_functions = ["test_*"]
 addopts = [
     "-ra",
     "--strict-markers",
-    "--cov-fail-under=14",
+    "--cov-fail-under=80",
 ]
 
 [tool.coverage.run]
