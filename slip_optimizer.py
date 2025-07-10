@@ -119,7 +119,9 @@ class SlipOptimizer:
                       available_bets: List[Dict],
                       target_slips: int = 5,
                       slip_types: List[str] = ['Power', 'Flex'],
-                      beam_width: Optional[int] = None) -> List[Slip]:
+                      beam_width: Optional[int] = None,
+                      *,
+                      phase_modifier: float = 1.0) -> List[Slip]:
         """
         Optimize slip selection using beam search.
         
@@ -128,6 +130,7 @@ class SlipOptimizer:
             target_slips: Number of slips to generate
             slip_types: Types of slips to generate
             beam_width: Beam width for search (None = use default)
+            phase_modifier: Multiplier for expected values based on phase (default: 1.0)
             
         Returns:
             List of optimized slips
@@ -156,9 +159,9 @@ class SlipOptimizer:
         # Generate slips for each type
         for slip_type in slip_types:
             if slip_type == 'Power':
-                slips = self._generate_power_slips(bets, target_slips // len(slip_types), beam_width)
+                slips = self._generate_power_slips(bets, target_slips // len(slip_types), beam_width, phase_modifier)
             else:  # Flex
-                slips = self._generate_flex_slips(bets, target_slips // len(slip_types), beam_width)
+                slips = self._generate_flex_slips(bets, target_slips // len(slip_types), beam_width, phase_modifier)
                 
             optimized_slips.extend(slips)
             
@@ -176,7 +179,7 @@ class SlipOptimizer:
                 
         return unique_slips[:target_slips]
         
-    def _generate_power_slips(self, bets: List[Bet], target_count: int, beam_width: int) -> List[Slip]:
+    def _generate_power_slips(self, bets: List[Bet], target_count: int, beam_width: int, phase_modifier: float = 1.0) -> List[Slip]:
         """Generate Power Play slips (all legs must win)."""
         slips = []
         
@@ -196,14 +199,15 @@ class SlipOptimizer:
                 num_legs=num_legs,
                 slip_type='Power',
                 beam_width=beam_width,
-                max_slips=target_count // 2
+                max_slips=target_count // 2,
+                phase_modifier=phase_modifier
             )
             
             slips.extend(leg_slips)
             
         return slips[:target_count]
         
-    def _generate_flex_slips(self, bets: List[Bet], target_count: int, beam_width: int) -> List[Slip]:
+    def _generate_flex_slips(self, bets: List[Bet], target_count: int, beam_width: int, phase_modifier: float = 1.0) -> List[Slip]:
         """Generate Flex Play slips (partial wins allowed)."""
         slips = []
         
@@ -234,7 +238,8 @@ class SlipOptimizer:
                     num_legs=num_legs,
                     slip_type='Flex',
                     beam_width=beam_width,
-                    max_slips=count
+                    max_slips=count,
+                    phase_modifier=phase_modifier
                 )
                 
                 slips.extend(leg_slips)
@@ -246,7 +251,8 @@ class SlipOptimizer:
                           num_legs: int,
                           slip_type: str,
                           beam_width: int,
-                          max_slips: int) -> List[Slip]:
+                          max_slips: int,
+                          phase_modifier: float = 1.0) -> List[Slip]:
         """Use beam search to find optimal slip combinations."""
         # Initialize beam with single bets
         beam = [(bet,) for bet in bets[:beam_width * 2]]
@@ -284,7 +290,7 @@ class SlipOptimizer:
         
         for bet_tuple in beam:
             if len(bet_tuple) == num_legs:
-                slip = self._create_slip(bet_tuple, slip_type)
+                slip = self._create_slip(bet_tuple, slip_type, phase_modifier)
                 if slip.expected_value > 0:
                     slips.append(slip)
                     
@@ -343,7 +349,7 @@ class SlipOptimizer:
         
         return avg_confidence + diversity_bonus + game_bonus
         
-    def _create_slip(self, bet_tuple: Tuple[Bet, ...], slip_type: str) -> Slip:
+    def _create_slip(self, bet_tuple: Tuple[Bet, ...], slip_type: str, phase_modifier: float = 1.0) -> Slip:
         """Create a Slip object with calculated expected value."""
         # Calculate combined odds and confidence
         combined_odds = 1.0
@@ -384,6 +390,9 @@ class SlipOptimizer:
                 
             ev -= 1  # Subtract stake
             
+        
+        # Apply phase modifier to expected value
+        ev *= phase_modifier
         return Slip(
             bets=bet_tuple,
             slip_type=slip_type,
