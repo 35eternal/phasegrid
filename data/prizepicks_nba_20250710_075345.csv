@@ -1,0 +1,9 @@
+slip_id,player,team,prop_type,line,projection,pick,over_odds,under_odds,start_time,game_id,home_team,away_team,source,fetched_at,projection_id,flash_sale,is_promo
+MOCK_001_20250710,A'ja Wilson,LV,Points,24.5,,,-110,-110,2025-07-10T07:53:45.131828,mock_game_1,LV,SEA,mock,2025-07-10T07:53:45.131832,mock_1,False,False
+MOCK_002_20250710,Breanna Stewart,NY,Rebounds,8.5,,,-115,-105,2025-07-10T07:53:45.131836,mock_game_2,NY,CHI,mock,2025-07-10T07:53:45.131837,mock_2,False,False
+MOCK_003_20250710,Diana Taurasi,PHX,Assists,4.5,,,-110,-110,2025-07-10T07:53:45.131840,mock_game_3,PHX,LA,mock,2025-07-10T07:53:45.131841,mock_3,False,False
+MOCK_004_20250710,Sabrina Ionescu,NY,Points,18.5,,,-120,-100,2025-07-10T07:53:45.131844,mock_game_2,NY,CHI,mock,2025-07-10T07:53:45.131845,mock_4,True,False
+MOCK_005_20250710,Kelsey Plum,LV,3-Pointers Made,2.5,,,-105,-115,2025-07-10T07:53:45.131848,mock_game_1,LV,SEA,mock,2025-07-10T07:53:45.131848,mock_5,False,False
+MOCK_006_20250710,Candace Parker,CHI,Rebounds,7.5,,,-110,-110,2025-07-10T07:53:45.131851,mock_game_2,NY,CHI,mock,2025-07-10T07:53:45.131852,mock_6,False,True
+MOCK_007_20250710,Jewell Loyd,SEA,Points + Rebounds + Assists,28.5,,,-110,-110,2025-07-10T07:53:45.131855,mock_game_1,LV,SEA,mock,2025-07-10T07:53:45.131856,mock_7,False,False
+MOCK_008_20250710,Sue Bird,SEA,Assists,5.5,,,-115,-105,2025-07-10T07:53:45.131858,mock_game_1,LV,SEA,mock,2025-07-10T07:53:45.131859,mock_8,False,False
